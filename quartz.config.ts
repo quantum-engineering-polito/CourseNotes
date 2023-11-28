@@ -3,15 +3,15 @@ import * as Plugin from "./quartz/plugins"
 
 const config: QuartzConfig = {
   configuration: {
-    pageTitle: "🪴 Quartz 4.0",
+    pageTitle: "QE Notes PoliTO",
     enableSPA: true,
     enablePopovers: true,
     analytics: {
       provider: "plausible",
     },
-    baseUrl: "quartz.jzhao.xyz",
+    baseUrl: "gamberoillecito.github.io",
     ignorePatterns: ["private", "templates", ".obsidian"],
-    defaultDateType: "created",
+    defaultDateType: "modified",
     theme: {
       typography: {
         header: "Schibsted Grotesk",
@@ -50,10 +50,10 @@ const config: QuartzConfig = {
         priority: ["frontmatter", "filesystem"], // you can add 'git' here for last modified from Git but this makes the build slower
       }),
       Plugin.SyntaxHighlighting(),
-      Plugin.ObsidianFlavoredMarkdown({ enableInHtmlEmbed: false }),
+      Plugin.ObsidianFlavoredMarkdown({ enableInHtmlEmbed: false, comments: true }),
       Plugin.GitHubFlavoredMarkdown(),
       Plugin.CrawlLinks({ markdownLinkResolution: "shortest" }),
-      Plugin.Latex({ renderEngine: "katex" }),
+      Plugin.Latex({ renderEngine: "mathjax" }),
       Plugin.Description(),
     ],
     filters: [Plugin.RemoveDrafts()],

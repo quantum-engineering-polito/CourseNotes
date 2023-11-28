@@ -10,7 +10,7 @@ import { QuartzPluginData } from "../plugins/vfile"
 const defaultOptions = {
   title: "Explorer",
   folderClickBehavior: "collapse",
-  folderDefaultState: "collapsed",
+  folderDefaultState: "open",
   useSavedState: true,
   sortFn: (a, b) => {
     // Sort order: folders first, then files. Sort folders and files alphabetically
@@ -28,7 +28,10 @@ const defaultOptions = {
       return -1
     }
   },
-  filterFn: (node) => node.name !== "tags",
+  filterFn: (node) => {
+    const omit = new Set(["attachments", "tags", "Chapters"])
+      return !omit.has(node.name.toLowerCase())
+  },
   order: ["filter", "map", "sort"],
 } satisfies Options
 
