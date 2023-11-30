@@ -1,4 +1,3 @@
-
 # Symmetric encryption
 
 ## Terminology
