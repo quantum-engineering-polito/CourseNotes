@@ -1,0 +1,50 @@
+{
+  "settings": {
+    "migrated": 3,
+    "iconPacksPath": ".obsidian/icons",
+    "fontSize": 16,
+    "emojiStyle": "none",
+    "iconColor": null,
+    "recentlyUsedIcons": [
+      "BoBxMicrochip",
+      "TiSkull"
+    ],
+    "recentlyUsedIconsSize": 5,
+    "rules": [
+      {
+        "rule": "excalidraw",
+        "icon": "TiBrush",
+        "for": "folders",
+        "order": 0
+      },
+      {
+        "rule": "attachments",
+        "icon": "TiFiles",
+        "for": "everything",
+        "order": 1,
+        "useFilePath": false
+      },
+      {
+        "rule": "Chapters",
+        "icon": "TiBooks",
+        "for": "folders",
+        "order": 2,
+        "useFilePath": false
+      }
+    ],
+    "extraMargin": {
+      "top": 0,
+      "right": 4,
+      "bottom": 0,
+      "left": 0
+    },
+    "iconInTabsEnabled": false,
+    "iconInTitleEnabled": true,
+    "iconInFrontmatterEnabled": false,
+    "iconsBackgroundCheckEnabled": false,
+    "iconsInNotesEnabled": true
+  },
+  "Semester 1/Cyber Security": "TiSkull",
+  "Cyber Security": "TiSkull",
+  "Fundamentals of TP": "BoBxMicrochip"
+}

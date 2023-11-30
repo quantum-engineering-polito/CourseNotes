@@ -1,0 +1,207 @@
+{
+  "main": {
+    "id": "08fdc3dd0b42c4a5",
+    "type": "split",
+    "children": [
+      {
+        "id": "994784804e48de2b",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "f22a07fb35301139",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "index.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "03d59eb4e5419d7e",
+    "type": "split",
+    "children": [
+      {
+        "id": "d26f49bcf0ca7105",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "b707f0708e00b7a7",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "29d375877de852b5",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "e8772e41592a91e3",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {}
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "8ccfdff9373aab92",
+    "type": "split",
+    "children": [
+      {
+        "id": "791df24d17803c94",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "a5a1095b8f21ed70",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "index.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "dbacd5829cb3e1de",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "index.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "bbbbfa5ff371de51",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true
+              }
+            }
+          },
+          {
+            "id": "e9736fdbac6265fb",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "index.md"
+              }
+            }
+          },
+          {
+            "id": "2ec3b5042e4a5bde",
+            "type": "leaf",
+            "state": {
+              "type": "git-view",
+              "state": {}
+            }
+          }
+        ],
+        "currentTab": 4
+      }
+    ],
+    "direction": "horizontal",
+    "width": 345.5
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "obsidian-excalidraw-plugin:Create new drawing": false,
+      "switcher:Open quick switcher": false,
+      "graph:Open graph view": false,
+      "canvas:Create new canvas": false,
+      "daily-notes:Open today's daily note": false,
+      "templates:Insert template": false,
+      "command-palette:Open command palette": false
+    }
+  },
+  "active": "2ec3b5042e4a5bde",
+  "lastOpenFiles": [
+    "Fundamentals of TP/Chapters/Wet and dry etching/attachments/excalidraw/etch rate layout.md",
+    "Excalidraw/Drawing 2023-11-29 13.51.04.excalidraw.md",
+    "Fundamentals of TP/Chapters/Wet and dry etching/attachments/excalidraw",
+    "Fundamentals of TP/FTP Lectures.md",
+    "Fundamentals of TP/attachments/resist exposure shape.png",
+    "Fundamentals of TP/attachments/excalidraw/liftoff problems.excalidraw.md",
+    "Fundamentals of TP/attachments/excalidraw/liftoff problems.excalidraw.svg",
+    "Fundamentals of TP/Chapters/Wet and dry etching/attachments/excalidraw/etch rate layout.svg",
+    "Excalidraw/Drawing 2023-11-29 13.51.04.excalidraw.svg",
+    "index.md",
+    "Fundamentals of TP/Chapters",
+    "Excalidraw",
+    "Cyber Security/CS Lectures.md",
+    "Fundamentals of TP/Untitled",
+    "Cyber Security/Chapters/Cryptography/Cryptography.md",
+    "Cyber Security/Chapters/Introduction/Introduction.md",
+    "Fundamentals of TP/Chapters/Wet and dry etching/attachments/iso_aniso_tropic.png",
+    "Fundamentals of TP/Chapters/Wet and dry etching/attachments/excalidraw/etch rate layout.png",
+    "Fundamentals of TP/Chapters/Wet and dry etching/Wet and dry etching.md",
+    "Fundamentals of TP/Chapters/Wet and dry etching/attachments",
+    "Fundamentals of TP/Chapters/Wet and dry etching",
+    "Fundamentals of TP/Chapters/Packaging/Packaging.md",
+    "Fundamentals of TP/Chapters/Packaging",
+    "Fundamentals of TP/attachments/excalidraw/attachments/Pasted Image 20231116124250_067.png",
+    "Fundamentals of TP/attachments/excalidraw/attachments/Pasted Image 20231116124250_047.png",
+    "Fundamentals of TP/attachments/excalidraw/attachments/Pasted Image 20231116103559_459.png",
+    "Fundamentals of TP/attachments/excalidraw/attachments/Pasted Image 20231114185653_030.png",
+    "Fundamentals of TP/attachments/excalidraw/Untitled.canvas",
+    "Fundamentals of TP/attachments/excalidraw/tilted channel.md",
+    "Fundamentals of TP/attachments/excalidraw/sputtering step coverage.md",
+    "Fundamentals of TP/attachments/excalidraw/sputtering conformality.md",
+    "Fundamentals of TP/attachments/excalidraw/multilpe etchants.excalidraw.md",
+    "Fundamentals of TP/attachments/excalidraw/multilpe etchants.excalidraw.excalidraw",
+    "Fundamentals of TP/attachments/excalidraw/liftoff problems.excalidraw.excalidraw",
+    "Fundamentals of TP/attachments/excalidraw/junction depth.md",
+    "Fundamentals of TP/attachments/excalidraw/implanter.md",
+    "Fundamentals of TP/attachments/excalidraw/fraction transmitetd.md",
+    "Fundamentals of TP/attachments/excalidraw/doping profile.excalidraw.md",
+    "Fundamentals of TP/attachments/excalidraw/dopant distribution.md",
+    "Fundamentals of TP/attachments/excalidraw/diffraction.excalidraw.md",
+    "Fundamentals of TP/attachments/excalidraw/diffraction.excalidraw.excalidraw",
+    "Fundamentals of TP/attachments/excalidraw/development curve.md",
+    "Fundamentals of TP/attachments/excalidraw/cvd vs epitaxy.md",
+    "Fundamentals of TP/attachments/excalidraw/conformality.md",
+    "Fundamentals of TP/attachments/excalidraw/clean room.md",
+    "Fundamentals of TP/attachments/excalidraw/annealing.md"
+  ]
+}
