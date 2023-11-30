@@ -1,20 +1,59 @@
-# Quartz v4
+# quantum_eng_polito_notes
+ 
+https://creativecommons.org/licenses/by-sa/4.0/
 
-> “[One] who works with the door open gets all kinds of interruptions, but [they] also occasionally gets clues as to what the world is and what might be important.” — Richard Hamming
+## Environment setup
 
-Quartz is a set of tools that helps you publish your [digital garden](https://jzhao.xyz/posts/networked-thought) and notes as a website for free.
-Quartz v4 features a from-the-ground rewrite focusing on end-user extensibility and ease-of-use.
+1) Download [obsidian](https://obsidian.md/)
+2) Clone this repository on your PC
+3) Select "Open folder as vault" and select the folder `content` inside the repo that you just downloaded.
+If asked to do so select "trust the author" so that all the plugins will be automatically enabled
+4) **If this is the first time you contribute to this project do the following**
+  1) Go inside `content` and replace the `.obsidian` folder with the one you can find
+  inside the `SharedObsidianSettings` folder. This will make sure that you have the
+  correct settings inside Obsidian.
 
-**If you are looking for Quartz v3, you can find it on the [`hugo` branch](https://github.com/jackyzha0/quartz/tree/hugo).**
+<!-- 2) Go to settings -> Community plugins and click "Turn on community plugins"
+3) Click on "Browse" and install the following plugins and enable them
+    1) **Paste image rename** by "Reorx"
+    2) (Optional but suggested): **Latex Suite** by "artisticat1" (you can find my snippets in the `extra` folder in this repo)
+    3) (Optional): **Excalidraw** by "Zsolt Vicsian". If you want to use excalidraw replace the 
+4) Go to settings -> Files & Links:
+    1) Set "New link format" to "shortest path when possible
+    2) Make sure use [[Wikilinks]] is not checked
+    3) Set "Default location for new attachments" to "In subfolder under current folder"
+    4) Set "Subfolder name" to "attachments" without -->
 
-🔗 Read the documentation and get started: https://quartz.jzhao.xyz/
+## Folder structure
 
-[Join the Discord Community](https://discord.gg/cRFFHYye7t)
+Please use the following folder structure for the notes of a single course:
 
-## Sponsors
+```
+Subject (e.g. Cybersecurity)/
+├── Main Page (Optional)
+└── Chapters/
+    ├── Chapter 1 (e.g. Introduction)/
+    │   ├── 01_Introduction.md
+    │   └── attachments/
+    │       ├── image1_for_intro.jpg
+    │       ├── image2_for_intro.jpg
+    │       └── excalidraw/
+    │           ├── drawing1_for_intro
+    │           └── drawing2_for_intro
+    ├── Chapter 2 (e.g. Cryptography)/
+    │   ├── 02_Cryptography.md
+    │   └── attachments/
+    │       ├── image1_for_crypto.png
+    │       └── excalidraw/
+    │           └── drawing1_for_crypto
+    └── ...
+```
 
-<p align="center">
-  <a href="https://github.com/sponsors/jackyzha0">
-    <img src="https://cdn.jsdelivr.net/gh/jackyzha0/jackyzha0/sponsorkit/sponsors.svg" />
-  </a>
-</p>
+## Test website locally
+
+If you want to see how your changes look on the website you need to have 
+[nodejs](https://nodejs.org/en) installed. In your terminal `cd` into the 
+repository and run `npx quartz build --serve` if there are no errors you will
+see the url where you can access the local version of the website.
+
+## Contributors
