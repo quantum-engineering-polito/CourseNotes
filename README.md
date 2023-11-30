@@ -5,10 +5,11 @@ https://creativecommons.org/licenses/by-sa/4.0/
 ## Environment setup
 
 1) Download [obsidian](https://obsidian.md/)
-2) Clone this repository on your PC
-3) Select "Open folder as vault" and select the folder `content` inside the repo that you just downloaded.
+2) Make sure you have git installed and properly configured
+3) Clone this repository on your PC
+4) Select "Open folder as vault" and select the folder `content` inside the repo that you just downloaded.
 If asked to do so select "trust the author" so that all the plugins will be automatically enabled
-4) **If this is the first time you contribute to this project do the following**
+5) **If this is the first time you contribute to this project do the following**
   1) Go inside `content` and replace the `.obsidian` folder with the one you can find
   inside the `SharedObsidianSettings` folder. This will make sure that you have the
   correct settings inside Obsidian.
