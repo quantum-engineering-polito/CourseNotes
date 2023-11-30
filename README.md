@@ -29,20 +29,23 @@ If asked to do so select "trust the author" so that all the plugins will be auto
 
 Please use the following folder structure for the notes of a single course:
 
+**IMPORTANT**: the chapters folder must have the same name as the chapter notes and can have a leading number followed by an underscore
+to specify the ordering. See the example below
+
 ```
-Subject (e.g. Cybersecurity)/
+Subject (e.g. **Cybersecurity**)/
 ├── Main Page (Optional)
 └── Chapters/
-    ├── Chapter 1 (e.g. Introduction)/
-    │   ├── 01_Introduction.md
+    ├── Chapter 1 (e.g. 01_Introduction)/
+    │   ├── Introduction.md
     │   └── attachments/
     │       ├── image1_for_intro.jpg
     │       ├── image2_for_intro.jpg
     │       └── excalidraw/
     │           ├── drawing1_for_intro
     │           └── drawing2_for_intro
-    ├── Chapter 2 (e.g. Cryptography)/
-    │   ├── 02_Cryptography.md
+    ├── Chapter 2 (e.g. 02_Cryptography)/
+    │   ├── Cryptography.md
     │   └── attachments/
     │       ├── image1_for_crypto.png
     │       └── excalidraw/
