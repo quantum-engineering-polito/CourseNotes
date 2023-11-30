@@ -30,12 +30,12 @@ tags:
 3) To improve the purity, MGS is crushed and reacted with $HCl$ to obtain **TCS** (*trichlorosilane*) which is liquid at room temperature. This is done because it would be impossible to further purify solid MGS. 
 4) TCS is treated with a process similar to the one used to refine oil called **fractional distillation** which is the separation of a mixture into its component parts, or fractions. Through this process we obtain purified TCS.
 5) Silicon can be extracted from the TCS via the **Siemens** process that consists in creating a TCS and $H_2$ vapor which is introduced in a chamber where the $Si$ can deposit. After this steps we have reached the **required purity** level. ![[Pasted image 20231003174732.png|300]]
-6) Now that we have a hyper pure $Si$  we can transform it into a monoscrystal using the **Czochralski process** (CZ). The process consists in heating the $Si$ slightly above its melting temperature (1415$^\circ$C) inside a quartz crucible. Once the $Si$ is molten a small monocrystalline $Si$ seed is put in contact with the melt, rotated and slowly pulled up. During this process part of the liquid solidifies and sticks to the seed, allowing it to grow with a diameter inversely proportional to the pulling speed. The rotation inhibits the natural tendency of the crystal to grow along certain orientations to produce a faceted crystal, while the orientation of the seed determines the orientation of the crystal to be produced. The process can take up to 3 days and in the end an ingot is produced. ^649cfb
-	1) The process can also be done with doped silicon. Adding a dopant introduces a new challenge because the concentration of dopant in crystal is not the same as that in the melt. We can define a segregation coefficient $k = C_s/C_l$ where $C_s$ and $C_l$ are the concentrations. $k$ is generally $< 1$, this means that the dopant tends to remain in the melt and thus its concentration increases during the process. Since this cannot be avoided the ingot produced will have different properties depending on where it is cut.
+6) Now that we have a hyper pure $Si$  we can transform it into a monoscrystal using the **Czochralski process** (CZ). The process consists in heating the $Si$ slightly above its melting temperature (1415$^\circ$C) inside a quartz crucible. Once the $Si$ is molten, a small monocrystalline $Si$ seed is put in contact with the melt, rotated and slowly pulled up. During this process part of the liquid solidifies and sticks to the seed, allowing it to grow with a diameter inversely proportional to the pulling speed. The rotation inhibits the natural tendency of the crystal to grow along certain orientations and to produce a faceted crystal. The orientation of the seed determines the orientation of the crystal to be produced. The process can take up to 3 days and in the end an **ingot** is produced. ^649cfb
+	1) The process can also be done with doped silicon. Adding a dopant introduces a new challenge because the concentration of dopant in crystal is not the same as that in the melt. We can define a segregation coefficient $k = C_s/C_l$ where $C_s$ and $C_l$ are the concentrations. $k$ is generally $< 1$, this means that the dopant tends to remain in the melt and thus its concentration increases during the process. Since this cannot be avoided the ingot produced will have **different properties** depending on where it is cut.
 
 ## Production of III-V monocrystals
 
-The Czochralski process has to be slightly modified for growing $GaAs$ crystals since $Ga$ and $As$ have different vapor pressures ($As$ would evaporate faster than $Ga$). The solution is to pressurize the chamber and work in an $As$ rich atmosphere.  $GaAs$ is than placed under a layer of molten $B_2O_3$ which acts as a seal to suppress evaporation.
+The Czochralski process has to be slightly modified for growing $GaAs$ crystals since $Ga$ and $As$ have different vapor pressures ($As$ would evaporate faster than $Ga$). The solution is to pressurize the chamber and work in an $As$ rich atmosphere. $GaAs$ is than placed under a layer of molten $B_2O_3$ which acts as a seal to suppress evaporation.
 
 ![[CZ for GaAs.png|300]]
 
@@ -45,7 +45,7 @@ After the production of the ingot, a series of steps has to be followed to produ
 
 ### Inspection
 
-After that the ingot needs to be inspected to check that it is **not undersized** (an oversize ingot can be compensated for later), than the **crystallographic orientation** has to be checked through XRD (X-Ray Diffraction) and finally we have to measure the **resistivities** of the upper and lower faces to ensure that they are within spec (this step is necessary due to the variable concentration of dopant seen above).
+After that the ingot needs to be inspected to check that it is **not undersized** (an oversize ingot can be compensated for later), then the **crystallographic orientation** has to be checked through XRD (X-Ray Diffraction) and finally we have to measure the **resistivities** of the upper and lower faces to ensure that they are within spec (this step is necessary due to the variable concentration of dopant seen above).
 These three tests result in the rejection of ~50% of the ingots.
 
 ### Shaping
@@ -54,7 +54,7 @@ If the ingot passed all the tests it can be shaped to refine the outer diameter 
 
 ### Flat(s) grinding
 
-One or two flat zones on the edge of the ingot are ground to get a crystallographic orientation reference. This reference will be used during the wafer process.
+One or two flat zones on the edge of the ingot are ground to get a crystallographic orientation reference. This reference will be used to orient the wafer during the processing.
 
 ![[flat grinding.png|300]]
 
@@ -74,7 +74,7 @@ The sawing process produced wafers that can have slight thickness and shape vari
 
 ### Polishing
 
-After lapping the wafers are mechanically flat but not shiny (optically flat). A mirror finish is required because it will allow to achieve better results in lithograpy and can be achieved via a chemico-mechanical based polishing. Wafers can be Single Sided Polished (SSP) or Double Sided Polished (DSP).
+After lapping the wafers are mechanically flat but not optically flat (shiny). A mirror finish is required because it will allow to achieve better results in lithography and this can be obtained via a chemico-mechanical based polishing. Wafers can be Single Sided Polished (SSP) or Double Sided Polished (DSP).
 
 ### Cleaning and marking
 
@@ -82,7 +82,7 @@ After the steps above the wafers can be cleaned with ultra pure deionized water 
 
 # Crystallography
 
-Before analyzing in more detail the crystals it is useful to have a general overview of the 3 different types of solids we can have.
+Before analysing in more detail the crystals it is useful to have a general overview of the 3 different types of solids we can have.
 
 ## Types of solids
 
@@ -90,9 +90,9 @@ Before analyzing in more detail the crystals it is useful to have a general over
 | -------------------- | -------------------- | ------------------ |
 | ![[monocrystal.png]] | ![[polycristal.png]] | ![[amorphous.png]] |
 
-In a monocrystal all the atoms are arranged on a common **lattice** structure, in a polycrystal there are multiple lattices of the same type oriented differently to one another (each lattice is called **grain**). In amorphous material instead the atoms are placed randomly in space.
+In a monocrystal all the atoms are arranged on a common **lattice** structure, in a polycrystal there are multiple lattices of the same type oriented differently to one another (each lattice is called **grain**). In amorphous material, on the other hand, the atoms are placed randomly in space.
 
-While we will analyze mostly monocrystals, it is important to note that all three types are useful in practical applications, such as the creation of integrated devices.
+While we will analyse mostly monocrystals, it is important to note that all three types are useful in practical applications, such as the creation of integrated devices.
 
 ## Crystal structure
 
@@ -107,7 +107,7 @@ There are only 14 unique lattices possible in 3 dimensions called **Bravais latt
 
 ^329279
 
-Each lattice can has a specific **lattice parameter** $a_{0}$ which represents the length of the cube side. ^962ccb
+Each lattice has a specific **lattice parameter** $a_{0}$ which represents the length of the cube side. ^962ccb
 
 
 ### Silicon lattice
@@ -118,7 +118,7 @@ Crystalline structure of $Si$ belongs to the family of cubic crystals and is the
 
 ### Miller indices
 
-From what we will see later, the same material, with the same lattice structure can behave very differently depending on how it is cut (for thin film like wafers we are interested in the surface properties). 
+From what we will see later, the same material, with the same lattice structure can behave very differently depending on how it is cut (for thin films we are interested in the surface properties). 
 To be able to describe different surfaces we can use Miller indices to identify the cut plane. 
 The method to find those indices is as follows:
 
@@ -131,7 +131,7 @@ The method to find those indices is as follows:
 
 ### Surface behavior
 
-The way the the crystal is cut influences in a very significant way the properties of the material. The cut can in fact change the number of dangling bonds on the surface, thus changing how reactive the surface can be (more dangling bonds speed up the oxidation for example). 
+The way the the crystal is cut influences in a very significant way the properties of the material. The cut can in fact change the number of **dangling bonds** on the surface, thus changing how reactive the surface can be (more dangling bonds speed up the oxidation for example). 
 In the following table it is possible to see how different cuts change the surface properties of the same material.
 
 | 111             | 110             | 100             |
@@ -152,13 +152,14 @@ In the following table it is possible to see how different cuts change the surfa
 ### Line defects
 
 The main line defect we will consider is **edge dislocation** which consists in the insertion of an extra half plane of atoms in the lattice. This half plane generates **compression and tension stresses**.
+
 ![[edgeDislocation.png|300]]
 
-It is important to notice that dislocations can move across the material due to thermal or mechanical stresses.
+It is important to notice that dislocations can **move** across the material due to thermal or mechanical stresses.
 
 ### Surface defects
 
-The main surface defect we will consider are **grain boundaries** which are the interfaces between crystals with different orientations. The atoms on these boundaries tends to be loosely bound and thus more reactive.
+The main surface defect we will consider are **grain boundaries** which are the interfaces between crystals with different orientations. The atoms on these boundaries tend to be loosely bound and thus more reactive.
 Lower temperature during the deposition process tend to create smaller grains and thus many boundaries, higher temperatures instead produce larger grains and less boundaries.
 
 ![[grainBoundary.png|200]]
@@ -172,41 +173,37 @@ Impurities have an intrinsic solid solubility in the host crystal which varies w
 # Clean room technology
 
 Clean rooms are environments where particulate concentration is reduced and kept under a specified level (usually also temperature and humidity are controlled).
-Clean rooms are fundamental to prevent contamination which can create the following problems: it can **ruin devices**, leading to a lower yield and thus an increase of the manufacturing costs; it can **poison equipment** which has to be repaired, incrementing costs and slowing down production; lastly it can pose a **health risk** for the employees and other people involved in the manufacturing.
+Clean rooms are fundamental to prevent contamination which can create the following problems: it can **ruin devices**, leading to a lower yield and thus an increase of the manufacturing costs; it can **poison equipment** which has to be repaired, incrementing costs and slowing down production; moreover it can pose a **health risk** for the employees and other people involved in the manufacturing.
 
 ## Sources of contamination
 
 Before finding a way to prevent contamination, it is important to know what are its main sources. Analysis show that the **human body** is the main source of airborne particles and that their number varies depending on the activity performed by the person. For this reason, depending on the class of the clean room, multiple layers of *clothing* have to be used to minimize contamination.
 
-Other sources are the **machines** which can wear and produce debris during normal operations, to mitigate this problem in fact, they are often installed through the walls, in order to separate the clean side from the "dirty" side. Finally also the **materials** and the **processes** used can create particles that need to be eliminated, for this reason it may be necessary to use high purity gasses (for example *Oxygen 4.0* where the *4* indicates the number of "9s" of purity, in this case 99.99%).
+Other sources are the **machines** which can wear down and produce debris during normal operations; to mitigate this problem, in fact, they are often installed through the walls, in order to separate the clean side from the "dirty" side. Finally the **materials** and the **processes** used can create particles that need to be eliminated, for this reason it may be necessary to use high purity gasses (for example *Oxygen 4.0* where the *4* indicates the number of "9s" of purity, in this case 99.99%).
 
 ## Contamination induced problems
 
 The presence of contaminants in the air can easily damage a product in multiple ways:
 
-- **Change electric fields**: if a material (for example a silicon wafer) comes in contact with a source of ions (for example the skin), its electrical properties can be drastically changed, to the point where it can no longer serve its purpose.
-- **Unintentional films between layers**: contaminants can create nanometric films on the surfaces of a material which can prevent adhesion between two film or create unwanted open/short circuits.
-- **Shadowing**: dust particles can create defects in photolitograpy processes by casting an unwanted shadow on the resists which, in turn, can ruin the final product.
+- **Change in electric fields**: if a material (for example a silicon wafer) comes in contact with a source of ions (for example the skin), its electrical properties can be drastically changed, to the point where it can no longer serve its purpose.
+- **Unintentional films between layers**: contaminants can create nanometric films on the surfaces of a material which can prevent adhesion between two films or create unwanted open/short circuits.
+- **Shadowing**: dust particles can create defects in photolithography processes by casting an unwanted shadow on the resists which, in turn, can ruin the final product.
 - **Jamming**: dust particles can prevent the movement of micro electro-mechanical systems (MEMS).
 
 ## Clean room classification
 
-The first standard for the classification of clean rooms was invented in the '60 and required a room to respect specific limits in particles number and sizes, according to the plot below.
+The first standard for the classification of clean rooms was invented in the '60 and imposed specific limits in particles number and sizes, according to the plot below.
 
 ![[fed std 209.png|300]]
 
 A class 100 for example have less than 100 particles greater than 0.5 $\mu$m per cubic foot). 
-Particulate concentration can be directly measured
-with methods of filtering and counting (usually too
-slow) or with a suitable apparatus exploiting optical
-scattering of a laser beam (just like looking at
-particulate through a sun beam) where the number of scattering lines represents the number of particles and the angle is proportional to their size.
+Particulate concentration can be directly measured with methods of filtering and counting (usually too slow) or with a suitable apparatus exploiting optical scattering of a laser beam (just like looking at particulate through a sun beam) where the number of scattering lines represents the number of particles and the angle is proportional to their size.
 
 Nowadays the accepted standard, which has been updated by ISO, is stricter and more detailed.
 
 ## Designs
 
-There are two main kinds of clean room designs: the first one is more expensive but offers better performances and consists in a room with a raised perforated floor through which air can pass, the second design is similar but instead of having the raised floor it has holes at the bottom of the walls, this design is cheaper but also less effective since it doesn't allow a laminar air flow (which minimizes the time spent in the room by a particle). 
+There are two main kinds of clean room designs: the first one is more expensive but offers better performances and consists in a room with a raised perforated floor through which air can pass, the second design is similar but instead of having the raised floor it has holes at the bottom of the walls; this design is cheaper but also less effective since it doesn't allow a laminar air flow (which minimizes the time spent in the room by a particle). 
 
 ![[clean room.png|500]]
 
@@ -216,7 +213,7 @@ Since laminar flow is so important for the performances of a clean room, the equ
 
 ### Filters
 
-Usually three kinds of filters are used to clean the air: the first step is using a HEPA filter (used also in cooker hood) this filters can retain 99.97% of particles with a diameter of 0.3$\mu$m (when talking about filter it if fundamental to state both the **filtering capability** and the **particle size** it refers to); the second step is a medium filter; the last step is an absolute filter which does most of the work. Filter wear can be estimated by measuring the pressure difference between the two sides (the fuller the filter, the higher the pressure difference).
+Usually three kinds of filters are used to clean the air: the first step is using a HEPA filter (used also in cooker hood) this filters can retain 99.97% of particles with a diameter of 0.3$\mu$m (when talking about filter it if fundamental to state both the **filtering capability** and the **particle size** it refers to); the second step is a medium filter and the last step is an absolute filter which does most of the work. Filter wear can be estimated by measuring the pressure difference between the two sides (the fuller the filter, the higher the pressure difference).
 
 ## Deionized water
 
@@ -226,6 +223,7 @@ The purity can be evaluated by measuring its electric resistance (good values ar
 # Lithography
 
 Lithography is a process used to **select** parts of the surface of a material that will need to be processed later with different technologies. One of the advantages is that it allows **batch processing**, i.e. the creation multiple similar features in parallel; this can drastically decrease processing times and thus decrease costs.
+
 
 ![[photolitography.png|400]]
 
@@ -258,9 +256,12 @@ There is also a third kind of photo resist called **image reversal**, which will
 > - **Positive**: light creates holes
 > - **Negative**: shadow creates holes
 
+In the image below we can see that the light intensity is higher in the middle, thus the exposed region will have a "V" shape.
+
+![[resist exposure shape.png|300]]
 #### Resolution
 
-Resolution capability is the smallest opening or space that can be produced in a photoresist layer and is related not only to the resist itself but also to the processes. Usually a thinner layer will have a better resolution while a thicker one will be stronger to mechanical or chemical stresses. Positive resist has a better resolution due to the smaller size of polymer.
+Resolution capability is the smallest opening or space that can be produced in a photoresist layer and is related not only to the resist itself but also to the processes. Usually a thinner layer will have a better resolution while a thicker one will be stronger to mechanical or chemical stresses. Positive resist has a **better resolution** due to the smaller size of polymer.
 
 #### Sensitivity
 
@@ -288,13 +289,14 @@ Before starting the preparation of the wafer, it need to be dehydrated in a conv
 
 Since most of the resists are liquid they can be applied by placing a small quantity on the wafer and spinning it to distribute the resist on the surface.
 The spinning speed has to be controlled in order to achieve the desired resist thickness. Usually the wafer is spun slowly at first to spread the resist and than the speed is increased to refine the surface and the thickness. 
+
 ![[spin speed.png|300]]
 
 Do to surface tension there may be an accumulation of resist on the edges (called **edgebead**) which can decrease the usable surface area of the wafer.
 
 ## Resist soft bake
 
-At this stage the resist is still liquid and thus cannot be handled. To solve this issue wafer is heated to let the solvent evaporate. The temperature and baking time have to be controlled accurately to prevent damage to the resist (which may crack if heated too rapidly) and to obtain the proper result.
+At this stage the resist is still liquid and thus cannot be handled. To solve this issue wafers are heated to let the solvent evaporate. The temperature and baking time have to be controlled accurately to prevent damage to the resist (which may crack if heated too rapidly) and to obtain the proper result.
 
 ## Resist exposure
 
@@ -384,7 +386,7 @@ One possible solution for this issue is to coat the wafer with an anti reflectin
 
 ## Resist post exposure bake
 
-The resist post bake is an optional step that can help mitigate the effects of the standing waves seen previously. The bake facilitates the diffusion of the exposed and unexposed resist and thus smooths the waves.
+The resist post bake is an optional step that can help mitigate the effects of the standing waves seen previously. The bake facilitates the diffusion n the exposed and unexposed resist and thus smooths the waves.
 
 The image below shows the effect of the post exposure bake.
 
@@ -430,11 +432,13 @@ The main benefit of lift-off is the fact that it doesn't require an etchant for 
 
 The main problem with lift-off is due to the fact that the contrast of the resist is not infinite and thus the metal film applied over it will form a continuous layer which can lead to peeling off unwanted regions.
 
-![[liftoff problems.excalidraw.png|500]]
+![[liftoff problems.excalidraw.svg|500]]
 
 ### Image reversal
 
-To solve the problem seen above, it is possible to use a special kind of photo resists called image reversal. The resists starts as a positive resist and is exposed using an inverted mask (the exposed areas are the ones that will remain). After being exposed, the resist is baked to make the exposed regions inert and the unexposed regions photosensitive. After this step a **flood exposure** is performed to make the non-inert regions soluble. After development, the parts of the resists that where originally exposed remain, but the slopes are negative to prevent the problems seen above with the lift-off.
+To solve the problem seen above, we could use a negative resists, that produces a negative slope, but as stated before negative resists tend to have worse resolution.
+
+It is possible to use a special kind of photo resists called image reversal. The resist starts as a positive resist and is exposed using an inverted mask (the exposed areas are the ones that will remain). After being exposed, the resist is baked to make the exposed regions inert and the unexposed regions photosensitive. After this step a **flood exposure** is performed to make the non-inert regions soluble. After development, the parts of the resists that where originally exposed remain, but the slopes are negative to prevent the problems seen above with the lift-off.
 
 ![[image_reversal_overview_1.gif|500]]
 
