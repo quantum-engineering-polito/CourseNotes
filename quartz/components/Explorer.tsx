@@ -46,7 +46,6 @@ const defaultOptions = {
      ;
        const child = node.children.find((child) => !!node.name.match(new RegExp(`${reg}?${child.name}`)));
       if (!child) return
-      // Should prob also check if child is not undefined
       // Now, we can theoretically replace our current node (the folder) with the file we just found
       // This might require you to actually copy the child node, as you first need to delete the parent node's children ("remove" all other files in the folder and override the folder to be your file)
       node.children = [];
