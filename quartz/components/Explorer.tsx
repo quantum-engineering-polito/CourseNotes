@@ -30,30 +30,16 @@ const defaultOptions = {
   },
   filterFn: (node) => {
     const omit = new Set(["attachments", "tags"])
-      // if (node.file) {
-      //   console.log("File:\t" + node.name)
-      // }
-      // else {
-      //   console.log("Folder:\t" + node.name)
-      // }
       const passed = !omit.has(node.name.toLowerCase())
-      // if (passed) {
-      //   for (var c of node.children) {
-      //     if (node.name == c.name) {
-      //       node = c
-      //       // console.log("Became:\t" + c.name)
-      //       break
-      //     }
-      //   }
-      // }
       return passed
   },
-  // doesn't show folders which have a single child with the same name
-  // (the folder can have a starting number_ such as 01_note which is
+  // doesn't show folders which have a single child with the same* name
+  // (* = the folder can have a starting number and underscore such as "01_note" which is
   // used for ordering but is not used in the comparison with the children names)
   mapFn: (node) => {
     const reg = `(?:\\d+_)`
-    // Check if the node map is currently processing is called `cryptography` and is a folder
+    // Check if the node map is currently processing is a folder that has only one
+    // which has it's same* name
     if (node.displayName === node.name && !node.file && node.children.length == 1) {
        // Now, we'd need to get the child node with the same name
     // Utilizzo della funzione test per verificare se str2 matcha con il pattern
