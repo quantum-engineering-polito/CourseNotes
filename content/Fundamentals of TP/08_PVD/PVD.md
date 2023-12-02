@@ -36,11 +36,11 @@ Sputtering is a technique that consists in bombarding the material we want to de
 
 The advantage of sputtering is that the it has no limitations on the materials that can be deposited but it is more expensive compared to the previous techniques and can cause more contamination.
 
-Similarly to [[#Plasma Enhanced CVD (PECVD)|PECVD]] there are two variations of sputtering based on the type of voltage used.
+Similarly to [[CVD#Plasma Enhanced CVD (PECVD)|PECVD]] there are two variations of sputtering based on the type of voltage used.
 
 ### DC sputtering
 
-In DC sputtering the substrate is placed at the positive potential and the target (the material to be eroded) at the negative. Several hundred volts are applied in order to form a plasma which accelerates the Argon ions. The ions hit the target and dislodge its atoms which fly off and stick to the substrate.
+In DC sputtering the substrate is placed at the positive potential and the **target** (the material to be eroded) at the negative. Several hundred volts are applied in order to form a plasma which accelerates the Argon ions. The ions hit the target and dislodge its atoms which fly off and stick to the substrate.
 
 #todo only conductive ?
 
@@ -50,17 +50,17 @@ In DC sputtering the substrate is placed at the positive potential and the targe
 
 ### Conformality and step coverage
 
-Compared to evaporation, sputtering is **more conformal** since the source of the material is wider (in evaporation it was point like). This leads to the particles to arrive at the substrate with different angles so that they can "fill" even tighter areas.
+Compared to evaporation, sputtering is **more conformal** since the source of the material is wider (in evaporation it was point like). This makes the particles arrive at the substrate with different angles so that they can "fill" even tighter areas.
 
 ![[sputtering conformality.png|400]]
 
-Since the substrate is kept cold, the atoms that hit its surface stick immediately and there is no surface migration. This causes the top faces to grow faster, making the issue even worse.
+Since the substrate is kept cold, the atoms that hit its surface stick immediately and there is **no surface migration**. This causes the top faces to grow faster, making the issue even worse.
 
 ![[sputtering step coverage.png|400]]
 
 ### Magnetron sputtering
 
-Magnetron sputtering aims at improving performances of the two previous methods increasing the **ionization degree** of the atoms in the plasma. Increasing the ionization degree (the number of atoms ionized) it is in fact possible do deposit more material at a given pressure. This also means that it is possible to maintain the deposition time constant decreasing the pressure (and thus reducing contamination).
+Magnetron sputtering aims at improving performances of the two previous methods increasing the **ionization degree** of the atoms in the plasma. By increasing the ionization degree (the number of atoms ionized) it is in fact possible do deposit more material at a given pressure. This also means that it is possible to maintain the deposition time constant decreasing the pressure (and thus reducing contamination).
 
 The goal is achieved by introducing a magnetic field perpendicular to the electric field in order to put the electrons in a helical orbit. Since the new orbit will be longer, the electrons will have more chances of hitting an atom and ionizing it.
 
@@ -112,9 +112,10 @@ Before doing the procedure above, a conductive **seed layer** has to be created 
 |                      | Epitaxy                                                               | CVD                               | PVD                                                                                                               |
 | -------------------- | --------------------------------------------------------------------- | --------------------------------- | ----------------------------------------------------------------------------------------------------------------- |
 | Bonding              | Grown                                                                 | Chemical                          | Physical                                                                                                          |
+| Precursor            | Vapour, Liquid                                                        | Vapour                            | Solid                                                                                                             |
 | Types                | VPE, LPE, MBE                                                         | APCVD, LPCVD, PECVD (AC, CD), ALD | Thermal Evaporation, E-beam evaporation, Sputtering (AC, DC, Magnetron, Reactive, Ionized)                        |
 | Metals               | No                                                                    | Yes                               | Yes, but not all of them with T.E.                                                                                |
 | Semiconductors       | Only if they have similar crystalline structure and lattice parameter | Yes                               | Yes, but not with DC sputtering                                                                                   |
-| Oxide                | ?                                                                     | Yes                               | Same as semiconductors                                                                                            |
-| Conformality         | ?                                                                     | Medium                            | Low for **evaporations** (point like source), Medium for **sputtering**, Non conformal for **ionized sputtering** |
+| Oxide                | Only if crystalline (maybe)                                           | Yes                               | Same as semiconductors                                                                                            |
+| Conformality         | Medium- High                                                          | Medium, Highest for **ALD**       | Low for **evaporations** (point like source), Medium for **sputtering**, Non conformal for **ionized sputtering** |
 | Temperature of wafer | High                                                                  | Medium, Lower for PECVD           | Low                                                                                                               |

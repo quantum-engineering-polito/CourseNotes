@@ -13,7 +13,7 @@ Different etchants can have a very different behaviour and etch the same materia
 
 The etch rate is the rate of material removal (usually in $\mu$m/min) and is **function** of various factors such as concentration, mixing speed, temperature, material, layout, etc. The etch rate follows an **Arrhenius relationship**. On one side we would like a high etch rate to reduce processing times but, on the other, we would like an etch rate slow enough that the etching is easy to control and reproducible.
 
-![[etch rate layout.png|center|300]]
+![[etch rate layout.svg|300]]
 
 ### Selectivity
 
@@ -37,7 +37,7 @@ Unfortunately there is a **trade-off** between etch rate and selectivity: the hi
 
 Isotropic etching means that the the etch rate is the same in all directions, while anisotropic means that there is some "preferred" direction where the etching will happen faster and others where it will be slower. Anisotropy is a property of the process: the same material can be etched both isotropically and anisotropically by selecting different etchants and different processes.
 
-![[iso_aniso_tropic.png|center|400]]
+![[iso_aniso_tropic.png|400]]
 
 
 Less important parameters are:

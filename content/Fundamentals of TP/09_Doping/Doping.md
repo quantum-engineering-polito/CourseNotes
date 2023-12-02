@@ -1,8 +1,8 @@
-Doping consists in introducing atoms in **substitutional sites** of a substrate to alter it **physical**, **electrical** and **chemical** properties. The doping levels can vary from $10^{15}$ to $10^{20}$ atoms/cm$^{3}$; adding more atoms would saturate the substrate (passing the solid solubility) and creating **volume defect**. 
+Doping consists in introducing atoms in **substitutional sites** of a substrate to alter its **physical**, **electrical** and **chemical** properties. The doping levels can vary from $10^{15}$ to $10^{20}$ atoms/cm$^{3}$; adding more atoms would saturate the substrate (passing the solid solubility) and creating **volume defect**. 
 
 The most used atoms to dope $Si$ are $P$, $As$ and $B$ since they have greater solubility in $Si$ compared to other dopants.
 
-Doping silicon can change its conductivity by 8 orders of magnitude but also alter its resistance to etching and its mechanical properties.
+Doping silicon can change its conductivity by 8 orders of magnitude but can also alter its resistance to etching and its mechanical properties.
 
 ## Methods
 
@@ -12,7 +12,7 @@ Diffusion works by exposing the (properly masked) substrate to a gas of dopant a
 
 ![[diffusion doping.png|300]]
 
-In implantation, on the other hand, the substrate is bombarded with dopant atoms which penetrate in the material. This allows for a better control of the amount of dopant and of the size of the doped region. The main disadvantage, which will be explained [[#Annealing|later]], is that the dopant atom, hitting the surface, damage the crystalline structure of the substrate, which has to be "healed".
+In implantation, on the other hand, the substrate is bombarded with dopant atoms which penetrate in the material. This allows for a better control of the amount of dopant and of the size of the doped region. The main disadvantage, which will be explained [[#Annealing and activation|later]], is that the dopant atoms, hitting the surface, damage the crystalline structure of the substrate, which has to be "healed".
 
 ![[implantation.png|300]]
 
@@ -34,7 +34,7 @@ A high voltage is used to accelerate the ionized dopants toward the substrate at
 
 ### Implanter
 
-![[implanter.png|700]]
+![[implanter.svg|700]]
 
 The implanter is composed of multiple parts where the most important are highlighted in the picture. After the ions are emitted by the source, they are separated depending to their mass (**A**); this has both the advantage of filtering out unwanted species and allowing to select different dopants for different regions of the substrate.
 
@@ -52,7 +52,7 @@ where $n$ is the number of charges per ion.
 
 Implantation can be studied as a random process which follows a Gaussian distribution: the more the dopant atoms penetrate into the substrate, the more random their path becomes. This can be represented in the following way: 
 
-![[dopant distribution.png|500]]
+![[dopant distribution.svg|500]]
 The plot has the **depth** on the horizontal axis and the concentration of dopant on the vertical axis. The depth at which the maximum concentration (**peak concentration**) is reached, is called **range of implant** or **projected range** and the "width" (or more properly the standard deviation) of the distribution around it is called **vertical straggle**. As we will see later, increasing the range of implant increases the vertical straggle.
 
 ### Junction depth
@@ -63,16 +63,16 @@ Another important parameter of the implantation process, which is not shown in t
 
 $C_{b}$ are the background doping and depending on the case we can have one or two junctions as we can see from the drawing. Keeping the energy constant we can change the position of the junctions by varying the dose, by changing the thickness of the mask and the substrate orientation (see [[#Channelling through lattice]]).
 
-If we vary the energy properly we can "sweep" the gaussian to obtain a mostly constantly concentration.
+If we vary the energy properly we can "sweep" the gaussian to obtain a mostly constant concentration.
 
 ## Control parameters
 
 When planning an implantation process, there are multiple factors that have to be taken into consideration to achieve the desired results:
 
-- **Ion energy**: controls the depth and shape of the implant. Higher energies will make the dopants penetrate deeper into the substrate but will also **increase the vertical straggle**; this means that if we want to implant deeper (with a single implantation, more on that later) we will also loose accuracy. Increasing the energy has also the effect of damaging the crystal more (consider that the process is similar to [[#Sputtering|sputtering]]).
+- **Ion energy**: controls the depth and shape of the implant. Higher energies will make the dopants penetrate deeper into the substrate but will also **increase the vertical straggle**; this means that if we want to implant deeper (with a single implantation, more on that later) we will also loose accuracy. Increasing the energy has also the effect of damaging the crystal more (consider that the process is similar to [[PVD#Sputtering|sputtering]]).
 - **Dose**: increasing the dose will, obviously, increase the concentration which, in turn, affects many device parameters, it's mechanical, chemical and optical properties.
-- **Ion species**: changing the type of dopant species has multiple effects. The most obvious one is changing the doping type (n or p), but the type of dopant affects also the profile depth and shape: some atoms (e.g. $\ce{B}$) will have a higher projected range compared to others (e.g. $\ce{As}$) at the same implantation energy.
-- **Mask**: the lithographic mask plays a very important role in implantation as we will see in more detail later. The main parameters of the mask that can be controlled are its **shape** and its **thickness**. A thicker mask will be able to protect the substrate from doping.
+- **Ion species**: changing the type of dopant species has multiple effects. The most obvious one is changing the doping type (n or p), but the type of dopant affects also the profile depth and shape: some atoms (e.g. $\ce{B}$) will have a higher projected range compared to others (e.g. $\ce{As}$) at a given implantation energy.
+- **Mask**: the lithographic mask plays a very important role in implantation as we will see in more detail later. The main parameters of the mask that can be controlled are its **shape**, its **thickness** and its **material**. A thicker mask will be able to protect the substrate from doping.
 - **Annealing**: changing the annealing time or technique has a major impact on the success of the process.
 
 ## Annealing and activation
@@ -94,7 +94,7 @@ In adiabatic annealing the thermal equilibrium is not maintained because the waf
 
 Notice that, even though the heating time is much smaller compared to the isothermal annealing, this **does not** imply that the process is faster. In this case in fact, only a small portion of the wafer is heated at any given time, so the process has be repeated for each spot that has to be annealed.
 
-![[annealing.png|400]]
+![[annealing.svg|400]]
 
 ## Channelling through lattice
 
@@ -123,11 +123,11 @@ Tilting the substrate has the advantage of being very easy and cheap but shadowi
 
 ## Implantation through a mask
 
-As briefly discussed previously, the usage of a mask offers a big range of control over the implantation. Apart from simply protecting the masked regions in a binary way, masks can be used to change the range of implant even **outside** the wafer itself.
+As briefly discussed previously, the usage of a mask offers a big range of control over the implantation. Apart from simply protecting the masked regions in a binary way, masks can be used to move the range of implant even **outside** the wafer itself.
 
 This is possible because part of the dopants will remain in the mask; the thicker the mask, the less dopant will reach the substrate. The dopant distribution will have the usual shape but it will be spread across the interface between the mask and the substrate.
 
-![[fraction transmitetd.png|500]]
+![[fraction transmitetd.svg|500]]
 
 To calculate the part of dopant that reaches the substrate (the **fraction transmitted** $FT$) we can use the following formula:
 
@@ -135,7 +135,7 @@ $$
 FT = \frac{\text{ dose in the substrate}}{\text{total dose}}= \frac{\int_{d}^{\infty}  N(x)\, dx}{\int_{0}^{\infty} N(x) \, dx }
 $$
 
-Where $N(x)$ is the dopant distribution seen previously.
+Where $N(x)$ is the dopant distribution seen [[#Doping parameters|previously]] .
 
 The formula can be rewritten in terms of the **complementary error function** $\text{erfc}$:
 
@@ -167,6 +167,3 @@ After bonding, most of the top wafer is polished away, leaving a structure with 
 ### Smart Cut
 
 #todo
-
-
-![[Wet and dry etching]]
