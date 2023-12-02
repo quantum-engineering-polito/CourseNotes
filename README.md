@@ -34,8 +34,7 @@ to specify the ordering. See the example below
 
 ```
 Subject (e.g. Cybersecurity)/
-├── Main Page (Optional)
-└── Chapters/
+└── Main Page (Optional)/
     ├── Chapter 1 (e.g. 01_Introduction)/
     │   ├── Introduction.md
     │   └── attachments/
