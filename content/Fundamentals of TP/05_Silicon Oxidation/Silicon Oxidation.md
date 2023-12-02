@@ -30,7 +30,7 @@ It is extremely important to remember that
 
 >[!warning] Oxidation occurs at the interface, not on top of the oxide
 
-This is because the oxidant molecules have to diffuse through the already formed oxide, reach the pure silicon and oxidize it; on the surface of the $SiO_{2}$ there is no $Si$ to oxidize. For this reason the growth rate will become slower and slower with time.
+This is because the oxidant molecules have to diffuse through the already formed oxide, reach the pure silicon and oxidize it; on the surface of the $SiO_{2}$ there is no $Si$ to oxidize. For this reason the growth rate will become **slower and slower with time**.
 
 As stated [[#Surface behavior|before]], the surface orientation of the $Si$ substrate will affect the oxidation time: 111 silicon will oxidize 1.7 times faster compared to 100.
 
@@ -44,6 +44,8 @@ This paragraph will provide a model to get a simplified tool to predict and calc
 2) The final oxide thickness at a given time $t$: $x_{ox}(t)$
 
 The model, proposed by Deal and Grove, takes into consideration three fluxes F1, F2 and F3
+
+#todo add plot of the fluxes
 
 - F1 represents the flow of oxidant gas that diffuses to the surface of the growing film.
 - F2 is the flow of the particles that diffuse through the growing film.
@@ -84,11 +86,15 @@ $k_{s}$ is the **surface reaction speed for oxidation** and is a parameter that 
 
 ### Oxidation graphs
 
+#todo add something
+
 ### Multiple oxidations
 
 <img src="https://i.imgur.com/BTqYo1I.gif">
 
 ### Growth rate regimes
+
+#todo add something
 
 ## Rapid thermal oxidation
 

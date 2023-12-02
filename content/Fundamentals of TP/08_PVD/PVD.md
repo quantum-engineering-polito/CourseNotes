@@ -8,13 +8,13 @@ Thermal evaporation allows to deposit a limited amount of material (mostly metal
 
 The vacuum chamber hosts the wafer (which is held upside down to reduce particulates) and a hot crucible that holds the material. The crucible is sealed by a shutter that can be controlled to achieve the right thickness.
 
-Since the vapour travels mostly in straight line and the wafer is cold (no surface migration), the results are highly unconformal.
+Since the vapour travels mostly in straight lines and the wafer is cold (no surface migration), the results are highly unconformal.
 
 ![[thermal evaporation conformality.png|400]]
 
 ### Crucible selection
 
-Since the crucible is in direct contact with the material, it is important to select a crucible that will not react with it. Since the crucible is heated by Joule effect it has to be conductive; the most common choices are $W$, $Ta$, $Mo$ and $C$.
+Since the crucible is in direct contact with the material, it is important to select a crucible that will not react with it. Moreover, the crucible has to be conductive since it is heated by Joule effect; the most common choices are $W$, $Ta$, $Mo$ and $C$.
 
 If it not possible to find a suitable material, there are crucibles made from non conductive refractive material (ceramics) that contain a metal wire that heats up.
 
@@ -24,7 +24,7 @@ Thermal evaporation has an high deposition rate but it is important to choose th
 
 ## E-beam evaporation
 
-In e-beam evaporation a conductive filament is heated up to electron emission. The electron are then accelerated and deviated with a magnetic field to hit the material placed in a crucible (called **liner**). Since the liner is water cooled, there is no risk of contamination and the magnetic deviation separates the electrons from possible contaminants.
+In e-beam evaporation a conductive filament is heated up to electron emission. Electrons are then accelerated and deviated with a magnetic field to hit the material placed in a crucible (called **liner**). Since the liner is water cooled, there is no risk of contamination and the magnetic deviation separates the electrons from possible contaminants.
 
 In industrial setups, one chamber can contain multiple liners, allowing for multiple evaporations without breaking the vacuum. This is extremely important not only for speed, but also to prevent material from oxidizing when they come in contact with air.
 

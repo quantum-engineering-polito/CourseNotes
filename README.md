@@ -53,6 +53,9 @@ Subject (e.g. Cybersecurity)/
     └── ...
 ```
 
+## Tips
+
+
 ## Test website locally
 
 If you want to see how your changes look on the website you need to have 
