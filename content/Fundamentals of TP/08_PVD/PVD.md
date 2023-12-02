@@ -106,3 +106,15 @@ When a current flows through the electrolyte:
 Before doing the procedure above, a conductive **seed layer** has to be created for the process to occur. This layer can be deposited with another technique (e.g. lithography + PVD). As well as being conductive all the places that we want to electroplate need to be **electrically connected** to the electrical contact, otherwise the process will not happen.
 
 ![[electroplating.png|500]]
+
+## Comparison with Epitaxy and CVD
+
+|                      | Epitaxy                                                               | CVD                               | PVD                                                                                                               |
+| -------------------- | --------------------------------------------------------------------- | --------------------------------- | ----------------------------------------------------------------------------------------------------------------- |
+| Bonding              | Grown                                                                 | Chemical                          | Physical                                                                                                          |
+| Types                | VPE, LPE, MBE                                                         | APCVD, LPCVD, PECVD (AC, CD), ALD | Thermal Evaporation, E-beam evaporation, Sputtering (AC, DC, Magnetron, Reactive, Ionized)                        |
+| Metals               | No                                                                    | Yes                               | Yes, but not all of them with T.E.                                                                                |
+| Semiconductors       | Only if they have similar crystalline structure and lattice parameter | Yes                               | Yes, but not with DC sputtering                                                                                   |
+| Oxide                | ?                                                                     | Yes                               | Same as semiconductors                                                                                            |
+| Conformality         | ?                                                                     | Medium                            | Low for **evaporations** (point like source), Medium for **sputtering**, Non conformal for **ionized sputtering** |
+| Temperature of wafer | High                                                                  | Medium, Lower for PECVD           | Low                                                                                                               |
