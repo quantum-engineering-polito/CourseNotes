@@ -19,7 +19,9 @@ Use `**bold text**` for **bold text**, `*italic text*` for *italic text* and `==
 
 ## Links
 
-Links in obsidian have the following format `[[random link]]` and are rendered as follows [random link](https://www.youtube.com/watch?v=dQw4w9WgXcQ). 
+Links in obsidian have the following format `[[random link]]` and are rendered as follows:
+
+[random link](https://www.youtube.com/watch?v=dQw4w9WgXcQ). 
 
 You can change the text shown by adding a pipe `|` followed by the text you want. For example [[Clean Room Technology]] `[[Clean Room Technology]]` can be show as [[Clean Room Technology|clean room]] `[[Clean Room Technology|clean room]]`.
 
@@ -45,13 +47,13 @@ Images in a note have the following format `![[image.png]]` (you are just transc
 
 ![[channelling.png]]
 
-if you want to resize the image you can add `|width` after the image name. For example `![[image.png|400]]`:
+if you want to resize the image you can add `|width` after the image name. For example `![[image.png|400]]` to specify a width of 400:
 
 ![[channelling.png|200]]
 
 ## Tables
 
-If you have installed the "Advanced Tables" plugin you just need to type a pipe `|` and hit `TAB`, the plugin will automatically create new rows and columns as if you were in Excel.
+If you have installed the "Advanced Tables" plugin you just need to type a pipe `|` and hit `TAB`, the plugin will automatically create new rows and columns as if you were in Excel (press `TAB` to move to the next column and `ENTER` to move to the next row).
 
 Example:
 
