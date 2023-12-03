@@ -42,12 +42,12 @@ Similarly to [[CVD#Plasma Enhanced CVD (PECVD)|PECVD]] there are two variations 
 
 In DC sputtering the substrate is placed at the positive potential and the **target** (the material to be eroded) at the negative. Several hundred volts are applied in order to form a plasma which accelerates the Argon ions. The ions hit the target and dislodge its atoms which fly off and stick to the substrate.
 
-#todo only conductive ?
+The main limitation of DC sputtering is that only conductive materials can be deposited. This is due to the fact that, if we use a non conductive target, positive charges due to ions would build up on the target's surface, creating an opposing potential that would stop the reaction after a short period.
 
 ### RF sputtering
 
-#todo 
-
+#todo
+![[RF sputtering.png|400]]
 ### Conformality and step coverage
 
 Compared to evaporation, sputtering is **more conformal** since the source of the material is wider (in evaporation it was point like). This makes the particles arrive at the substrate with different angles so that they can "fill" even tighter areas.

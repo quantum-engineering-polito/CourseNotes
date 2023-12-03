@@ -1,6 +1,6 @@
 ## Headers
 
-Use hashes to identify header
+Use hashes to identify header ^ed057f
 
 `# Header 1` for:
 # Header 1
@@ -19,11 +19,29 @@ Use `**bold text**` for **bold text**, `*italic text*` for *italic text* and `==
 
 ## Links
 
+Links in obsidian have the following format `[[random link]]` and are rendered as follows [random link](https://www.youtube.com/watch?v=dQw4w9WgXcQ). 
 
+You can change the text shown by adding a pipe `|` followed by the text you want. For example [[Clean Room Technology]] `[[Clean Room Technology]]` can be show as [[Clean Room Technology|clean room]] `[[Clean Room Technology|clean room]]`.
+
+You can have the following types of links:
+
+- Link to another note: [[Doping]] written as `[[Doping]]`
+- Link to a header of this note: [[#Text decoration]] written as `[[#Text decoration]]`
+- Link to a section of this note: [[#^ed057f]] (the tag is added automatically by obsidian, you just need to write `[[^]]` and select the correct block from the popup menu)
+- Link to a section of another note: you can combine the previous links as follows [[Wet and dry etching#^0fa6e1]] 
+## Transclusion
+
+You can embed an entire document of part of it in another note by adding an exclamation mark `!` before the correct link, for example `![[#Text decoration]]` will appear as:
+
+![[#Text decoration]]
+
+or `![[Doping#BESOI]]`
+
+![[Doping#BESOI]]
 
 ## Images
 
-Images in a note have the following format `![[image.png]]`: 
+Images in a note have the following format `![[image.png]]` (you are just transcluding the image file): 
 
 ![[channelling.png]]
 

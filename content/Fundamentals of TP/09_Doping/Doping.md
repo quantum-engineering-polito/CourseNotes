@@ -2,7 +2,7 @@ Doping consists in introducing atoms in **substitutional sites** of a substrate 
 
 The most used atoms to dope $Si$ are $P$, $As$ and $B$ since they have greater solubility in $Si$ compared to other dopants.
 
-Doping silicon can change its conductivity by 8 orders of magnitude but can also alter its resistance to etching and its mechanical properties.
+Doping silicon can change its conductivity by 8 orders of magnitude but can also alter its resistance to etching and its mechanical properties. ^84121a
 
 ## Methods
 
