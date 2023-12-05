@@ -5,6 +5,7 @@ import { byDateAndAlphabetical } from "./PageList"
 import style from "./styles/recentNotes.scss"
 import { Date, getDate } from "./Date"
 import { GlobalConfiguration } from "../cfg"
+import { string } from "yargs"
 
 interface Options {
   title: string
@@ -16,9 +17,17 @@ interface Options {
 
 const defaultOptions = (cfg: GlobalConfiguration): Options => ({
   title: "Recent Notes",
-  limit: 3,
+  limit: 5,
   linkToMore: false,
-  filter: () => true,
+  filter: (node) => {
+    const omit = new Set(["attachments", "tags"])
+      for (let o of omit) {
+        if (node.filePath!.includes(o)) {
+          return false
+        }
+      }
+      return true 
+  },
   sort: byDateAndAlphabetical(cfg),
 })
 
@@ -33,8 +42,13 @@ export default ((userOpts?: Partial<Options>) => {
         <ul class="recent-ul">
           {pages.slice(0, opts.limit).map((page) => {
             const title = page.frontmatter?.title
-            const tags = page.frontmatter?.tags ?? []
+            //const tags = page.frontmatter?.tags ?? []
+            const tags:String[] = []
 
+            // filter out for everything except index, code from jzhao's site
+            if (fileData.slug !== "index") {
+              return <></>
+            }
             return (
               <li class="recent-li">
                 <div class="section">

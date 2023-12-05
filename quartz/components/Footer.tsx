@@ -13,9 +13,6 @@ export default ((opts?: Options) => {
     return (
       <footer class={`${displayClass ?? ""}`}>
         <hr />
-        <p>
-          Created with <a href="https://quartz.jzhao.xyz/">Quartz v{version}</a>, © {year}
-        </p>
         <ul>
           {Object.entries(links).map(([text, link]) => (
             <li>
@@ -23,6 +20,9 @@ export default ((opts?: Options) => {
             </li>
           ))}
         </ul>
+        <p>
+          Created with <a href="https://quartz.jzhao.xyz/">Quartz v{version}</a>, © {year}
+        </p>
       </footer>
     )
   }
