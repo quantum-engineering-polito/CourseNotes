@@ -66,7 +66,7 @@ To prevent stiction there are several possible solutions:
 Another method could be evaporating the liquid to release the structures; the problem with this is that at microscopic levels crossing the liquid to gas boundary can cause too much stress. There are two possible ways to avoid this:
 
 - Avoid passing from liquid to gas directly by exploiting **sublimation drying**. In this method the liquid is frozen and then the pressure is lower to sublimate the residue. This technique cannot be used with water since it expands as it freezes.
-- Pass from liquid to gas by using $CO_2$ **supercritical drying**. This method passes through the supercritical region where there is no more distinction between liquid and gas. 
+- Pass from liquid to gas by using $CO_2$ **supercritical drying**. This method passes through the supercritical region where there is no more distinction between liquid and gas. Since reaching the supercritical point requires high temperatures and pressures, which could damage the device, we usually use $CO_2$ which has the supercritical point at ambient temperature.
 
 The last solution is to avoid wet etching altogether and used vapor **phase etching**.
 
@@ -131,22 +131,93 @@ The fact that a external material is used to bind the two surfaces together has 
 
 ![[glass frit.png|300]]
 
-## Micro injection moulding
+## Micro injection molding
+
+Micro injection moulding is a replication technique used to reproduce many pieces from a mould insert. The most used materials are **thermoplastics** such as PMMA, PVC and ABS but they can also be mixed with metals or ceramics to form sintered parts.
+
+The process works similarly to classical injection molding: the thermoplastic is melted and injected into the molds by a reciprocating screw with a pressure ranging from 500 to 2000 bars. After the plastic has cured the mold opens and the parts can be ejected.
+
+![[micro injection moulding.jpg|400]]
 
 ## Hot embossing
 
+Hot embossing is a technique similar to the previous one in the sense that it uses thermoplastic to form features according to a mold. In this case though the plastic is not injected but is heated just above its glass transition in place and pressed between the edged of the mold itself.
+
+![[hot embossing.png|200]]
+
 ## In situ casting
+
+In situ casting is a method to form high resolution molds starting from a polymer such as Polydimethyl-siloxane (PDMS). PDMS is a flexible silicon which is cheap and easy to use.
+
+The method to produce the cast consists in weighting the proper amounts of the curing agent and the base (PDMS is a bi-component). After mixing the two parts together they have to be degassed in a vacuum to remove air bubbles. After that the mixture can be poured in the cast where it self levels. Eventually, after waiting for the PDMS to cure, it can be demolded and the edges can be refined.
+
+![[PDMS.png|300]]
 
 ## Global planarization
 
-## Chemical-mechanical polishing
+Global planarization is the technique that we saw in [[Wafer Production#Polishing|wafer production]] and it uses **Chemical Mechanical Polishing** (CMP).
+
+CMP takes advantages of the synergic effect of both **physical** and **chemical** forces for polishing of wafers. This is done by applying a load force to the back of a wafer while it rests on a pad. Both the pad and wafer are then **counter rotated** while a **slurry** containing both abrasives and reactive chemicals is passed underneath.
+
+![[global planarization.png|300]]
+
+The important parameters of the process are:
+
+- The **pressure** applied to the wafer
+- The **speed** of rotation
+- The **etchant concentration**
+- The **grain size** of the slurry
 
 ## Laser machining
 
+Laser machining is a non contact technique that doesn't produce internal stress in the processed material.
+
+Lasers can be used for **drilling**, **cutting**, **patterning** and **annealing** of metals, plastics, ceramics, semiconductors and glass materials.
+
+The smallest feature sizes can be smaller than a micron and surface roughness better than 100 nm. The radiation produced by the laser is absorbed by the substrate and generates locally very high temperature and pressure, which cause the material to be ejected.
+
+The laser source must be properly chosen, so that the wavelength is absorbed by the material to be processed. The shape to be machined can be directly written by the laser beam, or defined on a mask and projected onto the workpiece. 
+
+![[laser machining.png|200]]
+
+The main drawback of this technique is the fact that the process is slow and the machinery is expensive but this is compensated for by the fact that there is almost no limitation in materials, shapes and size of the features (compared to classical machining).
 ## Additive manufacturing
+
+Additive manufacturing is a process in which a digital 3D design is transformed into a physical object by building up multiple layers of some particular material. In order to do this, the design has to be virtually **sliced** so that a machine can lay the layers one on top of the other accordingly.
+
+It is important to note that the final object will not be a perfect replica of the design but it will have some defects due to the loss of resolution of slicing.
+
+![[Additive manufacturing.png|300]]
 
 ### Micro stereolithography
 
+In this process object are fabricated by building up hundreds of layers of hardened resin.
+
+The process involves a light source (usually a UV laser) which scans the surface of a photosensitive resins that hardens if exposed to light. The first layer scanned is in contact with the bottom of a sliding table submerged in the resin. After the first layer is complete, the slider can move deeper in order to allow for another layer to be created.
+
+Due to the sequential nature of the process, its applications are limited to prototyping since it would be too slow for manufacturing.
+
+![[microstereolithography.png|300]]
+
 ### Inkjet printing
 
+This technique is similar to the previous one (the object is built layer by layer), but in this case the layers are created by **droplets of polymer** dropped by the nozzles of a moving head. Similarly to the previous example, the resin has to be cured by a UV lamp after being deposited.
+
+The advantage of this method is that the printer's head can deposit two materials at the same time (from different nozzles): the **building material** and the **support material**. The support material is not part of the finished object but is required to support deposited build material in regions with **voids** or **overhangs**. The support material is usually **soluble** so that it can be fully removed when the process is complete.
+
+In contrast to conventional stereolithography, where lightweight supports are only required in areas with severe overhangs, inkjet-based AM requires a
+**completely dense support structure**.
+
+![[inkjet.png|300]]
+
 ### Two photon polymerization (2PP)
+
+For two photons absorption to occur, photons must be present in sufficiently high concentration to drive a transition via a very short-lived (fs) intermediate virtual state to the excited state having energy roughly equal to twice that of the excitation wavelength (E = h$\nu$). 
+
+The idea is to shine a focus beam of light in a photo-resin which can be exposed only in the focal point (where two photon absorption occurs).
+
+This technique allows to create build free-standing microscopic structures with feature sizes orders of magnitude beyond that of other lithographic techniques.
+
+![[2PP.png|600]]
+
+Differently from traditional stereolithography, 2PP is not a layer by layer technique since the focal point of the laser can be moved in any direction within the resin. For this reason it is considered a true 3D writing technique since it allows to create more complex structures than with layer by layer SLA

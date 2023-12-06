@@ -36,16 +36,16 @@ As stated [[#Surface behavior|before]], the surface orientation of the $Si$ subs
 
 ## Modelling thermal oxidation of silicon
 
-> [!error] I'm not too sure about this part, there might be even more mistakes
+> [!error] I'm not too sure about this part, there might be even more mistakes than usual
 
 This paragraph will provide a model to get a simplified tool to predict and calculate:
 
 1) The oxidation rate: $\frac{\partial x_{ox}(t)}{\partial t}$  
 2) The final oxide thickness at a given time $t$: $x_{ox}(t)$
 
-The model, proposed by Deal and Grove, takes into consideration three fluxes F1, F2 and F3
+The model, proposed by **Deal and Grove**, takes into consideration three fluxes F1, F2 and F3
 
-#todo add plot of the fluxes
+![[thermal oxidation model.png|400]]
 
 - F1 represents the flow of oxidant gas that diffuses to the surface of the growing film.
 - F2 is the flow of the particles that diffuse through the growing film.
@@ -63,6 +63,8 @@ J = F_{2} &= -D \cdot \frac{dN}{dx}  \\
 $$
 
 Where $N_{0}$ is the concentration of oxidant species (particles per $cm^{3}$). $N_{0}$ is $5.2 \times 10^{16}$ for dry oxidation and $3\times 10^{19}$ for wet oxidation.
+
+$D$ is the **coefficient of diffusivity**.
 
 Combining the equation above with 
 
@@ -82,7 +84,31 @@ $$
 J = \frac{D \cdot N_{0}}{(x_{0} + D/k_{s})}
 $$
 
-$k_{s}$ is the **surface reaction speed for oxidation** and is a parameter that "contains" all the characteristics of the materials and the temperature (similarly to the spring constant that takes into consideration the spring diameter, its material, etc.).
+$k_{s}$ is the **surface reaction speed for oxidation** and is a parameter that "contains" all the characteristics of the materials and the temperature (similarly to the spring constant that takes into consideration the spring diameter, its material, etc.). More in detail, $k_{s}$ "contains":
+
+- Temperature
+- Silicon solid state (mono or polycrystalline)
+- Crystallographic orientation
+- Type of oxidant ($O_2$ or $H_2O$)
+- Silicon surface contamination
+- Silicon doping
+
+In $k_{s}$ there are **no characteristics related to diffusion**!
+
+The **growth rate** of the oxide layer can be expressed as 
+
+$$
+\frac{dx_{ox}}{dt} = \frac{J}{N_{ox}} = \frac{\text{what is available to perform the oxidation}}{\text{what is needed to generate the oxide}}
+$$
+
+The oxide thickness at time $t$ is given by: 
+
+$$
+x_{ox}(t) = \frac{1}{2} A\left[ \left( \sqrt{ 1+\frac{4B}{A^{2}} (t +\tau) } \right) - 1 \right]
+$$
+
+where $\tau$ is a time shift to take into account the starting thickness, $A = 2D/k_{s}$ and $B = 2DN_0/N_{ox}$.
+
 
 ### Oxidation graphs
 
@@ -94,7 +120,11 @@ $k_{s}$ is the **surface reaction speed for oxidation** and is a parameter that 
 
 ### Growth rate regimes
 
-#todo add something
+For short times we will have a linear oxide growth, since the reaction is limited by the rate of reaction of oxidant with silicon.
+
+For longer times (thicker oxide) on the other hand, the growth rate is limited by the rate of oxidant diffusion through the previously grown layer.
+
+#todo add formulas
 
 ## Rapid thermal oxidation
 

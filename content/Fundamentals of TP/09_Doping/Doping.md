@@ -24,8 +24,7 @@ To fully identify a doping process we need 3 parameters:
 2) Total dose $Q(t)$ measured in $[\text{atoms}/cm^{2}]$. $Q(t) = \int_{0}^{\infty} N(x,t)  \, dx$ 
 3) Junction depth $x_{j}$ measure in $nm$ or $\mu m$. The junction depth represent  the intersection of $N(x,t)$ with the **background concentration** $N_{B}$. Considering for example a n-type doped substrate (see the [[#^649cfb|CZ process]]), $x_{j}$ represents the depth at which the overall doping is neutral.
 
-#todo add plot
-
+![[doping parameters.svg|400]]
 ## Ion implantation
 
 Implantation consists in introducing desired atoms or impurities into the substrate in a controlled manner using a ionic beam.
@@ -159,11 +158,23 @@ There are multiple ways of fabricating SOI wafers.
 
 Simox stands for "Separation by IMplantation of OXygen". The process consists in implanting oxygen ions in a normal wafer in order to oxidize a buried layer.
 
+![[SIMOX.png|400]]
+
 ### BESOI
 
-This method is based on wafer bonding and thinning, the name stands for "Bond and Etchback Silicon On Insulator". In this technique, two wafers are bonded together; one or both of the wafers has an insulating oxide on the surface. 
+This method is based on wafer bonding and thinning, the name stands for "Bond and Etchback Silicon On Insulator". In this technique, two wafers with an oxide layer on the surface are bonded together. 
 After bonding, most of the top wafer is polished away, leaving a structure with a thin top silicon layer, a buried oxide and a full wafer below. 
+
+![[BESOI.png|400]]
 
 ### Smart Cut
 
-#todo
+Smart Cut is a variation of the BESOI process where the top wafer is "cut" instead of being polished away.
+
+The "cut" is performed by pre-implanting the top wafer with $H^{+}$ just below the oxide layer. After the two wafers are bonded together heat is used to break the implanted region so that the two wafer (a SOI wafer and a pure $Si$ wafer) can be separated.
+
+![[smart cut.png|400]]
+
+Finally a [[Complementary Technologies#Global planarization|CMP polish]] is used to finish the SOI surface.
+
+The process provides optimal usage of valuable material by placing the amount of materials needed for electronic functionality on top of a very inexpensive support layer.

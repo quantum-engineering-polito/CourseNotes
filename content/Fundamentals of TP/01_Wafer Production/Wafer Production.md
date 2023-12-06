@@ -15,6 +15,8 @@
 6) Now that we have a hyper pure $Si$  we can transform it into a monoscrystal using the **Czochralski process** (CZ). The process consists in heating the $Si$ slightly above its melting temperature (1415$^\circ$C) inside a quartz crucible. Once the $Si$ is molten, a small monocrystalline $Si$ seed is put in contact with the melt, rotated and slowly pulled up. During this process part of the liquid solidifies and sticks to the seed, allowing it to grow with a diameter inversely proportional to the pulling speed. The rotation inhibits the natural tendency of the crystal to grow along certain orientations and to produce a faceted crystal. The orientation of the seed determines the orientation of the crystal to be produced. The process can take up to 3 days and in the end an **ingot** is produced. ^649cfb
 	1) The process can also be done with doped silicon. Adding a dopant introduces a new challenge because the concentration of dopant in crystal is not the same as that in the melt. We can define a segregation coefficient $k = C_s/C_l$ where $C_s$ and $C_l$ are the concentrations. $k$ is generally $< 1$, this means that the dopant tends to remain in the melt and thus its concentration increases during the process. Since this cannot be avoided the ingot produced will have **different properties** depending on where it is cut.
 
+![[ingot parts.png|300]]
+
 ## Production of III-V monocrystals
 
 The Czochralski process has to be slightly modified for growing $GaAs$ crystals since $Ga$ and $As$ have different vapor pressures ($As$ would evaporate faster than $Ga$). The solution is to pressurize the chamber and work in an $As$ rich atmosphere. $GaAs$ is than placed under a layer of molten $B_2O_3$ which acts as a seal to suppress evaporation.
@@ -23,7 +25,7 @@ The Czochralski process has to be slightly modified for growing $GaAs$ crystals 
 
 ## Wafer production
 
-After the production of the ingot, a series of steps has to be followed to produce a usable wafer. The first thing to do is to **crop** the extremities of the ingot which contain defects and have a variable diameter. 
+After the production of the ingot, a series of steps has to be followed to produce a usable wafer. The first thing to do is to **crop** the extremities of the ingot which contain defects and have a variable diameter.
 
 ### Inspection
 
@@ -56,7 +58,7 @@ The sawing process produced wafers that can have slight thickness and shape vari
 
 ### Polishing
 
-After lapping the wafers are mechanically flat but not optically flat (shiny). A mirror finish is required because it will allow to achieve better results in lithography and this can be obtained via a chemico-mechanical based polishing. Wafers can be Single Sided Polished (SSP) or Double Sided Polished (DSP).
+After lapping the wafers are mechanically flat but not optically flat (shiny). A mirror finish is required because it will allow to achieve better results in lithography and this can be obtained via a chemico-mechanical based [[Complementary Technologies#Global planarization|polishing]]. Wafers can be Single Sided Polished (SSP) or Double Sided Polished (DSP).
 
 ### Cleaning and marking
 

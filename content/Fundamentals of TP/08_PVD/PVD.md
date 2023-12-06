@@ -6,6 +6,8 @@ Compared to [[#Chemical Vapour Deposition (CVD)|CVD]], where there was a chemica
 
 Thermal evaporation allows to deposit a limited amount of material (mostly metals). The process happens in a vacuum chamber where the material to be deposited is evaporated. The high vacuum allows to increase the **mean free path**, which is the distance travelled by the molecules of the gas before colliding with another molecule. A high mean free path is important because it allows the molecules to propagate in a straight line.
 
+![[thermal evaporation.png|300]]
+
 The vacuum chamber hosts the wafer (which is held upside down to reduce particulates) and a hot crucible that holds the material. The crucible is sealed by a shutter that can be controlled to achieve the right thickness.
 
 Since the vapour travels mostly in straight lines and the wafer is cold (no surface migration), the results are highly unconformal.
@@ -20,15 +22,19 @@ If it not possible to find a suitable material, there are crucibles made from no
 
 ### Advantages and disadvantages
 
-Thermal evaporation has an high deposition rate but it is important to choose the right crucible for the job. Also, not every material can be evaporated: $W$ is nearly impossible, $Mo$ and $Pt$ are extremely difficult.
+Thermal evaporation has an high deposition rate (higher than [[#Sputtering|sputtering]]) but it is important to choose the right crucible for the job. Also, not every material can be evaporated: $W$ is nearly impossible, $Mo$ and $Pt$ are extremely difficult.
 
 ## E-beam evaporation
 
 In e-beam evaporation a conductive filament is heated up to electron emission. Electrons are then accelerated and deviated with a magnetic field to hit the material placed in a crucible (called **liner**). Since the liner is water cooled, there is no risk of contamination and the magnetic deviation separates the electrons from possible contaminants.
 
+![[ebeam evaporation.png|300]]
+
 In industrial setups, one chamber can contain multiple liners, allowing for multiple evaporations without breaking the vacuum. This is extremely important not only for speed, but also to prevent material from oxidizing when they come in contact with air.
 
 Being able to deposit multiple material one after the other can be helpful to exploit the advantages of different materials: for example a gold layer can be used for **passivation** (protection) and an aluminium layer for good conductivity at a lower price.
+
+Apart from being able to evaporate materials without needing to worry about the crucible material, the other advantage of e-beam evaporation is that the liners can host a great amount of material and thus **thick films** can be deposited in one step. 
 
 ## Sputtering
 
@@ -46,7 +52,12 @@ The main limitation of DC sputtering is that only conductive materials can be de
 
 ### RF sputtering
 
-#todo
+RF sputtering solves the issue with dielectric material described above since it prevents the build up of charges on the surface of the target. It also has the side effect of not affecting the ions, whose mass is too high to be affected by fast frequencies.
+
+As a side effect, the process is 50% slower compared to DC sputtering, since the bombarding occurs only when the ions move towards the target.
+
+#todo ??? above
+
 ![[RF sputtering.png|400]]
 ### Conformality and step coverage
 
@@ -78,7 +89,6 @@ For example, if we want to deposit $Al_2 O_3$ we can use oxygen to bombard as al
 
 Ionized sputtering aims at creating a highly **non conformal** layer. 
 
-#todo DC or RF ?
 
 ![[ionized sputtering.png|400]]
 

@@ -8,7 +8,7 @@ Epitaxial layers are also **smoother** than the substrate (which can be needed t
 
 ## Growth regimes
 
-The image shows the boundary between monocrystalline and polycrystalline growth; with exactly the same conditions, just by changing the temperature, the results can vary a lot. We can see that monocrystals require higher temperatures, this is because when the $Si$ atoms hit a cold surface they stick to it (**condensation**), if the surface is hot, on the other hand, they can diffuse and "fill holes", providing a more omogene result. 
+The image shows the boundary between monocrystalline and polycrystalline growth; with exactly the same conditions, just by changing the temperature, the results can vary a lot. We can see that monocrystals require higher temperatures, this is because when the $Si$ atoms hit a cold surface they stick to it (**condensation**), if the surface is hot, on the other hand, they can diffuse and "fill holes", providing a more homogeneous result. 
 
 The plot also shows that monocrystals require more time to be grown at a given temperature.
 
@@ -32,6 +32,11 @@ SiCl_{4} + 2 H_{2} \iff Si + \underbrace{ 4HCl }_{ \text{vented} }
 $$
 It is important to notice that this formula would be the same for both mono and polycrystal deposition, what changes is the temperature.
 
+#### Reactors
+
+We can have different kinds of reactors with different advantages and disadvantages.
+
+![[vpe reactors.svg|500]]
 ### Liquid Phase Epitaxy (LPE)
 
 LPE uses an oversaturated solution containing the material to be deposited. The solution is kept at high temperature to prevent precipitation, the substrate is then placed under it and the temperature is slowly decreased to favour precipitation of the solute on the wafer and allow the epitaxy.
