@@ -34,6 +34,10 @@ This is because the oxidant molecules have to diffuse through the already formed
 
 As stated [[#Surface behavior|before]], the surface orientation of the $Si$ substrate will affect the oxidation time: 111 silicon will oxidize 1.7 times faster compared to 100.
 
+## Oxidation equipment
+
+
+
 ## Modelling thermal oxidation of silicon
 
 > [!error] I'm not too sure about this part, there might be even more mistakes than usual

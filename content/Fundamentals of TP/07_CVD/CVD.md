@@ -38,6 +38,8 @@ Since the chamber is not enclosed, the process can go on continuously, increasin
 
 LPCVD is similar to APCVD but in this case the reaction happens in a sealed environment, increasing uniformity and purity. Because of the low pressure of the gas, the concentration of molecules to be deposited is lower and thus the deposition rate decreases compare to APCVD.
 
+![[LPCVD.png|300]]
+
 ## Plasma generation
 ### DC voltage
 
@@ -57,7 +59,11 @@ It is also possible to introduce a **bias** voltage to accelerate the ions in on
 
 ## Plasma Enhanced CVD (PECVD)
 
-Plasma is used in CVD to force reaction that would not be possible at lower temperatures and deposit ions and free radicals without having to heat the substrate. This is offers more degrees of freedom for **near the end processing**: using high temperature could in fact damage or destroy previous steps.
+![[PECVD.png|300]]
+
+Plasma is used in CVD to force reaction that would not be possible at lower temperatures and deposit ions and free radicals without having to heat the substrate. This is offers more degrees of freedom for **near the end processing**: using high temperature could in fact damage or destroy previous steps. The disadvantage is that plasma can **contaminate** or damage the substrate.
+
+
 
 ![[near end processing.png|500]]
 

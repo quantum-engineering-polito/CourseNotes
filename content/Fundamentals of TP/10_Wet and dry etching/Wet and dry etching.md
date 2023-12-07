@@ -71,6 +71,7 @@ On the other hand, anisotropic etching of $Si$ is more straightforward. The quic
 
 Because of the presence of potassium, this technique cannot be used in microelectronics (in particular CMOS) because potassium can diffuse in the material and alter its electrical properties.
 
+![[aniso wet etching Si.png|300]]
 Since $KOH$ is quite an aggressive alkaline solution, normal resist would not be able to protect the wafer. For this reason, the most employed materials are $SiO_2$ or $Si_3N_4$, which are more durable .
 
 The setup for the process is very simple since it only requires a hot plate, a Pyrex becker and a stirrer (a small magnetic bar covered in Teflon which is spun by and electromagnet) to improve by-product removal.
@@ -173,9 +174,18 @@ The standard processes uses a combination of fluorine ($F$) based chemical compo
 
 The etching step uses $SF_6$ with a substrate bias of 5 to 40 V so that the cations generated in the plasma are accelerated nearly vertically into the substrate being etched. After etching for a short time, the polymerization process is started.
 
-A mixture of $C_4F_8$ (high $C/F$ ratio) and argon is used, and all exposed surfaces (sidewalls and horizontal surfaces) are coated with a Teflon like (polymerized $CF_2$) polymer layer approximately 50 nm thick. If ion bombardment, due to a small applied bias voltage, is used during the polymerization step, the formation of polymer on the horizontal surfaces can essentially be prevented. The etching step is then repeated, and the polymer deposited on the horizontal surfaces is rapidly moved due to the ion bombardment and the presence of reactive fluorine radicals. 
+A mixture of $C_4F_8$ (high $C/F$ ratio) and argon is used, and all exposed surfaces (sidewalls and horizontal surfaces) are coated with a Teflon like (polymerized $CF_2$) polymer layer approximately 50 nm thick. If ion bombardment, due to a small applied bias voltage, is used during the polymerization step, the formation of **polymer on the horizontal surfaces can essentially be prevented**. The etching step is then repeated, and the polymer deposited on the horizontal surfaces is rapidly moved due to the ion bombardment and the presence of reactive fluorine radicals. 
 
 ![[DRIE res.png]]
 
 ## Over-etch estimation
+
+When planning an etching process, it is important to take into account the fact that the **film thickness** and the **etch rate** may not be uniform. This means that we need to over-etch to be sure to remove any leftover film. 
+Obviously the higher the selectivity, the better the results since the substrate would be less affected.
+
+## Endpoint detection
+
+### Laser interferometry
+
+### Optical emission spectroscopy
 

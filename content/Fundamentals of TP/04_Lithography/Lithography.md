@@ -80,6 +80,10 @@ Exposure is the process of providing energy to the resist in the spots selected 
 
 ![[diffraction.excalidraw.png|400]]
 
+## Process flow
+
+#todo
+
 ### Exposure sources
 #### Mercury vapor lamp
 

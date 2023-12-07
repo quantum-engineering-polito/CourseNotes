@@ -48,6 +48,8 @@ Similarly to [[CVD#Plasma Enhanced CVD (PECVD)|PECVD]] there are two variations 
 
 In DC sputtering the substrate is placed at the positive potential and the **target** (the material to be eroded) at the negative. Several hundred volts are applied in order to form a plasma which accelerates the Argon ions. The ions hit the target and dislodge its atoms which fly off and stick to the substrate.
 
+![[DCsputtering.png|400]]
+
 The main limitation of DC sputtering is that only conductive materials can be deposited. This is due to the fact that, if we use a non conductive target, positive charges due to ions would build up on the target's surface, creating an opposing potential that would stop the reaction after a short period.
 
 ### RF sputtering
@@ -75,6 +77,8 @@ Magnetron sputtering aims at improving performances of the two previous methods 
 
 The goal is achieved by introducing a magnetic field perpendicular to the electric field in order to put the electrons in a helical orbit. Since the new orbit will be longer, the electrons will have more chances of hitting an atom and ionizing it.
 
+![[magnetron sputtering.png|400]]
+
 The main disadvantage of this method is that the target is eroded non uniformly (due to the circular paths of the electrons); this can make part of the material unusable (unless "recycled"), increasing the costs.
 
 ### Reactive sputtering
@@ -83,11 +87,13 @@ Reactive sputtering is a technique that can be used both for depositing **dielec
 
 The mechanism is similar to DC sputtering but, in this case, the gas that forms the plasma is reactive and will be incorporated in the newly deposited film.
 
+![[reactive sputtering.png|200]]
+
 For example, if we want to deposit $Al_2 O_3$ we can use oxygen to bombard as aluminium target.
 
 ### Ionized sputtering / HDP sputtering
 
-Ionized sputtering aims at creating a highly **non conformal** layer. 
+Ionized sputtering aims at creating a highly **non conformal** layer. This is done by ionizing the atoms to be deposited so that they follow vertical paths, arriving at the substrate with a minimal deviation.
 
 
 ![[ionized sputtering.png|400]]
@@ -104,6 +110,8 @@ The simplest form uses:
 - An electrode or substrate on which the deposition is desired
 - A counter electrode 
 - An external power supply
+
+![[electroplating setup.png|300]]
 
 When a current flows through the electrolyte:
 1) cations move toward the cathode
