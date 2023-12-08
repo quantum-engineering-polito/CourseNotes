@@ -61,3 +61,7 @@ To further reduce the size and improve the performance, it is possible to use a 
 ![[3D packaging.png|500]]
 
 Instead of using wires to connect different dies, the connection are made through vias built directly in the silicon. This obviously requires a much higher degree of integration between the different components.
+
+---
+
+Read Next [[Complementary Technologies]]

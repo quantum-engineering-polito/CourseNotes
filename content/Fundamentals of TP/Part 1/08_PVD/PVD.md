@@ -137,3 +137,7 @@ Before doing the procedure above, a conductive **seed layer** has to be created 
 | Oxide                | Only if crystalline (maybe)                                           | Yes                               | Same as semiconductors                                                                                            |
 | Conformality         | Medium- High                                                          | Medium, Highest for **ALD**       | Low for **evaporations** (point like source), Medium for **sputtering**, Non conformal for **ionized sputtering** |
 | Temperature of wafer | High                                                                  | Medium, Lower for PECVD           | Low                                                                                                               |
+
+---
+
+Read Next [[Doping]]

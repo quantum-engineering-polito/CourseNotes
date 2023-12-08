@@ -118,3 +118,7 @@ The reaction takes place in a chamber similar to the ones seen for [[Epitaxy#Rea
 Polycrystalline silicon can be obtained through LPCVD and is used as the gate electrode in MOS devices because it is more affordable than $Al$. It can be doped by implantation and diffusion.
 
 The grain size depends on the deposition temperature: hotter deposition leads to larger grain structure (more similar to crystalline silicon), similarly to what happened in [[#Growth regimes|epitaxy]].
+
+---
+
+Read Next [[PVD]]

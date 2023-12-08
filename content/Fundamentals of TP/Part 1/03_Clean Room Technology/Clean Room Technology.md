@@ -47,4 +47,5 @@ Since water is used extensively in washing steps, it is important that it doesn'
 The purity can be evaluated by measuring its electric resistance (good values are 10-18 M$\Omega \cdot$cm).
 
 ---
+
 Read Next [[Lithography]]

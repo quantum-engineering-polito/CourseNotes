@@ -135,3 +135,7 @@ For longer times (thicker oxide) on the other hand, the growth rate is limited b
 Rapid thermal oxidation is a technique used to form thin, high quality oxide layers in a very short time (in the order of a couple of minutes compare to several hours).
 
 This process exploits UV lights to split $O_{2}$ into oxygen radicals $O^{\bullet}$, which are neutral (non ionized) but extremely reactive.
+
+---
+
+Read Next [[Epitaxy]]

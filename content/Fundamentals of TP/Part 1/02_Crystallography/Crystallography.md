@@ -87,4 +87,5 @@ Impurities have an intrinsic solid solubility in the host crystal which varies w
 ![[volumeDislocation.png|200]]
 
 ---
+
 Read Next [[Clean Room Technology]]

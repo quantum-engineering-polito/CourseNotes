@@ -178,3 +178,7 @@ The "cut" is performed by pre-implanting the top wafer with $H^{+}$ just below t
 Finally a [[Complementary Technologies#Global planarization|CMP polish]] is used to finish the SOI surface.
 
 The process provides optimal usage of valuable material by placing the amount of materials needed for electronic functionality on top of a very inexpensive support layer.
+
+---
+
+Read Next [[Wet and dry etching]]

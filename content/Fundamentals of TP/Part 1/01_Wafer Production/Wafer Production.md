@@ -67,4 +67,5 @@ After lapping the wafers are mechanically flat but not optically flat (shiny). A
 After the steps above the wafers can be cleaned with ultra pure deionized water to remove traces of the manufacturing process. In the end they are laser marked for identification purposes.
 
 ---
+
 Read Next [[Crystallography]]

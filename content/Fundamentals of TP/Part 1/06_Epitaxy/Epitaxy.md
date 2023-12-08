@@ -62,3 +62,7 @@ The furnaces are separated by $N_{2}$ cooled walls that keep them thermally isol
 ![[molecular beam epitaxy.png|400]]
 
 Since UHV require a lot of time to be achieved, the main chamber is preceded by a smaller chamber used for loading the substrates without breaking the vacuum in the main chamber.
+
+---
+
+Read Next [[CVD]]

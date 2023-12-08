@@ -233,3 +233,7 @@ The simulations provide a powerful tool to see in advance the effects of a chang
 This other example shows how the post exposure bake reduces the effects of standing waves.
 
 ![[lithography simulation2.png|400]]
+
+---
+
+Read Next [[Silicon Oxidation]]
