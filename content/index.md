@@ -1,5 +1,5 @@
 ---
-title: Welcome to the Quantum Engineering shared notes
+title: Quantum Engineering shared notes
 ---
 
 
