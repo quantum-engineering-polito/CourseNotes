@@ -18,156 +18,79 @@ Sputtering ^UKvlb35Y
 
 %%
 # Drawing
-```json
-{
-	"type": "excalidraw",
-	"version": 2,
-	"source": "https://github.com/zsviczian/obsidian-excalidraw-plugin/releases/tag/1.9.23",
-	"elements": [
-		{
-			"id": "PJ6dslQTAES-c5sk6AaFX",
-			"type": "image",
-			"x": -587.5516052246094,
-			"y": -139.62378692626953,
-			"width": 994.0000000000001,
-			"height": 353,
-			"angle": 0,
-			"strokeColor": "transparent",
-			"backgroundColor": "transparent",
-			"fillStyle": "hachure",
-			"strokeWidth": 1,
-			"strokeStyle": "solid",
-			"roughness": 1,
-			"opacity": 100,
-			"groupIds": [],
-			"frameId": null,
-			"roundness": null,
-			"seed": 614179689,
-			"version": 18,
-			"versionNonce": 319449287,
-			"isDeleted": false,
-			"boundElements": null,
-			"updated": 1698946927467,
-			"link": null,
-			"locked": false,
-			"status": "pending",
-			"fileId": "78ba3e96aa599177ea5ec4a4817f10f5b93ae98b",
-			"scale": [
-				1,
-				1
-			]
-		},
-		{
-			"id": "5A46sqfz",
-			"type": "text",
-			"x": -431.7055358886719,
-			"y": -176.30603790283203,
-			"width": 149.43359375,
-			"height": 32.199999999999996,
-			"angle": 0,
-			"strokeColor": "#1971c2",
-			"backgroundColor": "transparent",
-			"fillStyle": "hachure",
-			"strokeWidth": 1,
-			"strokeStyle": "solid",
-			"roughness": 1,
-			"opacity": 100,
-			"groupIds": [],
-			"frameId": null,
-			"roundness": null,
-			"seed": 1443804393,
-			"version": 43,
-			"versionNonce": 1513673863,
-			"isDeleted": false,
-			"boundElements": null,
-			"updated": 1698946942517,
-			"link": null,
-			"locked": false,
-			"text": "Evaporation",
-			"rawText": "Evaporation",
-			"fontSize": 28,
-			"fontFamily": 2,
-			"textAlign": "left",
-			"verticalAlign": "top",
-			"baseline": 25,
-			"containerId": null,
-			"originalText": "Evaporation",
-			"lineHeight": 1.15
-		},
-		{
-			"type": "text",
-			"version": 93,
-			"versionNonce": 1005264007,
-			"isDeleted": false,
-			"id": "UKvlb35Y",
-			"fillStyle": "hachure",
-			"strokeWidth": 1,
-			"strokeStyle": "solid",
-			"roughness": 1,
-			"opacity": 100,
-			"angle": 0,
-			"x": 46.75528022851562,
-			"y": -176.30603847314458,
-			"strokeColor": "#1971c2",
-			"backgroundColor": "transparent",
-			"width": 127.640625,
-			"height": 32.199999999999996,
-			"seed": 276078279,
-			"groupIds": [],
-			"frameId": null,
-			"roundness": null,
-			"boundElements": [],
-			"updated": 1698946956588,
-			"link": null,
-			"locked": false,
-			"fontSize": 28,
-			"fontFamily": 2,
-			"text": "Sputtering",
-			"rawText": "Sputtering",
-			"textAlign": "left",
-			"verticalAlign": "top",
-			"containerId": null,
-			"originalText": "Sputtering",
-			"lineHeight": 1.15,
-			"baseline": 25
-		}
-	],
-	"appState": {
-		"theme": "light",
-		"viewBackgroundColor": "#ffffff",
-		"currentItemStrokeColor": "#1971c2",
-		"currentItemBackgroundColor": "transparent",
-		"currentItemFillStyle": "hachure",
-		"currentItemStrokeWidth": 1,
-		"currentItemStrokeStyle": "solid",
-		"currentItemRoughness": 1,
-		"currentItemOpacity": 100,
-		"currentItemFontFamily": 2,
-		"currentItemFontSize": 28,
-		"currentItemTextAlign": "left",
-		"currentItemStartArrowhead": null,
-		"currentItemEndArrowhead": "arrow",
-		"scrollX": 1193.590087890625,
-		"scrollY": 565.3386840820312,
-		"zoom": {
-			"value": 1
-		},
-		"currentItemRoundness": "round",
-		"gridSize": null,
-		"gridColor": {
-			"Bold": "#C9C9C9FF",
-			"Regular": "#EDEDEDFF"
-		},
-		"currentStrokeOptions": null,
-		"previousGridSize": null,
-		"frameRendering": {
-			"enabled": true,
-			"clip": true,
-			"name": true,
-			"outline": true
-		}
-	},
-	"files": {}
-}
+```compressed-json
+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=
 ```
 %%

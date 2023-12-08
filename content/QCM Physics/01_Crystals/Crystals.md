@@ -1,5 +1,7 @@
+# Crystals
 
 ![[Crystallography#Types of solids]]
+
 ## Bravais lattice
 
 A **Bravais lattice** can be defined in two ways. The informal definition states that a lattice is a Bravais lattice if any point is equivalent to any other in terms of symmetry and relations to the other point (i.e. if I am on a point and then move to another point I cannot tell the difference).
