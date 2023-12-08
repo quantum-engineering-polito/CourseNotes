@@ -10,7 +10,7 @@ import { QuartzPluginData } from "../plugins/vfile"
 const defaultOptions = {
   title: "Explorer",
   folderClickBehavior: "collapse",
-  folderDefaultState: "collapsed",
+  folderDefaultState: "open",
   useSavedState: true,
   sortFn: (a, b) => {
     // Sort order: folders first, then files. Sort folders and files alphabetically

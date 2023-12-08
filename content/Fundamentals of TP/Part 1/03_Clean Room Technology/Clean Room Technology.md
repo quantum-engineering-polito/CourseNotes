@@ -45,3 +45,6 @@ Usually three kinds of filters are used to clean the air: the first step is usin
 
 Since water is used extensively in washing steps, it is important that it doesn't contain particulates or contaminants; before being used it has to pass through a series of filters (ion-exchange resins and active carbons) to remove salts and organic materials. 
 The purity can be evaluated by measuring its electric resistance (good values are 10-18 M$\Omega \cdot$cm).
+
+---
+Read Next [[Lithography]]

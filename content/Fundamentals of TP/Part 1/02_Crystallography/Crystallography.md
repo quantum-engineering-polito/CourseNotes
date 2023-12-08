@@ -85,3 +85,6 @@ Lower temperature during the deposition process tend to create smaller grains an
 Impurities have an intrinsic solid solubility in the host crystal which varies with temperature; usually solid solubility decreases with decreasing temperature, so if impurities are introduced at maximum concentration for a certain T, when T is lowered some impurities (the excess respect to the solid solubility at that temperature) can precipitate and form local conglomerates. The volume of the crystal in that region can drastically change and this causes **volume dislocations**.
 
 ![[volumeDislocation.png|200]]
+
+---
+Read Next [[Clean Room Technology]]
