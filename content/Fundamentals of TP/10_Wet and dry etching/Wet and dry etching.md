@@ -71,7 +71,7 @@ On the other hand, anisotropic etching of $Si$ is more straightforward. The quic
 
 Because of the presence of potassium, this technique cannot be used in microelectronics (in particular CMOS) because potassium can diffuse in the material and alter its electrical properties.
 
-![[aniso wet etching Si.png|300]]
+![[aniso wet etching Si.png|30]]
 Since $KOH$ is quite an aggressive alkaline solution, normal resist would not be able to protect the wafer. For this reason, the most employed materials are $SiO_2$ or $Si_3N_4$, which are more durable .
 
 The setup for the process is very simple since it only requires a hot plate, a Pyrex becker and a stirrer (a small magnetic bar covered in Teflon which is spun by and electromagnet) to improve by-product removal.

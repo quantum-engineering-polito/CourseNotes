@@ -17,6 +17,32 @@ and so on.
 
 Use `**bold text**` for **bold text**, `*italic text*` for *italic text* and `==highlighted text==` for ==highlighted text==.
 
+## Lists
+
+Unnumbered lists can be created like this:
+
+```
+1) Item 1
+2) Item 2
+3) Item 3
+```
+
+1) Item 1
+2) Item 2
+3) Item 3
+
+While numbered lists like this:
+
+```
+- Item 1
+- Item 2
+- Item 3
+```
+
+- Item 1
+- Item 2
+- Item 3
+
 ## Links
 
 Links in obsidian have the following format `[[random link]]` and are rendered as follows:
@@ -27,10 +53,10 @@ You can change the text shown by adding a pipe `|` followed by the text you want
 
 You can have the following types of links:
 
-- Link to another note: [[Doping]] written as `[[Doping]]`
-- Link to a header of this note: [[#Text decoration]] written as `[[#Text decoration]]`
-- Link to a section of this note: [[#^ed057f]] (the tag is added automatically by obsidian, you just need to write `[[^]]` and select the correct block from the popup menu)
-- Link to a section of another note: you can combine the previous links as follows [[Wet and dry etching#^0fa6e1]] 
+- **Link to another note**: [[Doping]] written as `[[Doping]]`
+- **Link to a header of this note**: [[#Text decoration]] written as `[[#Text decoration]]`
+- **Link to a section of this note**: [[#^ed057f]] (the tag is added automatically by obsidian, you just need to write `[[^]]` and select the correct block from the popup menu)
+- **Link to a section of another note**: you can combine the previous links as follows [[Wet and dry etching#^0fa6e1]] 
 ## Transclusion
 
 You can embed an entire document of part of it in another note by adding an exclamation mark `!` before the correct link, for example `![[#Text decoration]]` will appear as:
@@ -72,5 +98,38 @@ You can also use the plugin's toolbar on the right to edit the table:
 ![[advanced tables toolbar.png|300]]
 ## $\LaTeX$
 
+Latex blocks can be inserted inline by placing the content between two `$` signs like this: `$\int_{-\infty}^{+\infty} f(x) \, dx$` will be rendered as: $\int_{-\infty}^{+\infty} f(x) \, dx$
+
+If you want to place the latex formula in a separate block you need two `$` signs like this: 
+
+```
+$$
+\int_{-\infty}^{+\infty} f(x) \, dx 
+$$
+```
+
+will be rendered as:
+$$
+\int_{-\infty}^{+\infty} f(x) \, dx 
+$$
+
+
+If you use the "Latex Suite" plugin you can find all the shortcuts in the plugin settings. For example you can type `@a` and it will be converted to `\aplha`, or type `Rvec` to get `\vec{R}`.
+
+Check the[plugin documentation](https://github.com/artisticat1/obsidian-latex-suite) for more information.
+
 ## Excalidraw
+
+Excalidraw drawings can be created using the "Excalidraw plugin" and should be placed in the `attachments/excalidraw` folder of the current file.
+
+To create a drawing right click on the folder and select "Create new drawing". 
+
+When saving the drawing a `.svg` file with the same name will be created automatically. This is the file that should be [[#Transclusion|transcluded]] in the note.
+
+> [!warning] Don't transclude the excalidraw drawing itself, only the `svg`
+
+To add Latex to a drawing press `CTRL+SHIFT+L` or search for "Excalidraw: Insert LaTeX formula" in the **Command palette**.
+
+>[!tip] Command palette
+>You can open the command palette by pressing `CTRL+SHIFT+P` or by selecting the `>_` icon in the left bar
 
