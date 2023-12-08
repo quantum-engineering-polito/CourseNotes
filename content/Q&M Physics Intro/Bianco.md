@@ -55,7 +55,7 @@ $$
 
 Since the choice of the vector $\vec{a}_{i}$ is not univocal, there is an infinite number of both unit and primitive cells. We are mostly interested in the **Wigner-Seitz cell**.
 
-![[QCMP Lectures#Wigner-Seitz cell]]
+![[Crystals#Wigner-Seitz cell]]
 
 min 56
 
