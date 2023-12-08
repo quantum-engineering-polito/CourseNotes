@@ -1,6 +1,6 @@
 Packaging is the process that transforms the finished wafer into a finished product by adding the necessary electrical connections and some enclosure that protects the delicate components.
 
-## Steps
+# Steps
 
 First of all the an electronic map of all dies (chips) on the wafer is created (white marking) and the after a basic electric test the defective dies are marked so that they can be discarded later. After this step the wafer is **sawn** to separate the dies from each other.  
 
@@ -10,7 +10,7 @@ After that the package can be fully enclosed; the method depends on the material
 
 Finally a test is performed to make sure that they fully functional.
 
-## Functions of packaging
+# Functions of packaging
 
 Packaging serves many purposes such as:
 
@@ -19,13 +19,13 @@ Packaging serves many purposes such as:
 - Dissipating heat
 - Protecting the die from mechanical, chemical and electromagnetic concerns
 
-## Package types
+# Package types
 
 There are multiple types of packaging types, classified depending on a number of parameters such as the **connection density** (the number of connections per unit area), the number of leads lines, etc.
 
 ![[connection density.svg|500]]
 
-## Flip chip bonding
+# Flip chip bonding
 
 One of the main issues with wire bonding is that wires are relatively long and thus can behave as parasitic components. For this reason there is a special types of packaging that uses flip chip bonding to minimize the distance between the die and the leads.
 
@@ -35,7 +35,7 @@ In flip chip bonding the die is placed upside down on the package substrate and 
 
 ![[flip chip 1.png|400]]
 
-## Multi chip modules
+# Multi chip modules
 
 Multi chip modules, also called SoC (System on Chip) is a solution that solves the need for high connection density, high performance devices. This is possible thanks to the fact that multiple dies are bonded to a single substrate, minimizing the need for individual packages that would need to be connected by large PCBs.
 
@@ -50,7 +50,7 @@ By **efficiency** we mean the density of chip packaging is determined by the rat
 
 The main drawback of MCMs is the fact that the device becomes less and less reparable since it's components are no longer independent. The advantages, on the other hand, are multiple: the space efficiency is increased, the parasitic components are reduced and thus performances are increased.
 
-## 3D packaging
+# 3D packaging
 
 3D packaging is a further improvement of MCMs that tries to satisfy the requirements for high performance systems.
 

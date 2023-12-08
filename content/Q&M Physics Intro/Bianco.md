@@ -1,22 +1,22 @@
-## Solid state physics
+# Solid state physics
 
 Solid state physics is the study of the state of the matter in which a large number of atoms ($\sim N_{A}$) are chemically bound to form an **ordered** form in the 3D space. We will have to deal with the forces between the atoms (the type of bonding) and the spatial ordering (the crystalline lattice).
 
 We will not deal with amorphous materials.
 
-### Single atoms
+## Single atoms
 
 In single atoms electrons leave in radially symmetric potentials (orbitals) indicated by a number and a letter, such as 1s, 2s, 2p, etc.
 
 The numbers represent the **principal quantum number** $n$ and the letters represent the **orbital angular momentum** $l$. We also have the **magnetic quantum number** $m$ ($-l \leq m \leq l$).
 
-### Multiple atoms
+## Multiple atoms
 
 If multiple single atoms are gradually brought closer to each other, we have an interaction between different orbitals which causes the **splitting** of energetic levels. This is, in turn, associated with the formation of **energy bands**.
 
 #todo add plot and explain
 
-### Types of bonding
+## Types of bonding
 
 - **Covalent**: the electrons are shared only between neighbouring atoms and the bond is typically directional.
 - **Metallic**: the electrons are shared over many atoms and the bond is typically non directional.
@@ -27,7 +27,7 @@ We also have weaker types of bonding:
 - **Hydrogen**: similar to ionic bonding but without the actual donation of electrons. We have the formation of partially charged regions.
 - **Van Der Waals**: #todo 
 
-## Crystals
+# Crystals
 
 An ideal crystal has an infinite number of repetitions in 3 dimensions of the same structural unit. 
 

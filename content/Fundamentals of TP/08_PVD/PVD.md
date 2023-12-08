@@ -2,7 +2,7 @@ In physical vapour deposition a film is grown on the substrate by the **condensa
 
 Compared to [[#Chemical Vapour Deposition (CVD)|CVD]], where there was a chemical bonding of the film to the substrate, in PVD there is only a physical bonding: the material "sticks" to the **cold surface**.
 
-## Thermal evaporation
+# Thermal evaporation
 
 Thermal evaporation allows to deposit a limited amount of material (mostly metals). The process happens in a vacuum chamber where the material to be deposited is evaporated. The high vacuum allows to increase the **mean free path**, which is the distance travelled by the molecules of the gas before colliding with another molecule. A high mean free path is important because it allows the molecules to propagate in a straight line.
 
@@ -14,17 +14,17 @@ Since the vapour travels mostly in straight lines and the wafer is cold (no surf
 
 ![[thermal evaporation conformality.png|400]]
 
-### Crucible selection
+## Crucible selection
 
 Since the crucible is in direct contact with the material, it is important to select a crucible that will not react with it. Moreover, the crucible has to be conductive since it is heated by Joule effect; the most common choices are $W$, $Ta$, $Mo$ and $C$.
 
 If it not possible to find a suitable material, there are crucibles made from non conductive refractive material (ceramics) that contain a metal wire that heats up.
 
-### Advantages and disadvantages
+## Advantages and disadvantages
 
 Thermal evaporation has an high deposition rate (higher than [[#Sputtering|sputtering]]) but it is important to choose the right crucible for the job. Also, not every material can be evaporated: $W$ is nearly impossible, $Mo$ and $Pt$ are extremely difficult.
 
-## E-beam evaporation
+# E-beam evaporation
 
 In e-beam evaporation a conductive filament is heated up to electron emission. Electrons are then accelerated and deviated with a magnetic field to hit the material placed in a crucible (called **liner**). Since the liner is water cooled, there is no risk of contamination and the magnetic deviation separates the electrons from possible contaminants.
 
@@ -36,7 +36,7 @@ Being able to deposit multiple material one after the other can be helpful to ex
 
 Apart from being able to evaporate materials without needing to worry about the crucible material, the other advantage of e-beam evaporation is that the liners can host a great amount of material and thus **thick films** can be deposited in one step. 
 
-## Sputtering
+# Sputtering
 
 Sputtering is a technique that consists in bombarding the material we want to deposit (the target) with ions or atoms with high kinetic energy (usually $Ar^{+}$). The ions are accelerated by a plasma.
 
@@ -44,7 +44,7 @@ The advantage of sputtering is that the it has no limitations on the materials t
 
 Similarly to [[CVD#Plasma Enhanced CVD (PECVD)|PECVD]] there are two variations of sputtering based on the type of voltage used.
 
-### DC sputtering
+## DC sputtering
 
 In DC sputtering the substrate is placed at the positive potential and the **target** (the material to be eroded) at the negative. Several hundred volts are applied in order to form a plasma which accelerates the Argon ions. The ions hit the target and dislodge its atoms which fly off and stick to the substrate.
 
@@ -52,7 +52,7 @@ In DC sputtering the substrate is placed at the positive potential and the **tar
 
 The main limitation of DC sputtering is that only conductive materials can be deposited. This is due to the fact that, if we use a non conductive target, positive charges due to ions would build up on the target's surface, creating an opposing potential that would stop the reaction after a short period.
 
-### RF sputtering
+## RF sputtering
 
 RF sputtering solves the issue with dielectric material described above since it prevents the build up of charges on the surface of the target. It also has the side effect of not affecting the ions, whose mass is too high to be affected by fast frequencies.
 
@@ -61,7 +61,7 @@ As a side effect, the process is 50% slower compared to DC sputtering, since the
 #todo ??? above
 
 ![[RF sputtering.png|400]]
-### Conformality and step coverage
+## Conformality and step coverage
 
 Compared to evaporation, sputtering is **more conformal** since the source of the material is wider (in evaporation it was point like). This makes the particles arrive at the substrate with different angles so that they can "fill" even tighter areas.
 
@@ -71,7 +71,7 @@ Since the substrate is kept cold, the atoms that hit its surface stick immediate
 
 ![[sputtering step coverage.png|400]]
 
-### Magnetron sputtering
+## Magnetron sputtering
 
 Magnetron sputtering aims at improving performances of the two previous methods increasing the **ionization degree** of the atoms in the plasma. By increasing the ionization degree (the number of atoms ionized) it is in fact possible do deposit more material at a given pressure. This also means that it is possible to maintain the deposition time constant decreasing the pressure (and thus reducing contamination).
 
@@ -81,7 +81,7 @@ The goal is achieved by introducing a magnetic field perpendicular to the electr
 
 The main disadvantage of this method is that the target is eroded non uniformly (due to the circular paths of the electrons); this can make part of the material unusable (unless "recycled"), increasing the costs.
 
-### Reactive sputtering
+## Reactive sputtering
 
 Reactive sputtering is a technique that can be used both for depositing **dielectric materials** and for adjusting the **stoichiometry** of the deposited material. 
 
@@ -91,7 +91,7 @@ The mechanism is similar to DC sputtering but, in this case, the gas that forms 
 
 For example, if we want to deposit $Al_2 O_3$ we can use oxygen to bombard as aluminium target.
 
-### Ionized sputtering / HDP sputtering
+## Ionized sputtering / HDP sputtering
 
 Ionized sputtering aims at creating a highly **non conformal** layer. This is done by ionizing the atoms to be deposited so that they follow vertical paths, arriving at the substrate with a minimal deviation.
 
@@ -125,7 +125,7 @@ Before doing the procedure above, a conductive **seed layer** has to be created 
 
 ![[electroplating.png|500]]
 
-## Comparison with Epitaxy and CVD
+# Comparison with Epitaxy and CVD
 
 |                      | Epitaxy                                                               | CVD                               | PVD                                                                                                               |
 | -------------------- | --------------------------------------------------------------------- | --------------------------------- | ----------------------------------------------------------------------------------------------------------------- |

@@ -6,7 +6,7 @@ Epitaxy can be used for multiple reasons such as adding a layer with different d
 
 Epitaxial layers are also **smoother** than the substrate (which can be needed to deposit a smooth layer on a rough substrate) and **less contaminated**.
 
-## Growth regimes
+# Growth regimes
 
 The image shows the boundary between monocrystalline and polycrystalline growth; with exactly the same conditions, just by changing the temperature, the results can vary a lot. We can see that monocrystals require higher temperatures, this is because when the $Si$ atoms hit a cold surface they stick to it (**condensation**), if the surface is hot, on the other hand, they can diffuse and "fill holes", providing a more homogeneous result. 
 
@@ -14,11 +14,11 @@ The plot also shows that monocrystals require more time to be grown at a given t
 
 ![[growth regimes.png|400]]
 
-## Epitaxial techniques
+# Epitaxial techniques
 
 Epitaxial techniques can be divided according to the **mother phase** (the environment where we introduce the element for epitaxy).
 
-### Vapour Phase Epitaxy (VPE)
+## Vapour Phase Epitaxy (VPE)
 
 VPE uses gaseous precursors which contain the gas to be deposited and a carrier gas. 
 
@@ -32,16 +32,16 @@ SiCl_{4} + 2 H_{2} \iff Si + \underbrace{ 4HCl }_{ \text{vented} }
 $$
 It is important to notice that this formula would be the same for both mono and polycrystal deposition, what changes is the temperature.
 
-#### Reactors
+## Reactors
 
 We can have different kinds of reactors with different advantages and disadvantages.
 
 ![[vpe reactors.svg|500]]
-### Liquid Phase Epitaxy (LPE)
+## Liquid Phase Epitaxy (LPE)
 
 LPE uses an oversaturated solution containing the material to be deposited. The solution is kept at high temperature to prevent precipitation, the substrate is then placed under it and the temperature is slowly decreased to favour precipitation of the solute on the wafer and allow the epitaxy.
 
-#### Reactor
+## Reactor
 
 The LPE reactor consists in a crucible hosts one or more wells which contain the mother phase. To start the process a substrate is slid under the well and the temperature is lowered. To stop the process, on the other hand, the substrate is removed from under the well.
 
@@ -49,7 +49,7 @@ The LPE reactor consists in a crucible hosts one or more wells which contain the
 
 To avoid oxidation of the solution and the substrate, the process happens under a flux of purified $H_{2}$.
 
-### Molecular Beam Epitaxy (MBE)
+## Molecular Beam Epitaxy (MBE)
 
 In MBE the mother phase is in **molecular flux conditions** (a gas at very low pressure where the molecules never collide with each other).
 

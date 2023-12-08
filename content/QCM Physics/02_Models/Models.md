@@ -1,5 +1,5 @@
 
-## Free and independent electron model
+# Free and independent electron model
 
 - **Independent**: neglect interaction between electrons (Coulomb repulsion)
 - **Free**: assume that the potential $V = 0$
@@ -70,7 +70,7 @@ p = \hbar \cdot k \qquad
 \end{cases}
 $$
 
-### Density of states (DOS)
+# Density of states (DOS)
 
 The density of states $D(E)$ is defined as follows: ^9c22fc
 
@@ -115,7 +115,7 @@ $$
 
 ![[De.png|400]]
 
-### Fermi-Dirac distribution
+## Fermi-Dirac distribution
 
 Fermi-Dirac distribution gives the probability of a given quantum state of energy of being occupied at a given temperature.
 
@@ -132,7 +132,7 @@ $$
 ![[fermidirac.excalidraw.png|400]]
 We can see that this model cannot correctly represent materials such as insulators or semi conductors.
 
-## Independent electrons model
+# Independent electrons model
 
 This model improves the previous one by dropping the "free electrons" assumption. This implies that in this case the potential is periodic: 
 
@@ -158,7 +158,7 @@ For a periodic potential, the SE is
 $$
 - \frac{\hbar^{2}}{2m} \nabla^{2} \Psi(\bar{r}) + V(\bar{r}) \Psi(\bar{r}) = E \Psi(\bar{r})
 $$
-### Bloch theorem
+## Bloch theorem
 
 $$
 \displaylines{
@@ -252,7 +252,7 @@ this resembles a $\bar{G}$ vector but we have to remember that $n_{\text{dir}}/N
 
 From the drawing we can see that along the $x$ direction there are $N_{1}$ allowed $\bar{k}$ vector. Since the Brillouin zone has the same area as the green one (which is a primitive cell of the reciprocal lattice), both of them can fit $N_{tot} = N_{1} N_{2} N_{3}$ $\bar{k}$ vectors.
 
-### Property of the Bloch state
+## Property of the Bloch state
 
 $$
 \Psi_{\bar{k} + \bar{G}} = \Psi_{\bar{k}}(\bar{r}) \qquad (4)
@@ -278,7 +278,7 @@ In the drawing above the energy bands are represented only between $- \pi / a_{1
 
 It is important ot notice that, differently from the [[#Independent and free electron model|free electron model]] here the energy does not go continuously from $-\infty$ to $+\infty$ and thus the behavior of semiconductors and insulators can be explained.
 
-#### Example
+### Example
 
 Let's consider the case of a solid made out of cells with only 1 atom with 1 electron.
 
@@ -312,7 +312,7 @@ It is important to notice that the effective mass depends on the direction, sinc
 
 If the crystal is isotropic the effective mass does not depend on the direction.
 
-## Effective mass and energy
+# Effective mass and energy
 
 The plots below show a representation of two energy bands (in blue) and the relative effective mass associated to them (in red).
 
@@ -332,7 +332,7 @@ Near the maximum and minimum regions, the bands can be approximated with a parab
 
 %% inserire disegno e altre info %%
 
-## Substitutional impurities in semiconductors
+# Substitutional impurities in semiconductors
 
 Defects usually generate a new state in the energy gap, this is the case with doping (which is a substitutional impurity).
 

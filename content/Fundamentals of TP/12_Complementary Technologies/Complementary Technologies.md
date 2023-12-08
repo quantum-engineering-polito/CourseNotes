@@ -1,4 +1,4 @@
-## Bulk micromachining
+# Bulk micromachining
 
 Bulk micromachining is a process that consists in the **selective removal** of the bulk substrate to release suspended 3D structures. These structures are made of the same bulk material or of a thin film applied to it.
 
@@ -8,13 +8,13 @@ Bulk micromachining uses the same techniques seen in [[Wet and dry etching|wet a
 
 ![[bulk microm.png|400]]
 
-### P++ etch stop
+## P++ etch stop
 
 To stop the etching process, it is possible to create a heavily doped p region (darker in the image below), which etches really slowly compared to lightly doped or undoped silicon. The most selective etchant for this purpose is EDP.
 
 ![[p++ etch stop.png|200]]
 
-### Electrochemical etch stop
+## Electrochemical etch stop
 
 Electrochemical etch stop is another etch stop technique used in wet etching. 
 The process combines two effects: the first one is the fact that silicon oxidizes if a current flows through it, the second one is the fact that the etchant used has a high selectivity and doesn't etch $SiO_2$.
@@ -24,7 +24,7 @@ The etch stop is provided by the use of a reverse biased p-n junction which stop
 ![[electrochemical etch stop.png|600]]
 The setup consists in an acid bath ($KOH$) where the wafer is submerged. Differently from what happened in classical wet etching, in this case the wafer is protected by an enclosure which prevent the etchant from reaching unwanted sides. Moreover the n side of the wafer is connected to the positive end of a voltage generator such that the p-n junction is revers biased, the other end is connected to a counter electrode; this makes sure that the circuit remains an open circuit. As time passes the p substrate is etched away and the process continues as long as the etchant reaches the n layer. At this moment there is nothing stopping the current flow (no more p-n junction) and the n layer of silicon oxidizes stopping the reaction.
 
-## Surface micromachining
+# Surface micromachining
 
 Surface micromachining is a technique that is used to form suspended microstructures out of thin layers of different materials.
 Compared to bulk micromachining this technique is more involved but also more versatile and it can provide better resolution.
@@ -36,7 +36,7 @@ A key component that is required to perform surface micromachining are **sacrifi
 
 Surface micromachining is often used to create MEMS.
 
-### Selection of materials and etchants
+## Selection of materials and etchants
 
 For what concerns the etchant it is obviously important to choose the one with the proper trade off between **etch rate** and **selectivity**. It is also important to select the right **deposition temperature** for the various layers that make up the structure. This consideration does not concern the sacrificial layer since it will be removed anyway.
 For optical applications it is also important to evaluate the surface **smoothness** left by the process.
@@ -45,11 +45,11 @@ The last important thing to take into account is the **intrinsic stress** of the
 
 ![[internal stress.png|400]]
 
-### Evaporation drying
+## Evaporation drying
 
 #todo 
 
-### Release stiction
+## Release stiction
 
 Another issue that can arise from the rinsing step is the fact that the microstructures can stick to the substrate due to **Van der Waals** forces and **hydrogen bonding** that cause the formation of a liquid **meniscus**. This is not an issue if the structures can be released after drying but this is not always the case.
 
@@ -72,7 +72,7 @@ The last solution is to avoid wet etching altogether and used vapor **phase etch
 
 ![[stiction drying.svg|500]]
 
-## Wafer bonding
+# Wafer bonding
 
 Wafer bonding is a technique used to stick two or more wafers one on top of the other to create complex mechanical systems that couldn't be build in other ways. It is possible for example to create motors, sensors, pumps and so on but also for [[Packaging|packaging]].
 
@@ -90,7 +90,7 @@ In all the cases it is fundamental to correctly prepare the surface before proce
 
 ![[bonding defects.png|400]]
 
-### Fusion (or direct) bonding
+## Fusion (or direct) bonding
 
 Fusion bonding is used to bond together silicon based wafers (e.g. $Si/Si$, $Si/SiO_2$, $SiO_2/SiO_2$). 
 
@@ -102,7 +102,7 @@ The process is simple and uses high temperatures and high pressures to bring the
 
 Since high temperature are involved, this method should not be used for wafers with temperature sensitive devices.
 
-### Anodic bonding
+## Anodic bonding
 
 The field assisted glass-silicon sealing, also referred to as anodic bonding, is a process which permits the sealing of **silicon to glass** well below the softening point of the glass. For the method to work properly, the two surfaces must have a surface roughness of less than 0.1 $\mu$m so that they can properly bond.
 
@@ -114,7 +114,7 @@ The main limitation of this method is that it requires the two material to have 
 
 Even though the temperature is lower compared to the previous case and there is no external load, the conditions are still very harsh and thus the process is not suitable for wafers with active components.
 
-#### Working principle
+## Working principle
 
 The mechanism involved in the bonding process is attributed to mobile **positive ions** in the glass whose mobility is increased by the elevated temperature. 
 The ions are attracted towards the cathode placed on the glass and this forms a negative charged region at the glass-silicon interface which pulls the two surfaces together, acting as the external load in the fusion bonding.
@@ -122,7 +122,7 @@ The ions are attracted towards the cathode placed on the glass and this forms a 
 ![[anodic bonding working.png|400]]
 It is important to constantly monitor the current to detect when the bond is complete and avoid breakdown.
 
-### Glass frit bonding
+## Glass frit bonding
 
 This technique is different from the other two since it uses a sort of "glue" to bond the two surface together. This allows for lower temperature bonding (as low as 160$^{\circ}$C) but provides a less effective bond.
 The "glue" used is a low melting point glass layer (the glass frit).
@@ -131,7 +131,7 @@ The fact that a external material is used to bind the two surfaces together has 
 
 ![[glass frit.png|300]]
 
-## Micro injection molding
+# Micro injection molding
 
 Micro injection moulding is a replication technique used to reproduce many pieces from a mould insert. The most used materials are **thermoplastics** such as PMMA, PVC and ABS but they can also be mixed with metals or ceramics to form sintered parts.
 
@@ -139,13 +139,13 @@ The process works similarly to classical injection molding: the thermoplastic is
 
 ![[micro injection moulding.jpg|400]]
 
-## Hot embossing
+# Hot embossing
 
 Hot embossing is a technique similar to the previous one in the sense that it uses thermoplastic to form features according to a mold. In this case though the plastic is not injected but is heated just above its glass transition in place and pressed between the edged of the mold itself.
 
 ![[hot embossing.png|200]]
 
-## In situ casting
+# In situ casting
 
 In situ casting is a method to form high resolution molds starting from a polymer such as Polydimethyl-siloxane (PDMS). PDMS is a flexible silicon which is cheap and easy to use.
 
@@ -153,7 +153,7 @@ The method to produce the cast consists in weighting the proper amounts of the c
 
 ![[PDMS.png|300]]
 
-## Global planarization
+# Global planarization
 
 Global planarization is the technique that we saw in [[Wafer Production#Polishing|wafer production]] and it uses **Chemical Mechanical Polishing** (CMP).
 
@@ -168,7 +168,7 @@ The important parameters of the process are:
 - The **etchant concentration**
 - The **grain size** of the slurry
 
-## Laser machining
+# Laser machining
 
 Laser machining is a non contact technique that doesn't produce internal stress in the processed material.
 
@@ -181,7 +181,7 @@ The laser source must be properly chosen, so that the wavelength is absorbed by 
 ![[laser machining.png|200]]
 
 The main drawback of this technique is the fact that the process is slow and the machinery is expensive but this is compensated for by the fact that there is almost no limitation in materials, shapes and size of the features (compared to classical machining).
-## Additive manufacturing
+# Additive manufacturing
 
 Additive manufacturing is a process in which a digital 3D design is transformed into a physical object by building up multiple layers of some particular material. In order to do this, the design has to be virtually **sliced** so that a machine can lay the layers one on top of the other accordingly.
 
@@ -189,7 +189,7 @@ It is important to note that the final object will not be a perfect replica of t
 
 ![[Additive manufacturing.png|300]]
 
-### Micro stereolithography
+## Micro stereolithography
 
 In this process object are fabricated by building up hundreds of layers of hardened resin.
 
@@ -199,7 +199,7 @@ Due to the sequential nature of the process, its applications are limited to pro
 
 ![[microstereolithography.png|300]]
 
-### Inkjet printing
+## Inkjet printing
 
 This technique is similar to the previous one (the object is built layer by layer), but in this case the layers are created by **droplets of polymer** dropped by the nozzles of a moving head. Similarly to the previous example, the resin has to be cured by a UV lamp after being deposited.
 
@@ -210,7 +210,7 @@ In contrast to conventional stereolithography, where lightweight supports are on
 
 ![[inkjet.png|300]]
 
-### Two photon polymerization (2PP)
+## Two photon polymerization (2PP)
 
 For two photons absorption to occur, photons must be present in sufficiently high concentration to drive a transition via a very short-lived (fs) intermediate virtual state to the excited state having energy roughly equal to twice that of the excitation wavelength (E = h$\nu$). 
 

@@ -4,7 +4,7 @@ The most used atoms to dope $Si$ are $P$, $As$ and $B$ since they have greater s
 
 Doping silicon can change its conductivity by 8 orders of magnitude but can also alter its resistance to etching and its mechanical properties. ^84121a
 
-## Methods
+# Methods
 
 The two main methods for doping are **diffusion** and **implantation**.
 
@@ -16,7 +16,7 @@ In implantation, on the other hand, the substrate is bombarded with dopant atoms
 
 ![[implantation.png|300]]
 
-## Doping parameters
+# Doping parameters
 
 To fully identify a doping process we need 3 parameters:
 
@@ -25,13 +25,13 @@ To fully identify a doping process we need 3 parameters:
 3) Junction depth $x_{j}$ measure in $nm$ or $\mu m$. The junction depth represent  the intersection of $N(x,t)$ with the **background concentration** $N_{B}$. Considering for example a n-type doped substrate (see the [[#^649cfb|CZ process]]), $x_{j}$ represents the depth at which the overall doping is neutral.
 
 ![[doping parameters.svg|400]]
-## Ion implantation
+# Ion implantation
 
 Implantation consists in introducing desired atoms or impurities into the substrate in a controlled manner using a ionic beam.
 
 A high voltage is used to accelerate the ionized dopants toward the substrate at sufficiently high speed and energies so that they can be *implanted* below the surface. (If the energy is too high we obtain the same effect of [[#Sputtering|sputtering]]). Thanks to the way the process is performed, it is possible to achieve an **instant on/instant off** control; this, with the help of *in situ* monitoring, can allow for a better control of the implanted dose.
 
-### Implanter
+## Implanter
 
 ![[implanter.svg|700]]
 
@@ -47,14 +47,14 @@ $$
 
 where $n$ is the number of charges per ion. 
 
-## Gaussian approximation
+# Gaussian approximation
 
 Implantation can be studied as a random process which follows a Gaussian distribution: the more the dopant atoms penetrate into the substrate, the more random their path becomes. This can be represented in the following way: 
 
 ![[dopant distribution.svg|500]]
 The plot has the **depth** on the horizontal axis and the concentration of dopant on the vertical axis. The depth at which the maximum concentration (**peak concentration**) is reached, is called **range of implant** or **projected range** and the "width" (or more properly the standard deviation) of the distribution around it is called **vertical straggle**. As we will see later, increasing the range of implant increases the vertical straggle.
 
-### Junction depth
+## Junction depth
 
 Another important parameter of the implantation process, which is not shown in the plot above, is the junction depth, which is the depth at which the concentration of implanted dopant atoms equals the substrate background concentration of dopant atoms. It can be seen as the "line" between the *n* and the *p* parts.
 
@@ -64,7 +64,7 @@ $C_{b}$ are the background doping and depending on the case we can have one or t
 
 If we vary the energy properly we can "sweep" the gaussian to obtain a mostly constant concentration.
 
-## Control parameters
+# Control parameters
 
 When planning an implantation process, there are multiple factors that have to be taken into consideration to achieve the desired results:
 
@@ -74,20 +74,20 @@ When planning an implantation process, there are multiple factors that have to b
 - **Mask**: the lithographic mask plays a very important role in implantation as we will see in more detail later. The main parameters of the mask that can be controlled are its **shape**, its **thickness** and its **material**. A thicker mask will be able to protect the substrate from doping.
 - **Annealing**: changing the annealing time or technique has a major impact on the success of the process.
 
-## Annealing and activation
+# Annealing and activation
 
 As stated before, when the atoms are implanted, they end up in random locations of the lattice but, for them to actually function as dopants, they need to be in **substitutional positions**. Moreover, the implantation process damages the crystalline structure, which has to be healed.
 
 Both these problems can be solved with annealing, which consists in providing energy to the material to allow for the atoms to move in the "proper" places. This movement has also the **side effect** of causing diffusion of dopants and contaminants, which further reduces the resolution (the original Gaussian gets wider).
 
-### Isothermal annealing
+## Isothermal annealing
 
 In isothermal annealing the whole wafer is heated uniformly and slowly so that it never gets out of thermal equilibrium. There are two different methods of performing this type of annealing process:
 
 - **Furnace based**: the wafers are introduced in a furnace where they are heated; the process takes a long time (minutes or hours) and for this reason there is a large redistribution of dopants.
 - **Rapid Thermal Annealing (RTA)**: in this case the wafers are heated by lamps and the heating process is dominated by electromagnetic radiation. The process is faster (seconds or minutes) and there is a smaller redistribution of charges.
 
-### Adiabatic annealing
+## Adiabatic annealing
 
 In adiabatic annealing the thermal equilibrium is not maintained because the wafers are heated with a high energy density in a small spot. We have two types of adiabatic annealing: **e-beam** and **laser**. In both cases the heat transfer is caused by radiation and lasts for a very short amount of time (milliseconds or seconds).
 
@@ -95,7 +95,7 @@ Notice that, even though the heating time is much smaller compared to the isothe
 
 ![[annealing.svg|400]]
 
-## Channelling through lattice
+# Channelling through lattice
 
 In a monocrystalline material there is a significant probability that the implanted ions trajectory is aligned with crystallographic planes of low Miller indices (which are the most used); this causes the dopants to move in unexpected ways. If the atom enters in a channel, it will encounter less "resistance" and thus travel deeper into the substrate.
 
@@ -116,11 +116,11 @@ Tilting the substrate has the advantage of being very easy and cheap but shadowi
 
 ![[channelling shadow.png|300]]
 
-## Sheet resistance
+# Sheet resistance
 
 #todo 
 
-## Implantation through a mask
+# Implantation through a mask
 
 As briefly discussed previously, the usage of a mask offers a big range of control over the implantation. Apart from simply protecting the masked regions in a binary way, masks can be used to move the range of implant even **outside** the wafer itself.
 
@@ -147,27 +147,27 @@ Where $R_{p}$ is the range of implant and $\Delta R_{p}$ is the vertical straggl
 
 #todo screen oxides (why oxides and not lito mask?)
 
-## Silicon on insulators (SOI) wafers
+# Silicon on insulators (SOI) wafers
 
 SOI wafers are a special type of wafers made to solve the problem of **parasitic transistors** in certain devices. What happens with classic wafers is that parts of devices can act as "unwanted" transistors and deteriorate the performance of the device itself. To solve this issue there is a special kind of wafer which has an oxide layer buried under the silicon device layer (the topmost part of the wafer). 
 The oxide create an electrical separation between the two  $\ce{Si}$ layers, solving the issue described above.
 
 There are multiple ways of fabricating SOI wafers.
 
-### SIMOX
+## SIMOX
 
 Simox stands for "Separation by IMplantation of OXygen". The process consists in implanting oxygen ions in a normal wafer in order to oxidize a buried layer.
 
 ![[SIMOX.png|400]]
 
-### BESOI
+## BESOI
 
 This method is based on wafer bonding and thinning, the name stands for "Bond and Etchback Silicon On Insulator". In this technique, two wafers with an oxide layer on the surface are bonded together. 
 After bonding, most of the top wafer is polished away, leaving a structure with a thin top silicon layer, a buried oxide and a full wafer below. 
 
 ![[BESOI.png|400]]
 
-### Smart Cut
+## Smart Cut
 
 Smart Cut is a variation of the BESOI process where the top wafer is "cut" instead of being polished away.
 

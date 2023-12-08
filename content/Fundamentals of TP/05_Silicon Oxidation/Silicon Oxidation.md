@@ -12,7 +12,7 @@ This process can grow highly pure $SiO_{2}$ layers up to 2$\mu$m thick; there ar
 
 In this course we will only focus on the **amorphous** $SiO_{2}$.
 
-## Oxidation
+# Oxidation
 
 The oxidation is obtained by heating the silicon wafers in an atmosphere containing an oxidant which can be $O_{2}$ or water steam. The kind of oxidant defines the type of oxidation:
 
@@ -34,11 +34,11 @@ This is because the oxidant molecules have to diffuse through the already formed
 
 As stated [[#Surface behavior|before]], the surface orientation of the $Si$ substrate will affect the oxidation time: 111 silicon will oxidize 1.7 times faster compared to 100.
 
-## Oxidation equipment
+# Oxidation equipment
 
 
 
-## Modelling thermal oxidation of silicon
+# Modelling thermal oxidation of silicon
 
 > [!error] I'm not too sure about this part, there might be even more mistakes than usual
 
@@ -114,15 +114,15 @@ $$
 where $\tau$ is a time shift to take into account the starting thickness, $A = 2D/k_{s}$ and $B = 2DN_0/N_{ox}$.
 
 
-### Oxidation graphs
+## Oxidation graphs
 
 #todo add something
 
-### Multiple oxidations
+## Multiple oxidations
 
 <img src="https://i.imgur.com/BTqYo1I.gif">
 
-### Growth rate regimes
+## Growth rate regimes
 
 For short times we will have a linear oxide growth, since the reaction is limited by the rate of reaction of oxidant with silicon.
 
@@ -130,7 +130,7 @@ For longer times (thicker oxide) on the other hand, the growth rate is limited b
 
 #todo add formulas
 
-## Rapid thermal oxidation
+# Rapid thermal oxidation
 
 Rapid thermal oxidation is a technique used to form thin, high quality oxide layers in a very short time (in the order of a couple of minutes compare to several hours).
 

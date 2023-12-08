@@ -115,6 +115,7 @@ $$
 \end{align}
 $$
 
+
 <iframe src="https://www.desmos.com/calculator/es2d8sr5iz?embed" width="500" height="500" style="border: 1px solid #ccc" frameborder=0></iframe>
 
 By plotting the first term we can see that it has a spike where $\hbar\omega = E_{fi}$ (remember that $E_{fi} = E_{f} - E_{i}$). This means that the perturbation needs to have the "right" frequency to influence the system in a meaningful way. We can also see that for short times the influence of the perturbation is smaller compared to longer times.
