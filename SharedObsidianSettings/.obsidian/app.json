@@ -3,5 +3,6 @@
   "alwaysUpdateLinks": true,
   "newLinkFormat": "shortest",
   "newFileLocation": "current",
-  "attachmentFolderPath": "./attachments"
+  "attachmentFolderPath": "./attachments",
+  "strictLineBreaks": false
 }

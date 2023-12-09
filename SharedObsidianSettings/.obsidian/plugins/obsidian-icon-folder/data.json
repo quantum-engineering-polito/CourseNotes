@@ -6,6 +6,8 @@
     "emojiStyle": "none",
     "iconColor": null,
     "recentlyUsedIcons": [
+      "TiDiamond",
+      "TiAtom",
       "BoBxMicrochip",
       "TiSkull"
     ],
@@ -30,6 +32,12 @@
         "for": "folders",
         "order": 2,
         "useFilePath": false
+      },
+      {
+        "rule": "[\\d]+_.*",
+        "icon": "TiBook2",
+        "for": "folders",
+        "order": 3
       }
     ],
     "extraMargin": {
@@ -46,5 +54,7 @@
   },
   "Semester 1/Cyber Security": "TiSkull",
   "Cyber Security": "TiSkull",
-  "Fundamentals of TP": "BoBxMicrochip"
+  "Fundamentals of TP": "BoBxMicrochip",
+  "Q&M Physics Intro": "TiAtom",
+  "QCM Physics": "TiDiamond"
 }

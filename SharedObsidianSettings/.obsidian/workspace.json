@@ -4,11 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "994784804e48de2b",
+        "id": "83a6b78e18255ad7",
         "type": "tabs",
         "children": [
           {
-            "id": "f22a07fb35301139",
+            "id": "7644a22e0235cdc1",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -48,7 +48,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": "fermi",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -69,7 +69,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 321.5
   },
   "right": {
     "id": "8ccfdff9373aab92",
@@ -136,72 +136,83 @@
               "type": "git-view",
               "state": {}
             }
+          },
+          {
+            "id": "4c57c4cade4488a0",
+            "type": "leaf",
+            "state": {
+              "type": "advanced-tables-toolbar",
+              "state": {}
+            }
           }
         ],
         "currentTab": 4
       }
     ],
     "direction": "horizontal",
-    "width": 345.5
+    "width": 278.5
   },
   "left-ribbon": {
     "hiddenItems": {
-      "obsidian-excalidraw-plugin:Create new drawing": false,
       "switcher:Open quick switcher": false,
       "graph:Open graph view": false,
       "canvas:Create new canvas": false,
       "daily-notes:Open today's daily note": false,
       "templates:Insert template": false,
-      "command-palette:Open command palette": false
+      "command-palette:Open command palette": false,
+      "obsidian-excalidraw-plugin:Create new drawing": false,
+      "table-editor-obsidian:Advanced Tables Toolbar": false
     }
   },
-  "active": "2ec3b5042e4a5bde",
+  "active": "7644a22e0235cdc1",
   "lastOpenFiles": [
-    "Fundamentals of TP/Chapters/Wet and dry etching/attachments/excalidraw/etch rate layout.md",
-    "Excalidraw/Drawing 2023-11-29 13.51.04.excalidraw.md",
-    "Fundamentals of TP/Chapters/Wet and dry etching/attachments/excalidraw",
-    "Fundamentals of TP/FTP Lectures.md",
-    "Fundamentals of TP/attachments/resist exposure shape.png",
-    "Fundamentals of TP/attachments/excalidraw/liftoff problems.excalidraw.md",
-    "Fundamentals of TP/attachments/excalidraw/liftoff problems.excalidraw.svg",
-    "Fundamentals of TP/Chapters/Wet and dry etching/attachments/excalidraw/etch rate layout.svg",
-    "Excalidraw/Drawing 2023-11-29 13.51.04.excalidraw.svg",
+    "QCM Physics/04_nN heterostructure/nN heterostructure.md",
+    "QCM Physics/04_nN heterostructure/attachments/excalidraw/remote doping.md",
+    "QCM Physics/07_Quantum bit/Quantum bit.md",
+    "QCM Physics/06_Ahronov-Bohm effect/Ahronov-Bohm effect.md",
+    "QCM Physics/07_Quantum bit",
+    "QCM Physics/05_Quantum Hall effect/Quantum Hall effect.md",
+    "QCM Physics/06_Ahronov-Bohm effect",
+    "Fundamentals of TP/Part 1/01_Wafer Production/Wafer Production.md",
+    "QCM Physics/05_Quantum Hall effect",
+    "QCM Physics/03_Fermi golden rule/Fermi golden rule.md",
+    "QCM Physics/02_Models/Models.md",
+    "QCM Physics/01_Crystals/Crystals.md",
+    "Q&M Physics Intro/Part 2/Bianco.md",
+    "Fundamentals of TP/Part 1/11_Packaging/Packaging.md",
+    "Fundamentals of TP/Part 1/10_Wet and dry etching/Wet and dry etching.md",
+    "Fundamentals of TP/Part 1/09_Doping/Doping.md",
+    "Fundamentals of TP/Part 1/08_PVD/PVD.md",
+    "Fundamentals of TP/Part 1/07_CVD/CVD.md",
+    "Fundamentals of TP/Part 1/06_Epitaxy/Epitaxy.md",
+    "Fundamentals of TP/Part 1/05_Silicon Oxidation/Silicon Oxidation.md",
+    "Fundamentals of TP/Part 1/02_Crystallography/Crystallography.md",
+    "Fundamentals of TP/Part 1/03_Clean Room Technology/Clean Room Technology.md",
+    "Fundamentals of TP/Part 1/04_Lithography/Lithography.md",
+    "prova/prova.md",
+    "prova/casd.md",
     "index.md",
-    "Fundamentals of TP/Chapters",
-    "Excalidraw",
-    "Cyber Security/CS Lectures.md",
-    "Fundamentals of TP/Untitled",
-    "Cyber Security/Chapters/Cryptography/Cryptography.md",
-    "Cyber Security/Chapters/Introduction/Introduction.md",
-    "Fundamentals of TP/Chapters/Wet and dry etching/attachments/iso_aniso_tropic.png",
-    "Fundamentals of TP/Chapters/Wet and dry etching/attachments/excalidraw/etch rate layout.png",
-    "Fundamentals of TP/Chapters/Wet and dry etching/Wet and dry etching.md",
-    "Fundamentals of TP/Chapters/Wet and dry etching/attachments",
-    "Fundamentals of TP/Chapters/Wet and dry etching",
-    "Fundamentals of TP/Chapters/Packaging/Packaging.md",
-    "Fundamentals of TP/Chapters/Packaging",
-    "Fundamentals of TP/attachments/excalidraw/attachments/Pasted Image 20231116124250_067.png",
-    "Fundamentals of TP/attachments/excalidraw/attachments/Pasted Image 20231116124250_047.png",
-    "Fundamentals of TP/attachments/excalidraw/attachments/Pasted Image 20231116103559_459.png",
-    "Fundamentals of TP/attachments/excalidraw/attachments/Pasted Image 20231114185653_030.png",
+    "prova/Untitled.md",
+    "prova",
+    "Untitled.md",
+    "Obsidian Examples.md",
+    "Fundamentals of TP/Part 1/04_Lithography",
+    "Fundamentals of TP/Part 1/03_Clean Room Technology",
+    "Fundamentals of TP/Part 1/02_Crystallography",
+    "Fundamentals of TP/Part 1",
+    "Q&M Physics Intro/Part 2",
+    "Q&M Physics Intro/Part 1",
     "Fundamentals of TP/attachments/excalidraw/Untitled.canvas",
-    "Fundamentals of TP/attachments/excalidraw/tilted channel.md",
-    "Fundamentals of TP/attachments/excalidraw/sputtering step coverage.md",
-    "Fundamentals of TP/attachments/excalidraw/sputtering conformality.md",
-    "Fundamentals of TP/attachments/excalidraw/multilpe etchants.excalidraw.md",
-    "Fundamentals of TP/attachments/excalidraw/multilpe etchants.excalidraw.excalidraw",
-    "Fundamentals of TP/attachments/excalidraw/liftoff problems.excalidraw.excalidraw",
-    "Fundamentals of TP/attachments/excalidraw/junction depth.md",
-    "Fundamentals of TP/attachments/excalidraw/implanter.md",
-    "Fundamentals of TP/attachments/excalidraw/fraction transmitetd.md",
-    "Fundamentals of TP/attachments/excalidraw/doping profile.excalidraw.md",
-    "Fundamentals of TP/attachments/excalidraw/dopant distribution.md",
-    "Fundamentals of TP/attachments/excalidraw/diffraction.excalidraw.md",
-    "Fundamentals of TP/attachments/excalidraw/diffraction.excalidraw.excalidraw",
-    "Fundamentals of TP/attachments/excalidraw/development curve.md",
-    "Fundamentals of TP/attachments/excalidraw/cvd vs epitaxy.md",
-    "Fundamentals of TP/attachments/excalidraw/conformality.md",
-    "Fundamentals of TP/attachments/excalidraw/clean room.md",
-    "Fundamentals of TP/attachments/excalidraw/annealing.md"
+    "Fundamentals of TP/attachments/excalidraw/tilted channel.svg",
+    "Fundamentals of TP/attachments/excalidraw/sputtering step coverage.svg",
+    "Fundamentals of TP/attachments/excalidraw/sputtering conformality.svg",
+    "Fundamentals of TP/attachments/excalidraw/multilpe etchants.excalidraw.svg",
+    "Fundamentals of TP/attachments/excalidraw/liftoff problems.excalidraw.svg",
+    "Fundamentals of TP/attachments/excalidraw/junction depth.svg",
+    "Fundamentals of TP/attachments/excalidraw/doping profile.excalidraw.svg",
+    "Fundamentals of TP/attachments/excalidraw/diffraction.excalidraw.svg",
+    "Fundamentals of TP/attachments/excalidraw/development curve.svg",
+    "Fundamentals of TP/attachments/excalidraw/cvd vs epitaxy.svg",
+    "Untitled.canvas"
   ]
 }
