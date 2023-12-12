@@ -26,7 +26,7 @@ If asked to do so select "trust the author" so that all the plugins will be auto
 ![immagine](https://github.com/gamberoillecito/QuantumEngPolitoNotes/assets/42670032/7a94b746-f15e-4938-b461-221aa19058d3)
 
 10) You can click the "+" button to stage (select) all the files
-11) and then the "✓" followed by the "↑" button to commit them: this will save them in your fork
+11) and then the Commit ("✓") button followed by the Push ("↑") button to commit them: this will save them in your fork
 12) When you are ready to upload the changes to the official repository go to your fork's page in github and select "Contribute" and "Open pull request"
 
 ![immagine](https://github.com/gamberoillecito/QuantumEngPolitoNotes/assets/42670032/b4571d20-38be-472a-af7d-67c5812c7c9d)
