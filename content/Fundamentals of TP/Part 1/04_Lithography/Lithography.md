@@ -68,7 +68,7 @@ The spinning speed has to be controlled in order to achieve the desired resist t
 
 ![[spin speed.png|300]]
 
-Do to surface tension there may be an accumulation of resist on the edges (called **edgebead**) which can decrease the usable surface area of the wafer.
+Due to surface tension there may be an accumulation of resist on the edges (called **edgebead**) which can decrease the usable surface area of the wafer.
 
 # Resist soft bake
 
