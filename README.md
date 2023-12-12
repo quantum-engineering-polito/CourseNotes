@@ -16,10 +16,10 @@ If you are not familiar with github take a look [here](https://github.com/firstc
 6) Open Obsidian, select "Open folder as vault" and select the folder `content` inside the repo that you just downloaded.
 If asked to do so select "trust the author" so that all the plugins will be automatically enabled
 7) **If this is the first time you contribute to this project do the following**
-  1) Go inside `content` and replace the `.obsidian` folder with the one you can find
+   - Go inside `content` and replace the `.obsidian` folder with the one you can find
   inside the `SharedObsidianSettings` folder. This will make sure that you have the
   correct settings inside Obsidian.
-  2) Restart Obsidian
+   - Restart Obsidian
 8) Now you can start editing and creating new files in Obsidian
 9) When you are done you can go to the Git Plugin inside Obsidian (in the top right corner)
 
@@ -34,15 +34,16 @@ If asked to do so select "trust the author" so that all the plugins will be auto
 13) Fill in the details you think might be useful and "Create Pull Request"
 
 <!-- 2) Go to settings -> Community plugins and click "Turn on community plugins"
-3) Click on "Browse" and install the following plugins and enable them
-    1) **Paste image rename** by "Reorx"
-    2) (Optional but suggested): **Latex Suite** by "artisticat1" (you can find my snippets in the `extra` folder in this repo)
-    3) (Optional): **Excalidraw** by "Zsolt Vicsian". If you want to use excalidraw replace the 
-4) Go to settings -> Files & Links:
-    1) Set "New link format" to "shortest path when possible
-    2) Make sure use [[Wikilinks]] is not checked
-    3) Set "Default location for new attachments" to "In subfolder under current folder"
-    4) Set "Subfolder name" to "attachments" without -->
+
+14) Click on "Browse" and install the following plugins and enable them
+     - **Paste image rename** by "Reorx"
+     - (Optional but suggested): **Latex Suite** by "artisticat1" (you can find my snippets in the `extra` folder in this repo)
+     - (Optional): **Excalidraw** by "Zsolt Vicsian". If you want to use excalidraw replace the 
+15) Go to settings -> Files & Links:
+     - Set "New link format" to "shortest path when possible
+     - Make sure use [[Wikilinks]] is not checked
+     - Set "Default location for new attachments" to "In subfolder under current folder"
+     - Set "Subfolder name" to "attachments" without -->
 
 ## Folder structure
 
