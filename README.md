@@ -4,6 +4,8 @@ https://creativecommons.org/licenses/by-sa/4.0/
 
 ## Environment setup
 
+If you are not familiar with github take a look [here](to get familiar with it)
+
 1) Download [obsidian](https://obsidian.md/)
 2) Make sure you have git installed and properly configured
 3) Fork this repository on your PC:
@@ -11,13 +13,25 @@ https://creativecommons.org/licenses/by-sa/4.0/
 ![immagine](https://github.com/gamberoillecito/QuantumEngPolitoNotes/assets/42670032/06e0afdd-6a1e-41db-9d23-faa5a4555350)
 
 4) Clone your fork on your pc
-6) Open Obsidian and select "Open folder as vault" and select the folder `content` inside the repo that you just downloaded.
+6) Open Obsidian, select "Open folder as vault" and select the folder `content` inside the repo that you just downloaded.
 If asked to do so select "trust the author" so that all the plugins will be automatically enabled
 7) **If this is the first time you contribute to this project do the following**
   1) Go inside `content` and replace the `.obsidian` folder with the one you can find
   inside the `SharedObsidianSettings` folder. This will make sure that you have the
   correct settings inside Obsidian.
   2) Restart Obsidian
+8) Now you can start editing and creating new files in Obsidian
+9) When you are done you can go to the Git Plugin inside Obsidian (in the top right corner)
+
+![immagine](https://github.com/gamberoillecito/QuantumEngPolitoNotes/assets/42670032/7a94b746-f15e-4938-b461-221aa19058d3)
+
+10) You can click the "+" button to stage (select) all the files
+11) and then the "✓" followed by the "↑" button to commit them: this will save them in your fork
+12) When you are ready to upload the changes to the official repository go to your fork's page in github and select "Contribute" and "Open pull request"
+
+![immagine](https://github.com/gamberoillecito/QuantumEngPolitoNotes/assets/42670032/b4571d20-38be-472a-af7d-67c5812c7c9d)
+
+13) Fill in the details you think might be useful and "Create Pull Request"
 
 <!-- 2) Go to settings -> Community plugins and click "Turn on community plugins"
 3) Click on "Browse" and install the following plugins and enable them
