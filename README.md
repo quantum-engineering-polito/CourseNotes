@@ -4,10 +4,10 @@ https://creativecommons.org/licenses/by-sa/4.0/
 
 ## Environment setup
 
-If you are not familiar with github take a look [here](to get familiar with it)
+If you are not familiar with github take a look [here](https://github.com/firstcontributions/first-contributions) to get familiar with it
 
 1) Download [obsidian](https://obsidian.md/)
-2) Make sure you have git installed and properly configured
+2) Make sure you have [git](https://git-scm.com/downloads) installed and properly configured
 3) Fork this repository on your PC:
 
 ![immagine](https://github.com/gamberoillecito/QuantumEngPolitoNotes/assets/42670032/06e0afdd-6a1e-41db-9d23-faa5a4555350)
