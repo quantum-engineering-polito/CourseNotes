@@ -186,3 +186,10 @@ M(E - E_{i}) = \begin{cases}
 \end{cases}
 $$
 
+## MEMT (MODFET)
+
+#todo 
+
+---
+
+Read Next [[Quantum Hall effect]]
