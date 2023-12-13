@@ -1,5 +1,5 @@
 
-## Headers
+# Headers
 
 Use hashes to identify header ^ed057f
 
@@ -14,11 +14,11 @@ Use hashes to identify header ^ed057f
 
 and so on.
 
-## Text decoration
+# Text decoration
 
 Use `**bold text**` for **bold text**, `*italic text*` for *italic text* and `==highlighted text==` for ==highlighted text==.
 
-## Lists
+# Lists
 
 Unnumbered lists can be created like this:
 
@@ -44,7 +44,7 @@ While numbered lists like this:
 - Item 2
 - Item 3
 
-## Links
+# Links
 
 Links in obsidian have the following format `[[random link]]` and are rendered as follows:
 
@@ -58,7 +58,7 @@ You can have the following types of links:
 - **Link to a header of this note**: [[#Text decoration]] written as `[[#Text decoration]]`
 - **Link to a section of this note**: [[#^ed057f]] (the tag is added automatically by obsidian, you just need to write `[[^]]` and select the correct block from the popup menu)
 - **Link to a section of another note**: you can combine the previous links as follows [[Wet and dry etching#^0fa6e1]] 
-## Transclusion
+# Transclusion
 
 You can embed an entire document of part of it in another note by adding an exclamation mark `!` before the correct link, for example `![[#Text decoration]]` will appear as:
 
@@ -68,7 +68,7 @@ or `![[Doping#BESOI]]`
 
 ![[Doping#BESOI]]
 
-## Images
+# Images
 
 Images in a note have the following format `![[image.png]]` (you are just transcluding the image file): 
 
@@ -78,7 +78,7 @@ if you want to resize the image you can add `|width` after the image name. For e
 
 ![[channelling.png|200]]
 
-## Tables
+# Tables
 
 If you have installed the "Advanced Tables" plugin you just need to type a pipe `|` and hit `TAB`, the plugin will automatically create new rows and columns as if you were in Excel (press `TAB` to move to the next column and `ENTER` to move to the next row).
 
@@ -97,7 +97,7 @@ Example:
 You can also use the plugin's toolbar on the right to edit the table:
 
 ![[advanced tables toolbar.png|300]]
-## $\LaTeX$
+# $\LaTeX$
 
 Latex blocks can be inserted inline by placing the content between two `$` signs like this: `$\int_{-\infty}^{+\infty} f(x) \, dx$` will be rendered as: $\int_{-\infty}^{+\infty} f(x) \, dx$
 
@@ -119,7 +119,7 @@ If you use the "Latex Suite" plugin you can find all the shortcuts in the plugin
 
 Check the[plugin documentation](https://github.com/artisticat1/obsidian-latex-suite) for more information.
 
-## Excalidraw
+# Excalidraw
 
 Excalidraw drawings can be created using the "Excalidraw plugin" and should be placed in the `attachments/excalidraw` folder of the current file.
 
@@ -134,3 +134,102 @@ To add Latex to a drawing press `CTRL+SHIFT+L` or search for "Excalidraw: Insert
 >[!tip] Command palette
 >You can open the command palette by pressing `CTRL+SHIFT+P` or by selecting the `>_` icon in the left bar
 
+# Callouts
+
+You can add callouts like the command palette one like this
+```
+>[!tip] Tip callout
+>text
+```
+
+>[!tip] Tip callout
+>text
+
+## Foldable callouts
+
+You can make a callout foldable by adding a plus (+) or a minus (-) directly after the type identifier.
+
+A plus sign expands the callout by default, and a minus sign collapses it instead.
+
+>[!tip]- Collapsed callout
+> text
+
+The available types are:
+
+> [!note]-
+> ```md
+> > [!note]
+> > Lorem ipsum dolor sit amet
+> ```
+
+> [!abstract]-
+> ```md
+> > [!abstract]
+> > Lorem ipsum dolor sit amet
+> ```
+
+> [!info]-
+> ```md
+> > [!info]
+> > Lorem ipsum dolor sit amet
+> ```
+
+> [!todo]-
+> ```md
+> > [!todo]
+> > Lorem ipsum dolor sit amet
+> ```
+
+> [!tip]-
+> ```md
+> > [!tip]
+> > Lorem ipsum dolor sit amet
+> ```
+
+> [!success]-
+> ```md
+> > [!success]
+> > Lorem ipsum dolor sit amet
+> ```
+
+> [!question]-
+> ```md
+> > [!question]
+> > Lorem ipsum dolor sit amet
+> ```
+
+> [!warning]-
+>  ```md
+> > [!warning]
+> > Lorem ipsum dolor sit amet
+> ```
+
+> [!failure]-
+> ```md
+> > [!failure]
+> > Lorem ipsum dolor sit amet
+> ```
+
+> [!danger]-
+> ```md
+> > [!danger]
+> > Lorem ipsum dolor sit amet
+> ```
+
+> [!bug]-
+> ```md
+> > [!bug]
+> > Lorem ipsum dolor sit amet
+> ```
+
+> [!example]-
+> ```md
+> > [!example]
+> > Lorem ipsum dolor sit amet
+> ```
+
+> [!quote]-
+> ```md
+> > [!quote]
+> > Lorem ipsum dolor sit amet
+> ```
