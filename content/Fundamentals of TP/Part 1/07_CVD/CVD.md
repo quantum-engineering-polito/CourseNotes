@@ -61,7 +61,7 @@ It is also possible to introduce a **bias** voltage to accelerate the ions in on
 
 ![[PECVD.png|300]]
 
-Plasma is used in CVD to force reaction that would not be possible at lower temperatures and deposit ions and free radicals without having to heat the substrate. This is offers more degrees of freedom for **near the end processing**: using high temperature could in fact damage or destroy previous steps. The disadvantage is that plasma can **contaminate** or damage the substrate.
+Plasma is used in CVD to force reaction that would not be possible at lower temperatures and deposit ions and free radicals without having to heat the substrate. This offers more degrees of freedom for **near the end processing**: using high temperature could in fact damage or destroy previous steps. The disadvantage is that plasma can **contaminate** or damage the substrate.
 
 
 

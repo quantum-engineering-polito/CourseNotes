@@ -20,6 +20,8 @@ If asked to do so select "trust the author" so that all the plugins will be auto
   inside the `SharedObsidianSettings` folder. This will make sure that you have the
   correct settings inside Obsidian.
    - Restart Obsidian
+  
+8) **Before editing the files, check on github if you are "behind" the original repository so that you can get any new updates**
 8) Now you can start editing and creating new files in Obsidian
 9) When you are done you can go to the Git Plugin inside Obsidian (in the top right corner)
 
