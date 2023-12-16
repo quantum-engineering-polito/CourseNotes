@@ -66,7 +66,7 @@ can be calculated since both the perturbation $\hat{V}$ and $\phi$ are known.
 
 ### First order perturbation theory
 
-To solve equation $\eqref{3}$ we need to make some assumptions: we suppose that the perturbation is so small that the system hasn't evolved too much. This allows to approximate all $c_{j} = 0$ except for the first one: 
+To solve equation $(3)$ we need to make some assumptions: we suppose that the perturbation is so small that the system hasn't evolved too much. This allows to approximate all $c_{j} = 0$ except for the first one: 
 
 $$
 \begin{align}
@@ -75,7 +75,7 @@ $$
 \end{align}
 $$
 
-With this approximation we can rewrite $\eqref{3}$ as 
+With this approximation we can rewrite $(3)$ as 
 
 $$
 \displaylines{
