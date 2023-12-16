@@ -58,6 +58,7 @@ You can have the following types of links:
 - **Link to a header of this note**: [[#Text decoration]] written as `[[#Text decoration]]`
 - **Link to a section of this note**: [[#^ed057f]] (the tag is added automatically by obsidian, you just need to write `[[^]]` and select the correct block from the popup menu)
 - **Link to a section of another note**: you can combine the previous links as follows [[Wet and dry etching#^0fa6e1]] 
+
 # Transclusion
 
 You can embed an entire document of part of it in another note by adding an exclamation mark `!` before the correct link, for example `![[#Text decoration]]` will appear as:
@@ -117,7 +118,23 @@ $$
 
 If you use the "Latex Suite" plugin you can find all the shortcuts in the plugin settings. For example you can type `@a` and it will be converted to `\aplha`, or type `Rvec` to get `\vec{R}`.
 
-Check the[plugin documentation](https://github.com/artisticat1/obsidian-latex-suite) for more information.
+Check the [plugin documentation](https://github.com/artisticat1/obsidian-latex-suite) for more information.
+
+## Examples
+
+>[!warning]
+>The plugin automatically replaces some words, if you don't like this press `CTRL+Z` to undo the replacement or delete the appropriate line in the plugin settings
+
+- **Inline Latex environment**: type `mk` anywhere in the file
+- **Latex environment**: type `dm` anywhere in the file
+- **Greek letters**: type `@` followed by the corresponding latin letter, e.g. `@a` will become $\alpha$
+- **Infinity**: type `ooo` 
+- **Fractions**: typing a slash `/` after something will automatically create a fraction like $\frac{a}{b}$ 
+- **Vectors and stuff on top of letters**: type the letter you want to vectorize followed by `vec`, `bar`, `hat`, `tilde`, e.g. `Gvec` to get $\vec{G}$, `Gtilde` to get $\tilde{G}$, etc.
+- **Number subscript**: if you write a number after a letter or symbol it will automatically become a subscript, e.g. `a0` will become $a_0$
+- **Integrals**: type `dint` and you will get $\int_{-\infty}^{+\infty}  \, dx$ with the $-\infty$ selected, you can type what you want and then press `TAB` to move to the other fields. You can also type `int` to get $\int  \, dx$
+- **Summations**: same as the integrals with `dsum` and `sum`
+
 
 # Excalidraw
 
@@ -154,82 +171,83 @@ A plus sign expands the callout by default, and a minus sign collapses it instea
 >[!tip]- Collapsed callout
 > text
 
-The available types are:
-
-> [!note]-
-> ```md
-> > [!note]
-> > Lorem ipsum dolor sit amet
-> ```
-
-> [!abstract]-
-> ```md
-> > [!abstract]
-> > Lorem ipsum dolor sit amet
-> ```
-
-> [!info]-
-> ```md
-> > [!info]
-> > Lorem ipsum dolor sit amet
-> ```
-
-> [!todo]-
-> ```md
-> > [!todo]
-> > Lorem ipsum dolor sit amet
-> ```
-
-> [!tip]-
-> ```md
-> > [!tip]
-> > Lorem ipsum dolor sit amet
-> ```
-
-> [!success]-
-> ```md
-> > [!success]
-> > Lorem ipsum dolor sit amet
-> ```
-
-> [!question]-
-> ```md
-> > [!question]
-> > Lorem ipsum dolor sit amet
-> ```
-
-> [!warning]-
->  ```md
-> > [!warning]
-> > Lorem ipsum dolor sit amet
-> ```
-
-> [!failure]-
-> ```md
-> > [!failure]
-> > Lorem ipsum dolor sit amet
-> ```
-
-> [!danger]-
-> ```md
-> > [!danger]
-> > Lorem ipsum dolor sit amet
-> ```
-
-> [!bug]-
-> ```md
-> > [!bug]
-> > Lorem ipsum dolor sit amet
-> ```
-
-> [!example]-
-> ```md
-> > [!example]
-> > Lorem ipsum dolor sit amet
-> ```
-
-> [!quote]-
-> ```md
-> > [!quote]
-> > Lorem ipsum dolor sit amet
-> ```
+>[!info]- Available callouts:
+>
+>> [!note]-
+>> ```md
+>> > [!note]
+>> > Lorem ipsum dolor sit amet
+>> ```
+>
+>> [!abstract]-
+>> ```md
+>> > [!abstract]
+>> > Lorem ipsum dolor sit amet
+>> ```
+>
+>> [!info]-
+>> ```md
+>> > [!info]
+>> > Lorem ipsum dolor sit amet
+>> ```
+>
+>> [!todo]-
+>> ```md
+>> > [!todo]
+>> > Lorem ipsum dolor sit amet
+>> ```
+>
+>> [!tip]-
+>> ```md
+>> > [!tip]
+>> > Lorem ipsum dolor sit amet
+>> ```
+>
+>> [!success]-
+>> ```md
+>> > [!success]
+>> > Lorem ipsum dolor sit amet
+>> ```
+>
+>> [!question]-
+>> ```md
+>> > [!question]
+>> > Lorem ipsum dolor sit amet
+>> ```
+>
+>> [!warning]-
+>>  ```md
+>> > [!warning]
+>> > Lorem ipsum dolor sit amet
+>> ```
+>
+>> [!failure]-
+>> ```md
+>> > [!failure]
+>> > Lorem ipsum dolor sit amet
+>> ```
+>
+>> [!danger]-
+>> ```md
+>> > [!danger]
+>> > Lorem ipsum dolor sit amet
+>> ```
+>
+>> [!bug]-
+>> ```md
+>> > [!bug]
+>> > Lorem ipsum dolor sit amet
+>> ```
+>
+>> [!example]-
+>> ```md
+>> > [!example]
+>> > Lorem ipsum dolor sit amet
+>> ```
+>
+>> [!quote]-
+>> ```md
+>> > [!quote]
+>> > Lorem ipsum dolor sit amet
+>> ```
+>
