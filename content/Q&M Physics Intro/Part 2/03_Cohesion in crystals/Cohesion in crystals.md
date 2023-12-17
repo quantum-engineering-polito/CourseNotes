@@ -102,6 +102,10 @@ As before we can introduce the **geometrical factor** $p_{ij}$
 
 #todo add drawing
 
+So 
+
+$$r_{ij} = p_{ij} \cdot R \tag{1}$$
+
 And, since the Pauli repulsion only affects first neighbours, we get: 
 
 $$
@@ -114,7 +118,7 @@ $$
 If we have $z$ first neighbours:
 
 $$
-U_{tot} = N\left[ z\lambda \exp\bigg( -\frac{R}{\rho} \right) - \underbrace{ \sum_{\substack{ j \\ i\neq j }} \frac{(\pm)}{p_{ij}} }_{\alpha } \frac{q^{2}}{4\pi\varepsilon_0R} \bigg] \tag{1}
+U_{tot} = N\left[ z\lambda \exp\bigg( -\frac{R}{\rho} \right) - \underbrace{ \sum_{\substack{ j \\ i\neq j }} \frac{(\pm)}{p_{ij}} }_{\alpha } \frac{q^{2}}{4\pi\varepsilon_0R} \bigg] \tag{2}
 $$
 
 Where the $(\pm)$ is a sign that takes into account the attraction or repulsion and $\alpha$ is the **Madelung constant** (the summation is a converging series).
@@ -133,7 +137,7 @@ $$
 $$
 
 
-which can be substituted in $(1)$ to calculate $U_{tot}(R_0)$: 
+which can be substituted in $(2)$ to calculate $U_{tot}(R_0)$: 
 
 $$
 U_{tot}(R_0) = -\underbrace{ \frac{N\alpha q^{2}}{4 \pi \varepsilon_0} \frac{1}{R_0} }_{ \text{Madelung energy} } \left( 1 - \frac{\rho}{R_0} \right)
@@ -142,3 +146,37 @@ $$
 Since usually $\rho < 0.1 \cdot R_0$ the Madelung energy contains $\simeq$ 90% fo the overall cohesion energy.
 
 ### Example: Madelung constant
+
+Let's consider the example of a 1D crystal like the one in the image
+
+![[madelung 1D.svg|400]]
+From the definition of the Madelung constant and from $(1)$ we get
+
+$$
+\displaylines{
+\begin{cases}
+\alpha = \sum_{j, i\neq j} ~(\pm)/p_{ij} \\ \\
+\alpha/R = \sum_{j, i\neq j} ~ (\pm)/r_{ij}
+\end{cases} \\
+\Downarrow \\
+\frac{\alpha}{R} = \sum_{\substack{ j\\i\neq j }} \frac{(\pm)}{r_{ij}}
+}
+$$
+
+By looking at the drawing we can calculate the summation as follows: 
+
+$$
+\begin{align}
+\frac{\alpha}{R} &= 2\left[ \frac{1}{R}  - \frac{1}{2R} + \frac{1}{3R} - \frac{1}{4R} + \dots\right]\\
+\alpha &= 2\left[ 1  - \frac{1}{2} + \frac{1}{3} - \frac{1}{4} + \dots\right] \\
+\end{align}
+$$
+The series converges to 
+
+$$
+\alpha = 2\ln(2)
+$$
+
+---
+
+Read Next [[Free electron model]]

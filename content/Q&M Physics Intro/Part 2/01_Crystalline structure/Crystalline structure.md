@@ -61,3 +61,6 @@ Since the choice of the vector $\vec{a}_{i}$ is not univocal, there is an infini
 
 ![[Crystallography#Miller indices]]
 
+---
+
+Read Next [[Reciprocal lattice]]
