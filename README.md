@@ -1,6 +1,4 @@
 # quantum_eng_polito_notes
- 
-https://creativecommons.org/licenses/by-sa/4.0/
 
 ## Environment setup
 
@@ -84,4 +82,8 @@ If you want to see how your changes look on the website you need to have
 repository and run `npx quartz build --serve` if there are no errors you will
 see the url where you can access the local version of the website.
 
-## Contributors
+---
+
+[License](https://creativecommons.org/licenses/by-nc-sa/4.0/)
+
+<img src="https://mirrors.creativecommons.org/presskit/buttons/88x31/png/by-nc-sa.png" width="128"/>
