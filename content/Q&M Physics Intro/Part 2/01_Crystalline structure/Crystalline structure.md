@@ -27,7 +27,7 @@ We also have weaker types of bonding:
 - **Hydrogen**: similar to ionic bonding but without the actual donation of electrons. We have the formation of partially charged regions.
 - **Van Der Waals**: #todo 
 
-# Crystals
+# Crystals and lattices
 
 An ideal crystal has an infinite number of repetitions in 3 dimensions of the same structural unit. 
 
@@ -57,5 +57,10 @@ Since the choice of the vector $\vec{a}_{i}$ is not univocal, there is an infini
 
 ![[Crystals#Wigner-Seitz cell]]
 
-min 56
+## Miller indexes
 
+![[Crystallography#Miller indices]]
+
+---
+
+Read Next [[Reciprocal lattice]]

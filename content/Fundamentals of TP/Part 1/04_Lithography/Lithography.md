@@ -206,7 +206,7 @@ In lift-off the, on the other hand, re regions where the film has to be deposite
 
 The main benefit of lift-off is the fact that it doesn't require an etchant for the metal. This becomes more relevant when the features that have to be formed are made of different metals; each of them would probably require a different etchant.
 
-![[multilpe etchants.excalidraw.png|400]]
+![[multilpe etchants.excalidraw.svg|400]]
 
 ## Problems
 

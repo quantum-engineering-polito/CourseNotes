@@ -1,5 +1,4 @@
-
-## Headers
+# Headers
 
 Use hashes to identify header ^ed057f
 
@@ -14,11 +13,11 @@ Use hashes to identify header ^ed057f
 
 and so on.
 
-## Text decoration
+# Text decoration
 
 Use `**bold text**` for **bold text**, `*italic text*` for *italic text* and `==highlighted text==` for ==highlighted text==.
 
-## Lists
+# Lists
 
 Unnumbered lists can be created like this:
 
@@ -44,7 +43,7 @@ While numbered lists like this:
 - Item 2
 - Item 3
 
-## Links
+# Links
 
 Links in obsidian have the following format `[[random link]]` and are rendered as follows:
 
@@ -58,7 +57,8 @@ You can have the following types of links:
 - **Link to a header of this note**: [[#Text decoration]] written as `[[#Text decoration]]`
 - **Link to a section of this note**: [[#^ed057f]] (the tag is added automatically by obsidian, you just need to write `[[^]]` and select the correct block from the popup menu)
 - **Link to a section of another note**: you can combine the previous links as follows [[Wet and dry etching#^0fa6e1]] 
-## Transclusion
+
+# Transclusion
 
 You can embed an entire document of part of it in another note by adding an exclamation mark `!` before the correct link, for example `![[#Text decoration]]` will appear as:
 
@@ -68,7 +68,7 @@ or `![[Doping#BESOI]]`
 
 ![[Doping#BESOI]]
 
-## Images
+# Images
 
 Images in a note have the following format `![[image.png]]` (you are just transcluding the image file): 
 
@@ -78,9 +78,9 @@ if you want to resize the image you can add `|width` after the image name. For e
 
 ![[channelling.png|200]]
 
-## Tables
+# Tables
 
-If you have installed the "Advanced Tables" plugin you just need to type a pipe `|` and hit `TAB`, the plugin will automatically create new rows and columns as if you were in Excel (press `TAB` to move to the next column and `ENTER` to move to the next row).
+If you have installed the [Advanced Tables](https://github.com/tgrosinger/advanced-tables-obsidian) plugin you just need to type a pipe `|` and hit `TAB`, the plugin will automatically create new rows and columns as if you were in Excel (press `TAB` to move to the next column and `ENTER` to move to the next row).
 
 Example:
 
@@ -97,13 +97,13 @@ Example:
 You can also use the plugin's toolbar on the right to edit the table:
 
 ![[advanced tables toolbar.png|300]]
-## $\LaTeX$
+# $\LaTeX$
 
 Latex blocks can be inserted inline by placing the content between two `$` signs like this: `$\int_{-\infty}^{+\infty} f(x) \, dx$` will be rendered as: $\int_{-\infty}^{+\infty} f(x) \, dx$
 
 If you want to place the latex formula in a separate block you need two `$` signs like this: 
 
-```
+```latex
 $$
 \int_{-\infty}^{+\infty} f(x) \, dx 
 $$
@@ -115,22 +115,195 @@ $$
 $$
 
 
-If you use the "Latex Suite" plugin you can find all the shortcuts in the plugin settings. For example you can type `@a` and it will be converted to `\aplha`, or type `Rvec` to get `\vec{R}`.
+If you use the [Latex Suite](https://github.com/artisticat1/obsidian-latex-suite)"plugin you can find all the shortcuts in the plugin settings. For example you can type `@a` and it will be converted to `\aplha`, or type `Rvec` to get `\vec{R}`.
 
-Check the[plugin documentation](https://github.com/artisticat1/obsidian-latex-suite) for more information.
+Check the [plugin documentation](https://github.com/artisticat1/obsidian-latex-suite) for more information.
 
-## Excalidraw
+## Examples
 
-Excalidraw drawings can be created using the "Excalidraw plugin" and should be placed in the `attachments/excalidraw` folder of the current file.
+>[!warning]
+>The plugin automatically replaces some words, if you don't like this press `CTRL+Z` to undo the replacement or delete the appropriate line in the plugin settings
+
+- **Inline Latex environment**: type `mk` anywhere in the file
+- **Latex environment**: type `dm` anywhere in the file
+- **Greek letters**: type `@` followed by the corresponding latin letter, e.g. `@a` will become $\alpha$
+- **Infinity**: type `ooo` to get $\infty$
+- **Fractions**: typing a slash `/` after something will automatically create a fraction like $\frac{a}{b}$ 
+- **Exponentials and similar**: 
+	- type `sr` for `^2`
+	- `sq` for `\sqrt{}`
+	- `cb` for `^3` 
+	- `ee` for `e^{}`
+- **Vectors and stuff on top of letters**: type the letter you want to vectorize followed by `vec`, `bar`, `hat`, `tilde`, e.g. `Gvec` to get `\vec{G}` $\vec{G}$, `Gtilde` to get $\tilde{G}$, etc.
+- **Number subscript**: if you write a number after a letter or symbol it will automatically become a subscript, e.g. `a0` will become $a_0$
+- **Integrals**: type `dint` and you will get $\int_{-\infty}^{+\infty}  \, dx$ with the $-\infty$ selected, you can type what you want and then press `TAB` to move to the other fields. You can also type `int` to get $\int  \, dx$
+- **Summations**: same as the integrals with `dsum` and `sum`
+- **Aligned equations**: to align equations you need to be in the `align` environment. This can be done by typing `align`, which will create `\begin{align} \end{align}` or by selecting pre-existing text with the mouse and pressing `SHIFT+A`, which will surround the text with the correct environment. Inside `align` the symbol `&` will specify what has to be aligned with what. `&&` can be used to align text at the end of the line. Use `\\` to go to a new line.
+
+```latex
+\begin{align}
+f(x,y,z) &= g(x,y,z) \\
+&= h(x,y,z) &&= \alpha \\
+& && = \beta
+\end{align}
+```
+
+$$
+\begin{align}
+f(x,y,z) &= g(x,y,z) \\
+&= h(x,y,z) &&= \alpha \\
+& && = \beta
+\end{align}
+$$
+
+
+- **Systems of equations**: can be created inside the `cases` environment, typing `cases` will create `\begin{cases} \end{cases}`. Similarly to the previous case `&&` can be used to align stuff at the end of the line.
+
+```latex
+\begin{cases}
+0 && x \leq 0 \\
+1 && x > 0
+\end{cases}
+```
+
+$$
+\begin{cases}
+0 && x \leq 0 \\
+1 && x > 0
+\end{cases}
+$$
+
+- 
+
+
+>[!tip] Command palette
+>You can open the command palette by pressing `CTRL+SHIFT+P` or by selecting the `>_` icon in the left bar
+
+^3969f5
+
+# Excalidraw
+
+Excalidraw drawings can be created using the [Excalidraw plugin](https://github.com/zsviczian/obsidian-excalidraw-plugin) and should be placed in the `attachments/excalidraw` folder of the current file.
 
 To create a drawing right click on the folder and select "Create new drawing". 
 
 When saving the drawing a `.svg` file with the same name will be created automatically. This is the file that should be [[#Transclusion|transcluded]] in the note.
 
-> [!warning] Don't transclude the excalidraw drawing itself, only the `svg`
+> [!warning] Don't transclude the excalidraw drawing itself, only the `svg`.
+>  You can transclude the last edited drawing by pressing `CTRL+SHIFT+E` or selecting "*Excalidraw: Embed the most recently edited drawing*" in the [[#^3969f5|Command Palette]]
 
-To add Latex to a drawing press `CTRL+SHIFT+L` or search for "Excalidraw: Insert LaTeX formula" in the **Command palette**.
+>[!tip]
+>If you want to edit a drawing, click on it and press `CTRL+SHIFT+O` or select "*Excalidraw: Open Excalidraw drawing*" in the [[#^3969f5|Command Palette]]
 
->[!tip] Command palette
->You can open the command palette by pressing `CTRL+SHIFT+P` or by selecting the `>_` icon in the left bar
+## Latex in a drawing
 
+To add Latex to a drawing press `CTRL+SHIFT+L` or search for "*Excalidraw: Insert LaTeX formula*" in the [[#^3969f5|Command Palette]]
+
+# Callouts
+
+You can add callouts like this
+
+```
+>[!tip] Tip callout
+>text
+```
+
+>[!tip] Tip callout
+>text
+
+## Foldable callouts
+
+You can make a callout foldable by adding a plus (+) or a minus (-) directly after the type identifier.
+
+A plus sign expands the callout by default, and a minus sign collapses it instead.
+
+```
+>[!tip]- Collapsed callout
+> text
+```
+
+>[!tip]- Collapsed callout
+> text
+
+## Available types
+
+>[!info]- Available callouts:
+>
+>> [!note]-
+>> ```md
+>> > [!note]
+>> > Lorem ipsum dolor sit amet
+>> ```
+>
+>> [!abstract]-
+>> ```md
+>> > [!abstract]
+>> > Lorem ipsum dolor sit amet
+>> ```
+>
+>> [!info]-
+>> ```md
+>> > [!info]
+>> > Lorem ipsum dolor sit amet
+>> ```
+>
+>> [!todo]-
+>> ```md
+>> > [!todo]
+>> > Lorem ipsum dolor sit amet
+>> ```
+>
+>> [!tip]-
+>> ```md
+>> > [!tip]
+>> > Lorem ipsum dolor sit amet
+>> ```
+>
+>> [!success]-
+>> ```md
+>> > [!success]
+>> > Lorem ipsum dolor sit amet
+>> ```
+>
+>> [!question]-
+>> ```md
+>> > [!question]
+>> > Lorem ipsum dolor sit amet
+>> ```
+>
+>> [!warning]-
+>>  ```md
+>> > [!warning]
+>> > Lorem ipsum dolor sit amet
+>> ```
+>
+>> [!failure]-
+>> ```md
+>> > [!failure]
+>> > Lorem ipsum dolor sit amet
+>> ```
+>
+>> [!danger]-
+>> ```md
+>> > [!danger]
+>> > Lorem ipsum dolor sit amet
+>> ```
+>
+>> [!bug]-
+>> ```md
+>> > [!bug]
+>> > Lorem ipsum dolor sit amet
+>> ```
+>
+>> [!example]-
+>> ```md
+>> > [!example]
+>> > Lorem ipsum dolor sit amet
+>> ```
+>
+>> [!quote]-
+>> ```md
+>> > [!quote]
+>> > Lorem ipsum dolor sit amet
+>> ```
+>
