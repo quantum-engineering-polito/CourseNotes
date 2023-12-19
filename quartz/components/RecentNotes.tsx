@@ -20,7 +20,7 @@ const defaultOptions = (cfg: GlobalConfiguration): Options => ({
   limit: 5,
   linkToMore: false,
   filter: (node) => {
-    const omit = new Set(["attachments", "tags"])
+    const omit = new Set(["attachments", "tags", "index"])
       for (let o of omit) {
         if (node.filePath!.includes(o)) {
           return false

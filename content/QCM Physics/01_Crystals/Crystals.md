@@ -56,7 +56,7 @@ Changing the basis changes the **coordination number** which is the number of at
 
 ![[silicon structure.png|300]]
 
-In the image above it is possible to see that the unit of repetition in this case is made of the two red atoms and that the coordination number is 4. The atoms positions in the primitive cell are expressed in **fractional coordinates** which means that they are expressed as a fraction of the [[FTP Lectures#^962ccb|lattice parameter]] *a*.
+In the image above it is possible to see that the unit of repetition in this case is made of the two red atoms and that the coordination number is 4. The atoms positions in the primitive cell are expressed in **fractional coordinates** which means that they are expressed as a fraction of the [[Crystallography#^962ccb|lattice parameter]] *a*.
 
 ## Reciprocal lattice
 
@@ -184,3 +184,8 @@ Alkali-alide crystals are transparent throughout the visible region of the spect
 
 ### F-centers
 
+#todo
+
+---
+
+Read Next [[Models]]
