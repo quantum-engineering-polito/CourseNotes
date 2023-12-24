@@ -50,7 +50,7 @@ The parallelepiped with edges $\vec{a}_{1}, \vec{a}_{2}, \vec{a}_{3}$ is called 
 The **primitive cell** is the unit cells with minimum volume.
 
 $$
-V_0 = |\vec{a}_{1} \times \vec{a}_{2} \cdot \vec{a}_{3}|
+\mathbf{V}_0 = |\vec{a}_{1} \times \vec{a}_{2} \cdot \vec{a}_{3}|
 $$
 
 Since the choice of the vector $\vec{a}_{i}$ is not univocal, there is an infinite number of both unit and primitive cells. We are mostly interested in the **Wigner-Seitz cell**.

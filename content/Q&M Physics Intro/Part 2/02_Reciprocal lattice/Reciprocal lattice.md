@@ -58,7 +58,11 @@ $$
 \rho(\vec{r} + \vec{r}_{n}) = \sum_{\vec{G}} \rho_{\vec{G}} e^{ i \vec{G} (\vec{r} + \vec{r}_{n}) } = \sum_{\vec{G}} \rho_{\vec{G}} e^{ i  \vec{G} \cdot \vec{r} } ~  e^{ i \vec{G} \cdot \vec{r}_{n} }
 $$
 If
-$$\vec{G}\cdot \vec{r}_{n} = 2\pi m \tag{1}$$
+
+$$
+\vec{G}\cdot \vec{r}_{n} = 2\pi m \tag{1}
+$$
+
 the last exponential becomes $=1$ and we get:
 
 $$
@@ -86,10 +90,17 @@ $$
 we get 
 
 $$
-\vec{G} \cdot \vec{r}_{n} = hn_1 ~ \vec{g}_{1} \cdot \vec{a}_{1} + k n_2 ~ \vec{g}_{2} \cdot \vec{a}_{2} + l n_3 ~ \vec{g}_{3} \cdot \vec{a}_{3} = 2 \pi m
+\begin{align}
+\vec{G} \cdot \vec{r}_{n} &= hn_1 ~ \vec{g}_{1} \cdot \vec{a}_{1} + k n_2 ~ \vec{g}_{2} \cdot \vec{a}_{2} + l n_3 ~ \vec{g}_{3} \cdot \vec{a}_{3}  \\
+&= hn_1 ~\vec{g}_{1}\cdot \vec{a}_{1}\\
+&= 2 \pi m \\
+
+\end{align}
 $$
 
-which is true when 
+^43f463
+
+which (since $m$ is a generic integer) is true when 
 
 $$
 \begin{cases}
@@ -98,14 +109,20 @@ $$
 \vec{f}_{3} \cdot \vec{a}_{1} = 0
 \end{cases}
 $$
+
 The same can be done for $\vec{r}_{n} = n_2 \vec{a}_{2}$ and $\vec{r}_{n} = n_3 \vec{a}_{3}$ getting the condition: 
 
 $$
 \vec{g}_{i} \cdot \vec{a}_{j} = 2 \pi \delta_{ij}
 $$
+
+^d7feea
+
 The vectors $\vec{G}$ are the **vectors of the reciprocal lattice** and $\vec{g}_{i}$ are the **primitive vectors**.
 
-Dimensionally $G = [\text{length}^{-1}]$ and thus the wave vector $\vec{g}_{1}$ (for example) is **perpendicular** to $\vec{a}_{2}$ and $\vec{a}_{3}$. We can see that there is an **inverse proportionality** between the lengths of the vectors: 
+Dimensionally $G = [\text{length}^{-1}]$ and thus the wave vector $\vec{g}_{1}$ (for example) is **perpendicular** to $\vec{a}_{2}$ and $\vec{a}_{3}$.
+
+We can see that there is an **inverse proportionality** between the lengths of the vectors: 
 
 $$
 \vec{g}_{1} \cdot \vec{a}_{1} = 2 \pi \implies |\vec{g}_{1}| \cdot |\vec{a}_{1}| \cos(\alpha) = 2 \pi \implies |\vec{g}_{1}| = \frac{2\pi}{|\vec{a}_{1}|} \cos(\alpha)
@@ -114,16 +131,18 @@ where $\alpha$ is the angle between $\vec{g}_{1}$ and $\vec{a}_{1}$.
 
 ## Volume of the reciprocal lattice
 
-Given $\mathbf{V} = \vec{a}_{1} \cdot (\vec{a}_{2} \times \vec{a}_{3})$ the volume of the direct lattice we can find that the volume of the reciprocal lattice is 
+Given the volume of the direct lattice $\mathbf{V} = \vec{a}_{1} \cdot (\vec{a}_{2} \times \vec{a}_{3})$ we can find that the volume of the reciprocal lattice is 
 
-$$\mathbf{V}_{rec} = \vec{g}_{1} \cdot (\vec{g}_{2} \times \vec{g}_{3}) = \dots = \frac{(2\pi)^{3}}{\mathbf{V}}$$
+$$
+\mathbf{V}_{rec} = \vec{g}_{1} \cdot (\vec{g}_{2} \times \vec{g}_{3}) = \dots = \frac{(2\pi)^{3}}{\mathbf{V}}
+$$
 
 ## Theorem
 
 Given the Miller indices $h, k, l$ we can prove that 
 
 $$
-\vec{G}_{hkl} = h \vec{g}_{1} + k \vec{g}_{2} + l \vec{g}_{3} \text{ is } \perp \text{to the } (k,k,l) \text{ plane} \tag{1}
+\vec{G}_{hkl} = h \vec{g}_{1} + k \vec{g}_{2} + l \vec{g}_{3} \text{ is } \perp \text{to the } (h,k,l) \text{ plane} \tag{1}
 $$
 
 and
@@ -140,7 +159,7 @@ where $d_{hkl}$ id the distance between adjacent planes.
 
 ## Bragg formulation
 
-#todo add drawing
+![[bragg.png|300]]
 
 In the Bragg formulation the crystal is made by parallel planes and the constructive interference happens only for certain $\theta$ such that the difference in optical path is proportional to the wavelength. More precisely, given the difference in optical path (the extra distance) $L = 2d \sin(\theta)$, we have constructive interference if 
 
@@ -150,7 +169,7 @@ $$
 and thus 
 
 $$
-2d \sin\theta = n \lambda
+\boxed{ 2d \sin\theta = n \lambda }
 $$
 
 ## Von Laue formulation
@@ -158,6 +177,8 @@ $$
 In the Von Laue formulation we start by taking two lattice points (in red) and supposing that every atom can irradiate the incident radiation in every direction.
 
 ![[von laue.svg|400]]
+
+($|\vec{n}| = 1$ and it has the same direction of $\vec{k}$) (not sure)
 
 We can say that the two wavelengths are equal 
 
@@ -190,7 +211,6 @@ L = m \lambda \qquad m \in \mathbb{N}
 $$
 
 So we get 
-
 $$
 \displaylines{
 \vec{d} \cdot (\vec{n} - \vec{n}') = m \lambda \\
@@ -205,7 +225,7 @@ $$
 \vec{r}_{n}(\vec{k} - \vec{k}') = 2\pi m \quad\forall ~\vec{r}_{n}
 $$
 
-which is the definition of reciprocal lattice $\vec{r}_{n} \cdot \vec{G} = 2\pi m$. 
+which is the definition ([[#^43f463|?]]) of reciprocal lattice $\vec{r}_{n} \cdot \vec{G} = 2\pi m$. 
 
 So the Von Laue condition can be written as 
 
@@ -213,7 +233,7 @@ $$
 \vec{k} - \vec{k}' = \Delta \vec{k} = \vec{G}
 $$
 
-A different way to write the same formula, using the fact that $|\vec{k}| = |\vec{k}|'$ is: 
+A different way to write the same formula, using the fact that $|\vec{k}| = |\vec{k}'|$ is: 
 
 $$
 \displaylines{
@@ -228,7 +248,7 @@ $$
 
 ### Equivalence of the formulations
 
-#todo 
+To show that the two formulations are equivalent we can start from the second version of the Von Laue formulation ($\vec{k} -\vec{k}' = \vec{G} \dots$)
 
 ---
 

@@ -45,9 +45,9 @@ While numbered lists like this:
 
 # Links
 
-Links in obsidian have the following format `[[random link]]` and are rendered as follows:
+Internal links in obsidian have the following format `[[file to link]]` and are rendered as follows:
 
-[random link](https://www.youtube.com/watch?v=dQw4w9WgXcQ). 
+[[index|file to link]]. 
 
 You can change the text shown by adding a pipe `|` followed by the text you want. For example [[Clean Room Technology]] `[[Clean Room Technology]]` can be show as [[Clean Room Technology|clean room]] `[[Clean Room Technology|clean room]]`.
 
@@ -57,6 +57,10 @@ You can have the following types of links:
 - **Link to a header of this note**: [[#Text decoration]] written as `[[#Text decoration]]`
 - **Link to a section of this note**: [[#^ed057f]] (the tag is added automatically by obsidian, you just need to write `[[^]]` and select the correct block from the popup menu)
 - **Link to a section of another note**: you can combine the previous links as follows [[Wet and dry etching#^0fa6e1]] 
+
+If you want to add a link to an external website use this format `[random link](url)`:
+
+[random link](https://www.youtube.com/watch?v=dQw4w9WgXcQ)
 
 # Transclusion
 
@@ -173,7 +177,23 @@ $$
 \end{cases}
 $$
 
-- 
+- **Boxed equations**: can be created with `\boxed{}`
+```latex
+\boxed{y = ax + b}
+```
+
+$$
+\boxed{y = ax + b}
+$$
+- **Equation number**: the number of the equation at the end of the line can be created with `\tag{}` (the plugin will automatically expand `tag`) :
+```latex
+y = ax + b \tag{3}
+```
+
+$$
+y = ax + b \tag{3}
+$$
+
 
 
 >[!tip] Command palette

@@ -34,7 +34,7 @@ We want to find the coordinates of the minimum of the potential which correspond
 We can do that by solving 
 
 $$
-\frac{ \partial U }{ \partial R}\Biggr{\lvert}_{R_{req}} = 0 
+\frac{ d U }{ \partial R}\Biggr{\lvert}_{R_{req}} = 0 
 $$
 
 where $R_{eq}$ is the **equilibrium distance**. We get: 
@@ -50,7 +50,6 @@ $$
 U(R_{eq}) = - \varepsilon
 $$
 
-
 ### Equilibrium reticular constant
 
 If we have $N$ atoms, the total potential energy is given by 
@@ -64,7 +63,7 @@ Where $R_{ij}$ is the distance between the atoms $i$ and $j$.
 If we define the **geometrical factor** $p_{ij}$ as 
 
 $$
-p_{ij} = \frac{\text{distance between two atoms}}{\text{distance between first neighbours}}
+p_{ij} = \frac{\text{distance between two atoms}}{\text{distance between first neighbours}} = \frac{R_{ij}}{R}
 $$
 
 #todo add drawing
@@ -84,9 +83,11 @@ The equilibrium distance for FCC can be calculated as
 $$
 \frac{d~U_{tot}}{dR}\Biggr{|}_{R_0} = 0
 $$
-#todo ?????
+Since the summations can be calculated, the only unknown left is the ratio $\sigma/R_0$, which can be calculated as well. For the FCC structure, for example, $\sigma/R_0 = 1.09$.
 
 ## Ionic crystals
+
+Ionic crystals are made up of positive and negative ions. The ionic bond results from the electrostatic interaction of oppositely charged ions.
 
 For ionic crystals (such as $LiF$) the energy will come from **Coulombic interactions** (attractive and repulsive) and from **short range repulsion** (Pauli exclusion principle). There are also van der Waals interaction which can be neglected.
 
@@ -96,9 +97,11 @@ $$
 U_{i} = \sum_{\substack{j\\i\neq j}} U_{ij} = \sum_{\substack{j\\i\neq j}} \bigg[ \underbrace{ \lambda \exp{\left(  -\frac{r_{ij}}{\rho}  \right)} }_{ \text{Pauli} } \pm \frac{q^{2}}{4\pi\varepsilon_0 r_{ij}} \bigg]
 $$
 
+Where $U_{ij}$ is the interaction between ion $i$ and ion $j$. In the sum ($\pm$) the positive sign is taken when the charges are the same and vice versa.
+
 If we have $2N$ ions $U_{tot} = \frac{1}{2} \cdot 2NU_{i} = NU_{i} = N \sum_{j, i\neq j} U_{ij}$.
 
-As before we can introduce the **geometrical factor** $p_{ij}$
+As before, we can introduce the **geometrical factor** $p_{ij}$
 
 #todo add drawing
 
@@ -118,7 +121,7 @@ $$
 If we have $z$ first neighbours:
 
 $$
-U_{tot} = N\left[ z\lambda \exp\bigg( -\frac{R}{\rho} \right) - \underbrace{ \sum_{\substack{ j \\ i\neq j }} \frac{(\pm)}{p_{ij}} }_{\alpha } \frac{q^{2}}{4\pi\varepsilon_0R} \bigg] \tag{2}
+U_{tot} = NU_{i} = N\left[ z\lambda \exp\bigg( -\frac{R}{\rho} \right) - \underbrace{ \sum_{\substack{ j \\ i\neq j }} \frac{(\pm)}{p_{ij}} }_{\alpha } \frac{q^{2}}{4\pi\varepsilon_0R} \bigg] \tag{2}
 $$
 
 Where the $(\pm)$ is a sign that takes into account the attraction or repulsion and $\alpha$ is the **Madelung constant** (the summation is a converging series).
