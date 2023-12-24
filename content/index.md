@@ -14,3 +14,4 @@ If you want to help out but you don't know what to do, you can search for `#todo
 - Giacomo
 - Tommaso
 - Eva
+- [BabelDev](https://github.com/BabelDev0)
