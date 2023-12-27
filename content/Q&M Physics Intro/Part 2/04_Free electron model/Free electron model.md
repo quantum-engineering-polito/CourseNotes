@@ -30,9 +30,12 @@ We will always assume the following two approximations:
 2) **Independent electrons**
 
 In the free electron model, we will also assume that the electrons are free, which means that the potential is 0 everywhere.
+
 #todo drawing
 
 ## Sommerfeld - Bethe model
+
+>[!note] This should correspond to the [[Models#Free and independent electron model|free and independent electron model]] from condensed matter 
 
 This simpler model is useful when the electrons are loosely bound, such as in metals. The electrons are considered to be confined in box of edge $L$ with infinite potential barriers at the edges and a constant $0$ potential inside.
 
@@ -85,7 +88,7 @@ c = \frac{1}{\sqrt{ \mathbf{V} }}
 $$
 where $\mathbf{V} = L^{3}$ is the volume of the cube.
 
-### Eigenvalues
+### Energy eigenvalues
 
 $$
 \begin{align}
@@ -181,7 +184,23 @@ $$
 
 ### Energy of Fermi gas @ T = 0K
 
-#todo 
+#todo what is $\mu$?
+
+
+
+$$
+\begin{align}
+\mu &= \int_{0}^{E_F} D(E) E \, dE  \\
+&= \frac{m}{\pi^{2}\hbar^{2}}\left( \frac{2m}{\hbar^{2}} \right)^{1/2} \int_{0}^{E_F} E^{3/2}  \, dE \\
+&= \frac{m}{\pi^{2}\hbar^{2}}\left( \frac{2m}{\hbar^{2}} \right)^{1/2} \frac{E_F^{5/2}}{5/2} \\
+&\overset{*}{=} \frac{\cancel{ m }}{\pi^{2}\cancel{ \hbar^{2} }}\left( \frac{2\cancel{ m }}{\cancel{ \hbar^{2} }} \right)^{1/2} \left( \frac{\cancel{ \hbar^{2} }}{2\cancel{ m }} \right)^{3/2} 3 \pi^{2} n E_F \frac{2}{5}  \\  
+&\big\Downarrow \\
+\mu &= \frac{3}{5}n E_F
+\end{align} 
+$$
+In $*$ we used the fact that $E_F^{3/2} = (\hbar^{2}/2m)^{3/2} 3\pi^{2} n$ ( #todo where does it come from?).
+
+From this we can see that, as a consequence of the Pauli exclusion principle, even at $0K$ the energy of the gas is not zero.
 
 ### Density of states: general formula
 
@@ -201,7 +220,7 @@ $$
 
 
 $$
-f(E,T) = \frac{1}{e^{ (e-\mu)/k_{b}T } + 1}
+f(E,T) = \frac{1}{\exp[(e-\mu)/k_{b}T] + 1}
 $$
 
 
@@ -217,9 +236,11 @@ $$
 \mu(T = 0K) = E_F
 $$
 
-#todo add plots
+![[fermidirac.excalidraw.svg|300]]
 
 What we want to do now is estimate the width of the region where the Fermi-Dirac varies. 
+
+![[deltaE fermi dirac.svg|500]]
 
 If we impose $y \equiv f$ and $x \equiv E$, this can be done by approximating the slope with the tangent line in $E = \mu$ and calculating the intersections with $y = 1$ and $y = 0$.
 
@@ -264,7 +285,7 @@ $$
 
 #todo thermal properties in metals (pag 25)
 
-## Dulong-Petite law
+## Dulong-Petit law
 
 #todo 
 

@@ -31,8 +31,8 @@ Wigner-Seitz cell is a special choice of primitive unit cell: region of points c
 How to draw it in 2D: ^69cf07
 1) Find the point for which you want to draw the cell.
 2) Draw lines that connect it to all its nearest neighbours.
-3) For each of these lines draw a perpendicular line(*) that passes through its mid point.
-4) The area delimited by the lines (*) is the Wigner-Seitz cell.
+3) For each of these lines draw a perpendicular line(* ) that passes through its mid point.
+4) The area delimited by the lines (* ) is the Wigner-Seitz cell.
 
 ![[wignerSeitzCell2.png|300]]
 

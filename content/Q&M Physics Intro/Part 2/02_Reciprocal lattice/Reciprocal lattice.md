@@ -153,7 +153,7 @@ $$
 
 where $d_{hkl}$ id the distance between adjacent planes.
 
->[!warning] Demonstrations omitted
+>[!warning] Demonstration omitted
 
 # X-Ray diffraction
 
@@ -230,7 +230,7 @@ which is the definition ([[#^43f463|?]]) of reciprocal lattice $\vec{r}_{n} \cdo
 So the Von Laue condition can be written as 
 
 $$
-\vec{k} - \vec{k}' = \Delta \vec{k} = \vec{G}
+\boxed{ \vec{k} - \vec{k}' = \Delta \vec{k} = \vec{G} }
 $$
 
 A different way to write the same formula, using the fact that $|\vec{k}| = |\vec{k}'|$ is: 

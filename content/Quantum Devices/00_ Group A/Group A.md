@@ -91,7 +91,7 @@ $$
 }
 $$
 
-![[energy distribution.excalidraw.svg|300]]
+![[energy distribution.excalidraw.svg|200]]
 
 Where 
 
