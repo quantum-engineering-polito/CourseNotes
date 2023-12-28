@@ -295,7 +295,7 @@ If we were to double the size of the sample nothing would change since there wou
 ## Germanium band structure and DOS
 
 Recalling the definition of density of states ![[#^98edb3]]
-we can draw a very simplified plot of $D(E)$ and $E$ (on the left) and the probability of occupation ([[Group A Lectures#^7202aa|see group A notes]]):
+we can draw a very simplified plot of $D(E)$ and $E$ (on the left) and the probability of occupation ([[Group A#^7202aa|see group A notes]]):
 
 ![[DOS and prob.excalidraw.png|600]]
 
