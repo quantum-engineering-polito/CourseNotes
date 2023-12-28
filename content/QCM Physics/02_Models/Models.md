@@ -1,3 +1,7 @@
+---
+nextnote: "[[Fermi golden rule]]"
+---
+
 
 # Free and independent electron model
 
@@ -356,6 +360,3 @@ $$
 
 If we calculate the energy $\Delta E$ needed to move an electron from the energy state with $N = 1$ to the conduction band (where it can move freely) we would get $\Delta E(n = 1 \to n = \infty) = 45 ~m\text{eV}$.
 
---- 
-
-Read Next [[Fermi golden rule]]

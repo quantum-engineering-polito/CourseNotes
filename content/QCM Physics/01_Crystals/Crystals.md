@@ -1,3 +1,7 @@
+---
+nextnote: "[[Models]]"
+---
+
 # Crystals
 
 ![[Crystallography#Types of solids]]
@@ -186,6 +190,3 @@ Alkali-alide crystals are transparent throughout the visible region of the spect
 
 #todo
 
----
-
-Read Next [[Models]]

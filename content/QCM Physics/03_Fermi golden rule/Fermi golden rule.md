@@ -1,3 +1,7 @@
+---
+nextnote: "[[nN heterostructure]]"
+---
+
 The [[#Density of states (DOS)]] can be written in another equivalent form 
 
 $$
@@ -154,6 +158,3 @@ $$
 
 #todo what are we doing??
 
----
-
-Read Next [[nN heterostructure]]
