@@ -1,3 +1,7 @@
+---
+nextnote: "[[Free electron model]]"
+---
+
 
 **Cohesion energy** is the energy required to separate (bring at $\infty$ distance) the atoms of a crystal.
 
@@ -183,6 +187,3 @@ $$
 \alpha = 2\ln(2)
 $$
 
----
-
-Read Next [[Free electron model]]

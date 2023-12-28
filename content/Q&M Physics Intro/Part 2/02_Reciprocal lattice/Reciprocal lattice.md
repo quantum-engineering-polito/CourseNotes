@@ -1,3 +1,7 @@
+---
+nextnote: "[[Cohesion in crystals]]"
+---
+
 # Reciprocal lattice
 
 Let's start from studying the simple case of a 1D crystal whose atoms are arranged in a line at a distance $a$ (**period**) from each other.
@@ -250,6 +254,3 @@ $$
 
 To show that the two formulations are equivalent we can start from the second version of the Von Laue formulation ($\vec{k} -\vec{k}' = \vec{G} \dots$)
 
----
-
-Read Next [[Cohesion in crystals]]
