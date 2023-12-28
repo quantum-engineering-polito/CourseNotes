@@ -33,7 +33,7 @@ $$
 
 > We know that Bragg reflection is a characteristic feature of wave propagation in crystals. Bragg reflection of electron waves in crystals is the cause of energy gaps. [...] These energy gaps are of decisive significance in determining whether a solid is an insulator or a conductor. We explain physically the origin of energy gaps in the simple problem of a linear solid of lattice constant a.
 > 
-> Kittel, page164
+> Kittel, page 164
 
 ### 1D example
 
