@@ -10,7 +10,7 @@ Before analysing in more detail the crystals it is useful to have a general over
 | -------------------- | -------------------- | ------------------ |
 | ![[monocrystal.png]] | ![[polycristal.png]] | ![[amorphous.png]] |
 
-In a monocrystal all the atoms are arranged on a common **lattice** structure, in a polycrystal there are multiple lattices of the same type oriented differently to one another (each lattice is called **grain**). In amorphous material, on the other hand, the atoms are placed randomly in space.
+In a monocrystal all the atoms are arranged on a common **lattice** structure, in a polycrystal there are multiple lattices of the same type oriented differently to one another (each lattice is called **grain**), the interface between two grain is called **Grain boundary**. In amorphous material, on the other hand, the atoms are placed randomly in space.
 
 While we will analyse mostly monocrystals, it is important to note that all three types are useful in practical applications, such as the creation of integrated devices.
 
