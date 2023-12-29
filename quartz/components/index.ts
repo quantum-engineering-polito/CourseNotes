@@ -20,6 +20,8 @@ import MobileOnly from "./MobileOnly"
 import RecentNotes from "./RecentNotes"
 import Breadcrumbs from "./Breadcrumbs"
 import ExplorerMobile from "./ExplorerMobile"
+import Author from "./Author"
+import nextNoteLink from "./nextNoteLink"
 
 export {
   ArticleTitle,
@@ -43,5 +45,7 @@ export {
   RecentNotes,
   NotFound,
   Breadcrumbs,
-  ExplorerMobile
+  ExplorerMobile,
+  Author,
+  nextNoteLink
 }

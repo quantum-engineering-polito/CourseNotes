@@ -1,5 +1,6 @@
 ---
 nextnote: "[[Crystallography]]"
+author: Giacomo
 ---
 
 # Goals
