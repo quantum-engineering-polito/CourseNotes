@@ -50,6 +50,7 @@ const config: QuartzConfig = {
       Plugin.CreatedModifiedDate({
         priority: ["frontmatter", "filesystem"], // you can add 'git' here for last modified from Git but this makes the build slower
       }),
+      Plugin.Latex({ renderEngine: "mathjax" }),
       Plugin.SyntaxHighlighting(),
       Plugin.ObsidianFlavoredMarkdown({ enableInHtmlEmbed: false }),
       Plugin.GitHubFlavoredMarkdown(),
