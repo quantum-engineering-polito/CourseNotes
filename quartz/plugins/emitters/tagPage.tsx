@@ -40,7 +40,6 @@ export const TagPage: QuartzEmitterPlugin<FullPageLayout> = (userOpts) => {
       const tags: Set<string> = new Set(
         allFiles.flatMap((data) => data.frontmatter?.tags ?? []).flatMap(getAllSegmentPrefixes),
       )
-
       // add base tag
       tags.add("index")
 

@@ -59,7 +59,8 @@ function toggleFolder(evt: MouseEvent) {
   // Save folder state to localStorage
   const clickFolderPath = currentFolderParent.dataset.folderpath as string
 
-  const fullFolderPath = clickFolderPath
+  // Remove leading "/"
+  const fullFolderPath = clickFolderPath.substring(1)
   toggleCollapsedByPath(explorerState, fullFolderPath)
 
   const stringifiedFileTree = JSON.stringify(explorerState)
@@ -107,7 +108,9 @@ function setupExplorer() {
     explorerState = JSON.parse(storageTree)
     explorerState.map((folderUl) => {
       // grab <li> element for matching folder path
-      const folderLi = document.querySelector(`[data-folderpath='${folderUl.path}']`) as HTMLElement
+      const folderLi = document.querySelector(
+        `[data-folderpath='/${folderUl.path}']`,
+      ) as HTMLElement
 
       // Get corresponding content <ul> tag and set state
       if (folderLi) {
