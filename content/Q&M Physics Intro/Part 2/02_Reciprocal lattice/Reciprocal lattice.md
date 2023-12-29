@@ -1,3 +1,7 @@
+---
+nextnote: "[[Cohesion in crystals]]"
+---
+
 # Reciprocal lattice
 
 Let's start from studying the simple case of a 1D crystal whose atoms are arranged in a line at a distance $a$ (**period**) from each other.
@@ -153,7 +157,7 @@ $$
 
 where $d_{hkl}$ id the distance between adjacent planes.
 
->[!warning] Demonstrations omitted
+>[!warning] Demonstration omitted
 
 # X-Ray diffraction
 
@@ -230,7 +234,7 @@ which is the definition ([[#^43f463|?]]) of reciprocal lattice $\vec{r}_{n} \cdo
 So the Von Laue condition can be written as 
 
 $$
-\vec{k} - \vec{k}' = \Delta \vec{k} = \vec{G}
+\boxed{ \vec{k} - \vec{k}' = \Delta \vec{k} = \vec{G} }
 $$
 
 A different way to write the same formula, using the fact that $|\vec{k}| = |\vec{k}'|$ is: 
@@ -250,6 +254,3 @@ $$
 
 To show that the two formulations are equivalent we can start from the second version of the Von Laue formulation ($\vec{k} -\vec{k}' = \vec{G} \dots$)
 
----
-
-Read Next [[Cohesion in crystals]]

@@ -1,3 +1,7 @@
+---
+nextnote: "[[PVD]]"
+---
+
 CVD allows thin film formation from vapor phase reactants. The material that can be deposited range from metals to semiconductors to insulators.
 
 ![[cvd vs epitaxy.png|300]]
@@ -119,6 +123,3 @@ Polycrystalline silicon can be obtained through LPCVD and is used as the gate el
 
 The grain size depends on the deposition temperature: hotter deposition leads to larger grain structure (more similar to crystalline silicon), similarly to what happened in [[#Growth regimes|epitaxy]].
 
----
-
-Read Next [[PVD]]

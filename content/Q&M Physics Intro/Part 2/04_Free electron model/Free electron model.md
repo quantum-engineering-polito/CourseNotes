@@ -1,3 +1,12 @@
+---
+next_note: "[[Bloch theorem]]"
+---
+
+>[!quote] Where *Ibach Luth* is mentioned we refer to
+>Ibach Luth
+>*Solid-State Physics
+>An Introduction to Principles of Materials Science*
+>Fourth Edition
 
 In this chapter we will deal only with the "outer" electrons, since the inner ones behave similarly to the isolated atom.
 
@@ -30,9 +39,12 @@ We will always assume the following two approximations:
 2) **Independent electrons**
 
 In the free electron model, we will also assume that the electrons are free, which means that the potential is 0 everywhere.
+
 #todo drawing
 
 ## Sommerfeld - Bethe model
+
+>[!note] This should correspond to the [[Models#Free and independent electron model|free and independent electron model]] from condensed matter 
 
 This simpler model is useful when the electrons are loosely bound, such as in metals. The electrons are considered to be confined in box of edge $L$ with infinite potential barriers at the edges and a constant $0$ potential inside.
 
@@ -85,7 +97,7 @@ c = \frac{1}{\sqrt{ \mathbf{V} }}
 $$
 where $\mathbf{V} = L^{3}$ is the volume of the cube.
 
-### Eigenvalues
+### Energy eigenvalues
 
 $$
 \begin{align}
@@ -181,7 +193,24 @@ $$
 
 ### Energy of Fermi gas @ T = 0K
 
-#todo 
+>[!quote] Ibach Luth, 6.2
+
+The internal energy density $u$ can be calculated as
+$$
+\begin{align}
+u &= \int_{0}^{E_F} D(E) E \, dE  \\
+&= \frac{m}{\pi^{2}\hbar^{2}}\left( \frac{2m}{\hbar^{2}} \right)^{1/2} \int_{0}^{E_F} E^{3/2}  \, dE \\
+&= \frac{m}{\pi^{2}\hbar^{2}}\left( \frac{2m}{\hbar^{2}} \right)^{1/2} \frac{E_F^{5/2}}{5/2} \\
+&\overset{*}{=} \frac{\cancel{ m }}{\pi^{2}\cancel{ \hbar^{2} }}\left( \frac{2\cancel{ m }}{\cancel{ \hbar^{2} }} \right)^{1/2} \left( \frac{\cancel{ \hbar^{2} }}{2\cancel{ m }} \right)^{3/2} 3 \pi^{2} n E_F \frac{2}{5}  \\  
+&\big\Downarrow \\
+u &= \frac{3}{5}n E_F
+\end{align} 
+$$
+In $*$ we used the fact that $E_F^{3/2} = (\hbar^{2}/2m)^{3/2} 3\pi^{2} n$ ( #todo where does it come from?).
+
+From this we can see that, as a consequence of the Pauli exclusion principle, even at $T = 0K$ the energy of the gas is non zero.
+
+Since $u$ is orders of magnitude higher than the internal energy of a **classical** gas (Boltzmann) at $T = 300K$, we can study the conduction electron gas regardless of the effects of the temperature.
 
 ### Density of states: general formula
 
@@ -201,12 +230,12 @@ $$
 
 
 $$
-f(E,T) = \frac{1}{e^{ (e-\mu)/k_{b}T } + 1}
+f(E,T) = \frac{1}{\exp[(e-\mu)/k_{b}T] + 1}
 $$
 
 
 $$
-\lim_{ \substack{ n } \to 0 } f(E,T) = \begin{cases}
+\lim_{ \substack{ T } \to 0 } f(E,T) = \begin{cases}
 0 && E > \mu \\
 1 && E < \mu
 \end{cases}
@@ -217,9 +246,13 @@ $$
 \mu(T = 0K) = E_F
 $$
 
-#todo add plots
+![[fermidirac.excalidraw.svg|300]]
 
 What we want to do now is estimate the width of the region where the Fermi-Dirac varies. 
+
+>[!quote] Ibach Luth, 6.3
+
+![[deltaE fermi dirac.svg|500]] ^1e2627
 
 If we impose $y \equiv f$ and $x \equiv E$, this can be done by approximating the slope with the tangent line in $E = \mu$ and calculating the intersections with $y = 1$ and $y = 0$.
 
@@ -262,13 +295,53 @@ $$
 f(E,T) \simeq e^{ -\frac{E - \mu}{k_{B}T} } \quad \text{for} \quad |E - E_F| \gg k_{B}T
 $$
 
-#todo thermal properties in metals (pag 25)
+Which is a classical **Boltzmann distribution**
 
-## Dulong-Petite law
+## Thermal properties in classical gas
 
-#todo 
+The internal energy of a classical gas of $N$ particles is 
+
+$$
+U = \frac{3}{2} N k_{B}T
+$$
+
+and its internal energy density is 
+
+$$
+u = \frac{U}{\mathbf{V}} = \frac{3}{2} \frac{N}{\mathbf{V}}k_{B}T = \frac{3}{2}n k_{B}T \qquad k_{B} = \frac{R}{N_{A}}
+$$
 
 
----
+The specific heat is given by 
 
-Read Next [[Bloch theorem]]
+$$
+\boxed{ c_{V} = \frac{ \partial u }{ \partial T } \Bigg|_{\mathbf{V}}  = \frac{3}{2}nk_{B} }
+$$
+
+## Thermal properties in metals
+
+>[!quote] Ibach Luth, 6.4
+
+From what we just saw, we would expect that the specific heat of the electron gas would increase linearly with the number of electrons but experiments show that this is not the case. What we observe is that metals follow the **Dulong-Petit** law, where the specific heat tends to a constant value $3R$ as temperature increases.
+
+The reason is simple: electrons, in contrast to a classical gas, can only gain energy if they can move into free states in their energetic neighbourhood. The number of such electrons, expressed as a fraction of the total. 
+
+Looking at what we saw [[#^1e2627|before]], this can be expressed as the fact that the electrons that can "move" are only the ones in the region $\Delta E$, which is much smaller that $E_F$.
+
+#todo add plot on my notes
+
+We now want to show that the specific heat of the electrons is negligible compared to the one of the lattice.
+
+
+To do this we want to calculate $c_V$ of the electrons. First of all we need the internal energy density $u(t)$ 
+
+$$
+u(t) = \int_{0}^{+\infty} E D(E) f(E,T) \, dE 
+$$
+
+And, from the definition we get 
+
+$$
+c_{V}^{0} = \frac{ \partial u }{ \partial T } \Bigg|_{\mathbf{V}} = \int_{0}^{+\infty} E D(E) \frac{ \partial f }{ \partial T } \, dE \tag{3} 
+$$
+

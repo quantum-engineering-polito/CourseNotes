@@ -1,3 +1,7 @@
+---
+nextnote: "[[CVD]]"
+---
+
 Epitaxy is a technique that consists in growing monocrystalline layers on top of a monocrystalline substrate. Similarly to the [[Wafer Production#^649cfb|Czochralski process]], a seed is needed for the new crystal to grow properly but in this case the grown material does not have to be the same as the substrate. With **heteroepitaxy** it is possible to grow different crystals on top of a pure silicon substrate provided that they have a **similar crystalline structure** and **lattice parameter**.
 
 Epitaxy can be used for multiple reasons such as adding a layer with different doping on top of a doped substrate (for example to increase breakdown voltage), or create **buried layers**. Buried layers are regions of the substrate which are doped and the covered with a new layer of silicon; this can be useful since it is not possible to add dopants too deeply. It is also possible to control the doping profile (the concentration of dopants at different depths) as visible in the plots.
@@ -63,6 +67,3 @@ The furnaces are separated by $N_{2}$ cooled walls that keep them thermally isol
 
 Since UHV require a lot of time to be achieved, the main chamber is preceded by a smaller chamber used for loading the substrates without breaking the vacuum in the main chamber.
 
----
-
-Read Next [[CVD]]

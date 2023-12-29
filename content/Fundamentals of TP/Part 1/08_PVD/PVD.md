@@ -1,3 +1,7 @@
+---
+nextnote: "[[Doping]]"
+---
+
 In physical vapour deposition a film is grown on the substrate by the **condensation** of a vapor. 
 
 Compared to [[#Chemical Vapour Deposition (CVD)|CVD]], where there was a chemical bonding of the film to the substrate, in PVD there is only a physical bonding: the material "sticks" to the **cold surface**.
@@ -138,6 +142,3 @@ Before doing the procedure above, a conductive **seed layer** has to be created 
 | Conformality         | Medium- High                                                          | Medium, Highest for **ALD**       | Low for **evaporations** (point like source), Medium for **sputtering**, Non conformal for **ionized sputtering** |
 | Temperature of wafer | High                                                                  | Medium, Lower for PECVD           | Low                                                                                                               |
 
----
-
-Read Next [[Doping]]

@@ -1,3 +1,7 @@
+---
+nextnote: "[[Free electron model]]"
+---
+
 
 **Cohesion energy** is the energy required to separate (bring at $\infty$ distance) the atoms of a crystal.
 
@@ -150,6 +154,9 @@ Since usually $\rho < 0.1 \cdot R_0$ the Madelung energy contains $\simeq$ 90% f
 
 ### Example: Madelung constant
 
+>[!quote] Kittel, page 64
+
+
 Let's consider the example of a 1D crystal like the one in the image
 
 ![[madelung 1D.svg|400]]
@@ -180,6 +187,3 @@ $$
 \alpha = 2\ln(2)
 $$
 
----
-
-Read Next [[Free electron model]]

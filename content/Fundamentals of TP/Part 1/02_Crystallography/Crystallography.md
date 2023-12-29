@@ -1,3 +1,7 @@
+---
+nextnote: "[[Clean Room Technology]]"
+---
+
 Before analysing in more detail the crystals it is useful to have a general overview of the 3 different types of solids we can have.
 
 # Types of solids
@@ -86,6 +90,3 @@ Impurities have an intrinsic solid solubility in the host crystal which varies w
 
 ![[volumeDislocation.png|200]]
 
----
-
-Read Next [[Clean Room Technology]]

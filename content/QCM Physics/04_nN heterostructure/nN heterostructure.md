@@ -1,3 +1,7 @@
+---
+nextnote: "[[Quantum Hall effect]]"
+---
+
 **n**: almost intrinsic
 **N**: heavily doped
 
@@ -190,6 +194,3 @@ $$
 
 #todo 
 
----
-
-Read Next [[Quantum Hall effect]]

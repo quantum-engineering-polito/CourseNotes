@@ -1,3 +1,7 @@
+---
+nextnote: "[[Epitaxy]]"
+---
+
 Silicon oxidation is an additive process that consist in the formation of silicon dioxide ($SiO_{2}$) on the exposed surface of a wafer. This oxide is one of the main reasons why silicon became the most used semiconductor in the industry; $SiO_{2}$ is an excellent dielectric material, it is easy to grow and can be used for many different applications (insulator, masking layer, sacrificial layer in micro-machining, etc.).
 
 >[!warning] Silicon oxidation is not a deposition
@@ -136,6 +140,3 @@ Rapid thermal oxidation is a technique used to form thin, high quality oxide lay
 
 This process exploits UV lights to split $O_{2}$ into oxygen radicals $O^{\bullet}$, which are neutral (non ionized) but extremely reactive.
 
----
-
-Read Next [[Epitaxy]]

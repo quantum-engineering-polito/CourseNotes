@@ -1,3 +1,7 @@
+---
+nextnote: "[[Packaging]]"
+---
+
 
 Etching is the process in which unwanted areas of films or bulk material are removed **selectively**.
 
@@ -191,6 +195,3 @@ Obviously the higher the selectivity, the better the results since the substrate
 
 ## Optical emission spectroscopy
 
----
-
-Read Next [[Packaging]]
