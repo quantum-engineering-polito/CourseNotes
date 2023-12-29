@@ -4,6 +4,8 @@ import { QuartzEmitterPlugin } from "../types"
 // @ts-ignore
 import spaRouterScript from "../../components/scripts/spa.inline"
 // @ts-ignore
+import plausibleScript from "../../components/scripts/plausible.inline"
+// @ts-ignore
 import popoverScript from "../../components/scripts/popover.inline"
 import styles from "../../styles/custom.scss"
 import popoverStyle from "../../components/styles/popover.scss"
@@ -12,7 +14,6 @@ import { StaticResources } from "../../util/resources"
 import { QuartzComponent } from "../../components/types"
 import { googleFontHref, joinStyles } from "../../util/theme"
 import { Features, transform } from "lightningcss"
-import { transform as transpile } from "esbuild"
 
 type ComponentResources = {
   css: string[]
@@ -55,16 +56,9 @@ function getComponentResources(ctx: BuildCtx): ComponentResources {
   }
 }
 
-async function joinScripts(scripts: string[]): Promise<string> {
+function joinScripts(scripts: string[]): string {
   // wrap with iife to prevent scope collision
-  const script = scripts.map((script) => `(function () {${script}})();`).join("\n")
-
-  // minify with esbuild
-  const res = await transpile(script, {
-    minify: true,
-  })
-
-  return res.code
+  return scripts.map((script) => `(function () {${script}})();`).join("\n")
 }
 
 function addGlobalPageResources(
@@ -91,30 +85,17 @@ function addGlobalPageResources(
     componentResources.afterDOMLoaded.push(`
       window.dataLayer = window.dataLayer || [];
       function gtag() { dataLayer.push(arguments); }
-      gtag("js", new Date());
-      gtag("config", "${tagId}", { send_page_view: false });
+      gtag(\`js\`, new Date());
+      gtag(\`config\`, \`${tagId}\`, { send_page_view: false });
   
-      document.addEventListener("nav", () => {
-        gtag("event", "page_view", {
+      document.addEventListener(\`nav\`, () => {
+        gtag(\`event\`, \`page_view\`, {
           page_title: document.title,
           page_location: location.href,
         });
       });`)
   } else if (cfg.analytics?.provider === "plausible") {
-    const plausibleHost = cfg.analytics.host ?? "https://plausible.io"
-    componentResources.afterDOMLoaded.push(`
-      const plausibleScript = document.createElement("script")
-      plausibleScript.src = "${plausibleHost}/js/script.manual.js"
-      plausibleScript.setAttribute("data-domain", location.hostname)
-      plausibleScript.defer = true
-      document.head.appendChild(plausibleScript)
-
-      window.plausible = window.plausible || function() { (window.plausible.q = window.plausible.q || []).push(arguments) }
-
-      document.addEventListener("nav", () => {
-        plausible("pageview")
-      })
-    `)
+    componentResources.afterDOMLoaded.push(plausibleScript)
   } else if (cfg.analytics?.provider === "umami") {
     componentResources.afterDOMLoaded.push(`
       const umamiScript = document.createElement("script")
@@ -184,11 +165,8 @@ export const ComponentResources: QuartzEmitterPlugin<Options> = (opts?: Partial<
       addGlobalPageResources(ctx, resources, componentResources)
 
       const stylesheet = joinStyles(ctx.cfg.configuration.theme, ...componentResources.css, styles)
-      const [prescript, postscript] = await Promise.all([
-        joinScripts(componentResources.beforeDOMLoaded),
-        joinScripts(componentResources.afterDOMLoaded),
-      ])
-
+      const prescript = joinScripts(componentResources.beforeDOMLoaded)
+      const postscript = joinScripts(componentResources.afterDOMLoaded)
       const fps = await Promise.all([
         emit({
           slug: "index" as FullSlug,
