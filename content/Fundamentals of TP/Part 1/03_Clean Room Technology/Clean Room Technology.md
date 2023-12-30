@@ -1,5 +1,7 @@
 ---
 nextnote: "[[Lithography]]"
+author: Giacomo
+authorlink: https://github.com/gamberoillecito
 ---
 
 Clean rooms are environments where particulate concentration is reduced and kept under a specified level (usually also temperature and humidity are controlled).

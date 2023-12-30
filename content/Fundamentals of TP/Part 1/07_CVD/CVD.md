@@ -1,5 +1,7 @@
 ---
 nextnote: "[[PVD]]"
+author: Giacomo
+authorlink: https://github.com/gamberoillecito
 ---
 
 CVD allows thin film formation from vapor phase reactants. The material that can be deposited range from metals to semiconductors to insulators.

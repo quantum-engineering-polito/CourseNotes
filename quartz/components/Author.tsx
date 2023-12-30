@@ -5,7 +5,7 @@ import { QuartzComponentConstructor, QuartzComponentProps } from "./types"
 export default (() => {
   function Author({fileData}: QuartzComponentProps) {
     const author = fileData.frontmatter?.author
-    const authorLink = fileData.frontmatter?.author_link
+    const authorLink = fileData.frontmatter?.authorlink
     if (author) {
       console.log(author)
       var message = "This note was written by"
