@@ -4,16 +4,17 @@ nextnote: "[[Fermi golden rule]]"
 
 
 # Free and independent electron model
+The free-electron model, in solid-state physics, simplifies metals as containers filled with a gas composed of free electrons. These electrons are considered unbound to any particular atom and are able to move freely throughout the material. 
 
-- **Independent**: neglect interaction between electrons (Coulomb repulsion)
-- **Free**: assume that the potential $V = 0$
+Electrons in the model are:
+- **Independent**: we can neglect interaction between electrons (Coulomb repulsion)
+- **Free**: we assume that the potential inside the crystal is $V = 0$ 
 
 Let's consider a crystal of macroscopic dimensions ($L_{x}, L_{y}, L_{z}$) and define a reference system as shown below.
 
-
 ![[ref cube.svg|300]]
 
-We can then write the Shroedinger equation (SE)
+We can then write the Schrödinger equation (SE)
 
 $$-\frac{\hbar}{2m} \nabla^{2} \Psi(\bar{r}) = E \Psi (\bar{r})$$
 
@@ -30,7 +31,7 @@ $$
 E = \frac{\hbar^{2} k^{2}}{2m}
 $$
 
-Since we want to study the properties of the material as if it was infinite, we have to use a mathematical "trick" to write this condition. What we do is saying that instead of going "outside" the crystal, we enter in an identical one (i.e. we imagine being in a periodic matrix of crystals one next to the other).
+We want to study the properties of the material without worrying about the possibility of getting out of it (where the properties we are interested in no longer apply). So we apply an approximation by imagining that the lattice of the crystal continues to infinity. What we do is saying that instead of going "outside" the crystal, we enter in an identical one (i.e. we imagine being in a periodic matrix of crystals one next to the other).
 This is called **periodic boundary condition** (PBC) or **Born Von Karman condition** and can be written as follows:  ^dedc30
 
 $$
@@ -73,31 +74,27 @@ E = \frac{\hbar^{2} k^{2}}{2m} \qquad (2)\\
 p = \hbar \cdot k \qquad
 \end{cases}
 $$
-
+$p$ is obtained from the [De Broglie relations](https://en.wikipedia.org/wiki/De_Broglie_relations "De Broglie relations")
 # Density of states (DOS)
-
-The density of states $D(E)$ is defined as follows: ^9c22fc
+DOS describes how the energy levels create by the lattice structure are distributed; it is defined as follows: ^9c22fc
 
 $$
 D(E) = \frac{1}{V} \frac{dN(E)}{dE} \quad \left[ \frac{1}{cm^{3} \cdot eV} \right]
 $$
 
 ^98edb3
-
-Where $N(E)$ is the number of states (i.e. the eigenvalues of the system).
+Where $\frac{dN(E)}{dE}$ is the number of energy states $N(E)$ within an energy range $dE$.
 
 We can find $N(E)$ geometrically reasoning on the following picture.
 
 ![[numberOfStates.png|400]]
 
-Since $k$ and $E$ are related by $(2)$ we can find first find $N(k)$ and then obtain $N(E)$. 
-
+Since $k$ and $E$ are related by $(2)$ we can find first $N(k)$ and then obtain $N(E)$. 
 $$
 k = \sqrt{ \frac{2mE}{\hbar^{2}} } \qquad (3)
 $$
 
-
-$N(E)$ can be calculated as the number of orange points inside a sphere of radius $k$ divided by the volume occupied by one energy state (the highlighted cube):
+$N(E)$ can be calculated as the volume of a sphere of radius $k$ divided by the volume occupied by one energy state (the highlighted cube) :
 
 $$
 \begin{align}
@@ -118,10 +115,9 @@ D(E) = \frac{1}{\cancel{ V }} \frac{\cancel{ V }}{\cancel{3} \pi^{2}} \left( \fr
 $$
 
 ![[De.png|400]]
-
+**In 3D the $D(E)$ is proportional to the $\sqrt{E}$**
 ## Fermi-Dirac distribution
-
-Fermi-Dirac distribution gives the probability of a given quantum state of energy of being occupied at a given temperature.
+Fermi-Dirac distribution gives the probability of a given energy state of being occupied at a given temperature.
 
 $$
 \displaylines{
@@ -134,8 +130,7 @@ f(E, T) = \frac{1}{e^{ \frac{E - E_{F}}{KT} } + 1} \\\\
 $$
 
 ![[fermidirac.excalidraw.png|400]]
-We can see that this model cannot correctly represent materials such as insulators or semi conductors.
-
+The Fermi-Dirac distribution relies on the presumption of a continuous spread of energy states. While in metals, the values of $k$s appear nearly continuous, this isn't the case for semiconductors and insulators. In these materials, a distinct energy gap exists, with no available states for electrons. Consequently, the Fermi-Dirac model inadequately portrays materials like insulators or semiconductors due to this significant deviation from its assumptions
 # Independent electrons model
 
 This model improves the previous one by dropping the "free electrons" assumption. This implies that in this case the potential is periodic: 
