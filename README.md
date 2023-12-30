@@ -1,4 +1,4 @@
-# quantum_eng_polito_notes
+# quantum_eng_polito_note
 
 ## Environment setup
 
