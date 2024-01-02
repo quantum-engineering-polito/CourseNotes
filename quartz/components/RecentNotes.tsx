@@ -36,6 +36,11 @@ export default ((userOpts?: Partial<Options>) => {
     const opts = { ...defaultOptions(cfg), ...userOpts }
     const pages = allFiles.filter(opts.filter).sort(opts.sort)
     const remaining = Math.max(0, pages.length - opts.limit)
+
+    // filter out for everything except index, code from jzhao's site
+    if (fileData.slug !== "index") {
+      return null
+    }
     return (
       <div class={`recent-notes ${displayClass ?? ""}`}>
         <h3>{opts.title}</h3>
@@ -44,11 +49,6 @@ export default ((userOpts?: Partial<Options>) => {
             const title = page.frontmatter?.title
             //const tags = page.frontmatter?.tags ?? []
             const tags:String[] = []
-
-            // filter out for everything except index, code from jzhao's site
-            if (fileData.slug !== "index") {
-              return <></>
-            }
             return (
               <li class="recent-li">
                 <div class="section">

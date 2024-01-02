@@ -1,3 +1,7 @@
+---
+nextnote: "[[Wet and dry etching]]"
+---
+
 Doping consists in introducing atoms in **substitutional sites** of a substrate to alter its **physical**, **electrical** and **chemical** properties. The doping levels can vary from $10^{15}$ to $10^{20}$ atoms/cm$^{3}$; adding more atoms would saturate the substrate (passing the solid solubility) and creating **volume defect**. 
 
 The most used atoms to dope $Si$ are $P$, $As$ and $B$ since they have greater solubility in $Si$ compared to other dopants.
@@ -179,6 +183,3 @@ Finally a [[Complementary Technologies#Global planarization|CMP polish]] is used
 
 The process provides optimal usage of valuable material by placing the amount of materials needed for electronic functionality on top of a very inexpensive support layer.
 
----
-
-Read Next [[Wet and dry etching]]

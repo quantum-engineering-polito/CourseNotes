@@ -1,3 +1,7 @@
+---
+nextnote: "[[Silicon Oxidation]]"
+---
+
 Lithography is a process used to **select** parts of the surface of a material that will need to be processed later with different technologies. One of the advantages is that it allows **batch processing**, i.e. the creation multiple similar features in parallel; this can drastically decrease processing times and thus decrease costs.
 
 
@@ -234,6 +238,3 @@ This other example shows how the post exposure bake reduces the effects of stand
 
 ![[lithography simulation2.png|400]]
 
----
-
-Read Next [[Silicon Oxidation]]

@@ -1,3 +1,7 @@
+---
+nextnote: "[[Nearly free electrons]]"
+---
+
 
 >[!tip] See also the [[Models#Bloch theorem|QCMP lecture]] about this topic
 
@@ -72,6 +76,3 @@ $$
 
 #todo
 
----
-
-Read Next [[Nearly free electrons]]

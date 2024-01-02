@@ -1,3 +1,7 @@
+---
+nextnote: "[[Lithography]]"
+---
+
 Clean rooms are environments where particulate concentration is reduced and kept under a specified level (usually also temperature and humidity are controlled).
 Clean rooms are fundamental to prevent contamination which can create the following problems: it can **ruin devices**, leading to a lower yield and thus an increase of the manufacturing costs; it can **poison equipment** which has to be repaired, incrementing costs and slowing down production; moreover it can pose a **health risk** for the employees and other people involved in the manufacturing.
 
@@ -46,6 +50,3 @@ Usually three kinds of filters are used to clean the air: the first step is usin
 Since water is used extensively in washing steps, it is important that it doesn't contain particulates or contaminants; before being used it has to pass through a series of filters (ion-exchange resins and active carbons) to remove salts and organic materials. 
 The purity can be evaluated by measuring its electric resistance (good values are 10-18 M$\Omega \cdot$cm).
 
----
-
-Read Next [[Lithography]]

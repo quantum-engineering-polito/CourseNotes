@@ -1,3 +1,7 @@
+---
+nextnote: "[[Models]]"
+---
+
 # Crystals
 
 ![[Crystallography#Types of solids]]
@@ -15,15 +19,18 @@ $$
 n_{1}, n_{2}, n_{3}= 0, \pm 1, \pm 2,\, \dots
 } 
 $$
-
-### Primitive cell unit
+### Primitive unit cell
 
 A primitive cell unit is defined as any volume of space which, when translated through all the vectors of the Bravais lattice, fill space without overlap and without leaving voids.
 
 ![[primitiveUnitCellMarks.png|300]]
 
-Primitive cells must contain only one lattice point; it the point is on the edge of the cell only a fraction of it is considered (if a point is shared between 4 cells, each cell will have 1/4 of it).
-
+A primitive cell always contains one lattice point only; if the point is on the edge of the cell only a fraction of it is considered (if a point is shared between 4 cells, each cell will have 1/4 of it). The basis associated with a primitive cell is called a primitive basis.
+![[primative_cell_lattice_point.png]]
+### Conventional unit cell
+It is often used to describe the periodicity of crystals; Such as in cases where the unitary primitive cell is not the most convenient way to describe the crystal's geometric structure. Such a cell contains more than one primitive lattice point.
+![[conventional_cell.png]]
+An example is the body-centered cubic (bcc) lattices that are described in terms of a cubic unit cell. Where the conventional unit cell of bcc is  twice the primitive bcc unit cell.
 ### Wigner-Seitz cell
 
 Wigner-Seitz cell is a special choice of primitive unit cell: region of points closer to a given lattice point than to any other. 
@@ -44,7 +51,7 @@ It should be noted that BCC and FCC are not primitive because they contain more 
 ## Crystal structure
 
 Bravais lattice is an abstract concept which is useful to characterize a crystal. The crystal itself is made out of a Bravais lattice and a **basis**. The basis can be one atom or a molecule. 
-
+$$ Crystal = Bravais\ lattice + Basis $$
 ![[fcccrystalOneAtom.png|300]]
 
 ![[fullereneCrystal.png|300]]
@@ -60,6 +67,7 @@ In the image above it is possible to see that the unit of repetition in this cas
 
 ## Reciprocal lattice
 
+The reciprocal lattice originates from mathematical transformations applied to the Bravais lattice. This process is crucial because it allows us to delve into reciprocal space, where we gain a clearer and more insightful understanding of various physical properties inherent to crystals. 
 Let's start with a Bravais lattice
 
 $$
@@ -121,7 +129,7 @@ g_{2} = \frac{2 \pi}{a_{2} \cdot \cos(90^\circ)} = \frac{2 \pi} {a_{2}}
 }
 $$
 
-We can than draw the Wigner-Seitz cells for the two lattices. The WS cell of the reciprocal space is called **Brillouin zone**.
+We can than draw the Wigner-Seitz cells for the two lattices. The WS cell of the reciprocal space is called **Brillouin zone**. (the choice of WS is not mandatory, it is just practical in this example)
 
 ### Example: electrostatic potential
 
@@ -131,7 +139,7 @@ $$
 V(\bar{r}) = V(\bar{r} + \bar{R_{n}}) \qquad (1)
 $$
 
-We will use the generic function $f()$ instead of $V()$.
+We will use the generic function $f()$ instead of $V()$ and we will use the Fourier transform to convert the function in the real space in is counterpart in the reciprocal one
 
 $$
 \displaylines{
@@ -141,7 +149,7 @@ f(\bar{r}) \overset{ Fourier }{ = } \sum_{\bar{k}} c_{\bar{k}} e^{ i \bar{k} \ba
 f(\bar{r}) &\overset{ (1) }{=} f(\bar{r} + \bar{R_{n}}) \\
 & \overset{ (2) }{ = } \sum_{\bar{k}} c_{\bar{k}} e^{ i \bar{k}(\bar{r} + \bar{R_{n}}) } \\
 & =  \sum_{\bar{k}} c_{\bar{k}} e^{ i \bar{k} \bar{r} } e^{ i \bar{k} \bar{R_{n}} } \\
-& \overset{ (1) }{ = } \sum_{\bar{k}} c_{\bar{k}} e^{ i \bar{k} \bar{r} } && \implies e^{ i \bar{k} \bar{r} } = 1  \\
+& \overset{ (1) }{ = } \sum_{\bar{k}} c_{\bar{k}} e^{ i \bar{k} \bar{r} } && \implies e^{ i \bar{k} \bar{R_{n}} } = 1  \\
 & && \implies  \bar{k} \bar{R_{n}} = 2 \pi m  \\
 & &&\implies \bar{k} \equiv \bar{G}
 \end{align}
@@ -186,6 +194,3 @@ Alkali-alide crystals are transparent throughout the visible region of the spect
 
 #todo
 
----
-
-Read Next [[Models]]

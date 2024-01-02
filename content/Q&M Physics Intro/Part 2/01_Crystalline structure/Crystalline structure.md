@@ -1,3 +1,7 @@
+---
+nextnote: "[[Reciprocal lattice]]"
+---
+
 # Solid state physics
 
 Solid state physics is the study of the state of the matter in which a large number of atoms ($\sim N_{A}$) are chemically bound to form an **ordered** form in the 3D space. We will have to deal with the forces between the atoms (the type of bonding) and the spatial ordering (the crystalline lattice).
@@ -61,6 +65,3 @@ Since the choice of the vector $\vec{a}_{i}$ is not univocal, there is an infini
 
 ![[Crystallography#Miller indices]]
 
----
-
-Read Next [[Reciprocal lattice]]

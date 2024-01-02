@@ -19,6 +19,7 @@ export const defaultContentPageLayout: PageLayout = {
     // Component.Breadcrumbs(),
     Component.ArticleTitle(),
     Component.ContentMeta(),
+    Component.Author(),
     Component.TagList(),
   ],
   left: [
@@ -31,6 +32,7 @@ export const defaultContentPageLayout: PageLayout = {
     Component.Explorer(),
   ],
   right: [
+    Component.nextNoteLink(),
     // Component.Graph(),
     Component.RecentNotes(),
     Component.DesktopOnly(Component.TableOfContents()),
