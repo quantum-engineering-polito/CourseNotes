@@ -2,7 +2,6 @@
 nextnote: "[[Free electron model]]"
 ---
 
-
 **Cohesion energy** is the energy required to separate (bring at $\infty$ distance) the atoms of a crystal.
 
 We will describe two kinds of solids based on different linking characteristics:
