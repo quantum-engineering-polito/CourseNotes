@@ -1,18 +1,29 @@
 import  style from "./styles/author.scss"
 import { FullSlug, _stripSlashes, joinSegments, pathToRoot } from "../util/path"
 import { QuartzComponentConstructor, QuartzComponentProps } from "./types"
+import { URL } from "url"
+import { hostname } from "os"
 
 export default (() => {
   function Author({fileData}: QuartzComponentProps) {
     const author = fileData.frontmatter?.author
-    const authorLink = fileData.frontmatter?.author_link
+    const authorLink = fileData.frontmatter?.authorlink
+
     if (author) {
-      console.log(author)
       var message = "This note was written by"
       if (authorLink) {
+        const authorUrl = new URL(authorLink)
+        var f = null
+        if (authorUrl.hostname == "github.com") {
+          f = <img src={authorUrl + ".png"} alt="profile image"/>
+        }
         return(
           <div class="author">
-            <p>{message} </p> <a href={authorLink}>{author}</a>
+            <p>{message} </p>
+            <a href={authorLink}>
+              {author}
+              {f}
+            </a>
           </div>
         )
       }
