@@ -1,6 +1,3 @@
----
-draft: false
----
 
 ## Schrodinger equation
 

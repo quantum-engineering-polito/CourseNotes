@@ -1,5 +1,7 @@
 ---
 nextnote: "[[Complementary Technologies]]"
+author: Giacomo
+authorlink: https://github.com/gamberoillecito
 ---
 
 Packaging is the process that transforms the finished wafer into a finished product by adding the necessary electrical connections and some enclosure that protects the delicate components.

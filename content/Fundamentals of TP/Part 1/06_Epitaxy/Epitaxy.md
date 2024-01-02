@@ -1,5 +1,7 @@
 ---
 nextnote: "[[CVD]]"
+author: Giacomo
+authorlink: https://github.com/gamberoillecito
 ---
 
 Epitaxy is a technique that consists in growing monocrystalline layers on top of a monocrystalline substrate. Similarly to the [[Wafer Production#^649cfb|Czochralski process]], a seed is needed for the new crystal to grow properly but in this case the grown material does not have to be the same as the substrate. With **heteroepitaxy** it is possible to grow different crystals on top of a pure silicon substrate provided that they have a **similar crystalline structure** and **lattice parameter**.
