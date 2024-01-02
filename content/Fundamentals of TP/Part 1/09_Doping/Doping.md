@@ -1,5 +1,7 @@
 ---
 nextnote: "[[Wet and dry etching]]"
+author: Giacomo
+authorlink: https://github.com/gamberoillecito
 ---
 
 Doping consists in introducing atoms in **substitutional sites** of a substrate to alter its **physical**, **electrical** and **chemical** properties. The doping levels can vary from $10^{15}$ to $10^{20}$ atoms/cm$^{3}$; adding more atoms would saturate the substrate (passing the solid solubility) and creating **volume defect**. 

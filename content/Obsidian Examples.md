@@ -1,3 +1,16 @@
+# Creating a note
+
+After creating a new note you can press `CTRL+SHIFT+I` to automatically insert the metadata about the author (you) and an optional link to the following note. 
+
+Select *Empty chapter template*.
+
+If the link is present the website will create a dedicated link like in the picture below.
+![[next note image.png|200]]
+
+The author will be credited at the top of the note, if you also add a link in the `authorlink` field, this will be shown as well like in the picture below.
+
+![[author example.png|400]]
+
 # Headers
 
 Use hashes to identify header ^ed057f

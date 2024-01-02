@@ -1,3 +1,8 @@
+---
+author: Giacomo
+authorlink: https://github.com/gamberoillecito
+---
+
 # Bulk micromachining
 
 Bulk micromachining is a process that consists in the **selective removal** of the bulk substrate to release suspended 3D structures. These structures are made of the same bulk material or of a thin film applied to it.

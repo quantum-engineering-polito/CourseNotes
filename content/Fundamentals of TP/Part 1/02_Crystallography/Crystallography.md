@@ -1,5 +1,7 @@
 ---
 nextnote: "[[Clean Room Technology]]"
+author: Giacomo
+authorlink: https://github.com/gamberoillecito
 ---
 
 Before analysing in more detail the crystals it is useful to have a general overview of the 3 different types of solids we can have.

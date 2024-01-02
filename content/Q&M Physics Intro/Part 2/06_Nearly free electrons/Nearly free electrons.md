@@ -79,6 +79,8 @@ $$
 
 #### Electronic density
 
+>[!quote] Ibach Luth, 7.2
+
 >The two standing waves $\Psi(+)$ and $\Psi(-)$ pile up electrons at different regions, and therefore the two waves have different values of the potential energy in the field of the ions of the lattice. This is the origin of the energy gap. 
 >
 >Kittel, page 165
@@ -94,9 +96,16 @@ $$
 
 ![[electron distribution.png|500]]
 
-As we can see from the plot above, $\Psi(+)$ piles up electrons on lattice sites (i.e. where the ions are), ***thereby lowering the potential energy in comparison with the average potential energy seen by a traveling wave***.
-$\Psi(-)$, on the other hand, piles up electrons between the ions ***thereby raising the potential energy in comparison with that seen by a traveling wave***.
+>  As we can see from the plot above, $\Psi(+)$ piles up electrons on lattice sites (i.e. where the ions are), ***thereby lowering the potential energy in comparison with the average potential energy seen by a traveling wave***. $\Psi(-)$, on the other hand, piles up electrons between the ions ***thereby raising the potential energy in comparison with that seen by a traveling wave***.
+>  
+>  Kittel, page 166
 
 ![[energy gap.svg|600]]
 
-#todo calculation of the energy gap
+As we can see from the picture above, in the case of a 1D lattice with a weak potential, the energy is similar to the free electron case "far" from the lattice points (where the influence of the ion is weak and thus we are almost in the free electron case). Near the lattice point, on the other hand, the potential of the ions affects more the electrons with low $k$ (the electrons with low energy) and thus the parabola will be "squashed", electrons with higher energy, on the other hand, will "care less" about the weak potential of the lattice and will behave almost as in the free case.
+
+#### Quantitative description
+
+>[!quote] Ibach Luth, 7.2
+
+#todo

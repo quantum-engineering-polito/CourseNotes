@@ -1,5 +1,7 @@
 ---
 nextnote: "[[Epitaxy]]"
+author: Giacomo
+authorlink: https://github.com/gamberoillecito
 ---
 
 Silicon oxidation is an additive process that consist in the formation of silicon dioxide ($SiO_{2}$) on the exposed surface of a wafer. This oxide is one of the main reasons why silicon became the most used semiconductor in the industry; $SiO_{2}$ is an excellent dielectric material, it is easy to grow and can be used for many different applications (insulator, masking layer, sacrificial layer in micro-machining, etc.).

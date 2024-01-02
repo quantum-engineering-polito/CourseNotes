@@ -1,5 +1,7 @@
 ---
 nextnote: "[[Silicon Oxidation]]"
+author: Giacomo
+authorlink: https://github.com/gamberoillecito
 ---
 
 Lithography is a process used to **select** parts of the surface of a material that will need to be processed later with different technologies. One of the advantages is that it allows **batch processing**, i.e. the creation multiple similar features in parallel; this can drastically decrease processing times and thus decrease costs.
