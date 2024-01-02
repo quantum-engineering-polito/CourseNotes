@@ -12,17 +12,17 @@ export default (() => {
     if (author) {
       var message = "This note was written by"
       if (authorLink) {
-        const authorUrl = new URL(authorLink)
-        var f = null
-        if (authorUrl.hostname == "github.com") {
-          f = <img src={authorUrl + ".png"} alt="profile image"/>
-        }
+        // const authorUrl = new URL(authorLink)
+        // var f = null
+        // if (authorUrl.hostname == "github.com") {
+        //   f = <img src={authorUrl + ".png"} alt="profile image"/>
+        // }
         return(
           <div class="author">
             <p>{message} </p>
             <a href={authorLink}>
               {author}
-              {f}
+              {/* {f} */}
             </a>
           </div>
         )
