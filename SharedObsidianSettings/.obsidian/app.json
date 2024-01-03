@@ -4,5 +4,8 @@
   "newLinkFormat": "shortest",
   "newFileLocation": "current",
   "attachmentFolderPath": "./attachments",
-  "strictLineBreaks": false
+  "strictLineBreaks": false,
+  "showLineNumber": true,
+  "autoPairBrackets": false,
+  "autoPairMarkdown": true
 }

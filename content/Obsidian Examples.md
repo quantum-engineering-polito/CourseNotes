@@ -2,9 +2,10 @@
 
 After creating a new note you can press `CTRL+SHIFT+I` to automatically insert the metadata about the author (you) and an optional link to the following note. 
 
-Select *Empty chapter template*.
+Select *Empty chapter template* or create one with your name and link if you want to reuse it.
 
-If the link is present the website will create a dedicated link like in the picture below.
+If `nextnote` is present the website will create a dedicated link like in the picture below.
+
 ![[next note image.png|200]]
 
 The author will be credited at the top of the note, if you also add a link in the `authorlink` field, this will be shown as well like in the picture below.
@@ -115,6 +116,8 @@ You can also use the plugin's toolbar on the right to edit the table:
 
 ![[advanced tables toolbar.png|300]]
 # $\LaTeX$
+
+>[!warning] By default the *Latex suite* plugin "shortcuts" are disabled. Go into the plugin settings and remove the comment (`//`) at the beginning of the lines if you want to enable them (select everything apart the first and last line and then `CTRL+/` or `CTRL+SHIFT+7`)
 
 Latex blocks can be inserted inline by placing the content between two `$` signs like this: `$\int_{-\infty}^{+\infty} f(x) \, dx$` will be rendered as: $\int_{-\infty}^{+\infty} f(x) \, dx$
 

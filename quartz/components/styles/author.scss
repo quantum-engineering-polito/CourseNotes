@@ -1,25 +1,25 @@
-a {
-  font-weight: 600;
-  text-decoration: none;
-  transition: color 0.2s ease;
-  color: var(--secondary);
-}
+// a {
+//   font-weight: 600;
+//   text-decoration: none;
+//   transition: color 0.2s ease;
+//   color: var(--secondary);
+// }
 
-a {
-  a {
-  &:hover {
-    color: var(--tertiary) !important;
-  }
+// a {
+//   a {
+//   &:hover {
+//     color: var(--tertiary) !important;
+//   }
 
-  &.internal:not(:has(> img)) {
-    text-decoration: none;
-    background-color: var(--highlight);
-    padding: 0 0.1rem;
-    border-radius: 5px;
-  }
+//   &.internal:not(:has(> img)) {
+//     text-decoration: none;
+//     background-color: var(--highlight);
+//     padding: 0 0.1rem;
+//     border-radius: 5px;
+//   }
 
-}
-}
+// }
+// }
 
 div.author {
   display: flex;
@@ -61,8 +61,10 @@ div.author {
     background-color: var(--lightgray);
   }
 
-  & > a :hover {
-    background-color: var(--gray);
+  & > a:hover {
+    background-color: color-mix(in srgb,var(--tertiary)75%,transparent);;
+    transition: background-color 0.3s ease;
+    color: var(--primary) !important;
   }
 
   & > a > img {
@@ -72,4 +74,5 @@ div.author {
     margin: 0 0 0 0.5rem;
     // box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   }
+
 }
