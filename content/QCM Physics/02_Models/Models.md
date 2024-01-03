@@ -199,13 +199,16 @@ $$
 1\text{ bis})\quad \Psi_{\bar{k}}(\bar{r} + N_{1} \bar{a}_{1}) = \Psi_{\bar{k}}(\bar{r}) e^{ i \bar{k} (N_{1} \bar{a}_{1}) }
 $$
 In order to satisfy $1 \text{ bis})$ and $2)$ we need that the exponential is $= 1$ which means 
-$$ \displaylines{
+
+$$ 
+\displaylines{
 \Psi_{\bar{k}}(\bar{r} + N_{1} \bar{a}_{1}) \overset{ \substack{1\ bis)} }{ = } \Psi_{\bar{k}}(\bar{r}) e^{ i \bar{k} (N_{1} \bar{a}_{1})} \overset{ \substack{2)} }{ = } \Psi_{\bar{k}}(\bar{r}) \\
 \Downarrow \\
 e^{ i \bar{k} (N_{1} \bar{a}_{1})} = 1 \\
 \Downarrow \\
 {\color{red} N_{1} ~ \bar{k} ~ \bar{a}_{1} = 2 \pi n_{x}} \quad (*)
-} $$
+} 
+$$
 Since $\bar{k}$ is $\left[\frac{1}{\text{length}}\right]$ it belongs to the reciprocal space and can thus be written as
 $$
 \bar{k} = x_{1} \bar{g}_{1} + x_{2} \bar{g}_{2} + x_{3} \bar{g}_{3}
