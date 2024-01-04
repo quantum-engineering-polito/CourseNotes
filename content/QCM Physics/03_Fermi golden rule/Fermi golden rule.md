@@ -1,6 +1,21 @@
 ---
 nextnote: "[[nN heterostructure]]"
 ---
+## Overview of the contents
+Before proceeding to explain the topic a brief introduction on why it is useful and why we study it.
+
+We want to know the **Transition Probabilities** and the **Transition rate** between two state $\ket{\Psi_{i}}$ and $\ket{\Psi_{f}}$ under the effect of a weak time-dependent perturbation, to study how the system evolve in this setting.
+### Perturbation theory
+The main idea behind perturbation theory is to start with a known or easily solvable system (the unperturbed system) and then introduce a small modification or perturbation that alters the behaviour of the system. By treating the perturbation as a small deviation from the known system, physicists can develop an iterative series solution where each successive term provides a more accurate approximation of the true solution.
+### First order perturbation 
+In first-order perturbation, the perturbation is assumed to be small enough that the modifications it induces to the system can be linearly approximated, introducing a major simplification of the calculations. The first-order perturbation equation can be use only to approximate weak physical disturbance, such as a potential energy produced by an external field. We will use it exploring the interaction of an incoming electron with a dipole.
+### Results
+We'll observe that after the perturbation, the chances of the system reaching the final state are higher when the perturbation's frequency matches that of the system. In that case we say that the perturbation is in resonance with the system and it indicates that the perturbing energy can be absorbed or emitted by the system, facilitating transitions between these states.
+### Fermi golden rule
+Fermi's golden rule describes a system that begins in an eigenstate 
+$\ket{\Psi_{i}}$ of an unperturbed System $\hat{H_0}$ and considers the effect of a perturbation applied to the system. The perturbation can be time-independent or not in both cases, the **Transition rate** (transition probability per unit of time) from the initial state to the final is essentially constant.
+___
+## DOS
 The [[Models#Density of states (DOS)|Density of states (DOS)]] can be written in another equivalent form 
 
 $$
@@ -49,7 +64,7 @@ $$
 $$
 
 where the coefficient $c_{j}$ are the terms responsible for the time dependance of the wave function. 
-![[perturbation_transition.svg|450]]
+![[perturbation_transition.svg|center|450]]
 Each $c_j$ has a physical meaning; its modulus square is the probability of finding the particle in its associated state. So After the transition, at the end of the evolution, all the coefficients will be 0 except for $c_{f}$
 
 Rewriting the Schrödinger equation with the linear combination and the new Hamiltonian we get:
@@ -154,7 +169,7 @@ where:
 By plotting the first term we can see that it has a spike where $\hbar\omega = E_{fi}$ (remember that $E_{fi} = E_{f} - E_{i}$). This means that the perturbation needs to have the "right" frequency to influence the system in a meaningful way. We can also see that for short times the influence of the perturbation is smaller compared to longer times.
 Plotting the second term alone shows similar result but when $\hbar\omega = -E_{fi}$.
 The first case corresponds to the **absorption** of a photon (the system increases its energy), the second one, on the other hand, to the **emission** of a photon.
-![[emission_absorbtion_perturbation.svg]]
+![[emission_absorbtion_perturbation.svg| center]]
 
 #todo check the problem with the delta1
 
@@ -168,16 +183,15 @@ $$
 $$
 
 #todo case for a complex system
-
 ## Electrons in a crystal
 
 #todo %% improve drawing %%
 
-![[electron in crystal temp.png|300]]
+![[electron in crystal temp.png|center|300]]
 
 $$M_{fi} = \braket{ \phi_{f} | e \bar{r} \bar{\varepsilon}_0  e^{ \pm i \bar{k} \bar{r} }|\phi_{i}}$$
 
-Since $\phi_{i}, \phi_{f}$ are typically **Bloch states**:
+Since $\phi_{i}, \phi_{f}$ are typically **Bloch states** due to the fact that we are inside a crystal structure:
 
 $$
 \begin{align}
@@ -185,6 +199,21 @@ $$
 & \phi_{f}(\bar{r}) = \frac{1}{\sqrt{ V }} e^{  i \bar{k}_{f} \bar{r} } \cdot u_{k_{f}}(\bar{r})
 \end{align} 
 $$
+we can rewrite $M_{fi}$ as 
+$$M_{fi} = \frac{e}{V}\int u^{*}_{k_{f}}(\bar{r}) \ u_{k_{i}}(\bar{r})\  \bar{r}\  \bar{\varepsilon}_0 \ e^{(\bar{k}_{f}-\bar{k}_{i} \pm \bar{k})\ \bar{r}} d\bar{r}$$
+When a photon is absorbed or emitted by a material, it can cause an electron to transition from one state to another. 
 
-#todo what are we doing??
+There are two key constraints governing this transition:
+- **Energy conservation**: The energy difference between the initial and final states $\Delta𝐸 = E_{f} - E_{i}$ is related to the photon's energy $\Delta E = \hbar\omega$
+- **Momentum conservation**: The change in the wavevector $k=k_{f}-f_{i}$ caused by the transition is equal to the absorbed photon's wavevector$$ \hbar k_{f}-\hbar k_{i}=\pm\hbar k $$the change in momentum resulting from photon-induced transitions is negligible $k \approx 0$
 
+So we have that:
+$$
+\displaylines{
+M_{fi} = \frac{e}{V}\int u^{*}_{k_{f}}(\bar{r}) \ u_{k_{i}}(\bar{r})\  \bar{r}\  \bar{\varepsilon}_0 \ \cancelto{1}{e^{(\bar{k}_{f}-\bar{k}_{i} \pm \bar{k})\ \bar{r}} d\bar{r}
+}
+\\
+\Downarrow
+\\
+M_{fi} = \frac{e}{V}\int u^{*}_{k_{f}}(\bar{r}) \ u_{k_{i}}(\bar{r})\  \bar{r}\  \bar{\varepsilon}_0}
+$$ 
