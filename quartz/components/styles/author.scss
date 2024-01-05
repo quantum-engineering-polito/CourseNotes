@@ -59,11 +59,13 @@ div.author {
     padding: 0.2rem;
     border-radius: 0.5rem;
     background-color: var(--lightgray);
+    transition:  0.2s ease;
+    // color: var(--darkgray);
   }
 
   & > a:hover {
-    background-color: color-mix(in srgb,var(--tertiary)75%,transparent);;
-    transition: background-color 0.3s ease;
+    background-color: color-mix(in srgb,var(--tertiary)65%,transparent);;
+    transition:  0.2s ease;
     color: var(--primary) !important;
   }
 
