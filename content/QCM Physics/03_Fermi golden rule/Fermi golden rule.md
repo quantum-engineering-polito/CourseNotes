@@ -1,5 +1,7 @@
 ---
 nextnote: "[[nN heterostructure]]"
+author: Giacomo | BabelDev0
+Acknowledgements: Marco Parentin
 ---
 ## Overview of the contents
 Before proceeding to explain the topic a brief introduction on why it is useful and why we study it.
