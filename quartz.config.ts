@@ -10,7 +10,7 @@ const config: QuartzConfig = {
       provider: "plausible",
     },
     baseUrl: "gamberoillecito.github.io/QuantumEngPolitoNotes",
-    ignorePatterns: ["private", "templates", ".obsidian", "Excalidraw"],
+    ignorePatterns: ["private", "templates", ".obsidian", "Excalidraw", "Templates"],
     defaultDateType: "modified",
     theme: {
       typography: {
