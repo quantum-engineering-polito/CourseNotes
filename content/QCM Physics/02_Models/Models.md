@@ -1,5 +1,7 @@
 ---
 nextnote: "[[Fermi golden rule]]"
+author: Giacomo
+authorlink: https://github.com/gamberoillecito
 ---
 # Free and independent electron model
 The free-electron model, in solid-state physics, simplifies metals as containers filled with a gas composed of free electrons. These electrons are considered unbound to any particular atom and are able to move freely throughout the material. 
