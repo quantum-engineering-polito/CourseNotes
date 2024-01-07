@@ -279,7 +279,8 @@ So the eigenvalues are periodic.
 ![[bloch_theorem_band.svg|700]]
 In the drawing above the energy bands are represented only between $- \pi / a_{1}$ and  $\pi / a_{1}$ because $E_{\bar{k}}$ is periodic.
 
-It is important to notice that, differently from the [[#Independent and free electron model|free electron model]] here the energy does not go continuously from $-\infty$ to $+\infty$ and thus the behaviour of semiconductors and insulators can be explained.
+
+It is important ot notice that, differently from the [[#Free and independent electron model|free and independent electron model]] here the energy does not go continuously from $-\infty$ to $+\infty$ and thus the behaviour of semiconductors and insulators can be explained.
 
 ### Example
 
