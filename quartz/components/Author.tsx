@@ -19,10 +19,12 @@ function createAuthorElement(author: string, link: string) {
     }
 
     return(
-      <a href={link}>
-      {author}
+      <div class="authorWLink">
+        <a href={link} >
+          {author}
+        </a>
       {image_element}
-      </a>
+      </div>
       )
     }
     else {
