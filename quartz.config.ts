@@ -9,7 +9,7 @@ const config: QuartzConfig = {
     analytics: {
       provider: "plausible",
     },
-    baseUrl: "gamberoillecito.github.io/QuantumEngPolitoNotes",
+    baseUrl: "quantum-engineering-polito.github.io/CourseNotes",
     ignorePatterns: ["private", "templates", ".obsidian", "Excalidraw", "Templates"],
     defaultDateType: "modified",
     theme: {

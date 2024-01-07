@@ -1,19 +1,18 @@
 ---
 nextnote: "[[Fermi golden rule]]"
 ---
-
-
 # Free and independent electron model
+The free-electron model, in solid-state physics, simplifies metals as containers filled with a gas composed of free electrons. These electrons are considered unbound to any particular atom and are able to move freely throughout the material. 
 
-- **Independent**: neglect interaction between electrons (Coulomb repulsion)
-- **Free**: assume that the potential $V = 0$
+Electrons in the model are:
+- **Independent**: we can neglect interaction between electrons (Coulomb repulsion)
+- **Free**: we assume that the potential inside the crystal is $V = 0$ 
 
 Let's consider a crystal of macroscopic dimensions ($L_{x}, L_{y}, L_{z}$) and define a reference system as shown below.
 
+![[ref cube.svg|center|300]]
 
-![[ref cube.svg|300]]
-
-We can then write the Shroedinger equation (SE)
+We can then write the Schrödinger equation (SE)
 
 $$-\frac{\hbar}{2m} \nabla^{2} \Psi(\bar{r}) = E \Psi (\bar{r})$$
 
@@ -30,7 +29,7 @@ $$
 E = \frac{\hbar^{2} k^{2}}{2m}
 $$
 
-Since we want to study the properties of the material as if it was infinite, we have to use a mathematical "trick" to write this condition. What we do is saying that instead of going "outside" the crystal, we enter in an identical one (i.e. we imagine being in a periodic matrix of crystals one next to the other).
+We want to study the properties of the material without worrying about the possibility of getting out of it (where the properties we are interested in no longer apply). So we apply an approximation by imagining that the lattice of the crystal continues to infinity. What we do is saying that instead of going "outside" the crystal, we enter in an identical one (i.e. we imagine being in a periodic matrix of crystals one next to the other).
 This is called **periodic boundary condition** (PBC) or **Born Von Karman condition** and can be written as follows:  ^dedc30
 
 $$
@@ -73,31 +72,27 @@ E = \frac{\hbar^{2} k^{2}}{2m} \qquad (2)\\
 p = \hbar \cdot k \qquad
 \end{cases}
 $$
-
+$p$ is obtained from the [De Broglie relations](https://en.wikipedia.org/wiki/De_Broglie_relations "De Broglie relations")
 # Density of states (DOS)
-
-The density of states $D(E)$ is defined as follows: ^9c22fc
+DOS describes how the energy levels create by the lattice structure are distributed; it is defined as follows: ^9c22fc
 
 $$
 D(E) = \frac{1}{V} \frac{dN(E)}{dE} \quad \left[ \frac{1}{cm^{3} \cdot eV} \right]
 $$
 
 ^98edb3
-
-Where $N(E)$ is the number of states (i.e. the eigenvalues of the system).
+Where $\frac{dN(E)}{dE}$ is the number of energy states $N(E)$ within an energy range $dE$.
 
 We can find $N(E)$ geometrically reasoning on the following picture.
 
-![[numberOfStates.png|400]]
+![[numberOfStates.png|center|400]]
 
-Since $k$ and $E$ are related by $(2)$ we can find first find $N(k)$ and then obtain $N(E)$. 
-
+Since $k$ and $E$ are related by $(2)$ we can find first $N(k)$ and then obtain $N(E)$. 
 $$
 k = \sqrt{ \frac{2mE}{\hbar^{2}} } \qquad (3)
 $$
 
-
-$N(E)$ can be calculated as the number of orange points inside a sphere of radius $k$ divided by the volume occupied by one energy state (the highlighted cube):
+$N(E)$ can be calculated as the volume of a sphere of radius $k$ divided by the volume occupied by one energy state (the highlighted cube) :
 
 $$
 \begin{align}
@@ -117,11 +112,10 @@ D(E) = \frac{1}{\cancel{ V }} \frac{\cancel{ V }}{\cancel{3} \pi^{2}} \left( \fr
 }
 $$
 
-![[De.png|400]]
-
+![[De.png|center|400]]
+**In 3D the $D(E)$ is proportional to the $\sqrt{E}$**
 ## Fermi-Dirac distribution
-
-Fermi-Dirac distribution gives the probability of a given quantum state of energy of being occupied at a given temperature.
+Fermi-Dirac distribution gives the probability of a given energy state of being occupied at a given temperature.
 
 $$
 \displaylines{
@@ -133,9 +127,8 @@ f(E, T) = \frac{1}{e^{ \frac{E - E_{F}}{KT} } + 1} \\\\
 }
 $$
 
-![[fermidirac.excalidraw.png|400]]
-We can see that this model cannot correctly represent materials such as insulators or semi conductors.
-
+![[fermidirac.excalidraw.png|center|400]]
+The Fermi-Dirac distribution relies on the presumption of a continuous spread of energy states. While in metals, the values of $k$s appear nearly continuous, this isn't the case for semiconductors and insulators. In these materials, a distinct energy gap exists, with no available states for electrons. Consequently, the Fermi-Dirac model inadequately portrays materials like insulators or semiconductors due to this significant deviation from its assumptions
 # Independent electrons model
 
 This model improves the previous one by dropping the "free electrons" assumption. This implies that in this case the potential is periodic: 
@@ -147,7 +140,7 @@ V(\bar{r}) = V(\bar{r} + \bar{R}_{n}) \\
 }
 $$
 
-![[ref cube 2.svg|300]]
+![[ref cube 2.svg|center|300]]
 
 $$
 \displaylines{
@@ -163,15 +156,16 @@ $$
 - \frac{\hbar^{2}}{2m} \nabla^{2} \Psi(\bar{r}) + V(\bar{r}) \Psi(\bar{r}) = E \Psi(\bar{r})
 $$
 ## Bloch theorem
-
+Bloch's theorem states that solutions to the Schrödinger equation in a periodic potential can be expressed as plane waves modulated by periodic functions. 
 $$
 \displaylines{
 \Psi_{\bar{k}}(\bar{r}) = e^{ i \bar{k} \bar{r} } \cdot \mu_{\bar{k}}(\bar{r}) \\
 \mu_{\bar{k}}(\bar{r}) = \mu_{\bar{k}}(\bar{r} + \bar{R}_{n})
 }
 $$
+$\mu_{\bar{k}}(\bar{r})$ is a periodic function with the same periodicity as the crystal.
 
-which can be also written as 
+The equality above can also be written as 
 
 $$
 \displaylines{
@@ -185,14 +179,16 @@ $$
 }
 
 $$
+The usefulness of Bloch's theorem is that it allows us to restrict the search for the solution of SE from the entire space to the space of periodic functions. That is, functions that once described in the unit cell can be extended beyond it periodically.
+
 Similarly to what we did before we need to find $\bar{k}$ that satisfy the following conditions (we will only consider the $x$ direction but the same can be done for $y$ and $z$): 
 
 $$
 
 \begin{align}
-1)\quad& \Psi_{\bar{k}}(\bar{r} + \bar{R}_{n}) = \Psi_{\bar{k}}(\bar{r}) e^{ i \bar{k} \bar{R}_{n} } \\
-2) \quad& PBC  \\
-3) \quad& \Psi_{\bar{k}}(\bar{r} + N_{1} \bar{a}_{1}) = \Psi_{\bar{k}}(\bar{r}) \leftarrow \text{ periodicity along } \bar{x}
+1)\quad& \Psi_{\bar{k}}(\bar{r} + \bar{R}_{n}) = \Psi_{\bar{k}}(\bar{r}) \cdot e^{ i \bar{k} \bar{R}_{n} } \\
+2) \quad& PBC\quad
+\Psi_{\bar{k}}(\bar{r} + N_{1} \bar{a}_{1}) = \Psi_{\bar{k}}(\bar{r}) \leftarrow \text{ periodicity along } \bar{x}
 \end{align}
 
 $$
@@ -204,11 +200,16 @@ $$
 $$
 In order to satisfy $1 \text{ bis})$ and $2)$ we need that the exponential is $= 1$ which means 
 
-$$
+$$ 
+\displaylines{
+\Psi_{\bar{k}}(\bar{r} + N_{1} \bar{a}_{1}) \overset{ \substack{1\ bis)} }{ = } \Psi_{\bar{k}}(\bar{r}) e^{ i \bar{k} (N_{1} \bar{a}_{1})} \overset{ \substack{2)} }{ = } \Psi_{\bar{k}}(\bar{r}) \\
+\Downarrow \\
+e^{ i \bar{k} (N_{1} \bar{a}_{1})} = 1 \\
+\Downarrow \\
 {\color{red} N_{1} ~ \bar{k} ~ \bar{a}_{1} = 2 \pi n_{x}} \quad (*)
+} 
 $$
-Since $\bar{k}$ is $\left[\frac{1}{\text{length}}\right]$ it belongs to the reciprocal space and can thus be written as 
-
+Since $\bar{k}$ is $\left[\frac{1}{\text{length}}\right]$ it belongs to the reciprocal space and can thus be written as
 $$
 \bar{k} = x_{1} \bar{g}_{1} + x_{2} \bar{g}_{2} + x_{3} \bar{g}_{3}
 $$
@@ -258,11 +259,12 @@ From the drawing we can see that along the $x$ direction there are $N_{1}$ allow
 
 ## Property of the Bloch state
 
+Solutions of the Schrödinger equation that differ only by a reciprocal vector are equivalent (they describe the same physical state)
 $$
-\Psi_{\bar{k} + \bar{G}} = \Psi_{\bar{k}}(\bar{r}) \qquad (4)
+\Psi_{\bar{k} + \bar{G}}(\bar{r}) = \Psi_{\bar{k}}(\bar{r}) \qquad (4)
 $$
-
-Given the property above, we can say that, given $\hat{H} \Psi_{\bar{k}}(F) = E_{\bar{k}}\Psi_{\bar{k}}(\bar{r})$:
+![[QCM Physics/02_Models/attachments/Bloch_theorem_property.svg|center|400]]
+Given the property above, we can say that, given $\hat{H} \Psi_{\bar{k}}(\bar{r}) = E_{\bar{k}}\Psi_{\bar{k}}(\bar{r})$:
 
 $$
 \displaylines{
@@ -274,11 +276,9 @@ $$
 $$
 
 So the eigenvalues are periodic.
-%% siamo sicuri siano giuste le formule sopra??? %%
-
-%% disegno pagina 8 in basso specificando il gap%%
-
+![[bloch_theorem_band.svg|700]]
 In the drawing above the energy bands are represented only between $- \pi / a_{1}$ and  $\pi / a_{1}$ because $E_{\bar{k}}$ is periodic.
+
 
 It is important ot notice that, differently from the [[#Free and independent electron model|free and independent electron model]] here the energy does not go continuously from $-\infty$ to $+\infty$ and thus the behaviour of semiconductors and insulators can be explained.
 
@@ -288,7 +288,7 @@ Let's consider the case of a solid made out of cells with only 1 atom with 1 ele
 
 We want to see:
 1) if the material behaves as a metal, a semiconductor or an insulator.
-2) its properties depend on the size.
+2) if its properties depend on the size.
 
 Notice that the red lines in the drawing are not continuous in reality for the reasons stated [[#^4d5fdd|previously]]; this show that there are only $N_{tot}$ allowed $\bar{k}$ vectors between  $- \pi / a_{1}$ and  $\pi / a_{1}$ and thus $N_{tot}$ allowed energy states (the orange dots). 
 
@@ -298,52 +298,54 @@ If we were to double the size of the sample nothing would change since there wou
 
 ## Germanium band structure and DOS
 
-Recalling the definition of density of states ![[#^98edb3]]
+Recalling the definition of density of states [[#Density of states (DOS)]]
+
 we can draw a very simplified plot of $D(E)$ and $E$ (on the left) and the probability of occupation ([[Group A#^7202aa|see group A notes]]):
 
-![[DOS and prob.excalidraw.png|600]]
+![[DOS and prob.excalidraw.png|center|600]]
 
 At $T = 0K$ the probability is $0$ above the fermi energy, and $1$ below, thus the valence band will be fully occupied and the conduction band will be empty.
 
 For temperatures above $0K$, on the other hand, some electrons (in yellow) will be excited to the conduction band. These electrons do not behave as free particles and their mass is not the same as the one of the free electron. 
-We can define the **effective mass** as:
+
+We can simplify the description of the behaviour of these electrons comparing their motion to that of free particles with different masses in a vacuum, to do that we define the **effective mass** as:
 
 $$
 m^{*}_{ij} = \frac{\hbar^{2}}{\left[ \frac{\partial^{2} E}{\partial k_{i} \partial k_{j}}\right]}
 $$
+the motion of the electron can now be described by
+$$ F=m^{*}a $$
+It is important to notice that the effective mass depends on the direction, since the potential changes depending on the structure of the lattice.
+The core electrons, the ones near the nucleus, have $m^{*} \to \infty$.
 
-It is important to notice that the effective mass depends on the direction, since the potential changes depending on the structure of the lattice. The core electrons, the ones near the nucleus, have $m^{*} \to \infty$.
-
-If the crystal is isotropic the effective mass does not depend on the direction.
+The effective mass is a result of the interaction between the particle (like an electron) and its surroundings (the crystal lattice). In an anisotropic crystal (where properties differ along different axes), the effective mass can vary based on the direction in which the particle moves or interacts within the material. However, in an isotropic crystal, this mass remains the same regardless of the direction.
 
 # Effective mass and energy
 
 The plots below show a representation of two energy bands (in blue) and the relative effective mass associated to them (in red).
 
-![[effective mass.excalidraw.png|600]]
+![[effective mass.excalidraw.png|center|600]]
 
 The yellow regions highlight the fact that where the band have a parabolic shape, the effective mass is constant (since it depends on the second derivative of the energy).
 
-Where the energy has an inflection point the effective mass will tend to $\pm \infty$. 
+Where the energy has an inflection point the effective mass will tend to $\pm \infty$.
 
 Finally, we can notice that in the left plots the effective mass has lower absolute values since the second derivative of the energy is greater compared to the right plot.
 
 Since electrons can have a negative effective mass, it is possible to consider them as fictitious particles with a positive mass and opposite charge called **holes**.
 
-%% ## Parabolic approximation
-
-Near the maximum and minimum regions, the bands can be approximated with a parabola. %%
-
-%% inserire disegno e altre info %%
+# Parabolic band approximation
+![[band_parabolic_approximation.png]]
+Near the maximum and minimum regions, the bands can be approximated with a parabola as long as we use the correct curvature for that parabola.
 
 # Substitutional impurities in semiconductors
 
-Defects usually generate a new state in the energy gap, this is the case with doping (which is a substitutional impurity).
-
+Defects usually change the band structure generating new states in the energy gap, this is the case with doping (which is a substitutional impurity).
+![[doping_band_structure.svg|center]]
 ## Example: $P$ in $Si$
 
-Substituting a $Si$ atom with a $P$ atom (which has one extra electron) will form a **hydrogenic species** (similarly to hydrogen there is an electron and a positive charge in the middle with charge $+q\,$).
-
+Substituting a $Si$ atom with a $P$ atom (which has one extra electron) will form a **hydrogenic species** (similarly to hydrogen there is only one electron and a positive charge in the middle with charge $+q\,$).
+![[Hydrogen_species.png| center |400]]
 $$
 \displaylines{
 \hat{H} = -\frac{\hbar^{2}}{2m} \nabla^{2} - \overbrace{ \frac{e^{2}}{4 \pi ~ \varepsilon_{0} ~ \varepsilon_{Si}} }^{\substack{\text{attraction between} \\ \text{e}^{-} \text{ and } Si}}
@@ -359,4 +361,3 @@ n = 1,2,3,\dots \text{(principal quantum number)}
 $$
 
 If we calculate the energy $\Delta E$ needed to move an electron from the energy state with $N = 1$ to the conduction band (where it can move freely) we would get $\Delta E(n = 1 \to n = \infty) = 45 ~m\text{eV}$.
-
