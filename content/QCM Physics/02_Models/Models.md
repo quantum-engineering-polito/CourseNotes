@@ -212,7 +212,7 @@ Since $\bar{k}$ is $\left[\frac{1}{\text{length}}\right]$ it belongs to the reci
 $$
 \bar{k} = x_{1} \bar{g}_{1} + x_{2} \bar{g}_{2} + x_{3} \bar{g}_{3}
 $$
-Remembering the [[#Reciprocal lattice|reciprocal lattice definition]] 
+Remembering the [[Crystals#Reciprocal lattice|reciprocal lattice definition]] 
 
 $$
 \bar{a}_{i}\cdot \bar{g}_{j} = 2 \pi \delta_{ij}
@@ -280,7 +280,7 @@ So the eigenvalues are periodic.
 
 In the drawing above the energy bands are represented only between $- \pi / a_{1}$ and  $\pi / a_{1}$ because $E_{\bar{k}}$ is periodic.
 
-It is important ot notice that, differently from the [[#Independent and free electron model|free electron model]] here the energy does not go continuously from $-\infty$ to $+\infty$ and thus the behavior of semiconductors and insulators can be explained.
+It is important ot notice that, differently from the [[#Free and independent electron model|free and independent electron model]] here the energy does not go continuously from $-\infty$ to $+\infty$ and thus the behaviour of semiconductors and insulators can be explained.
 
 ### Example
 
