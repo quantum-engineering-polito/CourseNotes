@@ -1,25 +1,3 @@
-// a {
-//   font-weight: 600;
-//   text-decoration: none;
-//   transition: color 0.2s ease;
-//   color: var(--secondary);
-// }
-
-// a {
-//   a {
-//   &:hover {
-//     color: var(--tertiary) !important;
-//   }
-
-//   &.internal:not(:has(> img)) {
-//     text-decoration: none;
-//     background-color: var(--highlight);
-//     padding: 0 0.1rem;
-//     border-radius: 5px;
-//   }
-
-// }
-// }
 
 div.author {
   display: flex;
@@ -64,17 +42,55 @@ div.author {
   }
 
   & > a:hover {
-    background-color: color-mix(in srgb,var(--tertiary)65%,transparent);;
+    background-color: color-mix(in srgb,var(--tertiary)65%,transparent);
     transition:  0.2s ease;
     color: var(--primary) !important;
   }
 
   & > a > img {
-    width:1.5rem;
+    width:1.2rem;
     border-radius:25%;
     align-self:center;
     margin: 0 0 0 0.5rem;
     // box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   }
 
+}
+
+div.hiddenAuthors {
+position: relative;
+}
+
+div.hiddenAuthors::before {
+  content: "...";
+  font-size: larger;
+}
+div.hiddenAuthors:hover .hiddenAuthorsContainer {
+  // visibility: visible;
+  opacity: 1;
+  transition:  0.2s ease;
+}
+div.hiddenAuthorsContainer {
+  // visibility: hidden;
+  opacity: 0;
+  z-index: 1;
+  position: absolute;
+  left: 50%;
+  top: 100%;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  padding: 0.4rem;
+
+  border-radius: 	0.5rem;
+  box-shadow: 6px 6px 36px #00000040;
+  background-color: var(--light);
+  
+  transition:  0.2s ease;
+
+  & > * {
+    margin: 0.2rem;
+  }
 }
