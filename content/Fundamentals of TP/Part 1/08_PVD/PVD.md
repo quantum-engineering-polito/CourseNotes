@@ -144,3 +144,8 @@ Before doing the procedure above, a conductive **seed layer** has to be created 
 | Conformality         | Medium- High                                                          | Medium, Highest for **ALD**       | Low for **evaporations** (point like source), Medium for **sputtering**, Non conformal for **ionized sputtering** |
 | Temperature of wafer | High                                                                  | Medium, Lower for PECVD           | Low                                                                                                               |
 
+# General comparison
+
+This is a big comparison of some topics that I found confusing. (right click on the image and select "*Open image in a new tab*" to enlarge it).
+
+![[mega comparison.svg|1000]]

@@ -1,5 +1,7 @@
 ---
 nextnote: "[[Quantum Hall effect]]"
+author: Giacomo
+authorlink: https://github.com/gamberoillecito
 ---
 
 **n**: almost intrinsic

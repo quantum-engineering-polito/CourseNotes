@@ -1,14 +1,13 @@
 ---
 nextnote: "[[Packaging]]"
-author: Tommaso
+author: Giacomo, Tommaso
+authorlink: https://github.com/gamberoillecito
 ---
-
-
 Etching is the process in which unwanted areas of films or bulk material are removed **selectively**.
 
 We can distinguish between **wet etching**, where the materials to be removed are dissolved in a chemical solution, and **dry etching** where they react with gases (thermal or plasma). In both cases the photoresist protects the areas which have to remain.
 
-In some special cases, in place of a photoresist, there is the need to use a **hard mask** (usually made out of $SiO_2$ or $Si_3 N_4$ or metals such as $Cr$ or $Al$) which can withstand more "aggressive" environments and dilamination. ^0fa6e1
+In some special cases, in place of a photoresist, there is the need to use a **hard mask** (usually made out of $SiO_2$ or $Si_3 N_4$ or metals such as $Cr$ or $Al$) which can withstand more "aggressive" environments and delamination. ^0fa6e1
 
 # Etchant properties
 
@@ -24,7 +23,7 @@ The etch rate is the rate of material removal (usually in $\mu$m/min) and is **f
 
 Selectivity is the **relative** ratio of etch rate between what we want to etch (the film) and what we do not want to etch (mask, substrate, etc.).
 
-It is important to notice that we usually have to consider two different selectivies: film/mask and film/underlying film. 
+It is important to notice that we usually have to consider two different selectivities: film/mask and film/underlying film. 
 
 $$
 S_{f:m} = \frac{R_{\text{film}}}{R_{\text{mask}}}
@@ -76,7 +75,7 @@ On the other hand, anisotropic etching of $Si$ is more straightforward. The quic
 
 Because of the presence of potassium, this technique cannot be used in microelectronics (in particular CMOS) because potassium can diffuse in the material and alter its electrical properties.
 
-![[aniso wet etching Si.png|30]]
+![[aniso wet etching Si.png|300]]
 Since $KOH$ is quite an aggressive alkaline solution, normal resist would not be able to protect the wafer. For this reason, the most employed materials are $SiO_2$ or $Si_3N_4$, which are more durable .
 
 The setup for the process is very simple since it only requires a hot plate, a Pyrex becker and a stirrer (a small magnetic bar covered in Teflon which is spun by and electromagnet) to improve by-product removal.
