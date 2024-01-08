@@ -2,6 +2,8 @@ name: Deploy Quartz site to GitHub Pages
  
 on:
   pull_request:
+    types:
+      - closed
     branches:
       - master
  
