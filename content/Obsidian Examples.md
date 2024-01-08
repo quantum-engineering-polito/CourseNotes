@@ -12,6 +12,12 @@ The author will be credited at the top of the note, if you also add a link in th
 
 ![[author example.png|400]]
 
+Multiple authors and their respective links can be added by separating them with commas e.g. 
+
+```yaml
+author: Author1, Author2, Author3
+authorlink: link1,,link3
+```
 # Headers
 
 Use hashes to identify header ^ed057f

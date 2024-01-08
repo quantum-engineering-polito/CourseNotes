@@ -1,3 +1,8 @@
+---
+nextnote: "[[MOSFET]]"
+author: Giacomo
+authorlink: https://github.com/gamberoillecito
+---
 
 # Crystalline semiconductors
 

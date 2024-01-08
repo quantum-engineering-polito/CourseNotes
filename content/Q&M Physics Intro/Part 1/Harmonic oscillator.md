@@ -84,7 +84,3 @@ $$
 \psi_0(x) = Ae^{ -m\omega x^{2} /2\hbar}
 $$
 with $A = (m\omega/\pi \hbar)^{1/4}$ which can be found applying the normalization condition.
-
-
-
-

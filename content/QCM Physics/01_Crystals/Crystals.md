@@ -1,5 +1,7 @@
 ---
 nextnote: "[[Models]]"
+author: Giacomo
+authorlink: https://github.com/gamberoillecito
 ---
 
 # Crystals

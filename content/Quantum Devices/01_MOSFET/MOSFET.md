@@ -1,3 +1,8 @@
+---
+nextnote: 
+author: Eva
+authorlink:
+---
 # In a nutshell
 
 The MOSFET (Metal Oxide Semiconductor Field Effect Transistor) is one of the most used electronic devices.
