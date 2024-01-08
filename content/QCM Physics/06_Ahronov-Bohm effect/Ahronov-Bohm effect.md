@@ -1,5 +1,5 @@
 ---
-nextnote: 
+nextnote: "[[Quantum bit]]"
 author: 
 authorlink:
 ---

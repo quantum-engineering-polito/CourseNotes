@@ -4,6 +4,7 @@ author: Giacomo
 authorlink: https://github.com/gamberoillecito
 ---
 # Free and independent electron model
+
 The free-electron model, in solid-state physics, simplifies metals as containers filled with a gas composed of free electrons. These electrons are considered unbound to any particular atom and are able to move freely throughout the material. 
 
 Electrons in the model are:
@@ -75,7 +76,9 @@ p = \hbar \cdot k \qquad
 \end{cases}
 $$
 $p$ is obtained from the [De Broglie relations](https://en.wikipedia.org/wiki/De_Broglie_relations "De Broglie relations")
+
 # Density of states (DOS)
+
 DOS describes how the energy levels create by the lattice structure are distributed; it is defined as follows: ^9c22fc
 
 $$
@@ -115,8 +118,11 @@ D(E) = \frac{1}{\cancel{ V }} \frac{\cancel{ V }}{\cancel{3} \pi^{2}} \left( \fr
 $$
 
 ![[De.png|center|400]]
+
 **In 3D the $D(E)$ is proportional to the $\sqrt{E}$**
+
 ## Fermi-Dirac distribution
+
 Fermi-Dirac distribution gives the probability of a given energy state of being occupied at a given temperature.
 
 $$
@@ -131,6 +137,7 @@ $$
 
 ![[fermidirac.excalidraw.png|center|400]]
 The Fermi-Dirac distribution relies on the presumption of a continuous spread of energy states. While in metals, the values of $k$s appear nearly continuous, this isn't the case for semiconductors and insulators. In these materials, a distinct energy gap exists, with no available states for electrons. Consequently, the Fermi-Dirac model inadequately portrays materials like insulators or semiconductors due to this significant deviation from its assumptions
+
 # Independent electrons model
 
 This model improves the previous one by dropping the "free electrons" assumption. This implies that in this case the potential is periodic: 
@@ -157,7 +164,9 @@ For a periodic potential, the SE is
 $$
 - \frac{\hbar^{2}}{2m} \nabla^{2} \Psi(\bar{r}) + V(\bar{r}) \Psi(\bar{r}) = E \Psi(\bar{r})
 $$
+
 ## Bloch theorem
+
 Bloch's theorem states that solutions to the Schrödinger equation in a periodic potential can be expressed as plane waves modulated by periodic functions. 
 $$
 \displaylines{
@@ -266,6 +275,7 @@ $$
 \Psi_{\bar{k} + \bar{G}}(\bar{r}) = \Psi_{\bar{k}}(\bar{r}) \qquad (4)
 $$
 ![[QCM Physics/02_Models/attachments/Bloch_theorem_property.svg|center|400]]
+
 Given the property above, we can say that, given $\hat{H} \Psi_{\bar{k}}(\bar{r}) = E_{\bar{k}}\Psi_{\bar{k}}(\bar{r})$:
 
 $$
@@ -278,9 +288,10 @@ $$
 $$
 
 So the eigenvalues are periodic.
-![[bloch_theorem_band.svg|700]]
-In the drawing above the energy bands are represented only between $- \pi / a_{1}$ and  $\pi / a_{1}$ because $E_{\bar{k}}$ is periodic.
 
+![[bloch_theorem_band.svg|700]]
+
+In the drawing above the energy bands are represented only between $- \pi / a_{1}$ and  $\pi / a_{1}$ because $E_{\bar{k}}$ is periodic.
 
 It is important ot notice that, differently from the [[#Free and independent electron model|free and independent electron model]] here the energy does not go continuously from $-\infty$ to $+\infty$ and thus the behaviour of semiconductors and insulators can be explained.
 
@@ -337,7 +348,9 @@ Finally, we can notice that in the left plots the effective mass has lower absol
 Since electrons can have a negative effective mass, it is possible to consider them as fictitious particles with a positive mass and opposite charge called **holes**.
 
 # Parabolic band approximation
+
 ![[band_parabolic_approximation.png]]
+
 Near the maximum and minimum regions, the bands can be approximated with a parabola as long as we use the correct curvature for that parabola.
 
 # Substitutional impurities in semiconductors
