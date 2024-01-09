@@ -13,7 +13,7 @@ Electrons in the model are:
 
 Let's consider a crystal of macroscopic dimensions ($L_{x}, L_{y}, L_{z}$) and define a reference system as shown below.
 
-![[ref cube.svg|center|300]]
+![[ref cube.svg|300]]
 
 We can then write the Schrödinger equation (SE)
 
@@ -90,7 +90,7 @@ Where $\frac{dN(E)}{dE}$ is the number of energy states $N(E)$ within an energy 
 
 We can find $N(E)$ geometrically reasoning on the following picture.
 
-![[numberOfStates.png|center|400]]
+![[numberOfStates.png|400]]
 
 Since $k$ and $E$ are related by $(2)$ we can find first $N(k)$ and then obtain $N(E)$. 
 $$
@@ -117,7 +117,7 @@ D(E) = \frac{1}{\cancel{ V }} \frac{\cancel{ V }}{\cancel{3} \pi^{2}} \left( \fr
 }
 $$
 
-![[De.png|center|400]]
+![[De.png|400]]
 
 **In 3D the $D(E)$ is proportional to the $\sqrt{E}$**
 
@@ -135,7 +135,7 @@ f(E, T) = \frac{1}{e^{ \frac{E - E_{F}}{KT} } + 1} \\\\
 }
 $$
 
-![[fermidirac.excalidraw.png|center|400]]
+![[fermidirac.excalidraw.png|400]]
 The Fermi-Dirac distribution relies on the presumption of a continuous spread of energy states. While in metals, the values of $k$s appear nearly continuous, this isn't the case for semiconductors and insulators. In these materials, a distinct energy gap exists, with no available states for electrons. Consequently, the Fermi-Dirac model inadequately portrays materials like insulators or semiconductors due to this significant deviation from its assumptions
 
 # Independent electrons model
@@ -149,7 +149,7 @@ V(\bar{r}) = V(\bar{r} + \bar{R}_{n}) \\
 }
 $$
 
-![[ref cube 2.svg|center|300]]
+![[ref cube 2.svg|300]]
 
 $$
 \displaylines{
@@ -274,7 +274,7 @@ Solutions of the Schrödinger equation that differ only by a reciprocal vector a
 $$
 \Psi_{\bar{k} + \bar{G}}(\bar{r}) = \Psi_{\bar{k}}(\bar{r}) \qquad (4)
 $$
-![[QCM Physics/02_Models/attachments/Bloch_theorem_property.svg|center|400]]
+![[QCM Physics/02_Models/attachments/Bloch_theorem_property.svg|400]]
 
 Given the property above, we can say that, given $\hat{H} \Psi_{\bar{k}}(\bar{r}) = E_{\bar{k}}\Psi_{\bar{k}}(\bar{r})$:
 
@@ -315,7 +315,7 @@ Recalling the definition of density of states [[#Density of states (DOS)]]
 
 we can draw a very simplified plot of $D(E)$ and $E$ (on the left) and the probability of occupation ([[Group A#^7202aa|see group A notes]]):
 
-![[DOS and prob.excalidraw.png|center|600]]
+![[DOS and prob.excalidraw.png|600]]
 
 At $T = 0K$ the probability is $0$ above the fermi energy, and $1$ below, thus the valence band will be fully occupied and the conduction band will be empty.
 
@@ -337,7 +337,7 @@ The effective mass is a result of the interaction between the particle (like an 
 
 The plots below show a representation of two energy bands (in blue) and the relative effective mass associated to them (in red).
 
-![[effective mass.excalidraw.png|center|600]]
+![[effective mass.excalidraw.png|600]]
 
 The yellow regions highlight the fact that where the band have a parabolic shape, the effective mass is constant (since it depends on the second derivative of the energy).
 
@@ -356,11 +356,11 @@ Near the maximum and minimum regions, the bands can be approximated with a parab
 # Substitutional impurities in semiconductors
 
 Defects usually change the band structure generating new states in the energy gap, this is the case with doping (which is a substitutional impurity).
-![[doping_band_structure.svg|center]]
+![[doping_band_structure.svg]]
 ## Example: $P$ in $Si$
 
 Substituting a $Si$ atom with a $P$ atom (which has one extra electron) will form a **hydrogenic species** (similarly to hydrogen there is only one electron and a positive charge in the middle with charge $+q\,$).
-![[Hydrogen_species.png| center |400]]
+![[Hydrogen_species.png|400]]
 $$
 \displaylines{
 \hat{H} = -\frac{\hbar^{2}}{2m} \nabla^{2} - \overbrace{ \frac{e^{2}}{4 \pi ~ \varepsilon_{0} ~ \varepsilon_{Si}} }^{\substack{\text{attraction between} \\ \text{e}^{-} \text{ and } Si}}

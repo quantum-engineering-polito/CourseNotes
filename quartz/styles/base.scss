@@ -430,12 +430,6 @@ tr {
   }
 }
 
-img {
-  max-width: 100%;
-  border-radius: 5px;
-  margin: 1rem 0;
-}
-
 p > img + em {
   display: block;
   transform: translateY(-1rem);
@@ -490,4 +484,11 @@ ol.overflow {
   ul {
     padding-left: 1rem;
   }
+}
+
+img {
+    display: block;
+    margin: auto;
+    max-width: 100%;
+    border-radius: 5px;
 }

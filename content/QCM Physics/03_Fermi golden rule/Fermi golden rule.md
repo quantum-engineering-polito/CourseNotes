@@ -77,7 +77,7 @@ where the coefficient $c_{j}(t)$ are the terms responsible for the time dependan
 
 If the perturbation makes the system evolve from an initial $\ket{\Psi_{i}}$ state to a final state $\ket{\Psi_{f}}$ and since each $c_j$ has the physical meaning that its modulus square is the probability of finding the particle in its associated state.
 
-![[perturbation_transition.svg|center|450]]
+![[perturbation_transition.svg|450]]
 
 This implies that after the transition, at the end of the evolution, all the coefficients will be 0 except for $c_{f}$
 
@@ -188,7 +188,7 @@ By plotting the first term we can see that it has a spike where $\hbar\omega = E
 Plotting the second term alone shows similar result but when $\hbar\omega = -E_{fi}$.
 The first case corresponds to the **absorption** of a photon (the system increases its energy), the second one, on the other hand, to the **emission** of a photon.
 
-![[emission_absorbtion_perturbation.svg| center]]
+![[emission_absorbtion_perturbation.svg]]
 
 In the **stimulated emission** scenario, the second photon (in blue) is the emitted one, we exploit this effect in lasers.
 
@@ -230,7 +230,7 @@ in the first step we extracted $|M_{fi}|^{2}$ from the sum because is non depend
 
 #todo %% improve drawing %%
 
-![[electron in crystal temp.png|center|300]]
+![[electron in crystal temp.png|300]]
 
 $$M_{fi} = \braket{ \phi_{f} | e \bar{r} \bar{\varepsilon}_0  e^{ \pm i \bar{k} \bar{r} }|\phi_{i}}$$
 
