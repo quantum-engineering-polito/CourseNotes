@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Obsidian Examples.md",
+                "file": "QCM Physics/02_Models/Models.md",
                 "mode": "source",
                 "source": false
               }
@@ -48,7 +48,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "germa",
+                "query": "reciprocal lattice definition",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Obsidian Examples.md",
+                "file": "QCM Physics/02_Models/Models.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Obsidian Examples.md",
+                "file": "QCM Physics/02_Models/Models.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Obsidian Examples.md"
+                "file": "QCM Physics/02_Models/Models.md"
               }
             }
           },
@@ -165,24 +165,38 @@
   },
   "active": "171d183084117eb6",
   "lastOpenFiles": [
+    "QCM Physics/02_Models/Models.md",
+    "QCM Physics/03_Fermi golden rule/attachments/perturbation_transition.svg",
+    "QCM Physics/03_Fermi golden rule/attachments/FGR_2C.png",
+    "QCM Physics/03_Fermi golden rule/attachments/FGR_1C.png",
+    "QCM Physics/03_Fermi golden rule/attachments/emission_absorbtion_perturbation.svg",
+    "QCM Physics/03_Fermi golden rule/attachments/absorbtion_in_solid.svg",
+    "QCM Physics/03_Fermi golden rule/attachments",
+    "QCM Physics/02_Models/attachments/doping_band_structure.svg",
+    "QCM Physics/02_Models/attachments/Hydrogen_species.png",
+    "QCM Physics/02_Models/attachments/Bloch_theorem_property.svg",
+    "QCM Physics/02_Models/attachments/band_parabolic_approximation.png",
+    "QCM Physics/02_Models/attachments/bloch_theorem_band.svg",
+    "QCM Physics/02_Models/attachments",
+    "QCM Physics/01_Crystals/Crystals.md",
+    "QCM Physics/05_Quantum Hall effect/Quantum Hall effect.md",
+    "2023-12-31.md",
+    "Q&M Physics Intro/Part 2/09_Phonons/Phonons.md",
+    "Q&M Physics Intro/Part 2/08_Semiconductors/Semiconductors.md",
+    "Q&M Physics Intro/Part 2/07_Fermi surfaces and e transport/Fermi surfaces and e transport.md",
+    "Q&M Physics Intro/Part 2/06_Nearly free electrons/Nearly free electrons.md",
+    "Quantum Devices/00_ Group A/Group A.md",
+    "Q&M Physics Intro/Part 2/04_Free electron model/Free electron model.md",
+    "Q&M Physics Intro/Part 2/08_Semiconductors/attachments",
     "Templates/Author Giacomo Bert.md",
     "Obsidian Examples.md",
     "Templates/Empty chapter template.md",
-    "Q&M Physics Intro/Part 2/07_Fermi surfaces and e transport/Fermi surfaces and e transport.md",
-    "Q&M Physics Intro/Part 2/07_Fermi surfaces and e transport/attachments/effective mass and dispertion bianco.png",
-    "QCM Physics/02_Models/Models.md",
-    "Q&M Physics Intro/Part 2/07_Fermi surfaces and e transport/attachments/fermi spheres.png",
     "Q&M Physics Intro/Part 2/07_Fermi surfaces and e transport/07_Fermi surfaces and e transport.md",
     "Quantum Devices/01_MOSFET/MOSFET.md",
     "Q&M Physics Intro/Part 2/01_Crystalline structure/Crystalline structure.md",
     "Templates",
-    "Q&M Physics Intro/Part 2/09_Phonons/Phonons.md",
     "Q&M Physics Intro/Part 2/09_Phonons",
-    "Q&M Physics Intro/Part 2/08_Semiconductors/Semiconductors.md",
     "Q&M Physics Intro/Part 2/08_Semiconductors",
-    "attachments/next note image.png",
-    "attachments/author example.png",
-    "2023-12-31.md",
     "Q&M Physics Intro/Part 2/07_Fermi surfaces/Fermi surfaces.md",
     "Q&M Physics Intro/Part 2/07_Fermi surfaces",
     "Q&M Physics Intro/Part 1/Q&MP Intro Formulas and Definitions.md",
@@ -192,25 +206,10 @@
     "Q&M Physics Intro/Part 2/03_Cohesion in crystals/Cohesion in crystals.md",
     "Q&M Physics Intro/Part 2/02_Reciprocal lattice/Reciprocal lattice.md",
     "Q&M Physics Intro/Part 2/06_Nearly free electrons/attachments/excalidraw/reduced zone scheme.md",
-    "Q&M Physics Intro/Part 2/06_Nearly free electrons/Nearly free electrons.md",
-    "Q&M Physics Intro/Part 2/04_Free electron model/Free electron model.md",
-    "QCM Physics/01_Crystals/Crystals.md",
     "Q&M Physics Intro/Part 1/Bell's theorem montorsi.md",
     "Fundamentals of TP/Part 1/12_Complementary Technologies/Complementary Technologies.md",
-    "Fundamentals of TP/Part 1/12_Complementary Technologies/Untitled.md",
-    "draft.md",
-    "index.md",
-    "QCM Physics/01_Crystals/attachments/conventional_cell.png",
-    "QCM Physics/01_Crystals/attachments/primative_cell_lattice_point.png",
     "QCM Physics/01_Crystals/attachments",
-    "Fundamentals of TP/Part 1/01_Wafer Production/attachments/ingot parts.png",
     "Q&M Physics Intro/Part 2/07_Fermi surfaces and e transport/attachments",
-    "Q&M Physics Intro/Part 2/07_Fermi surfaces and e transport",
-    "Q&M Physics Intro/Part 2/06_Nearly free electrons/attachments/excalidraw/energy gap.svg",
-    "Q&M Physics Intro/Part 2/06_Nearly free electrons/attachments/excalidraw/attachments/Pasted Image 20231227123108_899.png",
-    "Q&M Physics Intro/Part 2/06_Nearly free electrons/attachments/excalidraw/attachments",
-    "Q&M Physics Intro/Part 2/06_Nearly free electrons/attachments/electron distribution.png",
-    "Excalidraw/Scripts/Downloaded",
     "Fundamentals of TP/attachments/excalidraw/Untitled.canvas",
     "Untitled.canvas"
   ]
