@@ -1,3 +1,8 @@
+---
+nextnote: "[[MOS Charge]]"
+author: 
+authorlink:
+---
 # In a nutshell
 
 The MOSFET (Metal Oxide Semiconductor Field Effect Transistor) is one of the most used electronic devices.
@@ -42,7 +47,7 @@ Depending on the external bias applied, in the MOS capacitor there are four poss
 
 When a special bias ($V_{fb}$) is applied to the capacitor, the flat-band condition occurs. This means that the energy band of the substrate is flat at the $Si-SiO_{2}$ interface. The flatband voltage is equal to the difference between the Fermi levels at the two terminals: 
 $$
-V_{fb}=\psi_{g}-\psi_{s} 
+V_{fb}=\varphi_{g}-\varphi_{s} 
 $$
 where $\psi_{g}$ and $\psi_{s}$ are the gate and semiconductor work function respectively, in volts. 
 ![[FlatBand.png | 500]]
@@ -74,4 +79,6 @@ $$
 ##### Beyond threshold
 
 ![[MOSinversion.png | 500]]
-When $V_{g}>V_{th}$ there is an inversion layer, filled with inversion electrons. The MOS capacitor in strong inversion behaves like a capacitor exept for a voltage offset of $V_{th}$
+When $V_{g}>V_{th}$ there is an inversion layer, filled with inversion electrons. The MOS capacitor in strong inversion behaves like a capacitor exept for a voltage offset of $V_{th}$. 
+
+In a MOS transistor the inverted region creates the channel of carriers that allows current to flow from source to drain. (the two wells are connected through a channel of the same dopant, created modulating the gate-bulk voltage)
