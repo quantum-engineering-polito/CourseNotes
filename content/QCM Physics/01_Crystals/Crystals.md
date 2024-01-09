@@ -23,16 +23,21 @@ n_{1}, n_{2}, n_{3}= 0, \pm 1, \pm 2,\, \dots
 $$
 ### Primitive unit cell
 
-A primitive cell unit is defined as any volume of space which, when translated through all the vectors of the Bravais lattice, fill space without overlap and without leaving voids.
+A primitive cell unit is defined as any volume of space which, when translated through all the vectors of the Bravais lattice, fills the space without overlap and without leaving voids.
 
 ![[primitiveUnitCellMarks.png|300]]
 
 A primitive cell always contains one lattice point only; if the point is on the edge of the cell only a fraction of it is considered (if a point is shared between 4 cells, each cell will have 1/4 of it). The basis associated with a primitive cell is called a primitive basis.
+
 ![[primative_cell_lattice_point.png]]
 ### Conventional unit cell
-It is often used to describe the periodicity of crystals; Such as in cases where the unitary primitive cell is not the most convenient way to describe the crystal's geometric structure. Such a cell contains more than one primitive lattice point.
+
+It is often used to describe the periodicity of crystals; such as in cases where the unitary primitive cell is not the most convenient way to describe the crystal's geometric structure. Such a cell contains more than one primitive lattice point.
+
 ![[conventional_cell.png]]
-An example is the body-centered cubic (bcc) lattices that are described in terms of a cubic unit cell. Where the conventional unit cell of bcc is  twice the primitive bcc unit cell.
+
+An example is the body-centred cubic (bcc) lattices that are described in terms of a cubic unit cell. Where the conventional unit cell of bcc is  twice the primitive bcc unit cell.
+
 ### Wigner-Seitz cell
 
 Wigner-Seitz cell is a special choice of primitive unit cell: region of points closer to a given lattice point than to any other. 
@@ -45,9 +50,9 @@ How to draw it in 2D: ^69cf07
 
 ![[wignerSeitzCell2.png|300]]
 
-### Bravais lattice
 
 ![[Crystallography#Bravais lattice]]
+
 It should be noted that BCC and FCC are not primitive because they contain more than one point (the primitive cell wouldn't show the cubic symmetry).
 
 ## Crystal structure
@@ -70,6 +75,7 @@ In the image above it is possible to see that the unit of repetition in this cas
 ## Reciprocal lattice
 
 The reciprocal lattice originates from mathematical transformations applied to the Bravais lattice. This process is crucial because it allows us to delve into reciprocal space, where we gain a clearer and more insightful understanding of various physical properties inherent to crystals. 
+
 Let's start with a Bravais lattice
 
 $$
@@ -82,10 +88,10 @@ $$
 We define the **reciprocal lattice** $\bar{G}$ such as 
 
 $$
-\bar{G} \bar{R_{n}} = 2 m \pi \qquad m = 0, \pm 1, \pm 2 \, \dots
+\bar{G} \cdot \bar{R_{n}} = 2 m \pi \qquad m = 0, \pm 1, \pm 2 \, \dots
 $$
 
-note that the number of $\bar{G}$ vectors is infinite and that since $\bar{R_{n}}$ is in meters $[m]$ $\bar{G}$ is $[m]^{-1}$ which is a reciprocal space.
+note that the number of $\bar{G}$ vectors is infinite and that, since $\bar{R_{n}}$ is in meters $[m]$, $\bar{G}$ is $[m]^{-1}$ which is a reciprocal space.
 
 We need to find a base for $\bar{G}$ in the reciprocal space that satisfies the following condition: 
 
@@ -131,7 +137,7 @@ g_{2} = \frac{2 \pi}{a_{2} \cdot \cos(90^\circ)} = \frac{2 \pi} {a_{2}}
 }
 $$
 
-We can than draw the Wigner-Seitz cells for the two lattices. The WS cell of the reciprocal space is called **Brillouin zone**. (the choice of WS is not mandatory, it is just practical in this example)
+We can then draw the Wigner-Seitz cells for the two lattices. The WS cell of the reciprocal space is called **Brillouin zone**. (the choice of WS is not mandatory, it is just practical in this example)
 
 ### Example: electrostatic potential
 
@@ -141,7 +147,7 @@ $$
 V(\bar{r}) = V(\bar{r} + \bar{R_{n}}) \qquad (1)
 $$
 
-We will use the generic function $f()$ instead of $V()$ and we will use the Fourier transform to convert the function in the real space in is counterpart in the reciprocal one
+We will use the generic function $f()$ instead of $V()$ and we will use the Fourier transform to convert the function from the real space to its counterpart in the reciprocal one
 
 $$
 \displaylines{

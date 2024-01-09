@@ -8,6 +8,7 @@ authorlink: https://github.com/gamberoillecito
 The free-electron model, in solid-state physics, simplifies metals as containers filled with a gas composed of free electrons. These electrons are considered unbound to any particular atom and are able to move freely throughout the material. 
 
 Electrons in the model are:
+
 - **Independent**: we can neglect interaction between electrons (Coulomb repulsion)
 - **Free**: we assume that the potential inside the crystal is $V = 0$ 
 
@@ -22,8 +23,10 @@ $$-\frac{\hbar}{2m} \nabla^{2} \Psi(\bar{r}) = E \Psi (\bar{r})$$
 for which we can write the general solution: 
 
 $$
-\Psi(\bar{r}) = \frac{1}{\sqrt{ V }} e^{ i \bar{k} \bar{r} } \quad (V = L_{x} \cdot L_{y} \cdot L_{z}) \qquad (1)
+\Psi(\bar{r}) = \frac{1}{\sqrt{ \mathbf{V} }} e^{ i \bar{k} \bar{r} } \quad (\mathbf{V} = L_{x} \cdot L_{y} \cdot L_{z}) \qquad (1)
 $$
+
+ 
 
 
 and the eigenvalues:
@@ -64,7 +67,7 @@ k_{z} = \frac{2\pi}{L_{z}} n_{z} \\
 \end{cases}
 $$
 
-Since $L_{x}, L_{y}, L_{z}$ are macroscopic dimensions $k$s can be approximated as being continuous. ^4d5fdd
+Since $L_{x}, L_{y}, L_{z}$ are macroscopic dimensions each $k$ can be approximated as being continuous. ^4d5fdd
 
 We also know the following 
 
@@ -75,15 +78,18 @@ E = \frac{\hbar^{2} k^{2}}{2m} \qquad (2)\\
 p = \hbar \cdot k \qquad
 \end{cases}
 $$
+
 $p$ is obtained from the [De Broglie relations](https://en.wikipedia.org/wiki/De_Broglie_relations "De Broglie relations")
 
 # Density of states (DOS)
 
-DOS describes how the energy levels create by the lattice structure are distributed; it is defined as follows: ^9c22fc
+DOS describes how the energy levels created by the lattice structure are distributed; it is defined as follows: ^9c22fc
 
 $$
 D(E) = \frac{1}{V} \frac{dN(E)}{dE} \quad \left[ \frac{1}{cm^{3} \cdot eV} \right]
 $$
+
+^008db5
 
 ^98edb3
 Where $\frac{dN(E)}{dE}$ is the number of energy states $N(E)$ within an energy range $dE$.
@@ -135,7 +141,8 @@ f(E, T) = \frac{1}{e^{ \frac{E - E_{F}}{KT} } + 1} \\\\
 }
 $$
 
-![[fermidirac.excalidraw.png|400]]
+![[fermidirac.excalidraw.png|center|400]]
+#todo explain better
 The Fermi-Dirac distribution relies on the presumption of a continuous spread of energy states. While in metals, the values of $k$s appear nearly continuous, this isn't the case for semiconductors and insulators. In these materials, a distinct energy gap exists, with no available states for electrons. Consequently, the Fermi-Dirac model inadequately portrays materials like insulators or semiconductors due to this significant deviation from its assumptions
 
 # Independent electrons model
@@ -168,12 +175,14 @@ $$
 ## Bloch theorem
 
 Bloch's theorem states that solutions to the Schrödinger equation in a periodic potential can be expressed as plane waves modulated by periodic functions. 
+
 $$
 \displaylines{
 \Psi_{\bar{k}}(\bar{r}) = e^{ i \bar{k} \bar{r} } \cdot \mu_{\bar{k}}(\bar{r}) \\
 \mu_{\bar{k}}(\bar{r}) = \mu_{\bar{k}}(\bar{r} + \bar{R}_{n})
 }
 $$
+
 $\mu_{\bar{k}}(\bar{r})$ is a periodic function with the same periodicity as the crystal.
 
 The equality above can also be written as 
@@ -192,7 +201,7 @@ $$
 $$
 The usefulness of Bloch's theorem is that it allows us to restrict the search for the solution of SE from the entire space to the space of periodic functions. That is, functions that once described in the unit cell can be extended beyond it periodically.
 
-Similarly to what we did before we need to find $\bar{k}$ that satisfy the following conditions (we will only consider the $x$ direction but the same can be done for $y$ and $z$): 
+Similarly to what we did before we need to find $\bar{k}$ that satisfies the following conditions (we will only consider the $x$ direction but the same can be done for $y$ and $z$): 
 
 $$
 
@@ -224,13 +233,14 @@ Since $\bar{k}$ is $\left[\frac{1}{\text{length}}\right]$ it belongs to the reci
 $$
 \bar{k} = x_{1} \bar{g}_{1} + x_{2} \bar{g}_{2} + x_{3} \bar{g}_{3}
 $$
+
 Remembering the [[Crystals#Reciprocal lattice|reciprocal lattice definition]] 
 
 $$
 \bar{a}_{i}\cdot \bar{g}_{j} = 2 \pi \delta_{ij}
 $$
 
-so, by rewriting $(*)$ as 
+and by rewriting $(*)$ as 
 
 $$
 N_{1} (x_{1} \bar{g}_{1} + x_{2} \bar{g}_{2} + x_{3} \bar{g}_{3}) \cdot \bar{a}_{1} = 2 \pi n_{x}
@@ -252,7 +262,7 @@ $$
 \begin{cases}
 x_{1} = \frac{n_{x}}{N_{1}} \\
 x_{2} = \frac{n_{y}}{N_{2}} \\
-x_{3} = \frac{n_{y}}{N_{3}}
+x_{3} = \frac{n_{z}}{N_{3}}
 \end{cases}
 $$
 
@@ -271,6 +281,7 @@ From the drawing we can see that along the $x$ direction there are $N_{1}$ allow
 ## Property of the Bloch state
 
 Solutions of the Schrödinger equation that differ only by a reciprocal vector are equivalent (they describe the same physical state)
+
 $$
 \Psi_{\bar{k} + \bar{G}}(\bar{r}) = \Psi_{\bar{k}}(\bar{r}) \qquad (4)
 $$
@@ -293,7 +304,7 @@ So the eigenvalues are periodic.
 
 In the drawing above the energy bands are represented only between $- \pi / a_{1}$ and  $\pi / a_{1}$ because $E_{\bar{k}}$ is periodic.
 
-It is important ot notice that, differently from the [[#Free and independent electron model|free and independent electron model]] here the energy does not go continuously from $-\infty$ to $+\infty$ and thus the behaviour of semiconductors and insulators can be explained.
+It is important to notice that, differently from the [[#Free and independent electron model|free and independent electron model]] here the energy does not go continuously from $-\infty$ to $+\infty$ and thus the behaviour of semiconductors and insulators can be explained.
 
 ### Example
 
@@ -302,16 +313,18 @@ Let's consider the case of a solid made out of cells with only 1 atom with 1 ele
 We want to see:
 1) if the material behaves as a metal, a semiconductor or an insulator.
 2) if its properties depend on the size.
-
+#todo which drawing??
 Notice that the red lines in the drawing are not continuous in reality for the reasons stated [[#^4d5fdd|previously]]; this show that there are only $N_{tot}$ allowed $\bar{k}$ vectors between  $- \pi / a_{1}$ and  $\pi / a_{1}$ and thus $N_{tot}$ allowed energy states (the orange dots). 
 
-Considering that we have $N_{tot}$ electrons (1 electron in 1 atom in 1 cell) and that the Pauli exclusion principles allows 2 electrons in each state, only half of the first band is occupied.
+Considering that we have $N_{tot}$ electrons (1 electron in 1 atom in 1 cell) and that the Pauli exclusion principle allows 2 electrons in each state, only half of the first band is occupied.
 
 If we were to double the size of the sample nothing would change since there would be $2N_{tot}$ electrons and $2N_{tot}$ allowed $\bar{k}$ vectors.
 
 ## Germanium band structure and DOS
 
-Recalling the definition of density of states [[#Density of states (DOS)]]
+Recalling the definition of density of states:
+
+![[#^008db5]]
 
 we can draw a very simplified plot of $D(E)$ and $E$ (on the left) and the probability of occupation ([[Group A#^7202aa|see group A notes]]):
 
