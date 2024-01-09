@@ -86,6 +86,7 @@ So now our goals is to calculate the coefficients $c_{j}(t)$ and rewriting the S
 $$ 
 [\hat{H_{0}} + \hat{V}(t)] \sum_{j} { c_{j}(t)}  \Phi_{j} (\bar{r}, t) = i \hbar \frac{ \partial }{ \partial t } \sum_{j} { c_{j}(t)}  \Phi_{j} (\bar{r}, t)
 $$
+
 > [!warning] Many steps are not reported in the following.
 
 after some step we get:
