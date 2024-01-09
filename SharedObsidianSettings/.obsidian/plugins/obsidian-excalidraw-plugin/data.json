@@ -82,7 +82,16 @@
   "mdFontColor": "Black",
   "mdBorderColor": "Black",
   "mdCSS": "",
-  "scriptEngineSettings": {},
+  "scriptEngineSettings": {
+    "Downloaded/Modify background color opacity": {
+      "Prompt for opacity?": true,
+      "Default opacity": {
+        "value": 0.6,
+        "description": "Element's background color transparency"
+      },
+      "Remember last opacity?": false
+    }
+  },
   "defaultTrayMode": true,
   "previousRelease": "2.0.4",
   "showReleaseNotes": true,

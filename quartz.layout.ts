@@ -7,7 +7,7 @@ export const sharedPageComponents: SharedLayout = {
   header: [],
   footer: Component.Footer({
     links: {
-      GitHub: "https://github.com/gamberoillecito/QuantumEngPolitoNotes",
+      GitHub: "https://github.com/quantum-engineering-polito/CourseNotes",
       // "Discord Community": "https://discord.gg/cRFFHYye7t",
     },
   }),

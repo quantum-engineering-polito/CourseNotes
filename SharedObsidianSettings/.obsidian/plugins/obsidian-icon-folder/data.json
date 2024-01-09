@@ -6,10 +6,11 @@
     "emojiStyle": "none",
     "iconColor": null,
     "recentlyUsedIcons": [
+      "TiTemplate",
+      "TiHealthRecognition",
+      "BoBxChip",
       "TiDiamond",
-      "TiAtom",
-      "BoBxMicrochip",
-      "TiSkull"
+      "TiAtom"
     ],
     "recentlyUsedIconsSize": 5,
     "rules": [
@@ -54,7 +55,8 @@
   },
   "Semester 1/Cyber Security": "TiSkull",
   "Cyber Security": "TiSkull",
-  "Fundamentals of TP": "BoBxMicrochip",
+  "Fundamentals of TP": "TiHealthRecognition",
   "Q&M Physics Intro": "TiAtom",
-  "QCM Physics": "TiDiamond"
+  "QCM Physics": "TiDiamond",
+  "Quantum Devices": "BoBxChip"
 }

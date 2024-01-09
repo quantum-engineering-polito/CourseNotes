@@ -1,7 +1,7 @@
 ---
 nextnote: "[[Fermi surfaces and e transport]]"
-author: 
-authorlink:
+author: Giacomo, Eva
+authorlink: https://github.com/gamberoillecito
 ---
 
 Starting from the [[Free electron model|free electron model]] ($V = 0$) we want to study what happens as the potential slowly increases (but remains weak).
