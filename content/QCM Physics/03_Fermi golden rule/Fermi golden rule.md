@@ -188,6 +188,7 @@ $$
 &+ \cancelto{\simeq 0}{ \frac{2t^{2}}{\hbar^{2}} \cos\left( \frac{\omega t}{\hbar} \right) sinc\left[ (E_{fi} - \hbar\omega) \frac{t}{2\hbar} \right] \cdot sinc\left[ (E_{fi} + \hbar\omega) \frac{t}{2\hbar} \right] \cdot M_{fi} \cdot M_{if}^{*} }
 \end{align}
 $$
+
 where:
 - $M_{fi}$ is $\braket{ \phi_{f}(\bar{r}) | -e \cdot \bar{r} \cdot \bar{\mathcal{E}_{0}} \cdot  e^{i\bar{k}⋅\bar{r}} | \phi_{i}(\bar{r})}$ 
 - $M_{{\color{red} if}}$ is $\braket{ \phi_{{\color{red} i}}(\bar{r}) | -e \cdot \bar{r} \cdot \bar{\mathcal{E}_{0}} \cdot  e^{i\bar{k}⋅\bar{r}} | \phi_{{\color{red} f}}(\bar{r})}$ 
@@ -206,12 +207,18 @@ In the **stimulated emission** scenario, the second photon (in blue) is the emit
 For $t \rightarrow \infty$ the function becomes so narrow that it can be approximated by $\delta(E_{if}\pm\hbar\omega)$
 
 We can now calculate the $P_f$, just focusing only on the first term :
+
 $$
 |c_{f}(t)|^{2} = \frac{t^{2}}{\hbar^{2}} |M_{fi}|^{2} sinc^{2}\left[ (E_{fi} - \hbar \omega) \frac{t}{2\hbar} \right]
 $$
+
+#todo improve
+
 ![[FGR_1C.png]]
 ![[FGR_2C.png]]
+
 By calculating the transition rate we get the **Fermi golden rule**: 
+
 $$
 \begin{align}
 &W_{fi} = \frac{2\pi}{\hbar} |M_{fi}|^{2} \delta(E_{f} - E_{i} {\color{red} -}  \hbar \omega) \qquad \text{(first term)} \\
@@ -224,7 +231,7 @@ $$
 In complex systems like in solid we will have multiple initial $\{E_i\}$ and final $\{E_f\}$ states that satisfy the equality $\Delta E = \hbar \omega$ and the transition will occurs for each of these states.
 ![[absorbtion_in_solid.svg|300]]
 
-So the formula need to take in account the sum over all the states:
+So the formula needs to take in account the sum over all the states:
 $$ 
 \displaylines{
 W_{fi} = \frac{2\pi}{\hbar} \sum_{if}|M_{fi}|^{2} \delta(E_{f} - E_{i} {\color{red} -}  \hbar \omega)
@@ -236,7 +243,8 @@ W_{fi} = \frac{2\pi}{\hbar} |M_{fi}|^{2}\sum_{if} \delta(E_{f} - E_{i} {\color{r
 W_{fi} = \frac{2\pi}{\hbar} |M_{fi}|^{2} D(\hbar \omega) \quad \text{Fermi golden rule}
 }
 $$
-in the first step we extracted $|M_{fi}|^{2}$ from the sum because is non dependent from the initial and final state. Instead in the second we replaced the sum with the definition of the [[#^c9919a|Density of states (DOS)]]
+in the first step we extracted $|M_{fi}|^{2}$ from the sum because it is non dependent from the initial and final states. Instead in the second step we replaced the sum with the definition of the [[#^c9919a|Density of states (DOS)]].
+
 ## Semiconductor
 
 #todo %% improve drawing %%
@@ -254,12 +262,20 @@ $$
 \end{align} 
 $$
 we can rewrite $M_{fi}$ as 
+
 $$M_{fi} = \frac{e}{V}\int u^{*}_{k_{f}}(\bar{r}) \ u_{k_{i}}(\bar{r})\  \bar{r}\  \bar{\varepsilon}_0 \ e^{(\bar{k}_{f}-\bar{k}_{i} \pm \bar{k})\ \bar{r}} d\bar{r}$$
+
 When a photon is absorbed or emitted by a material, it can cause an electron to transition from one state to another. 
 
 There are two key constraints governing this transition:
+
 - **Energy conservation**: The energy difference between the initial and final states $\Delta𝐸 = E_{f} - E_{i}$ is related to the photon's energy $\Delta E = \hbar\omega$
-- **Momentum conservation**: The change in the wavevector $k=k_{f}-f_{i}$ caused by the transition is equal to the absorbed photon's wavevector$$ \hbar k_{f}-\hbar k_{i}=\pm\hbar k $$the change in momentum resulting from photon-induced transitions is negligible $k \approx 0$
+- **Momentum conservation**: The change in the wavevector $k=k_{f}-f_{i}$ caused by the transition is equal to the absorbed photon's wavevector
+
+$$
+\hbar k_{f}-\hbar k_{i}=\pm\hbar k
+$$
+- the change in momentum resulting from photon-induced transitions is negligible $k \approx 0$
 
 So we have that:
 $$
