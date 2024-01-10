@@ -24,6 +24,11 @@ This repository serves as a collaborative space where students can contribute an
 
 5. **For first-time contributors:**
     - Replace the `.obsidian` folder in the `content` directory with the one from the `SharedObsidianSettings` folder to ensure correct Obsidian settings.
+      **you can utilize** the `setObsidian.py` script to streamline this process. Simply ensure you have [Python installed](https://kinsta.com/knowledgebase/install-python/)         and execute the script by running
+      
+        ```bash
+         python setObsidian.py.
+        ```
     - Restart Obsidian.
 
 6. **Before editing any file, change branch:**
