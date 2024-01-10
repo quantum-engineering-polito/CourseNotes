@@ -198,7 +198,11 @@ where:
 By plotting the first term we can see that it has a spike where $\hbar\omega = E_{fi}$ (remember that $E_{fi} = E_{f} - E_{i}$) obviously where the $sinc$ function makes zero. This means that the perturbation needs to have the "right" frequency ($\omega = \frac{E_{if}}{\hbar}$) to influence the system in a meaningful way. We can also see that for short times the influence of the perturbation is smaller compared to longer times due to the factor $t^2$.
 
 Plotting the second term alone shows similar result but when $\hbar\omega = -E_{fi}$.
-The first case corresponds to the **absorption** of a photon (the system increases its energy), the second one, on the other hand, to the **emission** of a photon.
+The first case corresponds to the **absorption** of a photon (the system increases its energy), the second one, on the other hand, to the **stimulated emission** of a photon. 
+
+Note: that in the second case the first photon, is not absorbed and only creates the perturbation, which generates the emission of a second photon
+
+>[!warning] Note that in the second case the first photon, is not absorbed and only creates the perturbation, which generates the emission of a second photon
 
 ![[emission_absorbtion_perturbation.svg]]
 
