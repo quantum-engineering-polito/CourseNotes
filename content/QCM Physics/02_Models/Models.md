@@ -8,12 +8,13 @@ authorlink: https://github.com/gamberoillecito
 The free-electron model, in solid-state physics, simplifies metals as containers filled with a gas composed of free electrons. These electrons are considered unbound to any particular atom and are able to move freely throughout the material. 
 
 Electrons in the model are:
+
 - **Independent**: we can neglect interaction between electrons (Coulomb repulsion)
 - **Free**: we assume that the potential inside the crystal is $V = 0$ 
 
 Let's consider a crystal of macroscopic dimensions ($L_{x}, L_{y}, L_{z}$) and define a reference system as shown below.
 
-![[ref cube.svg|center|300]]
+![[ref cube.svg|300]]
 
 We can then write the Schrödinger equation (SE)
 
@@ -22,8 +23,10 @@ $$-\frac{\hbar}{2m} \nabla^{2} \Psi(\bar{r}) = E \Psi (\bar{r})$$
 for which we can write the general solution: 
 
 $$
-\Psi(\bar{r}) = \frac{1}{\sqrt{ V }} e^{ i \bar{k} \bar{r} } \quad (V = L_{x} \cdot L_{y} \cdot L_{z}) \qquad (1)
+\Psi(\bar{r}) = \frac{1}{\sqrt{ \mathbf{V} }} e^{ i \bar{k} \bar{r} } \quad (\mathbf{V} = L_{x} \cdot L_{y} \cdot L_{z}) \qquad (1)
 $$
+
+ 
 
 
 and the eigenvalues:
@@ -64,7 +67,7 @@ k_{z} = \frac{2\pi}{L_{z}} n_{z} \\
 \end{cases}
 $$
 
-Since $L_{x}, L_{y}, L_{z}$ are macroscopic dimensions $k$s can be approximated as being continuous. ^4d5fdd
+Since $L_{x}, L_{y}, L_{z}$ are macroscopic dimensions each $k$ can be approximated as being continuous. ^4d5fdd
 
 We also know the following 
 
@@ -75,22 +78,25 @@ E = \frac{\hbar^{2} k^{2}}{2m} \qquad (2)\\
 p = \hbar \cdot k \qquad
 \end{cases}
 $$
+
 $p$ is obtained from the [De Broglie relations](https://en.wikipedia.org/wiki/De_Broglie_relations "De Broglie relations")
 
 # Density of states (DOS)
 
-DOS describes how the energy levels create by the lattice structure are distributed; it is defined as follows: ^9c22fc
+DOS describes how the energy levels created by the lattice structure are distributed; it is defined as follows: ^9c22fc
 
 $$
 D(E) = \frac{1}{V} \frac{dN(E)}{dE} \quad \left[ \frac{1}{cm^{3} \cdot eV} \right]
 $$
+
+^008db5
 
 ^98edb3
 Where $\frac{dN(E)}{dE}$ is the number of energy states $N(E)$ within an energy range $dE$.
 
 We can find $N(E)$ geometrically reasoning on the following picture.
 
-![[numberOfStates.png|center|400]]
+![[numberOfStates.png|400]]
 
 Since $k$ and $E$ are related by $(2)$ we can find first $N(k)$ and then obtain $N(E)$. 
 $$
@@ -117,7 +123,7 @@ D(E) = \frac{1}{\cancel{ V }} \frac{\cancel{ V }}{\cancel{3} \pi^{2}} \left( \fr
 }
 $$
 
-![[De.png|center|400]]
+![[De.png|400]]
 
 **In 3D the $D(E)$ is proportional to the $\sqrt{E}$**
 
@@ -136,6 +142,7 @@ f(E, T) = \frac{1}{e^{ \frac{E - E_{F}}{KT} } + 1} \\\\
 $$
 
 ![[fermidirac.excalidraw.png|center|400]]
+#todo explain better
 The Fermi-Dirac distribution relies on the presumption of a continuous spread of energy states. While in metals, the values of $k$s appear nearly continuous, this isn't the case for semiconductors and insulators. In these materials, a distinct energy gap exists, with no available states for electrons. Consequently, the Fermi-Dirac model inadequately portrays materials like insulators or semiconductors due to this significant deviation from its assumptions
 
 # Independent electrons model
@@ -149,7 +156,7 @@ V(\bar{r}) = V(\bar{r} + \bar{R}_{n}) \\
 }
 $$
 
-![[ref cube 2.svg|center|300]]
+![[ref cube 2.svg|300]]
 
 $$
 \displaylines{
@@ -168,12 +175,14 @@ $$
 ## Bloch theorem
 
 Bloch's theorem states that solutions to the Schrödinger equation in a periodic potential can be expressed as plane waves modulated by periodic functions. 
+
 $$
 \displaylines{
 \Psi_{\bar{k}}(\bar{r}) = e^{ i \bar{k} \bar{r} } \cdot \mu_{\bar{k}}(\bar{r}) \\
 \mu_{\bar{k}}(\bar{r}) = \mu_{\bar{k}}(\bar{r} + \bar{R}_{n})
 }
 $$
+
 $\mu_{\bar{k}}(\bar{r})$ is a periodic function with the same periodicity as the crystal.
 
 The equality above can also be written as 
@@ -190,9 +199,9 @@ $$
 }
 
 $$
-The usefulness of Bloch's theorem is that it allows us to restrict the search for the solution of SE from the entire space to the space of periodic functions. That is, functions that once described in the unit cell can be extended beyond it periodically.
+The usefulness of Bloch's theorem is that it allows us to restrict the search for the solution of SE from the entire space to the space of periodic functions. That is, functions that were once described in the unit cell can be extended beyond it periodically.
 
-Similarly to what we did before we need to find $\bar{k}$ that satisfy the following conditions (we will only consider the $x$ direction but the same can be done for $y$ and $z$): 
+Similarly to what we did before we need to find $\bar{k}$ that satisfies the following conditions (we will only consider the $x$ direction but the same can be done for $y$ and $z$): 
 
 $$
 
@@ -224,13 +233,14 @@ Since $\bar{k}$ is $\left[\frac{1}{\text{length}}\right]$ it belongs to the reci
 $$
 \bar{k} = x_{1} \bar{g}_{1} + x_{2} \bar{g}_{2} + x_{3} \bar{g}_{3}
 $$
+
 Remembering the [[Crystals#Reciprocal lattice|reciprocal lattice definition]] 
 
 $$
 \bar{a}_{i}\cdot \bar{g}_{j} = 2 \pi \delta_{ij}
 $$
 
-so, by rewriting $(*)$ as 
+and by rewriting $(*)$ as 
 
 $$
 N_{1} (x_{1} \bar{g}_{1} + x_{2} \bar{g}_{2} + x_{3} \bar{g}_{3}) \cdot \bar{a}_{1} = 2 \pi n_{x}
@@ -252,7 +262,7 @@ $$
 \begin{cases}
 x_{1} = \frac{n_{x}}{N_{1}} \\
 x_{2} = \frac{n_{y}}{N_{2}} \\
-x_{3} = \frac{n_{y}}{N_{3}}
+x_{3} = \frac{n_{z}}{N_{3}}
 \end{cases}
 $$
 
@@ -271,10 +281,11 @@ From the drawing we can see that along the $x$ direction there are $N_{1}$ allow
 ## Property of the Bloch state
 
 Solutions of the Schrödinger equation that differ only by a reciprocal vector are equivalent (they describe the same physical state)
+
 $$
 \Psi_{\bar{k} + \bar{G}}(\bar{r}) = \Psi_{\bar{k}}(\bar{r}) \qquad (4)
 $$
-![[QCM Physics/02_Models/attachments/Bloch_theorem_property.svg|center|400]]
+![[QCM Physics/02_Models/attachments/Bloch_theorem_property.svg|400]]
 
 Given the property above, we can say that, given $\hat{H} \Psi_{\bar{k}}(\bar{r}) = E_{\bar{k}}\Psi_{\bar{k}}(\bar{r})$:
 
@@ -291,9 +302,9 @@ So the eigenvalues are periodic.
 
 ![[bloch_theorem_band.svg|700]]
 
-In the drawing above the energy bands are represented only between $- \pi / a_{1}$ and  $\pi / a_{1}$ because $E_{\bar{k}}$ is periodic.
+In the (example) drawing above the energy bands are represented only between $- \pi / a_{1}$ and  $\pi / a_{1}$ because $E_{\bar{k}}$ is periodic.
 
-It is important ot notice that, differently from the [[#Free and independent electron model|free and independent electron model]] here the energy does not go continuously from $-\infty$ to $+\infty$ and thus the behaviour of semiconductors and insulators can be explained.
+It is important to notice that, differently from the [[#Free and independent electron model|free and independent electron model]] here the energy does not go continuously from $-\infty$ to $+\infty$ and thus the behaviour of semiconductors and insulators can be explained.
 
 ### Example
 
@@ -303,19 +314,25 @@ We want to see:
 1) if the material behaves as a metal, a semiconductor or an insulator.
 2) if its properties depend on the size.
 
+#todo improve drawing
+
+![[SmartSelect_20240110_094641_Samsung Notes.jpg]]
+
 Notice that the red lines in the drawing are not continuous in reality for the reasons stated [[#^4d5fdd|previously]]; this show that there are only $N_{tot}$ allowed $\bar{k}$ vectors between  $- \pi / a_{1}$ and  $\pi / a_{1}$ and thus $N_{tot}$ allowed energy states (the orange dots). 
 
-Considering that we have $N_{tot}$ electrons (1 electron in 1 atom in 1 cell) and that the Pauli exclusion principles allows 2 electrons in each state, only half of the first band is occupied.
+Considering that we have $N_{tot}$ electrons (1 electron in 1 atom in 1 cell) and that the Pauli exclusion principle allows 2 electrons in each state, only half of the first band is occupied.
 
 If we were to double the size of the sample nothing would change since there would be $2N_{tot}$ electrons and $2N_{tot}$ allowed $\bar{k}$ vectors.
 
 ## Germanium band structure and DOS
 
-Recalling the definition of density of states [[#Density of states (DOS)]]
+Recalling the definition of density of states:
+
+![[#^008db5]]
 
 we can draw a very simplified plot of $D(E)$ and $E$ (on the left) and the probability of occupation ([[Group A#^7202aa|see group A notes]]):
 
-![[DOS and prob.excalidraw.png|center|600]]
+![[DOS and prob.excalidraw.png|600]]
 
 At $T = 0K$ the probability is $0$ above the fermi energy, and $1$ below, thus the valence band will be fully occupied and the conduction band will be empty.
 
@@ -337,7 +354,7 @@ The effective mass is a result of the interaction between the particle (like an 
 
 The plots below show a representation of two energy bands (in blue) and the relative effective mass associated to them (in red).
 
-![[effective mass.excalidraw.png|center|600]]
+![[effective mass.excalidraw.png|600]]
 
 The yellow regions highlight the fact that where the band have a parabolic shape, the effective mass is constant (since it depends on the second derivative of the energy).
 
@@ -356,11 +373,13 @@ Near the maximum and minimum regions, the bands can be approximated with a parab
 # Substitutional impurities in semiconductors
 
 Defects usually change the band structure generating new states in the energy gap, this is the case with doping (which is a substitutional impurity).
-![[doping_band_structure.svg|center]]
+
+![[doping_band_structure.svg]]
+
 ## Example: $P$ in $Si$
 
 Substituting a $Si$ atom with a $P$ atom (which has one extra electron) will form a **hydrogenic species** (similarly to hydrogen there is only one electron and a positive charge in the middle with charge $+q\,$).
-![[Hydrogen_species.png| center |400]]
+![[Hydrogen_species.png|400]]
 $$
 \displaylines{
 \hat{H} = -\frac{\hbar^{2}}{2m} \nabla^{2} - \overbrace{ \frac{e^{2}}{4 \pi ~ \varepsilon_{0} ~ \varepsilon_{Si}} }^{\substack{\text{attraction between} \\ \text{e}^{-} \text{ and } Si}}

@@ -1,5 +1,7 @@
 ---
-next_note: "[[Bloch theorem]]"
+nextnote: "[[Bloch theorem]]"
+author: Giacomo, Eva
+authorlink: https://github.com/gamberoillecito
 ---
 
 >[!quote] Where *Ibach Luth* is mentioned we refer to

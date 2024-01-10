@@ -37,7 +37,7 @@ An ideal crystal has an infinite number of repetitions in 3 dimensions of the sa
 
 The crystalline structure is composed by the **lattice** and the **base**. The lattice describes the structural spatial unit and the base represents the real position of the atoms in the lattice.
 
-![[basis_lattice.png|center|400]]
+![[basis_lattice.png|400]]
 
 Since we are dealing with a periodic structure, what we "see" from position $\vec{r}$ is the same as what we see from position $\vec{r'}$. This means that we can apply a translation operator 
 

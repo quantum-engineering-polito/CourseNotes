@@ -91,11 +91,11 @@ In this mode the blocks are not encrypted individually but each of them contribu
 
 Since the first block would be subject to the same attack seen before, it is important to add an **initialization vector (IV)**  chosen at random which has to be sent as well to allow the decryption.
 
-![[CBC enc.png|center|400]]
+![[CBC enc.png|400]]
 
 The decryption phase in this case is not trivial: $P_{i} = enc^{-1}(K, C_{i}) \oplus C_{i-1}$. The receiver needs to know $C_0$ = IV.
 
-![[CBC decr.png|center|400]]
+![[CBC decr.png|400]]
 
 ## Padding
 
