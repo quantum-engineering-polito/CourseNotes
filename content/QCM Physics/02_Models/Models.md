@@ -199,7 +199,7 @@ $$
 }
 
 $$
-The usefulness of Bloch's theorem is that it allows us to restrict the search for the solution of SE from the entire space to the space of periodic functions. That is, functions that once described in the unit cell can be extended beyond it periodically.
+The usefulness of Bloch's theorem is that it allows us to restrict the search for the solution of SE from the entire space to the space of periodic functions. That is, functions that were once described in the unit cell can be extended beyond it periodically.
 
 Similarly to what we did before we need to find $\bar{k}$ that satisfies the following conditions (we will only consider the $x$ direction but the same can be done for $y$ and $z$): 
 
@@ -302,7 +302,7 @@ So the eigenvalues are periodic.
 
 ![[bloch_theorem_band.svg|700]]
 
-In the drawing above the energy bands are represented only between $- \pi / a_{1}$ and  $\pi / a_{1}$ because $E_{\bar{k}}$ is periodic.
+In the (example) drawing above the energy bands are represented only between $- \pi / a_{1}$ and  $\pi / a_{1}$ because $E_{\bar{k}}$ is periodic.
 
 It is important to notice that, differently from the [[#Free and independent electron model|free and independent electron model]] here the energy does not go continuously from $-\infty$ to $+\infty$ and thus the behaviour of semiconductors and insulators can be explained.
 
@@ -313,7 +313,11 @@ Let's consider the case of a solid made out of cells with only 1 atom with 1 ele
 We want to see:
 1) if the material behaves as a metal, a semiconductor or an insulator.
 2) if its properties depend on the size.
-#todo which drawing??
+
+#todo improve drawing
+
+![[SmartSelect_20240110_094641_Samsung Notes.jpg]]
+
 Notice that the red lines in the drawing are not continuous in reality for the reasons stated [[#^4d5fdd|previously]]; this show that there are only $N_{tot}$ allowed $\bar{k}$ vectors between  $- \pi / a_{1}$ and  $\pi / a_{1}$ and thus $N_{tot}$ allowed energy states (the orange dots). 
 
 Considering that we have $N_{tot}$ electrons (1 electron in 1 atom in 1 cell) and that the Pauli exclusion principle allows 2 electrons in each state, only half of the first band is occupied.
@@ -369,7 +373,9 @@ Near the maximum and minimum regions, the bands can be approximated with a parab
 # Substitutional impurities in semiconductors
 
 Defects usually change the band structure generating new states in the energy gap, this is the case with doping (which is a substitutional impurity).
+
 ![[doping_band_structure.svg]]
+
 ## Example: $P$ in $Si$
 
 Substituting a $Si$ atom with a $P$ atom (which has one extra electron) will form a **hydrogenic species** (similarly to hydrogen there is only one electron and a positive charge in the middle with charge $+q\,$).

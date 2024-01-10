@@ -6,22 +6,24 @@ authorlink: https://github.com/gamberoillecito,https://github.com/BabelDev0
 ---
 ## Overview of the contents
 
-Before proceeding to explain the topic a brief introduction on why it is useful and why we study it.
+Before proceeding to the main topic we should understand why it is useful and why we study it.
 
-We want to know the **Transition Probabilities** (probability of transitioning from one state to another) and the **Transition rate** (transition probability per unit of time) between two state $\ket{\Psi_{i}}$ and $\ket{\Psi_{f}}$ under the effect of a weak time-dependent perturbation, to study how the system evolve in this setting.
+To study how the system evolves in this setting, we need to know the **Transition Probabilities** (probability of transitioning from one state to another) and the **Transition rate** (transition probability per unit of time) between two state $\ket{\Psi_{i}}$ and $\ket{\Psi_{f}}$ under the effect of a weak time-dependent perturbation,
+
 ### Perturbation theory
 
 The main idea behind perturbation theory is to start with a known or easily solvable system (the unperturbed system) and then introduce a small modification or perturbation that alters the behaviour of the system. By treating the perturbation as a small deviation from the known system, physicists can develop an iterative series solution where each successive term provides a more accurate approximation of the true solution.
 
 ### First order perturbation 
 
-In first-order perturbation, the perturbation is assumed to be small enough that the modifications it induces to the system can be linearly approximated, introducing a major simplification of the calculations. The first-order perturbation equation can be use only to approximate weak physical disturbance, such as a potential energy produced by an external field. We will use it exploring the interaction of an incoming electron with a dipole.
+In first-order perturbation, the perturbation is assumed to be small enough that the modifications induced to the system can be linearly approximated, introducing a major simplification of the calculations. The first-order perturbation equation can be used only to approximate weak physical disturbances, such as a potential energy produced by an external field. We will use it exploring the interaction of an incoming electron with a dipole.
 
 ### Results
 
-We'll observe that after the perturbation, the chances of the system reaching the final state are higher when the perturbation's frequency matches that of the system. In that case we say that the perturbation is in resonance with the system and it indicates that the perturbing energy can be absorbed or emitted by the system, facilitating transitions between these states.
+We'll observe that after the perturbation, the chances of the system reaching the final state are higher when the perturbation's frequency matches that of the system. In that case we say that the perturbation is in resonance with the system and this indicates that the perturbing energy can be absorbed or emitted by the system, facilitating transitions between these states.
 
 ___
+
 ## DOS 
 
 The [[Models#Density of states (DOS)|Density of states (DOS)]] can be written in another equivalent form  ^c9919a
@@ -31,8 +33,9 @@ D(E) = \sum_{n} \delta(E - E_{n})
 $$
 
 which, differently from the one seen previously
+
 $$ D(E) = \frac{1}{V} \frac{dN(E)}{dE} $$ 
-is not normalized to volume. Two check that the two definition are equivalent, let's calculate the number of state $N(E)$
+is not normalized to volume. To check that the two definition are equivalent, let's calculate the number of state $N(E)$
 
 $$
 \begin{align}
@@ -41,6 +44,7 @@ $$
 &N(E) = \int_{E_{1}}^{E_{2}} \sum_{n} \delta(E - E_{n}) \, dE && \tag{2}
 \end{align}
 $$
+
 both actions involve counting the number of energy states within the range of $E_1$ to $E_2$, and the outcomes are identical except for a normalization factor.
 
 ## Perturbation theory
@@ -51,12 +55,12 @@ $$
 \hat{H}_{0} \Phi_{i} (\bar{r}, t) = E_{i} \Phi_{i} (\bar{r}, t)
 $$
 
-Suppose that the Hamiltonian is time independent we can write the solution as
+Supposing that the Hamiltonian is time independent we can write the solution as
 $$
-\Phi_{i}(\bar{r}, t) = \phi_{i}(\bar{r}) e^{ -i( E_{i}/\hbar) t } \quad \text{(stationary state)}
+\Phi_{i}(\bar{r}, t) = \phi_{i}(\bar{r}) e^{ -i( E_{i}/\hbar) t } \qquad \text{(stationary state)}
 $$
 
-When an perturbation $\hat{V}(t)$ perturbed the system the Hamiltonian changes in
+When a perturbation $\hat{V}(t)$ perturbs the system, the Hamiltonian changes in
 $$
 \hat{H} = \hat{H}_{0} + \hat{V}(t) \quad t>0
 $$
@@ -67,37 +71,39 @@ $$
 \hat{H} \Psi(\bar{r}, t) = i \hbar \frac{ \partial \Psi(\bar{r}, t) }{ \partial t } \quad \text{(time dependant S.E.)}
 $$
 
-we know that $\Phi_{i}(\bar{r}, t)$ forms a complete basis for the unperturbed system so the general solution $\Psi(\bar{r},t)$ can be generally express as a linear combination:
+we know that $\Phi_{i}(\bar{r}, t)$ forms a complete basis for the **unperturbed** system so the general solution $\Psi(\bar{r},t)$ can be generally expressed as a linear combination:
+
 $$
 \Psi(\bar{r}, t) = \sum_{j} {\color{red}  c_{j}(t)}  \Phi_{j} (\bar{r}, t)
 $$
+
 where the coefficient $c_{j}(t)$ are the terms responsible for the time dependance of the general solution. 
 
 ### Observation
 
-If the perturbation makes the system evolve from an initial $\ket{\Psi_{i}}$ state to a final state $\ket{\Psi_{f}}$ and since each $c_j$ has the physical meaning that its modulus square is the probability of finding the particle in its associated state.
+The perturbation makes the system evolve from an initial state $\ket{\Psi_{i}}$ to a final state $\ket{\Psi_{f}}$. Since each $|c_j|^{2}$ represents the probability of finding the particle in the state $j$, after the transition (at the end of the evolution) all the coefficients will be 0 except for $c_{f}$.
 
 ![[perturbation_transition.svg|450]]
 
-This implies that after the transition, at the end of the evolution, all the coefficients will be 0 except for $c_{f}$
-
-So now our goals is to calculate the coefficients $c_{j}(t)$ and rewriting the Schrödinger equation with the linear combination and the new Hamiltonian we get:
+So now our goals is to calculate the coefficients $c_{j}(t)$ and rewrite the Schrödinger equation as follows, using the Hamiltonian $\hat{H}$:
 
 $$ 
-[\hat{H_{0}} + \hat{V}(t)] \sum_{j} { c_{j}(t)}  \Phi_{j} (\bar{r}, t) = i \hbar \frac{ \partial }{ \partial t } \sum_{j} { c_{j}(t)}  \Phi_{j} (\bar{r}, t)
+\underbrace{ [\hat{H_{0}} + \hat{V}(t)] }_{ \hat{H} } \sum_{j} { c_{j}(t)}  \Phi_{j} (\bar{r}, t) = i \hbar \frac{ \partial }{ \partial t } \sum_{j} { c_{j}(t)}  \Phi_{j} (\bar{r}, t)
 $$
 
 > [!warning] Many steps are not reported in the following.
 
-after some step we get:
+after some steps we get:
 
 $$
-\frac{ \partial c_{f}(t) }{ \partial t } = \frac{1}{i \hbar} \sum_{j} c_{j}(t) \cdot V_{fj}(t) ~ e^{ i (E_f - E_{j}) t /\hbar } \tag{3}
+\frac{ \partial c_{f}(t) }{ \partial t } = \frac{1}{i \hbar} \sum_{j} c_{j}(t) \cdot V_{fj}(t) \cdot e^{ i (E_f - E_{j}) t /\hbar } \tag{3}
 $$
 Where
+
 $$
 V_{fj}(t) = \braket{ \phi_{f}(\bar{r}) | \hat{V}(t) | \phi_{j}(\bar{r}) } 
 $$
+
 $V_{fj}​(t)$ represents the matrix element representation of the perturbation between states $f$ and $j$ in the $\{\phi_{j}\}$ basis (solutions of the unperturbed system). The elements of the matrix can be calculated since both the perturbation $\hat{V}(t)$ and $\phi$ are known.
 
 ### First order perturbation theory
@@ -121,55 +127,60 @@ c_{f}(t) = \frac{1}{i\hbar} \int_{0}^{t} V_{fi} (t') e^{ i E_{fi} ~ t /\hbar }\,
 }
 $$
 
-**Transition probability** is the probability of finding the system in a given (final) state is:
+The **transition probability**  (the probability of finding the system in a given (final) state) is:
 
 $$
 P_{f}(t) = |c_{f}(t)|^{2} = \frac{1}{\hbar^{2}} \cdot \left|\int_{0}^{t} V_{fi}(t') e^{ i E_{fi} t' /\hbar } \, dt' \right|^{2} 
 $$
-While the **Transition rate** that describe how fast an electron evolve from the initial state to the final state, given the probability $P_{f}$ is:
+
+The **transition rate** (how fast an electron evolves from the initial state to the final state) can be calculated as:
 
 $$
 W_{fi} = \frac{ \partial P_{f} }{ \partial t } 
 $$
 
-This means that if $P_{f}$ is close to $1$ the perturbation had a strong effect on the system, so is likely that the final state of the system after the evolution is $\ket{\Psi_f}$.
+This means that if $P_{f}$ is close to $1$ the perturbation had a strong effect on the system, so it is likely that the final state of the system after the evolution is $\ket{\Psi_f}$.
 
 ## Dipole in an electric field
 
-If we immagine the perturbation generated by an incoming photon the electric field can be expressed as:
+If we imagine the perturbation generated by an incoming photon the electric field can be expressed as:
+
 $$
-\xi_{ph}(t) = \bar{\xi_{0}} \cdot [ e^{i(\bar{k}⋅\bar{r}−ωt)}+e^{-i(\bar{k}⋅\bar{r}−ωt)}]
+\mathcal{E}_{ph}(t) = \bar{\mathcal{E}_{0}} \cdot [ e^{i(\bar{k}⋅\bar{r}−ωt)}+e^{-i(\bar{k}⋅\bar{r}−ωt)}]
 $$ 
 Where:
-- $\xi_{0}$ is a complex vector representing the amplitude and phase of the electric field.
-- $e^{i(\bar{k}⋅\bar{r}−ωt)}$ and $e^{-i(\bar{k}⋅\bar{r}−ωt)}$ are the terms representing the spatial and temporal variations of the electric field due to the photon's propagation
+- $\mathcal{E}_{0}$ is a complex vector representing the amplitude and phase of the electric field.
+- $e^{i(\bar{k}⋅\bar{r}−ωt)}$ and $e^{-i(\bar{k}⋅\bar{r}−ωt)}$ are the terms representing the spatial and temporal variations of the electric field due to the photon's propagation.
 
 A dipole consists of two charges of opposite polarity separated by a distance $d$. When a photon (an electromagnetic wave) interacts with a dipole, the varying electric field of the photon exerts forces on these charges producing a perturbation.
 
 The perturbation potential can be express as 
 $$
 \begin{align} \\
-&\Delta E(t)= -\bar{p} \cdot \bar\xi_{ph}(t)
+&\Delta E(t)= -\bar{p} \cdot \bar{\mathcal{E}}_{ph}(t)
 \\ \\
 &\bar{p} = Q \cdot  \bar{r}  
 \end{align}
 $$
 where :
+
 - $\bar{p}$ is the electric dipole moment.
 - $Q$ is the value of the charges
 
-In this case our perturbation is $\hat{V}(t)=\Delta E(t)= -\bar{p} \cdot \bar\xi_{ph}(t)$
-Now starting from the perturbation we will derive $V_{fi}$ the transition probability $P_f$ and the Fermi golden rule.
+In this case our perturbation is $\hat{V}(t)=\Delta E(t)= -\bar{p} \cdot \bar{\mathcal{E}}_{ph}(t)$
+Now, starting from the perturbation, we will derive $V_{fi}$, the transition probability $P_f$ and the Fermi golden rule.
 
 We can write $c_{f}​(t)$ for the transition from $\ket{\Psi_{i}}$ to $\ket{\Psi_{f}}$ as : 
+
 $$
 \displaylines{
 c_{f}(t) = \frac{1}{i\hbar} \int_{0}^{t} V_{fi} (t') e^{ i E_{fi} ~ t /\hbar }\, dt' \\
 \Downarrow\\
-c_{f}(t) = \frac{1}{i\hbar} \int_{0}^{t} {\color{red} \braket{ \phi_{f}(\bar{r}) | -e \cdot \bar{r} \cdot \bar{\xi_{0}} \cdot [ e^{i(\bar{k}⋅\bar{r}−ωt)}+e^{-i(\bar{k}⋅\bar{r}−ωt)}] | \phi_{j}(\bar{r})}} e^{ i E_{fi} ~ t /\hbar }\, dt'
+c_{f}(t) = \frac{1}{i\hbar} \int_{0}^{t} {\color{red} \braket{ \phi_{f}(\bar{r}) | -e \cdot \bar{r} \cdot \bar{\mathcal{E}_{0}} \cdot [ e^{i(\bar{k}⋅\bar{r}−ωt)}+e^{-i(\bar{k}⋅\bar{r}−ωt)}] | \phi_{j}(\bar{r})}} e^{ i E_{fi} ~ t /\hbar }\, dt'
 }
 $$ 
 >[!warning] Many steps are not reported in the following.
+
 $$
 \begin{align}
 \left| c_{f}(t) \right| ^{2} &= \frac{t^{2}}{\hbar^{2}} |M_{fi}|^{2} sinc^{2}\left[ (E_{fi} - \hbar \omega) \frac{t}{2\hbar} \right] +  \\
@@ -178,8 +189,8 @@ $$
 \end{align}
 $$
 where:
-- $M_{fi}$ is $\braket{ \phi_{f}(\bar{r}) | -e \cdot \bar{r} \cdot \bar{\xi_{0}} \cdot  e^{i\bar{k}⋅\bar{r}} | \phi_{i}(\bar{r})}$ 
-- $M_{{\color{red} if}}$ is $\braket{ \phi_{{\color{red} i}}(\bar{r}) | -e \cdot \bar{r} \cdot \bar{\xi_{0}} \cdot  e^{i\bar{k}⋅\bar{r}} | \phi_{{\color{red} f}}(\bar{r})}$ 
+- $M_{fi}$ is $\braket{ \phi_{f}(\bar{r}) | -e \cdot \bar{r} \cdot \bar{\mathcal{E}_{0}} \cdot  e^{i\bar{k}⋅\bar{r}} | \phi_{i}(\bar{r})}$ 
+- $M_{{\color{red} if}}$ is $\braket{ \phi_{{\color{red} i}}(\bar{r}) | -e \cdot \bar{r} \cdot \bar{\mathcal{E}_{0}} \cdot  e^{i\bar{k}⋅\bar{r}} | \phi_{{\color{red} f}}(\bar{r})}$ 
   
 <iframe src="https://www.desmos.com/calculator/es2d8sr5iz?embed" width="500" height="500" style="border: 1px solid #ccc" frameborder=0></iframe>
 
