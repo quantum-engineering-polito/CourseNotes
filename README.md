@@ -1,5 +1,14 @@
 # Course Notes
 
+📚 Welcome to the Quantum Engineering notes repository
+
+This repository serves as a collaborative space where students can contribute and access comprehensive notes about Quantum Engineering. The notes are designed to enhance the learning experience by providing a collective resource for understanding, sharing insights, and collaborating on key topics.
+
+## Features
+
+- **Structured Notes:** Organized and structured notes covering various topics in Quantum Engineering.
+- **Accessible Online:** Notes are accessible online through [Quantum Engineering Polito CourseNotes](https://quantum-engineering-polito.github.io/CourseNotes/), providing a convenient platform for studying and reviewing.
+
 ## Environment Setup ⚙️
 
 👋 Welcome to the Course Notes repository! If you're new to GitHub, check out [this guide](https://github.com/firstcontributions/first-contributions) to get started.
