@@ -41,9 +41,11 @@ This repository serves as a collaborative space where students can contribute an
 ## Contributing
 
 🚀 We welcome contributions to improve these course notes! Follow our [contribution guidelines](CONTRIBUTING.md) to get started.
+<a href="https://github.com/quantum-engineering-polito/CourseNotes/graphs/contributors">
+  <img src="https://contrib.rocks/image?repo=quantum-engineering-polito/CourseNotes" />
+</a>
 
 ## License
 
 This project is licensed under the Attribution-NonCommercial-ShareAlike 4.0 International License - see the [LICENSE.md](LICENSE.md) file for details.
 **This license prohibits commercial use without explicit permission from the copyright holder**
-
