@@ -13,7 +13,6 @@ only one "new line"}
 
 will appear as:
 
-
 {text separated by
 only one "new line"}
 
