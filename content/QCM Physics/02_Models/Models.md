@@ -158,8 +158,7 @@ f(E, T) = \frac{1}{e^{ \frac{E - E_{F}}{KT} } + 1} \\\\
 }
 $$
 
-<iframe src="https://www.desmos.com/calculator/f0847lvug0?embed" width="500" height="500" style="border: 1px solid #ccc" frameborder=0></iframe>
-
+<iframe scrolling="no" title="Fermi-Dirac Distribution" src="https://www.geogebra.org/material/iframe/id/buz52m7a/width/1613/height/900/border/888888/sfsb/true/smb/false/stb/false/stbh/false/ai/false/asb/false/sri/false/rc/false/ld/false/sdz/false/ctl/false" width="500px" height="400px" style="border:0px;"> </iframe>
 ![[fermidirac.excalidraw.png|center|400]]
 #todo explain better
 The Fermi-Dirac distribution relies on the presumption of a continuous spread of energy states. While in metals, the values of $k$s appear nearly continuous, this isn't the case for semiconductors and insulators. In these materials, a distinct energy gap exists, with no available states for electrons. Consequently, the Fermi-Dirac model inadequately portrays materials like insulators or semiconductors due to this significant deviation from its assumptions
@@ -345,11 +344,7 @@ If we were to double the size of the sample nothing would change since there wou
 
 ## Germanium band structure and DOS
 
-Recalling the definition of density of states:
-
-![[#^008db5]]
-
-we can draw a very simplified plot of $D(E)$ and $E$ (on the left) and the probability of occupation ([[Group A#^7202aa|see group A notes]]):
+Recalling the definition of density of states, we can draw a very simplified plot of $D(E)$ and $E$ (on the left) and the probability of occupation ([[Group A#^7202aa|see group A notes]]):
 
 ![[DOS and prob.excalidraw.png|600]]
 
