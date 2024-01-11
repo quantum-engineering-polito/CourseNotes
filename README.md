@@ -46,7 +46,7 @@ This repository serves as a collaborative space where students can contribute an
 ## Contributing
 
 🚀 We welcome contributions to improve these course notes! Follow our [contribution guidelines](CONTRIBUTING.md) to get started.
-<a href="https://github.com/quantum-engineering-polito/CourseNotes/graphs/contributors">
+<a href="https://github.com/quantum-engineering-polito/CourseNotes/people">
   <img src="https://contrib.rocks/image?repo=quantum-engineering-polito/CourseNotes" />
 </a>
 
