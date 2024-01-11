@@ -25,7 +25,7 @@ Along the x axis there is the actual MOS structure (a capacitor) and over the y 
 
 ### The two *pn* junctions
 
-The two junctions form two barriers from source to drain, due to the built-in potential even at equilibrium (like usual single pn junction). When the juntions are reverse biased, the barriers are higher and the potential difference is $V_{bi}-V_{A}$ 
+The two junctions form two barriers from source to drain, due to the built-in potential even at equilibrium (like usual single pn junction). When the junctions are reverse biased, the barriers are higher and the potential difference is $V_{bi}-V_{A}$ 
 ![[MOSFETpnJunc.png | 450]]
 this prevents the flow of current between source and drain in usual conditions (without the MOS structure).
 
