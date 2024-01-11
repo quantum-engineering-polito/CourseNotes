@@ -1,7 +1,7 @@
 ---
-nextnote: 
-author: 
-authorlink:
+nextnote: "[[MOS Current]]"
+author: Eva
+authorlink: https://github.com/deskclam
 ---
 
 ## Contacts
@@ -150,6 +150,7 @@ Q_{S}(y)=\mp\sqrt{2qN_{A}V_{T}\epsilon_{s}}\Bigg\{e^{-V_{S}/V_{T}}+\frac{V_{S}}{
 }
 $$ 
 ## Charges 
+
 The total charge per unit area is defined as:
 $$ 
 Q_{S}(y)=-q\int_{0}^{+\infty} \rho(x,y) \, dx 
@@ -164,8 +165,75 @@ Q_{d}(y)=-q\int_{0}^{+\infty} \rho(x,y)-N_{A}(x,y) \, dx \simeq -qN_{A}x_{d}
 $$
 with $x_{d} \to V_{S}(y)=\frac{1}{2}\frac{N_{A}}{\epsilon_{S}}[x_{d}(y)]^2$  that is the depletion depth.
 
+The sum between the depletion charge and the electron charge is equal to the total charge in the semiconductor
+
+$$ 
+Q_{S}(y)=Q_{d}(y)+Q_{n}(y)
+$$ 
+
 The MOS charge for $\varphi_{ch}=0$ changes with respect to the voltage, in the figure is possible to see the charge at the surface for the four operating conditions
 	#todo add image with the four op. cond
 
+## Surface Potential Equation (SPE)
 
-  
+Now that is known the relation between the charge (per unit area) and the surface potential, it is possible to obtain the Surface Potential Equation.
+
+Starting from the voltage balance equation:
+
+$$ 
+V_{GB}-V_{FB}=V_{ox}(y)+V_{S}(y)
+$$ 
+and being the $V_{ox}=-\frac{Q_{S}(y)}{C_{ox}}$ the SPE is:
+$$ 
+V_{GB}-V_{FB}=-\frac{Q_{S}(y)}{C_{ox}}+V_{S}(y)
+$$ 
+Is interesting to see the behaviour of both the charge and the surface voltage in the different working condition
+
+### Depletion
+
+When we are in depletion, the charge in the semiconductor is only the depletion charge:
+
+$$ 
+Q_{S}=Q_{d}=-{\sqrt{ 2\epsilon_{S}qN_{A}V_{S}}}
+$$
+the voltages then are:
+$$ 
+\displaylines{
+V_{GB}-V_{FB}=\frac{\sqrt{ 2qN_{A}\epsilon_{S}V_{S} }}{C_{ox}} \\
+V_{GB}-V_{FB}=V_{S}+\gamma_{B}\sqrt{ V_{S} } \\
+V_{S}\simeq V_{GB}-V_{FB}
+}
+$$
+Where $\gamma_{B}=\frac{\sqrt{ 2\epsilon_{S}qN_{A} }}{C_{ox}}$ is the body coefficient, we can see that $V_{S}$ is linear with $V_{GB}$ and independent from the channel potential $\varphi_{ch}$
+
+### Weak inversion
+
+In weak inversion is not possible to do approximations on the charges in the substrate, so is not taken into consideration, instead we will evaluate the charge and the surface potential in strong inversion
+
+### Strong inversion
+
+In strong inversion we have the accumulation of charges of the opposite kind with respect to the type of substrate. The total charge is:
+$$ 
+\displaylines{
+Q_{S}\simeq-Q_{0}\exp\left( \frac{V_{S}-\phi_{p}-\varphi_{ch}}{2V_{T}} \right)\\
+V_{S}-2\phi_{p}-\varphi_{ch}\simeq 2V_{T}\log\left[ \frac{C_{ox}}{Q_{0}}(V_{GB}-V_{FB}-V_{S}) \right]\simeq 0\\
+V_{S}\simeq 2\phi_{p}+\varphi_{ch}
+}
+
+$$
+In this case $V_{S}$ is independent from $V_{GB}$ but only depends on $\varphi_{ch}$ 
+
+In strong inversion we obtain the charge control model where $Q_{n}$ depends on $V_{GS}$ and through linearization of the MOS charge with respect to $\varphi_{ch}$ around $\varphi_{ch}=0$ and we obtain:
+$$ 
+Q_{n}(y)=-C_{ox}(V_{GB}-V_{FB}-2\phi_{p})+\sqrt{ 2\epsilon_{S}qN_{A}2\phi_{p} }+C_{ox}m\varphi_{ch}(y)
+$$
+
+Where $m$ is the *bulk charge linearization coefficient* (not reported in these notes, check the slides)
+
+The model becomes linear with $V_{GB}$ and $\varphi_{ch}$. From the definition of $V_{th}$ we can rewrite the electron charge as:
+$$ 
+Q_{n}(y)\simeq -C_{ox}(V_{GB}-V_{th}-m\varphi_{ch})
+$$ 
+
+
+#todo add graph 
