@@ -3,6 +3,13 @@ nextnote: "[[Fermi golden rule]]"
 author: Giacomo
 authorlink: https://github.com/gamberoillecito
 ---
+# Overview of the contents
+Our goals are:
+- find out how many charge carriers are present within the crystal?
+- where and how are they placed inside the crystal?
+- how do they move inside the crystal?
+
+to find out the answer to these questions we use models to help us approximate reality, of course like all models, these can only be used by making assumptions about their validity
 # Free and independent electron model
 
 The free-electron model, in solid-state physics, simplifies metals as containers filled with a gas composed of free electrons. These electrons are considered unbound to any particular atom and are able to move freely throughout the material. 
@@ -15,6 +22,9 @@ Electrons in the model are:
 Let's consider a crystal of macroscopic dimensions ($L_{x}, L_{y}, L_{z}$) and define a reference system as shown below.
 
 ![[ref cube.svg|300]]
+considering only one dimension at a time, this scenario is reminiscent of the infinity square well
+
+![[infinit_square_well_QCMP.svg|250]]
 
 We can then write the Schrödinger equation (SE)
 
@@ -25,9 +35,6 @@ for which we can write the general solution:
 $$
 \Psi(\bar{r}) = \frac{1}{\sqrt{ \mathbf{V} }} e^{ i \bar{k} \bar{r} } \quad (\mathbf{V} = L_{x} \cdot L_{y} \cdot L_{z}) \qquad (1)
 $$
-
- 
-
 
 and the eigenvalues:
 
@@ -81,8 +88,18 @@ $$
 
 $p$ is obtained from the [De Broglie relations](https://en.wikipedia.org/wiki/De_Broglie_relations "De Broglie relations")
 
-# Density of states (DOS)
+The objective is to determine the quantity of charge carriers within a crystal. Instead of directly counting them, we know that each charge carrier occupies a state, so we can use this formula to derive the number of charge carriers:
+$$ 
+n = \int D(E) f(E,T)\, dE 
+$$ where:
+- $n$ represents the total number of charge carriers in the crystal.
+- $D(E)$ denotes the density of states.
+- $f(E,T)$ corresponds to the Fermi-Dirac distribution for a given temperature $T$
 
+In essence, this formula calculates the number of charge carriers by summing up, over infinitesimally small energy intervals, the product of the density of states at a particular energy level and the probability that the corresponding states are occupied by electrons (charge carriers).
+
+let's derive the components of this formula.
+# Density of states (DOS)
 DOS describes how the energy levels created by the lattice structure are distributed; it is defined as follows: ^9c22fc
 
 $$
@@ -107,8 +124,8 @@ $N(E)$ can be calculated as the volume of a sphere of radius $k$ divided by the 
 
 $$
 \begin{align}
-N(E) &= \overset{ \substack{spins \\ \downarrow} }{ 2 } \frac{4/3 \pi k^{3}}{(2 \pi)^{3}/V} \\ 
-&\overset{ (3) }{ = } \frac{8/3 \pi \left( \frac{2mE}{\hbar^{2}} \right)^{3/2}}{8 \pi^{3}/V} \\ 
+N(k) &= \overset{ \substack{spins \\ \downarrow} }{ 2 } \frac{4/3 \pi k^{3}}{(2 \pi)^{3}/V} \\ 
+N(E) &\overset{ (3) }{ = } \frac{8/3 \pi \left( \frac{2mE}{\hbar^{2}} \right)^{3/2}}{8 \pi^{3}/V} \\ 
 & = \frac{V}{3 \pi^{2}} \left( \frac{2m}{\hbar^{2}} \right) ^{3/2} E ^{3/2} 
 \end{align}
 $$
@@ -127,7 +144,7 @@ $$
 
 **In 3D the $D(E)$ is proportional to the $\sqrt{E}$**
 
-## Fermi-Dirac distribution
+# Fermi-Dirac distribution
 
 Fermi-Dirac distribution gives the probability of a given energy state of being occupied at a given temperature.
 
@@ -140,6 +157,8 @@ f(E, T) = \frac{1}{e^{ \frac{E - E_{F}}{KT} } + 1} \\\\
 \end{cases} 
 }
 $$
+
+<iframe src="https://www.desmos.com/calculator/f0847lvug0?embed" width="500" height="500" style="border: 1px solid #ccc" frameborder=0></iframe>
 
 ![[fermidirac.excalidraw.png|center|400]]
 #todo explain better
