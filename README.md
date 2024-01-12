@@ -39,10 +39,23 @@ If you are using github desktop, open it
     - Push it to the reposiotry
     - <img width="282" alt="Screenshot 2024-01-12 at 23 10 15" src="https://github.com/quantum-engineering-polito/CourseNotes/assets/91274142/7b436bd0-3e91-437e-8fd8-f3054191f776">
 
+When pushing changes, ensure you've pulled the latest updates to avoid conflicts, which may arise if multiple edits occur on the same file. To avoid this issue, regularly Obsidian automatically perform a pull on opening and closing. 
+
+Conflicts are displayed like this:
+
+<img width="556" alt="Screenshot 2024-01-12 at 23 27 47" src="https://github.com/quantum-engineering-polito/CourseNotes/assets/91274142/d45bd5e5-aa0b-4bd3-b1e3-fef53937c7fb">
+
+Use your preferred code editor, such as Visual Studio Code, to resolve conflicts:
+
+<img width="774" alt="Screenshot 2024-01-12 at 23 30 18" src="https://github.com/quantum-engineering-polito/CourseNotes/assets/91274142/6abebe09-da73-4cfa-985a-2b3254b9cc2c">
+
+
+Once you've decided on the changes to keep, use GitHub Desktop to push the updates.
 
 ## Contributing
 
 🚀 We welcome contributions to improve these course notes! Follow our [contribution guidelines](CONTRIBUTING.md) to get started.
+
 <a href="https://github.com/quantum-engineering-polito/CourseNotes/graphs/contributors">
   <img src="https://contrib.rocks/image?repo=quantum-engineering-polito/CourseNotes" />
 </a>
