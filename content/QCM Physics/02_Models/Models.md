@@ -1,8 +1,15 @@
 ---
 nextnote: "[[Fermi golden rule]]"
-author: Giacomo
-authorlink: https://github.com/gamberoillecito
+author: Giacomo, BabelDev0
+authorlink: https://github.com/gamberoillecito,https://github.com/BabelDev0
 ---
+# Overview of the contents
+Our goals are:
+- find out how many charge carriers are present within the crystal?
+- where and how are they placed inside the crystal?
+- how do they move inside the crystal?
+
+to find out the answer to these questions we use models to help us approximate reality, of course like all models, these can only be used by making assumptions about their validity
 # Free and independent electron model
 
 The free-electron model, in solid-state physics, simplifies metals as containers filled with a gas composed of free electrons. These electrons are considered unbound to any particular atom and are able to move freely throughout the material. 
@@ -15,6 +22,9 @@ Electrons in the model are:
 Let's consider a crystal of macroscopic dimensions ($L_{x}, L_{y}, L_{z}$) and define a reference system as shown below.
 
 ![[ref cube.svg|300]]
+considering only one dimension at a time, this scenario is reminiscent of the infinity square well
+
+![[infinit_square_well_QCMP.svg|250]]
 
 We can then write the Schrödinger equation (SE)
 
@@ -25,9 +35,6 @@ for which we can write the general solution:
 $$
 \Psi(\bar{r}) = \frac{1}{\sqrt{ \mathbf{V} }} e^{ i \bar{k} \bar{r} } \quad (\mathbf{V} = L_{x} \cdot L_{y} \cdot L_{z}) \qquad (1)
 $$
-
- 
-
 
 and the eigenvalues:
 
@@ -81,17 +88,26 @@ $$
 
 $p$ is obtained from the [De Broglie relations](https://en.wikipedia.org/wiki/De_Broglie_relations "De Broglie relations")
 
-# Density of states (DOS)
+The objective is to determine the quantity of charge carriers within a crystal. Instead of directly counting them, we know that each charge carrier occupies a state, so we can use this formula to derive the number of charge carriers:
 
-DOS describes how the energy levels created by the lattice structure are distributed; it is defined as follows: ^9c22fc
+$$ 
+n = \int D(E) f(E,T)\, dE 
+$$
+where:
+- $n$ represents the total number of charge carriers in the crystal.
+- $D(E)$ denotes the density of states.
+- $f(E,T)$ corresponds to the Fermi-Dirac distribution for a given temperature $T$
+
+In essence, this formula calculates the number of charge carriers by summing up, over infinitesimally small energy intervals, the product of the density of states at a particular energy level and the probability that the corresponding states are occupied by electrons (charge carriers).
+
+let's derive the components of this formula.
+# Density of states (DOS)
+DOS describes how the energy levels created by the lattice structure are distributed; it is defined as follows:
 
 $$
 D(E) = \frac{1}{V} \frac{dN(E)}{dE} \quad \left[ \frac{1}{cm^{3} \cdot eV} \right]
 $$
 
-^008db5
-
-^98edb3
 Where $\frac{dN(E)}{dE}$ is the number of energy states $N(E)$ within an energy range $dE$.
 
 We can find $N(E)$ geometrically reasoning on the following picture.
@@ -107,8 +123,8 @@ $N(E)$ can be calculated as the volume of a sphere of radius $k$ divided by the 
 
 $$
 \begin{align}
-N(E) &= \overset{ \substack{spins \\ \downarrow} }{ 2 } \frac{4/3 \pi k^{3}}{(2 \pi)^{3}/V} \\ 
-&\overset{ (3) }{ = } \frac{8/3 \pi \left( \frac{2mE}{\hbar^{2}} \right)^{3/2}}{8 \pi^{3}/V} \\ 
+N(k) &= \overset{ \substack{spins \\ \downarrow} }{ 2 } \frac{4/3 \pi k^{3}}{(2 \pi)^{3}/V} \\ 
+N(E) &\overset{ (3) }{ = } \frac{8/3 \pi \left( \frac{2mE}{\hbar^{2}} \right)^{3/2}}{8 \pi^{3}/V} \\ 
 & = \frac{V}{3 \pi^{2}} \left( \frac{2m}{\hbar^{2}} \right) ^{3/2} E ^{3/2} 
 \end{align}
 $$
@@ -127,7 +143,7 @@ $$
 
 **In 3D the $D(E)$ is proportional to the $\sqrt{E}$**
 
-## Fermi-Dirac distribution
+# Fermi-Dirac distribution
 
 Fermi-Dirac distribution gives the probability of a given energy state of being occupied at a given temperature.
 
@@ -141,13 +157,17 @@ f(E, T) = \frac{1}{e^{ \frac{E - E_{F}}{KT} } + 1} \\\\
 }
 $$
 
-![[fermidirac.excalidraw.png|center|400]]
-#todo explain better
-The Fermi-Dirac distribution relies on the presumption of a continuous spread of energy states. While in metals, the values of $k$s appear nearly continuous, this isn't the case for semiconductors and insulators. In these materials, a distinct energy gap exists, with no available states for electrons. Consequently, the Fermi-Dirac model inadequately portrays materials like insulators or semiconductors due to this significant deviation from its assumptions
+
+<iframe scrolling="no" title="Fermi-Dirac Distribution" src="https://www.geogebra.org/material/iframe/id/buz52m7a/width/1613/height/900/border/888888/sfsb/true/smb/false/stb/false/stbh/false/ai/false/asb/false/sri/false/rc/false/ld/false/sdz/false/ctl/false" width="500px" height="400px" style="border:0px;"> </iframe>
+
+![[fermidirac.excalidraw.svg|400]]
+
+
+The Fermi-Dirac distribution relies on the presumption of a continuous spread of energy states. While in metals, the values of $k$s appear nearly continuous, this isn't the case for semiconductors and insulators. In semiconductors, a distinct energy gap exists, with no available states for electrons. Consequently, the Fermi-Dirac model inadequately portrays materials like insulators or semiconductors due to this significant deviation from its assumptions
 
 # Independent electrons model
 
-This model improves the previous one by dropping the "free electrons" assumption. This implies that in this case the potential is periodic: 
+This model improves the previous one by dropping the "free electrons" assumption. This implies that in this case the  potential is periodic, generated by atoms arranged in the lattice fashion: 
 
 $$
 \displaylines{
@@ -324,13 +344,9 @@ Considering that we have $N_{tot}$ electrons (1 electron in 1 atom in 1 cell) an
 
 If we were to double the size of the sample nothing would change since there would be $2N_{tot}$ electrons and $2N_{tot}$ allowed $\bar{k}$ vectors.
 
-## Germanium band structure and DOS
+## Effective mass
 
-Recalling the definition of density of states:
-
-![[#^008db5]]
-
-we can draw a very simplified plot of $D(E)$ and $E$ (on the left) and the probability of occupation ([[Group A#^7202aa|see group A notes]]):
+Recalling the definition of density of states, we can draw a very simplified plot of $D(E)$ and $E$ (on the left) and the probability of occupation ([[Group A#^7202aa|see group A notes]]):
 
 ![[DOS and prob.excalidraw.png|600]]
 
@@ -338,14 +354,30 @@ At $T = 0K$ the probability is $0$ above the fermi energy, and $1$ below, thus t
 
 For temperatures above $0K$, on the other hand, some electrons (in yellow) will be excited to the conduction band. These electrons do not behave as free particles and their mass is not the same as the one of the free electron. 
 
-We can simplify the description of the behaviour of these electrons comparing their motion to that of free particles with different masses in a vacuum, to do that we define the **effective mass** as:
+Talking about the behaviour of electrons let's try to analyzing their mass, in the case of the free particle we have that the relation between mass, energy and momentum is straightforward:
+
+$$
+\displaylines{
+E = \frac{p^2}{2m} \quad \text{so the mass is}
+\\\\
+m = \frac{p^2}{2E} = \frac{\hbar\omega}{2E}
+}
+$$
+
+but now we are inside the crystal and the relation is more complex.
+
+![[band_diagram_relation_wavenumber.svg|450]]
+
+
+at each $k$ value corresponds a different $E$ and $m$ value. We can simplify the description of the behaviour of these electrons comparing their motion to that of free particles with different masses in a vacuum, to do that we define the **effective mass** as:
 
 $$
 m^{*}_{ij} = \frac{\hbar^{2}}{\left[ \frac{\partial^{2} E}{\partial k_{i} \partial k_{j}}\right]}
 $$
+
 the motion of the electron can now be described by
 $$ F=m^{*}a $$
-It is important to notice that the effective mass depends on the direction, since the potential changes depending on the structure of the lattice.
+It is important to notice that the effective mass depends on the curvature of the band, since the potential changes depending on the structure of the lattice.
 The core electrons, the ones near the nucleus, have $m^{*} \to \infty$.
 
 The effective mass is a result of the interaction between the particle (like an electron) and its surroundings (the crystal lattice). In an anisotropic crystal (where properties differ along different axes), the effective mass can vary based on the direction in which the particle moves or interacts within the material. However, in an isotropic crystal, this mass remains the same regardless of the direction.
@@ -356,7 +388,10 @@ The plots below show a representation of two energy bands (in blue) and the rela
 
 ![[effective mass.excalidraw.png|600]]
 
-The yellow regions highlight the fact that where the band have a parabolic shape, the effective mass is constant (since it depends on the second derivative of the energy).
+The yellow regions highlight the fact that where the band have a parabolic shape, the effective mass is constant (since it depends on the second derivative of the energy). In this region the mass can be calculate as always:
+$$
+m = \frac{p^2}{2E}
+$$
 
 Where the energy has an inflection point the effective mass will tend to $\pm \infty$.
 

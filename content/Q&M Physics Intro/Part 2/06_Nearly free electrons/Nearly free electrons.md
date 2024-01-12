@@ -203,7 +203,8 @@ at the edge of the first Brillouin zone, $c_{\vec{k}}\simeq c_{\vec{k}-\vec{G}},
 and substituting in the energy relation above:
 $$ 
 E_{\pm}=\frac{1}{2}(E_{\vec{k}}^{0}+E_{\vec{k}-\vec{G}}^0)\pm|V_{\vec{G}}|
-$$At the edge the contribution of the two waves with $c_{\vec{k}}$ and $c_{\vec{k}-\vec{G}}$ re equal; the difference between the two energies at the boundary is equal to the band gap:
+$$
+At the edge the contribution of the two waves with $c_{\vec{k}}$ and $c_{\vec{k}-\vec{G}}$ re equal; the difference between the two energies at the boundary is equal to the band gap:
 $$ 
 \Delta E=E_{+}-E_{-}=2|V_{\vec{G}}|
 $$ 

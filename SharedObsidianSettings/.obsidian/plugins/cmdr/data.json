@@ -1,0 +1,49 @@
+{
+  "confirmDeletion": true,
+  "showAddCommand": false,
+  "debug": false,
+  "editorMenu": [],
+  "fileMenu": [],
+  "leftRibbon": [
+    {
+      "id": "obsidian-shellcommands:shell-command-8oni6x3grn",
+      "icon": "arrow-big-up",
+      "name": "Shell commands: Execute: git backup",
+      "mode": "any",
+      "color": "#6b7cff"
+    },
+    {
+      "id": "obsidian-shellcommands:shell-command-v91ja29t5k",
+      "icon": "arrow-down-circle",
+      "name": "Shell commands: Execute: git update",
+      "mode": "any",
+      "color": "#4dff82"
+    }
+  ],
+  "rightRibbon": [],
+  "titleBar": [],
+  "statusBar": [],
+  "pageHeader": [],
+  "macros": [],
+  "explorer": [],
+  "hide": {
+    "statusbar": [],
+    "leftRibbon": [
+      "Create new canvas",
+      "Open today's daily note",
+      "Insert template",
+      "Create new drawing"
+    ]
+  },
+  "spacing": 8,
+  "advancedToolbar": {
+    "rowHeight": 48,
+    "rowCount": 1,
+    "spacing": 0,
+    "buttonWidth": 48,
+    "columnLayout": false,
+    "mappedIcons": [],
+    "tooltips": false,
+    "heightOffset": 0
+  }
+}

@@ -1,0 +1,148 @@
+{
+  "settings_version": "0.21.0",
+  "debug": false,
+  "obsidian_command_palette_prefix": "Execute: ",
+  "preview_variables_in_command_palette": true,
+  "show_autocomplete_menu": true,
+  "working_directory": "",
+  "default_shells": {
+    "win32": "PowerShell.exe"
+  },
+  "environment_variable_path_augmentations": {},
+  "show_installation_warnings": true,
+  "error_message_duration": 20,
+  "notification_message_duration": 10,
+  "execution_notification_mode": "disabled",
+  "output_channel_clipboard_also_outputs_to_notification": true,
+  "output_channel_notification_decorates_output": true,
+  "enable_events": true,
+  "approve_modals_by_pressing_enter_key": true,
+  "command_palette": {
+    "re_execute_last_shell_command": {
+      "enabled": true,
+      "prefix": "Re-execute: "
+    }
+  },
+  "max_visible_lines_in_shell_command_fields": false,
+  "shell_commands": [
+    {
+      "id": "v91ja29t5k",
+      "platform_specific_commands": {
+        "default": "git stash -q\ngit pull\ngit stash pop -q"
+      },
+      "shells": {
+        "win32": "PowerShell.exe"
+      },
+      "alias": "git update",
+      "icon": "arrow-big-down",
+      "confirm_execution": false,
+      "ignore_error_codes": [],
+      "input_contents": {
+        "stdin": null
+      },
+      "output_handlers": {
+        "stdout": {
+          "handler": "notification",
+          "convert_ansi_code": true
+        },
+        "stderr": {
+          "handler": "notification",
+          "convert_ansi_code": true
+        }
+      },
+      "output_wrappers": {
+        "stdout": null,
+        "stderr": null
+      },
+      "output_channel_order": "stdout-first",
+      "output_handling_mode": "buffered",
+      "events": {
+        "on-layout-ready": {
+          "enabled": true
+        }
+      },
+      "command_palette_availability": "enabled",
+      "preactions": [],
+      "variable_default_values": {}
+    },
+    {
+      "id": "8oni6x3grn",
+      "platform_specific_commands": {
+        "default": "git stash -q\ngit pull -q\ngit stash pop -q\ngit add .\ngit commit -m \"{{_commit_message}}\" -q\ngit push -q\n\"Last commit:\"\ngit log --max-count=1"
+      },
+      "shells": {},
+      "alias": "git backup",
+      "icon": "arrow-big-up",
+      "confirm_execution": false,
+      "ignore_error_codes": [],
+      "input_contents": {
+        "stdin": null
+      },
+      "output_handlers": {
+        "stdout": {
+          "handler": "notification",
+          "convert_ansi_code": true
+        },
+        "stderr": {
+          "handler": "notification",
+          "convert_ansi_code": true
+        }
+      },
+      "output_wrappers": {
+        "stdout": null,
+        "stderr": null
+      },
+      "output_channel_order": "stdout-first",
+      "output_handling_mode": "buffered",
+      "events": {
+        "on-quit": {
+          "enabled": true
+        }
+      },
+      "command_palette_availability": "enabled",
+      "preactions": [
+        {
+          "type": "prompt",
+          "enabled": true,
+          "prompt_id": "dqbcfzphzz"
+        }
+      ],
+      "variable_default_values": {
+        "{{event_yaml_value}}": {
+          "type": "value",
+          "value": "auto commit"
+        }
+      }
+    }
+  ],
+  "prompts": [
+    {
+      "id": "dqbcfzphzz",
+      "title": "Commit message",
+      "description": "Insert a brief and meaningful description of the changes you made.",
+      "preview_shell_command": false,
+      "fields": [
+        {
+          "type": "single-line-text",
+          "label": "Message",
+          "description": "",
+          "default_value": "",
+          "target_variable_id": "rfy33j14pj",
+          "required": true
+        }
+      ],
+      "execute_button_text": "Continue"
+    }
+  ],
+  "builtin_variables": {},
+  "custom_variables": [
+    {
+      "id": "rfy33j14pj",
+      "name": "commit_message",
+      "description": "",
+      "default_value": null
+    }
+  ],
+  "custom_shells": [],
+  "output_wrappers": []
+}

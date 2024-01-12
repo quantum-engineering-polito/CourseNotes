@@ -138,7 +138,7 @@ $$
 
 ## Density of states of a 2DEG
 
-#todo add explanation
+#todo add better explanation
 
 We calculate the DOS for one sub-band and then extend the results to the others. For simplicity we suppose that there is only one sub-band with vertex in the origin and thus:
 

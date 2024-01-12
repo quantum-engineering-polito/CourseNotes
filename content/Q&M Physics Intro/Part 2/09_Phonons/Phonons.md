@@ -116,3 +116,101 @@ If $r =1$ (only one atom inside the base) we have $3$ equations and thus $3$ dis
 
 ## Normal modes for 1D monoatomic chain
 
+![[monoatomic chain.svg|500]]
+In this case we have a monoatomic linear chain of atoms which are allowed to move in the horizontal direction only. Each atom has mass $M$ and $u_{n}$ represents the displacement of the atom $n$.
+
+The atoms are modelled as a mass-spring system with springs with **elastic force constant** $f$.
+
+### Equation of motion
+
+The equation of motion for the atom $n$ is given by 
+
+$$
+M \frac{d^{2}u_{n}}{dt} = {\color{blue} - \phi_{n}^{n-1} \cdot u_{n-1}}  {\color{purple} ~- \phi_{n}^{n} \cdot u_{n} } {\color{green}~ - \phi_{n}^{n+1} \cdot u_{n+1}} 
+$$
+
+Where the three terms represent the contributions of the atoms $n-1$, $n$ and $n + 1$ respectively. To proceed with the calculation we need to calculate the individual terms:
+
+![[monoatomic contributions.svg]]
+
+Substituting the three orange expression that we got graphically we get: 
+
+$$
+M \frac{d^{2}u_{n}}{dt^{2}} = f \cdot u_{n-1} - 2f \cdot u_{n} + f \cdot u_{n+1} \tag{2}
+$$
+
+
+The solutions are in the form:
+#todo why?
+
+$$
+u_{n} = \frac{k}{\sqrt{ m }} ~ u(q) ~e^{ i(qna - \omega t) }
+$$
+
+If we apply the BVK conditions (i.e. the atom $N+1$ is equal to the atom $N = 1$ and $u(a) = u[(N+1)\cdot a]$) we get: 
+
+$$
+\begin{align}
+u(a) &= \frac{k}{\sqrt{ m }}~u(q) ~e^{ i(qa-\omega t) }  \\
+&= u\big[(N+1) \cdot a\big]  \\
+&= \frac{k}{\sqrt{ m }} ~ u(q) ~ e^{ iqNa } ~ e^{ i(qa - \omega t) }
+\end{align}
+$$
+
+which is satisfied when $qNa = 2\pi m$ with $m \in \mathbb{Z}$. This leads to 
+
+$$
+\boxed{q = \frac{2\pi}{Na} = \frac{2\pi}{L}m}
+$$
+
+where $L = N\cdot a$ is the length of the chain.
+
+If we substitute these results into the equation of motion we get (**calculations of the derivatives omitted**): 
+
+$$
+-\omega^{2} M = -f\big[2 - e^{ -iqa } - e^{ iqa }\big] =2 \sqrt{ \frac{f}{M}} \cdot \left| \sin\left( \frac{qa}{2} \right) \right| 
+$$
+
+![[dispersion monoatomic chain.png|400]]
+
+Along the chain we have propagating waves with:
+
+- Phase velocity: $c = \omega / q$
+- Group velocity: $v = \frac{ \partial \omega }{ \partial q }$
+
+For $q \ll \pi / a$ we can approximate the $\sin$ linearly getting 
+
+$$
+c = a \sqrt{ \frac{f}{M} } = v
+$$
+
+which is the typical behaviour of **acoustic waves**.
+
+## Normal modes for 1D bi-atomic chain
+
+This case is similar to the one before but the lattice, in this case, is composed of 2 different atoms.
+
+![[biatomic chain.svg]]
+
+The process is the same as before but now we need to take into consideration that we are dealing with 2 different kinds of atoms and thus we will have two equations of motion: 
+
+$$
+\begin{cases}
+M_1 \frac{d^{2} N_{n1}}{dt^{2}} + f (2u_{n1} - u_{n2} - u_{n2 - 1}) = 0  \qquad (3a)\\
+\\ 
+M_2 \frac{d^{2} N_{n2}}{dt^{2}} + f (2u_{n2} - u_{n1} - u_{n1 + 1}) = 0 \qquad (3b)
+\end{cases}
+$$
+
+which can be solved similarly to before (BVK, etc) getting a system of equation that can be solved by imposing the determinant of its matrix equal to 0: 
+
+$$
+\begin{vmatrix}
+\frac{2f}{M_1} - \omega^{2} & -\frac{f}{\sqrt{ M_1 M_2 }} (1 + \exp[-iqa]) \\
+-\frac{f}{\sqrt{ M_1 M_2 }} (1 + \exp[iqa]) & \frac{2f}{M_2} - \omega^{2}
+\end{vmatrix} = 0
+$$
+
+#todo
+
+leonardo non odiarmi
