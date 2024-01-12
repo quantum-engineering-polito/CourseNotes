@@ -38,7 +38,7 @@ $$
  & \vec{r}_{n\alpha} = \vec{r}_{n} + \vec{r}_{\alpha} \\
  \\
  & \vec{r}_{n} = n_1 \vec{a}_{1} + n_2 \vec{a}_{2}  + n_3 \vec{a}_{3} \\
- & \vec{r}_{\alpha} = (r_{\alpha i}, r_{\alpha j}, r_{\alpha k}) \qquad \text{(it has fractionary components)}
+ & \vec{r}_{\alpha} = (r_{\alpha i}, r_{\alpha j}, r_{\alpha k}) && \text{(it has fractional components)}
 \end{align}
 $$
 
@@ -48,28 +48,28 @@ $$
 \vec{r}'_{n\alpha}(t) = \underbrace{ \vec{r}_{n\alpha} }_{ \substack{\text{equilibrium} \\ \text{position}} } + \vec{u}_{n\alpha}(t)
 $$
 
-# ?
+We call $\Phi$ the potential energy with respect to the equilibrium position.
 
-We call $\phi$ the potential energy with respect to the equilibrium position.
-
-If we work with the component $i$ we get (Taylor #todo improve explanation)
+If we work with the component $i$ we can expand in Taylor series the total energy of the crystal $\Phi$. We neglect the higher order terms, getting what is known as **harmonic** approximation.
 
 $$
-\phi(\underbrace{ r_{n\alpha i} }_{ \text{equilibrium} } + \underbrace{ S_{n\alpha i} }_{ \text{displacement} }) = \phi(r_{n\alpha i}) + \frac{1}{2} \sum_{\substack{ n\alpha i  \\ m\beta j}} \frac{ \partial^{2} \phi }{ \partial r_{n\alpha i} \partial r_{m\beta j}} \cdot u_{n\alpha i} \cdot u_{m\beta j} + \dots
+\Phi(\underbrace{ r_{n\alpha i} }_{ \text{equilibrium} } + \underbrace{ S_{n\alpha i} }_{ \text{displacement} }) = \Phi(r_{n\alpha i}) + \frac{1}{2} \sum_{\substack{ n\alpha i  \\ m\beta j}} \frac{ \partial^{2} \Phi }{ \partial r_{n\alpha i} \partial r_{m\beta j}} \cdot u_{n\alpha i} \cdot u_{m\beta j} + \dots
 $$
 
 where 
 
 $$
-\frac{ \partial^{2} \phi }{ \partial r_{n\alpha i} \partial r_{m\beta j}} = \phi_{n\alpha i}^{m\beta j}
+\frac{ \partial^{2} \Phi }{ \partial r_{n\alpha i} \partial r_{m\beta j}} = \Phi_{n\alpha i}^{m\beta j}
 $$
 
-is called **coupling constant** which is a generalized force constant #todo what???
+are called **coupling constant**,
+
+>They have the dimensions of spring constants and serve to generalize the spring constants of the harmonic oscillator to a system with many degrees of freedom. (Luth, 4.2)
 
 We can write the force acting on atom $\alpha$ in the cell $n$ along the $i$ direction, caused by the displacement of the atom $\beta$ in the $m$ cell along the $j$ direction as 
 
 $$
-F_{n\alpha i} = - \phi_{n\alpha i}^{m\beta j} \cdot u_{m\beta j}
+F_{n\alpha i} = - \Phi_{n\alpha i}^{m\beta j} \cdot u_{m\beta j}
 $$
 
 ## Equation of motion
@@ -77,7 +77,7 @@ $$
 If we call $M_{\alpha}$ the mass of the ion $\alpha$ we get the following equation of motion 
 
 $$
-M_{\alpha} \frac{d^{2} u_{n\alpha i}}{dt^{2}} = - \sum_{m\beta j} \phi_{n\alpha i}^{m\beta j} u_{m\beta j}
+M_{\alpha} \frac{d^{2} u_{n\alpha i}}{dt^{2}} = - \sum_{m\beta j} \Phi_{n\alpha i}^{m\beta j} u_{m\beta j}
 $$
 
 which is the generalized version of $\sum F = - \sum k\cdot x$
@@ -100,7 +100,7 @@ $$
 where 
 
 $$
-D_{\alpha i}^{\beta j} = \sum_{m} \phi_{n\alpha i}^{m\beta j}\cdot \frac{1}{\sqrt{ M_{\alpha } M_{\beta}}} \cdot e^{ i\vec{q}(\vec{r}_{m} - \vec{r}_{n}) }
+D_{\alpha i}^{\beta j} = \sum_{m} \Phi_{n\alpha i}^{m\beta j}\cdot \frac{1}{\sqrt{ M_{\alpha } M_{\beta}}} \cdot e^{ i\vec{q}(\vec{r}_{m} - \vec{r}_{n}) }
 $$
 
 is the **interaction matrix** and is independent from $n$
@@ -126,7 +126,7 @@ The atoms are modelled as a mass-spring system with springs with **elastic force
 The equation of motion for the atom $n$ is given by 
 
 $$
-M \frac{d^{2}u_{n}}{dt} = {\color{blue} - \phi_{n}^{n-1} \cdot u_{n-1}}  {\color{purple} ~- \phi_{n}^{n} \cdot u_{n} } {\color{green}~ - \phi_{n}^{n+1} \cdot u_{n+1}} 
+M \frac{d^{2}u_{n}}{dt} = {\color{blue} - \Phi_{n}^{n-1} \cdot u_{n-1}}  {\color{purple} ~- \Phi_{n}^{n} \cdot u_{n} } {\color{green}~ - \Phi_{n}^{n+1} \cdot u_{n+1}} 
 $$
 
 Where the three terms represent the contributions of the atoms $n-1$, $n$ and $n + 1$ respectively. To proceed with the calculation we need to calculate the individual terms:
@@ -211,6 +211,16 @@ $$
 \end{vmatrix} = 0
 $$
 
-#todo
+The solution we get is 
 
-leonardo non odiarmi
+$$
+\omega^{2}=f{\left({\frac{1}{M_{1}}}+{\frac{1}{M_{2}}}\right)}\pm f\left[\left({\frac{1}{M_{1}}}+{\frac{1}{M_{2}}}\right)^{2}-{\frac{4}{M_{1}M_{2}}}\sin^{2}{\frac{q a}{2}}\right]^{1/2}
+$$
+
+which, similarly to before, has a periodicity of 
+
+$$
+q = \frac{2\pi}{a}
+$$
+
+<iframe src="https://www.desmos.com/calculator/eur2hidmsk?embed" width="500" height="500" style="border: 1px solid #ccc" frameborder=0></iframe>
