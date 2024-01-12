@@ -47,8 +47,7 @@ Conflicts are displayed like this:
 
 Use your preferred code editor, such as Visual Studio Code, to resolve conflicts:
 
-<img width="774" alt="Screenshot 2024-01-12 at 23 30 18" src="https://github.com/quantum-engineering-polito/CourseNotes/assets/91274142/6abebe09-da73-4cfa-985a-2b3254b9cc2c">
-
+<img width="774" alt="Screenshot 2024-01-12 at 23 41 28" src="https://github.com/quantum-engineering-polito/CourseNotes/assets/91274142/a1742ce2-96a2-46e4-a30f-a9c6fd70dd3b">
 
 Once you've decided on the changes to keep, use GitHub Desktop to push the updates.
 
