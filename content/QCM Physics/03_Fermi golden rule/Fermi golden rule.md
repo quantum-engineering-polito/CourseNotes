@@ -1,5 +1,5 @@
 ---
-nextnote: "[[nN heterostructure]]"
+nextnote: "[[Heterostructures]]"
 author: Giacomo, BabelDev0
 Acknowledgements: Marco Parentin
 authorlink: https://github.com/gamberoillecito,https://github.com/BabelDev0

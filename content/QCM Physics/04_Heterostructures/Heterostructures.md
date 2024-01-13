@@ -3,11 +3,42 @@ nextnote: "[[Quantum Hall effect]]"
 author: Giacomo
 authorlink: https://github.com/gamberoillecito
 ---
+# What are heterostructures?
+**Heterostructures** are semiconductors composed of more than one material. And **heterojunction** is where the two materials meet.
+
+Factors to consider when joining two semiconductors:
+- BandGap
+- Lattice mismatch
+- Crystal structure
+
+For good basic level heterostructure we usually need:
+- Same crystal structure
+- Similar lattice parameter
+
+For this reason we usually use III-V group semiconductors, because they generally share the same crystal structure (diamond-like)
+
+![[semiconductor.png|400]]
+
+The prevalent use of heterostructures often involves combining gallium arsenide (GaAs) and aluminum arsenide (AlAs) due to their congruent lattice parameters and distinct bandgaps. Additionally, these materials are alloyed, affording the capability to finely adjust the bandgap by controlling the alloy's composition. Crucially, Vegard's Law facilitates predicting the lattice constant of the alloy through a weighted average of the individual components' lattice constants. This predictive power enables the growth of multiple layers atop one another with minimal stress.
+
+# Purpose
+The whole point of growing heterostructures is the opportunity that they offer to manipulate the behavior of electrons and holes through **band engineering** creating for example wells where confine electrons or barriers.
+
+# How to build a band diagram of a heterojunction
+## intrinsic semiconductors
+Consider two materials A and B with $E_{g,A} < E_{g,B}$ like in the case of A=GaAs and B=AlGaAs. First of all we use the **Anderson’s rule** aka we use the vacuum level (he energy of a free stationary electron that is outside of any material) as reference to draw the band diagram.
+
+![[intrinsic_heterostructure.svg]]
+
+where $\varkappa_{i}$ is the electron affinity, that is the energy required to take an electron from the bottom of conduction band to the vacuum level (we measured it for every material)
+
+![[typeOfheterojunction.png|400]]
+
 
 **n**: almost intrinsic
 **N**: heavily doped
 
-![[remote doping.svg|400]]
+![[QCM Physics/04_Heterostructures/attachments/excalidraw/remote doping.svg|400]]
 
 The green line in the drawing is the tangent to the conduction band which can be used as an approximation for a **triangular potential well**.
 
