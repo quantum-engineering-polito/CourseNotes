@@ -1,5 +1,5 @@
 {
-  "commitMessage": "Updated/Added {{numFiles}} files on {{date}}",
+  "commitMessage": "",
   "commitDateFormat": "YYYY-MM-DD HH:mm:ss",
   "autoSaveInterval": 0,
   "autoPushInterval": 0,
@@ -8,7 +8,7 @@
   "disablePush": true,
   "pullBeforePush": false,
   "disablePopups": false,
-  "listChangedFilesInMessageBody": true,
+  "listChangedFilesInMessageBody": false,
   "showStatusBar": true,
   "updateSubmodules": false,
   "syncMethod": "merge",

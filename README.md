@@ -7,45 +7,52 @@ This repository serves as a collaborative space where students can contribute an
 ## Features
 
 - **Structured Notes:** Organized and structured notes covering various topics in Quantum Engineering.
-- **Accessible Online:** Notes are accessible online through [Quantum Engineering Polito CourseNotes](https://quantum-engineering-polito.github.io/CourseNotes/), providing a convenient platform for studying and reviewing.
+- **Accessible Online:** Notes are accessible online through [Quantum Engineering Polito CourseNotes](https://github.com/quantum-engineering-polito/CourseNotes), providing a convenient platform for studying and reviewing.
 
 ## Environment Setup ⚙️
 
-👋 Welcome to the Course Notes repository! If you're new to GitHub, check out [this guide](https://github.com/firstcontributions/first-contributions) to get started.
+👋 Welcome to the Course Notes repository! Listed below are points to follow in order to collaborate:
 
+0. **Ask to join the organization on the Telegram group so that we can invite you**, If you don't have a GitHub account, create one. If you wish to start collaborating immediately, star this project and follow the organization while waiting for the invitation.
 1. **Download [Obsidian](https://obsidian.md/).**
-2. **Ensure [Git](https://git-scm.com/downloads) is installed and configured.**
-3. **Clone this repository to your PC:**
-    ```bash
-    git clone https://github.com/gamberoillecito/QuantumEngPolitoNotes.git
-    ```
+2. **Download [Github Desktop](https://desktop.github.com/).** This step is for those unfamiliar with git or uncertain about collaboration. For others, choose the software that suits you best for managing the repository.
+3. **Clone this repository to your PC**
+ If you have installed github desktop after an authentication step, you will have the possibility to clone a repository, do it and use this link: 
+```bash
+ https://github.com/quantum-engineering-polito/CourseNotes.git
+```
+6. **For first-time contributors:**
+    - Copy the `.obsidian` folder in the `SharedObsidianSettings` into the `content` directory to ensure correct Obsidian settings. **Note that the folders starting with a "." might be hidden, press `CMD+SHIFT+.` on Mac or select `View > Show > Hidden items` in Windows.**
 
-4. **Open Obsidian, select "Open folder as vault," and choose the `content` folder inside the repository. If prompted, select "trust the author" to enable all plugins automatically.**
-
-5. **For first-time contributors:**
-    - Replace the `.obsidian` folder in the `content` directory with the one from the `SharedObsidianSettings` folder to ensure correct Obsidian settings.
-      **you can utilize** the `setObsidian.py` script to streamline this process. Simply ensure you have [Python installed](https://kinsta.com/knowledgebase/install-python/)         and execute the script by running
-      
-        ```bash
-         python setObsidian.py.
-        ```
-    - Restart Obsidian.
-
-6. **Before editing any file, change branch:**
-    - Use `Obsidian Git: switch branch` and select `wip` to work on the `wip` branch.
+7. **Open Obsidian, select "Open folder as vault," and choose the `content` folder inside the repository. If prompted, select "trust the author" to enable all plugins automatically.**
 
 8. **Start editing and creating new files in Obsidian.**
 
-9. **When finished, go to the Git Plugin inside Obsidian (top right corner):**
-    ![Git Plugin](https://github.com/gamberoillecito/QuantumEngPolitoNotes/assets/42670032/7a94b746-f15e-4938-b461-221aa19058d3)
+9. **When finished, commit and push**
+If you are using github desktop, open it
+    - Check your changes
+    - <img width="282" alt="Screenshot 2024-01-12 at 23 09 53" src="https://github.com/quantum-engineering-polito/CourseNotes/assets/91274142/50f77fdc-db80-4e5f-b8a6-962cfe8505bd">
+    - Commit with a meaningful message
+    - <img width="282" alt="Screenshot 2024-01-12 at 23 09 56" src="https://github.com/quantum-engineering-polito/CourseNotes/assets/91274142/16780ecd-34ad-4fd6-9ffc-e8904bf2a2d7">
+    - Push it to the reposiotry
+    - <img width="282" alt="Screenshot 2024-01-12 at 23 10 15" src="https://github.com/quantum-engineering-polito/CourseNotes/assets/91274142/7b436bd0-3e91-437e-8fd8-f3054191f776">
 
-10. **Click the "+" button to stage (select) all the files.**
+When pushing changes, ensure you've pulled the latest updates to avoid conflicts, which may arise if multiple edits occur on the same file. To avoid this issue, regularly Obsidian automatically perform a pull on opening and closing. 
 
-11. **Write a meaningful commit message, then click the Commit ("✓") button, followed by the Push ("↑") button to commit and push the changes.**
+Conflicts are displayed like this:
+
+<img width="556" alt="Screenshot 2024-01-12 at 23 27 47" src="https://github.com/quantum-engineering-polito/CourseNotes/assets/91274142/d45bd5e5-aa0b-4bd3-b1e3-fef53937c7fb">
+
+Use your preferred code editor, such as Visual Studio Code, to resolve conflicts:
+
+<img width="774" alt="Screenshot 2024-01-12 at 23 41 28" src="https://github.com/quantum-engineering-polito/CourseNotes/assets/91274142/a1742ce2-96a2-46e4-a30f-a9c6fd70dd3b">
+
+Once you've decided on the changes to keep, use GitHub Desktop to push the updates.
 
 ## Contributing
 
 🚀 We welcome contributions to improve these course notes! Follow our [contribution guidelines](CONTRIBUTING.md) to get started.
+
 <a href="https://github.com/quantum-engineering-polito/CourseNotes/graphs/contributors">
   <img src="https://contrib.rocks/image?repo=quantum-engineering-polito/CourseNotes" />
 </a>
