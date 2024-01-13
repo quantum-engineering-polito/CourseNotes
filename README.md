@@ -21,12 +21,10 @@ This repository serves as a collaborative space where students can contribute an
 ```bash
  https://github.com/quantum-engineering-polito/CourseNotes.git
 ```
+6. **For first-time contributors:**
+    - Copy the `.obsidian` folder in the `SharedObsidianSettings` into the `content` directory to ensure correct Obsidian settings. **Note that the folders starting with a "." might be hidden, press `CMD+SHIFT+.` on Mac or select `View > Show > Hidden items` in Windows.**
 
-6. **Open Obsidian, select "Open folder as vault," and choose the `content` folder inside the repository. If prompted, select "trust the author" to enable all plugins automatically.**
-
-7. **For first-time contributors:**
-    - Replace the `.obsidian` folder in the `content` directory with the one from the `SharedObsidianSettings` folder to ensure correct Obsidian settings.
-    - Restart Obsidian.
+7. **Open Obsidian, select "Open folder as vault," and choose the `content` folder inside the repository. If prompted, select "trust the author" to enable all plugins automatically.**
 
 8. **Start editing and creating new files in Obsidian.**
 
