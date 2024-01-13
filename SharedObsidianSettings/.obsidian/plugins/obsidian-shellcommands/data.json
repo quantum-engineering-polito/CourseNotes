@@ -68,7 +68,7 @@
     {
       "id": "8oni6x3grn",
       "platform_specific_commands": {
-        "default": "git stash -q\ngit pull -q\ngit stash pop -q\ngit add .\ngit commit -m \"{{_commit_message}}\" -q\ngit push -q\n\"Last commit:\"\ngit log --max-count=1"
+        "default": "cd ..\ngit stash -q\ngit pull -q\ngit stash pop -q\ngit add .\ngit commit -m \"{{_commit_message}}\" -q\ngit push -q\necho \"Last commit:\"\ngit log --max-count=1"
       },
       "shells": {},
       "alias": "git backup",
@@ -113,6 +113,46 @@
           "value": "auto commit"
         }
       }
+    },
+    {
+      "id": "33ibi8oz4j",
+      "platform_specific_commands": {
+        "default": "rm .obsidian -r\ncp ../SharedObsidianSettings/.obsidian/ ./ -r"
+      },
+      "shells": {},
+      "alias": "Update Obsidian settings",
+      "icon": null,
+      "confirm_execution": false,
+      "ignore_error_codes": [],
+      "input_contents": {
+        "stdin": null
+      },
+      "output_handlers": {
+        "stdout": {
+          "handler": "ignore",
+          "convert_ansi_code": true
+        },
+        "stderr": {
+          "handler": "notification",
+          "convert_ansi_code": true
+        }
+      },
+      "output_wrappers": {
+        "stdout": null,
+        "stderr": null
+      },
+      "output_channel_order": "stdout-first",
+      "output_handling_mode": "buffered",
+      "events": {},
+      "command_palette_availability": "enabled",
+      "preactions": [
+        {
+          "type": "prompt",
+          "enabled": true,
+          "prompt_id": "jd9tw20zo8"
+        }
+      ],
+      "variable_default_values": {}
     }
   ],
   "prompts": [
@@ -132,6 +172,25 @@
         }
       ],
       "execute_button_text": "Continue"
+    },
+    {
+      "id": "jd9tw20zo8",
+      "title": "Are you sure you want to update the Obsidian settings",
+      "description": "Your current settings (NOT THE FILES) will be overwritten.\n\nYou will need to restart Obsidian for the new settings to be applied.",
+      "preview_shell_command": false,
+      "fields": [
+        {
+          "type": "toggle",
+          "label": "I want to update the settings",
+          "description": "",
+          "default_value": "",
+          "target_variable_id": "qx1k2yvx3v",
+          "required": true,
+          "on_result": "ON",
+          "off_result": ""
+        }
+      ],
+      "execute_button_text": "Execute"
     }
   ],
   "builtin_variables": {},
@@ -141,6 +200,15 @@
       "name": "commit_message",
       "description": "",
       "default_value": null
+    },
+    {
+      "id": "qx1k2yvx3v",
+      "name": "1",
+      "description": "placeholder",
+      "default_value": {
+        "type": "cancel-silently",
+        "value": ""
+      }
     }
   ],
   "custom_shells": [],

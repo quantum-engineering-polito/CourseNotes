@@ -10,19 +10,26 @@
       "icon": "arrow-big-up",
       "name": "Shell commands: Execute: git backup",
       "mode": "any",
-      "color": "#6b7cff"
+      "color": "#f29a1a"
     },
     {
       "id": "obsidian-shellcommands:shell-command-v91ja29t5k",
       "icon": "arrow-down-circle",
       "name": "Shell commands: Execute: git update",
       "mode": "any",
-      "color": "#4dff82"
+      "color": "#f29a1a"
     }
   ],
   "rightRibbon": [],
   "titleBar": [],
-  "statusBar": [],
+  "statusBar": [
+    {
+      "id": "obsidian-shellcommands:shell-command-33ibi8oz4j",
+      "icon": "binary",
+      "name": "Shell commands: Execute: Update Obsidian settings",
+      "mode": "any"
+    }
+  ],
   "pageHeader": [],
   "macros": [],
   "explorer": [],

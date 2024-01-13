@@ -1,5 +1,5 @@
 ---
-nextnote: 
+nextnote: "[[MOS Scaling]]"
 author: Eva
 authorlink: https://github.com/deskclam
 ---
