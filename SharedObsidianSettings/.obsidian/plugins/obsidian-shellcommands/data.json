@@ -68,7 +68,7 @@
     {
       "id": "8oni6x3grn",
       "platform_specific_commands": {
-        "default": "git stash -q\ngit pull -q\ngit stash pop -q\ngit add .\ngit commit -m \"{{_commit_message}}\" -q\ngit push -q\necho \"Last commit:\"\ngit log --max-count=1"
+        "default": "cd ..\ngit stash -q\ngit pull -q\ngit stash pop -q\ngit add .\ngit commit -m \"{{_commit_message}}\" -q\ngit push -q\necho \"Last commit:\"\ngit log --max-count=1"
       },
       "shells": {},
       "alias": "git backup",
