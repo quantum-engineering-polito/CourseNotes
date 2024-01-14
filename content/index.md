@@ -18,4 +18,4 @@ Otherwise you can have a look [here](https://github.com/orgs/quantum-engineering
 - Eva
 - [BabelDev](https://github.com/BabelDev0)
 - Marco
-- Pedroo
+- Pedro
