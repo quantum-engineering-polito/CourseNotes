@@ -83,8 +83,9 @@ The potential energy of an electron is $V(z) = e\varepsilon z$
 
 ![[potentialEnergy2deg.png|550]]
 
-By applying multiple changes of variable (not reported here) we get:
-#todo step to get this equation
+![[calculation2deg.svg]]
+
+we get:
 
 $$
 \begin{align}
