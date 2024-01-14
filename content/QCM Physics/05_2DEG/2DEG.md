@@ -19,10 +19,13 @@ The green line in the drawing is the tangent to the conduction band which can be
 For sufficiently thin potential wells and moderate temperatures, only the lowest energy level (typically the ground state) is occupied. Consequently, the motion of electrons in the direction perpendicular to the interface (z direction) can be disregarded. However, the electron retains freedom to move parallel to the interface, making it quasi-two-dimensional. Within the well, the planar motion of electrons experiences weak scattering due to the absence of dopants (specifically ionized impurity scattering). Modulation doping proves to be an effective strategy for reducing donor electron scattering. This reduction in scattering is crucial for enhancing mobility. Inside the two-dimensional electron gas (2DEG), the mobility is remarkably high. Hence, this structural arrangement is well-suited for constructing high-speed devices such as High Electron Mobility Transistors (HEMTs).
 
 # Electronic levels for 2DEG
+
 We can consider the 2DEG an area where the electrons are free to move in the ($x$,$y$) direction and confined by a triangular well in the $z$ direction.
 
 ![[2DEG-planar.svg]]
-We can assume that $L_{x}$ and $L_{y}$ are macroscopic quantities and that $A = L_{x} \cdot L_{y}$ and applying the [[Free electron model]] considering the potential constant and equal to zero in the ($x$,$y$) direction $V(x,y)=0$ we can write the Shrödinger equation:
+
+We can assume that $L_{x}$ and $L_{y}$ are macroscopic quantities and that $A = L_{x} \cdot L_{y}$ and applying the [[Free electron model]] considering the potential constant and equal to zero in the ($x$,$y$) direction $V(x,y)=0$ we can write the Schrödinger equation:
+
 $$
 -\frac{\hbar^{2}}{2m} \nabla^{2} \Psi(x,y,z) + V(z) \Psi(x,y,z) = E ~ \Psi(x,y,z)
 $$
@@ -133,6 +136,7 @@ From above we know that $E = E_{xy} + E_{z}$ and thus:
 $$
 E = \frac{\hbar^{2}k^{2}}{2m} + |c_{n}|E_0 \tag{7}
 $$
+
 For each discrete value of $n$ corresponds an infinite number of values of $E_{xy}$. the eigenvalues are arranged in "Subbands" one band for each value of allowed $E_z$ 
 
 
