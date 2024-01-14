@@ -1,7 +1,7 @@
 ---
 nextnote: "[[Quantum Hall effect]]"
-author: Giacomo
-authorlink: https://github.com/gamberoillecito
+author: Giacomo, BabelDev0
+authorlink: https://github.com/gamberoillecito,https://github.com/BabelDev0
 ---
 # What are heterostructures?
 **Heterostructures** are semiconductors composed of more than one material. And **heterojunction** is where the two materials meet.
@@ -34,7 +34,35 @@ where $\varkappa_{i}$ is the electron affinity, that is the energy required to t
 
 ![[typeOfheterojunction.png|400]]
 
+## Further complication
+The components of a heterostructure may have minima in the bands at different points in the Brillouin zone. 
+![[differentMinimaHeterostructure.png]]
+The effective mass and valley degeneracy vary abruptly at the crossover, and the change from a direct to an indirect energy gap gives a profound change in the optical properties.
 
+![[explain_complication.png]]
+
+This configuration leads as we seen to more unpredictable behaviour.
+# Doped semiconductors
+Semiconductors can be doped. This changes the position of the Fermi level within the gap.
+
+![[doping.png]]
+
+## Depletion region
+A depletion region is an insulating region within a conductive, doped semiconductor material where the mobile charge carriers "Charge carrier" have diffused away, or forced away by an electric field. The only elements left in the depletion region are ionized donor or acceptor impurities. This region of uncovered positive and negative ions is called the depletion region due to the depletion of carriers in this region, leaving none to carry a current. This region is formed at the interface of the heterojunction
+
+![[deplitionRegion.png]]
+  
+Out of equilibrium, the Fermi level exhibits two distinct values—one for the p-type material and another for the n-type. However, at the junction, electrons begin to diffuse from the n-type to the p-type, and vice versa for holes, resulting in the formation of a depletion region. This depletion region induces band bending, explaining why the Fermi level remains constant at equilibrium.
+
+If we examine an n-type material alongside a p-type material, with the n-type material possessing a bandgap greater than that of the p-type material
+
+![[outofequilibrium-bandbending.svg]]
+
+we obtain the following effect on the band diagram
+
+![[bandDiagramDeplitionRegion.png]]
+
+# 2D Electron Gas
 **n**: almost intrinsic
 **N**: heavily doped
 
