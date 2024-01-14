@@ -4,25 +4,17 @@
   "debug": false,
   "editorMenu": [],
   "fileMenu": [],
-  "leftRibbon": [
-    {
-      "id": "obsidian-shellcommands:shell-command-8oni6x3grn",
-      "icon": "arrow-big-up",
-      "name": "Shell commands: Execute: git backup",
-      "mode": "any",
-      "color": "#6b7cff"
-    },
-    {
-      "id": "obsidian-shellcommands:shell-command-v91ja29t5k",
-      "icon": "arrow-down-circle",
-      "name": "Shell commands: Execute: git update",
-      "mode": "any",
-      "color": "#4dff82"
-    }
-  ],
+  "leftRibbon": [],
   "rightRibbon": [],
   "titleBar": [],
-  "statusBar": [],
+  "statusBar": [
+    {
+      "id": "obsidian-shellcommands:shell-command-33ibi8oz4j",
+      "icon": "binary",
+      "name": "Shell commands: Execute: Update Obsidian settings",
+      "mode": "any"
+    }
+  ],
   "pageHeader": [],
   "macros": [],
   "explorer": [],
@@ -31,7 +23,6 @@
     "leftRibbon": [
       "Create new canvas",
       "Open today's daily note",
-      "Insert template",
       "Create new drawing"
     ]
   },

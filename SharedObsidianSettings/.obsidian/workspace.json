@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Q&M Physics Intro/Part 2/09_Phonons/Phonons.md",
+                "file": "index.md",
                 "mode": "source",
                 "source": false
               }
@@ -42,7 +42,29 @@
             }
           },
           {
-            "id": "ac888dab81068fc7",
+            "id": "a9bbcae845e023d7",
+            "type": "leaf",
+            "state": {
+              "type": "excalidraw",
+              "state": {
+                "file": "Q&M Physics Intro/Part 2/09_Phonons/attachments/excalidraw/monoatomic contributions.md"
+              }
+            }
+          },
+          {
+            "id": "d22cbfa4432a9690",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Q&M Physics Intro/Part 2/09_Phonons/Phonons.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "93fbdf92efc710a8",
             "type": "leaf",
             "pinned": true,
             "state": {
@@ -56,17 +78,19 @@
             }
           },
           {
-            "id": "a9bbcae845e023d7",
+            "id": "02cb70deaa11dd2a",
             "type": "leaf",
             "state": {
-              "type": "excalidraw",
+              "type": "markdown",
               "state": {
-                "file": "Q&M Physics Intro/Part 2/09_Phonons/attachments/excalidraw/monoatomic contributions.md"
+                "file": "Q&M Physics Intro/Part 2/09_Phonons/Phonons.md",
+                "mode": "source",
+                "source": false
               }
             }
           }
         ],
-        "currentTab": 3
+        "currentTab": 5
       }
     ],
     "direction": "vertical"
@@ -201,16 +225,22 @@
       "daily-notes:Open today's daily note": false,
       "templates:Insert template": false,
       "command-palette:Open command palette": false,
-      "obsidian-excalidraw-plugin:Create new drawing": false,
-      "cmdr:Shell commands: Execute: git update": false,
-      "cmdr:Shell commands: Execute: git backup": false
+      "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
-  "active": "ac888dab81068fc7",
+  "active": "93fbdf92efc710a8",
   "lastOpenFiles": [
     "Q&M Physics Intro/Part 2/09_Phonons/Phonons.md",
+    "index.md",
     "How to collaborate.md",
+    "QCM Physics/06_Ahronov-Bohm effect/Ahronov-Bohm effect.md",
+    "Q&M Physics Intro/Part 2/06_Nearly free electrons/Nearly free electrons.md",
+    "Q&M Physics Intro/Part 2/07_Fermi surfaces and e transport/Fermi surfaces and e transport.md",
+    "Q&M Physics Intro/Part 2/08_Semiconductors/Semiconductors.md",
+    "Q&M Physics Intro/Part 2/10_Thermal properties/Thermal properties.md",
+    "Q&M Physics Intro/Part 2/10_Thermal properties",
     "Obsidian Examples.md",
+    "attachments/enable latex suite.png",
     "Q&M Physics Intro/Part 2/09_Phonons/attachments/excalidraw/biatomic chain.md",
     "Quantum Devices/04_MOS Scaling/MOS Scaling.md",
     "Quantum Devices/04_MOS Scaling",
@@ -239,22 +269,14 @@
     "QCM Physics/04_nN heterostructure/nN heterostructure.md",
     "QCM Physics/03_Fermi golden rule/Fermi golden rule.md",
     "QCM Physics/02_Models/Models.md",
-    "Q&M Physics Intro/Part 2/06_Nearly free electrons/Nearly free electrons.md",
     "QCM Physics/02_Models/attachments/SmartSelect_20240110_094641_Samsung Notes.jpg",
     "Untitled.canvas",
     "QCM Physics/attachments/excalidraw/Untitled.md",
-    "QCM Physics/attachments/excalidraw/silicon crystal structure.svg",
     "QCM Physics/attachments/excalidraw/silicon crystal structure.md",
     "QCM Physics/attachments/excalidraw/remote doping.md",
-    "QCM Physics/attachments/excalidraw/referenceCube2.excalidraw.md",
     "QCM Physics/attachments/excalidraw/referenceCube2.excalidraw.excalidraw",
-    "QCM Physics/attachments/excalidraw/reference cube.md",
     "QCM Physics/attachments/excalidraw/reference cube.excalidraw",
-    "QCM Physics/attachments/excalidraw/ref cube 2.md",
-    "QCM Physics/attachments/excalidraw/ref cube.md",
-    "QCM Physics/attachments/excalidraw/reciprocal lattice ex 2D.md",
     "QCM Physics/attachments/excalidraw/numberOfStates.excalidraw",
-    "Quantum Devices/02_MOS Charge",
     "Fundamentals of TP/attachments/excalidraw/Untitled.canvas"
   ]
 }

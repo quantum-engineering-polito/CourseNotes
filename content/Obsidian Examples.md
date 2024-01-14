@@ -123,7 +123,7 @@ You can also use the plugin's toolbar on the right to edit the table:
 ![[advanced tables toolbar.png|300]]
 # $\LaTeX$
 
->[!warning] By default the *Latex suite* plugin "shortcuts" are disabled. Go into the plugin settings and remove the comment (`//`) at the beginning of the lines if you want to enable them (select everything apart the first and last line and then `CTRL+/` or `CTRL+SHIFT+7`)
+>[!warning] By default the *Latex suite* plugin "shortcuts" are disabled. Go into the plugin settings and enable it: ![[enable latex suite.png]]
 
 Latex blocks can be inserted inline by placing the content between two `$` signs like this: `$\int_{-\infty}^{+\infty} f(x) \, dx$` will be rendered as: $\int_{-\infty}^{+\infty} f(x) \, dx$
 

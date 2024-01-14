@@ -1,17 +1,24 @@
 ---
 nextnote: "[[Quantum Hall effect]]"
-author: Giacomo
-authorlink: https://github.com/gamberoillecito
+author: Giacomo, BabelDev0
+authorlink: https://github.com/gamberoillecito,https://github.com/BabelDev0
 ---
+# 2D Electron Gas
 
+Now we will study the case in witch we have an almost intrinsic material in an heterostructure with an heavily doped one. In this case electron start to diffuse form the left-hand side (the heavily doped material) to the right-hand side, this effect is called **remote doping** or **modulation doping**.
 **n**: almost intrinsic
 **N**: heavily doped
 
-![[remote doping.svg|400]]
+![[QCM Physics/05_2DEG/attachments/excalidraw/remote doping.svg|400]]
 
-The green line in the drawing is the tangent to the conduction band which can be used as an approximation for a **triangular potential well**.
+So some electron flow form the left-hand side (the heavily doped material) to the right-hand side, doing that they loose energy and become trapped because they cannot climb the barrier formed by the band bending. Furthermore the discontinuity in the band prevents the electric filed to returns the electrons to the donors, and contribute at squeezing the electrons on the **triangular potential well** just formed. 
+
+The green line in the drawing is the tangent to the conduction band which can be used as an approximation for a **triangular potential well**, the width of the well is typically around 10 nm.
+
+For sufficiently thin potential wells and moderate temperatures, only the lowest energy level (typically the ground state) is occupied. Consequently, the motion of electrons in the direction perpendicular to the interface (z direction) can be disregarded. However, the electron retains freedom to move parallel to the interface, rendering it quasi-two-dimensional. Within the well, the planar motion of electrons experiences weak scattering due to the absence of dopants (specifically ionized impurity scattering). Modulation doping proves to be an effective strategy for reducing donor electron scattering. This reduction in scattering is crucial for enhancing mobility. Inside the two-dimensional electron gas (2DEG), the mobility is remarkably high. Hence, this structural arrangement is well-suited for constructing high-speed devices such as High Electron Mobility Transistors (HEMTs).
 
 The well can be approximated as a capacitor which represent the interface between the materials.
+
 Since the electric field changes only in the $z$ direction, we can write 
 
 $$

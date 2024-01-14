@@ -1,5 +1,5 @@
 ---
-nextnote: 
+nextnote: "[[Thermal properties]]"
 author: Giacomo
 authorlink: https://github.com/gamberoillecito
 ---
@@ -223,4 +223,5 @@ $$
 q = \frac{2\pi}{a}
 $$
 
-<iframe src="https://www.desmos.com/calculator/eur2hidmsk?embed" width="500" height="500" style="border: 1px solid #ccc" frameborder=0></iframe>
+<iframe src="https://www.desmos.com/calculator/cs5flt4vlu?embed" width="500" height="500" style="border: 1px solid #ccc" frameborder=0></iframe>
+
