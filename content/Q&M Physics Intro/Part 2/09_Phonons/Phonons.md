@@ -1,5 +1,5 @@
 ---
-nextnote: 
+nextnote: "[[Thermal properties]]"
 author: Giacomo
 authorlink: https://github.com/gamberoillecito
 ---
