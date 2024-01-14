@@ -8,7 +8,6 @@ to specify the ordering. See the example below or check how the pre-existing fil
 
 ```
 Subject (e.g. Cybersecurity)/
-└── Main Page (Optional)/
     ├── Chapter 1 (e.g. 01_Introduction)/
     │   ├── Introduction.md
     │   └── attachments/

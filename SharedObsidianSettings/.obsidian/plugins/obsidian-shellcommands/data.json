@@ -28,7 +28,7 @@
     {
       "id": "v91ja29t5k",
       "platform_specific_commands": {
-        "default": "git stash -q\ngit pull\ngit stash pop -q"
+        "default": "git pull -q"
       },
       "shells": {
         "win32": "PowerShell.exe"
@@ -94,11 +94,7 @@
       },
       "output_channel_order": "stdout-first",
       "output_handling_mode": "buffered",
-      "events": {
-        "on-quit": {
-          "enabled": true
-        }
-      },
+      "events": {},
       "command_palette_availability": "enabled",
       "preactions": [
         {
