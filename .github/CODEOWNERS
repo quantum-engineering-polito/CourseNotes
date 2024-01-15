@@ -1,3 +1,3 @@
 content/* @quantum-engineering-polito/reviewers 
 * @quantum-engineering-polito/maintainers
-!content/* @quantum-engineering-polito/maintainers
+!quartz @quantum-engineering-polito/maintainers
