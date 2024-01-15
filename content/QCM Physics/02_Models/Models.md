@@ -24,7 +24,7 @@ Let's consider a crystal of macroscopic dimensions ($L_{x}, L_{y}, L_{z}$) and d
 ![[ref cube.svg|300]]
 considering only one dimension at a time, this scenario is reminiscent of the infinity square well
 
-![[infinit_square_well_QCMP.svg|250]]
+![[infinit_square_well_QCMP.svg|350]]
 
 We can then write the Schrödinger equation (SE)
 
@@ -366,7 +366,7 @@ $$
 
 but now we are inside the crystal and the relation is more complex.
 
-![[band_diagram_relation_wavenumber.svg|450]]
+![[band_diagram_relation_wavenumber.svg]]]
 
 
 at each $k$ value corresponds a different $E$ and $m$ value. We can simplify the description of the behaviour of these electrons comparing their motion to that of free particles with different masses in a vacuum, to do that we define the **effective mass** as:
