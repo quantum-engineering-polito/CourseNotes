@@ -108,7 +108,9 @@ $V_{fj}​(t)$ represents the matrix element representation of the perturbation 
 
 ### First order perturbation theory
 
-To solve equation $(3)$ we need to make some assumptions: we suppose that the perturbation is so small that the system hasn't evolved too much. Since for $t=0$ we have $c_{i}(0) = 1$ and $c_{j}(0) = 0 \quad \forall j \neq i$ the **FIRST ORDER APPROXIMATION** consist in the assumption that:
+To solve equation $(3)$ we need to make some assumptions: we suppose that the perturbation is so small that the system hasn't evolved too much. So for $t=0$ we have $c_{i}(0) = 1$ and $c_{j}(0) = 0 \quad \forall j \neq i$ . 
+
+Indeed the **FIRST ORDER APPROXIMATION** consist in the assumption that:
 
 $$
 \begin{align}
@@ -152,7 +154,7 @@ Where:
 - $\mathcal{E}_{0}$ is a complex vector representing the amplitude and phase of the electric field.
 - $e^{i(\bar{k}⋅\bar{r}−ωt)}$ and $e^{-i(\bar{k}⋅\bar{r}−ωt)}$ are the terms representing the spatial and temporal variations of the electric field due to the photon's propagation.
 
-A dipole consists of two charges of opposite polarity separated by a distance $d$. When a photon (an electromagnetic wave) interacts with a dipole, the varying electric field of the photon exerts forces on these charges producing a perturbation.
+We take a dipole as a system. A dipole consists of two charges of opposite polarity separated by a distance $d$. When a photon (an electromagnetic wave) interacts with a dipole, the varying electric field of the photon exerts forces on these charges producing a perturbation.
 
 The perturbation potential can be express as 
 $$
@@ -168,7 +170,7 @@ where :
 - $Q$ is the value of the charges
 
 In this case our perturbation is $\hat{V}(t)=\Delta E(t)= -\bar{p} \cdot \bar{\mathcal{E}}_{ph}(t)$
-Now, starting from the perturbation, we will derive $V_{fi}$, the transition probability $P_f$ and the Fermi golden rule.
+Now, starting from the perturbation, we will derive $V_{fi}$, the transition probability $P_f$ and the transition rate $W_{fi}$.
 
 We can write $c_{f}​(t)$ for the transition from $\ket{\Psi_{i}}$ to $\ket{\Psi_{f}}$ as : 
 
@@ -200,15 +202,13 @@ By plotting the first term we can see that it has a spike where $\hbar\omega = E
 Plotting the second term alone shows similar result but when $\hbar\omega = -E_{fi}$.
 The first case corresponds to the **absorption** of a photon (the system increases its energy), the second one, on the other hand, to the **stimulated emission** of a photon. 
 
-Note: that in the second case the first photon, is not absorbed and only creates the perturbation, which generates the emission of a second photon
-
 >[!warning] Note that in the second case the first photon, is not absorbed and only creates the perturbation, which generates the emission of a second photon
 
 ![[emission_absorbtion_perturbation.svg]]
 
 In the **stimulated emission** scenario, the second photon (in blue) is the emitted one, we exploit this effect in lasers.
 
-For $t \rightarrow \infty$ the function becomes so narrow that it can be approximated by $\delta(E_{if}\pm\hbar\omega)$
+For $t \rightarrow \infty$ the function $\left| c_{f}(t) \right| ^{2}$ becomes so narrow that it can be approximated by $\delta(E_{if}\pm\hbar\omega)$
 
 We can now calculate the $P_f$, just focusing only on the first term :
 
@@ -257,7 +257,7 @@ in the first step we extracted $|M_{fi}|^{2}$ from the sum because it is non dep
 
 $$M_{fi} = \braket{ \phi_{f} | e \bar{r} \bar{\varepsilon}_0  e^{ \pm i \bar{k} \bar{r} }|\phi_{i}}$$
 
-Since $\phi_{i}, \phi_{f}$ are typically **Bloch states** due to the fact that we are inside a crystal structure:
+Since $\phi_{i}, \phi_{f}$ are typically **Bloch states** due to the fact that we are inside a crystal structure, we can write them as:
 
 $$
 \begin{align}
@@ -265,7 +265,7 @@ $$
 & \phi_{f}(\bar{r}) = \frac{1}{\sqrt{ V }} e^{  i \bar{k}_{f} \bar{r} } \cdot u_{k_{f}}(\bar{r})
 \end{align} 
 $$
-we can rewrite $M_{fi}$ as 
+and we can rewrite $M_{fi}$ as:
 
 $$M_{fi} = \frac{e}{V}\int u^{*}_{k_{f}}(\bar{r}) \ u_{k_{i}}(\bar{r})\  \bar{r}\  \bar{\varepsilon}_0 \ e^{(\bar{k}_{f}-\bar{k}_{i} \pm \bar{k})\ \bar{r}} d\bar{r}$$
 
@@ -279,9 +279,10 @@ There are two key constraints governing this transition:
 $$
 \hbar k_{f}-\hbar k_{i}=\pm\hbar k
 $$
-- the change in momentum resulting from photon-induced transitions is negligible $k \approx 0$
+- the change in momentum resulting from photon-induced transitions is negligible $k \approx 0 \Longrightarrow k_{f}=k_{i}$
 
 So we have that:
+
 $$
 \displaylines{
 M_{fi} = \frac{e}{V}\int u^{*}_{k_{f}}(\bar{r}) \ u_{k_{i}}(\bar{r})\  \bar{r}\  \bar{\varepsilon}_0 \ \cancelto{1}{e^{(\bar{k}_{f}-\bar{k}_{i} \pm \bar{k})\ \bar{r}} d\bar{r}
@@ -291,3 +292,23 @@ M_{fi} = \frac{e}{V}\int u^{*}_{k_{f}}(\bar{r}) \ u_{k_{i}}(\bar{r})\  \bar{r}\ 
 \\
 M_{fi} = \frac{e}{V}\int u^{*}_{k_{f}}(\bar{r}) \ u_{k_{i}}(\bar{r})\  \bar{r}\  \bar{\varepsilon}_0}
 $$ 
+Simplifying the electric field $\varepsilon \rightarrow (\varepsilon_{x},0,0)$ we get:
+
+
+$$
+\displaylines{
+M_{fi} = \frac{e \ \varepsilon_{x}}{V}\int u^{*}_{k_{f}}(\bar{r}) \ u_{k_{i}}(\bar{r})\  x}\ d\bar{r}
+$$
+
+Since the volume of the crystal is equal to the volume of the primitive cell multiply by the number of these we can write:
+
+
+$$
+\displaylines{
+M_{fi} = \frac{e \ \varepsilon_{x}}{V} N \int_{\text{primitive cell}} u^{*}_{k_{f}}(\bar{r}) \ u_{k_{i}}(\bar{r})\  x}\ d\bar{r}
+$$
+
+We have that $M_{fi}$ depends by $u^{*}_{k_{f}}(\bar{r})$ and $u_{k_{i}}(\bar{r})$ so it may happened that for some value of $\bar{r}$ we get $M_{fi} = 0$ this case are called **selection rules** because in this case the transition between states is forbidden. 
+
+
+
