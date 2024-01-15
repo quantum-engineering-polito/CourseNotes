@@ -17,18 +17,17 @@ This repository serves as a collaborative space where students can contribute an
 1. **Download [Obsidian](https://obsidian.md/).**
 2. **Download [Github Desktop](https://desktop.github.com/).** This step is for those unfamiliar with git or uncertain about collaboration. For others, choose the software that suits you best for managing the repository.
 3. **Clone this repository to your PC**
- If you have installed github desktop after an authentication step, you will have the possibility to clone a repository, do it and use this link: 
-```bash
- https://github.com/quantum-engineering-polito/CourseNotes.git
-```
-6. **For first-time contributors:**
+ If you have installed github desktop after an authentication step, you will have the possibility to [clone a repository](https://github.com/quantum-engineering-polito/CourseNotes), do it.
+ 
+4. **For first-time contributors:**
     - Copy the `.obsidian` folder in the `SharedObsidianSettings` into the `content` directory to ensure correct Obsidian settings. **Note that the folders starting with a "." might be hidden, press `CMD+SHIFT+.` on Mac or select `View > Show > Hidden items` in Windows.**
 
-7. **Open Obsidian, select "Open folder as vault," and choose the `content` folder inside the repository. If prompted, select "trust the author" to enable all plugins automatically.**
+5. **Open Obsidian, select "Open folder as vault," and choose the `content` folder inside the repository. If prompted, select "trust the author" to enable all plugins automatically.**
+<img width="496" alt="Screenshot 2024-01-14 at 18 59 37" src="https://github.com/quantum-engineering-polito/CourseNotes/assets/91274142/8bbd44e0-4044-471f-a591-8dba4016d7cc">
 
-8. **Start editing and creating new files in Obsidian.**
+6. **Start editing and creating new files in Obsidian.**
 
-9. **When finished, commit and push**
+7. **When finished, commit and push**
 If you are using github desktop, open it
     - Check your changes
     - <img width="282" alt="Screenshot 2024-01-12 at 23 09 53" src="https://github.com/quantum-engineering-polito/CourseNotes/assets/91274142/50f77fdc-db80-4e5f-b8a6-962cfe8505bd">
