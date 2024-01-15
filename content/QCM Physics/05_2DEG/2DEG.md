@@ -1,5 +1,5 @@
 ---
-nextnote: "[[Quantum Hall effect]]"
+nextnote: "[[HEMT]]"
 author: Giacomo, BabelDev0
 authorlink: https://github.com/gamberoillecito,https://github.com/BabelDev0
 ---
@@ -59,8 +59,7 @@ $$
 
 > [!Note] 
 >
-Notice that $m$ should be the **effective mass** $m^{*}$ in the real experiment .
-calculation
+Notice that $m$ should be the **effective mass** $m^{*}$ in the real calculation
 
 Applying the [[#^dedc30|PBC]] to the $x$ and $y$ directions we get 
 
@@ -103,7 +102,7 @@ E_0 = \frac{\hbar^{2}}{2~m~z_0^{2}}  && \leftarrow \text{characteristic energy}
 \end{align}
 $$
 
-Equation (3) is the **Airy (Stokes) equation** and has two possible solution $A_{i}$ and $B_{i}$ of which only the first one is acceptable ($B_{i}$ diverges).
+Equation (3) is the **Airy (Stokes) equation** and has two possible solution $A_{i}(x)$ and $B_{i}(x)$ of which only the first one is acceptable ($B_{i}$ diverges, a wave function never becomes infinite).
 
 ![[Airy.png]]
 
@@ -127,14 +126,18 @@ E_{z} &= |C_1| E_0 && \leftarrow ~ 2^{nd} \text{ allowed energy value} \\
 \end{align}
 $$
 
-To plot the function for $z$, since $S = z - \bar{E}$, we have to shift the plot by $\bar{E}$. Knowing the possible values of $\bar{E}$ (which are the roots $C_{i}$), we just have to shift $\theta(S)$ to the right to put $C_{i}$ in the origin and discard everything for $z < 0$.
+To plot the functions $\theta(z)$, since $S = z - \bar{E}$, we have to shift the plot by $\bar{E}$. Knowing the possible values of $\bar{E}$ (which are the roots $C_{i}$), we just have to shift $\theta(S)$ to the right to put $C_{i}$ in the origin and discard everything for $z < 0$.
+
 For each energy level we get a different wave function.
 
 ![[Triangular.jpg|500]]
+> [!Note] 
+>the $x$ on the graph is our $z$
+
 From above we know that $E = E_{xy} + E_{z}$ and thus:
 
 $$
-E = \frac{\hbar^{2}k^{2}}{2m} + |c_{n}|E_0 \tag{7}
+E_{n} = \frac{\hbar^{2}k^{2}}{2m} + |C_{n}|E_0 \tag{7}
 $$
 
 For each discrete value of $n$ corresponds an infinite number of values of $E_{xy}$. the eigenvalues are arranged in "Subbands" one band for each value of allowed $E_z$ 
@@ -142,16 +145,14 @@ For each discrete value of $n$ corresponds an infinite number of values of $E_{x
 
 ![[paraboloid subbands.png|400]]
 
-## Density of states of a 2DEG
+# Density of states of a 2DEG
 
-#todo add better explanation
+We have already seen how to calculate the density of state of electrons confined in a well ([[Models#Density of states (DOS)|Density of states (DOS)]]). Now we will do it again for the energy bands generated in the 2deg, we can concentrate only on one band due to the fact the the DOS of the other can be calculate in the same manner. To simplify our job we start with the first band supposing that it has $C_0 = 0$.
+Contrary to the calculation performed within the crystal here we have only two degrees of freedom in $x$ and in $y$ and the eigenvalues are 
 
-We calculate the DOS for one sub-band and then extend the results to the others. For simplicity we suppose that there is only one sub-band with vertex in the origin and thus:
-
-$$
-E = \frac{\hbar^{2}k^{2}}{2m} \tag{7b}
-$$
-
+$$ 
+E = \frac{\hbar^{2} k^2}{2m} = \frac{\hbar^{2} (k^2_{x}+k^2_{y})}{2m} \tag{7b}
+$$ 
 Since we are in a 2D case, we normalize the DOS to the area, instead of the volume:
 
 $$
@@ -161,7 +162,7 @@ $$
 k_{x} = \frac{2\pi}{L_{x}} \cdot N_1 \quad k_{y} = \frac{2\pi}{L_{y}} \cdot N_2
 $$
 
-Now we can follow the same steps taken in the [[#Density of states (DOS)|original case]].
+Now we can follow the same steps taken in the [[Models#Density of states (DOS)|original case]]. considering that we are in two dimension and not three so we have a circle and not a sphere.
 
 ![[2DEG DOS.png|400]]
 
@@ -181,7 +182,9 @@ $$
 D(E) = \frac{1}{\cancel{ A }} \frac{m\cancel{ A }}{\pi \hbar^{2}} = \frac{m}{\pi \hbar^{2}}
 $$
 
-If we now consider all sub bands we get 
+we can understand that the density of state within a subband is constant with respect to the energy. 
+
+The total density of state at any particular energy is just the sum over all the subband below that particular energy
 
 ![[2DEG DOS 2.png|400]]
 
@@ -198,7 +201,4 @@ M(E - E_{i}) = \begin{cases}
 \end{cases}
 $$
 
-## MEMT (MODFET)
-
-#todo 
 
