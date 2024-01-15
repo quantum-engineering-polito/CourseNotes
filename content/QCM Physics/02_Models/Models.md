@@ -102,6 +102,7 @@ In essence, this formula calculates the number of charge carriers by summing up,
 
 let's derive the components of this formula.
 # Density of states (DOS)
+
 DOS describes how the energy levels created by the lattice structure are distributed; it is defined as follows:
 
 $$
