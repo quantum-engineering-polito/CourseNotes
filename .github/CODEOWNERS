@@ -1,2 +1,10 @@
-content/* @quantum-engineering-polito/reviewers 
-* @quantum-engineering-polito/maintainers
+# CODEOWNERS file
+
+# Assign the reviewer team as the code owner for content directory
+/content/* @quantum-engineering-polito/reviewers 
+
+# Assign the maintainer team as the code owner for all files
+* @maintainer-team
+
+# Exclude content directory and its contents from code owner assignment
+/content/ !@maintainer-team
