@@ -35,7 +35,7 @@ $$
 
 As we can see the Hall resistance does not depend on the geometry of the sample.
 
-#todo how does this relates to slide 4 of Raffone?
+#todo how does this relate to slide 4 of Raffone?
 
 # Quantum case
 
@@ -45,10 +45,12 @@ $$
 \left\{\frac{1}{2m}[\hat{p}-q \vec{A}(\vec{R},t)]^{2}+\cancel{ q\phi(\vec{R},t) }\right\}\psi(\vec{R},t)=-i\hbar\frac{\partial}{\partial t}\,\psi(\vec{R},t) \tag{1}
 $$
 
+Where $q \vec{A}(\vec{R}, t)$ is the momentum component related to the magnetic field (not sure).
+
 Before proceeding we need to find a proper vector potential and we decide to use the **Landau gauge**: 
 
 $$
-\vec{A} = (0, B_{x}, 0)
+\vec{A} = (0, B \cdot x, 0)
 $$
 
 which is a valid choice since 
@@ -57,14 +59,14 @@ $$
 \vec{B} = \vec{\nabla} \times \vec{A} = \begin{vmatrix}
 \vec{i} & \vec{j} & \vec{k} \\
 \frac{ \partial  }{ \partial x }  & \frac{ \partial  }{ \partial y }  & \frac{ \partial  }{ \partial z }  \\
-0 & B_{x}  & 0 
-\end{vmatrix} = i(0) + j(0) + k\left( \frac{ \partial B_{x} }{ \partial x }   - \frac{ \partial 0 }{ \partial y } \right) = \vec{k}B
+0 & B \cdot x  & 0 
+\end{vmatrix} = i(0) + j(0) + k\left( \frac{ \partial B \cdot x }{ \partial x }   - \frac{ \partial 0 }{ \partial y } \right) = \vec{k}B
 $$
 
 By inserting the gauge in $(1)$ and doing the math, we get 
 
 $$
-\bigg[-\frac{\hbar^{2}}{2m}\vec{\nabla}^{2}\underbrace{ -\frac{i e\hbar B_{x}}{m}\frac{\partial}{\partial y} }_{ \substack{\approx \text{ Lorentz force,} \\ \text{contains } x \text{ and } y }}+\underbrace{ \frac{(e B_{x})^{2}}{2m} }_{ \substack{\approx \text{ harmonic osc.} \\ \text{confines the wf in } x} }+\underbrace{ V(z) }_{ \substack{\text{depends on } \\ \text{the material} \\ \text{e.g. 2DEG}} }\bigg]\psi(\vec{R})=E\psi(\vec{R})
+\bigg[-\frac{\hbar^{2}}{2m}\vec{\nabla}^{2}\underbrace{ -\frac{i e\hbar B \cdot x}{m}\frac{\partial}{\partial y} }_{ \substack{\approx \text{ Lorentz force,} \\ \text{contains } x \text{ and } y }}+\underbrace{ \frac{(e B \cdot x)^{2}}{2m} }_{ \substack{\approx \text{ harmonic osc.} \\ \text{confines the wf in } x} }+\underbrace{ V(z) }_{ \substack{\text{depends on } \\ \text{the material} \\ \text{e.g. 2DEG}} }\bigg]\psi(\vec{R})=E\psi(\vec{R})
 $$
 
 Since the potential is additive, we can factor out the $z$ direction, then
