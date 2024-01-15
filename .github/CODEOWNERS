@@ -1,10 +1,18 @@
 # CODEOWNERS file
 
 # Assign the reviewer team as the code owner for content directory
-/content/* @quantum-engineering-polito/reviewers
+* @quantum-engineering-polito/reviewers
 
-# Assign the maintainer team as the code owner for all files
-* @quantum-engineering-polito/maintainers
-
-# Exclude content directory and its contents from code owner assignment
-/content/ !@quantum-engineering-polito/maintainers
+# Assign the maintainer team as the code owner for the following files
+CODE_OF_CONDUCT.md     @quantum-engineering-polito/maintainers
+quartz.config.ts       @quantum-engineering-polito/maintainers
+quartz.layout.ts       @quantum-engineering-polito/maintainers
+LICENSE.md             @quantum-engineering-polito/maintainers
+globals.d.ts           @quantum-engineering-polito/maintainers
+package.json           @quantum-engineering-polito/maintainers
+README.md              @quantum-engineering-polito/maintainers
+index.d.ts             @quantum-engineering-polito/maintainers
+tsconfig.json          @quantum-engineering-polito/maintainers
+SharedObsidianSettings @quantum-engineering-polito/maintainers
+logo qe notes.svg      @quantum-engineering-polito/maintainers
+quartz                 @quantum-engineering-polito/maintainers
