@@ -4,6 +4,7 @@ author: BabelDev0
 authorlink: https://github.com/BabelDev0
 ---
 # Overview
+
 **High Electron Mobility Transistors (HEMTs)**, also known as **Modulation-Doped Field Effect Transistors (MODFETs)**, are a type of Field-Effect Transistor (FET) that utilizes a heterostructure to achieve very high speeds in electronic devices. Their design and operation principles exploit the unique properties of semiconductor interfaces, especially the formation of a two-dimensional electron gas (2DEG) with exceptionally high electron mobility.
 
 
@@ -22,6 +23,7 @@ The key feature of HEMTs is the modulation doping technique. The wider bandgap m
 the space is wide more or less 20-100Å
 
 # **Advantages of HEMTs**
+
 Note that in a N-type semiconductor the greatest source of scattering for electrons donated from donor impurities are the impurity sites themselves. In this case, the donated electrons are removed from the N-type SC and “exported” to an almost intrinsic SC. This arrangement is a clever way to drastically reduce donated electron scattering.
 
 Electron mobility is very high for the 2DEG electron gas (up to $1 \cdot 10^{7} cm^{2}V^{-1}s^{-1}$ in AlGaAs/GaAs heterostructures at low temperatures). For comparison, note that in a good metal such as Lithium, $\micro_{e} ~ 10 cm^{2}V^{-1}s^{-1}$ for copper, $\micro_{e} = 30 cm^{2}V^{-1}s^{-1}$
@@ -29,6 +31,7 @@ Electron mobility is very high for the 2DEG electron gas (up to $1 \cdot 10^{7} 
 Due to their high electron mobility, HEMTs can operate at frequencies up to several hundred GHz. Furthermore HEMTs exhibit low noise characteristics at high frequencies, which is crucial for applications in receivers and other sensitive electronic equipment.
 
 # Contacts
+
 Source and Drain contact must be prepared and create in such a way that there are deep and reach zone of highly n-type material, and the source and drain must form ohmic contacts with the semiconductor material where the 2DEG is located (at the interface). In contrast the gate electrode (diameter < 0.5 $\micro m$) is prepared depositing a metal lay directly in contact with the semiconductor, creating a strong depletion region, this type of contact are called **Schottky Contacts** or **Schottky junctions**.
 
 
@@ -61,6 +64,7 @@ Due to the strong Schottky depletion layer, donors in the AlGaAs layer has been 
 this changes the carrier density of the 2DEG switching the source-drain current.
 
 # Metal-semiconductor junction
+
 depending on the work function of the metal $q\Phi_{M}$ and of the electron affinity $q\varkappa_{s}$ of the semiconductor we can have different scenario.
 
 In the case in witch $q\Phi_{M} > q\varkappa_{s}$ we have this situation:
