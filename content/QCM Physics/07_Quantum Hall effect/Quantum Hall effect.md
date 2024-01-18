@@ -158,3 +158,8 @@ From what we saw so far, we noticed that we have a series of harmonic oscillator
 ![[recap.svg|600]]
 
 ## Semiclassical view
+
+## Effect of impurities
+
+## Shubnikov - de Haas effect
+
