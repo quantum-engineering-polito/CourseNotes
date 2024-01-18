@@ -4,9 +4,9 @@ author: Giacomo
 authorlink: https://github.com/gamberoillecito
 ---
 
-> [!info] This note is based on [this lecture](https://www.youtube.com/watch?v=UNyNjZeG1wc&t=2158s) and [this lecture](https://www.youtube.com/watch?v=LAKDQOawMDw) suggested by the teacher
+> [!info] This note is based also on [this lecture](https://www.youtube.com/watch?v=UNyNjZeG1wc&t=2158s) and [this lecture](https://www.youtube.com/watch?v=LAKDQOawMDw) suggested by the teacher
 
-> [!quote] Some references:
+> [!quote] Some other references:
 >  Kittel, page 153
 >  Ibach Luth, *Panels XIV, XV, XVI*
 
@@ -22,8 +22,6 @@ $$
 q (\vec{E} + \vec{v} \times \vec{B}) = 0
 $$
 
-
-
 If we measure the resistance we get 
 
 $$
@@ -35,9 +33,17 @@ $$
 
 As we can see the Hall resistance does not depend on the geometry of the sample.
 
-#todo how does this relate to slide 4 of Raffone?
+# Charge in a uniform magnetic field
+
+Before proceeding to the quantum case we need to briefly review the behaviour of a charged particle that moves in a uniform magnetic field. Supposing that the particle has an initial velocity in a plane perpendicular to the field $B$, the particle will start moving in a circle with a radius $R_{C} = v/\omega_{C} = \sqrt{ 2mE } \big/ |eB|$.
+
+![[cyclotron.png|300]]
 
 # Quantum case
+
+The setup for the quantum case is similar to the previous one and can be seen in the image below.
+
+![[quantum setup.svg|400]]
 
 To study the what happens in the quantum case we need to solve the SE in case of both magnetic and electric fields, which is to say: 
 
@@ -73,8 +79,82 @@ Since the potential is additive, we can factor out the $z$ direction, then
 
 >our final wave function shell be multiplied by the z-function and the corresponding energy should be added. (Raffone, slide 15)
 
+We can also see that the vector potential does not depend on $y$ and thus we can think about the wave function as a product of a generic (unknown) function $u(x)$ and a plane wave in the $y$ direction: 
 
-## Quantum harmonic oscillator
+$$
+\psi(\vec{R}) = u(x) e^{ ik_{y} y }
+$$
 
-## Quantum of flux
+If we solve the SE with this assumption, we get 
 
+$$
+\left[-\frac{\hbar^{2}}{2m}\frac{d^{2}}{d x^{2}}+\frac{1}{2}\,m\omega_{c}^{2}\left(x+{\color{blue} \frac{\hbar k_{y}}{e B}} \right)^{2}\right]u(x)=\varepsilon u(x)
+$$
+
+which is a [[Harmonic oscillator|quantum harmonic oscillator]] shifted by the value 
+
+$$
+\boxed{ x_{k} = - \frac{\hbar k_{y}}{eB}  = -l_{B}^{2} k_{y}} \qquad l_{B} =\sqrt{ \frac{\hbar}{|eB|} }
+$$
+all with energy eigenvalues 
+
+$$
+E_{n} = \left( n + \frac{1}{2} \right) \hbar\omega_{c}
+$$
+
+
+What will (intuitively) happen is that we will have a series of identical parabolas each shifted by $x_{k}$ with respect to the previous one.
+
+We notice though that $x_{k}$ itself is dependent on $k_{y}$, which has to be calculated by solving the SE in the $y$ direction.
+
+#todo explain why is IPW + PBC
+
+We get that 
+
+$$
+\boxed{k_{y}={\frac{2\pi}{L_{y}}}n_{k_{y}}}
+$$
+
+Now we know how distant the parabolas are from each other.
+
+## Number of harmonic oscillators
+
+Since our sample has finite dimensions, the number of harmonic oscillator $N_{B}$ must be finite as well. This number can be calculated as follows:
+
+$x_{k}$ varies between $0$ and $L_{x}$ so we can write 
+
+$$
+0 < L_{x} = - \frac{\hbar k_{y}}{eB} < L_{x}
+$$
+
+which can be rearranged to find the range of variation of $k_{y}$: 
+
+$$
+-\frac{eB}{\hbar}L_{x} < k_{y} < 0
+$$
+
+Finally, $N_{B}$ can be calculated as the ratio between the total range of variation of $k_{y}$ and the distance between two $k_{y}$: 
+
+$$
+N_{B} = \frac{\left( \frac{eBL_{x}}{\hbar} \right)}{\left( \frac{2\pi}{L_{y}} \right)} = \frac{eB}{2\pi \hbar} L_{x}L_{y}
+$$
+
+## Landau levels
+
+Due to the fact that the harmonic oscillator has discrete energy levels with a spacing of $\hbar \omega_{c}$ we can easily draw the density of states:
+
+![[DOS.svg|400]]
+
+The "height" of the Landau levels can be easily determined as 
+
+$$
+n_{B} =\frac{N_{B}}{L_{x} L_{y}} = \frac{eB}{2 \pi \hbar}
+$$
+
+## Recap
+
+From what we saw so far, we noticed that we have a series of harmonic oscillators that spread along the $x$ direction. Since all the harmonic oscillators have the same energies, there will be a number of degeneracies equal to the number of harmonic oscillators $N_{B}$.
+
+![[recap.svg|600]]
+
+## Semiclassical view
