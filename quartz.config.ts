@@ -10,7 +10,7 @@ const config: QuartzConfig = {
       provider: "plausible",
     },
     baseUrl: "quantum-engineering-polito.github.io/CourseNotes",
-    ignorePatterns: ["private", "templates", ".obsidian", "Excalidraw/*", "Templates", "Excalidraw/Scripts", "**/excalidraw/**/*"],
+    ignorePatterns: ["private", "templates", ".obsidian", "Excalidraw/*", "Templates", "Excalidraw/Scripts", "**/attachments/**/*.md"],
     defaultDateType: "modified",
     theme: {
       typography: {
