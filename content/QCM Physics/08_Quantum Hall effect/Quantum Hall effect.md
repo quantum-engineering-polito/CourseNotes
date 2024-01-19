@@ -3,7 +3,6 @@ nextnote: "[[Aharonov-Bohm effect]]"
 author: Giacomo
 authorlink: https://github.com/gamberoillecito
 ---
-
 > [!info] This note is based also on [this lecture](https://www.youtube.com/watch?v=UNyNjZeG1wc&t=2158s) and [this lecture](https://www.youtube.com/watch?v=LAKDQOawMDw) suggested by the teacher
 
 > [!quote] Some other references:
