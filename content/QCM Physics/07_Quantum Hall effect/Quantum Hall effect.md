@@ -1,5 +1,5 @@
 ---
-nextnote: "[[Ahronov-Bohm effect]]"
+nextnote: "[[Aharonov-Bohm effect]]"
 author: Giacomo
 authorlink: https://github.com/gamberoillecito
 ---

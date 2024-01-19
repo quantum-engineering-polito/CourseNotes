@@ -3,8 +3,9 @@ draft: true
 ---
 # Read this before editing the files
 
-**IMPORTANT**: the chapters folder must have the same name as the chapter notes and can have a leading number followed by an underscore
-to specify the ordering. See the example below or check how the pre-existing file are structured.
+****
+> [!important] 
+> The chapter folders must have the same name as the chapter notes and can have a leading number followed by an underscore to specify the ordering. See the example below or check how the pre-existing file are structured.
 
 ```
 Subject (e.g. Cybersecurity)/
@@ -25,8 +26,31 @@ Subject (e.g. Cybersecurity)/
     └── ...
 ```
 
-Below you can find examples of what you can do with Obsidian. 
+> [!important] 
+> Please always place an ==empty line== between different elements (such as headers, text, formulas, lists, etc).
 
-Come back here if you don't know how do something (e.g. Latex, tables, images, etc).
+Right way:
 
-![[Obsidian Examples]]
+```md
+# Header
+
+text
+
+$$
+y = x
+$$
+```
+
+Wrong way:
+
+```md
+# Header
+text
+$$
+y = x
+$$
+```
+
+
+>[!note] Check out [[Obsidian Examples]]
+>This file contains most of the things you need to know to use Obsidian properly.

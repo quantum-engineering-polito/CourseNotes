@@ -190,7 +190,7 @@ which is the typical behaviour of **acoustic waves**.
 
 This case is similar to the one before but the lattice, in this case, is composed of 2 different atoms.
 
-![[biatomic chain.svg]]
+![[biatomic chain.svg|500]]
 
 The process is the same as before but now we need to take into consideration that we are dealing with 2 different kinds of atoms and thus we will have two equations of motion: 
 
@@ -214,7 +214,7 @@ $$
 The solution we get is 
 
 $$
-\omega^{2}=f{\left({\frac{1}{M_{1}}}+{\frac{1}{M_{2}}}\right)}\pm f\left[\left({\frac{1}{M_{1}}}+{\frac{1}{M_{2}}}\right)^{2}-{\frac{4}{M_{1}M_{2}}}\sin^{2}{\frac{q a}{2}}\right]^{1/2}
+\omega^{2}=f{\left({\frac{1}{M_{1}}}+{\frac{1}{M_{2}}}\right)}\pm f\left[\left({\frac{1}{M_{1}}}+{\frac{1}{M_{2}}}\right)^{2}-{\frac{4}{M_{1}M_{2}}}\sin^{2}\left({\frac{q a}{2}}\right)\right]^{1/2}
 $$
 
 which, similarly to before, has a periodicity of 
@@ -223,5 +223,19 @@ $$
 q = \frac{2\pi}{a}
 $$
 
-<iframe src="https://www.desmos.com/calculator/cs5flt4vlu?embed" width="500" height="500" style="border: 1px solid #ccc" frameborder=0></iframe>
+<iframe src="https://www.desmos.com/calculator/bu13oawnkn?embed" width="500" height="500" style="border: 1px solid #ccc" frameborder=0></iframe>
 
+Where we introduced the constant $\mu$
+
+$$
+\frac{1}{\mu} = \frac{1}{M_1} + \frac{1}{M_2}
+$$
+
+For the optical branch, in $q = 0$, the displacement of the atoms in every unit cell are identical. The sublattices of light and heavy atoms are vibrating against one another (as visible in the two images below). 
+
+#todo finish last part
+
+![https://upload.wikimedia.org/wikipedia/commons/thumb/8/87/Optical_%26_acoustic_vibrations-en.svg/375px-Optical_%26_acoustic_vibrations-en.svg.png|300](https://upload.wikimedia.org/wikipedia/commons/thumb/8/87/Optical_%26_acoustic_vibrations-en.svg/375px-Optical_%26_acoustic_vibrations-en.svg.png)
+
+
+![https://upload.wikimedia.org/wikipedia/commons/thumb/d/d7/Diatomic_chain.gif/330px-Diatomic_chain.gif|300](https://upload.wikimedia.org/wikipedia/commons/thumb/d/d7/Diatomic_chain.gif/330px-Diatomic_chain.gif)

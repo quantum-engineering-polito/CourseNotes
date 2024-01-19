@@ -1,9 +1,8 @@
 ---
 nextnote: "[[Bloch theorem]]"
 author: Giacomo, Eva
-authorlink: https://github.com/gamberoillecito
+authorlink: https://github.com/gamberoillecito,https://github.com/deskclam
 ---
-
 >[!quote] Where *Ibach Luth* is mentioned we refer to
 >Ibach Luth
 >*Solid-State Physics
@@ -126,6 +125,7 @@ $$
 &= e^{ i k_{x} } \Psi(x,y,z)
 \end{align}
 $$
+
 which means that the exponential has to be equal to $1$ and thus 
 
 $$
@@ -141,7 +141,6 @@ $$
 $$
 k_{z} = \frac{2\pi n_{z}}{L} \qquad n_{z} \in \mathbb{Z}
 $$
-
 
 Notice that since $L$ is a macroscopic value, the $k$s are **quasi-continuous**.
 
@@ -334,7 +333,6 @@ Looking at what we saw [[#^1e2627|before]], this can be expressed as the fact th
 
 We now want to show that the specific heat of the electrons is negligible compared to the one of the lattice.
 
-
 To do this we want to calculate $c_V$ of the electrons. First of all we need the internal increase in internal energy density $\Delta{u(T)}$ 
 
 $$
@@ -342,74 +340,111 @@ $$
 $$
 Where the second integral is the density of internal energy at $T=0K$ 
 And, from the definition of specific heat, deriving $(3)$ we get 
+
 $$ 
 c_{V} = \frac{ \partial u }{ \partial T } \Bigg|_{\mathbf{V}} = \int_{0}^{+\infty} E D(E) \frac{ \partial f }{ \partial T } \, dE \tag{4} 
 $$
+
 In order to simplify the calculation we can exploit the following relation:
+
 $$ 
 E_{F} \frac{\partial{n}}{\partial T} =0= E_{F} \int_{0}^{\infty} D(E)\frac{ \partial{f(E,T)}}{\partial{T}} \, dE 
 \tag{5} $$
+
 Where n is the total concentration of free electrons, which derived is 
 
 $$ 
 E_{F}\cdot n = E_{F} \int_{0}^{\infty} D(E)f(E,T) \, dE 
 \tag{6} $$
+
 Subtracting $(6)$ from $(4)$ $c_{v}$ is obtained as: 
+
 $$ 
 c_{v}= \int_{0}^{\infty} (E-E_{F}) D(E)\frac{ \partial{f(E,T)}}{\partial{T}} \, dE 
 \tag{7} 
 $$
+
 Focusing around $E_{F}$, because the electron can only gain energy if they can move into free states in their energetic neighborhood, we can see that the $D(E)$ is nearly constant in the range and can be approximated by $D(E_{F})$ 
+
 $$ 
 c_{v} \simeq D(E_{F})\int_{0}^{\infty} (E-E_{F})\frac{ \partial{f(E,T)}}{\partial{T}} \, dE 
 \tag{8} 
 $$
+
 and the derivative of the Fermi function is:
+
 $$ 
 \frac{\partial{f}}{\partial{T}}=\frac {E-E_{F}}{k_{B}T^{2}}\frac{exp(\frac{E-E_{F}}{k_{B}T})}{[exp(\frac{E-E_{F}}{k_{B}T})+1]^{2}} \tag{9}
 $$
+
 substituting $(9)$ in $(8)$
+
 $$
 c_{v}=D(E_{F}) \int_{0}^{\infty} \frac{(E-E_{F})^{2}}{k_{B}T^{2}}\frac{exp(\frac{E-E_{F}}{k_{B}T})}{[exp(\frac{E-E_{F}}{k_{B}T})+1]^{2}}  \, dE \tag{10}
 $$ with $x=\frac{E-E_{F}}{k_{B}T}$, $dx=\frac{dE}{k_{B}T}$ 
+
+
+
 $$
 c_{v}=Tk_{B}^{2}D(E_{F})\int_{-\frac{E_{F}}{k_{B}T}}^{\infty}  \frac{x^{2}e^{x}}{(e^{x}+1)^{2}}\, dx \tag{11}
-$$ and since $E_{F}\gg k_{B}T \implies -\frac{E_{F}}{k_{B}T}\to-\infty$
+$$
+and since $E_{F}\gg k_{B}T \implies -\frac{E_{F}}{k_{B}T}\to-\infty$
+
 $$
 c_{v}=Tk_{B}^{2}D(E_{F})\int_{-\infty}^{\infty}  \frac{x^{2}e^{x}}{(e^{x}+1)^{2}}\, dx \tag{12}
 $$
+
 The integral is a standard one, whose result can be found in tables:
+
 $$
 \int_{-\infty}^{\infty}  \frac{x^{2}e^{x}}{(e^{x}+1)^{2}}\, dx=\frac{\pi^{2}}{3}  \tag{13}
 $$
+
 and therefore
+
 $$
 c_{v}\simeq Tk_{B}^{2}D(E_{F})\frac{\pi^{2}}{3} \tag{14}
-$$ the specific heat is proportional to the temperature
+
+$$
+
+the specific heat is proportional to the temperature.
 If we want to express $c_{v}$ as a function of $n$ we need to calculate the integral 
+
 $$ 
 n=\int_{0}^{E_{F}}D(E) \, dE \tag{15}
 $$
+
 being $D(E)=\frac{m}{(\pi \hbar)^{2}} (\frac{2mE}{\hbar^{2}})^{1/2}$ we can rewrite it as:
+
 $$ 
 \displaylines{
 D(E)=D(E) \frac{E_{F}^{1/2}}{E_{F}^{1/2}} =\\ =\frac{m}{(\pi \hbar)^{2}} \left( \frac{2m}{\hbar^{2}} \right)^{1/2} E_{F}^{1/2} \frac{E^{1/2}}{E_{F}^{1/2}} = D(E_{F})\left( 
 \frac{E}{E_{F}} \right)^{1/2} \tag{16}
 }
 $$ 
+
 and use it in the calculation of $(15)$ we can obtain the DOS at $E_{F}$:
+
 $$ 
 D(E_{F})=\frac{3}{2} \frac{n}{E_{F}} \tag{17}
 $$
+
 and the specific heat is
+
 $$ 
 c_{v}=\frac{\pi^{2}}{2}nk_{B} \frac{T}{T_{F}}
 $$
+
 as $E_{F}=k_{B}T_{F}$.
-The specific heat is again proportional to the temperature, if the temperature is lower than $T_{F}$, the contribution to the whole specific heat (with phonon contribution) is low
+
+The specific heat is again proportional to the temperature, if the temperature is lower than $T_{F}$, the contribution to the whole specific heat (with phonon contribution) is low.
+
 The expected $c_{v}$ relation at low temperature is:
+
 $$ 
 c_{v}=\gamma T+\beta T^3
-$$ with $\gamma,\beta = const$. 
+
+$$
+with $\gamma,\beta = const$. 
 
 #todo add graph (Cv/T on T^2) 

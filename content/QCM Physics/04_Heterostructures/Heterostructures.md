@@ -22,7 +22,7 @@ For this reason we usually use III-V group semiconductors, because they generall
 
 ![[material_bandgap.png|]]
 
-The prevalent use of heterostructures often involves combining gallium arsenide ($GaAs$) and aluminum arsenide ($AlAs$) due to their congruent lattice parameters and distinct bandgaps. Additionally, these materials are alloyed, affording the capability to finely adjust the bandgap by controlling the alloy's composition. Crucially, Vegard's Law facilitates predicting the lattice constant of the alloy through a weighted average of the individual components' lattice constants. This predictive power enables the growth of multiple layers atop one another with minimal stress.
+The prevalent use of heterostructures often involves combining gallium arsenide ($GaAs$) and aluminium arsenide ($AlAs$) due to their congruent lattice parameters and distinct bandgaps. Additionally, these materials are alloyed, affording the capability to finely adjust the bandgap by controlling the alloy's composition. Crucially, Vegard's Law facilitates predicting the lattice constant of the alloy through a weighted average of the individual components' lattice constants. This predictive power enables the growth of multiple layers atop one another with minimal stress.
 
 # Purpose
 
