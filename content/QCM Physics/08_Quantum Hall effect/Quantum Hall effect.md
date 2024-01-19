@@ -30,6 +30,10 @@ $$
 \end{align}
 $$
 
+
+>[!Note]
+> ![[derive_rxy.png|500]]
+
 As we can see the Hall resistance does not depend on the geometry of the sample.
 
 # Charge in a uniform magnetic field
@@ -44,15 +48,15 @@ The setup for the quantum case is similar to the previous one and can be seen in
 
 ![[quantum setup.svg|400]]
 
-To study the what happens in the quantum case we need to solve the SE in case of both magnetic and electric fields, which is to say: 
+To study what happens in the quantum case we need to solve the SE in case of both magnetic and electric fields, which is to say: 
 
 $$
 \left\{\frac{1}{2m}[\hat{p}-q \vec{A}(\vec{R},t)]^{2}+\cancel{ q\phi(\vec{R},t) }\right\}\psi(\vec{R},t)=-i\hbar\frac{\partial}{\partial t}\,\psi(\vec{R},t) \tag{1}
 $$
 
-Where $q \vec{A}(\vec{R}, t)$ is the momentum component related to the magnetic field (not sure).
+Where $q \vec{A}(\vec{R}, t)$ is the momentum component related to the magnetic field #todo add link to vector potential and and the scalar potential is $\phi=0$
 
-Before proceeding we need to find a proper vector potential and we decide to use the **Landau gauge**: 
+Before proceeding we need to find a useful vector potential and we decide to use the **Landau gauge** that will simplify our calculations: 
 
 $$
 \vec{A} = (0, B \cdot x, 0)
@@ -74,11 +78,11 @@ $$
 \bigg[-\frac{\hbar^{2}}{2m}\vec{\nabla}^{2}\underbrace{ -\frac{i e\hbar B \cdot x}{m}\frac{\partial}{\partial y} }_{ \substack{\approx \text{ Lorentz force,} \\ \text{contains } x \text{ and } y }}+\underbrace{ \frac{(e B \cdot x)^{2}}{2m} }_{ \substack{\approx \text{ harmonic osc.} \\ \text{confines the wf in } x} }+\underbrace{ V(z) }_{ \substack{\text{depends on } \\ \text{the material} \\ \text{e.g. 2DEG}} }\bigg]\psi(\vec{R})=E\psi(\vec{R})
 $$
 
-Since the potential is additive, we can factor out the $z$ direction, then
+The system that we are considering is an electron gas that is free to move in the x and y directions but is tightly confined in the z direction. To solve this Hamiltonian it is possible to separate it into two equations since the magnetic field just affects the movement along x and y axes. The total energy becomes then, the sum of two contributions $E=E_{xy}+E_z$.
 
->our final wave function shell be multiplied by the z-function and the corresponding energy should be added. (Raffone, slide 15)
+### Hamiltonian $x y$ directions:
 
-We can also see that the vector potential does not depend on $y$ and thus we can think about the wave function as a product of a generic (unknown) function $u(x)$ and a plane wave in the $y$ direction: 
+The vector potential (and hence the Hamiltonian of the system) does not depend on the y-coordinate. And since the Hamiltonian does not depend on y, the momentum operator in the y-direction $\hat{p}_{y}=-i\hbar \frac{ \partial^{2} }{ \partial y^{2} }$ commutes with the Hamiltonian. This means that $\hat{p}_{y}$​ is a constant of motion, and its eigenfunctions are plane waves in the y-direction $e^{ik_{y}y}$ thus we can think about the wave function as a product of a generic (unknown) function $u(x)$ and a plane wave in the $y$ direction: 
 
 $$
 \psi(\vec{R}) = u(x) e^{ ik_{y} y }
@@ -95,12 +99,20 @@ which is a [[Harmonic oscillator|quantum harmonic oscillator]] shifted by the va
 $$
 \boxed{ x_{k} = - \frac{\hbar k_{y}}{eB}  = -l_{B}^{2} k_{y}} \qquad l_{B} =\sqrt{ \frac{\hbar}{|eB|} }
 $$
-all with energy eigenvalues 
+
+$l^{2}_{B}$ is called **the magnetic length**.
+
+![[comparison_harmonic_oscillator.png]]
+
+The energy eigenvalues are:
 
 $$
 E_{n} = \left( n + \frac{1}{2} \right) \hbar\omega_{c}
 $$
 
+Where $\omega_c$ is the **Cyclotron frequency** $\omega_c = |eB|/|m|$. 
+
+This solutions, are called Landau levels, these levels are highly degenerate, meaning many electron states have the same energy. Indeed From the expression one notices that the energy depends only on $n$, not on $k_y$, so states with the same $n$ but different $k_y$ are degenerate. 
 
 What will (intuitively) happen is that we will have a series of identical parabolas each shifted by $x_{k}$ with respect to the previous one.
 
