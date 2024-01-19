@@ -5,16 +5,16 @@ authorlink: https://github.com/BabelDev0
 ---
 # Overview
 
-**High Electron Mobility Transistors (HEMTs)**, also known as **Modulation-Doped Field Effect Transistors (MODFETs)**, are a type of Field-Effect Transistor (FET) that utilizes a heterostructure to achieve very high speeds in electronic devices. Their design and operation principles exploit the unique properties of semiconductor interfaces, especially the formation of a two-dimensional electron gas (2DEG) with exceptionally high electron mobility.
+**High Electron Mobility Transistors (HEMTs)**, also known as **Modulation-Doped Field Effect Transistors (MODFETs)**, are a type of Field-Effect Transistor (FET) that utilizes an heterostructure to achieve very high speeds in electronic devices. Their design and operation principles exploit the unique properties of semiconductor interfaces, especially the formation of a two-dimensional electron gas (2DEG) with exceptionally high electron mobility.
 
 
 ![[HEMT_structure.png|500]]
 
-HEMTs are built using a heterostructure, typically made of materials like Gallium Arsenide (GaAs) and Aluminum Gallium Arsenide (AlGaAs). These materials are chosen for their different bandgap energies and their lattice compatibility, which allows for high-quality interfaces.
+HEMTs are built using an heterostructure, typically made of materials like Gallium Arsenide (GaAs) and Aluminum Gallium Arsenide (AlGaAs). These materials are chosen for their different bandgap energies and their lattice compatibility, which allows for high-quality interfaces.
 
 ![[material_bandgap.png|550]]
 
-On a substate of semi-insulating GaAs , a weakly dope or undoped AlGaAs is grown epitaxially, then a wide bandgap n-doped material is deposit on top.
+On a substate of semi-insulating GaAs , a weakly doped or undoped AlGaAs is grown epitaxially, then a wide bandgap n-doped material is deposit on top.
 
 The key feature of HEMTs is the modulation doping technique. The wider bandgap material (AlGaAs) is doped with donor atoms (e.g., Silicon), which provide extra electrons. However, because of the band alignment at the AlGaAs/GaAs interface, these electrons transfer to the undoped, narrower bandgap material (GaAs), where they form a 2DEG. Typically, a thin layer of undoped AlGaAs (the spacer layer) is placed between the doped AlGaAs and the GaAs layer. This spacer helps in separating the free electrons (in GaAs) from their parent donor ions (in AlGaAs), reducing scattering and thus increasing electron mobility.
 
