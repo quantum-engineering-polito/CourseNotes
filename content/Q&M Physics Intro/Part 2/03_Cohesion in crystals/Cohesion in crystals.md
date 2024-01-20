@@ -1,5 +1,7 @@
 ---
 nextnote: "[[Free electron model]]"
+author: Giacomo
+authorlink: https://github.com/gamberoillecito
 ---
 
 **Cohesion energy** is the energy required to separate (bring at $\infty$ distance) the atoms of a crystal.
@@ -26,6 +28,7 @@ The repulsive term can be also written as
 $$
 U_{\text{rep}} = \lambda e^{ -R/\rho }
 $$
+
 where, again, $\lambda$ and $\rho$ are empirical parameters.
 
 <iframe src="https://www.desmos.com/calculator/exb9kcaotw?embed" width="500" height="500" style="border: 1px solid #ccc" frameborder=0></iframe>
@@ -69,7 +72,7 @@ $$
 p_{ij} = \frac{\text{distance between two atoms}}{\text{distance between first neighbours}} = \frac{R_{ij}}{R}
 $$
 
-#todo add drawing
+![[eq ret const.svg|300]]
 
 we can rewrite 
 
@@ -83,9 +86,11 @@ $$
 where the two summations depend only on the kind of crystalline structure and thus can always be calculated.
 
 The equilibrium distance for FCC can be calculated as
+
 $$
 \frac{d~U_{tot}}{dR}\Biggr{|}_{R_0} = 0
 $$
+
 Since the summations can be calculated, the only unknown left is the ratio $\sigma/R_0$, which can be calculated as well. For the FCC structure, for example, $\sigma/R_0 = 1.09$.
 
 ## Ionic crystals
@@ -105,8 +110,6 @@ Where $U_{ij}$ is the interaction between ion $i$ and ion $j$. In the sum ($\pm$
 If we have $2N$ ions $U_{tot} = \frac{1}{2} \cdot 2NU_{i} = NU_{i} = N \sum_{j, i\neq j} U_{ij}$.
 
 As before, we can introduce the **geometrical factor** $p_{ij}$
-
-#todo add drawing
 
 So 
 

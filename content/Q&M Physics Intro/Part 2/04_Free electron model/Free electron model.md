@@ -41,7 +41,7 @@ We will always assume the following two approximations:
 
 In the free electron model, we will also assume that the electrons are free, which means that the potential is 0 everywhere.
 
-#todo drawing
+![[periodic potential.png|300]]
 
 ## Sommerfeld - Bethe model
 
@@ -191,7 +191,6 @@ $$
 
 #todo pagg 16/17 bianco ???
 
-
 ### Energy of Fermi gas @ T = 0K
 
 >[!quote] Ibach Luth, 6.2
@@ -207,6 +206,7 @@ u &= \int_{0}^{E_F} D(E) E \, dE  \\
 u &= \frac{3}{5}n E_F
 \end{align} 
 $$
+
 In $*$ we used the fact that $E_F^{3/2} = (\hbar^{2}/2m)^{3/2} 3\pi^{2} n$ ( #todo where does it come from?).
 
 From this we can see that, as a consequence of the Pauli exclusion principle, even at $T = 0K$ the energy of the gas is non zero.
@@ -329,7 +329,7 @@ The reason is simple: electrons, in contrast to a classical gas, can only gain e
 
 Looking at what we saw [[#^1e2627|before]], this can be expressed as the fact that the electrons that can "move" are only the ones in the region $\Delta E$, which is much smaller that $E_F$.
 
-#todo add plot on my notes
+![[dulong petit.png|300]]
 
 We now want to show that the specific heat of the electrons is negligible compared to the one of the lattice.
 
@@ -408,6 +408,7 @@ c_{v}\simeq Tk_{B}^{2}D(E_{F})\frac{\pi^{2}}{3} \tag{14}
 $$
 
 the specific heat is proportional to the temperature.
+
 If we want to express $c_{v}$ as a function of $n$ we need to calculate the integral 
 
 $$ 
@@ -439,7 +440,7 @@ as $E_{F}=k_{B}T_{F}$.
 
 The specific heat is again proportional to the temperature, if the temperature is lower than $T_{F}$, the contribution to the whole specific heat (with phonon contribution) is low.
 
-The expected $c_{v}$ relation at low temperature is:
+The expected $c_{v}$ relation **at low temperature** is:
 
 $$ 
 c_{v}=\gamma T+\beta T^3
