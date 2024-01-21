@@ -3,8 +3,6 @@ nextnote: "[[Nearly free electrons]]"
 author: Giacomo
 authorlink: https://github.com/gamberoillecito
 ---
-
-
 >[!tip] See also the [[Models#Bloch theorem|QCMP lecture]] about this topic
 
 We now want to remove the free electron approximation and introduce a periodic potential while still working under the [[Free electron model#^129090|Born-Oppenherimer approximation]] and **independent electron model**.
