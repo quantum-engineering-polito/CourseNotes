@@ -1,5 +1,7 @@
 ---
 nextnote: "[[Reciprocal lattice]]"
+author: Giacomo
+authorlink: https://github.com/gamberoillecito
 ---
 
 # Solid state physics
@@ -10,7 +12,7 @@ We will not deal with amorphous materials.
 
 ## Single atoms
 
-In single atoms electrons leave in radially symmetric potentials (orbitals) indicated by a number and a letter, such as 1s, 2s, 2p, etc.
+In single atoms electrons live in radially symmetric potentials (orbitals) indicated by a number and a letter, such as 1s, 2s, 2p, etc.
 
 The numbers represent the **principal quantum number** $n$ and the letters represent the **orbital angular momentum** $l$. We also have the **magnetic quantum number** $m$ ($-l \leq m \leq l$).
 

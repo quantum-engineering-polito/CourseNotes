@@ -1,7 +1,7 @@
 ---
 nextnote: "[[Aharonov-Bohm effect]]"
-author: Giacomo
-authorlink: https://github.com/gamberoillecito
+author: Giacomo, BabelDev0
+authorlink: https://github.com/gamberoillecito,https://github.com/BabelDev0
 ---
 > [!info] This note is based also on [this lecture](https://www.youtube.com/watch?v=UNyNjZeG1wc&t=2158s) and [this lecture](https://www.youtube.com/watch?v=LAKDQOawMDw) suggested by the teacher
 
@@ -38,9 +38,11 @@ As we can see the Hall resistance does not depend on the geometry of the sample.
 
 # Charge in a uniform magnetic field
 
-Before proceeding to the quantum case we need to briefly review the behaviour of a charged particle that moves in a uniform magnetic field. Supposing that the particle has an initial velocity in a plane perpendicular to the field $B$, the particle will start moving in a circle with a radius $R_{C} = v/\omega_{C} = \sqrt{ 2mE } \big/ |eB|$.
+Before proceeding to the quantum case we need to briefly review the behaviour of a charged particle that moves in a uniform magnetic field. Supposing that the particle has an initial velocity in a plane perpendicular to the field $B$, the particle will start moving in a circle with a radius $R_{C}$.
 
 ![[cyclotron.png|300]]
+
+![[Cyclotron_formulas.png|450]]
 
 # Quantum case
 
@@ -54,7 +56,7 @@ $$
 \left\{\frac{1}{2m}[\hat{p}-q \vec{A}(\vec{R},t)]^{2}+\cancel{ q\phi(\vec{R},t) }\right\}\psi(\vec{R},t)=-i\hbar\frac{\partial}{\partial t}\,\psi(\vec{R},t) \tag{1}
 $$
 
-Where $q \vec{A}(\vec{R}, t)$ is the momentum component related to the magnetic field #todo add link to vector potential and and the scalar potential is $\phi=0$
+Where $q \vec{A}(\vec{R}, t)$ is the momentum component related to the magnetic field #todo add link to vector potential. We decide to ignore the electrostatic interaction between the charges and thus the scalar potential is $\phi=0$
 
 Before proceeding we need to find a useful vector potential and we decide to use the **Landau gauge** that will simplify our calculations: 
 
@@ -80,7 +82,7 @@ $$
 
 The system that we are considering is an electron gas that is free to move in the x and y directions but is tightly confined in the z direction. To solve this Hamiltonian it is possible to separate it into two equations since the magnetic field just affects the movement along x and y axes. The total energy becomes then, the sum of two contributions $E=E_{xy}+E_z$.
 
-### Hamiltonian $x y$ directions:
+## Hamiltonian $x y$ directions:
 
 The vector potential (and hence the Hamiltonian of the system) does not depend on the y-coordinate. And since the Hamiltonian does not depend on y, the momentum operator in the y-direction $\hat{p}_{y}=-i\hbar \frac{ \partial^{2} }{ \partial y^{2} }$ commutes with the Hamiltonian. This means that $\hat{p}_{y}$​ is a constant of motion, and its eigenfunctions are plane waves in the y-direction $e^{ik_{y}y}$ thus we can think about the wave function as a product of a generic (unknown) function $u(x)$ and a plane wave in the $y$ direction: 
 
@@ -88,45 +90,60 @@ $$
 \psi(\vec{R}) = u(x) e^{ ik_{y} y }
 $$
 
+The fact that there is a "preferred direction" (i.e. the shape of the potential is not the same in the $x$ and $y$ direction) is due to the gauge we chose and not to the physics of the problem, which has a rotational symmetry with respect to the $z$ axis.
+
 If we solve the SE with this assumption, we get 
 
 $$
 \left[-\frac{\hbar^{2}}{2m}\frac{d^{2}}{d x^{2}}+\frac{1}{2}\,m\omega_{c}^{2}\left(x+{\color{blue} \frac{\hbar k_{y}}{e B}} \right)^{2}\right]u(x)=\varepsilon u(x)
 $$
 
-which is a [[Harmonic oscillator|quantum harmonic oscillator]] shifted by the value 
+which is a [[Harmonic oscillator|quantum harmonic oscillator]] 
+
+Equation of a quantum harmonic oscillator in 1D:
+
+$$
+\left\{-\frac{\hbar^{2}}{2m}\frac{d^{2}}{d x^{2}}+\frac{1}{2}m\omega^{2}x^{2}\right\}\psi(x)=E\psi(x)
+$$
+
+Comparison with the case of a uniform magnetic field:
+
+$$
+\left[-\frac{\hbar^{2}}{2m}\frac{d^{2}}{d x^{2}}+\frac{1}{2}\,m\omega_{c}^{2}\left(x+\frac{\hbar k_{y}}{e B}\right)^{2}\right]u(x)=\varepsilon u(x)
+$$
+
+we can see that the minima of the parabola is shifted by the value 
 
 $$
 \boxed{ x_{k} = - \frac{\hbar k_{y}}{eB}  = -l_{B}^{2} k_{y}} \qquad l_{B} =\sqrt{ \frac{\hbar}{|eB|} }
 $$
 
-$l^{2}_{B}$ is called **the magnetic length**.
+$l^{2}_{B}$ is called **the magnetic length**. Since we have come back to a known case the energy levels and the wavefunctions are easily derived:
 
-![[comparison_harmonic_oscillator.png]]
 
-The energy eigenvalues are:
 
 $$
-E_{n} = \left( n + \frac{1}{2} \right) \hbar\omega_{c}
+\displaylines{
+E_{n}=\left(n+{\frac{1}{2}}\right)\hbar\omega_{c} \qquad\text{Independent of }k_{y} \\
+\phi_{n k}(x,y)\propto H_{n-1}\left(\frac{x-x_{k}}{l_{B}}\right)\exp\left(-\frac{(x-x_{k})^{2}}{2l_{B}^{2}}\right)\exp(i k_{y}y)
+}
 $$
 
-Where $\omega_c$ is the **Cyclotron frequency** $\omega_c = |eB|/|m|$. 
+With $x_{k} = -\hbar k_{y} /eB$
 
-This solutions, are called Landau levels, these levels are highly degenerate, meaning many electron states have the same energy. Indeed From the expression one notices that the energy depends only on $n$, not on $k_y$, so states with the same $n$ but different $k_y$ are degenerate. 
+The energy states, are called Landau levels, these levels are highly degenerate  (many electron states have the same energy). Indeed From the expression one notices that the energy depends only on $n$, not on $k_y$, so states with the same $n$ but different $k_y$ are degenerate.
 
-What will (intuitively) happen is that we will have a series of identical parabolas each shifted by $x_{k}$ with respect to the previous one.
-
-We notice though that $x_{k}$ itself is dependent on $k_{y}$, which has to be calculated by solving the SE in the $y$ direction.
-
-#todo explain why is IPW + PBC
-
-We get that 
+We observe that the value of $x_{k}$ is influenced by the parameter $k_{y}$, which must be determined by solving the Schrödinger equation in the $y$ direction (infinite potential well). It's important to note that $k_y$ is not a continuously varying parameter but is quantized. We can obtain these quantized values by applying periodic boundary conditions, from which we derive the following relationship:
 
 $$
 \boxed{k_{y}={\frac{2\pi}{L_{y}}}n_{k_{y}}}
 $$
 
-Now we know how distant the parabolas are from each other.
+Now we know how distant the parabolas are from each other. There are oscillators in x every 
+
+$$
+- \frac{\hbar}{eB} \frac{2\pi}{L_{y}}
+$$
 
 ## Number of harmonic oscillators
 
@@ -135,7 +152,7 @@ Since our sample has finite dimensions, the number of harmonic oscillator $N_{B}
 $x_{k}$ varies between $0$ and $L_{x}$ so we can write 
 
 $$
-0 < L_{x} = - \frac{\hbar k_{y}}{eB} < L_{x}
+0 < x_{k} = - \frac{\hbar k_{y}}{eB} < L_{x}
 $$
 
 which can be rearranged to find the range of variation of $k_{y}$: 
@@ -150,17 +167,25 @@ $$
 N_{B} = \frac{\left( \frac{eBL_{x}}{\hbar} \right)}{\left( \frac{2\pi}{L_{y}} \right)} = \frac{eB}{2\pi \hbar} L_{x}L_{y}
 $$
 
+we can also calculate $N_B$ as the ratio between the (magnetic) flux through the sample $BL_xL_y$ divided by the minimum flux of a single state the quantum of flux $\Phi_0$
+
+$$ 
+N_{B} = \frac{eB}{2\pi \hbar} L_{x}L_{y} = \frac{BL_{x}L_{y}}{\Phi_{0}} \qquad \Phi_{0} = \frac{2\pi \hbar}{e}
+$$
+
 ## Landau levels
 
 Due to the fact that the harmonic oscillator has discrete energy levels with a spacing of $\hbar \omega_{c}$ we can easily draw the density of states:
 
 ![[DOS.svg|400]]
 
-The "height" of the Landau levels can be easily determined as 
+The "height" (density of states per unit surface) of the Landau levels can be easily determined as 
 
 $$
 n_{B} =\frac{N_{B}}{L_{x} L_{y}} = \frac{eB}{2 \pi \hbar}
 $$
+
+$n_B$​ gives the density of states, which is the number of available quantum states for the electrons at each energy level per unit area. In a strong magnetic field, the electron's motion perpendicular to the field is quantized into Landau levels. The formula shows that as the magnetic field strength increases, the density of states at each Landau level increases, meaning more states are available for electrons at each quantized energy level.
 
 ## Recap
 
@@ -168,9 +193,129 @@ From what we saw so far, we noticed that we have a series of harmonic oscillator
 
 ![[recap.svg|600]]
 
-## Semiclassical view
+# Dependence on B
 
-## Effect of impurities
+As we increase the magnitude of the magnetic field, we are changing the degeneracy and the distance of the Landau levels (check the video below)
 
-## Shubnikov - de Haas effect
+<iframe width="400" height="300" src="https://upload.wikimedia.org/wikipedia/commons/9/92/QuantumHallEffectExplanationWithLandauLevels.ogv" frameborder="0" allowfullscreen></iframe>
 
+ [source](https://en.wikipedia.org/wiki/File:QuantumHallEffectExplanationWithLandauLevels.ogv)
+ 
+
+![[DOS_B_increasing.png]]
+The larger B, the more degenerate the levels are and the more far apart they are.
+
+$$ 
+\displaylines{
+& B \nearrow \ \Longrightarrow \  n_{B} \nearrow
+\\\\
+& B \nearrow \ \Longrightarrow \  \hbar\omega_{c} \nearrow
+\\\\
+& B \nearrow \ \Longrightarrow \  N_{B} \nearrow
+}
+$$ 
+# Shubnikov - de Haas effect
+
+When a current is applied between to two electrodes in a 2DEG exposed to a magnetic field.
+
+![[classical case setup.png|300]]
+
+The measured resistance along the $x$ direction $R_{xx}$ is found to oscillate. This is called the **Shubnikov-de Haas effect**. ($\rho_{xx}=R_{xx}$)
+
+![[Shubnikov-de Haas effect.jpg|550]]
+
+# Landau level filling
+
+The filling factor $v$ of a Landaus levels, is a factor that tell us how many Landau levels are filled by electrons per unit of area. Since each Landau level has a density of state associated $n_B$ the $v$ factor can be written as:
+
+$$  
+v = \frac{n_{2D}}{n_{B}}=\frac{\Phi_{0}}{B}n_{2D}
+$$
+
+where $n_{2D}$ is the electron density of the 2DEG.
+
+If we keep the $n_{2D}$ constant and the magnetic field is increased, the Landau level filling changes.
+
+![[Screenshot 2024-01-20 at 21.01.33.png]]
+
+Certainly, when we increase the value of $B$, the quantity $n_B$ also increases. If we maintain $n_{2D}$ at a constant level, this implies that the factor $v$ must decrease.
+
+**When the filling factor is an integer the 2DEG does not conduct electricity.**
+
+# Origin of plateaus in QHE
+
+We must take into account the impact of the edges on the energy of states within the Landau levels. When approaching the edge, the electron's orbit experiences perturbations. Due to these perturbations, the frequency of oscillation increases, resulting in shorter orbits. Since frequency and energy are directly linked, it's intuitive to conclude that the closer an electron is to the surface, the higher its energy states will be. 
+
+By solving the Schrödinger equation and substituting the potential with an infinite potential at the material's edges, we find that states located in the middle of the material, characterized by small values of $k_y$, remain unaffected by the presence of the edges. This validates the solutions obtained earlier. On the other hand, states near the material's edges, corresponding to large values of $k_y$, experience compression within a narrower space, resulting in higher energy levels.
+
+![[usaul_edge_landau_levels.png]]
+
+When the Fermi level falls between two Landau levels, the bulk does not conduct as all states within this range are filled. However, at the edges, there are conducting edge states due to the increase in energy near the edges
+
+To explain the plateaus in the $R_{xy}$ graph we need to rewrite the resistance in another form. Recalling from the from the classical Hall effect:
+
+$$ 
+R_{xy} = \frac{B_{z}}{qn} = \frac{B_{z}}{en_{2D}}
+$$ 
+Now remembering the definition of the filling factor and the definition of quantum of flux:
+
+$$ 
+\Phi_{0} = \frac{2\pi \hbar}{e} = \frac{h}{e} \qquad v = \frac{\Phi_{0}}{B}\ n_{2D} = \frac{h}{eB} \ n_{2D}
+$$ 
+we get the quantum Hall resistance:
+
+
+$$ 
+R_{xy} = \frac{h}{e^{2}v}
+$$
+
+![[classical_vs_quantum_rxy.png]]
+
+![[origins_of_plateaus.png]]
+
+# QHE at the device level
+
+At the device level, edge states leads to QHE as follows
+
+![[QH_bar.png|500]]
+
+A potential difference is applied between electrode 1 and electrode 2 to drive a current through the device. The electrons travel from electrode 1 to electrode 2. However, due to the magnetic field (not shown in the figure, but perpendicular to the plane of the device), the electrons will follow edge states that are at the boundaries of the sample.
+
+Reached the steady state thanks to the **Shubnikov-de Haas effect** we have that:
+
+$$ 
+\displaylines{
+& R_{xx} = \frac{V_{3}-V_{4}}{I} = 0 \Longrightarrow \ V_{3}=V_{4} 
+\\\\
+& R_{xx} = \frac{V_{6}-V_{5}}{I} = 0 \Longrightarrow \ V_{6}=V_{5} 
+}
+$$
+
+The electrons leaving 1 will first enter in 3 and then in 4 (3 and 4 are not allowed to draw current) so that $V_{1}=V_{3}=V_{4}$, For the same reason: $V_{2}=V_{6}=V_{5}$ .
+
+Since we place $V_1<V_2$ we have that $V_3<V_5$ and $V_4<V_6$ thus a hall resistance is measured between 3 and 5 or 4 and 6.
+
+# Effect of impurities
+
+In real materials, there are always some impurities and phonons that can scatter electrons. This effect introduce an uncertainty in the energy, we can describe this uncertainty expanding the delta-like Landau levels into Gaussians characterized by a full width at half maximum
+
+$$ 
+\Gamma = \frac{\hbar}{\tau}
+$$ 
+In which $\tau$ is the average time between two scattering events (**lifetime of the electron**)
+
+![[impurities_landau_levels.png]]
+
+In a perfectly pure material without any impurities (where $\Gamma$, the broadening of the energy levels, is zero), Landau levels are highly degenerate and sharply defined. Edge states, on the other hand, are not degenerate.
+
+![[degeneracy_usual_edge_landau_levels.png|450]]
+
+When the magnetic field ($B$) is varied in such system, the edge states immediately get occupied with electrons as they are available. Since the material is pure and there is no energy level broadening ($\Gamma$ = 0), the Fermi level jumps directly from one fully occupied Landau level to the next as the magnetic field changes. **There's no smooth transition or plateau.**
+
+In the real world, however, materials are not perfectly pure and contain impurities. These impurities cause the energy levels to broaden ($\Gamma$ > 0), which means the energy levels are not as sharply defined. This broadening has the effect to 'pins' the Fermi level between the Landau levels as the magnetic field changes. Rather than the Fermi level jumping sharply from one level to the next, it gets stuck in these broadened areas for a range of magnetic field values.
+
+![[pinned_fermi_level.png]]
+
+Because the Fermi level is pinned, as we vary the magnetic field, we see plateaus in the $R_{xy}$. These plateaus occur where the Fermi level is in the broadened region due to impurities. The states in the broadened regions are localized so they don't contribute to the overall current because they are not part of the one-way edge paths that electrons use to conduct but they are indeed due to the impurities, that are localized.
+
+So, the plateaus in the Hall resistance that are characteristic of the Quantum Hall Effect are actually a consequence of the Fermi level being pinned between Landau levels by impurities in the material. Without these impurities and the associated broadening, there would be no plateaus—just sharp transitions as the magnetic field changes.

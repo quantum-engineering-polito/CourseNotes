@@ -1,5 +1,7 @@
 ---
 nextnote: "[[Nearly free electrons]]"
+author: Giacomo
+authorlink: https://github.com/gamberoillecito
 ---
 
 

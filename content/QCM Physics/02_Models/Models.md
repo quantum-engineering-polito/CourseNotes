@@ -367,7 +367,7 @@ $$
 
 but now we are inside the crystal and the relation is more complex.
 
-![[band_diagram_relation_wavenumber.svg]]]
+![[band_diagram_relation_wavenumber.svg]]
 
 
 at each $k$ value corresponds a different $E$ and $m$ value. We can simplify the description of the behaviour of these electrons comparing their motion to that of free particles with different masses in a vacuum, to do that we define the **effective mass** as:
@@ -377,7 +377,9 @@ m^{*}_{ij} = \frac{\hbar^{2}}{\left[ \frac{\partial^{2} E}{\partial k_{i} \parti
 $$
 
 the motion of the electron can now be described by
+
 $$ F=m^{*}a $$
+
 It is important to notice that the effective mass depends on the curvature of the band, since the potential changes depending on the structure of the lattice.
 The core electrons, the ones near the nucleus, have $m^{*} \to \infty$.
 
