@@ -14,6 +14,7 @@ The Fermi surface is the surface of constant energy $E_F$ in $k$ space. It separ
 #todo add drawing
 
 The current density is given by
+
 $$
 J = i/A = dq/dt \cdot 1/A
 $$
@@ -86,6 +87,7 @@ $$
 $$
 
 can be understood intuitively considering the following things: 
+
 - We expect the charge transported to be proportional to the charge density $ne$.
 - The factor $e/m$ is given by the fact that the acceleration in a given electric field is proportional to $e$ and inversely proportional to $m$. 
 - The time $\tau$ describes the free time during which the field acts on the carrier.

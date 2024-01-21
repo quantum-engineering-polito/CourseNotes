@@ -250,7 +250,9 @@ By solving the Schrödinger equation and substituting the potential with an infi
 
 ![[usaul_edge_landau_levels.png]]
 
-When the Fermi level falls between two Landau levels, the bulk does not conduct as all states within this range are filled. However, at the edges, there are conducting edge states due to the increase in energy near the edges
+When the Fermi level falls between two Landau levels, the bulk does not conduct as all states within this range are filled. However, at the edges, there are conducting states due to the increase in energy near the edges
+
+![[conducting_edges.png|400]]
 
 To explain the plateaus in the $R_{xy}$ graph we need to rewrite the resistance in another form. Recalling from the from the classical Hall effect:
 
@@ -312,10 +314,10 @@ In a perfectly pure material without any impurities (where $\Gamma$, the broaden
 
 When the magnetic field ($B$) is varied in such system, the edge states immediately get occupied with electrons as they are available. Since the material is pure and there is no energy level broadening ($\Gamma$ = 0), the Fermi level jumps directly from one fully occupied Landau level to the next as the magnetic field changes. **There's no smooth transition or plateau.**
 
-In the real world, however, materials are not perfectly pure and contain impurities. These impurities cause the energy levels to broaden ($\Gamma$ > 0), which means the energy levels are not as sharply defined. This broadening has the effect to 'pins' the Fermi level between the Landau levels as the magnetic field changes. Rather than the Fermi level jumping sharply from one level to the next, it gets stuck in these broadened areas for a range of magnetic field values.
+In the real world, however, materials are not perfectly pure and contain impurities. These impurities cause the energy levels to broaden ($\Gamma$ > 0), which means the energy levels are not as sharply defined. This broadening is created by impurities, that are localized so the states in the broadened regions don't contribute to the overall current and this has the effect to 'pins' the Fermi level between the Landau levels as the magnetic field changes. Rather than the Fermi level jumping sharply from one level to the next, it gets stuck in these broadened areas for a range of magnetic field values.
 
 ![[pinned_fermi_level.png]]
 
-Because the Fermi level is pinned, as we vary the magnetic field, we see plateaus in the $R_{xy}$. These plateaus occur where the Fermi level is in the broadened region due to impurities. The states in the broadened regions are localized so they don't contribute to the overall current because they are not part of the one-way edge paths that electrons use to conduct but they are indeed due to the impurities, that are localized.
+Because the Fermi level is pinned, as we vary the magnetic field, we see plateaus in the $R_{xy}$. These plateaus occur where the Fermi level is in the broadened region due to impurities.
 
 So, the plateaus in the Hall resistance that are characteristic of the Quantum Hall Effect are actually a consequence of the Fermi level being pinned between Landau levels by impurities in the material. Without these impurities and the associated broadening, there would be no plateaus—just sharp transitions as the magnetic field changes.

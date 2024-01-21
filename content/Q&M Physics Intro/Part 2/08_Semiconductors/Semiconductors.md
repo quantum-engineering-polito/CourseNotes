@@ -187,6 +187,7 @@ Since we are considering the hydrogen atom, we can also estimate the distance be
 $$
 r = \varepsilon_0 \varepsilon_{Si} \frac{h^{2}}{\pi m_{n}^{*} e^{2}}
 $$
+
 which is of the order of $10^{3}$ lattice sites, meaning that the electron can move almost freely.
 
 For **p doping** the process is the same but we use an **acceptor atom** from group *III*.
