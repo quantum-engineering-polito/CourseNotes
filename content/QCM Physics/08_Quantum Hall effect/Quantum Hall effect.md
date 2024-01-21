@@ -90,6 +90,8 @@ $$
 \psi(\vec{R}) = u(x) e^{ ik_{y} y }
 $$
 
+The fact that there is a "preferred direction" (i.e. the shape of the potential is not the same in the $x$ and $y$ direction) is due to the gauge we chose and not to the physics of the problem, which has a rotational symmetry with respect to the $z$ axis.
+
 If we solve the SE with this assumption, we get 
 
 $$
@@ -98,7 +100,17 @@ $$
 
 which is a [[Harmonic oscillator|quantum harmonic oscillator]] 
 
-![[comparison_harmonic_oscillator.png]]
+Equation of a quantum harmonic oscillator in 1D:
+
+$$
+\left\{-\frac{\hbar^{2}}{2m}\frac{d^{2}}{d x^{2}}+\frac{1}{2}m\omega^{2}x^{2}\right\}\psi(x)=E\psi(x)
+$$
+
+Comparison with the case of a uniform magnetic field:
+
+$$
+\left[-\frac{\hbar^{2}}{2m}\frac{d^{2}}{d x^{2}}+\frac{1}{2}\,m\omega_{c}^{2}\left(x+\frac{\hbar k_{y}}{e B}\right)^{2}\right]u(x)=\varepsilon u(x)
+$$
 
 we can see that the minima of the parabola is shifted by the value 
 
@@ -109,12 +121,19 @@ $$
 $l^{2}_{B}$ is called **the magnetic length**. Since we have come back to a known case the energy levels and the wavefunctions are easily derived:
 
 
-![[solutions_xy_directions.png]]
 
+$$
+\displaylines{
+E_{n}=\left(n+{\frac{1}{2}}\right)\hbar\omega_{c} \qquad\text{Independent of }k_{y} \\
+\phi_{n k}(x,y)\propto H_{n-1}\left(\frac{x-x_{k}}{l_{B}}\right)\exp\left(-\frac{(x-x_{k})^{2}}{2l_{B}^{2}}\right)\exp(i k_{y}y)
+}
+$$
+
+With $x_{k} = -\hbar k_{y} /eB$
 
 The energy states, are called Landau levels, these levels are highly degenerate  (many electron states have the same energy). Indeed From the expression one notices that the energy depends only on $n$, not on $k_y$, so states with the same $n$ but different $k_y$ are degenerate.
 
-We observe that the value of $x_{k}$ is influenced by the parameter $k_{y}$, which must be determined by solving the Schrödinger equation in the $y$ direction. It's important to note that $k_y$ is not a continuously varying parameter but is quantized. We can obtain these quantized values by applying periodic boundary conditions, from which we derive the following relationship:
+We observe that the value of $x_{k}$ is influenced by the parameter $k_{y}$, which must be determined by solving the Schrödinger equation in the $y$ direction (infinite potential well). It's important to note that $k_y$ is not a continuously varying parameter but is quantized. We can obtain these quantized values by applying periodic boundary conditions, from which we derive the following relationship:
 
 $$
 \boxed{k_{y}={\frac{2\pi}{L_{y}}}n_{k_{y}}}
@@ -133,7 +152,7 @@ Since our sample has finite dimensions, the number of harmonic oscillator $N_{B}
 $x_{k}$ varies between $0$ and $L_{x}$ so we can write 
 
 $$
-0 <  - \frac{\hbar k_{y}}{eB} < L_{x}
+0 < x_{k} = - \frac{\hbar k_{y}}{eB} < L_{x}
 $$
 
 which can be rearranged to find the range of variation of $k_{y}$: 
@@ -147,7 +166,8 @@ Finally, $N_{B}$ can be calculated as the ratio between the total range of varia
 $$
 N_{B} = \frac{\left( \frac{eBL_{x}}{\hbar} \right)}{\left( \frac{2\pi}{L_{y}} \right)} = \frac{eB}{2\pi \hbar} L_{x}L_{y}
 $$
-we can also calculate $N_B$ as the ratio between the (magnetic )flux through the sample $BL_xL_y$ divided by the minimum flux of a single state the quantum of flux $\Phi_0$
+
+we can also calculate $N_B$ as the ratio between the (magnetic) flux through the sample $BL_xL_y$ divided by the minimum flux of a single state the quantum of flux $\Phi_0$
 
 $$ 
 N_{B} = \frac{eB}{2\pi \hbar} L_{x}L_{y} = \frac{BL_{x}L_{y}}{\Phi_{0}} \qquad \Phi_{0} = \frac{2\pi \hbar}{e}
@@ -159,13 +179,14 @@ Due to the fact that the harmonic oscillator has discrete energy levels with a s
 
 ![[DOS.svg|400]]
 
-The "height"(density of states per unit surface) of the Landau levels can be easily determined as 
+The "height" (density of states per unit surface) of the Landau levels can be easily determined as 
 
 $$
 n_{B} =\frac{N_{B}}{L_{x} L_{y}} = \frac{eB}{2 \pi \hbar}
 $$
 
 $n_B$​ gives the density of states, which is the number of available quantum states for the electrons at each energy level per unit area. In a strong magnetic field, the electron's motion perpendicular to the field is quantized into Landau levels. The formula shows that as the magnetic field strength increases, the density of states at each Landau level increases, meaning more states are available for electrons at each quantized energy level.
+
 ## Recap
 
 From what we saw so far, we noticed that we have a series of harmonic oscillators that spread along the $x$ direction. Since all the harmonic oscillators have the same energies, there will be a number of degeneracies equal to the number of harmonic oscillators $N_{B}$.
@@ -173,10 +194,17 @@ From what we saw so far, we noticed that we have a series of harmonic oscillator
 ![[recap.svg|600]]
 
 # Dependence on B
-As we increase the magnitude of the magnetic field, we are changing the degeneracy and the distance of the Landau levels (check [video](https://en.wikipedia.org/wiki/File:QuantumHallEffectExplanationWithLandauLevels.ogv))
+
+As we increase the magnitude of the magnetic field, we are changing the degeneracy and the distance of the Landau levels (check the video below)
+
+<iframe width="400" height="300" src="https://upload.wikimedia.org/wikipedia/commons/9/92/QuantumHallEffectExplanationWithLandauLevels.ogv" frameborder="0" allowfullscreen></iframe>
+
+ [source](https://en.wikipedia.org/wiki/File:QuantumHallEffectExplanationWithLandauLevels.ogv)
+ 
 
 ![[DOS_B_increasing.png]]
 The larger B, the more degenerate the levels are and the more far apart they are.
+
 $$ 
 \displaylines{
 & B \nearrow \ \Longrightarrow \  n_{B} \nearrow
@@ -187,15 +215,17 @@ $$
 }
 $$ 
 # Shubnikov - de Haas effect
+
 When a current is applied between to two electrodes in a 2DEG exposed to a magnetic field.
 
 ![[classical case setup.png|300]]
 
-The measured resistance along the x direction $R_{xx}$ is found to oscillate. This is called the **Shubnikov-de Haas effect**. ($\rho_{xx}=R_{xx}$)
+The measured resistance along the $x$ direction $R_{xx}$ is found to oscillate. This is called the **Shubnikov-de Haas effect**. ($\rho_{xx}=R_{xx}$)
 
 ![[Shubnikov-de Haas effect.jpg|550]]
 
 # Landau level filling
+
 The filling factor $v$ of a Landaus levels, is a factor that tell us how many Landau levels are filled by electrons per unit of area. Since each Landau level has a density of state associated $n_B$ the $v$ factor can be written as:
 
 $$  
@@ -204,26 +234,30 @@ $$
 
 where $n_{2D}$ is the electron density of the 2DEG.
 
-fi we kept the $n_{2D}$ constant and the magnetic field is increased, the Landau level filling changes.
+If we keep the $n_{2D}$ constant and the magnetic field is increased, the Landau level filling changes.
 
 ![[Screenshot 2024-01-20 at 21.01.33.png]]
 
 Certainly, when we increase the value of $B$, the quantity $n_B$ also increases. If we maintain $n_{2D}$ at a constant level, this implies that the factor $v$ must decrease.
 
 **When the filling factor is an integer the 2DEG does not conduct electricity.**
+
 # Origin of plateaus in QHE
-We must take into account the impact of the edges on the energy of states within the Landau levels. When approaching the edge, the electron's orbit experiences perturbations. Due to these perturbations, the frequency of oscillation increases, resulting in shorter orbits. Since frequency and energy are directly linked, it's intuitive to conclude that the closer an electron is to the surface, the higher its energy states will be. By solving the Schrödinger equation and substituting the potential with an infinite potential at the material's edges, we find that states located in the middle of the material, characterized by small values of $k_y$, remain unaffected by the presence of the edges. This validates the solutions obtained earlier. On the other hand, states near the material's edges, corresponding to large values of $k_y$, experience compression within a narrower space, resulting in higher energy levels.
+
+We must take into account the impact of the edges on the energy of states within the Landau levels. When approaching the edge, the electron's orbit experiences perturbations. Due to these perturbations, the frequency of oscillation increases, resulting in shorter orbits. Since frequency and energy are directly linked, it's intuitive to conclude that the closer an electron is to the surface, the higher its energy states will be. 
+
+By solving the Schrödinger equation and substituting the potential with an infinite potential at the material's edges, we find that states located in the middle of the material, characterized by small values of $k_y$, remain unaffected by the presence of the edges. This validates the solutions obtained earlier. On the other hand, states near the material's edges, corresponding to large values of $k_y$, experience compression within a narrower space, resulting in higher energy levels.
 
 ![[usaul_edge_landau_levels.png]]
 
 When the Fermi level falls between two Landau levels, the bulk does not conduct as all states within this range are filled. However, at the edges, there are conducting edge states due to the increase in energy near the edges
 
-To explain the plateaus in the $R_{xy}$ graph we need to rewrite the resistance in another form. recalling from the from the classical Hall effect:
+To explain the plateaus in the $R_{xy}$ graph we need to rewrite the resistance in another form. Recalling from the from the classical Hall effect:
 
 $$ 
 R_{xy} = \frac{B_{z}}{qn} = \frac{B_{z}}{en_{2D}}
 $$ 
-Now remembering the definition of the filling factor And the definition of quantum of flux:
+Now remembering the definition of the filling factor and the definition of quantum of flux:
 
 $$ 
 \Phi_{0} = \frac{2\pi \hbar}{e} = \frac{h}{e} \qquad v = \frac{\Phi_{0}}{B}\ n_{2D} = \frac{h}{eB} \ n_{2D}
@@ -240,6 +274,7 @@ $$
 ![[origins_of_plateaus.png]]
 
 # QHE at the device level
+
 At the device level, edge states leads to QHE as follows
 
 ![[QH_bar.png|500]]
@@ -261,6 +296,7 @@ The electrons leaving 1 will first enter in 3 and then in 4 (3 and 4 are not all
 Since we place $V_1<V_2$ we have that $V_3<V_5$ and $V_4<V_6$ thus a hall resistance is measured between 3 and 5 or 4 and 6.
 
 # Effect of impurities
+
 In real materials, there are always some impurities and phonons that can scatter electrons. This effect introduce an uncertainty in the energy, we can describe this uncertainty expanding the delta-like Landau levels into Gaussians characterized by a full width at half maximum
 
 $$ 
@@ -280,6 +316,6 @@ In the real world, however, materials are not perfectly pure and contain impurit
 
 ![[pinned_fermi_level.png]]
 
-Because the Fermi level is pinned, as we vary the magnetic field, we see plateaus in the $R_{xy}$. These plateaus occur where the Fermi level is in the broadened region due to impurities. The states in the broadened regions are localized so they don't contribute to the overall current because they're not part of the one-way edge paths that electrons use to conduct but they are indeed due to the impurities, that are localized.
+Because the Fermi level is pinned, as we vary the magnetic field, we see plateaus in the $R_{xy}$. These plateaus occur where the Fermi level is in the broadened region due to impurities. The states in the broadened regions are localized so they don't contribute to the overall current because they are not part of the one-way edge paths that electrons use to conduct but they are indeed due to the impurities, that are localized.
 
 So, the plateaus in the Hall resistance that are characteristic of the Quantum Hall Effect are actually a consequence of the Fermi level being pinned between Landau levels by impurities in the material. Without these impurities and the associated broadening, there would be no plateaus—just sharp transitions as the magnetic field changes.
