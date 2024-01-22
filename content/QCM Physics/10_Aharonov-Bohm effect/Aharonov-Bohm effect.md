@@ -1,5 +1,5 @@
 ---
-nextnote: "[[Quantum bit]]"
+nextnote: "[[Flying Electron Qubit]]"
 author: BabelDev0
 authorlink: https://github.com/BabelDev0
 ---
