@@ -1,5 +1,5 @@
 ---
-nextnote: "[[Aharonov-Bohm effect]]"
+nextnote: "[[Tunneling and T matrix]]"
 author: Giacomo, BabelDev0
 authorlink: https://github.com/gamberoillecito,https://github.com/BabelDev0
 ---
