@@ -35,7 +35,6 @@ $$
 
 ## Electrical conductivity for free electrons
 
-
 > [!quote] Kittel, Chapter 6, "ELECTRICAL CONDUCTIVITY AND OHM’S LAW"
 
 In the case of a free electron 
@@ -48,6 +47,7 @@ If we ignore the effect of the magnetic field ($B = 0$) we can derive
 $$
 \hbar \frac{d\vec{k}}{dt} = - e \vec{\varepsilon}
 $$
+
 which, integrating over $t$ we get 
 
 $$
@@ -79,7 +79,7 @@ So, going back to the current density $J$, if we are in a constant electric fiel
 $$
 \boxed{\vec{J} = nq \Delta \vec{v} = \frac{n e^{2} \tau}{m} \vec{\varepsilon} = \sigma \vec{\varepsilon}}
 $$
-which is  **Ohm's law**.
+which is **Ohm's law**.
 
 The electrical conductivity $\sigma$
 $$

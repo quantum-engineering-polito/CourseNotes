@@ -199,7 +199,7 @@ and that the two wave vectors are:
 $$
 \begin{align}
 & \text{Incident: } && \vec{k} = \frac{2\pi}{\lambda}\vec{n} \\
-& \text{Diffracted:} && \vec{k} = \frac{2\pi}{\lambda} \vec{n}
+& \text{Diffracted:} && \vec{k'} = \frac{2\pi}{\lambda} \vec{n'}
 \end{align}
 $$
 

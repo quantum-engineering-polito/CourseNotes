@@ -110,6 +110,7 @@ Equations $(1)$ (which are a system of $3r$ equations) describe what happens to 
 $$
 \det \Big\{D_{\alpha i}^{\beta j}(\vec{q}) - \omega^{2} \mathbb{1}\Big\} = 0
 $$
+
 We call $\omega = \omega(\vec{q})$ **dispersion curves** or **dispersion branches**.
 
 If $r =1$ (only one atom inside the base) we have $3$ equations and thus $3$ dispersion branches, called **acoustic branches**. If, on the other hand, $r > 1$ (more than one atom in the base) we will have $3r$ dispersion branches, out of which there will be $3$ **acoustic branches** and $3r - 3$ **optical branches**.
@@ -222,7 +223,7 @@ which, similarly to before, has a periodicity of
 $$
 q = \frac{2\pi}{a}
 $$
-
+---
 <iframe src="https://www.desmos.com/calculator/bu13oawnkn?embed" width="500" height="500" style="border: 1px solid #ccc" frameborder=0></iframe>
 
 Where we introduced the constant $\mu$
