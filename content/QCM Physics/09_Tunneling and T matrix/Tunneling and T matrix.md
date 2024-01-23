@@ -33,7 +33,7 @@ x > 0 \qquad k_{2} = \sqrt{ \frac{2m(E-V_{0})}{\hbar} }
 $$ 
 The wavevector $k_1$​ is real, whereas the wavevector $k_2$​ can be either real or imaginary, depending on the relationship between $E$ and $V_0$​. Specifically, if $E<V_0$​, then the wavevector $k_2$​ is imaginary; otherwise, it is real.
 
-Continuity of the wave function and of heir derivative in $x=0$ implies:
+Continuity of the wavefunctions and of their first derivatives in $x=0$ implies:
 
 $$ 
 \displaylines{
@@ -60,7 +60,7 @@ C = \frac{1}{2k_{2}}(k_{2}+k_{1}) A + \frac{1}{2k_{2}}(k_{2}-k_{1}) B
 D = \frac{1}{2k_{2}}(k_{2}-k_{1}) A + \frac{1}{2k_{2}}(k_{1}+k_{2}) B
 }
 $$ 
-Since we can express $C$ and $D$ as linear combinations of $A$ and $B$, we can apply a matrix formalism known as the T-MATRIX. This allows us to write:
+Since we can express $C$ and $D$ as linear combinations of $A$ and $B$, we can apply a matrix formalism known as the T-MATRIX (Transport matrix). This allows us to write:
 
 $$ 
 \begin{pmatrix} C \\ D \end{pmatrix} = T^{21} \begin{pmatrix} A \\ B \end{pmatrix} = \begin{pmatrix}  
@@ -78,7 +78,7 @@ k_{2}-k_{1} & k_{1}+k_{2}
 \end{pmatrix} = T(k_{1},k_{2})
 $$
 
-In general, $A$, $B$, $C$, and $D$ are complex values, but for simplicity, we can set $A = 1$, $B = r$, $C = t$, and $D = 0$. This simplification makes our context easier to work with. We can refer to '$r$' as the reflection index and '$t$' as the transmission index.
+In general, $A$, $B$, $C$, and $D$ are complex values, but for simplicity, we can set $A = 1$, $B = r$, $C = t$, and $D = 0$. This simplification makes our context easier to work with. We can designate $r$ as the reflection index and $t$ as the transmission index, as they represent the amplitudes of the reflective and transmitted components, respectively.
 
 $$ 
 \begin{pmatrix} t \\ 0 \end{pmatrix} = T^{21} \begin{pmatrix} 1 \\ r \end{pmatrix} = \begin{pmatrix}  
@@ -99,7 +99,7 @@ $$
 
 the relation above always apply in the case of $A = 1$, $B = r$, $C = t$, and $D = 0$.
 
-If instead of in x=0 the barrier is in x=d>0 the Matrix T change as follow:
+If instead of a barrier in $x=0$ we have a barrier in $x=d>0$ the Matrix T change as follow:
 
 $$ 
 T^{21}(d) = 
@@ -165,7 +165,7 @@ t = \frac{1}{T_{22}}
 }
 $$
 
-and we have that  $T_{11}=T_{22}^{*}$ $T_{11}=T_{22}^{*}$.
+and we have that  $T_{11}=T_{22}^{*}$ and  $T_{11}=T_{22}^{*}$.
 
 We can write the total transmission probability as:
 
@@ -179,14 +179,25 @@ $$
 
 we can see that the quantum case differ from the classical one not only when $E<V_0$ but also when it is $>V_0$.
 
+Some of the parameters that influence the transmittance index:
+
+**Height of the Barrier**: The probability of tunneling decreases exponentially with the increase in the barrier's height.
+
+**Width of the Barrier**: The tunneling probability decreases exponentially as the width of the barrier increases.
+
+**Mass of the Particle**: Heavier particles have a lower probability of tunneling compared to lighter ones.
+
 # Resonant-tunnelling diode
 
-An interesting application of resonant tunneling is the RESONANT-TUNNELING DIODE which typically consists of a central layer of undoped GaAs separated from doped GaAs contact regions by means of AlAs (or AlGaAs) tunnel barriers. Resonant tunneling is induced by applying a variable voltage bias between the contacts which possibly matches the (first) resonant energy.
+An interesting application of resonant tunneling is the **RESONANT-TUNNELING DIODE** which typically consists of a central layer of undoped GaAs separated from doped GaAs contact regions by means of AlAs (or AlGaAs) tunnel barriers. 
+
+![[RTD.png|450]]
+
+Resonant tunneling is induced by applying a variable voltage bias between the contacts which possibly matches the (first) resonant energy $E_0$.
 
 ![[resonant_tunneling.png|500]]
 
 The image illustrates the operation of a resonant tunneling diode (RTD).
-The image you provided illustrates the operation of a resonant tunneling diode (RTD), which is a quantum mechanical device that exploits the phenomenon of resonant tunneling to allow electrons to pass through at certain energy levels. Let's break down the explanation into simpler terms and go through each step shown in the image:
 
 **Section (a): Small Bias Applied**
 
@@ -205,33 +216,31 @@ When the bias is increased further, the resonant level moves below the Fermi lev
 At a very high bias, the resonant level drops too low, below the energy of most electrons in the source. This misalignment means that fewer electrons have the energy to tunnel through the barrier, and thus the current decreases rapidly.
 # Coulomb blockade
 
-Is a phenomenon where the transfer of an electron to a small conducting island is prevented due to the repulsive force (Coulomb force) from electrons already present on the island. In essence, it becomes energetically unfavorable for additional electrons to join the island once a certain number of electrons are present, due to the increase in electrostatic energy. This phenomenon applies a more restrictive condition for the transmission of electrons from source to drain towards the barriers, even if an electron has the right energy (energy in the range align with the resonant energy), it still might not get through because of the repulsion from other electrons.
+Is a phenomenon where the transfer of an electron to a small conducting island is prevented due to the repulsive force (Coulomb force) from electrons already present on the island. In essence, it becomes energetically expensive for additional electrons to join the island once a certain number of electrons are present, due to the increase in electrostatic energy. This phenomenon applies a more restrictive condition for the transmission of electrons from source to drain towards the barriers. Indeed even if an electron has the right energy (energy in the range align with the resonant energy), it still might not get through because of the repulsion from other electrons.
 
-The electrostatic energy of the system associated with the transfer of a charge $Q$ in the island is:
+The increase in electrostatic energy of the system associated with the transfer of a charge $Q$ in the island is:
 
 $$ 
 \Delta E = \underbrace{QV_{g}}_{\text{gate voltage}}+\underbrace{\frac{Q^{2}}{2C}}_{\text{Coulomb interaction}}
 $$
 
-When $n$ electrons have been transferred to the island, the change in electrostatic energy of the system is given by:
+When $n$ electrons have been transferred to the island, the change in electrostatic energy of the system is given by :
 
 $$ 
 \Delta E(n) = -neV_{g}+\frac{n^{2}e^{2}}{2C}
 $$
 
-So the increase of energy associated to the transfer of only one electron is given by:
+where we replaced $Q$ with $n(-e)$. So the increase of energy associated to the transfer of only one electron is given by:
 
 $$ 
 \Delta E(n+1)-\Delta E(n) = -eV_{g}+n\frac{e^{2}}{2C} \qquad n\gg_1
 $$ 
 we can notice that if $V_g = n\frac{e}{2C}$ the increase of energy associated to the transfer of only one electron is 0 and we have the **resonant tunneling transport of electrons.**
 
-Furthermore the Coulomb blockade prevents electrons from randomly moving onto the island due to thermal energy or electrical noise. It ensures that electron transfer only happens under very controlled conditions the resonant one.
+The Coulomb blockade prevents electrons from randomly moving onto the island due to thermal energy or electrical noise. It ensures that electron transfer only happens under very controlled conditions, the resonant condition.
 
 ![[coulomb_blockade.png|450]]
 
-# Single-Electron Transistor (SET)
-
-The principles above can be used to create a SET. A transistor device which can control the flow of individual electrons. 
+this phenomenon can be exploit to create a transistor device which can control the flow of individual electrons. That is the principles used in SET (Single-Electron Transistor)
 
 
