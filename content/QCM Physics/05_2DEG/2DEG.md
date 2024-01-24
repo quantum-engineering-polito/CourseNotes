@@ -179,7 +179,7 @@ $$
 And finally, for a given sub band:
 
 $$
-D(E) = \frac{1}{\cancel{ A }} \frac{m\cancel{ A }E}{\pi \hbar^{2}} = \frac{m}{\pi \hbar^{2}}E
+D(E) = \frac{1}{\cancel{ A }} \frac{m\cancel{ A }}{\pi \hbar^{2}} = \frac{m}{\pi \hbar^{2}}
 $$
 
 we can understand that the density of state within a subband is constant with respect to the energy. 
