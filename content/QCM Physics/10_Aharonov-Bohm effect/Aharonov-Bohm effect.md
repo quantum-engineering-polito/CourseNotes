@@ -1,5 +1,5 @@
 ---
-nextnote: "[[Quantum bit]]"
+nextnote: "[[Flying Electron Qubit]]"
 author: BabelDev0
 authorlink: https://github.com/BabelDev0
 ---
@@ -108,6 +108,7 @@ $$
 2. **The Initial Phase ($\phi_0$)**: This term represents the initial phase of the wave function at the starting point of the path. It's essentially the phase the wave function would have in the absence of the vector potential $A$.
 
 # Reflected and transmitted waves
+
 We can treat the ring as a barrier problem with propagating, reflected and transmitted waves
 
 ![[AE_barrier.png|500]]

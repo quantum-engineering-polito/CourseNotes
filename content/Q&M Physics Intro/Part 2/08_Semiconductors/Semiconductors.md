@@ -35,7 +35,6 @@ In our case, where we have a system of fermions, the chemical potential is close
 
 # Semiconductors
 
-
 The difference between insulators and semiconductors is not very strict but we can say that if the bandgap is $\simeq 1~\text{eV}$ then the presence of electrons in the conduction band is not negligible and we have a semiconductor.
 
 ![[Semiconductors vs insulators.png|400]]

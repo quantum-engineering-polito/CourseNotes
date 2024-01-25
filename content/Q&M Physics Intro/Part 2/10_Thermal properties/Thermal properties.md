@@ -5,15 +5,15 @@ authorlink: https://github.com/gamberoillecito
 ---
 >[!quote] Kittel, 5
 
-In solids, the specific heat is defined as 
+In solids, the heat capacity is defined as 
 
 $$
-C_{v} = \left( \frac{ \partial U }{ \partial T}  \right)_{\mathbf{V}}
+C_{V} = \left( \frac{ \partial U }{ \partial T}  \right)_{\mathbf{V}}
 $$
 
 where $U$ is the energy of the system and $T$ is the temperature.
 
-In a [[Free electron model|previous lecture]] we evaluated the contribution of the electrons to the specific heat, getting that their contribution is minimal. What we want to do now is to calculate the contribution of the phonons to the heat capacity ($C_\text{lat}$); to do this we need to calculate the total energy $U$ of the phonons. This can be obtained as a summation of the energies over all the possible wave vectors $\vec{q}$ and polarizations $\vec{p}$ ( #todo when did we talk about polarization???). 
+In a [[Free electron model|previous lecture]] we evaluated the contribution of the electrons to the heat capacity, getting that their contribution is minimal. What we want to do now is to calculate the contribution of the phonons to the heat capacity ($C_\text{lat}$); to do this we need to calculate the total energy $U$ of the phonons. This can be obtained as a summation of the energies over all the possible wave vectors $\vec{q}$ and polarizations $\vec{p}$ ( #todo when did we talk about polarization???). 
 
 $$
 U = \sum_{\vec{q}} \sum_{p} U_{\vec{q},p} = \sum_{\vec{q}} \sum_{p} \langle n_{\vec{q},p} \rangle \hbar \omega_{\vec{q},p} \tag{1}
@@ -140,12 +140,12 @@ $$
 \boxed{\theta_{D} =  \frac{\hbar \omega_{D}}{k_{B}}}
 $$
 
-### Finding the specific heat
+### Finding the heat capacity
 
-We can finally derivate the total energy we just found to get the specific heat:
+We can finally derivate the total energy we just found to get the heat capacity:
 
 $$
-C_{v}={\frac{\,\,3\mathbf{V}\hbar^{2}}{\,2\pi^{2}v^{3}k_{B}T^{2}}}\,\int_{0}^{w_{D}}d w\,{\frac{\omega^{4}\,e^{\hbar w/\tau}}{\left(e^{\hbar w/\tau}-1\right)^{2}}}=9N k_{B}{\left({\frac{T}{\theta_{D}}}\right)}^{3}\,\int_{0}^{x_{D}}d x\,{\frac{\,\,x^{4}\,e^{x\,}}{\left({e^{x}}-1\right)^{2}}}
+C_{V}={\frac{\,\,3\mathbf{V}\hbar^{2}}{\,2\pi^{2}v^{3}k_{B}T^{2}}}\,\int_{0}^{w_{D}}d w\,{\frac{\omega^{4}\,e^{\hbar w/\tau}}{\left(e^{\hbar w/\tau}-1\right)^{2}}}=9N k_{B}{\left({\frac{T}{\theta_{D}}}\right)}^{3}\,\int_{0}^{x_{D}}d x\,{\frac{\,\,x^{4}\,e^{x\,}}{\left({e^{x}}-1\right)^{2}}}
 $$
 
 In the second step above we used the fact that $\mathbf{V} / 2\pi = 3Nv^{3} /\omega_{D}$
@@ -157,12 +157,12 @@ The plot above shows that the Debye heat capacity approaches a constant value eq
 
 ### Behaviour at low temperatures
 
-In a [[Free electron model|previous lecture]], we saw that the contribution to the specific heat **at low temperature** given by electrons is proportional to $T$ and we anticipated that the phonons contribution is proportional to $T^{3}$. We now want to prove this statement.
+In a [[Free electron model|previous lecture]], we saw that the contribution to the heat capacity **at low temperature** given by electrons is proportional to $T$ and we anticipated that the phonons contribution is proportional to $T^{3}$. We now want to prove this statement.
 
-At very low temperatures ($T \ll \theta_{D}$) we can approximate $x_{D} = \theta_{D}/T$ with $\infty$ ($\theta_{D} \simeq 300 \div 400 K$ ). This means that we can recalculate the $C_{v}$ changing the upper limit in the integral to $\infty$. Doing this we get that 
+At very low temperatures ($T \ll \theta_{D}$) we can approximate $x_{D} = \theta_{D}/T$ with $\infty$ ($\theta_{D} \simeq 300 \div 400 K$ ). This means that we can recalculate the $C_{V}$ changing the upper limit in the integral to $\infty$. Doing this we get that 
 
 $$
-C_{v} = 234 N k_{B}\left( \frac{T}{\theta_{D}} \right)^{3} \propto T^{3}
+C_{V} = 234 N k_{B}\left( \frac{T}{\theta_{D}} \right)^{3} \propto T^{3}
 $$
 
 (the calculation is omitted, the important thing is that the integral doesn't depend on $T$ and thus doesn't change the $T^{3}$ term).

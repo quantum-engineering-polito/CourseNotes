@@ -40,7 +40,7 @@ We want to find the coordinates of the minimum of the potential which correspond
 We can do that by solving 
 
 $$
-\frac{ d U }{ \partial R}\Biggr{\lvert}_{R_{req}} = 0 
+\frac{ d U }{dR}\Biggr{\lvert}_{R_{req}} = 0 
 $$
 
 where $R_{eq}$ is the **equilibrium distance**. We get: 
@@ -145,7 +145,6 @@ $$
 \exp\left( -\frac{R_0}{\rho} \right) = \frac{\alpha\rho q^{2}}{4\pi\varepsilon_0 z \lambda R_0^{2}}
 $$
 
-
 which can be substituted in $(2)$ to calculate $U_{tot}(R_0)$: 
 
 $$
@@ -158,10 +157,10 @@ Since usually $\rho < 0.1 \cdot R_0$ the Madelung energy contains $\simeq$ 90% f
 
 >[!quote] Kittel, page 64
 
-
 Let's consider the example of a 1D crystal like the one in the image
 
 ![[madelung 1D.svg|400]]
+
 From the definition of the Madelung constant and from $(1)$ we get
 
 $$
@@ -183,6 +182,7 @@ $$
 \alpha &= 2\left[ 1  - \frac{1}{2} + \frac{1}{3} - \frac{1}{4} + \dots\right] \\
 \end{align}
 $$
+
 The series converges to 
 
 $$

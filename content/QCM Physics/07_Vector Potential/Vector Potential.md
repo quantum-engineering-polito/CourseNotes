@@ -1,7 +1,7 @@
 ---
 nextnote: "[[Quantum Hall effect]]"
 author: Emanuele Messina, BabelDev0
-authorlink: " ,https://github.com/BabelDev0"
+authorlink: https://github.com/BabelDev0
 draft: false
 ---
 # Potentials

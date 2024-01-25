@@ -7,7 +7,7 @@ Starting from the [[Free electron model|free electron model]] ($V = 0$) we want 
 
 ## Zero potential
 
-For $V = 0$ the Bloch states are 
+Even for $V = 0$ we need to consider the periodicity of the potential in order to be able to increase it later. The Bloch states are 
 
 $$
 \left( \frac{\hbar^{2}k^{2}}{2m} \right) c_{\vec{k}} + \sum_{\vec{G}} V_{\vec{G}} c_{\vec{k} \cdot \vec{G}} = 0
@@ -15,13 +15,15 @@ $$
 
 but, since $V = 0$, $V_{\vec{G}} = 0$ and thus $E = \frac{\hbar^{2}k^{2}}{2m}$ as expected for the free electrons.
 
-This result has to be considered together with the fact that  ( #todo where does this come from?) 
+This result has to be considered together with the fact that (due to the periodicity of the reciprocal lattice)
 
 $$
-E(\vec{k}) = E (\vec{k} + \vec{G})
+E(\vec{k}) = E (\vec{k} + \vec{G}) = \frac{\hbar^{2}}{2m}|k + \vec{G}|^{2}
 $$
 
 this implies that we have an infinite number of parabolas ($E$ depends on $k^{2}$) shifted by $\vec{G}$.
+
+![[Q&M Physics Intro/Part 2/06_Nearly free electrons/attachments/periodic potential.png|300]]
 
 ![[reduced zone scheme.svg|400]]
 
@@ -77,6 +79,7 @@ $$
 \Psi(-) \propto e^{ i x\pi/a } - e^{ -i x\pi/a } = 2 i\sin\left( \frac{\pi}{a}x \right)
 }
 $$
+
 > The standing waves are labelled $(+)$ or  $(-)$ according to whether or not they change sign when $-x$ is substituted for $x$. Both standing waves are composed of equal parts of right- and left-directed traveling waves. 
 > 
 > Kittel, page 165
@@ -143,7 +146,8 @@ $$
 c_{\vec{k}-\vec{G}} =\frac{\sum_{\vec{G'}}V_{\vec{G'}}\cdot c_{\vec{k}-\vec{G}-\vec{G'}}}{E-\frac{\hbar^{2}(\vec{k}-\vec{G})^{2}}{2m}}}
 $$
 
-$V$ is weak, so the eigenvalues are similar to those found for the free electron, this means that also the energy is nearly the free electron energy ($E=\frac{\hbar^{2}k^{2}}{2m}$)
+$V$ is weak, so the eigenvalues are similar to those found for the free electron, this means that also the energy is nearly the free electron energy ($E=\frac{\hbar^{2}k^{2}}{2m}$).
+
 We also make the assumption that only the largest $c_{\vec{k}-\vec{G}}$ are of interest, in fact we expect the greatest deviation from free electron behaviour when the denominator of the $c_{\vec{k}-\vec{G}}$ relation vanishes:
 
 $$
@@ -158,6 +162,7 @@ this is the Von Laue (Bragg) condition, the maximum perturbation occurs at the e
 For this approximation we only need to consider two relations, one is the Bragg condition, the other is when $\vec{G}=0$ and so we consider the $c_{\vec{k}}$ .
 
 Evaluating the coefficients in each condition we have:
+
 1) Bragg:
 
 $$
