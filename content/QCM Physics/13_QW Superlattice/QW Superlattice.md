@@ -1,5 +1,5 @@
 ---
-nextnote: 
+nextnote: "[[Quantum Wire]]"
 author: BabelDev0
 authorlink: https://github.com/BabelDev0
 ---
