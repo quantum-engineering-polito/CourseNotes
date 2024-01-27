@@ -32,7 +32,7 @@ The whole point of growing heterostructures is the opportunity that they offer t
 
 ## Intrinsic semiconductors
 
-Consider two materials A and B with $E_{g,A} < E_{g,B}$ like in the case of $A=GaAs$ and $B=AlGaAs$. First of all we use the **Anderson’s rule** aka we use the vacuum level (he energy of a free stationary electron that is outside of any material) as reference to draw the band diagram.
+Consider two materials A and B with $E_{g,A} < E_{g,B}$ like in the case of $A=GaAs$ and $B=AlGaAs$. First of all we use the **Anderson’s rule** aka we use the vacuum level (the energy of a free stationary electron that is outside of any material) as reference to draw the band diagram.
 
 ![[intrinsic_heterostructure.svg]]
 
@@ -60,7 +60,7 @@ Semiconductors can be doped. This changes the position of the Fermi level within
 
 ## Depletion region
 
-A depletion region is an insulating region within a conductive, doped semiconductor material where the mobile charge carriers have diffused away, or forced away by an electric field. The only elements left in the depletion region are ionized donor or acceptor impurities. This region of uncovered positive and negative ions is called the depletion region due to the depletion of carriers in this region, leaving none to carry a current. This region is formed at the interface of the heterojunction.
+A depletion region is an insulating region within a conductive, doped semiconductor material where the mobile charge carriers have diffused away, or forced away by an electric field. The only elements left in the depletion region are ionized donor or acceptor impurities. This region of uncovered positive and negative ions is called the depletion region due to the depletion of charges carriers, leaving none to carry the current. This region is formed at the interface of the heterojunction.
 
 ![[deplitionRegion.png]]
   

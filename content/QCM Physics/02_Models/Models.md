@@ -361,7 +361,7 @@ $$
 \displaylines{
 E = \frac{p^2}{2m} \quad \text{so the mass is}
 \\\\
-m = \frac{p^2}{2E} = \frac{\hbar\omega}{2E}
+m = \frac{p^2}{2E} = \frac{\hbar^{2}k^{2}}{2E}
 }
 $$
 
