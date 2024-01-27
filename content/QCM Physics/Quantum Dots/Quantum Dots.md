@@ -3,6 +3,7 @@ nextnote:
 author: BabelDev0
 authorlink: https://github.com/BabelDev0
 draft: false
+links: https://essay.utwente.nl/69376/1/Avgidis_BA_EEMCS.pdf
 ---
 In Quanutm Dot we have 
 
