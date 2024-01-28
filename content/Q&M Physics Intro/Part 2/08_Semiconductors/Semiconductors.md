@@ -97,6 +97,7 @@ $$
 $$
 \boxed{p = N_{eff}^{V} \cdot e^{ (E_V-E_F)/ k_{B}T}}
 $$
+
 Where $N_{eff}$ are the **effective densities of states**:  ^bf1b5a
 
 $$
@@ -279,6 +280,7 @@ In this case the number of thermally excited electrons becomes dominant with res
 We can plot these three ranges as follows:
 
 ![[temperature regions.png|400]]
+
 # Mobility (very brief introduction)
 
 The mobility $\mu$ is defined as 
@@ -296,11 +298,8 @@ $$
 }
 $$
 
-
-
 The conductivity can be written taking into consideration the contribution of both holes and electrons as follows 
 
 $$
 \sigma = (n\cdot e \cdot \mu_{n} + p \cdot e \cdot \mu_{p})
 $$
-
