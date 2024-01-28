@@ -27,7 +27,7 @@ $$
 }
 $$
 
-We want to represent the qubit geometrically and to do this we need to decrease the number of parameters fortunately not all 4 values above are independent:
+We want to represent the qubit geometrically and to do this we need to decrease the number of parameters. Fortunately not all 4 values above are independent:
 
 $$
 \ket{\psi} = r_{\alpha} e^{i\phi_{\alpha}}\ket{0}+r_{\beta} e^{i\phi_{\beta}}\ket{1} 

@@ -26,7 +26,7 @@ The absorption strength is characterized by the absorption coefficient $\alpha$
 To describe the optical transitions and the overall absorption coefficient in materials we rely on the [[Fermi golden rule|Fermi’s golden rule]] which estimates the probability per unit of time that a quantum system will transition from an initial state $\ket{i}$ to a final state $\ket{f}$ due to an external perturbation
 
 $$
-W_{fi}(\hbar\omega) = \frac{2\pi}{\hbar} \sum_{if}|M_{fi}|^{2} \delta(E_{f} - E_{i}  - \hbar \omega)
+W_{fi}(\hbar\omega) = \frac{2\pi}{\hbar} |M_{fi}|^{2} \delta(E_{f} - E_{i}  - \hbar \omega)
 $$
 
 The rate is influenced by mainly two factors.
@@ -78,7 +78,7 @@ $$
 now we can write the joint density of states as:
 
 $$
-D(\hbar\omega) = \int_{\text{states}}\int_{\text{states}} \frac{d k_{i}d k_{f}}{(2\pi)^3(2\pi)^3} \delta(E_{f}(k_{f}) - E_{i}(k_{i})-\hbar\omega)
+J(\hbar\omega) = \int_{\text{states}}\int_{\text{states}} \frac{d k_{i}d k_{f}}{(2\pi)^3(2\pi)^3} \delta(E_{f}(k_{f}) - E_{i}(k_{i})-\hbar\omega)
 $$
 
 The image below show a band structure where the blue arrows represent electron transitions due to photon absorption:
@@ -100,7 +100,7 @@ $$
 This is why vertical transitions are the most likely.
 # Excitons
 
-The absorption process in a semiconductor or insulator creates an electron in the conduction band and a hole in the valence band but we have previously neglected the Coulomb attraction between them: this can give rise to the formation of new excitations called EXCITON. An exciton is a quasiparticle, It's formed when an electron absorbs enough energy to jump to a higher energy level, leaving behind a hole. The opposite charge particles are created at the same point in space and can attract each other and form a bound electronhole pair which is called exciton. 
+The absorption process in a semiconductor or insulator creates an electron in the conduction band and a hole in the valence band but we have previously neglected the Coulomb attraction between them: this can give rise to the formation of new excitations called EXCITON. An exciton is a quasiparticle, It's formed when an electron absorbs enough energy to jump to a higher energy level, leaving behind a hole. The opposite charge particles are created at the same point in space and can attract each other and form a bound electron-hole pair which is called exciton. 
 
 In the simplest picture the exciton may be conceived as a small hydrogenic system.
 

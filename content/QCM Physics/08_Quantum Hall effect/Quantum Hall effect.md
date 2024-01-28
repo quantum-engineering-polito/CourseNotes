@@ -56,7 +56,7 @@ $$
 \left\{\frac{1}{2m}[\hat{p}-q \vec{A}(\vec{R},t)]^{2}+\cancel{ q\phi(\vec{R},t) }\right\}\psi(\vec{R},t)=-i\hbar\frac{\partial}{\partial t}\,\psi(\vec{R},t) \tag{1}
 $$
 
-Where $q \vec{A}(\vec{R}, t)$ is the momentum component related to the magnetic field #todo add link to vector potential. We decide to ignore the electrostatic interaction between the charges and thus the scalar potential is $\phi=0$
+Where $q \vec{A}(\vec{R}, t)$ is the momentum component related to the magnetic field (see [[Vector Potential]]). We decide to ignore the electrostatic interaction between the charges and thus the scalar potential is $\phi=0$
 
 Before proceeding we need to find a useful vector potential and we decide to use the **Landau gauge** that will simplify our calculations: 
 
@@ -216,7 +216,7 @@ $$
 $$ 
 # Shubnikov - de Haas effect
 
-When a current is applied between to two electrodes in a 2DEG exposed to a magnetic field.
+When a current is applied between two electrodes in a 2DEG exposed to a magnetic field.
 
 ![[classical case setup.png|300]]
 
@@ -236,13 +236,14 @@ where $n_{2D}$ is the electron density of the 2DEG.
 
 If we keep the $n_{2D}$ constant and the magnetic field is increased, the Landau level filling changes.
 
-![[Screenshot 2024-01-20 at 21.01.33.png]]
+![[DOS_B_increasing.png]]
 
 Certainly, when we increase the value of $B$, the quantity $n_B$ also increases. If we maintain $n_{2D}$ at a constant level, this implies that the factor $v$ must decrease.
 
 **When the filling factor is an integer the 2DEG does not conduct electricity.**
 
-# Origin of plateaus in QHE
+
+# Effect of edges
 
 We must take into account the impact of the edges on the energy of states within the Landau levels. When approaching the edge, the electron's orbit experiences perturbations. Due to these perturbations, the frequency of oscillation increases, resulting in shorter orbits. Since frequency and energy are directly linked, it's intuitive to conclude that the closer an electron is to the surface, the higher its energy states will be. 
 
@@ -254,7 +255,34 @@ When the Fermi level falls between two Landau levels, the bulk does not conduct 
 
 ![[conducting_edges.png|400]]
 
-To explain the plateaus in the $R_{xy}$ graph we need to rewrite the resistance in another form. Recalling from the from the classical Hall effect:
+# Effect of impurities
+
+In real materials, there are always some impurities and phonons that can scatter electrons. This effect introduce an uncertainty in the energy, we can describe this uncertainty expanding the delta-like Landau levels into Gaussians characterized by a full width at half maximum
+
+$$ 
+\Gamma = \frac{\hbar}{\tau}
+$$ 
+In which $\tau$ is the average time between two scattering events (**lifetime of the electron**)
+
+![[impurities_landau_levels.png]]
+
+In a perfectly pure material without any impurities (where $\Gamma$, the broadening of the energy levels, is zero), Landau levels are highly degenerate and sharply defined. Edge states, on the other hand, are not degenerate.
+
+![[degeneracy_usual_edge_landau_levels.png|450]]
+
+When the magnetic field ($B$) is varied in such system, the edge states immediately get occupied with electrons as they are available. Since the material is pure and there is no energy level broadening ($\Gamma$ = 0), the Fermi level jumps directly from one fully occupied Landau level to the next as the magnetic field changes. **There's no smooth transition or plateau.**
+
+# Origin of plateaus in QHE
+
+In the real world, however, materials are not perfectly pure and contain impurities. These impurities cause the energy levels to broaden ($\Gamma$ > 0), which means the energy levels are not as sharply defined. This broadening is created by impurities, that are localized so the states in the broadened regions don't contribute to the overall current and this has the effect to 'pins' the Fermi level between the Landau levels as the magnetic field changes. Rather than the Fermi level jumping sharply from one level to the next, it gets stuck in these broadened areas for a range of magnetic field values.
+
+![[pinned_fermi_level.png]]
+
+Because the Fermi level is pinned, as we vary the magnetic field, we see plateaus in the $R_{xy}$. These plateaus occur where the Fermi level is in the broadened region due to impurities.
+
+So, the plateaus in the Hall resistance that are characteristic of the Quantum Hall Effect are actually a consequence of the Fermi level being pinned between Landau levels by impurities in the material. Without these impurities and the associated broadening, there would be no plateaus—just sharp transitions as the magnetic field changes.
+
+To shows the plateaus in the $R_{xy}$ graph we need to rewrite the resistance in another form. Recalling from the from the classical Hall effect:
 
 $$ 
 R_{xy} = \frac{B_{z}}{qn} = \frac{B_{z}}{en_{2D}}
@@ -275,6 +303,8 @@ $$
 
 ![[origins_of_plateaus.png]]
 
+The are plateaus in the Hall resistance even when the filling factor $v$ is not an exact integer due to the presence of localized states caused by impurities and disorder in real materials.
+
 # QHE at the device level
 
 At the device level, edge states leads to QHE as follows
@@ -282,8 +312,6 @@ At the device level, edge states leads to QHE as follows
 ![[QH_bar.png|500]]
 
 A potential difference is applied between electrode 1 and electrode 2 to drive a current through the device. The electrons travel from electrode 1 to electrode 2. However, due to the magnetic field (not shown in the figure, but perpendicular to the plane of the device), the electrons will follow edge states that are at the boundaries of the sample.
-
-Reached the steady state thanks to the **Shubnikov-de Haas effect** we have that:
 
 $$ 
 \displaylines{
@@ -296,28 +324,3 @@ $$
 The electrons leaving 1 will first enter in 3 and then in 4 (3 and 4 are not allowed to draw current) so that $V_{1}=V_{3}=V_{4}$, For the same reason: $V_{2}=V_{6}=V_{5}$ .
 
 Since we place $V_1<V_2$ we have that $V_3<V_5$ and $V_4<V_6$ thus a hall resistance is measured between 3 and 5 or 4 and 6.
-
-# Effect of impurities
-
-In real materials, there are always some impurities and phonons that can scatter electrons. This effect introduce an uncertainty in the energy, we can describe this uncertainty expanding the delta-like Landau levels into Gaussians characterized by a full width at half maximum
-
-$$ 
-\Gamma = \frac{\hbar}{\tau}
-$$ 
-In which $\tau$ is the average time between two scattering events (**lifetime of the electron**)
-
-![[impurities_landau_levels.png]]
-
-In a perfectly pure material without any impurities (where $\Gamma$, the broadening of the energy levels, is zero), Landau levels are highly degenerate and sharply defined. Edge states, on the other hand, are not degenerate.
-
-![[degeneracy_usual_edge_landau_levels.png|450]]
-
-When the magnetic field ($B$) is varied in such system, the edge states immediately get occupied with electrons as they are available. Since the material is pure and there is no energy level broadening ($\Gamma$ = 0), the Fermi level jumps directly from one fully occupied Landau level to the next as the magnetic field changes. **There's no smooth transition or plateau.**
-
-In the real world, however, materials are not perfectly pure and contain impurities. These impurities cause the energy levels to broaden ($\Gamma$ > 0), which means the energy levels are not as sharply defined. This broadening is created by impurities, that are localized so the states in the broadened regions don't contribute to the overall current and this has the effect to 'pins' the Fermi level between the Landau levels as the magnetic field changes. Rather than the Fermi level jumping sharply from one level to the next, it gets stuck in these broadened areas for a range of magnetic field values.
-
-![[pinned_fermi_level.png]]
-
-Because the Fermi level is pinned, as we vary the magnetic field, we see plateaus in the $R_{xy}$. These plateaus occur where the Fermi level is in the broadened region due to impurities.
-
-So, the plateaus in the Hall resistance that are characteristic of the Quantum Hall Effect are actually a consequence of the Fermi level being pinned between Landau levels by impurities in the material. Without these impurities and the associated broadening, there would be no plateaus—just sharp transitions as the magnetic field changes.
