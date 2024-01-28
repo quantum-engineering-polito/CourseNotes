@@ -154,7 +154,6 @@ In the second step above we used the fact that $\mathbf{V} / 2\pi = 3Nv^{3} /\om
 
 The plot above shows that the Debye heat capacity approaches a constant value equal to $3N k_{B}$ for $T \gg \theta_{D}$.
 
-
 ### Behaviour at low temperatures
 
 In a [[Free electron model|previous lecture]], we saw that the contribution to the heat capacity **at low temperature** given by electrons is proportional to $T$ and we anticipated that the phonons contribution is proportional to $T^{3}$. We now want to prove this statement.
@@ -166,7 +165,6 @@ C_{V} = 234 N k_{B}\left( \frac{T}{\theta_{D}} \right)^{3} \propto T^{3}
 $$
 
 (the calculation is omitted, the important thing is that the integral doesn't depend on $T$ and thus doesn't change the $T^{3}$ term).
-
 
 This result can be interpreted in the following way:
 

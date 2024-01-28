@@ -3,8 +3,7 @@ nextnote: "[[Flying Electron Qubit]]"
 author: BabelDev0
 authorlink: https://github.com/BabelDev0
 ---
-The Aharonov–Bohm effect is a quantum-mechanical phenomenon in which an electrically charged particle is affected by an electromagnetic potential $A$ despite being confined to a region in which both the magnetic field 
-$B$ and the $E$ and electric field are zero. The most commonly described case, sometimes called the Aharonov–Bohm solenoid effect, takes place when the wave function of a charged particle passing around a long solenoid experiences a phase shift as a result of the enclosed magnetic field, despite the magnetic field being negligible in the region through which the particle passes. 
+The Aharonov–Bohm effect is a quantum-mechanical phenomenon in which an electrically charged particle is affected by an electromagnetic potential $A$ despite being confined to a region in which both the magnetic field $B$ and the $E$ and electric field are zero. The most commonly described case, sometimes called the Aharonov–Bohm solenoid effect, takes place when the wave function of a charged particle passing around a long solenoid experiences a phase shift as a result of the enclosed magnetic field, despite the magnetic field being negligible in the region through which the particle passes. 
 
 The AB effect shows also that $A$ is not strictly related to $B$, and that is not only a mathematical trick to solve Schrödinger equation in a simpler way but a physical quantity.
 
@@ -66,7 +65,7 @@ we can plot $A$ versus r and it becomes evident that there are regions in space 
 
 ![[Aversusr.svg|400]]
 
-# SE of the system
+# Schrödinger eq of the system
 
 We start from the general Schrödinger equation like in the case of the Quantum Hall effect :
 
@@ -100,7 +99,7 @@ $$
 We recognize that the total phase of a wave function is given by
 
 $$ 
-\phi = \phi^{0} + \frac{q}{\hbar}\int_{\bar{r}_{0}}^{\bar{r}} A(\bar{r}') \, d\bar{r}'
+\phi = \phi^{0} - \frac{q}{\hbar}\int_{\bar{r}_{0}}^{\bar{r}} A(\bar{r}') \, d\bar{r}'
 $$
 
 1. **The Magnetic Vector Potential Contribution**: This term represents the phase shift acquired by a charged particle due to the presence of a magnetic vector potential. This integral is evaluated along the path of the particle from an initial point $r_0$​ to a final point $r$. This term is responsible for the Aharonov-Bohm effect, where the particle acquires an additional phase in regions where the magnetic field is zero but the vector potential is non-zero.
@@ -122,9 +121,9 @@ It's important to note that in general, the amplitudes ($r$, $t$) are complex qu
 
 $$ 
 \displaylines{
-t_{1} = |t_{1}| e^{\phi_{1}}
+t_{1} = |t_{1}| e^{i\phi_{1}}
 \\\\
-t_{2} = |t_{2}| e^{\phi_{2}}
+t_{2} = |t_{2}| e^{i\phi_{2}}
 }
 $$
 

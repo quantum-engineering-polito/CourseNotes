@@ -151,7 +151,7 @@ $$
 U_{tot}(R_0) = -\underbrace{ \frac{N\alpha q^{2}}{4 \pi \varepsilon_0} \frac{1}{R_0} }_{ \text{Madelung energy} } \left( 1 - \frac{\rho}{R_0} \right)
 $$
 
-Since usually $\rho < 0.1 \cdot R_0$ the Madelung energy contains $\simeq$ 90% fo the overall cohesion energy.
+Since usually $\rho < 0.1 \cdot R_0$ the Madelung energy contains $\simeq$ 90% of the overall cohesion energy.
 
 ### Example: Madelung constant
 

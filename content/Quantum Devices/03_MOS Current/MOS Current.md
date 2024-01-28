@@ -39,11 +39,13 @@ $$
 
 The channel potential is known at the extremities of the channel, being:
 
-$$ \displaylines{
+$$
+\displaylines{
 \varphi_{ch}(0)=V_{SB} \\
 and\\
 \varphi_{ch}(L)=V_{DB}}
 $$
+
 the integral becomes
 
 $$ 

@@ -7,7 +7,7 @@ draft: false
 # Transport Matrix
 
 A generalize "barrier" is any disturbance of an otherwise flat potential.
-We will start considering thte step potential problem.
+We will start considering the step potential problem.
 
 ![[step_barrier.svg|500]]
   
@@ -157,7 +157,7 @@ r = -\frac{T_{21}^{n1}}{T_{22}^{n1}}
 }
 $$
 
-If our system has a time-reversal symmetry and is symmetric respect to the barriers, the transfer matrix's determinant is equal to 1 so in thus cases
+If our system is invariant respect to time inversion and is symmetric respect to the barriers, the transfer matrix's determinant is equal to 1 so in thus cases
 
 $$ 
 \displaylines{
@@ -165,7 +165,7 @@ t = \frac{1}{T_{22}}
 }
 $$
 
-and we have that  $T_{11}=T_{22}^{*}$ and  $T_{11}=T_{22}^{*}$.
+and we have that  $T_{11}=T_{22}^{*}$ and  $T_{12}=T_{21}^{*}$.
 
 We can write the total transmission probability as:
 

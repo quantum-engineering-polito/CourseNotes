@@ -2,6 +2,7 @@
 nextnote: "[[Quantum Hall effect]]"
 author: BabelDev0
 authorlink: https://github.com/BabelDev0
+links: https://www.youtube.com/watch?v=rphCDpDuMNU&list=PL3_a7egKrpI49r2F-euhMe03x0iBjJs-d
 ---
 # Overview
 
@@ -32,7 +33,7 @@ Due to their high electron mobility, HEMTs can operate at frequencies up to seve
 
 # Contacts
 
-Source and Drain contact must be prepared and create in such a way that there are deep and reach zone of highly n-type material, and the source and drain must form ohmic contacts with the semiconductor material where the 2DEG is located (at the interface). In contrast the gate electrode (diameter < 0.5 $\micro m$) is prepared depositing a metal lay directly in contact with the semiconductor, creating a strong depletion region, this type of contact are called **Schottky Contacts** or **Schottky junctions**.
+Source and Drain contact must be prepared and create in such a way that there are deep and reach zone of highly n-type material, and the source and drain must form ohmic contacts with the semiconductor material where the 2DEG is located (at the interface). In contrast the gate electrode (diameter < 0.5 $\micro m$) is prepared depositing a metal layer directly in contact with the semiconductor, creating a strong depletion region, this type of contact are called **Schottky Contacts** or **Schottky junctions**.
 
 
 ![[HEMT_device.png|400]]
@@ -53,11 +54,11 @@ the gate electron witch is use to control the conductivity of the channel, is el
 
 ![[schottke_deplition_region.png]]
 
-when a positive voltage is apply between drain and source an electric field is created changing the band diagram at the interface and forcing the electron in the channel to move from the source towards the drain. Instead the gate voltage is utilised to shift the fermi level from the gate metal to one value inside the undoped GaAs layer. 
+when a positive voltage is apply between drain and source an electric field is created changing the band diagram at the interface and forcing the electron in the channel to move from the source towards the drain. Instead the gate voltage is utilised turn on or off the device.
 
 ![[HEMT_apply_bias.png]]
 
-Due to the strong Schottky depletion layer, donors in the AlGaAs layer has been depleted and this leads to the fact that the most of the voltage drop occurs in this layer, creating a quasi-insulating layer barrier between gate and 2DEG. Depending on the gate voltage the triangular well is lowered or raised and the accumulation layer is emptied or filled.
+Due to the strong Schottky depletion layer, donors in the AlGaAs layer has been depleted and this leads to the fact that the most of the voltage drop occurs in this layer, creating a quasi-insulating layer barrier between gate and 2DEG. Depending on the gate voltage the triangular well is lowered ($-V_g$) or raised($+V_g$) and the accumulation layer is emptied or filled.
 
 ![[HEMT_VG.png]]
 
