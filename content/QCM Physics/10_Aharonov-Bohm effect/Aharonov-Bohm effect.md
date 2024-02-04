@@ -9,7 +9,7 @@ The AB effect shows also that $A$ is not strictly related to $B$, and that is no
 
 # Aharonov–Bohm solenoid effect
 
-A solenoid generates a magnetic field only in the inner part of the loop, thus In the ring arms there is no B. Since $A$ is not unique respect to $B$ we need to select a suitable $A$ for our problem and we use the Coulomb gauge:
+A solenoid generates a magnetic field only in the inner part of the loop, thus in the ring arms (in grey) there is no $B$. Since $A$ is not unique with respect to $B$, we need to select a suitable $A$ for our problem and we use the Coulomb gauge:
 
 $$ 
 \nabla \cdot A = 0
@@ -61,11 +61,11 @@ A(x)= \frac{a^{2}}{2r}B
 }
 $$
 
-we can plot $A$ versus r and it becomes evident that there are regions in space where the value of B is zero while the value of A is not:
+we can plot $A$ versus r and it becomes evident that there are regions in space where the value of $B$ is zero while the value of $A$ is not:
 
 ![[Aversusr.svg|400]]
 
-# Schrödinger eq of the system
+# Schrödinger equation of the system
 
 We start from the general Schrödinger equation like in the case of the Quantum Hall effect :
 
@@ -88,9 +88,9 @@ Substituting in the Schrödinger equation:
 
 ![[free_particle_SE.png|500]]
 
-the new equation is the SE of the free particle much simpler than the previous one. 
+the new equation is the Schrödinger equation of the free particle is much simpler than the previous one. 
 
-As we have seen the effect of A is to change the phase of the wave function
+As we have seen the effect of $A$ is to change the phase of the wave function
 
 $$ 
 \Psi = \Psi' \exp(\ i \frac{q}{\hbar}\int_{\bar{r}_{0}}^{\bar{r}} A(\bar{r}') \, d\bar{r}')
@@ -142,7 +142,7 @@ Depending on the path taken, the electron k and A will be either parallel or ant
 
 ![[AE_paths.png|400]]
 
-We use the new definition of the phase that includes $A$ to find the phase difference between path 1 and 2 from the fixed ref point $r_0$ to a position past the ring $r$
+We use the new definition of the phase that includes $A$ to find the phase difference between path 1 and 2 from the fixed reference point $r_0$ to a position past the ring $r$
 
 $$ 
 \displaylines{

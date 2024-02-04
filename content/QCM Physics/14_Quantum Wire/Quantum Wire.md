@@ -4,7 +4,7 @@ author: BabelDev0
 authorlink: https://github.com/BabelDev0
 draft: false
 ---
-In Quanutm Wire we have 
+In a quantum wire we have 
 
 $$ 
 \displaylines{
@@ -17,7 +17,7 @@ We have 2 dimension of confinement and one degree of freedom for electrons.
 
 ![[Quantum Wire.png|400]]
 
-Let's start form the Schrödinger eq.
+Let's start form the Schrödinger equation
 
 $$
 -\frac{\hbar}{2m} \nabla^{2} \Psi(\bar{r})+V(\bar{r})\Psi(\bar{r}) = E \Psi (\bar{r})
@@ -32,21 +32,21 @@ V(\bar{r}) = V(x)+V(y)+V(z)
 V_{z} = 0
 \\\\
 V_{x},V_{y}=\begin{cases}  
-0 \qquad -\frac{a_{x}}{2} \leq x \leq \frac{a_{x}}{2} \text{ and } -\frac{a_{y}}{2} \leq y \leq \frac{a_{y}}{2}\\\\
-\infty \qquad \text{otherwise}\\
+0 && -\frac{a_{x}}{2} \leq x \leq \frac{a_{x}}{2} \text{ and } -\frac{a_{y}}{2} \leq y \leq \frac{a_{y}}{2}\\\\
+\infty && \text{otherwise}\\
 \end{cases}
 }
 $$
 
 As we did before (in other scenarios) we solve separately the three dimensions and we sum up the energies and multiply the wavefunctions to get the overall solutions
 
-Along z direction:
+Along $z$ direction:
 
 $$
 \psi(z) = \frac{1}{\sqrt{ L_{z} }} e^{ i k_{z} \bar{r} } \qquad E_{z} = \frac{\hbar^{2} k_{z}^{2}}{2m}
 $$
 
-Along x,y directions, due to the fact that the potential goes to the infinity at the edges we have the boundary conditions:
+Along $x,y$ directions, due to the fact that the potential goes to the infinity at the edges we have the boundary conditions:
 
 $$
 \psi_{x}\left( -\frac{a_{X}}{2} \right)=\psi_{x}\left( \frac{a_{X}}{2}\right)=\psi_{x}\left( -\frac{a_{y}}{2} \right)=\psi_{y}\left( \frac{a_{X}}{2} \right) = 0
@@ -62,7 +62,7 @@ $$
 }
 $$
 
-**These (unlike in $z$) are stationaries waves They do not propagate in space but they are confined in $x,y$**
+**These (unlike in $z$) are stationaries waves. They do not propagate in space but they are confined in $x,y$**
 
 ![[stationary_states.png|400]]
 

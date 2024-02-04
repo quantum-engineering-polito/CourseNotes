@@ -1,5 +1,5 @@
 ---
-nextnote: 
+nextnote: "[[QW Superlattice]]"
 author: BabelDev0
 authorlink: https://github.com/BabelDev0
 draft: false
