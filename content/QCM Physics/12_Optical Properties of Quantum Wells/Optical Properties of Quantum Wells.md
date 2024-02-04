@@ -201,7 +201,7 @@ The confinement energy is inversely proportional to $d^2$ , implying that narrow
 
 The quantization of the motion in the z-direction has three main consequences:
 
-1) The quantization energy shifts the effective band edge to higher energy. Indeed the quantized energy levels are higher in energy than the unconfined states in the bulk material due to the Heisenberg Uncertainty Principle, which states that more tightly confining a particle in space increases the uncertainty in its momentum, and thus its kinetic energy.
+1) The quantization energy shifts the effective band edge to higher energy. Indeed the quantized energy levels are higher in energy than the unconfined states in the bulk material.
    
 2) The density of states becomes a stepwise function, whereas the density of states of in a 3D material is proportional to $\sqrt{ E }$.
    
@@ -214,7 +214,7 @@ Let’s analyse the transitions between occupied and unoccupied states in a QW:
 
 ![[qw_light.png|200]]
 
-In the typical experimental light is directed along the $z$-axis into the quantum well. Since the electric field of light is always perpendicular to the direction of propagation, if the light is directed along $z$, there is no electric field component in that direction. Instead, the light is polarized in the $xy$-plane, meaning the electric field vector $E_0$​ only has components in the $x$ and $y$ directions. Consequently, when calculating the matrix element for the interaction of light with the electron in the quantum well, only the $x$ and $y$ components of the electron's position $r$ are relevant.
+In the typical experiment, light is directed along the $z$-axis into the quantum well. Since the electric field of light is always perpendicular to the direction of propagation, if the light is directed along $z$, there is no electric field component in that direction. Instead, the light is polarized in the $xy$-plane, meaning the electric field vector $E_0$​ only has components in the $x$ and $y$ directions. Consequently, when calculating the matrix element for the interaction of light with the electron in the quantum well, only the $x$ and $y$ components of the electron's position $r$ are relevant.
 
 Let us assume the electric field is along x only (the more general result is just a rotation):
 

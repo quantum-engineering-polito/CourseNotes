@@ -49,16 +49,16 @@ $$
 Along $x,y$ directions, due to the fact that the potential goes to the infinity at the edges we have the boundary conditions:
 
 $$
-\psi_{x}\left( -\frac{a_{X}}{2} \right)=\psi_{x}\left( \frac{a_{X}}{2}\right)=\psi_{x}\left( -\frac{a_{y}}{2} \right)=\psi_{y}\left( \frac{a_{X}}{2} \right) = 0
+\psi_{x}\left( -\frac{a_{x}}{2} \right)=\psi_{x}\left( \frac{a_{x}}{2}\right)=\psi_{y}\left( -\frac{a_{y}}{2} \right)=\psi_{y}\left( \frac{a_{y}}{2} \right) = 0
 $$
 
 so the solutions are:
 
 $$
 \displaylines{
-\psi_{x} = \frac{2}{\sqrt{ a_{x} }}\sin\left( \frac{n_{x}\pi x}{a_{x}} \right)
+\psi_{x} = \sqrt{\frac{2}{ a_{x} }}\sin\left( \frac{n_{x}\pi x}{a_{x}} \right)
 \\\\
-\psi_{y} = \frac{2}{\sqrt{ a_{y} }}\sin\left( \frac{n_{y}\pi y}{a_{y}} \right)
+\psi_{y} = \sqrt{\frac{2}{a_{y} }}\sin\left( \frac{n_{y}\pi y}{a_{y}} \right)
 }
 $$
 
