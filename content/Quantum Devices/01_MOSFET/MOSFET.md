@@ -1,7 +1,7 @@
 ---
 nextnote: "[[MOS Charge]]"
 author: Eva
-authorlink:
+authorlink: https://github.com/deskclam
 ---
 # In a nutshell
 
@@ -25,9 +25,11 @@ Along the x axis there is the actual MOS structure (a capacitor) and over the y 
 
 ### The two *pn* junctions
 
-The two junctions form two barriers from source to drain, due to the built-in potential even at equilibrium (like usual single pn junction). When the juntions are reverse biased, the barriers are higher and the potential difference is $V_{bi}-V_{A}$ 
+The two junctions form two barriers from source to drain, due to the built-in potential even at equilibrium (like usual single pn junction). When the junctions are reverse biased, the barriers are higher and the potential difference is $V_{bi}-V_{A}$ where $V_{A}$ is the voltage applied between the bulk and both source and drain
+
 ![[MOSFETpnJunc.png | 450]]
-this prevents the flow of current between source and drain in usual conditions (without the MOS structure).
+
+This prevents the flow of current between source and drain in usual conditions (without the MOS structure).
 
 ### The MOS capacitor
 
@@ -46,10 +48,13 @@ Depending on the external bias applied, in the MOS capacitor there are four poss
 #### 1) Flat-band
 
 When a special bias ($V_{fb}$) is applied to the capacitor, the flat-band condition occurs. This means that the energy band of the substrate is flat at the $Si-SiO_{2}$ interface. The flatband voltage is equal to the difference between the Fermi levels at the two terminals: 
+
 $$
-V_{fb}=\varphi_{g}-\varphi_{s} 
+V_{fb}=\psi_{g}-\psi_{s} 
 $$
+
 where $\psi_{g}$ and $\psi_{s}$ are the gate and semiconductor work function respectively, in volts. 
+
 ![[FlatBand.png | 500]]
 
 #### 2) Accumulation
@@ -69,7 +74,9 @@ This condition occurs when $V_{g}>V_{fb}$. The bands at the interface are bent i
 #### 4) Invertion
 
 ##### Threshold
+
 ![[MOSth.png | 500]]
+
 If from depletion the bias applied is increased, the bending in bands is increased to the point that $E_{f}$ near the $Si-SiO_{2}$ interface is close enough to $E_{c}$ and this area is no longer in depletion but at the *threshold of inversion*. Invertion means that the surface is inverted from p-type to n-type in terms of carriers, or electron rich. The threshold is often defined as the condition when the concentration of electrons at the surface is equal to the bulk doping concentration (of acceptors)
 
 The threshold voltage is than defined as: 

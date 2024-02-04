@@ -1,5 +1,6 @@
 ---
 nextnote: 
 author: 
-authorlink:
+authorlink: 
+draft: false
 ---

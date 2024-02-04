@@ -1,7 +1,8 @@
 ---
-next_note: "[[Bloch theorem]]"
+nextnote: "[[Bloch theorem]]"
+author: Giacomo, Eva
+authorlink: https://github.com/gamberoillecito,https://github.com/deskclam
 ---
-
 >[!quote] Where *Ibach Luth* is mentioned we refer to
 >Ibach Luth
 >*Solid-State Physics
@@ -40,7 +41,7 @@ We will always assume the following two approximations:
 
 In the free electron model, we will also assume that the electrons are free, which means that the potential is 0 everywhere.
 
-#todo drawing
+![[Q&M Physics Intro/Part 2/04_Free electron model/attachments/periodic potential.png|300]]
 
 ## Sommerfeld - Bethe model
 
@@ -64,7 +65,6 @@ V(x,y,z) = \begin{cases}
 \infty && \text{outside}
 \end{cases}
 $$
-
 
 The boundary conditions are the **Born - Von Karman** or **periodic boundary** conditions:
 
@@ -95,6 +95,7 @@ $$
 c = \frac{1}{\sqrt{ \mathbf{V} }}
 }
 $$
+
 where $\mathbf{V} = L^{3}$ is the volume of the cube.
 
 ### Energy eigenvalues
@@ -121,9 +122,10 @@ $$
 \begin{align}
 \Psi(x + L, y, z) &= \frac{1}{\sqrt{ \mathbf{V} }} e^{ i (k_{x}x + k_{x}L + k_{y}y +k_{z}z) }  \\
 &= \frac{e^{ i k_{x}L }}{\sqrt{ \mathbf{V} }} ~ e^{ i (k_{x}x + k_{y}y +k_{z}z) }  \\
-&= e^{ i k_{x} } \Psi(x,y,z)
+&= e^{ i k_{x} L} ~ \Psi(x,y,z)
 \end{align}
 $$
+
 which means that the exponential has to be equal to $1$ and thus 
 
 $$
@@ -140,7 +142,6 @@ $$
 k_{z} = \frac{2\pi n_{z}}{L} \qquad n_{z} \in \mathbb{Z}
 $$
 
-
 Notice that since $L$ is a macroscopic value, the $k$s are **quasi-continuous**.
 
 ### Density of states
@@ -151,9 +152,9 @@ $$
 D(E) = \frac{1}{\mathbf{V}} \frac{dN(E)}{dE} \quad [cm^{-3} \cdot eV^{-1}] \tag{2}
 $$
 
-#todo add drawing
+![[Q&M Physics Intro/Part 2/04_Free electron model/attachments/excalidraw/DOS.svg|400]]
 
-The volume of the single state (in green) is given by $(2\pi/L)^{3} = 8\pi^{2} /\mathbf{V}$.
+The volume of the single state (in green) is given by $(2\pi/L)^{3} = 8\pi^{3} /\mathbf{V}$.
 
 If we define $\Omega$ as the generic volume in k-space then the number of states is given by 
 
@@ -184,12 +185,9 @@ $$
 D(E) = \frac{m}{\pi^{2}\hbar^{2}}\left( \frac{2mE}{\hbar^{2}}^{1/2} \right) \propto \sqrt{ E }
 $$
 
-#todo add drawing
-
-#todo add fermi dirac drawing
+![[dos2.png|300]]
 
 #todo pagg 16/17 bianco ???
-
 
 ### Energy of Fermi gas @ T = 0K
 
@@ -206,6 +204,7 @@ u &= \int_{0}^{E_F} D(E) E \, dE  \\
 u &= \frac{3}{5}n E_F
 \end{align} 
 $$
+
 In $*$ we used the fact that $E_F^{3/2} = (\hbar^{2}/2m)^{3/2} 3\pi^{2} n$ ( #todo where does it come from?).
 
 From this we can see that, as a consequence of the Pauli exclusion principle, even at $T = 0K$ the energy of the gas is non zero.
@@ -223,10 +222,9 @@ dN &= D(E) dE  \\
 \end{align}
 $$
 
-#todo add drawing and explanation
+![[0K.png|400]]
 
 ### Fermi gas @ T > 0K
-
 
 
 $$
@@ -324,90 +322,127 @@ $$
 
 From what we just saw, we would expect that the specific heat of the electron gas would increase linearly with the number of electrons but experiments show that this is not the case. What we observe is that metals follow the **Dulong-Petit** law, where the specific heat tends to a constant value $3R$ as temperature increases.
 
-The reason is simple: electrons, in contrast to a classical gas, can only gain energy if they can move into free states in their energetic neighbourhood. The number of such electrons, expressed as a fraction of the total. 
+The reason is simple: electrons, in contrast to a classical gas, can only gain energy if they can move into free states in their energetic neighbourhood. Looking at what we saw [[#^1e2627|before]], this can be expressed as the fact that the electrons that can "move" are only the ones in the region $\Delta E$, which is much smaller that $E_F$.
 
-Looking at what we saw [[#^1e2627|before]], this can be expressed as the fact that the electrons that can "move" are only the ones in the region $\Delta E$, which is much smaller that $E_F$.
-
-#todo add plot on my notes
+![[dulong petit.png|300]]
 
 We now want to show that the specific heat of the electrons is negligible compared to the one of the lattice.
 
-
-To do this we want to calculate $c_V$ of the electrons. First of all we need the internal increase in internal energy density $\Delta{u(T)}$ 
+To do this we want to calculate $c_V$ of the electrons. First of all we need the increase in internal energy density $\Delta{u(T)}$ 
 
 $$
 \Delta{u(T)} = \int_{0}^{+\infty} E D(E) f(E,T) \, dE-\int_{0}^{+\infty}ED(E) \, dE \tag{3}  
 $$
+
 Where the second integral is the density of internal energy at $T=0K$ 
-And, from the definition of specific heat, deriving $(3)$ we get 
+
+From the definition of specific heat, deriving $(3)$ we get 
+
 $$ 
 c_{V} = \frac{ \partial u }{ \partial T } \Bigg|_{\mathbf{V}} = \int_{0}^{+\infty} E D(E) \frac{ \partial f }{ \partial T } \, dE \tag{4} 
 $$
+
 In order to simplify the calculation we can exploit the following relation:
+
 $$ 
 E_{F} \frac{\partial{n}}{\partial T} =0= E_{F} \int_{0}^{\infty} D(E)\frac{ \partial{f(E,T)}}{\partial{T}} \, dE 
 \tag{5} $$
-Where n is the total concentration of free electrons, which derived is 
+
+Where n is the total concentration of free electrons, which derived gives 
 
 $$ 
 E_{F}\cdot n = E_{F} \int_{0}^{\infty} D(E)f(E,T) \, dE 
 \tag{6} $$
-Subtracting $(6)$ from $(4)$ $c_{v}$ is obtained as: 
+
+Subtracting $(6)$ from $(4)$, $c_{v}$ is obtained as: 
+
 $$ 
 c_{v}= \int_{0}^{\infty} (E-E_{F}) D(E)\frac{ \partial{f(E,T)}}{\partial{T}} \, dE 
 \tag{7} 
 $$
-Focusing around $E_{F}$, because the electron can only gain energy if they can move into free states in their energetic neighborhood, we can see that the $D(E)$ is nearly constant in the range and can be approximated by $D(E_{F})$ 
+
+Focusing around $E_{F}$, because the electron can only gain energy if they can move into free states in their energetic neighbourhood, we can see that the $D(E)$ is nearly constant in the range and can be approximated by $D(E_{F})$ 
+
 $$ 
 c_{v} \simeq D(E_{F})\int_{0}^{\infty} (E-E_{F})\frac{ \partial{f(E,T)}}{\partial{T}} \, dE 
 \tag{8} 
 $$
+
 and the derivative of the Fermi function is:
+
 $$ 
 \frac{\partial{f}}{\partial{T}}=\frac {E-E_{F}}{k_{B}T^{2}}\frac{exp(\frac{E-E_{F}}{k_{B}T})}{[exp(\frac{E-E_{F}}{k_{B}T})+1]^{2}} \tag{9}
 $$
+
 substituting $(9)$ in $(8)$
+
 $$
 c_{v}=D(E_{F}) \int_{0}^{\infty} \frac{(E-E_{F})^{2}}{k_{B}T^{2}}\frac{exp(\frac{E-E_{F}}{k_{B}T})}{[exp(\frac{E-E_{F}}{k_{B}T})+1]^{2}}  \, dE \tag{10}
 $$ with $x=\frac{E-E_{F}}{k_{B}T}$, $dx=\frac{dE}{k_{B}T}$ 
+
+
+
 $$
 c_{v}=Tk_{B}^{2}D(E_{F})\int_{-\frac{E_{F}}{k_{B}T}}^{\infty}  \frac{x^{2}e^{x}}{(e^{x}+1)^{2}}\, dx \tag{11}
-$$ and since $E_{F}\gg k_{B}T \implies -\frac{E_{F}}{k_{B}T}\to-\infty$
+$$
+and since $E_{F}\gg k_{B}T \implies -\frac{E_{F}}{k_{B}T}\to-\infty$
+
 $$
 c_{v}=Tk_{B}^{2}D(E_{F})\int_{-\infty}^{\infty}  \frac{x^{2}e^{x}}{(e^{x}+1)^{2}}\, dx \tag{12}
 $$
+
 The integral is a standard one, whose result can be found in tables:
+
 $$
 \int_{-\infty}^{\infty}  \frac{x^{2}e^{x}}{(e^{x}+1)^{2}}\, dx=\frac{\pi^{2}}{3}  \tag{13}
 $$
+
 and therefore
+
 $$
 c_{v}\simeq Tk_{B}^{2}D(E_{F})\frac{\pi^{2}}{3} \tag{14}
-$$ the specific heat is proportional to the temperature
+
+$$
+
+the specific heat is proportional to the temperature.
+
 If we want to express $c_{v}$ as a function of $n$ we need to calculate the integral 
+
 $$ 
 n=\int_{0}^{E_{F}}D(E) \, dE \tag{15}
 $$
+
 being $D(E)=\frac{m}{(\pi \hbar)^{2}} (\frac{2mE}{\hbar^{2}})^{1/2}$ we can rewrite it as:
+
 $$ 
 \displaylines{
 D(E)=D(E) \frac{E_{F}^{1/2}}{E_{F}^{1/2}} =\\ =\frac{m}{(\pi \hbar)^{2}} \left( \frac{2m}{\hbar^{2}} \right)^{1/2} E_{F}^{1/2} \frac{E^{1/2}}{E_{F}^{1/2}} = D(E_{F})\left( 
 \frac{E}{E_{F}} \right)^{1/2} \tag{16}
 }
 $$ 
+
 and use it in the calculation of $(15)$ we can obtain the DOS at $E_{F}$:
+
 $$ 
 D(E_{F})=\frac{3}{2} \frac{n}{E_{F}} \tag{17}
 $$
+
 and the specific heat is
+
 $$ 
 c_{v}=\frac{\pi^{2}}{2}nk_{B} \frac{T}{T_{F}}
 $$
+
 as $E_{F}=k_{B}T_{F}$.
-The specific heat is again proportional to the temperature, if the temperature is lower than $T_{F}$, the contribution to the whole specific heat (with phonon contribution) is low
-The expected $c_{v}$ relation at low temperature is:
+
+The specific heat is again proportional to the temperature, if the temperature is lower than $T_{F}$, the contribution to the whole specific heat (with phonon contribution) is low.
+
+The expected $c_{v}$ relation **at low temperature** is:
+
 $$ 
 c_{v}=\gamma T+\beta T^3
-$$ with $\gamma,\beta = const$. 
+
+$$
+with $\gamma,\beta = const$. 
 
 #todo add graph (Cv/T on T^2) 

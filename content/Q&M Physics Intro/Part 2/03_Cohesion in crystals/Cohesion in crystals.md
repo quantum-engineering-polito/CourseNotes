@@ -1,5 +1,7 @@
 ---
 nextnote: "[[Free electron model]]"
+author: Giacomo
+authorlink: https://github.com/gamberoillecito
 ---
 
 **Cohesion energy** is the energy required to separate (bring at $\infty$ distance) the atoms of a crystal.
@@ -26,6 +28,7 @@ The repulsive term can be also written as
 $$
 U_{\text{rep}} = \lambda e^{ -R/\rho }
 $$
+
 where, again, $\lambda$ and $\rho$ are empirical parameters.
 
 <iframe src="https://www.desmos.com/calculator/exb9kcaotw?embed" width="500" height="500" style="border: 1px solid #ccc" frameborder=0></iframe>
@@ -37,7 +40,7 @@ We want to find the coordinates of the minimum of the potential which correspond
 We can do that by solving 
 
 $$
-\frac{ d U }{ \partial R}\Biggr{\lvert}_{R_{req}} = 0 
+\frac{ d U }{dR}\Biggr{\lvert}_{R_{req}} = 0 
 $$
 
 where $R_{eq}$ is the **equilibrium distance**. We get: 
@@ -69,7 +72,7 @@ $$
 p_{ij} = \frac{\text{distance between two atoms}}{\text{distance between first neighbours}} = \frac{R_{ij}}{R}
 $$
 
-#todo add drawing
+![[eq ret const.svg|300]]
 
 we can rewrite 
 
@@ -83,9 +86,11 @@ $$
 where the two summations depend only on the kind of crystalline structure and thus can always be calculated.
 
 The equilibrium distance for FCC can be calculated as
+
 $$
 \frac{d~U_{tot}}{dR}\Biggr{|}_{R_0} = 0
 $$
+
 Since the summations can be calculated, the only unknown left is the ratio $\sigma/R_0$, which can be calculated as well. For the FCC structure, for example, $\sigma/R_0 = 1.09$.
 
 ## Ionic crystals
@@ -105,8 +110,6 @@ Where $U_{ij}$ is the interaction between ion $i$ and ion $j$. In the sum ($\pm$
 If we have $2N$ ions $U_{tot} = \frac{1}{2} \cdot 2NU_{i} = NU_{i} = N \sum_{j, i\neq j} U_{ij}$.
 
 As before, we can introduce the **geometrical factor** $p_{ij}$
-
-#todo add drawing
 
 So 
 
@@ -142,23 +145,22 @@ $$
 \exp\left( -\frac{R_0}{\rho} \right) = \frac{\alpha\rho q^{2}}{4\pi\varepsilon_0 z \lambda R_0^{2}}
 $$
 
-
 which can be substituted in $(2)$ to calculate $U_{tot}(R_0)$: 
 
 $$
 U_{tot}(R_0) = -\underbrace{ \frac{N\alpha q^{2}}{4 \pi \varepsilon_0} \frac{1}{R_0} }_{ \text{Madelung energy} } \left( 1 - \frac{\rho}{R_0} \right)
 $$
 
-Since usually $\rho < 0.1 \cdot R_0$ the Madelung energy contains $\simeq$ 90% fo the overall cohesion energy.
+Since usually $\rho < 0.1 \cdot R_0$ the Madelung energy contains $\simeq$ 90% of the overall cohesion energy.
 
 ### Example: Madelung constant
 
 >[!quote] Kittel, page 64
 
-
 Let's consider the example of a 1D crystal like the one in the image
 
 ![[madelung 1D.svg|400]]
+
 From the definition of the Madelung constant and from $(1)$ we get
 
 $$
@@ -180,6 +182,7 @@ $$
 \alpha &= 2\left[ 1  - \frac{1}{2} + \frac{1}{3} - \frac{1}{4} + \dots\right] \\
 \end{align}
 $$
+
 The series converges to 
 
 $$

@@ -1,0 +1,212 @@
+{
+  "settings_version": "0.21.0",
+  "debug": false,
+  "obsidian_command_palette_prefix": "Execute: ",
+  "preview_variables_in_command_palette": true,
+  "show_autocomplete_menu": true,
+  "working_directory": "",
+  "default_shells": {
+    "win32": "PowerShell.exe"
+  },
+  "environment_variable_path_augmentations": {},
+  "show_installation_warnings": true,
+  "error_message_duration": 20,
+  "notification_message_duration": 10,
+  "execution_notification_mode": "disabled",
+  "output_channel_clipboard_also_outputs_to_notification": true,
+  "output_channel_notification_decorates_output": true,
+  "enable_events": true,
+  "approve_modals_by_pressing_enter_key": true,
+  "command_palette": {
+    "re_execute_last_shell_command": {
+      "enabled": true,
+      "prefix": "Re-execute: "
+    }
+  },
+  "max_visible_lines_in_shell_command_fields": false,
+  "shell_commands": [
+    {
+      "id": "v91ja29t5k",
+      "platform_specific_commands": {
+        "default": "git pull -q"
+      },
+      "shells": {
+        "win32": "PowerShell.exe"
+      },
+      "alias": "git update",
+      "icon": "arrow-big-down",
+      "confirm_execution": false,
+      "ignore_error_codes": [],
+      "input_contents": {
+        "stdin": null
+      },
+      "output_handlers": {
+        "stdout": {
+          "handler": "notification",
+          "convert_ansi_code": true
+        },
+        "stderr": {
+          "handler": "notification",
+          "convert_ansi_code": true
+        }
+      },
+      "output_wrappers": {
+        "stdout": null,
+        "stderr": null
+      },
+      "output_channel_order": "stdout-first",
+      "output_handling_mode": "buffered",
+      "events": {
+        "on-layout-ready": {
+          "enabled": true
+        }
+      },
+      "command_palette_availability": "enabled",
+      "preactions": [],
+      "variable_default_values": {}
+    },
+    {
+      "id": "8oni6x3grn",
+      "platform_specific_commands": {
+        "default": "cd ..\ngit stash -q\ngit pull -q\ngit stash pop -q\ngit add .\ngit commit -m \"{{_commit_message}}\" -q\ngit push -q\necho \"Last commit:\"\ngit log --max-count=1"
+      },
+      "shells": {},
+      "alias": "git backup",
+      "icon": "arrow-big-up",
+      "confirm_execution": false,
+      "ignore_error_codes": [],
+      "input_contents": {
+        "stdin": null
+      },
+      "output_handlers": {
+        "stdout": {
+          "handler": "notification",
+          "convert_ansi_code": true
+        },
+        "stderr": {
+          "handler": "notification",
+          "convert_ansi_code": true
+        }
+      },
+      "output_wrappers": {
+        "stdout": null,
+        "stderr": null
+      },
+      "output_channel_order": "stdout-first",
+      "output_handling_mode": "buffered",
+      "events": {},
+      "command_palette_availability": "enabled",
+      "preactions": [
+        {
+          "type": "prompt",
+          "enabled": true,
+          "prompt_id": "dqbcfzphzz"
+        }
+      ],
+      "variable_default_values": {
+        "{{event_yaml_value}}": {
+          "type": "value",
+          "value": "auto commit"
+        }
+      }
+    },
+    {
+      "id": "33ibi8oz4j",
+      "platform_specific_commands": {
+        "default": "rm .obsidian -r\ncp ../SharedObsidianSettings/.obsidian/ ./ -r"
+      },
+      "shells": {},
+      "alias": "Update Obsidian settings",
+      "icon": null,
+      "confirm_execution": false,
+      "ignore_error_codes": [],
+      "input_contents": {
+        "stdin": null
+      },
+      "output_handlers": {
+        "stdout": {
+          "handler": "ignore",
+          "convert_ansi_code": true
+        },
+        "stderr": {
+          "handler": "notification",
+          "convert_ansi_code": true
+        }
+      },
+      "output_wrappers": {
+        "stdout": null,
+        "stderr": null
+      },
+      "output_channel_order": "stdout-first",
+      "output_handling_mode": "buffered",
+      "events": {},
+      "command_palette_availability": "enabled",
+      "preactions": [
+        {
+          "type": "prompt",
+          "enabled": true,
+          "prompt_id": "jd9tw20zo8"
+        }
+      ],
+      "variable_default_values": {}
+    }
+  ],
+  "prompts": [
+    {
+      "id": "dqbcfzphzz",
+      "title": "Commit message",
+      "description": "Insert a brief and meaningful description of the changes you made.",
+      "preview_shell_command": false,
+      "fields": [
+        {
+          "type": "single-line-text",
+          "label": "Message",
+          "description": "",
+          "default_value": "",
+          "target_variable_id": "rfy33j14pj",
+          "required": true
+        }
+      ],
+      "execute_button_text": "Continue"
+    },
+    {
+      "id": "jd9tw20zo8",
+      "title": "Are you sure you want to update the Obsidian settings",
+      "description": "Your current settings (NOT THE FILES) will be overwritten.\n\nYou will need to restart Obsidian for the new settings to be applied.",
+      "preview_shell_command": false,
+      "fields": [
+        {
+          "type": "toggle",
+          "label": "I want to update the settings",
+          "description": "",
+          "default_value": "",
+          "target_variable_id": "qx1k2yvx3v",
+          "required": true,
+          "on_result": "ON",
+          "off_result": ""
+        }
+      ],
+      "execute_button_text": "Execute"
+    }
+  ],
+  "builtin_variables": {},
+  "custom_variables": [
+    {
+      "id": "rfy33j14pj",
+      "name": "commit_message",
+      "description": "",
+      "default_value": null
+    },
+    {
+      "id": "qx1k2yvx3v",
+      "name": "1",
+      "description": "placeholder",
+      "default_value": {
+        "type": "cancel-silently",
+        "value": ""
+      }
+    }
+  ],
+  "custom_shells": [],
+  "output_wrappers": []
+}
