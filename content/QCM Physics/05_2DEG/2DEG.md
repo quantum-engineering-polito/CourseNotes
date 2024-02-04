@@ -5,32 +5,34 @@ authorlink: https://github.com/gamberoillecito,https://github.com/BabelDev0
 ---
 # 2D Electron Gas
 
-Now we will study the case in witch we have an almost intrinsic material in an heterostructure with an heavily doped one. In this case electron start to diffuse form the left-hand side (the heavily doped material) to the right-hand side, this effect is called **remote doping** or **modulation doping**.
+Now we will study the case in which we have an almost intrinsic material in an heterostructure with an heavily doped one. In this case electron start to diffuse form the left-hand side (the heavily doped material) to the right-hand side, this effect is called **remote doping** or **modulation doping**.
 
 **n**: almost intrinsic
 **N**: heavily doped
 
 ![[QCM Physics/05_2DEG/attachments/excalidraw/remote doping.svg|400]]
 
-So some electron flow from the left-hand side (the heavily doped material) to the right-hand side, as it has a lower energy conduction band. Doing that they loose energy and become trapped because they cannot climb the barrier formed by the band bending. Furthermore the discontinuity in the band prevents the electric filed to returns the electrons to the donors, and contribute at squeezing the electrons on the **triangular potential well** just formed. 
+So some electron flow from the left-hand side (the heavily doped material) to the right-hand side, as it has a lower energy conduction band. Doing that they loose energy and become trapped because they cannot climb the barrier formed by the band bending. Furthermore the discontinuity in the band prevents the electric filed to return the electrons to the donors, and contribute at squeezing the electrons on the **triangular potential well** just formed. 
 
 The green line in the drawing is the tangent to the conduction band which can be used as an approximation for a **triangular potential well**, the width of the well is typically around 10 nm.
 
-For sufficiently thin potential wells and moderate temperatures, only the lowest energy level (typically the ground state) is occupied. Consequently, the motion of electrons in the direction perpendicular to the interface (z direction) can be disregarded. However, the electron retains freedom to move parallel to the interface, making it quasi-two-dimensional. Within the well, the planar motion of electrons experiences weak scattering due to the absence of dopants (specifically ionized impurity scattering). Modulation doping proves to be an effective strategy for reducing donor electron scattering. This reduction in scattering is crucial for enhancing mobility. Inside the two-dimensional electron gas (2DEG), the mobility is remarkably high. Hence, this structural arrangement is well-suited for constructing high-speed devices such as High Electron Mobility Transistors (HEMTs).
+For sufficiently thin potential wells and moderate temperatures, only the lowest energy level (typically the ground state) is occupied. Consequently, the motion of electrons in the direction perpendicular to the interface (z direction) can be disregarded. However, electrons retain freedom to move parallel to the interface, making it quasi-two-dimensional. Within the well, the planar motion of electrons experiences weak scattering due to the absence of dopants (specifically ionized impurity scattering). Modulation doping proves to be an effective strategy for reducing donor electron scattering. This reduction in scattering is crucial for enhancing mobility. 
+
+Inside the two-dimensional electron gas (2DEG), the mobility is remarkably high. Hence, this structural arrangement is well-suited for constructing high-speed devices such as High Electron Mobility Transistors (HEMTs).
 
 # Electronic levels for 2DEG
 
 We can consider the 2DEG an area where the electrons are free to move in the ($x$,$y$) direction and confined by a triangular well in the $z$ direction.
 
-![[2DEG-planar.svg]]
+![[2DEG-planar.svg|400]]
 
-We can assume that $L_{x}$ and $L_{y}$ are macroscopic quantities and that $A = L_{x} \cdot L_{y}$ and applying the [[Free electron model]] considering the potential constant and equal to zero in the ($x$,$y$) direction $V(x,y)=0$ we can write the Schrödinger equation:
+We can assume that $L_{x}$ and $L_{y}$ are macroscopic quantities and that $A = L_{x} \cdot L_{y}$. Applying the [[Free electron model]], considering the potential constant and equal to zero in the ($x$,$y$) direction $V(x,y)=0$ and we can write the Schrödinger equation:
 
 $$
 -\frac{\hbar^{2}}{2m} \nabla^{2} \Psi(x,y,z) + V(z) \Psi(x,y,z) = E ~ \Psi(x,y,z)
 $$
 
-since the potential depend only on $z$ we can look for solution like:
+since the potential depends only on $z$ we can look for solution like:
 
 $$
 \Psi(x,y,z) = \phi(x,y) \cdot \theta(z)
@@ -102,7 +104,7 @@ E_0 = \frac{\hbar^{2}}{2~m~z_0^{2}}  && \leftarrow \text{characteristic energy}
 \end{align}
 $$
 
-Equation (3) is the **Airy (Stokes) equation** and has two possible solution $A_{i}(x)$ and $B_{i}(x)$ of which only the first one is acceptable ($B_{i}$ diverges, a wave function never becomes infinite).
+Equation (3) is the **Airy (Stokes) equation** and has two possible solution $A_{i}(x)$ and $B_{i}(x)$ of which only the first one is acceptable ($B_{i}$ diverges and the wave function would be non normalizable).
 
 ![[Airy.png]]
 
@@ -116,7 +118,7 @@ z = 0 \iff S = -\bar{E}\\
 }
 $$
 
-This is true only in the values $C_{i}$ for which $A_{i} = 0$. This means (similarly to the infinite potential well) that the possible energy values are quantized:
+This is true only for the values $C_{i}$ for which $A_{i} = 0$. This means (similarly to the infinite potential well) that the possible energy values are quantized:
 
 $$
 \begin{align}
@@ -147,8 +149,10 @@ For each discrete value of $n$ corresponds an infinite number of values of $E_{x
 
 # Density of states of a 2DEG
 
-We have already seen how to calculate the density of state of electrons confined in a well ([[Models#Density of states (DOS)|Density of states (DOS)]]). Now we will do it again for the energy bands generated in the 2deg, we can concentrate only on one band due to the fact the the DOS of the other can be calculate in the same manner. To simplify our job we start with the first band supposing that it has $C_0 = 0$.
-Contrary to the calculation performed within the crystal here we have only two degrees of freedom in $x$ and in $y$ and the eigenvalues are 
+We have already seen how to calculate the [[Models#Density of states (DOS)|density of state of electrons confined in a well]]; now we do it again for the energy bands generated in the 2DEG.
+
+We can concentrate only on one band due to the fact the the DOS of the others can be calculate in the same manner. To simplify our job we start with the first band supposing that it has $C_0 = 0$.
+Contrary to the calculation performed within the crystal, here we have only two degrees of freedom in $x$ and in $y$ and the eigenvalues are 
 
 $$ 
 E = \frac{\hbar^{2} k^2}{2m} = \frac{\hbar^{2} (k^2_{x}+k^2_{y})}{2m} \tag{7b}
@@ -162,7 +166,7 @@ $$
 k_{x} = \frac{2\pi}{L_{x}} \cdot N_1 \quad k_{y} = \frac{2\pi}{L_{y}} \cdot N_2
 $$
 
-Now we can follow the same steps taken in the [[Models#Density of states (DOS)|original case]]. considering that we are in two dimension and not three so we have a circle and not a sphere.
+Now we can follow the same steps taken in the [[Models#Density of states (DOS)|original case]], considering that we are in two dimension and not three so we have a circle and not a sphere.
 
 ![[2DEG DOS.png|400]]
 

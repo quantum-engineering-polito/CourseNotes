@@ -1,7 +1,7 @@
 ---
 nextnote: "[[Quantum Hall effect]]"
 author: Emanuele Messina, BabelDev0
-authorlink: https://github.com/BabelDev0
+authorlink: ",https://github.com/BabelDev0"
 draft: false
 ---
 # Potentials
@@ -28,7 +28,7 @@ $$
 \int_{\Sigma\left( \gamma \right)}  \left( \nabla \times F \right) \cdot \mathbf{ds} =\oint_{\gamma}F\cdot \mathbf{dl} \quad \to0 
 $$
 
-(since the curl is null, due to the arbitrariness of $\Sigma\left( \gamma \right)$ the circulation must be 0 $\forall \gamma$ given by every $\Sigma$; the converse holds due to the arbitrariness of $\gamma$, if the circulation is 0 $\forall \gamma$ then the curl must be identically null). 
+(since the curl is null, due to the arbitrariness of $\Sigma\left( \gamma \right)$ the circulation must be 0 $\forall \, \gamma$ given by every $\Sigma$; the converse holds due to the arbitrariness of $\gamma$, if the circulation is 0 $\forall \, \gamma$ then the curl must be identically null). 
 
 Given the famous vector identity for a scalar field $\phi$
 
@@ -46,7 +46,7 @@ $$
 
 $\phi$ is the scalar potential of $F$.
 
-In the non conservative case (presence of time varying magnetic field)
+In the non conservative case (presence of time varying magnetic field):
 
 $$
 \nabla \times F=-\frac{\partial B}{\partial t}
@@ -108,7 +108,7 @@ so we have to account for the time evolution of the vector potential which creat
 
 # Gauge Freedom
 
-We know that primitives are defined up to a constant, since in derivation the constant disappears.
+To understand gauge freedom we can make a comparison with integration and derivation: we know that the primitive of a function is not unique but it is defined up to a constant, since in derivation the constant disappears.
 The same is true for scalar potentials, we only care about potential differences:
 
 $$
@@ -169,11 +169,12 @@ These are the relations between the vector and scalar potential when we shift th
 
 These choices are called *gauges*, and we are free to choose (gauge invariance).
 
-# Schrödinger eq.
+# Schrödinger equation
 
-Expanding the eq of Schrodinger for a free electron in an electric and magnetic field
+Expanding the Schrödinger equation for a free electron in an electric and magnetic field
 
 $$
 \left\{\frac{1}{2m}[\hat{p}-q \vec{A}(\vec{R},t)]^{2}+q\phi(\vec{R},t)\right\}\psi(\vec{R},t)=-i\hbar\frac{\partial}{\partial t}\,\psi(\vec{R},t)
 $$
 
+#todo finish

@@ -7,7 +7,7 @@ authorlink: https://github.com/BabelDev0
 
 ![[MQW_superlattice.png|450]]
 
-A QW superlattice is formed by stacking multiple quantum wells. The barrier layers are usually made of a material with a larger band gap than the quantum well material. The close proximity of multiple quantum wells allows for the wavefunctions of electrons in adjacent wells to overlap (if the barrier has the rigth width). 
+A QW superlattice is formed by stacking multiple quantum wells. The barrier layers are usually made of a material with a larger band gap than the quantum well material. The close proximity of multiple quantum wells allows for the wavefunctions of electrons in adjacent wells to overlap (if the barrier has the right width). 
 
 For the square potential well, we could apply the Kronig-Penney model to solve the Schrödinger equation.
 
@@ -104,7 +104,7 @@ k_{w} e^{ikd} (A-B) = k_{b}(Ce^{ik_{b}d}-De^{-ik_{b}d})
 }
 $$
 
-now using the two equation from the boundary condition an the other two from the Bloch theorem we can solve the system of the 4 unknown ($A,B,C,D$) and we get:
+now using the two equation from the boundary condition and the other two from the Bloch theorem we can solve the system of the 4 unknown ($A,B,C,D$) and we get:
 
 $$
 \frac{k_{b}^2 - k_{w}^2}{2k_{w} k_{b}} \sinh(k_{b} b) \sin(k_{w} a) - \cosh(k_{b} b) \cos(k_{w} a) = \cos(k(a + b))

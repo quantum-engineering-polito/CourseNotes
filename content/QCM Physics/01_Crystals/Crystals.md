@@ -30,6 +30,7 @@ A primitive cell unit is defined as any volume of space which, when translated t
 A primitive cell always contains one lattice point only; if the point is on the edge of the cell only a fraction of it is considered (if a point is shared between 4 cells, each cell will have 1/4 of it). The basis associated with a primitive cell is called a primitive basis.
 
 ![[primative_cell_lattice_point.png]]
+
 ### Conventional unit cell
 
 It is often used to describe the periodicity of crystals; such as in cases where the unitary primitive cell is not the most convenient way to describe the crystal's geometric structure. Such a cell contains more than one primitive lattice point.
@@ -45,8 +46,8 @@ Wigner-Seitz cell is a special choice of primitive unit cell: region of points c
 How to draw it in 2D: ^69cf07
 1) Find the point for which you want to draw the cell.
 2) Draw lines that connect it to all its nearest neighbours.
-3) For each of these lines draw a perpendicular line(* ) that passes through its mid point.
-4) The area delimited by the lines (* ) is the Wigner-Seitz cell.
+3) For each of these lines draw a perpendicular line($*$) that passes through its mid point.
+4) The area delimited by the lines ($*$) is the Wigner-Seitz cell.
 
 ![[wignerSeitzCell2.png|300]]
 
@@ -115,7 +116,6 @@ which is again a Bravais lattice.
 ### Example in 2D
 
 ![[reciprocal lattice ex 2D.svg|400]]
-
 
 $$
 \bar{R_{n}} = n_{1} \bar{a_{1}} + n_{2} \bar{a_{2}}

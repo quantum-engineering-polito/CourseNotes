@@ -6,14 +6,14 @@ draft: false
 ---
 # Transport Matrix
 
-A generalize "barrier" is any disturbance of an otherwise flat potential.
+A generalized "barrier" is any disturbance of an otherwise flat potential.
 We will start considering the step potential problem.
 
 ![[step_barrier.svg|500]]
   
 When an incoming electron approaches the potential barrier at position $x=0$, its quantum wave interacts with the barrier. Similar to optical reflection indices for light waves, a portion of the electron's wave is reflected, while another portion is transmitted into the barrier.
 
-the wave functions for the two region are:
+The wave functions for the two region are:
 
 $$ 
 \displaylines{
@@ -31,9 +31,9 @@ x < 0 \qquad k_{1} = \sqrt{ \frac{2mE}{\hbar} }
 x > 0 \qquad k_{2} = \sqrt{ \frac{2m(E-V_{0})}{\hbar} }
 }
 $$ 
-The wavevector $k_1$​ is real, whereas the wavevector $k_2$​ can be either real or imaginary, depending on the relationship between $E$ and $V_0$​. Specifically, if $E<V_0$​, then the wavevector $k_2$​ is imaginary; otherwise, it is real.
+The wavevector $k_1$​ is real, whereas the wavevector $k_2$​ can be either real or imaginary, depending on the relationship between $E$ and $V_0$​. Specifically, if $E<V_0$​, then the wavevector $k_2$​ is imaginary; otherwise it is real.
 
-Continuity of the wavefunctions and of their first derivatives in $x=0$ implies:
+The continuity of the wavefunctions and of their first derivatives in $x=0$ implies:
 
 $$ 
 \displaylines{
@@ -78,7 +78,7 @@ k_{2}-k_{1} & k_{1}+k_{2}
 \end{pmatrix} = T(k_{1},k_{2})
 $$
 
-In general, $A$, $B$, $C$, and $D$ are complex values, but for simplicity, we can set $A = 1$, $B = r$, $C = t$, and $D = 0$. This simplification makes our context easier to work with. We can designate $r$ as the reflection index and $t$ as the transmission index, as they represent the amplitudes of the reflective and transmitted components, respectively.
+In general, $A$, $B$, $C$, and $D$ are complex values, but for simplicity, we can set $A = 1$, $B = r$, $C = t$, and $D = 0$. This simplification makes our context easier to work with. We can designate $r$ as the reflection index and $t$ as the transmission index, as they represent the amplitudes of the reflected and transmitted components respectively.
 
 $$ 
 \begin{pmatrix} t \\ 0 \end{pmatrix} = T^{21} \begin{pmatrix} 1 \\ r \end{pmatrix} = \begin{pmatrix}  
@@ -157,7 +157,7 @@ r = -\frac{T_{21}^{n1}}{T_{22}^{n1}}
 }
 $$
 
-If our system is invariant respect to time inversion and is symmetric respect to the barriers, the transfer matrix's determinant is equal to 1 so in thus cases
+If our system is invariant with respect to time inversion and is symmetric with respect to the barriers, the transfer matrix's determinant is equal to 1 so, in this cases
 
 $$ 
 \displaylines{

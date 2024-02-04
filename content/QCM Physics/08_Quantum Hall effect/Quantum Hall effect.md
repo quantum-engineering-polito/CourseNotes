@@ -177,6 +177,8 @@ $$
 
 Due to the fact that the harmonic oscillator has discrete energy levels with a spacing of $\hbar \omega_{c}$ we can easily draw the density of states:
 
+#todo image doesn't render on the website for some reason
+
 ![[DOS.svg|400]]
 
 The "height" (density of states per unit surface) of the Landau levels can be easily determined as 
@@ -203,7 +205,7 @@ As we increase the magnitude of the magnetic field, we are changing the degenera
  
 
 ![[DOS_B_increasing.png]]
-The larger B, the more degenerate the levels are and the more far apart they are.
+The larger B, the more degenerate the levels are and the further apart they are.
 
 $$ 
 \displaylines{
@@ -216,17 +218,15 @@ $$
 $$ 
 # Shubnikov - de Haas effect
 
-When a current is applied between two electrodes in a 2DEG exposed to a magnetic field.
-
 ![[classical case setup.png|300]]
 
-The measured resistance along the $x$ direction $R_{xx}$ is found to oscillate. This is called the **Shubnikov-de Haas effect**. ($\rho_{xx}=R_{xx}$)
+When a current is applied between two electrodes in a 2DEG exposed to a magnetic field the measured resistance along the $x$ direction $R_{xx}$ is found to oscillate. This is called the **Shubnikov-de Haas effect**. ($\rho_{xx}=R_{xx}$)
 
 ![[Shubnikov-de Haas effect.jpg|550]]
 
 # Landau level filling
 
-The filling factor $v$ of a Landaus levels, is a factor that tell us how many Landau levels are filled by electrons per unit of area. Since each Landau level has a density of state associated $n_B$ the $v$ factor can be written as:
+The filling factor $v$ of a Landaus levels, is a factor that tell us how many Landau levels are filled by electrons per unit of area. Since each Landau level has an associated density of state $n_B$, the $v$ factor can be written as:
 
 $$  
 v = \frac{n_{2D}}{n_{B}}=\frac{\Phi_{0}}{B}n_{2D}
@@ -242,10 +242,11 @@ Certainly, when we increase the value of $B$, the quantity $n_B$ also increases.
 
 **When the filling factor is an integer the 2DEG does not conduct electricity.**
 
-
 # Effect of edges
 
-We must take into account the impact of the edges on the energy of states within the Landau levels. When approaching the edge, the electron's orbit experiences perturbations. Due to these perturbations, the frequency of oscillation increases, resulting in shorter orbits. Since frequency and energy are directly linked, it's intuitive to conclude that the closer an electron is to the surface, the higher its energy states will be. 
+We must take into account the impact of the edges on the energy of states within the Landau levels. When approaching the edge, the electron's orbit is subject to perturbations. 
+
+From a semiclassical point of view we can say that due to these perturbations, the frequency of oscillation increases, resulting in shorter orbits. Since frequency and energy are directly linked, it's intuitive to conclude that the closer an electron is to the surface, the higher its energy states will be. 
 
 By solving the Schrödinger equation and substituting the potential with an infinite potential at the material's edges, we find that states located in the middle of the material, characterized by small values of $k_y$, remain unaffected by the presence of the edges. This validates the solutions obtained earlier. On the other hand, states near the material's edges, corresponding to large values of $k_y$, experience compression within a narrower space, resulting in higher energy levels.
 
@@ -257,7 +258,7 @@ When the Fermi level falls between two Landau levels, the bulk does not conduct 
 
 # Effect of impurities
 
-In real materials, there are always some impurities and phonons that can scatter electrons. This effect introduce an uncertainty in the energy, we can describe this uncertainty expanding the delta-like Landau levels into Gaussians characterized by a full width at half maximum
+In real materials, there are always some impurities and phonons that can scatter electrons. This effect introduces an uncertainty in the energy, we can describe this uncertainty expanding the delta-like Landau levels into Gaussians characterized by a full width at half maximum
 
 $$ 
 \Gamma = \frac{\hbar}{\tau}
@@ -274,7 +275,7 @@ When the magnetic field ($B$) is varied in such system, the edge states immediat
 
 # Origin of plateaus in QHE
 
-In the real world, however, materials are not perfectly pure and contain impurities. These impurities cause the energy levels to broaden ($\Gamma$ > 0), which means the energy levels are not as sharply defined. This broadening is created by impurities, that are localized so the states in the broadened regions don't contribute to the overall current and this has the effect to 'pins' the Fermi level between the Landau levels as the magnetic field changes. Rather than the Fermi level jumping sharply from one level to the next, it gets stuck in these broadened areas for a range of magnetic field values.
+In the real world, however, materials are not perfectly pure and contain impurities. These impurities cause the energy levels to broaden ($\Gamma$ > 0), which means the energy levels are not as sharply defined. This broadening is created by impurities, that are localized so the states in the broadened regions don't contribute to the overall current and this has the effect to 'pin' the Fermi level between the Landau levels as the magnetic field changes. Rather than the Fermi level jumping sharply from one level to the next, it gets stuck in these broadened areas for a range of magnetic field values.
 
 ![[pinned_fermi_level.png]]
 
@@ -323,4 +324,4 @@ $$
 
 The electrons leaving 1 will first enter in 3 and then in 4 (3 and 4 are not allowed to draw current) so that $V_{1}=V_{3}=V_{4}$, For the same reason: $V_{2}=V_{6}=V_{5}$ .
 
-Since we place $V_1<V_2$ we have that $V_3<V_5$ and $V_4<V_6$ thus a hall resistance is measured between 3 and 5 or 4 and 6.
+Since we place $V_1<V_2$ we have that $V_3<V_5$ and $V_4<V_6$ thus a Hall resistance is measured between 3 and 5 or 4 and 6.
