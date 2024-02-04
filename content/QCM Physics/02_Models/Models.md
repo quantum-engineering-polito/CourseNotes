@@ -4,12 +4,15 @@ author: Giacomo, BabelDev0
 authorlink: https://github.com/gamberoillecito,https://github.com/BabelDev0
 ---
 # Overview of the contents
-Our goals are:
-- find out how many charge carriers are present within the crystal?
-- where and how are they placed inside the crystal?
-- how do they move inside the crystal?
 
-to find out the answer to these questions we use models to help us approximate reality, of course like all models, these can only be used by making assumptions about their validity
+Our goals are:
+
+- find out how many charge carriers are present within the crystal
+- where and how are they placed inside the crystal
+- how do they move inside the crystal
+
+to find out the answer to these questions we use models to help us approximate reality, of course like all models, these can only be used by making assumptions about their validity.
+
 # Free and independent electron model
 
 The free-electron model, in solid-state physics, simplifies metals as containers filled with a gas composed of free electrons. These electrons are considered unbound to any particular atom and are able to move freely throughout the material. 
@@ -22,6 +25,7 @@ Electrons in the model are:
 Let's consider a crystal of macroscopic dimensions ($L_{x}, L_{y}, L_{z}$) and define a reference system as shown below.
 
 ![[ref cube.svg|300]]
+
 considering only one dimension at a time, this scenario is reminiscent of the infinity square well
 
 ![[infinit_square_well_QCMP.svg|350]]
@@ -33,7 +37,7 @@ $$-\frac{\hbar}{2m} \nabla^{2} \Psi(\bar{r}) = E \Psi (\bar{r})$$
 for which we can write the general solution: 
 
 $$
-\Psi(\bar{r}) = \frac{1}{\sqrt{ \mathbf{V} }} e^{ i \bar{k} \bar{r} } \quad (\mathbf{V} = L_{x} \cdot L_{y} \cdot L_{z}) \qquad (1)
+\Psi(\bar{r}) = \frac{1}{\sqrt{ \mathbf{V} }} e^{ i \bar{k} \bar{r} } \quad (\mathbf{V} = L_{x} \cdot L_{y} \cdot L_{z}) \tag{1}
 $$
 
 and the eigenvalues:
@@ -43,6 +47,7 @@ E = \frac{\hbar^{2} k^{2}}{2m}
 $$
 
 We want to study the properties of the material without worrying about the possibility of getting out of it (where the properties we are interested in no longer apply). So we apply an approximation by imagining that the lattice of the crystal continues to infinity. What we do is saying that instead of going "outside" the crystal, we enter in an identical one (i.e. we imagine being in a periodic matrix of crystals one next to the other).
+
 This is called **periodic boundary condition** (PBC) or **Born Von Karman condition** and can be written as follows:  ^dedc30
 
 $$
@@ -50,7 +55,7 @@ $$
 \Psi(x, y, z) &= \Psi(x + L_{x}, y, z) \\
 & = \Psi(x, y + L_{y}, z)\\
 &= \Psi (x, y, z + L_{z})\\
-} \qquad (PBC)
+} \tag{PBC}
 $$
 
 Applying $PBC$ to $(1)$ we get 
@@ -64,6 +69,7 @@ e^{ i k_{x} L_{x} } = 1 \\
 {\color{red} k_{x} L_{x} = 2 \pi n_{x}} 
 }
 $$
+
 where $n_{x}$ is an integer. From this we can obtain the following relations:
 
 $$
@@ -88,19 +94,23 @@ $$
 
 $p$ is obtained from the [De Broglie relations](https://en.wikipedia.org/wiki/De_Broglie_relations "De Broglie relations")
 
-The objective is to determine the quantity of charge carriers within a crystal. Instead of directly counting them, we know that each charge carrier occupies a state, so we can use this formula to derive the number of charge carriers:
+The objective is to determine the quantity of charge carriers within a crystal. 
+
+Instead of directly counting them, we know that each charge carrier occupies a state, so we can use this formula to derive the number of charge carriers:
 
 $$ 
 n = \int D(E) f(E,T)\, dE 
 $$
 where:
+
 - $n$ represents the total number of charge carriers in the crystal.
 - $D(E)$ denotes the density of states.
 - $f(E,T)$ corresponds to the Fermi-Dirac distribution for a given temperature $T$
 
 In essence, this formula calculates the number of charge carriers by summing up, over infinitesimally small energy intervals, the product of the density of states at a particular energy level and the probability that the corresponding states are occupied by electrons (charge carriers).
 
-let's derive the components of this formula.
+Let's derive the components of this formula.
+
 # Density of states (DOS)
 
 DOS describes how the energy levels created by the lattice structure are distributed; it is defined as follows:
@@ -108,6 +118,8 @@ DOS describes how the energy levels created by the lattice structure are distrib
 $$
 D(E) = \frac{1}{V} \frac{dN(E)}{dE} \quad \left[ \frac{1}{cm^{3} \cdot eV} \right]
 $$
+
+^3829fb
 
 Where $\frac{dN(E)}{dE}$ is the number of energy states $N(E)$ within an energy range $dE$.
 
@@ -117,7 +129,7 @@ We can find $N(E)$ geometrically reasoning on the following picture.
 
 Since $k$ and $E$ are related by $(2)$ we can find first $N(k)$ and then obtain $N(E)$. 
 $$
-k = \sqrt{ \frac{2mE}{\hbar^{2}} } \qquad (3)
+k = \sqrt{ \frac{2mE}{\hbar^{2}} } \tag{3}
 $$
 
 $N(E)$ can be calculated as the volume of a sphere of radius $k$ divided by the volume occupied by one energy state (the highlighted cube) :
@@ -164,7 +176,7 @@ $$
 ![[fermidirac.excalidraw.svg|400]]
 
 
-The Fermi-Dirac distribution relies on the presumption of a continuous spread of energy states. While in metals, the values of $k$s appear nearly continuous, this isn't the case for semiconductors and insulators. In semiconductors, a distinct energy gap exists, with no available states for electrons. Consequently, the Fermi-Dirac model inadequately portrays materials like insulators or semiconductors due to this significant deviation from its assumptions
+The Fermi-Dirac distribution relies on the assumption of a continuous spread of energy states. While in metals, the values of $k$s appear nearly continuous, this isn't the case for semiconductors and insulators. In semiconductors, a distinct energy gap exists, with no available states for electrons. Consequently, the ==Fermi-Dirac model inadequately portrays materials like insulators or semiconductors== due to this significant deviation from its assumptions.
 
 # Independent electrons model
 
@@ -195,6 +207,9 @@ $$
 
 ## Bloch theorem
 
+>[!note]
+>See also [[Bloch theorem]]
+
 Bloch's theorem states that solutions to the Schrödinger equation in a periodic potential can be expressed as plane waves modulated by periodic functions. 
 
 $$
@@ -220,7 +235,8 @@ $$
 }
 
 $$
-The usefulness of Bloch's theorem is that it allows us to restrict the search for the solution of SE from the entire space to the space of periodic functions. That is, functions that were once described in the unit cell can be extended beyond it periodically.
+
+The usefulness of Bloch's theorem is that it allows us to restrict the search for the solution of Schrödinger equation from the entire space to the space of periodic functions. That is, functions that were once described in the unit cell can be extended beyond it periodically.
 
 Similarly to what we did before we need to find $\bar{k}$ that satisfies the following conditions (we will only consider the $x$ direction but the same can be done for $y$ and $z$): 
 
@@ -239,6 +255,7 @@ Since $N_{1} \bar{a}_{1}$ is one of the $\bar{R}_{n}$ we can rewrite $1)$ as
 $$
 1\text{ bis})\quad \Psi_{\bar{k}}(\bar{r} + N_{1} \bar{a}_{1}) = \Psi_{\bar{k}}(\bar{r}) e^{ i \bar{k} (N_{1} \bar{a}_{1}) }
 $$
+
 In order to satisfy $1 \text{ bis})$ and $2)$ we need that the exponential is $= 1$ which means 
 
 $$ 
@@ -295,7 +312,7 @@ $$
 
 this resembles a $\bar{G}$ vector but we have to remember that $n_{\text{dir}}/N_{i}$ is not necessarily an integer.
 
-#todo %% Aggiungere disegno di pagina 8 di samsung notes %%
+![[Ntot.svg|400]]
 
 From the drawing we can see that along the $x$ direction there are $N_{1}$ allowed $\bar{k}$ vector. Since the Brillouin zone has the same area as the green one (which is a primitive cell of the reciprocal lattice), both of them can fit $N_{tot} = N_{1} N_{2} N_{3}$ $\bar{k}$ vectors.
 
@@ -304,7 +321,7 @@ From the drawing we can see that along the $x$ direction there are $N_{1}$ allow
 Solutions of the Schrödinger equation that differ only by a reciprocal vector are equivalent (they describe the same physical state)
 
 $$
-\Psi_{\bar{k} + \bar{G}}(\bar{r}) = \Psi_{\bar{k}}(\bar{r}) \qquad (4)
+\Psi_{\bar{k} + \bar{G}}(\bar{r}) = \Psi_{\bar{k}}(\bar{r}) \tag{4}
 $$
 ![[QCM Physics/02_Models/attachments/Bloch_theorem_property.svg|400]]
 
@@ -355,7 +372,7 @@ At $T = 0K$ the probability is $0$ above the fermi energy, and $1$ below, thus t
 
 For temperatures above $0K$, on the other hand, some electrons (in yellow) will be excited to the conduction band. These electrons do not behave as free particles and their mass is not the same as the one of the free electron. 
 
-Talking about the behaviour of electrons let's try to analyzing their mass, in the case of the free particle we have that the relation between mass, energy and momentum is straightforward:
+Talking about the behaviour of electrons let's try to analysing their mass, in the case of the free particle we have that the relation between mass, energy and momentum is straightforward:
 
 $$
 \displaylines{
@@ -367,10 +384,10 @@ $$
 
 but now we are inside the crystal and the relation is more complex.
 
-![[band_diagram_relation_wavenumber.svg]]
+![[band_diagram_relation_wavenumber.svg|350]]
 
 
-at each $k$ value corresponds a different $E$ and $m$ value. We can simplify the description of the behaviour of these electrons comparing their motion to that of free particles with different masses in a vacuum, to do that we define the **effective mass** as:
+at each $k$ value corresponds different $E$ and $m$ value. We can simplify the description of the behaviour of these electrons comparing their motion to that of free particles with different masses in a vacuum, to do that we define the **effective mass** as:
 
 $$
 m^{*}_{ij} = \frac{\hbar^{2}}{\left[ \frac{\partial^{2} E}{\partial k_{i} \partial k_{j}}\right]}
@@ -392,6 +409,7 @@ The plots below show a representation of two energy bands (in blue) and the rela
 ![[effective mass.excalidraw.png|600]]
 
 The yellow regions highlight the fact that where the band have a parabolic shape, the effective mass is constant (since it depends on the second derivative of the energy). In this region the mass can be calculate as always:
+
 $$
 m = \frac{p^2}{2E}
 $$
@@ -404,7 +422,7 @@ Since electrons can have a negative effective mass, it is possible to consider t
 
 # Parabolic band approximation
 
-![[band_parabolic_approximation.png]]
+![[band_parabolic_approximation.png|500]]
 
 Near the maximum and minimum regions, the bands can be approximated with a parabola as long as we use the correct curvature for that parabola.
 
@@ -418,6 +436,7 @@ Defects usually change the band structure generating new states in the energy ga
 
 Substituting a $Si$ atom with a $P$ atom (which has one extra electron) will form a **hydrogenic species** (similarly to hydrogen there is only one electron and a positive charge in the middle with charge $+q\,$).
 ![[Hydrogen_species.png|400]]
+
 $$
 \displaylines{
 \hat{H} = -\frac{\hbar^{2}}{2m} \nabla^{2} - \overbrace{ \frac{e^{2}}{4 \pi ~ \varepsilon_{0} ~ \varepsilon_{Si}} }^{\substack{\text{attraction between} \\ \text{e}^{-} \text{ and } Si}}
