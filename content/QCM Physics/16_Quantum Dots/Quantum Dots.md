@@ -45,7 +45,7 @@ we start writing:
 
 $$
 \displaylines{
-Q_{Dot} = Q_{Dot,0} + C_{S}(V_{S}-V_{Dot})+ C_{D}(V_{D}-V_{Dot}+ C_{G}(V_{G}-V_{Dot}) \implies
+Q_{Dot} = Q_{Dot,0} + C_{S}(V_{S}-V_{Dot})+ C_{D}(V_{D}-V_{Dot})+ C_{G}(V_{G}-V_{Dot}) \implies
 \\\\
 Q_{Dot} =\underbrace{Q_{Dot,0}}_{\text{charge of Dot V=0}} + \underbrace{(C_{Dot}V_{Dot} + C_{S}V_{S}+ C_{D}V_{D} + C_{G}V_{G})}_{\text{Charge due to the bias}}\quad C_{Dot} = -(C_{S}+C_{D}+C_{G})
 }
@@ -111,7 +111,7 @@ By definition, in the low-bias regime considered here, no excited states exist.
 
 In the high bias regime, multiple levels can be within the bias window.
 
-Electron transport is only possible when a level is in the bias window, i.e., $\mu_{S}\geq\mu(N)\geq\mu_{D}$ ≥ for at least one value of $N$. When the electrochemical potential is in the bias window, one extra electron can tunnel onto the dot from the source, so that the number of electrons increases from $N −1$ to$ $N$, after it has tunneled to the drain, another electron can tunnel onto the dot from the source. This cycle is known as single-electron tunneling.
+Electron transport is only possible when a level is in the bias window, i.e., $\mu_{S}\geq\mu(N)\geq\mu_{D}$ ≥ for at least one value of $N$. When the electrochemical potential is in the bias window, one extra electron can tunnel onto the dot from the source, so that the number of electrons increases from $N −1$ to $N$, after it has tunneled to the drain, another electron can tunnel onto the dot from the source. This cycle is known as single-electron tunneling.
 
 ![[single-electron_tunneling.png|400]]
 # Coulomb blockade diamonds
@@ -184,7 +184,7 @@ Focus on the triple points:
 
 ## Tunneling coupling
 
-When distances are small, tunneling between dots can occur. Much like superlattices, this leads to a change in the levels of the dots. n superlattices we had a periodic structure. Here, instead, we only have two dots. The configuration recalls the one of a molecule made of two atoms.
+When distances are small, tunneling between dots can occur. Much like superlattices, this leads to a change in the levels of the dots. In superlattices we had a periodic structure. Here, instead, we only have two dots. The configuration recalls the one of a molecule made of two atoms.
 
 Therefore, because of the tunneling coupling ($t_{c}$), bonding $\Psi_{B}$ and antibonding $\Psi_{A}$ orbitals arise from the combination of the two dots levels ($\phi_{1}$ and $\phi_{2}$)
 
