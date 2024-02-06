@@ -17,7 +17,7 @@ We have 2 dimension of confinement and one degree of freedom for electrons.
 
 ![[Quantum Wire.png|400]]
 
-Let's start form the Schrödinger equation
+Let's start from the Schrödinger equation
 
 $$
 -\frac{\hbar}{2m} \nabla^{2} \Psi(\bar{r})+V(\bar{r})\Psi(\bar{r}) = E \Psi (\bar{r})
@@ -81,11 +81,11 @@ $$
 
 ![[energy_bands.png|400]]
 
-How many states are there in the parabola? To calculate them we need to apply conditions also in the z direction The typical condition that we apply when we want to avoid to deal with surfaces is periodic boundary conditions.
+How many states are there in the parabola? To calculate them we need to apply conditions also in the $z$ direction. The typical conditions that we apply when we want to avoid to deal with surfaces are periodic boundary conditions.
 
 ![[PBC.png|500]]
 
-due to the boundary condition we get that:
+Due to the boundary condition we get that:
 
 $$
 k_{z} = \frac{2\pi}{L_{z}}n_{z} \quad n_{z}=0,\pm 1,\pm 2, \dots
@@ -109,7 +109,7 @@ $$
 N(k) = \frac{2k}{\frac{2\pi}{L_{z}}}\cdot 2 = \frac{2k}{\pi} L_{z}
 $$
 
-recalling the relation between $E$ and $k$ we get:
+Recalling the relation between $E$ and $k$ we get:
 
 $$
 \displaylines{
@@ -123,6 +123,6 @@ $$
 
 ![[DOS_1D_1BAND.png|400]]
 
-we can now add the other bands
+We can now add the other bands
 
 ![[DOS_1D.png|400]]

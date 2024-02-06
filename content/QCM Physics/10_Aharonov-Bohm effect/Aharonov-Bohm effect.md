@@ -17,7 +17,8 @@ $$
 
 We notice that any close line of $A$ that includes the inner solenoid spans an area that includes the entire magnetic flux $\Phi_M$. 
 
-![[sigma_flux.png|250]]
+![[aharonov bohm.svg|400]]
+
 
 Thus since we know that $B = \nabla \times A$ we can write that :
 
@@ -45,8 +46,6 @@ A(x)= \frac{1}{2}Br
 }
 $$ 
 
-
-
 Second case ($r > a$):
 
 ![[rmaxsolenoid.svg|200]]
@@ -61,7 +60,7 @@ A(x)= \frac{a^{2}}{2r}B
 }
 $$
 
-we can plot $A$ versus r and it becomes evident that there are regions in space where the value of $B$ is zero while the value of $A$ is not:
+we can plot $A$ versus $r$ and it becomes evident that there are regions in space where the value of $B$ is zero while the value of $A$ is not:
 
 ![[Aversusr.svg|400]]
 
@@ -90,10 +89,10 @@ Substituting in the Schrödinger equation:
 
 the new equation is the Schrödinger equation of the free particle is much simpler than the previous one. 
 
-As we have seen the effect of $A$ is to change the phase of the wave function
+As we have seen, the effect of $A$ is to change the phase of the wave function
 
 $$ 
-\Psi = \Psi' \exp(\ i \frac{q}{\hbar}\int_{\bar{r}_{0}}^{\bar{r}} A(\bar{r}') \, d\bar{r}')
+\Psi = \Psi' \exp \left[   i \frac{q}{\hbar}\int_{\bar{r}_{0}}^{\bar{r}} A(\bar{r}') \, d\bar{r}' \right]
 $$
 
 We recognize that the total phase of a wave function is given by
@@ -138,7 +137,7 @@ T = |t|^{2}= |t_{1} + t_{2}|^{2}
 = \underbrace{|t_{1}|^{2}+|t_{2}|^{2}}_{\text{Classical terms}}+\underbrace{2 |t_{1}t_{2}|\cos(\phi_{1}-\phi_{2})}_{\text{Quantum term (phase dependent)}}
 }
 $$ 
-Depending on the path taken, the electron k and A will be either parallel or antiparallel
+Depending on the path taken, the electron $k$ and $A$ will be either parallel or antiparallel
 
 ![[AE_paths.png|400]]
 
@@ -164,9 +163,10 @@ The sign of the term related to the path 1 is due to the fact that $A$ has oppos
 $$ 
 \phi_{1}-\phi_{2} = \phi_{1}^{0}-\phi_{2}^{0} + \frac{e}{\hbar}\oint_{r_{0}}^{r_{0}} A \cdot d\bar{l}
 $$
+
 The phase difference between the wave functions of electrons taking two different paths around the magnetic flux is a function of the enclosed magnetic flux, even if there is no magnetic field present in the region where the electrons are traveling (because we are outside the solenoid). The interference pattern resulting from the two electron paths can be constructive, destructive, or somewhere in between, depending on the phase difference. The constructive interference amplifies the signal, and the destructive interference diminishes it.
 
 
 ![[conductance_AE.png|550]]
 
-The image shows an oscillatory pattern in the measurement of the conductance (G) as a function of the magnetic field strength. The oscillations in conductance are a direct result of the phase differences caused by the Aharonov-Bohm effect.
+The image shows an oscillatory pattern in the measurement of the conductance ($G$) as a function of the magnetic field strength. The oscillations in conductance are a direct result of the phase differences caused by the Aharonov-Bohm effect.

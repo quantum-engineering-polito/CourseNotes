@@ -5,7 +5,7 @@ authorlink: https://github.com/BabelDev0
 draft: false
 links: https://essay.utwente.nl/69376/1/Avgidis_BA_EEMCS.pdf
 ---
-In Quanutm Dot we have 
+In a quantum dot we have 
 
 $$ 
 \displaylines{
@@ -30,7 +30,7 @@ In quantum dot systems, particularly when studying charge manipulation, the **Co
 
 2. **Independence of Single-Particle Energy Levels from Interactions**: The second approximation is that the single-particle energy-level spectrum of the quantum dot is independent of the Coulomb interactions and, therefore, of the number of electrons. This approximation simplifies the theoretical treatment by treating the quantum dot as a simple potential well where the energy levels are determined by the dot's size and shape, independent of its charge state.
 
-# Charge manipulation in QDots
+# Charge manipulation in quantum dots
 
 We want to calculate the charge on the dot as function of the applied voltages on the electrodes. Recalling that
 
@@ -114,9 +114,11 @@ In the high bias regime, multiple levels can be within the bias window.
 Electron transport is only possible when a level is in the bias window, i.e., $\mu_{S}\geq\mu(N)\geq\mu_{D}$ ≥ for at least one value of $N$. When the electrochemical potential is in the bias window, one extra electron can tunnel onto the dot from the source, so that the number of electrons increases from $N −1$ to $N$, after it has tunneled to the drain, another electron can tunnel onto the dot from the source. This cycle is known as single-electron tunneling.
 
 ![[single-electron_tunneling.png|400]]
+
 # Coulomb blockade diamonds
 
 ## Low Bias
+
 ![[coulomb_diamond.png|600]]
 
 A source-drain bias voltage versus gate voltage plot can be made. This plot is often called a level spectroscopy diagram or a stability diagram and always exhibits a characteristic rhombic structure. Inside the diamond-shaped regions, the number of electrons on the dot is fixed due to the Coulomb blockade effect and no current can flow through them. These regions are often called Coulomb diamonds. Each diamond corresponds to a fixed number of N electrons inside the dot. The points at the end of each diamond where the upper right and lower right edge of the diamond join along the gate voltage axis are called degeneracy points. At these points the energy of adding the $N$ and the $N+1$ electron to the dot is the same (thus, the characterization “degenerate”). Outside the diamonds, the Coulomb blockade is lifted and single-electron tunneling events and thus current flow, take place. The edges of each diamond therefore signify the onset or the termination of a current flow. As we move to the right of the plot, there is a higher gate voltage and therefore the electrochemical potential “ladder” on the dot shifts down. Every time the edge of a diamond is reached, there is an alignment between one of the the electrochemical potential levels inside the dot and the electrochemical potential level of either the source (upper left and lower right diamond edges) or the drain (upper right and lower left diamond edges).
@@ -132,6 +134,7 @@ If we assume that the bias is applied symmetrically so the voltage is applied in
 ![[cd_trasport.png]]
 
 ## High Bias
+
 At the high bias regime, multiple dot energy levels can participate in the charge
 tunneling. Every time an excited state level enters the (now widened) bias window
 together with an electrochemical potential level in the dot, an additional transport
@@ -150,6 +153,7 @@ In a similar to a single quantum dot fashion, systems consisting of two coupled 
 ![[double_qd.png]]
 
 Usually, two contributions to the coupling have to be considered: 
+
 - The electrostatic interaction between the electrons of neighboring dots (capacitive coupling) 
 - The possibility of electron tunneling between dots (tunneling coupling)
 
@@ -159,7 +163,8 @@ The capacity coupling is modelled by a capacitance term $C_m$ (mutual coupling c
 
 ![[cm_dqd.png|400]]
 
-For large distances, the electrostatic interactions between dots are negligible so $C_m=0$
+For large distances, the electrostatic interactions between dots are negligible so $C_m=0$.
+
 In this case, the amount of charge on one node is not influenced by the other.
 
 ![[cm0dqd.png|400]]
@@ -174,7 +179,7 @@ For smaller distances, the electrostatic interactions between dots become signif
 
 ![[cmn0dqd.png|400]]
 
-when the mutual capacitive coupling between the dots ​ is greater than zero, it means that there is significant electrostatic interaction between the two quantum dots.
+When the mutual capacitive coupling between the dots ​ is greater than zero, it means that there is significant electrostatic interaction between the two quantum dots.
 
 **Triple Points**: At certain gate voltages, the electrochemical potentials of the two quantum dots align with the source and drain, allowing electrons to tunnel onto and off the dots. These gate voltages correspond to the vertices of the honeycomb pattern and are called "triple points" because three different charge configurations are energetically degenerate. Only on these points, a current can flow from source to drain.
 
@@ -191,6 +196,7 @@ Therefore, because of the tunneling coupling ($t_{c}$), bonding $\Psi_{B}$ and a
 1. **Bonding Orbital $\Psi_{B}$**: This orbital is a quantum state where the wave functions of two electrons (or electron states) from neighboring quantum dots add **constructively**. It's analogous to the bonding orbital in a molecule, where two atomic orbitals overlap and combine to increase the probability of finding electrons in the region between the two nuclei (or quantum dots in this case). This results in a lower energy state; the electrons are more likely to be found between the dots, which lowers the system's potential energy. The energy associated with this orbital is lower than the original energy levels of the isolated dots, hence the energy $-|t_{c}|$, where the negative sign indicates a lower energy than the individual dot levels.
 
 2. **Antibonding Orbital $\Psi_{A}$​**: Conversely, the antibonding orbital is a quantum state where the wave functions of the electrons from the two dots combine **destructively**, meaning there is less probability of finding the electrons in between the dots. In molecular terms, this would correspond to a node, or a region of zero probability, between the nuclei. For quantum dots, this means that the electron wave functions do not overlap favorably, leading to a higher energy state because the electrons prefer to remain more localized to their respective dots. The antibonding orbital has a higher energy $+|t_{c}|$, reflecting this reduced stability and the increased energy due to the unfavorable overlap.
+
 ### Detuning
 
 Detuning ($\varepsilon$) refers to the energy difference between the levels of two coupled quantum dots when their energy levels are not aligned.

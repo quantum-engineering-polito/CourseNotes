@@ -71,7 +71,7 @@ $$
 
 The Bloch sphere provides a clear geometric picture of the qubit state, making it easier to visualize and understand quantum operations. It captures both the amplitude and phase information of the qubit state.
 
-- **States along y-axis:**
+- **States along z-axis:**
 
 $$
 \ket{0}\  \text{and}\  \ket{1} 

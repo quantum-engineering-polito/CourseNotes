@@ -18,8 +18,8 @@ This has the form:
 
 $$
 V(x)=\begin{cases}  
-0 \qquad 0 < x < a\\
-V_{0} \qquad -b < x < 0 \ \text{or}\ a<x<b\\
+0 && 0 < x < a\\
+V_{0} && -b < x < 0 \ \text{or}\ a<x<b\\
 \end{cases}
 $$
 
@@ -147,13 +147,14 @@ The density of states (DOS) in a superlattice differs significantly from that of
 # QCL (Quantum Cascade Laser)
 
 ## ISB 
-The engineered band structure of QWs leads to the possibility of intersubband (ISB ) transitions which take place between confined states within the conduction or valence bands. The transitions typically occur in the infrared spectral region. Intersubband emission in superlattices is at the base of the operating concepts of the Quantum Cascade Lasers (QCL).
+
+The engineered band structure of QWs leads to the possibility of inter-subband (ISB) transitions which take place between confined states within the conduction or valence bands. The transitions typically occur in the infrared spectral region. Intersubband emission in superlattices is at the base of the operating concepts of the Quantum Cascade Lasers (QCL).
 
 ![[QCL.png|400]]
 
 When combined with a sloped potential bias from well to well, a single electron can cascade through the quantum well structure and emit multiple photons, as shown in the figure above. As a result, QCLs can produce high power at long wavelengths through the combination of both quantum and cascade effects. Emission occurs in the IR region (application to IR emitters, IR sensors, gas sensors.
 
-The QCL, which was first demonstrated in 1994 at Bell Labs in Murray Hill, NJ, is a semiconductor laser, but it operates under very different physical principles than traditional semiconductor diode lasers. Diode lasers achieve stimulated emission through electron-hole recombination between the conduction and valance band. In a QCL, one uses tens or even hundreds of quantum wells to decouple the emission wavelength from the bandgap energy entirely. The decoupling results from the formation of subbands in the conduction band, allowing for stimulated emission to occur within the conduction band itself, this is known as an intersubband transition. Under these circumstances, stimulated emission does not result in electron-hole recombination, leaving the electron within the conduction band. The wavelength of the emitted light is determined by the energy differences between these subbands, not by the material’s bandgap. This allows for greater flexibility in designing the laser to emit at specific wavelengths
+The QCL, which was first demonstrated in 1994 at Bell Labs in Murray Hill, NJ, is a semiconductor laser, but it operates under very different physical principles than traditional semiconductor diode lasers. Diode lasers achieve stimulated emission through electron-hole recombination between the conduction and valance band. In a QCL, one uses tens or even hundreds of quantum wells to decouple the emission wavelength from the bandgap energy entirely. The decoupling results from the formation of subbands in the conduction band, allowing for stimulated emission to occur within the conduction band itself, this is known as an inter-subband transition. Under these circumstances, stimulated emission does not result in electron-hole recombination, leaving the electron within the conduction band. The wavelength of the emitted light is determined by the energy differences between these subbands, not by the material’s bandgap. This allows for greater flexibility in designing the laser to emit at specific wavelengths.
 
 ![[ISB.png|400]]
 

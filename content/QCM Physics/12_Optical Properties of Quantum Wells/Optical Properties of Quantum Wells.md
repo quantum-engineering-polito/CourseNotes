@@ -17,7 +17,7 @@ Light is characterized by a harmonically oscillating magnetic and electric field
 
 ![[Light Prop.png|400]]
 
-If we shine a light on an atom, the photons electric field exerts a force on the electrons and the nucleus and drives oscillations of the system at frequency $\omega$ . During the oscillations of the atomic dipole, the nucleus remains more or less stationary due to its heavy mass, while the electron oscillates backwards and forwards at its natural frequency $\omega_{0}$. 
+If we shine a light on an atom, the photons electric field exerts a force on electrons and nucleus and drives oscillations of the system at frequency $\omega$ . During the oscillations of the atomic dipole, the nucleus remains more or less stationary due to its heavy mass, while the electron oscillates backwards and forwards at its natural frequency $\omega_{0}$. 
 
 If $\omega$ coincides with one of the natural frequencies of the atom $\omega_0$, then we have a resonance phenomenon, this is like pushing a swing at just the right times to make it go higher. At resonance, the electron absorbs energy from the light very efficiently.
 
@@ -53,7 +53,7 @@ This part ensures that energy is conserved during the transition. The transition
 
 # Joint density of states
 
-In semiconductors, light absorption creates energetic electrons and electron vacancies or holes. The optical absorption is given by the rate of all possible  transitions allowed by a given photon energy $\hbar\omega$.
+In semiconductors, light absorption creates energetic electrons and electron vacancies or holes. The optical absorption is given by the rate of all possible transitions allowed by a given photon energy $\hbar\omega$.
 
 $$
 \displaylines{
@@ -63,7 +63,7 @@ W_{tot}(\hbar\omega) = \frac{2\pi}{\hbar}|M|^{2}\ J(\hbar\omega)
 }
 $$
 
-where $J(\hbar\omega)$ is the joint density of states. To understand the form of the joint density of states lets review first the form of the general density of states for a system with a discrete set of energy levels
+where $J(\hbar\omega)$ is the **joint density of states**. To understand the form of the joint density of states lets review first the form of the general density of states for a system with a discrete set of energy levels:
 
 $$
 D(E) = \frac{1}{V} \sum_{i=1}^{N} \delta(E - E(k_i)).
@@ -98,9 +98,10 @@ k_{f} \approx k_{i}
 $$
 
 This is why vertical transitions are the most likely.
+
 # Excitons
 
-The absorption process in a semiconductor or insulator creates an electron in the conduction band and a hole in the valence band but we have previously neglected the Coulomb attraction between them: this can give rise to the formation of new excitations called EXCITON. An exciton is a quasiparticle, It's formed when an electron absorbs enough energy to jump to a higher energy level, leaving behind a hole. The opposite charge particles are created at the same point in space and can attract each other and form a bound electron-hole pair which is called exciton. 
+The absorption process in a semiconductor or insulator creates an electron in the conduction band and a hole in the valence band but we have previously neglected the Coulomb attraction between them: this can give rise to the formation of new excitations called **exciton**. An exciton is a quasiparticle, it's formed when an electron absorbs enough energy to jump to a higher energy level, leaving behind a hole. The opposite charge particles are created at the same point in space and can attract each other and form a bound electron-hole pair which is called exciton. 
 
 In the simplest picture the exciton may be conceived as a small hydrogenic system.
 
@@ -117,24 +118,23 @@ A free exciton can be modelled as a hydrogenic system, the energy of the bound s
 
 Solving the Schrödinger equation we get that:
 
-
 $$
 E(n) = -\frac{R_{X}}{n^{2}} \qquad r_{n}=n^{2}a_{X} 
 $$
 
 where $n$ is the principal quantum number and the important information here is that the ground state with $n=1$ has the largest binding energy and smallest radius. Instead excited states with $n>1$ are less strongly bound and have larger radius.
 
-We also need to know that $R_X$ tends to increase and $a_X$ tends to decrease as $Eg$ (Energy gap) increases. Thus In insulators with band gap greater than about $5eV$, $a_X$ becomes comparable to the unit cell size and the Wannier-Mott model is no longer valid because the radius become too small.
+We also need to know that $R_X$ tends to increase and $a_X$ tends to decrease as $Eg$ (Energy gap) increases. Thus in insulators with band gap greater than about $5eV$, $a_X$ becomes comparable to the unit cell size and the Wannier-Mott model is no longer valid because the radius become too small.
 
-Free excitons are commonly found in semiconductors with direct band gaps, like GaAs. When vertical transitions occur, they generate an electron-hole pair, where both the electron and hole have matching $k$ vectors. For excitons to form, it's essential that the electron's group velocity ($v_e$) and the hole's group velocity ($v_h$) are identical. This requirement is crucial to ensure that the electron and hole can effectively move together as a bound pair. The group velocity for an electron or hole within a band can be calculated using the following equation:
+Free excitons are commonly found in semiconductors with direct band gaps, like $GaAs$. When vertical transitions occur, they generate an electron-hole pair, where both the electron and hole have matching $k$ vectors. For excitons to form, it's essential that the electron's group velocity ($v_e$) and the hole's group velocity ($v_h$) are identical. This requirement is crucial to ensure that the electron and hole can effectively move together as a bound pair. The group velocity for an electron or hole within a band can be calculated using the following equation:
 
 $$
 v_{g} = \frac{1}{\hbar}  \frac{\partial{E}}{\partial{k}}
 $$
 
-At the zone center, bands have a flat or zero gradient. Consequently, when there's a direct transition occurring at $k=0$ in a direct gap semiconductor, it results in exciton formation. These transitions at $k=0$ are associated with a photon energy equal to the semiconductor's bandgap ($Eg$). As a result, we observing a pronounced excitonic effect in the spectral range near the fundamental gap.
+At the zone center, bands have a flat or zero gradient. Consequently, when there's a direct transition occurring at $k=0$ in a direct gap semiconductor, it results in exciton formation. These transitions at $k=0$ are associated with a photon energy equal to the semiconductor's bandgap ($Eg$). As a result, we observe a pronounced excitonic effect in the spectral range near the fundamental gap.
 
-The energy of the exciton created in a direct transition at $k=0$ is equal to the energy required to create the electron-hole pair, namely $E_g$, less the binding energy due to the Coulomb interaction , which is given by:
+The energy of the exciton created in a direct transition at $k=0$ is equal to the energy required to create the electron-hole pair, namely $E_g$, minus the binding energy due to the Coulomb interaction , which is given by:
 
 $$
 \Delta E(n) = E_{g} -\frac{R_{X}}{n^{2}}
@@ -147,7 +147,9 @@ Band edge absorption spectrum for a direct gap semiconductor with excitonic effe
 Free exciton absorption can only be observed in the absorption spectrum of very pure samples. This is because impurities releases free electrons ad holes that can screen the Coulomb interaction in the exciton and thereby strongly reduce the binding forces. Excitonic effects are not usually observed in doped semiconductors or metals, since they contain a very high density of free carriers.
 
 **Frenkel excitons (or tightly bound excitons):**
+
 ![[bounded_exciton.png|200]]
+
 Frenkel exciton occurs in large band gap materials with small dielectric constant and large effective masses and they are localized on the atom site they are generated. They can be considered as excited states of the individual atoms or molecules on which they are localized. They have small radii and correspondingly large binding energies, with typical values ranging from about $0.1 eV$ to several $eV$. Thus, they are usually stable at room temperature.
 
 Stable excitons will only be formed if the attractive potential is sufficient to protect the exciton against thermal vibrations (phonons). Indeed these effects become stronger as the band gap increases and the temperature is lowered.
@@ -209,7 +211,8 @@ The quantization of the motion in the z-direction has three main consequences:
    
 3) The confinement keeps the electron and holes closer together and hence increases the radiative recombination (the process where an electron in a higher energy state loses energy by emitting a photon and falls into a lower energy state) probability. In a quantum well, the motion of electrons and holes is restricted in the direction perpendicular to the well. This means they are more likely to be found in closer proximity to each other than in a bulk semiconductor where they could be more spread out.
 
-## transitions in QW:
+## Transitions in QW:
+
 Let’s analyse the transitions between occupied and unoccupied states in a QW:
 
 ![[qw_light.png|200]]
@@ -235,6 +238,7 @@ Putting all together (forgetting about all the constants):
 and
 
 ![[matrix_element_qw_2.png]]
+
 The J is obtained by counting all the initial occupied states and all the unoccupied final states:
 
 $$
@@ -243,7 +247,7 @@ $$
 
 we simplified the formulas due to the fact that $k$ is unique.
 
-The J is calculated with a similar procedure to the regular density of states for a QW. We, therefore, find the same step-like function independent from E:
+The J is calculated with a similar procedure to the regular density of states for a QW. We, therefore, find the same step-like function independent from $E$:
 
 $$
 J_{n=1} = \frac{\mu}{\pi \hbar^{2}}
