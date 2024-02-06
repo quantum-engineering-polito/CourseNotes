@@ -18,6 +18,7 @@ Multiple authors and their respective links can be added by separating them with
 author: Author1, Author2, Author3
 authorlink: link1,,link3
 ```
+
 # Headers
 
 Use hashes to identify header ^ed057f
@@ -39,7 +40,7 @@ Use `**bold text**` for **bold text**, `*italic text*` for *italic text* and `==
 
 # Lists
 
-Unnumbered lists can be created like this:
+Numbered lists can be created like this:
 
 ```
 1) Item 1
@@ -51,7 +52,7 @@ Unnumbered lists can be created like this:
 2) Item 2
 3) Item 3
 
-While numbered lists like this:
+While unnumbered lists like this:
 
 ```
 - Item 1
@@ -65,9 +66,9 @@ While numbered lists like this:
 
 # Links
 
-Internal links in obsidian have the following format `[[file to link]]` and are rendered as follows:
+Internal links in obsidian have the following format `[[linked file]]` and are rendered as follows:
 
-[[index|file to link]]. 
+[[index|linked file]]. 
 
 You can change the text shown by adding a pipe `|` followed by the text you want. For example [[Clean Room Technology]] `[[Clean Room Technology]]` can be show as [[Clean Room Technology|clean room]] `[[Clean Room Technology|clean room]]`.
 
@@ -84,7 +85,7 @@ If you want to add a link to an external website use this format `[random link](
 
 # Transclusion
 
-You can embed an entire document of part of it in another note by adding an exclamation mark `!` before the correct link, for example `![[#Text decoration]]` will appear as:
+You can embed an entire document or part of it in another note by adding an exclamation mark `!` before the correct link, for example `![[#Text decoration]]` will appear as:
 
 ![[#Text decoration]]
 
@@ -104,7 +105,8 @@ if you want to resize the image you can add `|width` after the image name. For e
 
 # Tables
 
-If you have installed the [Advanced Tables](https://github.com/tgrosinger/advanced-tables-obsidian) plugin you just need to type a pipe `|` and hit `TAB`, the plugin will automatically create new rows and columns as if you were in Excel (press `TAB` to move to the next column and `ENTER` to move to the next row).
+To create a table you can "right click" where you want to create the table and select "*Insert -> Table*". Then edit the table as if you were in excel.
+
 
 Example:
 
@@ -118,14 +120,17 @@ Example:
 | -------- | -------- |
 | Cell 1   | Cell 2   |
 
-You can also use the plugin's toolbar on the right to edit the table:
-
-![[advanced tables toolbar.png|300]]
 # $\LaTeX$
 
->[!warning] By default the *Latex suite* plugin "shortcuts" are disabled. Go into the plugin settings and enable it: ![[enable latex suite.png]]
+>[!warning] By default the *Latex suite* plugin "shortcuts" are disabled. Go into the plugin settings and enable them: ![[latex suite enable2.png]]
+
+## Create a formula
+
+### Inline formula
 
 Latex blocks can be inserted inline by placing the content between two `$` signs like this: `$\int_{-\infty}^{+\infty} f(x) \, dx$` will be rendered as: $\int_{-\infty}^{+\infty} f(x) \, dx$
+
+### Separate formula
 
 If you want to place the latex formula in a separate block you need two `$` signs like this: 
 
@@ -148,23 +153,68 @@ Check the [plugin documentation](https://github.com/artisticat1/obsidian-latex-s
 ## Examples
 
 >[!warning]
->The plugin automatically replaces some words, if you don't like this press `CTRL+Z` to undo the replacement or delete the appropriate line in the plugin settings
+>The plugin automatically replaces some words, if you don't like this press `CTRL+Z` to undo the replacement or delete the appropriate line in the plugin settings.
 
-- **Inline Latex environment**: type `mk` anywhere in the file
-- **Latex environment**: type `dm` anywhere in the file
-- **Greek letters**: type `@` followed by the corresponding latin letter, e.g. `@a` will become $\alpha$
-- **Infinity**: type `ooo` to get $\infty$
-- **Fractions**: typing a slash `/` after something will automatically create a fraction like $\frac{a}{b}$ 
-- **Exponentials and similar**: 
-	- type `sr` for `^2`
-	- `sq` for `\sqrt{}`
-	- `cb` for `^3` 
-	- `ee` for `e^{}`
-- **Vectors and stuff on top of letters**: type the letter you want to vectorize followed by `vec`, `bar`, `hat`, `tilde`, e.g. `Gvec` to get `\vec{G}` $\vec{G}$, `Gtilde` to get $\tilde{G}$, etc.
-- **Number subscript**: if you write a number after a letter or symbol it will automatically become a subscript, e.g. `a0` will become $a_0$
-- **Integrals**: type `dint` and you will get $\int_{-\infty}^{+\infty}  \, dx$ with the $-\infty$ selected, you can type what you want and then press `TAB` to move to the other fields. You can also type `int` to get $\int  \, dx$
-- **Summations**: same as the integrals with `dsum` and `sum`
-- **Aligned equations**: to align equations you need to be in the `align` environment. This can be done by typing `align`, which will create `\begin{align} \end{align}` or by selecting pre-existing text with the mouse and pressing `SHIFT+A`, which will surround the text with the correct environment. Inside `align` the symbol `&` will specify what has to be aligned with what. `&&` can be used to align text at the end of the line. Use `\\` to go to a new line.
+### **Inline Latex environment**
+
+Type `mk` anywhere in the file
+
+### **Latex environment**
+
+Type `dm` anywhere in the file
+
+### **Greek letters**
+
+Type `@` followed by the corresponding Latin letter, e.g. `@a` will become $\alpha$. 
+
+Some letters have two versions, for example $\varepsilon$ (`\varepsilon`) and $\epsilon$ (`\epsilon`) can be created with `@e` and `@@e`.
+
+### **Infinity**
+
+Type `ooo` to get $\infty$
+
+### **Fractions**
+
+Typing a slash `/` after something will automatically create a fraction like $\frac{a}{b}$ 
+
+### Other shortcuts
+
+Type:
+
+- `sr` for `^2`
+- `sq` for `\sqrt{}` ($\sqrt{ }$)
+- `cb` for `^3` 
+- `ee` for `e^{}`
+- `..` for `\cdot` ($\cdot$)
+- `<=` for `leq` ($\leq$)
+- `EF` for `E_F` (Fermi energy)
+- `=>` for `\implies` ($\implies$)
+- `Down` for `\Downarrow` ($\Downarrow$)
+- `~=` for `simeq` ($\simeq$)
+- `brk` for `\braket{}` ($\braket{  }$)
+
+and so on.
+
+### **Vectors and stuff on top of letters**
+
+Type the letter you want to vectorize followed by `vec`, `bar`, `hat`, `tilde`, e.g. `Gvec` to get `\vec{G}` $\vec{G}$, `Gtilde` to get $\tilde{G}$, etc.
+
+### **Number subscript**
+
+If you write a number after a letter or symbol it will automatically become a subscript, e.g. `a0` will become $a_0$
+
+### **Integrals**
+
+Type `dint` and you will get $\int_{-\infty}^{+\infty}  \, dx$ with the $-\infty$ selected, you can type what you want and then press `TAB` to move to the other fields. You can also type `int` to get $\int  \, dx$
+
+### **Summations**
+
+Same as the integrals with `dsum` and `sum`
+
+### **Aligned equations**
+
+To align equations you need to be in the `align` environment. This can be done by typing `align`, which will create `\begin{align} \end{align}` or by selecting pre-existing text with the mouse and pressing `SHIFT+A`, which will surround the text with the correct environment. Inside `align` the symbol `&` will specify what has to be aligned with what. `&&` can be used to align text at the end of the line. Use `\\` to go to a new line.
+
 
 ```latex
 \begin{align}
@@ -182,8 +232,10 @@ f(x,y,z) &= g(x,y,z) \\
 \end{align}
 $$
 
+### **Systems of equations**
 
-- **Systems of equations**: can be created inside the `cases` environment, typing `cases` will create `\begin{cases} \end{cases}`. Similarly to the previous case `&&` can be used to align stuff at the end of the line.
+Can be created inside the `cases` environment, typing `cases` will create `\begin{cases} \end{cases}`. Similarly to the previous case `&&` can be used to align stuff at the end of the line.
+
 
 ```latex
 \begin{cases}
@@ -199,7 +251,10 @@ $$
 \end{cases}
 $$
 
-- **Boxed equations**: can be created with `\boxed{}`
+### **Boxed equations**
+
+Can be created with `\boxed{}`
+
 ```latex
 \boxed{y = ax + b}
 ```
@@ -207,7 +262,10 @@ $$
 $$
 \boxed{y = ax + b}
 $$
-- **Equation number**: the number of the equation at the end of the line can be created with `\tag{}` (the plugin will automatically expand `tag`) :
+### **Equation number**
+
+The number of the equation at the end of the line can be created with `\tag{}` (the plugin will automatically expand `tag`) :
+
 ```latex
 y = ax + b \tag{3}
 ```
@@ -216,7 +274,7 @@ $$
 y = ax + b \tag{3}
 $$
 
-
+---
 
 >[!tip] Command palette
 >You can open the command palette by pressing `CTRL+SHIFT+P` or by selecting the `>_` icon in the left bar
