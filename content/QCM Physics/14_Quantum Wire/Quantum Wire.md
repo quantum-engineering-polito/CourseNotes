@@ -4,16 +4,18 @@ author: BabelDev0
 authorlink: https://github.com/BabelDev0
 draft: false
 ---
-In a quantum wire we have 
+There is a general rule that applies to confined structures: if the number of degrees of freedom is denoted by $D_f$ and the number of directions of confinement is denoted by $D_c$, then
 
 $$ 
-\displaylines{
-D_{f}+D_{c}=3 \\\\
+D_{f}+D_{c}=3 
+$$
+In a quantum wire we have 
+
+$$
 D_{f}=1 ; \ D_{c}=2
-}
 $$
 
-We have 2 dimension of confinement and one degree of freedom for electrons.
+Which is to say that we have 2 dimension of confinement and one degree of freedom for the electrons.
 
 ![[Quantum Wire.png|400]]
 
@@ -38,7 +40,7 @@ V_{x},V_{y}=\begin{cases}
 }
 $$
 
-As we did before (in other scenarios) we solve separately the three dimensions and we sum up the energies and multiply the wavefunctions to get the overall solutions
+As we did before (in other scenarios) we solve separately the three dimensions and we sum up the energies and multiply the wavefunctions to get the overall solutions. What we will find is that we have a free particle in the $z$ direction and an infinite potential well in the $x$ and $y$ directions.
 
 Along $z$ direction:
 
@@ -93,7 +95,7 @@ $$
 
 ![[PBC_in_bands.png|400]]
 
-# DOS
+# 1D DOS
 
 Starting from the first band $n_x,n_{y}=1$ we can write:
 

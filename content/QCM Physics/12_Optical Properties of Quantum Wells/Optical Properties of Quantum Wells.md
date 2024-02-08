@@ -82,6 +82,7 @@ J(\hbar\omega) = \int_{\text{states}}\int_{\text{states}} \frac{d k_{i}d k_{f}}{
 $$
 
 The image below show a band structure where the blue arrows represent electron transitions due to photon absorption:
+
 ![[momentum_conservation.png|350]]
 
 in addition to the conservation of energy we must also satisfy the momentum conservation:
@@ -91,6 +92,7 @@ k_{f}=k_{i}+q
 $$
 
 where $q$ is the wavevector of the photon perturbing the system. 
+
 The wavelength of the incident radiation (infrared region, visible, up to near and far ultraviolet region) is much larger than the lattice parameter; in these situations, the photon wavevector $q$ of the incident radiation is small compared to the range of values of $k$ within the first Brillouin zone; thus we may neglect $q$ and write:
 
 $$
@@ -109,7 +111,8 @@ In the simplest picture the exciton may be conceived as a small hydrogenic syste
 
 There are two basic types of excitons:
 
-**Wannier-Mott excitons (or free excitons):**
+### Wannier-Mott excitons (or free excitons)
+
 They are delocalized states that can move freely throughout the crystal
 
 ![[free_exciton.png|200]]
@@ -126,7 +129,9 @@ where $n$ is the principal quantum number and the important information here is 
 
 We also need to know that $R_X$ tends to increase and $a_X$ tends to decrease as $Eg$ (Energy gap) increases. Thus in insulators with band gap greater than about $5eV$, $a_X$ becomes comparable to the unit cell size and the Wannier-Mott model is no longer valid because the radius become too small.
 
-Free excitons are commonly found in semiconductors with direct band gaps, like $GaAs$. When vertical transitions occur, they generate an electron-hole pair, where both the electron and hole have matching $k$ vectors. For excitons to form, it's essential that the electron's group velocity ($v_e$) and the hole's group velocity ($v_h$) are identical. This requirement is crucial to ensure that the electron and hole can effectively move together as a bound pair. The group velocity for an electron or hole within a band can be calculated using the following equation:
+Free excitons are commonly found in semiconductors with direct band gaps, like $GaAs$. When vertical transitions occur, they generate an electron-hole pair, where both the electron and hole have matching $k$ vectors. For excitons to form, it's essential that the electron's group velocity ($v_e$) and the hole's group velocity ($v_h$) are identical. This requirement is crucial to ensure that the electron and hole can effectively move together as a bound pair. 
+
+The group velocity for an electron or hole within a band can be calculated using the following equation:
 
 $$
 v_{g} = \frac{1}{\hbar}  \frac{\partial{E}}{\partial{k}}
@@ -142,11 +147,15 @@ $$
 
 ![[excitons_on_alpha.png|350]]
 
-Band edge absorption spectrum for a direct gap semiconductor with excitonic effects. The dashed line shows the expected absorption when the excitonic effects are ignored. When excitons form, they create distinct absorption peaks in the material's optical absorption spectrum. These peaks occur at energies slightly lower than the bandgap energy of the material. The presence of these exciton peaks increases the absorption coefficient at specific energies.
+*Band edge absorption spectrum for a direct gap semiconductor with excitonic effects.*
+
+The dashed line shows the expected absorption when the excitonic effects are ignored. When excitons form, they create distinct absorption peaks in the material's optical absorption spectrum. These peaks occur at energies slightly lower than the bandgap energy of the material. The presence of these exciton peaks increases the absorption coefficient at specific energies.
 
 Free exciton absorption can only be observed in the absorption spectrum of very pure samples. This is because impurities releases free electrons ad holes that can screen the Coulomb interaction in the exciton and thereby strongly reduce the binding forces. Excitonic effects are not usually observed in doped semiconductors or metals, since they contain a very high density of free carriers.
 
-**Frenkel excitons (or tightly bound excitons):**
+Wannier-Mott excitons have small binding energies due to their large radius, with typical values of $0.01 eV$. Since $k_{B}T$ at room temperature is larger, the excitons can be observed clearly only at cryogenic temperatures in many materials.
+
+### Frenkel excitons (or tightly bound excitons)
 
 ![[bounded_exciton.png|200]]
 
@@ -156,13 +165,11 @@ Stable excitons will only be formed if the attractive potential is sufficient to
 
 Since the maximum energy of a thermally excited phonon at room temperature $T$ is about $k_{B}T$. Thus at room temperature exciton binding energy must be greater then $k_{B}T \sim (0.025 eV)$. 
 
-**Wannier-Mott excitons** have small binding energies due to their large radius, with typical values of $0.01 eV$. Since $k_{B}T$ at room temperature is larger, the excitons can be observed clearly only at cryogenic temperatures in many materials. Instead **Frenkel excitons** have larger binding energies of the order $0.1-1 eV$, which makes them stable at room temperature.
-
 # QW structures
 
 ![[QW.png|400]]
 
-We can calculate the electronic states of QWs by solving the Schrödinger eq. for the electrons and holes in the potential wells created by the band discontinuities.
+We can calculate the electronic states of QWs by solving the Schrödinger equation for the electrons and holes in the potential wells created by the band discontinuities.
 
 $$
 \Psi(x,y,z) = \psi(x)\psi(y)\psi(z) = \phi(x,y)\psi(z)
@@ -201,7 +208,7 @@ $$
 
 The confinement energy is inversely proportional to $d^2$ , implying that narrow wells have larger confinement energies. Furthermore, the confinement energy is inversely proportional to the effective mass, which means that lighter particles experience larger effects.
 
-The quantization of the motion in the z-direction has three main consequences:
+The quantization of the motion in the $z$-direction has three main consequences:
 
 1) The quantization energy shifts the effective band edge to higher energy. Indeed the quantized energy levels are higher in energy than the unconfined states in the bulk material.
    

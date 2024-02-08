@@ -6,6 +6,9 @@ draft: false
 ---
 # Transport Matrix
 
+>[!quote] Davies, 5
+
+
 A generalized "barrier" is any disturbance of an otherwise flat potential.
 We will start considering the step potential problem.
 
@@ -242,6 +245,6 @@ The Coulomb blockade prevents electrons from randomly moving onto the island due
 
 ![[QCM Physics/09_Tunneling and T matrix/attachments/coulomb_blockade.png]]
 
-this phenomenon can be exploit to create a transistor device which can control the flow of individual electrons. That is the principles used in SET (Single-Electron Transistor)
+This phenomenon can be exploit to create a transistor device which can control the flow of individual electrons. That is the principles used in SET (Single-Electron Transistor)
 
 

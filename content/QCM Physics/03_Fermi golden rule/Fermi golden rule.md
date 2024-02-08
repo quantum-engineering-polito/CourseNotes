@@ -223,10 +223,10 @@ $$
 By calculating the transition rate we get the **Fermi golden rule**: 
 
 $$
-\begin{align}
+\boxed{ \begin{align}
 &W_{fi} = \frac{2\pi}{\hbar} |M_{fi}|^{2} \delta(E_{f} - E_{i} {\color{red} -}  \hbar \omega) \qquad \text{(first term)} \\
 &W_{if} = \frac{2\pi}{\hbar} |M_{fi}|^{2} \delta(E_{f} - E_{i} {\color{red} +}  \hbar \omega) \qquad \text{(second term)}
-\end{align}
+\end{align} }
 $$
 
 ## In Solid

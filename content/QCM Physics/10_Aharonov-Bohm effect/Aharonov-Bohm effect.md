@@ -89,7 +89,7 @@ Substituting in the Schrödinger equation:
 
 the new equation is the Schrödinger equation of the free particle is much simpler than the previous one. 
 
-As we have seen, the effect of $A$ is to change the phase of the wave function
+As we have seen, the effect of $A$ is to **change the phase of the wave function**
 
 $$ 
 \Psi = \Psi' \exp \left[   i \frac{q}{\hbar}\int_{\bar{r}_{0}}^{\bar{r}} A(\bar{r}') \, d\bar{r}' \right]
