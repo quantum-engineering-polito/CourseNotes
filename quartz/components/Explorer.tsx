@@ -11,11 +11,8 @@ import { i18n } from "../i18n"
 // Options interface defined in `ExplorerNode` to avoid circular dependency
 const defaultOptions = {
   folderClickBehavior: "collapse",
-  folderDefaultState: "collapsed",
+  folderDefaultState: "open",
   useSavedState: true,
-  mapFn: (node) => {
-    return node
-  },
   sortFn: (a, b) => {
     // Sort order: folders first, then files. Sort folders and files alphabetically
     if ((!a.file && !b.file) || (a.file && b.file)) {
@@ -33,8 +30,40 @@ const defaultOptions = {
       return -1
     }
   },
-  filterFn: (node) => node.name !== "tags",
-  order: ["filter", "map", "sort"],
+   filterFn: (node) => {
+    const omit = new Set(["attachments", "tags"])
+      const passed = !omit.has(node.name.toLowerCase())
+      return passed
+  },
+  // doesn't show folders which have a single child with the same* name
+  // (* = the folder can have a starting number and underscore such as "01_note" which is
+  // used for ordering but is not used in the comparison with the children names)
+  mapFn: (node) => {
+    const reg = `(?:\\d+_)`
+    // Check if the node map is currently processing is a folder that has only one
+    // which has it's same* name
+    if (!node.file && node.children.length == 1) {
+       // Now, we'd need to get the child node with the same name
+    // Utilizzo della funzione test per verificare se str2 matcha con il pattern
+     ;
+       const child = node.children.find((child) => !!node.name.match(new RegExp(`${reg}?${child.name}`)));
+      if (!child) return
+      // Now, we can theoretically replace our current node (the folder) with the file we just found
+      // This might require you to actually copy the child node, as you first need to delete the parent node's children ("remove" all other files in the folder and override the folder to be your file)
+      node.children = [];
+
+      // Override name if your child node (the file) ever has a different name from the parent folder
+      // node.displayName = node.name
+      // node.name = child.name;
+      node.displayName = child.displayName
+      // This sets the folder node to just be equal to the file you found
+      node.file = child.file;
+    }
+    else {
+      console.log(node.displayName + "..." + node.name)
+    }
+  },
+  order: ["filter", "sort", "map"],
 } satisfies Options
 
 export default ((userOpts?: Partial<Options>) => {

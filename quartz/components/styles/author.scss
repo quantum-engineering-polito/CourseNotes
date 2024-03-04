@@ -1,0 +1,117 @@
+
+div.author {
+  display: flex;
+  flex-direction: row;
+  align-items: baseline;
+  justify-content: center;
+  flex-wrap: wrap;
+  width: 80%;
+  margin: auto;
+  // background-color: red;
+  // margin: auto;
+  padding: 0.2rem 0.5rem;
+  // border-radius: 0.5rem;
+  border-width: 0.15rem 0;
+  border-style: solid;
+  border-color: var(--gray);
+  margin-top: 0;
+  margin-bottom: 1.5rem;
+  
+  & > p {
+    color: var(--darkgray);
+    font-weight: bold;
+  }
+  
+  & > * {
+    // padding: 0;
+    margin: 0.2rem
+  }
+  
+  
+  
+}
+div.authorWLink {
+  display: flex;
+  cursor: pointer;
+  flex-direction: row;
+  align-items: center;
+  align-self: baseline;
+  justify-content: center;
+  flex-wrap: nowrap;
+  padding: 0.2rem;
+  border-radius: 0.5rem;
+  background-color: var(--lightgray);
+  transition:  0.2s ease;
+  margin: 0.2rem;
+  width: fit-content;
+  overflow: hidden;
+  color: var(--darkgray);
+  
+  & > img {
+    width:1.2rem;
+    border-radius:25%;
+    align-self:center;
+    margin: 0 0 0 0.2rem;
+    transition: border-radius 0.2 ease;
+    // box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  }
+  
+  & > a {
+    word-wrap: normal;
+  }
+}
+
+div.authorWLink:hover {
+  background-color: color-mix(in srgb,var(--tertiary)65%,transparent);
+  transition:  0.2s ease;
+  & > a {
+    color: var(--primary) !important;
+  }
+}
+
+div.hiddenAuthors {
+  position: relative;
+}
+
+div.hiddenAuthors::before {
+  content: "...";
+  padding: 0 0.2rem;
+  border-radius: 0.5rem;
+  // background-color: var(--lightgray);
+  color: var(--secondary);
+  
+  font-size: larger;
+}
+div.hiddenAuthors:hover .hiddenAuthorsContainer {
+  // visibility: visible;
+  opacity: 1;
+  transition:  0.2s ease;
+}
+div.hiddenAuthorsContainer {
+  // visibility: hidden;
+  opacity: 0;
+  z-index: 1;
+  position: absolute;
+  width: max-content;
+  left: 50%;
+  top: 100%;
+  
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0.4rem;
+  
+  border-radius: 	0.5rem;
+  box-shadow: 6px 6px 36px color-mix(in srgb,var(--gray)1%,transparent);
+  border: 1px solid var(--lightgray);
+  background-color: var(--light);
+  
+  transition:  0.2s ease;
+
+  & > * {
+    justify-self: center;
+    margin: 0.3rem;
+  }
+  
+}

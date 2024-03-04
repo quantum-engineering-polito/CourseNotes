@@ -8,16 +8,16 @@ import * as Plugin from "./quartz/plugins"
  */
 const config: QuartzConfig = {
   configuration: {
-    pageTitle: "🪴 Quartz 4.0",
+    pageTitle: "QE Notes PoliTO",
     enableSPA: true,
     enablePopovers: true,
     analytics: {
       provider: "plausible",
     },
     locale: "en-US",
-    baseUrl: "quartz.jzhao.xyz",
-    ignorePatterns: ["private", "templates", ".obsidian"],
-    defaultDateType: "created",
+    baseUrl: "quantum-engineering-polito.github.io/CourseNotesquartz.jzhao.xyz",
+    ignorePatterns: ["private", "templates", ".obsidian", "Excalidraw/*", "Templates", "Excalidraw/Scripts", "**/attachments/**/*.md"],
+    defaultDateType: "modified",
     theme: {
       cdnCaching: true,
       typography: {
@@ -56,7 +56,7 @@ const config: QuartzConfig = {
         priority: ["frontmatter", "filesystem"],
       }),
       Plugin.ObsidianFlavoredMarkdown({ enableInHtmlEmbed: false }),
-      Plugin.Latex({ renderEngine: "katex" }),
+      Plugin.Latex({ renderEngine: "mathjax" }),
       Plugin.SyntaxHighlighting({
         theme: {
           light: "github-light",
@@ -68,6 +68,7 @@ const config: QuartzConfig = {
       Plugin.TableOfContents(),
       Plugin.CrawlLinks({ markdownLinkResolution: "shortest" }),
       Plugin.Description(),
+      Plugin.TableOfContents(),
     ],
     filters: [Plugin.RemoveDrafts()],
     emitters: [
