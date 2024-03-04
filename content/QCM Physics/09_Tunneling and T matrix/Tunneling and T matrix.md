@@ -6,6 +6,9 @@ draft: false
 ---
 # Transport Matrix
 
+>[!quote] Davies, 5
+
+
 A generalized "barrier" is any disturbance of an otherwise flat potential.
 We will start considering the step potential problem.
 
@@ -25,11 +28,11 @@ $$
 with:
 
 $$ 
-\displaylines{
-x < 0 \qquad k_{1} = \sqrt{ \frac{2mE}{\hbar} }
+\begin{align}
+&x < 0 && k_{1} = \sqrt{ \frac{2mE}{\hbar} }
 \\\\
-x > 0 \qquad k_{2} = \sqrt{ \frac{2m(E-V_{0})}{\hbar} }
-}
+&x > 0 && k_{2} = \sqrt{ \frac{2m(E-V_{0})}{\hbar} }
+\end{align}
 $$ 
 The wavevector $k_1$​ is real, whereas the wavevector $k_2$​ can be either real or imaginary, depending on the relationship between $E$ and $V_0$​. Specifically, if $E<V_0$​, then the wavevector $k_2$​ is imaginary; otherwise it is real.
 
@@ -157,7 +160,7 @@ r = -\frac{T_{21}^{n1}}{T_{22}^{n1}}
 }
 $$
 
-If our system is invariant with respect to time inversion and is symmetric with respect to the barriers, the transfer matrix's determinant is equal to 1 so, in this cases
+If our system is invariant with respect to time inversion and is symmetric with respect to the barriers, the transfer matrix's determinant is equal to 1 so, in these cases
 
 $$ 
 \displaylines{
@@ -175,7 +178,7 @@ $$
 # Quantum and classical transmittance
 
 
-![[classical_vs_quantum.png]]
+![[classic vs quantum.svg|400]]
 
 we can see that the quantum case differ from the classical one not only when $E<V_0$ but also when it is $>V_0$.
 
@@ -189,7 +192,7 @@ Some of the parameters that influence the transmittance index:
 
 # Resonant-tunnelling diode
 
-An interesting application of resonant tunneling is the **RESONANT-TUNNELING DIODE** which typically consists of a central layer of undoped GaAs separated from doped GaAs contact regions by means of AlAs (or AlGaAs) tunnel barriers. 
+An interesting application of resonant tunneling is the **RESONANT-TUNNELING DIODE** which typically consists of a central layer of undoped GaAs separated from doped GaAs contact regions by means of $AlAs$ (or $AlGaAs$) tunnel barriers. 
 
 ![[RTD.png|450]]
 
@@ -214,6 +217,7 @@ When the bias is increased further, the resonant level moves below the Fermi lev
 **Section (d): Too High Bias**
 
 At a very high bias, the resonant level drops too low, below the energy of most electrons in the source. This misalignment means that fewer electrons have the energy to tunnel through the barrier, and thus the current decreases rapidly.
+
 # Coulomb blockade
 
 Is a phenomenon where the transfer of an electron to a small conducting island is prevented due to the repulsive force (Coulomb force) from electrons already present on the island. In essence, it becomes energetically expensive for additional electrons to join the island once a certain number of electrons are present, due to the increase in electrostatic energy. This phenomenon applies a more restrictive condition for the transmission of electrons from source to drain towards the barriers. Indeed even if an electron has the right energy (energy in the range align with the resonant energy), it still might not get through because of the repulsion from other electrons.
@@ -241,6 +245,6 @@ The Coulomb blockade prevents electrons from randomly moving onto the island due
 
 ![[QCM Physics/09_Tunneling and T matrix/attachments/coulomb_blockade.png]]
 
-this phenomenon can be exploit to create a transistor device which can control the flow of individual electrons. That is the principles used in SET (Single-Electron Transistor)
+This phenomenon can be exploit to create a transistor device which can control the flow of individual electrons. That is the principles used in SET (Single-Electron Transistor)
 
 

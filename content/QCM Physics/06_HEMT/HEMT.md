@@ -66,14 +66,13 @@ this changes the carrier density of the 2DEG switching the source-drain current.
 
 # Metal-semiconductor junction
 
-depending on the work function of the metal $q\Phi_{M}$ and of the electron affinity $q\varkappa_{s}$ of the semiconductor we can have different scenario.
+Depending on the work function of the metal $q\Phi_{M}$ and of the electron affinity $q\varkappa_{s}$ of the semiconductor we can have different scenario.
 
 In the case in witch $q\Phi_{M} > q\varkappa_{s}$ we have this situation:
 
 ![[schottkey_equilibrium.png]]
 
 The metal introduces a charge distribution at the interface due to the transfer of electrons from the semiconductor to the metal to align the Fermi levels upon contact. This results in a depletion region within the semiconductor where free charge carriers are reduced and immobile donor or acceptor ions are left exposed. In a Schottky junction, the electric field is typically strongest within the depletion region. The strength and extent of this field, and hence the degree of band bending, are determined by the amount of charge and the permittivity of the semiconductor material, as described by the Poisson equation:
-
 
 $$ 
 \nabla^{2}\phi = \frac{\rho}{\varepsilon}​

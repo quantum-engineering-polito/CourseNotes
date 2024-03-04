@@ -56,7 +56,7 @@ $$
 \left\{\frac{1}{2m}[\hat{p}-q \vec{A}(\vec{R},t)]^{2}+\cancel{ q\phi(\vec{R},t) }\right\}\psi(\vec{R},t)=-i\hbar\frac{\partial}{\partial t}\,\psi(\vec{R},t) \tag{1}
 $$
 
-Where $q \vec{A}(\vec{R}, t)$ is the momentum component related to the magnetic field (see [[Vector Potential]]). We decide to ignore the electrostatic interaction between the charges and thus the scalar potential is $\phi=0$
+Where $q \vec{A}(\vec{R}, t)$ is the momentum component related to the magnetic field (see [[Vector Potential]]). We decide to ignore the electrostatic interaction between the charges and thus the scalar potential is $\phi=0$.
 
 Before proceeding we need to find a useful vector potential and we decide to use the **Landau gauge** that will simplify our calculations: 
 
@@ -80,11 +80,11 @@ $$
 \bigg[-\frac{\hbar^{2}}{2m}\vec{\nabla}^{2}\underbrace{ -\frac{i e\hbar B \cdot x}{m}\frac{\partial}{\partial y} }_{ \substack{\approx \text{ Lorentz force,} \\ \text{contains } x \text{ and } y }}+\underbrace{ \frac{(e B \cdot x)^{2}}{2m} }_{ \substack{\approx \text{ harmonic osc.} \\ \text{confines the wf in } x} }+\underbrace{ V(z) }_{ \substack{\text{depends on } \\ \text{the material} \\ \text{e.g. 2DEG}} }\bigg]\psi(\vec{R})=E\psi(\vec{R})
 $$
 
-The system that we are considering is an electron gas that is free to move in the x and y directions but is tightly confined in the z direction. To solve this Hamiltonian it is possible to separate it into two equations since the magnetic field just affects the movement along x and y axes. The total energy becomes then, the sum of two contributions $E=E_{xy}+E_z$.
+The system that we are considering is an electron gas that is free to move in the $x$ and $y$ directions but is tightly confined in the $z$ direction. To solve this Hamiltonian it is possible to separate it into two equations since the magnetic field just affects the movement along $x$ and $y$ axes. The total energy becomes then, the sum of two contributions $E=E_{xy}+E_z$.
 
 ## Hamiltonian $x y$ directions:
 
-The vector potential (and hence the Hamiltonian of the system) does not depend on the y-coordinate. And since the Hamiltonian does not depend on y, the momentum operator in the y-direction $\hat{p}_{y}=-i\hbar \frac{ \partial^{2} }{ \partial y^{2} }$ commutes with the Hamiltonian. This means that $\hat{p}_{y}$​ is a constant of motion, and its eigenfunctions are plane waves in the y-direction $e^{ik_{y}y}$ thus we can think about the wave function as a product of a generic (unknown) function $u(x)$ and a plane wave in the $y$ direction: 
+The vector potential (and hence the Hamiltonian of the system) does not depend on the $y$-coordinate. And since the Hamiltonian does not depend on $y$, the momentum operator in the $y$-direction $\hat{p}_{y}=-i\hbar \frac{ \partial^{2} }{ \partial y^{2} }$ commutes with the Hamiltonian. This means that $\hat{p}_{y}$​ is a constant of motion, and its eigenfunctions are plane waves in the $y$-direction $e^{ik_{y}y}$ thus we can think about the wave function as a product of a generic (unknown) function $u(x)$ and a plane wave in the $y$ direction: 
 
 $$
 \psi(\vec{R}) = u(x) e^{ ik_{y} y }
@@ -98,7 +98,7 @@ $$
 \left[-\frac{\hbar^{2}}{2m}\frac{d^{2}}{d x^{2}}+\frac{1}{2}\,m\omega_{c}^{2}\left(x+{\color{blue} \frac{\hbar k_{y}}{e B}} \right)^{2}\right]u(x)=\varepsilon u(x)
 $$
 
-which is a [[Harmonic oscillator|quantum harmonic oscillator]] 
+which is a [[Harmonic oscillator|quantum harmonic oscillator]].
 
 Equation of a quantum harmonic oscillator in 1D:
 
@@ -120,8 +120,6 @@ $$
 
 $l^{2}_{B}$ is called **the magnetic length**. Since we have come back to a known case the energy levels and the wavefunctions are easily derived:
 
-
-
 $$
 \displaylines{
 E_{n}=\left(n+{\frac{1}{2}}\right)\hbar\omega_{c} \qquad\text{Independent of }k_{y} \\
@@ -131,7 +129,7 @@ $$
 
 With $x_{k} = -\hbar k_{y} /eB$
 
-The energy states, are called Landau levels, these levels are highly degenerate  (many electron states have the same energy). Indeed From the expression one notices that the energy depends only on $n$, not on $k_y$, so states with the same $n$ but different $k_y$ are degenerate.
+The energy states, are called Landau levels, these levels are highly degenerate  (many electron states have the same energy). Indeed, from the expression one notices that the energy depends only on $n$, not on $k_y$, so states with the same $n$ but different $k_y$ are degenerate.
 
 We observe that the value of $x_{k}$ is influenced by the parameter $k_{y}$, which must be determined by solving the Schrödinger equation in the $y$ direction (infinite potential well). It's important to note that $k_y$ is not a continuously varying parameter but is quantized. We can obtain these quantized values by applying periodic boundary conditions, from which we derive the following relationship:
 
@@ -139,7 +137,7 @@ $$
 \boxed{k_{y}={\frac{2\pi}{L_{y}}}n_{k_{y}}}
 $$
 
-Now we know how distant the parabolas are from each other. There are oscillators in x every 
+Now we know how distant the parabolas are from each other. There are oscillators in $x$ every 
 
 $$
 - \frac{\hbar}{eB} \frac{2\pi}{L_{y}}
@@ -195,7 +193,7 @@ From what we saw so far, we noticed that we have a series of harmonic oscillator
 
 ![[recap.svg|600]]
 
-# Dependence on B
+# Dependence on $B$
 
 As we increase the magnitude of the magnetic field, we are changing the degeneracy and the distance of the Landau levels (check the video below)
 
@@ -205,7 +203,7 @@ As we increase the magnitude of the magnetic field, we are changing the degenera
  
 
 ![[DOS_B_increasing.png]]
-The larger B, the more degenerate the levels are and the further apart they are.
+The larger $B$, the more degenerate the levels are and the further apart they are.
 
 $$ 
 \displaylines{

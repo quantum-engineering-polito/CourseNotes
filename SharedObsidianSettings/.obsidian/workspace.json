@@ -4,67 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "6395716b7bde420c",
+        "id": "afe76a6eda6b79a5",
         "type": "tabs",
         "children": [
           {
-            "id": "171d183084117eb6",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "index.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "b40848229e224937",
-            "type": "leaf",
-            "state": {
-              "type": "excalidraw",
-              "state": {
-                "file": "Q&M Physics Intro/Part 2/09_Phonons/attachments/excalidraw/monoatomic chain.md"
-              }
-            }
-          },
-          {
-            "id": "f8b3eb7eb4cb2a11",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Q&M Physics Intro/Part 2/09_Phonons/Phonons.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "a9bbcae845e023d7",
-            "type": "leaf",
-            "state": {
-              "type": "excalidraw",
-              "state": {
-                "file": "Q&M Physics Intro/Part 2/09_Phonons/attachments/excalidraw/monoatomic contributions.md"
-              }
-            }
-          },
-          {
-            "id": "d22cbfa4432a9690",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Q&M Physics Intro/Part 2/09_Phonons/Phonons.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "93fbdf92efc710a8",
+            "id": "20185e8b6334b6a3",
             "type": "leaf",
             "pinned": true,
             "state": {
@@ -76,21 +20,8 @@
               },
               "pinned": true
             }
-          },
-          {
-            "id": "02cb70deaa11dd2a",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Q&M Physics Intro/Part 2/09_Phonons/Phonons.md",
-                "mode": "source",
-                "source": false
-              }
-            }
           }
-        ],
-        "currentTab": 5
+        ]
       }
     ],
     "direction": "vertical"
@@ -119,7 +50,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "reciprocal lattice definition",
+                "query": "\"effective mass\"",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -140,7 +71,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 227.5
+    "width": 257.5
   },
   "right": {
     "id": "8ccfdff9373aab92",
@@ -208,8 +139,7 @@
               "state": {}
             }
           }
-        ],
-        "currentTab": 4
+        ]
       }
     ],
     "direction": "horizontal",
@@ -218,65 +148,63 @@
   },
   "left-ribbon": {
     "hiddenItems": {
-      "homepage:Open homepage": false,
       "switcher:Open quick switcher": false,
       "graph:Open graph view": false,
       "canvas:Create new canvas": false,
-      "daily-notes:Open today's daily note": false,
       "templates:Insert template": false,
       "command-palette:Open command palette": false,
-      "obsidian-excalidraw-plugin:Create new drawing": false
+      "obsidian-excalidraw-plugin:Create new drawing": false,
+      "homepage:Open homepage": false
     }
   },
-  "active": "93fbdf92efc710a8",
+  "active": "20185e8b6334b6a3",
   "lastOpenFiles": [
-    "Q&M Physics Intro/Part 2/09_Phonons/Phonons.md",
-    "index.md",
-    "How to collaborate.md",
-    "QCM Physics/06_Ahronov-Bohm effect/Ahronov-Bohm effect.md",
-    "Q&M Physics Intro/Part 2/06_Nearly free electrons/Nearly free electrons.md",
-    "Q&M Physics Intro/Part 2/07_Fermi surfaces and e transport/Fermi surfaces and e transport.md",
-    "Q&M Physics Intro/Part 2/08_Semiconductors/Semiconductors.md",
-    "Q&M Physics Intro/Part 2/10_Thermal properties/Thermal properties.md",
-    "Q&M Physics Intro/Part 2/10_Thermal properties",
     "Obsidian Examples.md",
-    "attachments/enable latex suite.png",
-    "Q&M Physics Intro/Part 2/09_Phonons/attachments/excalidraw/biatomic chain.md",
-    "Quantum Devices/04_MOS Scaling/MOS Scaling.md",
-    "Quantum Devices/04_MOS Scaling",
-    "Quantum Devices/03_MOS Current/MOS Current.md",
-    "Quantum Devices/03_MOS Current",
-    "Templates/Empty chapter template.md",
-    "Q&M Physics Intro/Part 2/09_Phonons/attachments/excalidraw/monoatomic chain.md",
-    "Q&M Physics Intro/Part 2/09_Phonons/attachments/excalidraw/Untitled 1.md",
-    "Q&M Physics Intro/Part 2/09_Phonons/attachments/excalidraw/Untitled.md",
-    "Q&M Physics Intro/Part 2/09_Phonons/attachments/excalidraw/biatomic chain.svg",
-    "Q&M Physics Intro/Part 2/09_Phonons/attachments/dispersion monoatomic chain.png",
-    "Q&M Physics Intro/Part 2/09_Phonons/attachments/excalidraw/monoatomic contributions.md",
-    "Q&M Physics Intro/Part 2/09_Phonons/attachments/excalidraw/monoatomic contributions.svg",
-    "Q&M Physics Intro/Part 2/09_Phonons/attachments/excalidraw/attachments/Pasted Image 20240111093114_794.png",
-    "Q&M Physics Intro/Part 2/09_Phonons/attachments/excalidraw/attachments/Pasted Image 20240111093059_793.png",
-    "Q&M Physics Intro/Part 2/09_Phonons/attachments/excalidraw/attachments",
-    "Q&M Physics Intro/Part 2/09_Phonons/attachments/excalidraw/monoatomic chain.svg",
-    "Q&M Physics Intro/Part 2/09_Phonons/attachments/excalidraw",
-    "Q&M Physics Intro/Part 2/09_Phonons/attachments",
-    "draft.md",
-    "QCM Physics/03_Fermi golden rule/attachments/excalidraw/emission_absorbtion_perturbation.svg",
-    "QCM Physics/03_Fermi golden rule/attachments/excalidraw/emission_absorbtion_perturbation.md",
-    "QCM Physics/03_Fermi golden rule/attachments/excalidraw/absorbtion_in_solid.svg",
-    "QCM Physics/03_Fermi golden rule/attachments/excalidraw/absorbtion_in_solid.md",
-    "QCM Physics/03_Fermi golden rule/attachments/excalidraw",
-    "QCM Physics/04_nN heterostructure/nN heterostructure.md",
+    "attachments/latex suite enable2.png",
+    "How to collaborate.md",
+    "QCM Physics/05_2DEG/2DEG.md",
+    "QCM Physics/05_2DEG/attachments/subsolution.png",
+    "QCM Physics/05_2DEG/attachments/excalidraw/2DEG-planar.md",
     "QCM Physics/03_Fermi golden rule/Fermi golden rule.md",
+    "index.md",
+    "QCM Physics/14_Quantum Wire/Quantum Wire.md",
+    "QCM Physics/13_QW Superlattice/QW Superlattice.md",
+    "QCM Physics/10_Aharonov-Bohm effect/Aharonov-Bohm effect.md",
+    "QCM Physics/08_Quantum Hall effect/Quantum Hall effect.md",
+    "QCM Physics/11_Flying Electron Qubit/Flying Electron Qubit.md",
+    "QCM Physics/17_Superconductivity/Superconductivity.md",
+    "QCM Physics/02_Models/attachments/excalidraw/Ntot.md",
+    "QCM Physics/16_Quantum Dots/Quantum Dots.md",
+    "QCM Physics/15_Landauer effect/Landauer effect.md",
+    "QCM Physics/12_Optical Properties of Quantum Wells/Optical Properties of Quantum Wells.md",
+    "QCM Physics/10_Aharonov-Bohm effect/attachments/excalidraw/rminsolenoid.md",
+    "QCM Physics/10_Aharonov-Bohm effect/attachments/excalidraw/rmaxsolenoid.md",
+    "QCM Physics/09_Tunneling and T matrix/Tunneling and T matrix.md",
+    "QCM Physics/09_Tunneling and T matrix/attachments/excalidraw/classic vs quantum.md",
+    "QCM Physics/09_Tunneling and T matrix/attachments/excalidraw/classic vs quantum.svg",
+    "QCM Physics/08_Quantum Hall effect/attachments/excalidraw/DOS.md",
+    "QCM Physics/07_Vector Potential/Vector Potential.md",
+    "QCM Physics/06_HEMT/HEMT.md",
     "QCM Physics/02_Models/Models.md",
-    "QCM Physics/02_Models/attachments/SmartSelect_20240110_094641_Samsung Notes.jpg",
+    "Q&M Physics Intro/attachments/excalidraw/Drawing 2024-01-23 12.05.54.excalidraw.md",
+    "QCM Physics/02_Models/attachments/Bloch_theorem_property.svg",
+    "QCM Physics/02_Models/attachments/excalidraw/Ntot.svg",
+    "QCM Physics/12_Optical Properties of Quantum Wells/attachments/spring_model.png",
+    "QCM Physics/12_Optical Properties of Quantum Wells/attachments/qw_light.png",
+    "QCM Physics/12_Optical Properties of Quantum Wells/attachments/pin_laser.png",
+    "QCM Physics/12_Optical Properties of Quantum Wells/attachments/momentum_conservation.png",
+    "QCM Physics/12_Optical Properties of Quantum Wells/attachments/matrix_element_qw_2.png",
+    "QCM Physics/12_Optical Properties of Quantum Wells/attachments",
+    "QCM Physics/12_Optical Properties of Quantum Wells",
+    "Q&M Physics Intro/attachments/excalidraw",
+    "Q&M Physics Intro/attachments/excalidraw/attachments",
+    "QCM Physics/11_Flying Electron Qubit/attachments",
+    "QCM Physics/11_Flying Electron Qubit",
+    "QCM Physics/10_Aharonov-Bohm effect/attachments/excalidraw",
+    "QCM Physics/10_Aharonov-Bohm effect/attachments",
+    "QCM Physics/10_Aharonov-Bohm effect",
+    "QCM Physics/09_Tunneling and T matrix/attachments/excalidraw",
     "Untitled.canvas",
-    "QCM Physics/attachments/excalidraw/Untitled.md",
-    "QCM Physics/attachments/excalidraw/silicon crystal structure.md",
-    "QCM Physics/attachments/excalidraw/remote doping.md",
-    "QCM Physics/attachments/excalidraw/referenceCube2.excalidraw.excalidraw",
-    "QCM Physics/attachments/excalidraw/reference cube.excalidraw",
-    "QCM Physics/attachments/excalidraw/numberOfStates.excalidraw",
     "Fundamentals of TP/attachments/excalidraw/Untitled.canvas"
   ]
 }

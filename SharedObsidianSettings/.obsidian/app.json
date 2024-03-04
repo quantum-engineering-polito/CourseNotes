@@ -6,6 +6,13 @@
   "attachmentFolderPath": "./attachments",
   "strictLineBreaks": false,
   "showLineNumber": true,
-  "autoPairBrackets": false,
-  "autoPairMarkdown": true
+  "autoPairBrackets": true,
+  "autoPairMarkdown": true,
+  "pdfExportSettings": {
+    "pageSize": "A4",
+    "landscape": false,
+    "margin": "0",
+    "downscalePercent": 100
+  },
+  "readableLineLength": true
 }

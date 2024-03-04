@@ -68,8 +68,8 @@ Out of equilibrium, the Fermi level exhibits two distinct values: one for the p-
 
 If we examine an n-type material alongside a p-type material, with the n-type material possessing a bandgap greater than that of the p-type material
 
-![[outofequilibrium-bandbending.svg]]
+![[outofequilibrium-bandbending.svg|500]]
 
 we obtain the following effect on the band diagram
 
-![[bandDiagramDeplitionRegion.png]]
+![[bandDiagramDeplitionRegion.png|500]]

@@ -17,16 +17,19 @@ Resistivity is never really equals to 0 but is $\rho\leq 10^{-23} \ohm cm$.
 
 **The Meissner effect shows that superconductivity is more than just perfect conductivity**
 
-Both superconductors and perfect conductors react to the application of an external magnetic field by screening it via dissipationless eddy currents within a thin surface layer at their surface.
+Both superconductors and perfect conductors react to the application of an external magnetic field by screening it via dissipation-less eddy currents within a thin surface layer at their surface.
 
 >[!Note]
 >**Eddy Currents**: The mechanism for this screening in both types of materials involves what are known as eddy currents. Eddy currents are loops of electric current induced within conductors by a changing magnetic field in the conductor, according to Faraday's law of electromagnetic induction. These currents create their own magnetic field, which opposes the external field.
 >
 >**Dissipationless Currents**: In both superconductors and perfect conductors, these eddy currents are dissipationless. In regular conductors, eddy currents lose energy over time due to the resistance in the material (this is why transformers heat up, for example). However, in perfect conductors and superconductors, these currents can flow without energy loss. In perfect conductors, this is a theoretical idealization; in superconductors, this is due to the material's unique quantum mechanical properties.
+>
+>**Diamagnetism** is the property of materials that are repelled by a magnetic field; an applied magnetic field creates an induced magnetic field in them in the opposite direction, causing a repulsive force.
+
 
 There are however differences between the two type of conductors:
 
-**Perfect conductors** only conserve the magnetic flux inside them. Their magnetic state depends on their cooling history. A perfect conductor will expel a magnetic field only if it is applied after it has been cooled below $T_c$
+**Perfect conductors** only conserve the magnetic flux inside them. Their magnetic state depends on their cooling history. A perfect conductor will expel a magnetic field only if it is applied after it has been cooled below $T_c$.
 
 ![[perfect_conductor.png|300]]
 
@@ -48,9 +51,9 @@ The Meissner effect further implies that superconductivity is destroyed by a cri
 
 ![[Supercon.png]]
 
-In type I superconductors (usually pure simple elements) the transition from the Meissner to the normal state is abrupt, we get out of the state of superconductivity give that we raise the temperature too high or apply too strong a magnetic field. 
+In **type I** superconductors (usually pure simple elements) the transition from the Meissner to the normal state is abrupt, we get out of the state of superconductivity give that we raise the temperature too high or apply too strong a magnetic field. 
 
-In type II superconductors (usually alloys or multi-atomic compounds) two distinct critical magnetic fields exist which separate the Meissner state from the normal state via an intermediate mixed state where a partial penetration of the magnetic field occurs in the so-called vortex lattice, is called in this manner because in this scenario some magnetic filed vortices are created where the magnetic flux is not 0.
+In **type II** superconductors (usually alloys or multi-atomic compounds) two distinct critical magnetic fields exist which separate the Meissner state from the normal state via an intermediate mixed state where a partial penetration of the magnetic field occurs in the so-called vortex lattice, is called in this manner because in this scenario some magnetic filed vortices are created where the magnetic flux is not 0.
 
 ![[sc_type_2.png|400]]
 

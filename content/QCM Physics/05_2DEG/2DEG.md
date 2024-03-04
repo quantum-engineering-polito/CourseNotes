@@ -16,9 +16,9 @@ So some electron flow from the left-hand side (the heavily doped material) to th
 
 The green line in the drawing is the tangent to the conduction band which can be used as an approximation for a **triangular potential well**, the width of the well is typically around 10 nm.
 
-For sufficiently thin potential wells and moderate temperatures, only the lowest energy level (typically the ground state) is occupied. Consequently, the motion of electrons in the direction perpendicular to the interface (z direction) can be disregarded. However, electrons retain freedom to move parallel to the interface, making it quasi-two-dimensional. Within the well, the planar motion of electrons experiences weak scattering due to the absence of dopants (specifically ionized impurity scattering). Modulation doping proves to be an effective strategy for reducing donor electron scattering. This reduction in scattering is crucial for enhancing mobility. 
+For sufficiently thin potential wells and moderate temperatures, only the lowest energy level (typically the ground state) is occupied. Consequently, the motion of electrons in the direction perpendicular to the interface (z direction) can be disregarded. However, electrons retain freedom to move parallel to the interface, making it quasi-two-dimensional. Within the well, the planar motion of electrons experiences weak scattering due to the absence of dopants (specifically ionized impurity scattering) (the well is located in the "n" region). Modulation doping proves to be an effective strategy for reducing donor electron scattering. This reduction in scattering is crucial for enhancing mobility. 
 
-Inside the two-dimensional electron gas (2DEG), the mobility is remarkably high. Hence, this structural arrangement is well-suited for constructing high-speed devices such as High Electron Mobility Transistors (HEMTs).
+Inside the two-dimensional electron gas (2DEG), the mobility is remarkably high. Hence, this structural arrangement is well-suited for constructing high-speed devices such as [[HEMT|High Electron Mobility Transistors (HEMTs)]].
 
 # Electronic levels for 2DEG
 
@@ -40,16 +40,28 @@ $$
 
 substituting in the SE we get:
 
-![[subsolution.png]]
+
+$$
+-\frac{\hbar^{2}}{2m} \frac{1}{\phi(x,y)} \left( \frac{ \partial^{2}  }{ \partial x^{2} } + \frac{ \partial^{2}  }{ \partial y^{2} }  \right)\phi(x,y) - \frac{\hbar^{2}}{2m} \frac{1}{\theta(z)} \frac{ \partial^{2} }{ \partial z^{2} } \theta(z) + V(z) = \underbrace{ E }_{ \text{const} }
+$$
+
+we can split $E$ into two terms $E = E_{x,y} + E_{z}$ and get 
+
+$$
+\begin{cases}
+-\frac{\hbar^{2}}{2m} \frac{1}{\phi(x,y)} \left( \frac{ \partial^{2}  }{ \partial x^{2} } + \frac{ \partial^{2}  }{ \partial y^{2} }  \right) \phi(x,y)= E_{x,y} && (1)\\\\
+-\frac{\hbar^{2}}{2m} \frac{1}{\theta(z)} \frac{ \partial^{2}  }{ \partial z^{2} } \theta(z) + V(z) = E_{z} && (2)
+\end{cases}
+$$
 
 $$
 \begin{align} \\
- & -\frac{\hbar^{2}}{2m}\left( \frac{ \partial^{2} }{ \partial x^{2} } + \frac{ \partial^{2} }{ \partial x^{2} }  \right) \phi(x,y) = E \phi(x,y) \tag{1} \\ \\
- & -\frac{\hbar^{2}}{2m} \frac{d^{2}}{dz^{2}} + V(z) \theta(z) = E \theta(z) \tag{2}
+ & -\frac{\hbar^{2}}{2m}\left( \frac{ \partial^{2} }{ \partial x^{2} } + \frac{ \partial^{2} }{ \partial x^{2} }  \right) \phi(x,y) = E_{x,y}~ \phi(x,y) \tag{1} \\ \\
+ & -\frac{\hbar^{2}}{2m} \frac{d^{2}}{dz^{2}} + V(z) \theta(z) = E_{z}~ \theta(z) \tag{2}
 \end{align}
 $$
 
-Equation (1) describes free electrons in the $xy$ plane (where the potential is constant) and thus we get plane waves: 
+Equation $(1)$ describes free electrons in the $xy$ plane (where the potential is constant) and thus we get plane waves: 
 
 $$
 \begin{align}
@@ -72,7 +84,9 @@ $$
 \end{align}
 $$
 
-Equation (2), on the other hand, describes the particles in a triangular potential well. The well can be approximated as a capacitor which represent the interface between the materials. The electrostatic potential $\Phi$ associated to the uniform electric field pointing along the positive z direction is:
+## Ideal triangular potential well
+
+Equation $(2)$, on the other hand, describes the particles in a triangular potential well. The well can be approximated as a capacitor which represents the interface between the materials. The electrostatic potential $\Phi$ associated to the uniform electric field pointing along the positive $z$ direction is:
 
 $$
 \begin{align}
@@ -104,7 +118,7 @@ E_0 = \frac{\hbar^{2}}{2~m~z_0^{2}}  && \leftarrow \text{characteristic energy}
 \end{align}
 $$
 
-Equation (3) is the **Airy (Stokes) equation** and has two possible solution $A_{i}(x)$ and $B_{i}(x)$ of which only the first one is acceptable ($B_{i}$ diverges and the wave function would be non normalizable).
+Equation $(3)$ is the **Airy (Stokes) equation** and has two possible solution $A_{i}(x)$ and $B_{i}(x)$ of which only the first one is acceptable ($B_{i}$ diverges and the wave function would be non normalizable).
 
 ![[Airy.png]]
 
@@ -132,9 +146,7 @@ To plot the functions $\theta(z)$, since $S = z - \bar{E}$, we have to shift the
 
 For each energy level we get a different wave function.
 
-![[Triangular.jpg|500]]
-> [!Note] 
->the $x$ on the graph is our $z$
+![[airy corrected.svg|400]]
 
 From above we know that $E = E_{xy} + E_{z}$ and thus:
 
@@ -142,7 +154,7 @@ $$
 E_{n} = \frac{\hbar^{2}k^{2}}{2m} + |C_{n}|E_0 \tag{7}
 $$
 
-For each discrete value of $n$ corresponds an infinite number of values of $E_{xy}$. the eigenvalues are arranged in "Subbands" one band for each value of allowed $E_z$ 
+Each discrete value of $n$ corresponds to an infinite number of values of $E_{xy}$. The eigenvalues are arranged in "sub-bands" one band for each value of allowed $E_z$.
 
 
 ![[paraboloid subbands.png|400]]
@@ -188,7 +200,7 @@ $$
 
 we can understand that the density of state within a subband is constant with respect to the energy. 
 
-The total density of state at any particular energy is just the sum over all the subband below that particular energy
+The total density of state at any particular energy is just the sum over all the subband below that particular energy.
 
 ![[2DEG DOS 2.png|400]]
 
@@ -204,5 +216,4 @@ M(E - E_{i}) = \begin{cases}
 \end{align}
 \end{cases}
 $$
-
 
