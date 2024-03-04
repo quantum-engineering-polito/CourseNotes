@@ -1,4 +1,4 @@
-import { FullSlug, _stripSlashes, joinSegments, pathToRoot, slugifyFilePath, TransformOptions, transformInternalLink, transformLink, resolveRelative, simplifySlug, FilePath } from "../util/path"
+import { FullSlug, stripSlashes, joinSegments, pathToRoot, slugifyFilePath, TransformOptions, transformInternalLink, transformLink, resolveRelative, simplifySlug, FilePath } from "../util/path"
 import { QuartzComponentConstructor, QuartzComponentProps } from "./types"
 
 

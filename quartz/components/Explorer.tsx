@@ -1,14 +1,15 @@
-import { QuartzComponentConstructor, QuartzComponentProps } from "./types"
+import { QuartzComponent, QuartzComponentConstructor, QuartzComponentProps } from "./types"
 import explorerStyle from "./styles/explorer.scss"
 
 // @ts-ignore
 import script from "./scripts/explorer.inline"
 import { ExplorerNode, FileNode, Options } from "./ExplorerNode"
 import { QuartzPluginData } from "../plugins/vfile"
+import { classNames } from "../util/lang"
+import { i18n } from "../i18n"
 
 // Options interface defined in `ExplorerNode` to avoid circular dependency
 const defaultOptions = {
-  title: "Explorer",
   folderClickBehavior: "collapse",
   folderDefaultState: "open",
   useSavedState: true,
@@ -22,13 +23,14 @@ const defaultOptions = {
         sensitivity: "base",
       })
     }
+
     if (a.file && !b.file) {
       return 1
     } else {
       return -1
     }
   },
-  filterFn: (node) => {
+   filterFn: (node) => {
     const omit = new Set(["attachments", "tags"])
       const passed = !omit.has(node.name.toLowerCase())
       return passed
@@ -40,7 +42,7 @@ const defaultOptions = {
     const reg = `(?:\\d+_)`
     // Check if the node map is currently processing is a folder that has only one
     // which has it's same* name
-    if (node.displayName === node.name && !node.file && node.children.length == 1) {
+    if (!node.file && node.children.length == 1) {
        // Now, we'd need to get the child node with the same name
     // Utilizzo della funzione test per verificare se str2 matcha con il pattern
      ;
@@ -53,9 +55,12 @@ const defaultOptions = {
       // Override name if your child node (the file) ever has a different name from the parent folder
       // node.displayName = node.name
       // node.name = child.name;
-      node.displayName = child.name
+      node.displayName = child.displayName
       // This sets the folder node to just be equal to the file you found
       node.file = child.file;
+    }
+    else {
+      console.log(node.displayName + "..." + node.name)
     }
   },
   order: ["filter", "sort", "map"],
@@ -70,52 +75,44 @@ export default ((userOpts?: Partial<Options>) => {
   let jsonTree: string
 
   function constructFileTree(allFiles: QuartzPluginData[]) {
-    if (!fileTree) {
-      // Construct tree from allFiles
-      fileTree = new FileNode("")
-      allFiles.forEach((file) => fileTree.add(file, 1))
+    if (fileTree) {
+      return
+    }
 
-      /**
-       * Keys of this object must match corresponding function name of `FileNode`,
-       * while values must be the argument that will be passed to the function.
-       *
-       * e.g. entry for FileNode.sort: `sort: opts.sortFn` (value is sort function from options)
-       */
-      const functions = {
-        map: opts.mapFn,
-        sort: opts.sortFn,
-        filter: opts.filterFn,
-      }
+    // Construct tree from allFiles
+    fileTree = new FileNode("")
+    allFiles.forEach((file) => fileTree.add(file))
 
-      // Execute all functions (sort, filter, map) that were provided (if none were provided, only default "sort" is applied)
-      if (opts.order) {
-        // Order is important, use loop with index instead of order.map()
-        for (let i = 0; i < opts.order.length; i++) {
-          const functionName = opts.order[i]
-          if (functions[functionName]) {
-            // for every entry in order, call matching function in FileNode and pass matching argument
-            // e.g. i = 0; functionName = "filter"
-            // converted to: (if opts.filterFn) => fileTree.filter(opts.filterFn)
-
-            // @ts-ignore
-            // typescript cant statically check these dynamic references, so manually make sure reference is valid and ignore warning
-            fileTree[functionName].call(fileTree, functions[functionName])
-          }
+    // Execute all functions (sort, filter, map) that were provided (if none were provided, only default "sort" is applied)
+    if (opts.order) {
+      // Order is important, use loop with index instead of order.map()
+      for (let i = 0; i < opts.order.length; i++) {
+        const functionName = opts.order[i]
+        if (functionName === "map") {
+          fileTree.map(opts.mapFn)
+        } else if (functionName === "sort") {
+          fileTree.sort(opts.sortFn)
+        } else if (functionName === "filter") {
+          fileTree.filter(opts.filterFn)
         }
       }
-
-      // Get all folders of tree. Initialize with collapsed state
-      const folders = fileTree.getFolderPaths(opts.folderDefaultState === "collapsed")
-
-      // Stringify to pass json tree as data attribute ([data-tree])
-      jsonTree = JSON.stringify(folders)
     }
+
+    // Get all folders of tree. Initialize with collapsed state
+    // Stringify to pass json tree as data attribute ([data-tree])
+    const folders = fileTree.getFolderPaths(opts.folderDefaultState === "collapsed")
+    jsonTree = JSON.stringify(folders)
   }
 
-  function Explorer({ allFiles, displayClass, fileData }: QuartzComponentProps) {
+  const Explorer: QuartzComponent = ({
+    cfg,
+    allFiles,
+    displayClass,
+    fileData,
+  }: QuartzComponentProps) => {
     constructFileTree(allFiles)
     return (
-      <div class={`explorer ${displayClass ?? ""}`}>
+      <div class={classNames(displayClass, "explorer")}>
         <button
           type="button"
           id="explorer"
@@ -124,7 +121,7 @@ export default ((userOpts?: Partial<Options>) => {
           data-savestate={opts.useSavedState}
           data-tree={jsonTree}
         >
-          <h1>{opts.title}</h1>
+          <h1>{opts.title ?? i18n(cfg.locale).components.explorer.title}</h1>
           <svg
             xmlns="http://www.w3.org/2000/svg"
             width="14"
@@ -149,6 +146,7 @@ export default ((userOpts?: Partial<Options>) => {
       </div>
     )
   }
+
   Explorer.css = explorerStyle
   Explorer.afterDOMLoaded = script
   return Explorer
