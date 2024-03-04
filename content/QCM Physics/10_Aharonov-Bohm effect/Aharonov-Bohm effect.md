@@ -72,7 +72,7 @@ $$
 \left\{\frac{1}{2m}[\hat{p}-q \vec{A}(\vec{R},t)]^{2}+\cancel{ q\phi(\vec{R},t) }\right\}\psi(\vec{R},t)=-i\hbar\frac{\partial}{\partial t}\,\psi(\vec{R},t) \tag{1}
 $$
 
-But this time instead of replacing $A$ with the form given by gauge we use a **gauge transformation** that is a modification of the wave functions and potentials in a way that leaves the physical predictions of the theory unchanged
+But this time instead of replacing $\vec{A}$ with the form given by gauge we use a **gauge transformation** that is a modification of the wave functions and potentials in a way that leaves the physical predictions of the theory unchanged
 
 $$ 
 \Psi = \Psi' e^{ig} \qquad g(\bar{r}) = \frac{q}{\hbar}\int_{\bar{r}_{0}}^{\bar{r}} A(\bar{r}') \, d\bar{r}' 
@@ -111,7 +111,7 @@ We can treat the ring as a barrier problem with propagating, reflected and trans
 
 ![[AE_barrier.png|500]]
 
-we have incoming waves with an amplitude of 1, a reflected wave with an amplitude of 'r', and a transmitted wave with an amplitude of 't'. The transmitted amplitudes of the two paths are combined as follows:
+we have incoming waves with an amplitude of $1$, a reflected wave with an amplitude of $r$, and a transmitted wave with an amplitude of $t$. The transmitted amplitudes of the two paths are combined as follows:
 
 $$ 
 t = t_{1}+t_{2}
