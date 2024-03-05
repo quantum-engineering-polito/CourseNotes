@@ -1,6 +1,7 @@
 ---
 author: Giacomo
 authorlink: https://github.com/gamberoillecito
+nextnote: "[[Ghigo recap]]"
 ---
 
 # Bulk micromachining

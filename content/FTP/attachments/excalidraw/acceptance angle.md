@@ -16,7 +16,7 @@ Acceptance angle ^QBded6OS
 
 
 # Embedded files
-ff2e868430631176c408b91d4efb20439527f778: [[Fundamentals of TP/Part 1/attachments/excalidraw/attachments/Pasted Image 20231213173620_368.png]]
+ff2e868430631176c408b91d4efb20439527f778: [[Pasted Image 20231213173620_368.png]]
 
 %%
 # Drawing
