@@ -94,7 +94,7 @@ The electrochemical potential depends linearly on the gate voltage, The effect o
 
 The electrochemical potential gives an indication of the energy requirements to add electrons to the dot. When the electrochemical potential does not match the energy provided by the gate voltage, electrons cannot tunnel through the quantum dot, effectively blocking the current - this is the Coulomb blockade. By adjusting the gate voltage, the energy levels within the dot can be tuned until they align with the source and drain, allowing electrons to tunnel through, and current to flow
 
-![[QCM Physics/16_Quantum Dots/attachments/coulomb_blockade.png|350]]
+![[QCMP/16_Quantum Dots/attachments/coulomb_blockade.png|350]]
 
 To unblock the dot, one must act on the applied voltages, either increasing the $V_{DS}$ or shifting the levels with $V_G$.
 

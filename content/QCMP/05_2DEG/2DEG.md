@@ -10,7 +10,7 @@ Now we will study the case in which we have an almost intrinsic material in an h
 **n**: almost intrinsic
 **N**: heavily doped
 
-![[QCM Physics/05_2DEG/attachments/excalidraw/remote doping.svg|400]]
+![[QCMP/05_2DEG/attachments/excalidraw/remote doping.svg|400]]
 
 So some electron flow from the left-hand side (the heavily doped material) to the right-hand side, as it has a lower energy conduction band. Doing that they loose energy and become trapped because they cannot climb the barrier formed by the band bending. Furthermore the discontinuity in the band prevents the electric filed to return the electrons to the donors, and contribute at squeezing the electrons on the **triangular potential well** just formed. 
 

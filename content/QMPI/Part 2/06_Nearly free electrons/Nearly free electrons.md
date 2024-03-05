@@ -23,7 +23,7 @@ $$
 
 this implies that we have an infinite number of parabolas ($E$ depends on $k^{2}$) shifted by $\vec{G}$.
 
-![[Q&M Physics Intro/Part 2/06_Nearly free electrons/attachments/periodic potential.png|300]]
+![[QMPI/Part 2/06_Nearly free electrons/attachments/periodic potential.png|300]]
 
 ![[reduced zone scheme.svg|400]]
 

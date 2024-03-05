@@ -177,7 +177,7 @@ Due to the fact that the harmonic oscillator has discrete energy levels with a s
 
 #todo image doesn't render on the website for some reason
 
-![[DOS.svg|400]]
+![[QCMP/08_Quantum Hall effect/attachments/excalidraw/DOS.svg|400]]
 
 The "height" (density of states per unit surface) of the Landau levels can be easily determined as 
 

@@ -323,7 +323,7 @@ Solutions of the Schrödinger equation that differ only by a reciprocal vector a
 $$
 \Psi_{\bar{k} + \bar{G}}(\bar{r}) = \Psi_{\bar{k}}(\bar{r}) \tag{4}
 $$
-![[QCM Physics/02_Models/attachments/Bloch_theorem_property.svg|400]]
+![[Bloch_theorem_property.svg|400]]
 
 Given the property above, we can say that, given $\hat{H} \Psi_{\bar{k}}(\bar{r}) = E_{\bar{k}}\Psi_{\bar{k}}(\bar{r})$:
 

@@ -41,7 +41,7 @@ We will always assume the following two approximations:
 
 In the free electron model, we will also assume that the electrons are free, which means that the potential is 0 everywhere.
 
-![[Q&M Physics Intro/Part 2/04_Free electron model/attachments/periodic potential.png|300]]
+![[QMPI/Part 2/04_Free electron model/attachments/periodic potential.png|300]]
 
 ## Sommerfeld - Bethe model
 
@@ -152,7 +152,7 @@ $$
 D(E) = \frac{1}{\mathbf{V}} \frac{dN(E)}{dE} \quad [cm^{-3} \cdot eV^{-1}] \tag{2}
 $$
 
-![[Q&M Physics Intro/Part 2/04_Free electron model/attachments/excalidraw/DOS.svg|400]]
+![[QMPI/Part 2/04_Free electron model/attachments/excalidraw/DOS.svg|400]]
 
 The volume of the single state (in green) is given by $(2\pi/L)^{3} = 8\pi^{3} /\mathbf{V}$.
 

@@ -243,7 +243,7 @@ we can notice that if $V_g = n\frac{e}{2C}$ the increase of energy associated to
 
 The Coulomb blockade prevents electrons from randomly moving onto the island due to thermal energy or electrical noise. It ensures that electron transfer only happens under very controlled conditions, the resonant condition.
 
-![[QCM Physics/09_Tunneling and T matrix/attachments/coulomb_blockade.png]]
+![[QCMP/09_Tunneling and T matrix/attachments/coulomb_blockade.png]]
 
 This phenomenon can be exploit to create a transistor device which can control the flow of individual electrons. That is the principles used in SET (Single-Electron Transistor)
 
