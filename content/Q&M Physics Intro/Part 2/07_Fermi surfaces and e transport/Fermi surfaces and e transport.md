@@ -14,6 +14,7 @@ The Fermi surface is the surface of constant energy $E_F$ in $k$ space. It separ
 #todo add drawing
 
 The current density is given by
+
 $$
 J = i/A = dq/dt \cdot 1/A
 $$
@@ -34,7 +35,6 @@ $$
 
 ## Electrical conductivity for free electrons
 
-
 > [!quote] Kittel, Chapter 6, "ELECTRICAL CONDUCTIVITY AND OHM’S LAW"
 
 In the case of a free electron 
@@ -47,6 +47,7 @@ If we ignore the effect of the magnetic field ($B = 0$) we can derive
 $$
 \hbar \frac{d\vec{k}}{dt} = - e \vec{\varepsilon}
 $$
+
 which, integrating over $t$ we get 
 
 $$
@@ -78,7 +79,7 @@ So, going back to the current density $J$, if we are in a constant electric fiel
 $$
 \boxed{\vec{J} = nq \Delta \vec{v} = \frac{n e^{2} \tau}{m} \vec{\varepsilon} = \sigma \vec{\varepsilon}}
 $$
-which is  **Ohm's law**.
+which is **Ohm's law**.
 
 The electrical conductivity $\sigma$
 $$
@@ -86,6 +87,7 @@ $$
 $$
 
 can be understood intuitively considering the following things: 
+
 - We expect the charge transported to be proportional to the charge density $ne$.
 - The factor $e/m$ is given by the fact that the acceleration in a given electric field is proportional to $e$ and inversely proportional to $m$. 
 - The time $\tau$ describes the free time during which the field acts on the carrier.

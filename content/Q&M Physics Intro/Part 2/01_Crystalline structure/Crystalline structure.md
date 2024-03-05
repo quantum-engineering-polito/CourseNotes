@@ -1,5 +1,7 @@
 ---
 nextnote: "[[Reciprocal lattice]]"
+author: Giacomo
+authorlink: https://github.com/gamberoillecito
 ---
 
 # Solid state physics
@@ -10,7 +12,7 @@ We will not deal with amorphous materials.
 
 ## Single atoms
 
-In single atoms electrons leave in radially symmetric potentials (orbitals) indicated by a number and a letter, such as 1s, 2s, 2p, etc.
+In single atoms electrons live in radially symmetric potentials (orbitals) indicated by a number and a letter, such as 1s, 2s, 2p, etc.
 
 The numbers represent the **principal quantum number** $n$ and the letters represent the **orbital angular momentum** $l$. We also have the **magnetic quantum number** $m$ ($-l \leq m \leq l$).
 
@@ -37,7 +39,7 @@ An ideal crystal has an infinite number of repetitions in 3 dimensions of the sa
 
 The crystalline structure is composed by the **lattice** and the **base**. The lattice describes the structural spatial unit and the base represents the real position of the atoms in the lattice.
 
-![[basis_lattice.png|center|400]]
+![[basis_lattice.png|400]]
 
 Since we are dealing with a periodic structure, what we "see" from position $\vec{r}$ is the same as what we see from position $\vec{r'}$. This means that we can apply a translation operator 
 

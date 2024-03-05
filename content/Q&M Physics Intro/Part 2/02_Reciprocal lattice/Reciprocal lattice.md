@@ -1,14 +1,15 @@
 ---
 nextnote: "[[Cohesion in crystals]]"
+author: Giacomo
+authorlink: https://github.com/gamberoillecito
 ---
 
 # Reciprocal lattice
 
 Let's start from studying the simple case of a 1D crystal whose atoms are arranged in a line at a distance $a$ (**period**) from each other.
 
-#todo improve drawing
+![[1D crystal.svg|300]]
 
-![[1dCrystal.png]]
 Let's now introduce a function $\rho$ that has the same periodicity of the crystal:
 
 $$
@@ -21,13 +22,13 @@ $$
 \rho(x) = \sum_{n} \rho_{n} e^{ ikx } = \sum_{n} \rho_{n} e^{ i \frac{2\pi}{a} n x }
 $$
 
-We want to demonstrate that #todo ???:
+It is easy to show that due to the periodicity of $\rho$, only some specific values of $k$ satisfy the relation above. In fact we have:
 
 $$
 \begin{align}
 \rho(x + ma) &= \sum_{n} \rho_{n} e^{ i \frac{2\pi}{a} n (x + ma) }  \\
 &= \sum_{n} \rho_{n} e^{ i \frac{2\pi}{a}nx} ~ \overbrace{ e^{ i 2\pi m n } }^{ 1 } \\
-&= \sum_{n} \rho _{n} e^{ i \frac{2\pi}{a} nx } \\
+&= \sum_{n} \rho _{n} e^{ i {\color{red} \frac{2n\pi}{a}}  x } \\
 &= \rho(x)
 \end{align}
 $$
@@ -198,7 +199,7 @@ and that the two wave vectors are:
 $$
 \begin{align}
 & \text{Incident: } && \vec{k} = \frac{2\pi}{\lambda}\vec{n} \\
-& \text{Diffracted:} && \vec{k} = \frac{2\pi}{\lambda} \vec{n}
+& \text{Diffracted:} && \vec{k'} = \frac{2\pi}{\lambda} \vec{n'}
 \end{align}
 $$
 

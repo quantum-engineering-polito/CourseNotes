@@ -1,8 +1,8 @@
 ---
 nextnote: "[[Nearly free electrons]]"
+author: Giacomo
+authorlink: https://github.com/gamberoillecito
 ---
-
-
 >[!tip] See also the [[Models#Bloch theorem|QCMP lecture]] about this topic
 
 We now want to remove the free electron approximation and introduce a periodic potential while still working under the [[Free electron model#^129090|Born-Oppenherimer approximation]] and **independent electron model**.
@@ -49,7 +49,7 @@ $$
 Given a crystal with dimensions $L_1, L_2, L_3$ which contains $N = N_1, N_2, N_3$ primitive cells, the BVK conditions tell us that: 
 
 $$
-\Psi_{\vec{k}} = (\vec{r} + N_{i} \vec{a}_{i}) = \Psi_{\vec{k}} (\vec{r}) \tag{1}
+\Psi_{\vec{k}} = \Psi_{\vec{k}}(\vec{r} + N_{i} \vec{a}_{i}) = \Psi_{\vec{k}} (\vec{r}) \tag{1}
 $$
 
 and the Bloch theorem that 
@@ -63,6 +63,16 @@ By imposing $(1)$ = $(2)$ we need to have the exponential equal to $1$. Since $\
 From the [[Reciprocal lattice#^d7feea|relation]] between the vectors of the direct and reciprocal lattice we get 
 
 $$
+\begin{align}
+e^{ i \vec{k}~ N_{i} ~\vec{a}_{i}  } &= e^{ i N_{i}~\vec{g}_{i} ~\vec{a}_{i}~ x_{i} } \\
+& = e^{ i N_{i} ~ 2\pi ~ x_{i}}  \\
+&= 1
+\end{align}
+$$
+
+which requires
+
+$$
 2\pi N_{i} x_{i} = 2 \pi m_{i} \qquad m_{i} \in \mathbb{Z}
 $$
 
@@ -71,6 +81,12 @@ and thus
 $$
 x_{i} = \frac{m_{i}}{N_{i}}
 $$
+This means that $\vec{k}$ can be written as 
+
+$$
+\vec{k} = \frac{m_{1}}{N_1}x_1 + \frac{m_{2}}{N_2}x_2 + \frac{m_{3}}{N_3}x_3
+$$
+
 
 ## Demonstration
 
