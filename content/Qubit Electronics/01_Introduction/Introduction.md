@@ -1,19 +1,18 @@
 ---
 nextnote: 
-author: Giacomo
-authorlink: https://github.com/gamberoillecito
+author: Giacomo, BabelDev0
+authorlink: https://github.com/gamberoillecito, https://github.com/BabelDev0
 ---
 # Computers and computation
 
-There are multiple models of classical computers:
+There are several ways in which a machine can perform computations, each characterized by the primary effect it exploits:
 
 - Mechanical
 - Electrical
 - Biological
 - Optical
 
-which can follow one of many conceptual models such as:
-
+In addition to its physical implementation, a computational machine is described by the theoretical model of computation that governs it. some models are reported below:
 ## Turing machine
 
 ![[Computational-model-of-a-Turing-machine.png|300]]
@@ -26,12 +25,16 @@ The Turing machine consists of:
 
 The machine operates through a set of rules or instructions that dictate its behavior. These rules define what action to take (read, write, move) based on the combination of the current state and the symbol being read.
 
+The Church-Turing thesis proves that any function computable by an algorithm can be computed by a Turing machine. This means that if you can express a problem or algorithm in a systematic and step-by-step manner, a Turing machine can simulate it.
+
 ## Cellular automata
 
 ![[One-d-cellular-automate-rule-30.gif|300]]
 [Source](https://en.wikipedia.org/wiki/Elementary_cellular_automaton#/media/File:One-d-cellular-automate-rule-30.gif)
 
 Cellular automata is a computational model defined by a grid of cells, each in a specific state. Rules determine how a cell's state evolves based on its current state and the states of neighboring cells. The system evolves in discrete time steps, showcasing emergent complexity from simple local rules.
+
+further info:  [Conway’s Game of Life](https://playgameoflife.com/info)
 
 ## Von Neumann architecture
 
@@ -49,13 +52,13 @@ Logic in memory architectures aim to address some of the limitations of traditio
 # Data representation
 
 In classical computers data is represented by bits; $N$ bits represent a single $N$-bit state.
-To implement **parallelism** we either ==need more hardware hardware==: have multiple CPUs that perform multiple operations in parallel, or to reuse the same hardware but in this case we ==need more time==.
+To implement **parallelism** we either ==need more hardware==: have multiple CPUs that perform multiple operations in parallel, or to reuse the same hardware but in this case we ==need more time==.
 
 In quantum computers, on the other hand, with $N$ qubits we can represent $2^{N}$ components in one state.
 
 # Gates
 
-In classical computers (where we use Boolean logic), single and two bit gates (such as NOT + AND) can create a universal set. This means that with this two gates only we can implement any other gate type.
+In classical computers (where we use Boolean logic), single and two bit gates (such as NOT + AND) can be use to describe any Boolean function. The NAND and NOR gates are instead universal gates. In practice NAND and NOR gates are economical and easier to fabricate respect to other gates and they are the basic gates used in all IC digital logic families.
 
 We can distinguish between **single gates**, which have only one input, and **two gates**, which have two inputs (but only one output).
 
@@ -109,13 +112,13 @@ There are two ways the qubit looses information: energy relaxation and dephasing
 ### Gate speed
 
 In this category we have the **gate time**, which is the time required to perform an operation, and the number of operations that can be performed in the qubit lifetime.
+If the gate operations take longer than the coherence time, it increases the likelihood of errors due to decoherence
 
 ### Gate fidelity
 
 Finally we have the gate fidelity, which is a measure of how close the operations on the qubit are to the ideal case.
 
 # Qubits
-
 
 The Bloch sphere is a geometrical representation of the qubit state.
 
@@ -130,7 +133,7 @@ $$
 |\alpha|^{2} + |\beta|^{2}   = 1
 $$
 
-Since measurements of quantum objects are projective measurements, after measuring the state of a qubit the state will collapse in either $\ket{0}$ or $\ket{1}$. This implies that  **only one bit of information can be extracted from the qubit**.
+Since measurements of quantum objects are projective measurements i.e. measuring the state of a qubit the state will collapse in either $\ket{0}$ or $\ket{1}$. This implies that  **only one bit of information can be extracted from the qubit**.
 
 Since $\ket{0}$ and $\ket{1}$ are eigenstate of the $\sigma_{z}$ operator we call this ==Z-measurement==.
 
@@ -210,9 +213,20 @@ $$
 
 ![[image.gif|200]]
 
-### Properties 
+### Properties of Pauli matrices
+- Commutation relations :
 
-#todo 
+$$ 
+\begin{align*} [\sigma_{x},\sigma_{y}]&=\sigma_{x}\sigma_{y}-\sigma_{y}\sigma_{x}=2i\sigma_{z} \\ [\sigma_{y},\sigma_{z}]&=\sigma_{y}\sigma_{z}-\sigma_{z}\sigma_{y}=2i\sigma_{x} \\ [\sigma_{z},\sigma_{x}]&=\sigma_{z}\sigma_{x}-\sigma_{x}\sigma_{z}=2i\sigma_{y} \end{align*}
+$$
+
+- Anticommutation relations :
+
+$$ 
+\begin{align*} \{\sigma_{x},\sigma_{y}\}&=\sigma_{x}\sigma_{y}+\sigma_{y}\sigma_{x}=0 \\ \{\sigma_{y},\sigma_{z}\}&=\sigma_{y}\sigma_{z}+\sigma_{z}\sigma_{y}=0 \\ \{\sigma_{z},\sigma_{x}\}&=\sigma_{z}\sigma_{x}+\sigma_{x}\sigma_{z}=0 \end{align*}
+$$
+
+- All Pauli matrices are Hermitian, indicating that they are equivalent to their own conjugate transpose. Consequently, they possess real eigenvalues, exhibit orthogonal eigenvectors, and are observable in quantum mechanics.
 
 ## Rotation gates
 
@@ -222,9 +236,11 @@ $$
 R_{n}(\theta) = \exp[ -i \theta \sigma_{n} / 2 ]
 $$
 
+When the rotation angle $\theta$ is $\pi$, the rotation operators implement the same operation as the Pauli matrices
+
 ## Hadamard gate
 
-The Hadamard gate is important because it allows us to bring the qubit into **superposition**. 
+The Hadamard gate is important because it allows us to bring the qubit into **superposition** (open the superposition). 
 
 $$
 H = \frac{1}{\sqrt{ 2 }} \begin{bmatrix}
@@ -233,6 +249,16 @@ H = \frac{1}{\sqrt{ 2 }} \begin{bmatrix}
 $$
 
 ![[image 1.gif|200]]
+
+the Hadamard transforms a deterministic computational state into a superposition.
+
+
+$$ 
+\displaylines{
+H\ket{0} = \ket{+} = \frac{1}{\sqrt{2}} \ket{0} + \frac{1}{\sqrt{2}} \ket{1} \\
+H\ket{1} = \ket{-} = \frac{1}{\sqrt{2}} \ket{0} - \frac{1}{\sqrt{2}} \ket{1}
+}
+$$
 
 ## Phase gate
 
