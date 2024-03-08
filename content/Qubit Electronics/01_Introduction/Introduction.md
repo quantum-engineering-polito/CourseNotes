@@ -1,7 +1,7 @@
 ---
-nextnote: 
-author: Giacomo, BabelDev0
-authorlink: https://github.com/gamberoillecito, https://github.com/BabelDev0
+nextnote: "[[Superconductive qubits]]"
+author: 
+authorlink:
 ---
 # Computers and computation
 
@@ -149,6 +149,7 @@ $$
 \end{bmatrix}
 }
 $$
+
 which correspond to the eigenstates of $\sigma_x$ and $\sigma_y$.
 
 ## Bloch sphere
@@ -214,6 +215,7 @@ $$
 ![[image.gif|200]]
 
 ### Properties of Pauli matrices
+
 - Commutation relations :
 
 $$ 
