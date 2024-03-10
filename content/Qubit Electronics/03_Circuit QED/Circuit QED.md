@@ -107,12 +107,16 @@ Adding together all this very intuitive, clear approximations, we get the so cal
 $$
 \begin{align}
 \hat{H} &= \hat{H}_{\text{resonator}}\ + \ \hat{H}_{\text{qubit}} \ + \ \hat{H}_{\text{qubit-resonator}}\\
-&= \dots \ - \ g(\hat{a}^{\dagger} - \hat{a}) (\hat{b}^{\dagger} - \hat{b}) && \longleftarrow  \text{single mode approximation, approximated interaction term and approximated} \ \hat{H}_{\text{qubit}} \\
-&= \dots \ - \ g(\hat{a}^{\dagger} \hat{\sigma}_{-} + \hat{a}\hat{\sigma}_{+})  &&  \longleftarrow  \text{two levels approximation}\\
-&= \boxed{\omega_r \hat{a}^{\dagger} \hat{a}+\frac{ \omega_q}{2} \hat{\sigma}_z+ g\left(\hat{a}^{\dagger} \hat{\sigma}_{-}+\hat{a} \hat{\sigma}_{+}\right)} && \longleftarrow \text{rotating waves approximation}\\
-
+&=^1 \dots \ - \ g(\hat{a}^{\dagger} - \hat{a}) (\hat{b}^{\dagger} - \hat{b}) \\
+&=^2 \dots \ - \ g(\hat{a}^{\dagger} \hat{\sigma}_{-} + \hat{a}\hat{\sigma}_{+})\\
+&=^3 \boxed{\omega_r \hat{a}^{\dagger} \hat{a}+\frac{ \omega_q}{2} \hat{\sigma}_z+ g\left(\hat{a}^{\dagger} \hat{\sigma}_{-}+\hat{a} \hat{\sigma}_{+}\right)}
 \end{align} \tag{7}
 $$
+
+with:
+- 1. Single mode approximation, approximated interaction term and approximated $\hat{H}_{\text{qubit}}$
+- 2. Two levels approximation
+- 3. Rotating waves approximation
 
 In the interaction term, $\hat{a}^{\dagger} \hat{\sigma_{-}}$ describes the destruction of an excitation of the qubit with the creation on a photon, while $\hat{a}\hat{\sigma_{+}}$ describes the creation excitation for the annihilation of a photon.
 Therefore, now the interaction term has the following interpretation: the qubit can:
