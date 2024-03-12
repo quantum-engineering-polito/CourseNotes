@@ -1,4 +1,4 @@
-**warning:** some formulas can be off by a factor $\hbar$ . #todo ask to Riente where yyou need it
+
 # From atomic physics to quantum optics
 
 The idea of superconducting circuit is to "mimic" the behaviour of real atoms. The great advantage of superconducting circuits is that they can be more easily **tuned**.
@@ -44,14 +44,16 @@ $$
 Therefore the field is stronger the smaller is the cavity.
 
 # From cavity to QED
-**Warning:** In this section many subsequent approximation will be used. To help the reader, we have underlined with bold characters when a new approximation is intruduced.
+**Warnings:**
+- In this section many subsequent approximation will be used. To help the reader, we have underlined with bold characters when a new approximation is introduced.
+- In this notes many hamiltonians differs from the one in the professors's slides. The professor often divided the hamiltonians by $\hbar$, in order to have less constants in the equations. We made the choice of maintaining the constant, in order tho have hamiltonians that are expressed as energies (and not frequencies).
 
 To operate qubits it is possible to realize a circuit that works similarly to a FPC. A possible realization is shown is the following figure:
 
 ![[Pasted Graphic.png]]
 
 The circuit to realize the planar waveguide is obtained depositing three conductive stripes. This system works similarly to a coaxial cable: the stipe in the middle is the conductive part, that is insulated from the two external stripes, that are grounded. 
-The FPC is created in the central conductor using the two "cuts" that are visible in the figure. This creates a stripe of length $d$, that behaves as a resonator. In this case, the resonance condition occurs when the wavelength of the incoming *signal* (is optical or electronical?) is a multiple of the length of the resonator.
+The FPC is created in the central conductor using the two "cuts" that are visible in the figure. This creates a stripe of length $d$, that behaves as a resonator. In this case, the resonance condition occurs when the wavelength of the electromagnetic wave propagating trough the waveguide is a multiple of the length of the resonator.
 
 This configuration creates a tightly confined electric field in proximity of the resonator, that can be coupled with a qubit (Transmont qubit) as shown in the figure:
 ![[Pasted Graphic 1.png]]
@@ -72,24 +74,25 @@ If the Resonator and the Qubit were not interacting, the hamiltonian would be ju
 $$
 \begin{align}
 \hat{H} &= \hat{H}_{\text{resonator}}\ + \ \hat{H}_{\text{qubit}} \\
- &=  \frac{Q_{r}^{2}}{2C_{r}}  + \frac{1}{2} C \omega_{r} \Phi^{2}_{r}\ + 4E_{C}\hat{n}^{2} - E_{j} \cos\hat\phi\\
-&=  \hbar\omega_{r}\hat{a}^{\dagger}\hat{a}\  + \ \omega_{01}\hat{b}^{\dagger}\hat{b} \ - \ \frac{E_{C}}{2}\hat{b}^{\dagger}\hat{b}^{\dagger}\hat{b}\hat{b}
+ &=  \frac{Q_{r}^{2}}{2C_{r}}  + \frac{1}{2} C \omega_{r}^{2} \Phi^{2}_{r}\ + 4E_{C}\hat{n}^{2} - E_{j} \cos\hat\phi\\
+&=  \hbar\omega_{r}\hat{a}^{\dagger}\hat{a}\  + \ \hbar \omega_{01}\hat{b}^{\dagger}\hat{b} \ - \ \frac{E_{C}}{2}\hat{b}^{\dagger}\hat{b}^{\dagger}\hat{b}\hat{b}
 \\ 
 
 \end{align} \tag{4}
 $$
 
-#todo decide wich notation use for the frequency of the qubit
 Where in writing the final form of $\hat{H}_\text{qubit}$, the same **approximation** as in [[Superconductive qubits]] has been used.
-Since the two are capacitatively coupled, to describe the system is essential to add a term that takes this interaction into account. This is done adding to the total hamiltonian a very very **mysterious interaction term**: 
+Since the two are capacitatively coupled, to describe the system is essential to add a term that takes this interaction into account. This is done adding to the total hamiltonian a very very **mysterious interaction term** (VVMIT) 
 
 $$
 \begin{align}
 \hat{H} &= \hat{H}_{\text{resonator}}\ + \ \hat{H}_{\text{qubit}} \ + \ \hat{H}_{\text{qubit-resonator}}\\
-&= \hbar\omega_{r}\hat{a}^{\dagger}\hat{a}\  + \ \omega_{01}\hat{b}^{\dagger}\hat{b} \ - \ \frac{E_{C}}{2}\hat{b}^{\dagger}\hat{b}^{\dagger}\hat{b}\hat{b} \ - \ g(\hat{a}^{\dagger} - \hat{a})(\hat{b}^{\dagger} - \hat{b})
+&= \hbar\omega_{r}\hat{a}^{\dagger}\hat{a}\  + \ \hbar\omega_{01}\hat{b}^{\dagger}\hat{b} \ - \ \frac{E_{C}}{2}\hat{b}^{\dagger}\hat{b}^{\dagger}\hat{b}\hat{b} \ - \ \hbar g(\hat{a}^{\dagger} - \hat{a})(\hat{b}^{\dagger} - \hat{b})
 \end{align} \tag{5}
 $$
 The factor $g$, as in the case of natural atoms, is a quantity that describes the strength of the interaction.
+We notice that the VVMIT is proportional to the product of the operators $\hat{n}_{\text{resonator}}\ \hat{n}_{\text{qubit}}$, this brings us a step closer to understand the physical essence of this term, but not sufficiently close to really have a clue on what is going on. 
+
 Since the qubit is operated in a regime where only the two least energetic levels are accessible, the more general operators $\hat{b}$ and $\hat{b}^{\dagger}$ can be replaced with the operators $\hat{\sigma}_{-}$ and $\hat{\sigma}_{+}$ respectively, that act on a two level system.
 
 We recall that the definitions of $\hat{\sigma}_{-}$ and $\hat{\sigma}_{+}$:
@@ -109,9 +112,9 @@ Adding together all this very intuitive, clear approximations, we get the so cal
 $$
 \begin{align}
 \hat{H} &= \hat{H}_{\text{resonator}}\ + \ \hat{H}_{\text{qubit}} \ + \ \hat{H}_{\text{qubit-resonator}}\\
-&=^1 \hbar\omega_{r}\hat{a}^{\dagger}\hat{a}\  + \ \omega_{01}\hat{b}^{\dagger}\hat{b} \ - \ \frac{E_{C}}{2}\hat{b}^{\dagger}\hat{b}^{\dagger}\hat{b}\hat{b} \ - \ g(\hat{a}^{\dagger} - \hat{a}) (\hat{b}^{\dagger} - \hat{b}) \\
-&=^2 \hbar\omega_{r}\hat{a}^{\dagger}\hat{a}\  + \ \frac{\omega_{01}}{2}\hat{\sigma}_{z}  \ - \ g(\hat{a}^{\dagger} \hat{\sigma}_{-} + \hat{a}\hat{\sigma}_{+})\\
-&=^3 \boxed{\omega_r \hat{a}^{\dagger} \hat{a}+\frac{ \omega_q}{2} \hat{\sigma}_z+ g\left(\hat{a}^{\dagger} \hat{\sigma}_{-}+\hat{a} \hat{\sigma}_{+}\right)}
+&=^1 \hbar\omega_{r}\hat{a}^{\dagger}\hat{a}\  + \ \hbar \omega_{01}\hat{b}^{\dagger}\hat{b} \ - \ \frac{E_{C}}{2}\hat{b}^{\dagger}\hat{b}^{\dagger}\hat{b}\hat{b} \ - \ \hbar g(\hat{a}^{\dagger} - \hat{a}) (\hat{b}^{\dagger} - \hat{b}) \\
+&=^2 \hbar\omega_{r}\hat{a}^{\dagger}\hat{a}\  + \  \frac{\hbar\omega_{01}}{2}\hat{\sigma}_{z}  \ - \ \hbar g(\hat{a}^{\dagger} - \hat{a}) (\hat{\sigma}_{+} - \hat{\sigma}_{-})\\
+&=^3 \boxed{\hbar\omega_r \hat{a}^{\dagger} \hat{a}+\frac{ \hbar \omega_{01}}{2} \hat{\sigma}_z+ \hbar g\left(\hat{a}^{\dagger} \hat{\sigma}_{-}+\hat{a} \hat{\sigma}_{+}\right)}
 \end{align} \tag{7}
 $$
 
@@ -128,13 +131,10 @@ Therefore, now the interaction term has the following interpretation: the qubit 
 The Jaynes-Cummings Hamiltonian can be solved exactly and used to describe many situations in which an atom, artificial or natural, can be considered a two-level system in interaction with an electromagnetic field.
 In our case, the interaction described by this hamiltonian will be useful to *control* the state of the qubit.
 
-We are engineers, we find peace and great delight in making approximations. One could even argue that making approximations is our life purpose. 
-So, let us have some fun with even more funny approximations!
-
-Approximations to further simplify the model can be done in the **dispersive regime**, where the qubit-resonator detuning is much grater with respect to  the strength of the coupling: $\Delta=\hbar\ |\omega_{01}-\omega_{r}| \gg g$.  Under this condition it is possible to treat the interaction term with perturbation theory, leading to the following result:
+Approximations to further simplify the model can be done in the **dispersive regime**, where the qubit-resonator detuning is much grater with respect to  the strength of the coupling: $\Delta=\hbar\ |\omega_{01}-\omega_{r}| \gg \hbar g$.  Under this condition it is possible to treat the interaction term with perturbation theory, leading to the following result:
 
 $$
-\hat{H} = \underbrace{ (\omega_{r} + \chi\hat{\sigma}_{z}) }_{ \text{resonator frequency} }\hat{a}^{\dagger}\hat{a}\ +\ \frac{\omega_{01}}{2}\hat{\sigma}_{z} \tag{8}
+\hat{H} = \hbar \underbrace{  (\omega_{r} + \chi\hat{\sigma}_{z}) }_{ \text{resonator frequency} }\hat{a}^{\dagger}\hat{a}\ +\ \hbar\frac{\omega_{01}}{2}\hat{\sigma}_{z} \tag{8}
 $$
 Where $\chi = \frac{g^{2}}{\Delta}$ is called "Dispersive interaction term" and $\hat{\sigma}_{z}$ is the pauli z-matrix that acts on the qubit state.
 The important thing to notice is that now the actual resonator frequency depends on the state of the qubit, and is equal to:
@@ -145,34 +145,41 @@ This can be exploited for the readout of the qubit state.
 
 # Control and readout of one qubit
 
-The state **readout** is performed using a frequency $\omega$ close to the resonance frequency of the bare resonator $\omega_{r}$.
+The state **readout** is performed in **dispersive regime**, using a frequency $\omega$ close to the resonance frequency of the bare resonator $\omega_{r}$.
 Under this condition the transmitted spectra depend on the state of the qubit as shown in this picture:
-![[ReadoutQubitstate.png]]
-So, by observing what is the resonance frequency one can perform a **non destructive measurement** on the qubit.
-But what does actually means? #todo ask Riente
+![[Pasted Graphic 4.png]]
+So, by observing what is the resonance frequency one can perform a measure on the qubit state. If the resonance frequency is shifted up (down), the qubit collapsed in the state $\ket{1}$ ($\ket{0}$). 
+Is important to stress that operating in the dispersive regime allows to perform a **non destructive measurement** on the qubit. This means that that the perturbation induced by the readout process makes the qubit collapse without affecting its state before the measurement.
+This is made possible by the fact that the driving frequency is "close" to the resonant frequency, and is "far" from the resonant frequency of the qubit. 
 
 The state **control** can be performed using a frequency $\omega$ that matches the frequency between the two states of the qubit $\omega_{01}$.
-Since in this case the driving frequency $\omega$ is different from the resonance frequency, the incoming signal will be almost completely reflected. Even so, some photons with frequency $\omega_{01}$ can still enter in the cavity, and interact with the qubit through the Jaynes-Cummings Hamiltonian, thus affecting its state.
-#todo add a graphical summary 
+Since in this case the driving frequency $\omega$ is different from the resonance frequency, the incoming signal will be almost completely reflected. Even so, some photons with frequency $\omega_{01}$ can still enter in the cavity, and interact with the qubit through the **Jaynes-Cummings Hamiltonian**, thus affecting its state.
+
 # multiple qubits control and readout
 
 With the same circuit, is possible to put multiple qubit near the resonator in order to have a many-qubit system. An actual possible implementation is schematized in this figure:
 ![[Many qubit.png]]
 Each of the qubit can be designed in order to have its own operating frequency $\omega_{01}^{(i)}$ $i = 1 \dots N_{\text{qubit}}$. This makes possible:
 - **individual state control**: using a driving frequency $\omega=\omega_{01}^{(i)}$ one can control the state of the i-th qubit.
-- **global readout**: using a driving frequency $\omega=\omega_{r}$, one will obtain a transmission spectrum with a pattern that will be affected by the state of each qubit.
+- **global readout**: using a driving frequency $\omega=\omega_{r}$, one will obtain a transmission spectrum with a pattern that will be affected by the state of each qubit. 
 
 # Xmon qubit
-#todo rewrite decently
-The presented theory was derived considering a Trasmon qubit realized using interdigital capacitor, but works also for a more convenient implementation of the charge qubit: the Xmon qubit.
 
-All the theory remains untouched, from the lumped element circuit to the derivation of the hamiltonian. The only thing that changes is how the qubit is implemented.
+ The papers from which this lecture is based on, used a Transmon realized with an interdigital capacitor:
+![[Transmont Interdigital.png]]
 
-The name comes from the cross shape.
-the advantages of this qubit are many:
-- interconnectivity: easy to couple to other qubits or to measurment instruments
-- tunability: can be tuned replacing the Josephson junction with a squid
+Still, the presented derivation holds for any implementation of the trasmon qubit. All the theory remains untouched, from the lumped element circuit to the derivation of the hamiltonian. 
+
+A particular, very convenient, implementation is the **xmon qubit**. This name comes after its cross-shaped geometry.
+
+The advantages of this qubit are many:
+- Interconnectivity: "easy" to couple to other qubits, to measurement instruments or to control lines.
+- Tunability: can be tuned replacing the Josephson junction with a squid
+
+Here is reported an array of five connected Xmon qubits, coupled with transmission and control line:
 
 ![[Multiple Xmon qubits.png]]
 
-
+Further readings:
+https://doi.org/10.1103/RevModPhys.93.025005
+https://doi.org/10.1103/PhysRevA.69.062320
