@@ -364,7 +364,7 @@ If we were to double the size of the sample nothing would change since there wou
 
 ## Effective mass
 
-Recalling the definition of density of states, we can draw a very simplified plot of $D(E)$ and $E$ (on the left) and the probability of occupation ([[Group A#^7202aa|see group A notes]]):
+Recalling the definition of density of states, we can draw a very simplified plot of $D(E)$ and $E$ (on the left) and the probability of occupation ([[Quantum Devices/00_ Group A/Group A#^7202aa|see group A notes]]):
 
 ![[DOS and prob.excalidraw.png|600]]
 
