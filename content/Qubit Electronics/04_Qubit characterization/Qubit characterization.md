@@ -106,4 +106,7 @@ At $t = T_1$ we have a $63.3\%$ decay of the exponential.
 
 
 
-# Bloch-Redfield model
+## Bloch-Redfield model
+
+# Qubit control
+
