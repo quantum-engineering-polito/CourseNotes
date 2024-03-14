@@ -1,5 +1,5 @@
 ---
-nextnote: 
+nextnote: "[[Transmission lines]]"
 author: 
 authorlink: 
 draft: false

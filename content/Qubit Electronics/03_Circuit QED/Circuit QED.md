@@ -1,3 +1,9 @@
+---
+nextnote: "[[Qubit characterization]]"
+author: 
+authorlink: 
+draft: false
+---
 
 # From atomic physics to quantum optics
 
