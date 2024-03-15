@@ -186,5 +186,17 @@ $$
 i(z,t) = \frac{1}{Z_0} v_{+}(z,t) - \frac{1}{Z_0} v_{-}(z,t) \tag{2}
 $$
 
-We can finally calculate $R_{L}$ as $v / i$.
+We can finally calculate $R_{L}$ as $v / i$
+
+$$
+R_{L} = \frac{v(z,t)}{i(z,t)} = \frac{v_{+}(z,t) + v_{-}(z,t)}{\frac{v_{+}(z,t)}{Z_0} + \frac{v_{-}(z,t)}{Z_0}}
+$$
+
+and from this calculate the **voltage reflection coefficient** $\Gamma_{Lv}$ as 
+
+$$
+\Gamma_{Lv} = \frac{v_{-}(z,t)}{v_{+}(z,t)} = \frac{R_{L} - Z_0}{R_{L} + Z_0}
+$$
+
+
 
