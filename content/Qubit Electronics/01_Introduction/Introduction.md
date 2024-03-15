@@ -56,7 +56,7 @@ To implement **parallelism** we either ==need more hardware==: have multiple CPU
 
 In quantum computers, on the other hand, with $N$ qubits we can represent $2^{N}$ components in one state.
 
-# Gates
+# Logic gates
 
 In classical computers (where we use Boolean logic), single and two bit gates (such as NOT + AND) can be use to describe any Boolean function. The NAND and NOR gates are instead universal gates. In practice NAND and NOR gates are economical and easier to fabricate respect to other gates and they are the basic gates used in all IC digital logic families.
 
@@ -81,7 +81,7 @@ The quantum counterpart is the CNOT-gate
 
 ![[c not 2.svg|300]]
 
-# Di Vincenza criteria
+# DiVincenzo criteria
 
 When in the past people had to find a device which could implement a good logic element, they where searching for something that could satisfy the following criteria:
 
