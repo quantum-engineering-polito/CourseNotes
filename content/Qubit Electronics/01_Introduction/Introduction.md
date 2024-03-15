@@ -308,3 +308,6 @@ $$
 \end{bmatrix}
 $$
 
+
+to ensure that the density matrix is Hermitian, the off-diagonal elements must satisfy $\rho_{12}=\rho_{21}^{*}$.
+

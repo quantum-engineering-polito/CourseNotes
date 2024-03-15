@@ -111,7 +111,7 @@ where $\varrho$ is the **free charge density** and $\vec{j}$ is the **free curre
 
 # Electromagnetic waves
 
-The Maxwell's equations are 4 partial differential equation, and is possible to find a wave-like solution for the $\vec{\mathcal{E}}$ and $\vec{B}$ considering the special case in witch we are inside a linear, isotropic, homogeneous, non magnetic material and $\varrho=0$ (no free charges).
+The Maxwell's equations are four partial differential equation, and is possible to find a **wave-like solution** for the $\vec{\mathcal{E}}$ and $\vec{B}$ considering the special case in which we are inside a linear, isotropic, homogeneous, non magnetic material and $\varrho=0$ (no free charges).
 
 Under these conditions we see that $\vec{B}=\mu_{0}\vec{H}$ and that $\vec{D}=\epsilon_{0}\epsilon_{r}\vec{\mathcal{E}}$ so we can substitute these into the 4th MEs and get:
 
@@ -129,7 +129,7 @@ now using the vector identity:
 $$ 
 \nabla \times (\nabla \times \vec{\mathcal{E}}) = \nabla(\cancelto{0}{\nabla \cdot \vec{\mathcal{E}}}) - \nabla^{2} \vec{\mathcal{E}}
 $$ 
-so we obtain this single PDE for the electric field:
+the simplification of the divergence term is due to the (ME1) that in these special condition is $\vec{\nabla} \cdot \vec{D} = 0$ so we obtain this single PDE (Partial derivative eq) for the electric field:
 
 $$ 
 \nabla^{2} \vec{\mathcal{E}} = \mu_{0}\epsilon_{0}\epsilon_{r} \frac{ \partial^{2} \vec{\mathcal{E}} }{ \partial t^{2} } \tag{1}
@@ -140,37 +140,47 @@ $$
 \nabla^{2} \vec{B} = \mu_{0}\epsilon_{0}\epsilon_{r} \frac{ \partial^{2} \vec{B} }{ \partial t^{2} } \tag{2}
 $$
 
- in dielectric material the propagation velocity is given by:
+Inside the dielectric material the propagation velocity is given by:
 
 $$ 
-\frac{1}{v^{2}}=\mu_{0}\epsilon_{0}\epsilon_{r}\quad , \quad v=\frac{1}{\sqrt{ \epsilon_{r}}}c \equiv \frac{c}{n}
+v=\frac{1}{\sqrt{ \epsilon_{r}}}c \equiv \frac{c}{n}
+\quad , \quad 
+\frac{1}{v^{2}}=\mu_{0}\epsilon_{0}\epsilon_{r}
 $$
 
-where $n=\frac{1}{\sqrt{ \epsilon_{r} }}$ is the medium refractive index which allows us to relate the optical properties of a medium to its dielectric properties.
+where $n$ is the refractive index of the medium, which allows us to **relate the optical properties of a medium to its dielectric properties**.
 
-### The d'Alembert equation
+>[!Note] The refractive index can be seen as the factor by which the speed of the radiation is reduced with respect to its vacuum value, for these reason the refractive index of the vacuum is 1
 
-The d'Alembert equation is a partial differential equation that describes the propagation of waves. 
+### The D'alembert equation
 
-It is defined as:
+The D'alembert equation is a partial differential equation that is commonly use to describe the solution of the one-dimensional wave equation. It can be use to describe the MEs and is defined as:
+
 $$ 
 \frac{{\partial^2 u}}{{\partial t^2}} = c^2 \frac{{\partial^2 u}}{{\partial x^2}}
-$$ 
-son in our case we can rewrite (1) and (2) using this:
+$$
+
+where:
+- $c$ its the speed at which the wave propagates.
+- $u(x,t)$ is the displacement of the wave at position $x$ and time $t$ 
+
+We can rewrite equations (1) and (2) using a 3D formulation of the D'alembert equation:
 
 $$ 
 \begin{array}{ll}\frac{\partial^2 \varepsilon_x}{\partial x^2}+\frac{\partial^2 \varepsilon_x}{\partial y^2}+\frac{\partial^2 \varepsilon_x}{\partial z^2}=\frac{1}{v^2} \frac{\partial^2 \varepsilon_x}{\partial t^2} & \frac{\partial^2 B_x}{\partial x^2}+\frac{\partial^2 B_x}{\partial y^2}+\frac{\partial^2 B_x}{\partial z^2}=\frac{1}{v^2} \frac{\partial^2 B_x}{\partial t^2} \\ \frac{\partial^2 \varepsilon_y}{\partial x^2}+\frac{\partial^2 \varepsilon_y}{\partial y^2}+\frac{\partial^2 \varepsilon_y}{\partial z^2}=\frac{1}{v^2} \frac{\partial^2 \varepsilon_y}{\partial t^2} & \frac{\partial^2 B_y}{\partial x^2}+\frac{\partial^2 B_y}{\partial y^2}+\frac{\partial^2 B_y}{\partial z^2}=\frac{1}{v^2} \frac{\partial^2 B_y}{\partial t^2} \\ \frac{\partial^2 \varepsilon_z}{\partial x^2}+\frac{\partial^2 \varepsilon_z}{\partial y^2}+\frac{\partial^2 \varepsilon_z}{\partial z^2}=\frac{1}{v^2} \frac{\partial^2 \varepsilon_z}{\partial t^2} & \frac{\partial^2 B_z}{\partial x^2}+\frac{\partial^2 B_z}{\partial y^2}+\frac{\partial^2 B_z}{\partial z^2}=\frac{1}{v^2} \frac{\partial^2 B_z}{\partial t^2}\end{array}
 $$
 
+these helps in finding solutions of the MEs.
 # Plane waves
 
-Plane waves are a particular class of EMW, that is represented by those waves where $\vec{\mathcal{E}}$ and $\vec{B}$ only depends on a direction, say $z$, and on time. 
+Plane waves are a particular class of waves, that is represented by those waves where $\vec{\mathcal{E}}$ and $\vec{B}$ only depends on a direction, say $z$, and on time. 
+
 
 ![[Plane wave 3D.svg.png|300]]
 
-In this case from the 4 MEs directly follows that $\vec{\mathcal{E}}$ and $\vec{B}$ oscillates perpendicularly to the direction of the wave's advance so they are transverse waves ($\vec{\mathcal{E}}_{z}=0, \vec{B}_{z}=0$).
+From the MEs directly follows that $\vec{\mathcal{E}}$ and $\vec{B}$ oscillates perpendicularly to the direction of the wave's advance so they are transverse waves ($\vec{\mathcal{E}}_{z}=0, \vec{B}_{z}=0$).
 
-Each non null component of the electric and magnetic field must solve the 1D D’Alembert equation. In the hypothesis that these components are respectively directed along the $x$−axis and the $y$−axis we get:
+Each non null component of the electric and magnetic field must solve the 1D D’Alembert equation. In the hypothesis that these components are respectively directed along the $x$−axis for the electric field and the $y$−axis for the magnetic field, we get:
 
 $$ 
 \frac{\partial^2 \varepsilon_x}{\partial z^2}=\frac{1}{v^2} \frac{\partial^2 \varepsilon_x}{\partial t^2} \quad , \quad \frac{\partial^2 B_{y}}{\partial z^2}=\frac{1}{v^2} \frac{\partial^2 B_{y}}{\partial t^2}
@@ -195,6 +205,69 @@ where:
 >$$
 \frac{\mathcal{E}}{B}=v
 >$$
+
+Why did we spend valuable time to delve into the concept of plane waves ? 
+
+Well, even if the plane wave is a mathematical abstraction, as there is no physical source infinitely extended in space that can produce it, several more complex wave propagation can be approximated by plane waves under certain conditions. For instance plane waves are often used to describe the propagation of light in homogeneous media over large distances.
+
+## Harmonic plane waves
+
+A particular case of plane waves traveling along the $z$−axis is the **harmonic** (**monochromatic**) plane wave whose wave function depends periodically on the argument ($z\pm vt$).
+
+In general a harmonic plane wave is represented by a solution of the 3D wave equation where $\vec{\mathcal{E}}$ and $\vec{B}$  depend on the position vector $r$ and the time $t$ as harmonic functions:
+
+$$ 
+\begin{align}
+&\mathcal{E}_{x}(z,t) = \mathcal{E}_{x0}\cos(kz-\omega t+\phi)
+\\\\
+&B_y(z,t) = B_{y0}\cos(kz-\omega t+\phi)
+\end{align}
+$$
+
+They reduce the study of a **3-component vector field to a 1-component scalar function**. This is because these fields are harmonic functions, meaning they repeat themselves over time and space with a constant frequency and wavelength.
+
+We can describe the electric and magnetic filed solution by complex numbers, in order to simplify the calculation and we obtain:
+
+$$
+\begin{align}
+&\mathcal{E}_{x}(z,t) = \mathcal{E}_{x0}e^{i(kz-\omega t+\phi)} \\\\
+&B_y(z,t) = B_{y0}e^{i(kz-\omega t+\phi)}
+\end{align}
+$$
+
+>[!Note] Of course physically measurable quantities are obtained by taking the real part of the complex wave
+
+ $\vec{\mathcal{E}}$ and $\vec{B}$ are mutually orthogonal and orthogonal to the propagation direction.
+
+# Energy of a plane wave and Poynting vector
+
+The Poynting vector, named after John Henry Poynting, is used in order to demonstrate the **energy flux density** of an EM field. Per definition, the Poynting vector is the result of the vector product of the field's electric and magnetic components:
+
+$$
+\vec{S}=\vec{\mathcal{E}} \times \vec{H} \quad [Wm^{-2}]
+$$
+
+the Poynting vector provides information about the direction of propagation of the EM field and information about the direction of energy transport.
+
+Both the energy flux and wave propagation velocity share the same direction in the case of a harmonic plane wave, it implies that the energy carried by the wave is moving in the same direction as the wave itself.
+
+Now, the average intensity or intensity $<I>$ is defined as the average of the intensity over one period of the wave. Intensity, in the context of waves, typically refers to the power per unit area carried by the wave. It's a measure of how much energy is transmitted through a given area per unit time. We can calculate the average intensity using the wave impedance that in case of the ideal dielectric (conductivity is zero) is 
+
+$$ 
+Z = \sqrt{ \frac{\mu}{\epsilon} } = \sqrt{ \frac{\mu_{o}}{\epsilon_{o}\epsilon_{r}} }
+$$
+
+so we can write:
+
+$$
+<I>\ =\frac{1} {Z} <\mathcal{E}(t)^{2}> \ = \frac{1}{2} c \epsilon_{0}n \mathcal{E_{x_0}^{2}}
+$$
+
+# Polarization of EMW
+
+**The direction of the electric field of a plane wave is called polarization**. 
+
+>[!warning] This polarization is completely different from the macroscopic polarization of the material due to the presence of an electric field; they should not be confused.
 
 
 

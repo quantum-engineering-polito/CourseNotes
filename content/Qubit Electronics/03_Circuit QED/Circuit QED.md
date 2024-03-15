@@ -39,7 +39,7 @@ We will not describe in detail this apparatus, we will just limit ourself in des
 A Fabry Perot cavity (FPC) is a cavity created between two semi-reflective mirrors. A light beam can be transmitted across a FPC only if the frequency is "close" to a multiple of the resonant frequency of the cavity $\omega_r$, that depends on its geometry. 
 
 The transmitted intensity across the FPC follows a behavieour similar to this:
-![[Pasted image 20240308172809.png]]
+![[Introduction.png]]
 Where the peaks are centered in correspondence of the resonant frequencies (or wavelengths).
 Under the resonant condition, stationary wave are formed inside of the cavity, giving rise to an electric field that is related to the volume of the cavity $V$ by:
 
