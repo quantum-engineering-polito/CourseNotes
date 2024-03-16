@@ -4,21 +4,15 @@
     "type": "split",
     "children": [
       {
-        "id": "afe76a6eda6b79a5",
+        "id": "3bf69d53fe2b6775",
         "type": "tabs",
         "children": [
           {
-            "id": "20185e8b6334b6a3",
+            "id": "cefd3d56e107bd6e",
             "type": "leaf",
-            "pinned": true,
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "How to collaborate.md",
-                "mode": "preview",
-                "source": false
-              },
-              "pinned": true
+              "type": "empty",
+              "state": {}
             }
           }
         ]
@@ -35,22 +29,12 @@
         "type": "tabs",
         "children": [
           {
-            "id": "b707f0708e00b7a7",
-            "type": "leaf",
-            "state": {
-              "type": "file-explorer",
-              "state": {
-                "sortOrder": "alphabetical"
-              }
-            }
-          },
-          {
             "id": "29d375877de852b5",
             "type": "leaf",
             "state": {
               "type": "search",
               "state": {
-                "query": "\"effective mass\"",
+                "query": "",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -66,12 +50,24 @@
               "type": "bookmarks",
               "state": {}
             }
+          },
+          {
+            "id": "d82ff745de041e44",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical"
+              }
+            }
           }
-        ]
+        ],
+        "currentTab": 2
       }
     ],
     "direction": "horizontal",
-    "width": 257.5
+    "width": 301.5,
+    "collapsed": true
   },
   "right": {
     "id": "8ccfdff9373aab92",
@@ -87,7 +83,6 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "How to collaborate.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -104,9 +99,8 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "How to collaborate.md",
                 "linksCollapsed": false,
-                "unlinkedCollapsed": true
+                "unlinkedCollapsed": false
               }
             }
           },
@@ -126,9 +120,7 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {
-                "file": "How to collaborate.md"
-              }
+              "state": {}
             }
           },
           {
@@ -157,53 +149,53 @@
       "homepage:Open homepage": false
     }
   },
-  "active": "20185e8b6334b6a3",
+  "active": "cefd3d56e107bd6e",
   "lastOpenFiles": [
+    "Quantum Photonics/01_Group A/Group A part 2 temp.md",
+    "Quantum Photonics/01_Group A/attachments/excalidraw/phasor.md",
+    "Quantum Photonics/01_Group A/Group A.md",
+    "Quantum Photonics/01_Group A/attachments/excalidraw/phasor.svg",
+    "Quantum Photonics/01_Group A/attachments/excalidraw",
+    "Qubit Electronics/Note Eva.md",
+    "Qubit Electronics/03_Circuit QED/attachments/Introduction.png",
+    "Quantum Photonics/01_Group A/attachments/Screenshot 2024-03-14 at 15.26.39.png",
+    "Quantum Photonics/01_Group A/attachments/Screenshot 2024-03-14 at 15.21.17.png",
+    "Materials/01_Elements of Quantum Optics/attachments/Z basis measurement.png",
+    "Materials/01_Elements of Quantum Optics/attachments/X basis measurement.png",
+    "Materials/01_Elements of Quantum Optics/attachments/Shannon-Weaver model.png",
+    "Materials/01_Elements of Quantum Optics/attachments/Pasted image 20240315164047.png",
+    "Materials/01_Elements of Quantum Optics/attachments/Pasted image 20240314171227.png",
+    "Materials/01_Elements of Quantum Optics/attachments/Noisy Bit.png",
+    "Materials/01_Elements of Quantum Optics/Elements of Quantum Optics.md",
+    "Materials/01_Elements of Quantum Optics/attachments",
+    "Materials/01_Elements of Quantum Optics",
+    "Quantum Photonics/01_Group A/CC.md",
+    "Quantum Photonics/attachments",
+    "Qubit Electronics/01_Introduction/Introduction.md",
+    "Materials/test.md",
+    "Qubit Electronics/03_Circuit QED/Circuit QED.md",
+    "Qubit Electronics/03_Circuit QED/Untitled.md",
+    "Qubit Electronics/05_Transmission lines/Transmission lines.md",
+    "Qubit Electronics/05_Transmission lines/attachments/excalidraw/TL reflections.md",
+    "Qubit Electronics/02_Superconductive qubits/Superconductive qubits.md",
+    "Qubit Electronics/05_Transmission lines/attachments/excalidraw/displacement 1.md",
+    "Qubit Electronics/05_Transmission lines/attachments/excalidraw/displacement 2.md",
+    "Qubit Electronics/05_Transmission lines/attachments/excalidraw/TL circuit.md",
+    "Quantum Information/test.md",
+    "HPC/test.md",
+    "Materials/01_test",
+    "Quantum Photonics/01_Group A/attachments",
+    "Quantum Photonics/01_Group A",
+    "Quantum Photonics",
+    "Qubit Electronics/05_Transmission lines/attachments/excalidraw/TL section.md",
+    "Qubit Electronics/05_Transmission lines/attachments/excalidraw",
+    "Qubit Electronics/05_Transmission lines/attachments",
+    "Qubit Electronics/04_Qubit characterization/Qubit characterization.md",
+    "Photonics/01_Group A/Group A.md",
+    "Qubit Electronics/02_Superconductive qubits/attachments/excalidraw/transmon ng var.md",
+    "QMPI/Part 1/Formulas.md",
     "Obsidian Examples.md",
-    "attachments/latex suite enable2.png",
     "How to collaborate.md",
-    "QCM Physics/05_2DEG/2DEG.md",
-    "QCM Physics/05_2DEG/attachments/subsolution.png",
-    "QCM Physics/05_2DEG/attachments/excalidraw/2DEG-planar.md",
-    "QCM Physics/03_Fermi golden rule/Fermi golden rule.md",
-    "index.md",
-    "QCM Physics/14_Quantum Wire/Quantum Wire.md",
-    "QCM Physics/13_QW Superlattice/QW Superlattice.md",
-    "QCM Physics/10_Aharonov-Bohm effect/Aharonov-Bohm effect.md",
-    "QCM Physics/08_Quantum Hall effect/Quantum Hall effect.md",
-    "QCM Physics/11_Flying Electron Qubit/Flying Electron Qubit.md",
-    "QCM Physics/17_Superconductivity/Superconductivity.md",
-    "QCM Physics/02_Models/attachments/excalidraw/Ntot.md",
-    "QCM Physics/16_Quantum Dots/Quantum Dots.md",
-    "QCM Physics/15_Landauer effect/Landauer effect.md",
-    "QCM Physics/12_Optical Properties of Quantum Wells/Optical Properties of Quantum Wells.md",
-    "QCM Physics/10_Aharonov-Bohm effect/attachments/excalidraw/rminsolenoid.md",
-    "QCM Physics/10_Aharonov-Bohm effect/attachments/excalidraw/rmaxsolenoid.md",
-    "QCM Physics/09_Tunneling and T matrix/Tunneling and T matrix.md",
-    "QCM Physics/09_Tunneling and T matrix/attachments/excalidraw/classic vs quantum.md",
-    "QCM Physics/09_Tunneling and T matrix/attachments/excalidraw/classic vs quantum.svg",
-    "QCM Physics/08_Quantum Hall effect/attachments/excalidraw/DOS.md",
-    "QCM Physics/07_Vector Potential/Vector Potential.md",
-    "QCM Physics/06_HEMT/HEMT.md",
-    "QCM Physics/02_Models/Models.md",
-    "Q&M Physics Intro/attachments/excalidraw/Drawing 2024-01-23 12.05.54.excalidraw.md",
-    "QCM Physics/02_Models/attachments/Bloch_theorem_property.svg",
-    "QCM Physics/02_Models/attachments/excalidraw/Ntot.svg",
-    "QCM Physics/12_Optical Properties of Quantum Wells/attachments/spring_model.png",
-    "QCM Physics/12_Optical Properties of Quantum Wells/attachments/qw_light.png",
-    "QCM Physics/12_Optical Properties of Quantum Wells/attachments/pin_laser.png",
-    "QCM Physics/12_Optical Properties of Quantum Wells/attachments/momentum_conservation.png",
-    "QCM Physics/12_Optical Properties of Quantum Wells/attachments/matrix_element_qw_2.png",
-    "QCM Physics/12_Optical Properties of Quantum Wells/attachments",
-    "QCM Physics/12_Optical Properties of Quantum Wells",
-    "Q&M Physics Intro/attachments/excalidraw",
-    "Q&M Physics Intro/attachments/excalidraw/attachments",
-    "QCM Physics/11_Flying Electron Qubit/attachments",
-    "QCM Physics/11_Flying Electron Qubit",
-    "QCM Physics/10_Aharonov-Bohm effect/attachments/excalidraw",
-    "QCM Physics/10_Aharonov-Bohm effect/attachments",
-    "QCM Physics/10_Aharonov-Bohm effect",
-    "QCM Physics/09_Tunneling and T matrix/attachments/excalidraw",
     "Untitled.canvas",
     "Fundamentals of TP/attachments/excalidraw/Untitled.canvas"
   ]
