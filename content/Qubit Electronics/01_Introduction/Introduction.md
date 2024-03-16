@@ -276,7 +276,11 @@ $$
 
 # Density matrix
 
-The density matrix $\hat{\rho}$ is a tool (ensemble operator) that allows us to take into account the fact that ==real systems are not pure states== due to **noise** and to the interaction with the **environment**. The density matrix provides a way to represent both mixed and pure states.
+The formalism of unitary evolution for a quantum system assumes that the system under study is perfectly isolated from other quantum or classical objects and subject to **error-free** control. However, **no physical system can be perfectly isolated**, and the system will always be in contact with the NOISY classical WORLD.
+
+It is therefore safe to say that experiments never prepare **pure states** (e.g. the ground state |0> in which the system is initialized); indeed, **real quantum systems must be described using an ensemble operator, also known as the DENSITY MATRIX   (MIXED STATES).**
+
+The density matrix $\hat{\rho}$ is a tool that allows us to take into account the fact that ==real systems are not pure states== due to **noise** and to the interaction with the **environment**. The density matrix provides a way to represent both mixed and pure states.
 
 For a pure state $\ket{\psi}$ the density matrix is $\hat{\rho} = \ket{\psi} \bra{\psi}$.
 
@@ -284,12 +288,9 @@ Some relevant properties of the density matrix are that:
 
 - It must be **Hermitian**: $\hat{\rho} = \hat{\rho}^{\dagger}$
 - Its **trace** (sum of the diagonal elements) must be normalized: $tr(\hat{\rho}) = 1$
-- The elements on the **diagonal** represent the probabilities of finding the system in the states $\ket{0}$ and $\ket{1}$ respectively.
-- The **off-diagonal** elements represent the quantum correlations between the states $\ket{0}$ and $\ket{1}$.
 
-## Example
-
-If the qubit is a pure state $\ket{0}$, the density matrix would be 
+## Example 2 level system
+Density matrices are particularly simple in the case of two-level systems. If the qubit is a pure state $\ket{0}$, the density matrix would be 
 
 $$
 \hat{\rho} = \begin{bmatrix}
@@ -297,17 +298,40 @@ $$
 \end{bmatrix}
 $$
 
-because 
+- The elements on the **diagonal** represent the probabilities of finding the system in the states $\ket{0}$ and $\ket{1}$ respectively.
+- The **off-diagonal** elements represent the quantum correlations between the states $\ket{0}$ and $\ket{1}$.
 
-#todo check if this is true
+in general
 
 $$
 \hat{\rho} = \begin{bmatrix}
-\text{Probability of } \ket{0} && \text{Correlation between } \ket{0} \text{ and }\ket{1} \\
-\text{Correlation between } \ket{1} \text{ and }\ket{0} && \text{Probability of } \ket{1} 
+\text{Probability of } \ket{0} && \text{Correlation between states} \\
+\text{Correlation between states*} && \text{Probability of } \ket{1} 
 \end{bmatrix}
 $$
 
 
 to ensure that the density matrix is Hermitian, the off-diagonal elements must satisfy $\rho_{12}=\rho_{21}^{*}$.
 
+Absolutely, I can replace the formulas in the text with LaTeX code:
+
+It is important to emphasize the difference between a probabilistic mixture of quantum states and their superposition. If a physical system is prepared to be either in state $\ket{0}$ or $\ket{1}$, with equal probability, it can be described by the mixed state
+
+$$ 
+\begin{equation}
+\ket{ \psi} = \frac{1}{\sqrt{2}} \ket{0} + \frac{1}{\sqrt{2}} \ket{1}
+\end{equation}
+$$
+
+where $\ket{0}$ and $\ket{1}$ are assumed orthogonal. On the other hand, a quantum superposition of these two states with equal probability amplitudes results in the pure state  $\frac{\ket{0}+\ket{1}}{\sqrt{ 2 }}$ ​ with density matrix:
+
+$$
+\hat{\rho} = \frac{1}{2}\begin{bmatrix}
+1 && 1 \\
+1 && 1
+\end{bmatrix}
+$$
+
+Unlike the probabilistic mixture, **this superposition can display quantum interference**. 
+
+To better understand the difference between pure and mixed state we recommend: https://www.youtube.com/watch?v=LR5kfhrs4Cc
