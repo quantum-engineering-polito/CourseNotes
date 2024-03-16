@@ -8,11 +8,17 @@
         "type": "tabs",
         "children": [
           {
-            "id": "cefd3d56e107bd6e",
+            "id": "bfc2f2dc894d2844",
             "type": "leaf",
+            "pinned": true,
             "state": {
-              "type": "empty",
-              "state": {}
+              "type": "markdown",
+              "state": {
+                "file": "How to collaborate.md",
+                "mode": "preview",
+                "source": false
+              },
+              "pinned": true
             }
           }
         ]
@@ -66,8 +72,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 301.5,
-    "collapsed": true
+    "width": 301.5
   },
   "right": {
     "id": "8ccfdff9373aab92",
@@ -83,6 +88,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "How to collaborate.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -99,6 +105,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
+                "file": "How to collaborate.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": false
               }
@@ -120,7 +127,9 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {}
+              "state": {
+                "file": "How to collaborate.md"
+              }
             }
           },
           {
@@ -149,11 +158,12 @@
       "homepage:Open homepage": false
     }
   },
-  "active": "cefd3d56e107bd6e",
+  "active": "bfc2f2dc894d2844",
   "lastOpenFiles": [
+    "Quantum Photonics/01_Group A/Group A.md",
+    "How to collaborate.md",
     "Quantum Photonics/01_Group A/Group A part 2 temp.md",
     "Quantum Photonics/01_Group A/attachments/excalidraw/phasor.md",
-    "Quantum Photonics/01_Group A/Group A.md",
     "Quantum Photonics/01_Group A/attachments/excalidraw/phasor.svg",
     "Quantum Photonics/01_Group A/attachments/excalidraw",
     "Qubit Electronics/Note Eva.md",
@@ -195,7 +205,6 @@
     "Qubit Electronics/02_Superconductive qubits/attachments/excalidraw/transmon ng var.md",
     "QMPI/Part 1/Formulas.md",
     "Obsidian Examples.md",
-    "How to collaborate.md",
     "Untitled.canvas",
     "Fundamentals of TP/attachments/excalidraw/Untitled.canvas"
   ]
