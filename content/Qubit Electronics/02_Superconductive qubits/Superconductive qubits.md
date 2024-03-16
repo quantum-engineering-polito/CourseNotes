@@ -51,7 +51,7 @@ Before proceeding to solve this issue it is useful to find the Hamiltonian of th
 Similarly to the classical case of the harmonic oscillator (mass and spring or ball in a cup), the Hamiltonian of the LC resonator can be written as the sum of two terms that resemble the kinetic and potential energy: 
 
 $$
-H = \underbrace{ \frac{Q^{2}}{2C} }_{ \text{kinetic} } + \underbrace{ \frac{1}{2} C \omega_{01} \Phi^{2} }_{ \text{potential} \tag{3}}
+H = \underbrace{ \frac{Q^{2}}{2C} }_{ \text{kinetic} } + \underbrace{ \frac{1}{2} C \omega_{01}^{2} \Phi^{2} }_{ \text{potential} \tag{3}}
 $$
 
 To find the value of $H$ we still need to find $Q$ and $\Phi$, which can be obtained by using the **ladder operators** and the properties of the commutators: 

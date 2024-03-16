@@ -7,12 +7,12 @@ draft: false
 
 # From atomic physics to quantum optics
 
-The idea of superconducting circuit is to "mimic" the behaviour of real atoms. The great advantage of superconducting circuits is that they can be more easily **tuned**.
+The idea of superconducting circuit is to "mimic" the behavior of real atoms. The great advantage of superconducting circuits is that they can be more easily **tuned**.
 As mentioned in the lecture on [[Superconductive qubits]], the energy levels of the atoms are discrete. 
 
 ![[natural atom.png|300]]
 
-Furthermore, the quantum state of an atom can be influenced by an electromagnetical radiation, giving rise to *stimulated emission and absorption*. This gives some degree of freedom in controlling its state.
+Furthermore, the quantum state of an atom can be influenced by an electromagnetic radiation, giving rise to *stimulated emission and absorption*. This gives some degree of freedom in controlling its state.
 
 We will be interested in doing the same with SC circuits. But before diving in to how a SC circuit can be controlled trough EM radiation, is useful to review very briefly what happens in the case of natural atoms.
 
@@ -27,7 +27,7 @@ Where $g$ is a factor that describes the strength of the coupling.
 To eccitate a transition between the state $\ket{0}$ and $\ket{1}$ , is possible to use an electromagnetic wave with a frequency $\omega$ that matches the energy difference between this two levels: $\hbar \omega = E_{01} = \hbar \omega_{01}$ . For instance the electric field can be chosen as:
 
 $$
-\vec{E}(t) = E_0 \cos(\omega_{01}) \tag{2}
+\vec{E}(t) = E_0 \cos(\omega_{01}t) \tag{2}
 $$
 
 Where $E_0$ is the amplitude of the electric field.
@@ -36,7 +36,7 @@ To increase the strength of the field, and therefore the strength of the couplin
 
 We will not describe in detail this apparatus, we will just limit ourself in describing some of the main important facts.
 
-A Fabry Perot cavity (FPC) is a cavity created between two semi-reflective mirrors. A light beam can be transmitted across a FPC only if the frequency is "close" to a multiple of the resonant frequency of the cavity $\omega_r$, that depends on its geometry. 
+A Fabry Perot cavity (FPC) is a cavity created between two semi-reflective mirrors. A light beam can be transmitted across a FPC only if ==the frequency is "close" to a multiple of the resonant frequency of the cavity $\omega_r$==, that depends on its geometry. 
 
 The transmitted intensity across the FPC follows a behavieour similar to this:
 ![[Introduction.png]]
@@ -61,10 +61,10 @@ To operate qubits it is possible to realize a circuit that works similarly to a 
 The circuit to realize the planar waveguide is obtained depositing three conductive stripes. This system works similarly to a coaxial cable: the stipe in the middle is the conductive part, that is insulated from the two external stripes, that are grounded. 
 The FPC is created in the central conductor using the two "cuts" that are visible in the figure. This creates a stripe of length $d$, that behaves as a resonator. In this case, the resonance condition occurs when the wavelength of the electromagnetic wave propagating trough the waveguide is a multiple of the length of the resonator.
 
-This configuration creates a tightly confined electric field in proximity of the resonator, that can be coupled with a qubit (Transmont qubit) as shown in the figure:
+This configuration creates a tightly confined electric field in proximity of the resonator, that can be coupled with a qubit (transmont qubit) as shown in the figure:
 ![[Pasted Graphic 1.png]]
 
-The confinement of the electric field gives rise to a measurable Zero Point Electric field (ZPE), of the order of $0.1 \frac{V}{m}$. This is a purely quantum phenomena, that causes the presence of a non-zero electric field even in absence of photons.
+The confinement of the electric field gives rise to a measurable Zero Point Electric field (ZPE), of the order of $0.1 \frac{V}{m}$. This is a purely quantum effect, that causes the presence of a non-zero electric field even in absence of photons.
 
 In general the resonator has many resonant frequencies. Even so, when the circuit is operated at a frequency that is colse to a particular resonating frequency $\omega_{r}$, is possible to neglect all the other resonating modes. 
 Under this approximation, called **one mode approximation**, the resonator can be treated as an armonic oscillator (LC circuit) with a frequency $\omega_{r}$.    
@@ -111,7 +111,7 @@ $$
 $$
 
 This approximation can be regarded as **two levels system approximation**.
-Tu further simplify the model is possible to neglect the high frequency terms, applying the **rotating waves approximation**, already introduced in the chapter about [[Superconductive qubits]].
+To further simplify the model is possible to neglect the high frequency terms, applying the **rotating waves approximation**, already introduced in the chapter about [[Superconductive qubits]].
 
 Adding together all this very intuitive, clear approximations, we get the so called **Jaynes-Cummings Hamiltonian** (boxed): 
 
@@ -129,7 +129,7 @@ with:
 - 2. Two levels approximation
 - 3. Rotating waves approximation
 
-In the interaction term, $\hat{a}^{\dagger} \hat{\sigma_{-}}$ describes the destruction of an excitation of the qubit with the creation on a photon, while $\hat{a}\hat{\sigma_{+}}$ describes the creation on an excitation for the annihilation of a photon.
+In the interaction term, $\hat{a}^{\dagger} \hat{\sigma}_{-}$ describes the destruction of an excitation of the qubit with the creation on a photon, while $\hat{a}\hat{\sigma}_{+}$ describes the creation on an excitation for the annihilation of a photon.
 Therefore, now the interaction term has the following interpretation: the qubit can:
 - Go from $\ket{0}$ to $\ket{1}$ absorbing one photon.
 - Go from $\ket{1}$ to $\ket{0}$ emitting one photon.
@@ -137,10 +137,17 @@ Therefore, now the interaction term has the following interpretation: the qubit 
 The Jaynes-Cummings Hamiltonian can be solved exactly and used to describe many situations in which an atom, artificial or natural, can be considered a two-level system in interaction with an electromagnetic field.
 In our case, the interaction described by this hamiltonian will be useful to *control* the state of the qubit.
 
-Approximations to further simplify the model can be done in the **dispersive regime**, where the qubit-resonator detuning is much grater with respect to  the strength of the coupling: $\Delta=\hbar\ |\omega_{01}-\omega_{r}| \gg \hbar g$.  Under this condition it is possible to treat the interaction term with perturbation theory, leading to the following result:
+Approximations to further simplify the model can be done in the **dispersive regime**, that occurs if the resonating frequency of the qubit $\omega_{01}$ and the bare resonating frequency $\omega_{r}$ are sufficiently far apart.
+This can be expressed more formally asking that the contribute to the energy of the coupling needs to be smaller than the energy difference between the resonant energies of the qubit and the resonator: 
 
 $$
-\hat{H} = \hbar \underbrace{  (\omega_{r} + \chi\hat{\sigma}_{z}) }_{ \text{resonator frequency} }\hat{a}^{\dagger}\hat{a}\ +\ \hbar\frac{\omega_{01}}{2}\hat{\sigma}_{z} \tag{8}
+\hbar\Delta=\hbar\ |\omega_{01}-\omega_{r}| \gg \hbar g \tag{8}
+$$
+Where $\Delta=|\omega_{01}-\omega_{r} |$ is called "detuning". 
+ Under this condition it is possible to treat the interaction term with perturbation theory, leading to the following result:
+
+$$
+\hat{H} = \hbar \underbrace{  (\omega_{r} + \chi\hat{\sigma}_{z}) }_{ \text{resonator frequency} }\hat{a}^{\dagger}\hat{a}\ +\ \hbar\frac{\omega_{01}}{2}\hat{\sigma}_{z} \tag{9}
 $$
 Where $\chi = \frac{g^{2}}{\Delta}$ is called "Dispersive interaction term" and $\hat{\sigma}_{z}$ is the pauli z-matrix that acts on the qubit state.
 The important thing to notice is that now the actual resonator frequency depends on the state of the qubit, and is equal to:
@@ -161,7 +168,7 @@ This is made possible by the fact that the driving frequency is "close" to the r
 The state **control** can be performed using a frequency $\omega$ that matches the frequency between the two states of the qubit $\omega_{01}$.
 Since in this case the driving frequency $\omega$ is different from the resonance frequency, the incoming signal will be almost completely reflected. Even so, some photons with frequency $\omega_{01}$ can still enter in the cavity, and interact with the qubit through the **Jaynes-Cummings Hamiltonian**, thus affecting its state.
 
-# multiple qubits control and readout
+# Multiple qubits control and readout
 
 With the same circuit, is possible to put multiple qubit near the resonator in order to have a many-qubit system. An actual possible implementation is schematized in this figure:
 ![[Many qubit.png]]
