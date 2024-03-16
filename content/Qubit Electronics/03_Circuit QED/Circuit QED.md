@@ -88,7 +88,7 @@ $$
 $$
 
 Where in writing the final form of $\hat{H}_\text{qubit}$, the same **approximation** as in [[Superconductive qubits]] has been used.
-Since the two are capacitatively coupled, to describe the system is essential to add a term that takes this interaction into account. This is done adding to the total hamiltonian a very very **mysterious interaction term** (VVMIT) 
+Since the two are capacitatively coupled, to describe the system is essential to add a term that takes this interaction into account: $\hat{H}_{\text{qubit-resonator}}$. 
 
 $$
 \begin{align}
@@ -97,7 +97,7 @@ $$
 \end{align} \tag{5}
 $$
 The factor $g$, as in the case of natural atoms, is a quantity that describes the strength of the interaction.
-We notice that the VVMIT is proportional to the product of the operators $\hat{n}_{\text{resonator}}\ \hat{n}_{\text{qubit}}$, this brings us a step closer to understand the physical essence of this term, but not sufficiently close to really have a clue on what is going on. 
+The interaction term  is proportional to the product of the operators $\hat{n}_{\text{resonator}}\ \hat{n}_{\text{qubit}}$, this brings us a step closer to understand the physical meaning of this term, but not sufficiently close to really grasp its deep essence. Perhaps it is not even important, since it is not explained even in the papers.
 
 Since the qubit is operated in a regime where only the two least energetic levels are accessible, the more general operators $\hat{b}$ and $\hat{b}^{\dagger}$ can be replaced with the operators $\hat{\sigma}_{-}$ and $\hat{\sigma}_{+}$ respectively, that act on a two level system.
 
@@ -113,7 +113,7 @@ $$
 This approximation can be regarded as **two levels system approximation**.
 To further simplify the model is possible to neglect the high frequency terms, applying the **rotating waves approximation**, already introduced in the chapter about [[Superconductive qubits]].
 
-Adding together all this very intuitive, clear approximations, we get the so called **Jaynes-Cummings Hamiltonian** (boxed): 
+We summarize here the main steps and approximations that lead to the so called **Jaynes-Cummings Hamiltonian** (boxed): 
 
 $$
 \begin{align}
