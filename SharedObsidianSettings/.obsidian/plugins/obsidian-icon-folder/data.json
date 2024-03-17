@@ -50,7 +50,7 @@
     "iconInTabsEnabled": false,
     "iconInTitleEnabled": true,
     "iconInFrontmatterEnabled": false,
-    "iconsBackgroundCheckEnabled": false,
+    "iconsBackgroundCheckEnabled": true,
     "iconsInNotesEnabled": true,
     "iconIdentifier": ":"
   },
