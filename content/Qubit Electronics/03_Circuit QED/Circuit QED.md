@@ -50,9 +50,11 @@ $$
 Therefore the field is stronger the smaller is the cavity.
 
 # From cavity to QED
-**Warnings:**
-- In this section many subsequent approximation will be used. To help the reader, we have underlined with bold characters when a new approximation is introduced.
-- In this notes many hamiltonians differs from the one in the professors's slides. The professor often divided the hamiltonians by $\hbar$, in order to have less constants in the equations. We made the choice of maintaining the constant, in order tho have hamiltonians that are expressed as energies (and not frequencies).
+
+
+>[!warning] 
+>- In this section many subsequent approximation will be used. To help the reader, we have underlined with bold characters when a new approximation is introduced.
+>- In this notes many hamiltonians differs from the one in the professors's slides. The professor often divided the hamiltonians by $\hbar$, in order to have less constants in the equations. We made the choice of maintaining the constant, in order tho have hamiltonians that are expressed as energies (and not frequencies).
 
 To operate qubits it is possible to realize a circuit that works similarly to a FPC. A possible realization is shown is the following figure:
 
@@ -62,6 +64,7 @@ The circuit to realize the planar waveguide is obtained depositing three conduct
 The FPC is created in the central conductor using the two "cuts" that are visible in the figure. This creates a stripe of length $d$, that behaves as a resonator. In this case, the resonance condition occurs when the wavelength of the electromagnetic wave propagating trough the waveguide is a multiple of the length of the resonator.
 
 This configuration creates a tightly confined electric field in proximity of the resonator, that can be coupled with a qubit (transmont qubit) as shown in the figure:
+
 ![[Pasted Graphic 1.png]]
 
 The confinement of the electric field gives rise to a measurable Zero Point Electric field (ZPE), of the order of $0.1 \frac{V}{m}$. This is a purely quantum effect, that causes the presence of a non-zero electric field even in absence of photons.
