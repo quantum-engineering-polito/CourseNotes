@@ -31,9 +31,9 @@ $$
 
 ### Electric displacement field ($\vec{D}$)
 
-In a dielectric material, the dipoles tend to align themselves opposite to the direction of the electric field. This alignment results in an overall polarization of the material, which indeed contributes to the **electric displacement field** a vector field that represents the electric flux density, take into account the electromagnetic effects of polarization and that of an external electric field, combining the two in an auxiliary field.
-
-the $\vec{P}$ in the formula is the (macroscopic) density of the permanent and induced electric dipole moments in the material also called **electric polarization**. It is defined as the **electric moment per unit volume**. It arises due to the alignment or redistribution of bound charges within the material (creation of electric dipoles) in response to an external electric field. The polarization term contributes to the electric displacement field by introducing an additional displacement of charge within the material. 
+The electric displacement field $\vec{D}$  has two components: 
+- $\epsilon_{0}\vec{\mathcal{E}}$ is the component that takes into account the electric field in vacuum.
+- $\vec{P}$ is the polarization vector and represents the tendency of dipoles in a material to align, in the case of permanent dipoles, or to be temporarily created, in the case of induced dipoles, by means of an external electric field. $\vec{P}$ is defined as the **electric moment per unit volume**. The polarization term contributes to the electric displacement field by introducing an additional displacement of charge within the material. 
 
 ### Magnetic field intensity ($\vec{H}$)
 
@@ -118,7 +118,7 @@ Under these conditions we see that $\vec{B}=\mu_{0}\vec{H}$ and that $\vec{D}=\e
 $$ 
 \vec{\nabla} \times \vec{B} = \mu_{0}\epsilon_{0}\epsilon_{r} \frac{ \partial \vec{\mathcal{E}} }{ \partial t } \tag{ME 4}
 $$ 
-taking the curl of both members of ME (3) and using the previous relations:
+taking the curl of both members of $(ME 3)$  and using the previous relations:
 
 $$
 \nabla \times (\nabla \times \vec{\mathcal{E}}) = -\mu_{0}\epsilon_{0}\epsilon_{r} \frac{ \partial^{2} \vec{\mathcal{E}} }{ \partial t^{2} }
@@ -129,7 +129,7 @@ now using the vector identity:
 $$ 
 \nabla \times (\nabla \times \vec{\mathcal{E}}) = \nabla(\cancelto{0}{\nabla \cdot \vec{\mathcal{E}}}) - \nabla^{2} \vec{\mathcal{E}}
 $$ 
-the simplification of the divergence term is due to the (ME1) that in these special condition is $\vec{\nabla} \cdot \vec{D} = 0$ so we obtain this single PDE (Partial derivative eq) for the electric field:
+the simplification of the divergence term is due to the $(ME1)$  that in these special condition is $\vec{\nabla} \cdot \vec{D} = 0$ so we obtain this single PDE (Partial derivative eq) for the electric field:
 
 $$ 
 \nabla^{2} \vec{\mathcal{E}} = \mu_{0}\epsilon_{0}\epsilon_{r} \frac{ \partial^{2} \vec{\mathcal{E}} }{ \partial t^{2} } \tag{1}
@@ -152,9 +152,9 @@ where $n$ is the refractive index of the medium, which allows us to **relate the
 
 >[!Note] The refractive index can be seen as the factor by which the speed of the radiation is reduced with respect to its vacuum value, for these reason the refractive index of the vacuum is 1
 
-### The D'alembert equation
+### The D'Alembert equation
 
-The D'alembert equation is a partial differential equation that is commonly use to describe the solution of the one-dimensional wave equation. It can be use to describe the MEs and is defined as:
+The D'Alembert equation is a partial differential equation that is commonly used to describe the solution of the one-dimensional wave equation. It can be used to describe the MEs and is defined as:
 
 $$ 
 \frac{{\partial^2 u}}{{\partial t^2}} = c^2 \frac{{\partial^2 u}}{{\partial x^2}}
@@ -200,6 +200,8 @@ where:
 - $f(z-vt)$ represents a forward-traveling wave
 - $g(z+vt)$ represents a backward-traveling wave.
 
+Notice that to be a proper solution of the D'Alembert equation, a function must depend only on $z \pm vt$.
+
 >[!note] $\vec{\mathcal{E}}$ and $\vec{B}$  are not independent:
 >
 >$$
@@ -226,7 +228,7 @@ $$
 
 They reduce the study of a **3-component vector field to a 1-component scalar function**. This is because these fields are harmonic functions, meaning they repeat themselves over time and space with a constant frequency and wavelength.
 
-We can describe the electric and magnetic filed solution by complex numbers, in order to simplify the calculation and we obtain:
+We can describe the electric and magnetic field solution by complex numbers, in order to simplify the calculation and we obtain:
 
 $$
 \begin{align}
@@ -235,9 +237,11 @@ $$
 \end{align}
 $$
 
+Notice that in the first formula above both the complex number and its real part are called $\mathcal{E}$.
+
 >[!Note] Of course physically measurable quantities are obtained by taking the real part of the complex wave
 
- $\vec{\mathcal{E}}$ and $\vec{B}$ are mutually orthogonal and orthogonal to the propagation direction.
+In conclusion, we found that $\vec{\mathcal{E}}$ and $\vec{B}$ are mutually orthogonal and orthogonal to the propagation direction.
 
 # Energy of a plane wave and Poynting vector
 
