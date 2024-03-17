@@ -83,4 +83,5 @@ $$
 \end{pmatrix} =\alpha\gamma^{*}+\beta\delta^{*}  
 $$
 
-
+The state is normalized when $\braket{\psi|\psi}= |\alpha|^{2}+|\beta|^{2}=1$ 
+Two states are orthogonal when $\braket{\phi|\psi}=0$
