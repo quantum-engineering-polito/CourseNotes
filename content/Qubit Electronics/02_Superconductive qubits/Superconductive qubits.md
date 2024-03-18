@@ -172,21 +172,21 @@ To further increase the ratio we need to increase the capacitance of the capacit
 
 ![[transmon 4.png|300]]
 
-If we plot the CHARGE DISPERSION as a function of the ration $\frac{E_{j}}{E_{c}}$ we get
+If we plot the CHARGE DISPERSION as a function of the ratio $\frac{E_{j}}{E_{c}}$ we get
 
 ![[charge_dispersion_relation.png|450]]
 
- we observe that the different energy levels have a dependence that go like:
+ we observe that the different energy levels have a dependence that goes like:
 
 $$
 \propto e^{-\sqrt{ 8 E_{j}/E_{c} }}
 $$
 
-we can also plot the **RELATIVE ANHARMONICITY** (difference of the splitting of the energy levels with respect to the case of equally spaced energy levels) as a function of $\frac{E_{j}}{E_{c}}$ and then we get:
+We can also plot the **RELATIVE ANHARMONICITY** (difference of the splitting of the energy levels with respect to the case of equally spaced energy levels) as a function of $\frac{E_{j}}{E_{c}}$ and then we get:
 
 ![[relative_anahrmonicity.png|350]]
 
->[!Note] THE DISPERSION IS SCREENED FASTER THAN THE ANHARMONICITY (EXPONENTIAL vs SQUARE ROOT FUNCTION)
+>[!Note] The dispersion is screened faster than the anharmonicity (exponential vs square root function)
 
 ## Transmon regime approximations
 
