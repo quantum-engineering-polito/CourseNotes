@@ -137,7 +137,7 @@ $$
 \end{align}
 $$
 
-$\hat{n}$ is the number operator and represents the number of Cooper Pairs.
+$\hat{n}$ represents the number of Cooper Pairs.
 
 For the time being we can limit our study to the case where the AC voltage generator is off and so we remove it from the circuit. We also have to consider the fact, that due to **defects** in the materials, and **noise**, even with no applied voltage, there will be a certain potential $V_{g}$ caused by $n_{g}$ charges in the SC island.
 
@@ -171,6 +171,22 @@ If we keep increasing the ratio $E_{j}/E_{c} = 10$ we loose anharmonicity but we
 To further increase the ratio we need to increase the capacitance of the capacitor (since $E_{c} \propto 1/Q$). When we get to $E_{j}/E_{c} = 50$ we get bands that are almost flat (similarly to what we had in the LC resonator) but we retain a bit of anharmonicity (the band are not equally spaced). We are now in the so called **transmon regime**.
 
 ![[transmon 4.png|300]]
+
+If we plot the CHARGE DISPERSION as a function of the ration $\frac{E_{j}}{E_{c}}$ we get
+
+![[charge_dispersion_relation.png|450]]
+
+ we observe that the different energy levels have a dependence that go like:
+
+$$
+\propto e^{-\sqrt{ 8 E_{j}/E_{c} }}
+$$
+
+we can also plot the **RELATIVE ANHARMONICITY** (difference of the splitting of the energy levels with respect to the case of equally spaced energy levels) as a function of $\frac{E_{j}}{E_{c}}$ and then we get:
+
+![[relative_anahrmonicity.png|350]]
+
+>[!Note] THE DISPERSION IS SCREENED FASTER THAN THE ANHARMONICITY (EXPONENTIAL vs SQUARE ROOT FUNCTION)
 
 ## Transmon regime approximations
 
