@@ -162,7 +162,9 @@ Increasing the ratio $E_{j}/E_{c} = 1$ will modify the energy bands as follows:
 
 ![[transmon ng var.svg|500]]
 
-We can see that this case has the same problem of being very sensitive to variations of $n_{g}$.
+We can see that this case has the same problem of being very sensitive to variations of $n_{g}$: there are regions where a small change in the noise charge implies a great variation in the energy levels.
+
+Even so, we notice that the amplitudes of the fluctuations of the energy levels are reduced.
 
 If we keep increasing the ratio $E_{j}/E_{c} = 10$ we loose anharmonicity but we start getting a scenario which is more tolerant to the noise:
 
@@ -172,21 +174,21 @@ To further increase the ratio we need to increase the capacitance of the capacit
 
 ![[transmon 4.png|300]]
 
-If we plot the CHARGE DISPERSION as a function of the ratio $\frac{E_{j}}{E_{c}}$ we get
+If we plot the **charge dispersion** the amplitude of the oscillations in the energy levels) as a function of the ratio $\frac{E_{j}}{E_{c}}$ we get
 
 ![[charge_dispersion_relation.png|450]]
 
- we observe that the different energy levels have a dependence that goes like:
+ we observe that the dispersion associated with the different energy levels have a dependence that goes like:
 
 $$
-\propto e^{-\sqrt{ 8 E_{j}/E_{c} }}
+\text{dispersion}\propto e^{-\sqrt{ 8 E_{j}/E_{c} }}
 $$
 
-We can also plot the **RELATIVE ANHARMONICITY** (difference of the splitting of the energy levels with respect to the case of equally spaced energy levels) as a function of $\frac{E_{j}}{E_{c}}$ and then we get:
+We can also plot the **relative anharmonicity** (difference of the splitting of the energy levels with respect to the case of equally spaced energy levels) as a function of $\frac{E_{j}}{E_{c}}$ and then we get:
 
 ![[relative_anahrmonicity.png|350]]
 
->[!Note] The dispersion is screened faster than the anharmonicity (exponential vs square root function)
+>[!Note] The dispersion is way screened faster than the anharmonicity (exponential vs square root function). This is what allows to reach a scenario where the qubit is largely insensitive to charge noise, while retaining a sufficient anharmonicity.
 
 ## Transmon regime approximations
 
@@ -230,7 +232,7 @@ $$
 \frac{\hat{n}^{2}}{2C^{\prime}}+\frac{\hat{\phi}^{2}}{2L^{\prime}} = \sqrt{ 8E_{c} E_{j} }~\hat{b}^{\dagger}\hat{b} 
 $$
 
-The term $\omega_{q}=\sqrt{ 8E_{c} E_{j} }$ describes the transition frequency of the system, as seen in the above image (sometimes also called **TRANSMON or QUBIT FREQUENCY**).
+The term $\omega=\sqrt{ 8E_{c} E_{j} }$ describes the frequency of the harmonic contribution.
 
 On the other hand, can be demonstrated that the **anharmonic part** of the Hamiltonian (highlighted in red within the formula) can be effectively reformulated using the Rotating-Wave Approximation (RWA). Within this approximation, terms within the Hamiltonian characterized by an unequal number of creation ($\hat{b}^\dagger$) and annihilation ($\hat{b}$) operators can be disregarded. This simplification arises because such terms typically entail rapidly oscillating components, which can be filtered out without altering the fundamental physical interpretation of the system, making their contribution negligible.
 
@@ -246,6 +248,7 @@ $$
 }
 $$
 
+Where $\omega_{q}=(\sqrt{ 8E_{c} E_{j} } - E_{c})$ is sometimes also called **transmon or qubit frequency**.
 
 What we end up with is the following:
 
