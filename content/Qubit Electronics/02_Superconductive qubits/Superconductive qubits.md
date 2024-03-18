@@ -256,13 +256,13 @@ The second term in the Hamiltonian gives NON-LINEARITY to the system and brings 
 
 To implement a logic gate effectively, it's imperative to understand the dynamics of our qubit within the transmon regime. In this regime, external charges cease to perturb the qubit, simplifying our study to focus solely on the internal dynamics.
 
-When subjecting our qubit to an RF signal at the appropriate frequency, our primary concern is avoiding leakage, specifically the transition from the second to the third energy level, which is governed by anharmonicity.
+When subjecting our qubit to an RF signal at the appropriate frequency (the transition $\ket{0} \rightarrow \ket{1}$ frequency), our primary concern is avoiding leakage, specifically the transition from the second to the third energy level, which is governed by anharmonicity.
 
 Analyzing real-world measurements reveals a crucial relationship between pulse width (in ns) and error per gate (EPG). 
 
 ![[coherent_control.png|400]]
 
-Observations indicate that upon reducing the pulse width, we see an INCREASE in the ERRORS, due to leakage. This is because when we reduce the pulse width applied to the circuit, we have sharper edges in the signal, so higher BAND.
+Observations indicate that upon reducing the pulse width, we see an INCREASE in the ERRORS, due to leakage. This is because when we reduce the pulse width applied to the circuit, we have sharper edges in the signal, so higher BAND in the frequency.
 
 Moreover, as pulse duration increases, error per gate becomes predominantly influenced by relaxation and dephasing effects, indicative of decoherence phenomena.
 
