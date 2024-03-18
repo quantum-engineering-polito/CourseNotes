@@ -258,7 +258,7 @@ To implement a logic gate effectively, it's imperative to understand the dynamic
 
 When subjecting our qubit to an RF signal at the appropriate frequency (the transition $\ket{0} \rightarrow \ket{1}$ frequency), our primary concern is avoiding leakage, specifically the transition from the second to the third energy level, which is governed by anharmonicity.
 
-Analyzing real-world measurements reveals a crucial relationship between pulse width (in ns) and error per gate (EPG). 
+The analysis of real-world measurements reveals a crucial relationship between pulse width (in ns) and error per gate (EPG). 
 
 ![[coherent_control.png|400]]
 
