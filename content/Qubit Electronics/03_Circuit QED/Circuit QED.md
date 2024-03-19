@@ -14,7 +14,7 @@ As mentioned in the lecture on [[Superconductive qubits]], the energy levels of 
 
 Furthermore, the quantum state of an atom can be influenced by an electromagnetic radiation, giving rise to *stimulated emission and absorption*. This gives some degree of freedom in controlling its state.
 
-We will be interested in doing the same with SC circuits. But before diving in to how a SC circuit can be controlled trough EM radiation, is useful to review very briefly what happens in the case of natural atoms.
+We will be interested in doing the same with SC circuits. But before diving into how a SC circuit can be controlled trough EM radiation, is useful to review very briefly what happens in the case of natural atoms.
 
 In first approximation, the coupling between an atom and an electromagnetic wave is described by the interaction of the electric field $\vec{E}$  with the electric dipole of the atom $\vec{d}$:
 
@@ -24,7 +24,7 @@ $$
 
 Where $g$ is a factor that describes the strength of the coupling.
 
-To eccitate a transition between the state $\ket{0}$ and $\ket{1}$ , is possible to use an electromagnetic wave with a frequency $\omega$ that matches the energy difference between this two levels: $\hbar \omega = E_{01} = \hbar \omega_{01}$ . For instance the electric field can be chosen as:
+To excite a transition between the state $\ket{0}$ and $\ket{1}$ , is possible to use an electromagnetic wave with a frequency $\omega$ that matches the energy difference between this two levels: $\hbar \omega = E_{01} = \hbar \omega_{01}$ . For instance the electric field can be chosen as:
 
 $$
 \vec{E}(t) = E_0 \cos(\omega_{01}t) \tag{2}
@@ -63,15 +63,27 @@ To operate qubits it is possible to realize a circuit that works similarly to a 
 The circuit to realize the planar waveguide is obtained depositing three conductive stripes. This system works similarly to a coaxial cable: the stipe in the middle is the conductive part, that is insulated from the two external stripes, that are grounded. 
 The FPC is created in the central conductor using the two "cuts" that are visible in the figure. This creates a stripe of length $d$, that behaves as a resonator. In this case, the resonance condition occurs when the wavelength of the electromagnetic wave propagating trough the waveguide is a multiple of the length of the resonator.
 
-This configuration creates a tightly confined electric field in proximity of the resonator, that can be coupled with a qubit (transmont qubit) as shown in the figure:
+This configuration creates a tightly confined electric field in proximity of the resonator, that can be capacitively coupled with a qubit (transmont qubit) as shown in the figure:
 
 ![[Pasted Graphic 1.png]]
 
-The confinement of the electric field gives rise to a measurable Zero Point Electric field (ZPE), of the order of $0.1 \frac{V}{m}$. This is a purely quantum effect, that causes the presence of a non-zero electric field even in absence of photons.
+The confinement of the electric field gives rise to a measurable Zero Point Electric field (ZPE), of the order of $0.1 \frac{V}{m}$. This is a purely quantum effect, that causes the presence of a non-zero electric field even in absence of photons (this fluctuation in the electric field value is mainly due to the Heisenberg uncertainty principle).
 
 In general the resonator has many resonant frequencies. Even so, when the circuit is operated at a frequency that is colse to a particular resonating frequency $\omega_{r}$, is possible to neglect all the other resonating modes. 
-Under this approximation, called **one mode approximation**, the resonator can be treated as an armonic oscillator (LC circuit) with a frequency $\omega_{r}$.    
-Therefore, the system can be schematized using the following lumped element model:
+
+Under this approximation, called **one mode approximation**, the resonator can be treated as an armonic oscillator (LC circuit) with a frequency $\omega_{r}$ ($\omega_{2}$ in the image below).    
+
+![[peaks_FPC_k.png|400]]
+
+$\kappa$  is the width of the peak at half-amplitude:
+
+$$
+\kappa = \frac{\omega_{r}}{Q}
+$$
+
+where $Q$ is the **quality factor**, same parameter the we encounter in standard filters.
+
+Taking into account this approximation the system can be schematized using the following lumped element model:
 
 ![[Pasted Graphic 3.png]]
 
@@ -100,7 +112,7 @@ $$
 \end{align} \tag{5}
 $$
 The factor $g$, as in the case of natural atoms, is a quantity that describes the strength of the interaction.
-The interaction term  is proportional to the product of the operators $\hat{n}_{\text{resonator}}\ \hat{n}_{\text{qubit}}$, this brings us a step closer to understand the physical meaning of this term, but not sufficiently close to really grasp its deep essence. Perhaps it is not even important, since it is not explained even in the papers.
+The interaction term is proportional to the product of the operators $\hat{n}_{\text{resonator}}\ \hat{n}_{\text{qubit}}$, this brings us a step closer to understand the physical meaning of this term, but not sufficiently close to really grasp its deep essence. Perhaps it is not even important, since it is not explained even in the papers.
 
 Since the qubit is operated in a regime where only the two least energetic levels are accessible, the more general operators $\hat{b}$ and $\hat{b}^{\dagger}$ can be replaced with the operators $\hat{\sigma}_{-}$ and $\hat{\sigma}_{+}$ respectively, that act on a two level system.
 
@@ -108,7 +120,7 @@ We recall that the definitions of $\hat{\sigma}_{-}$ and $\hat{\sigma}_{+}$:
 
 $$
 \begin{align}
-\hat{\sigma}_{-} &= \ket{0}\bra{1} && \text{``kills } \ket{0} \text{ and transforms } \ket{1} \text{ into } \ket{0} \text{"} \\
+\hat{\sigma}_{-} &= \ket{0}\bra{1}  && \text{``kills } \ket{0} \text{ and transforms } \ket{1} \text{ into } \ket{0} \text{"} \\
 \hat{\sigma}_{+} &= \ket{1}\bra{0} &&\text{``kills } \ket{1} \text{ and transforms } \ket{0} \text{ into } \ket{1} \text{"}\\   
 \end{align} \tag{6}
 $$
@@ -147,11 +159,13 @@ $$
 \hbar\Delta=\hbar\ |\omega_{01}-\omega_{r}| \gg \hbar g \tag{8}
 $$
 Where $\Delta=|\omega_{01}-\omega_{r} |$ is called "detuning". 
- Under this condition it is possible to treat the interaction term with perturbation theory, leading to the following result:
+
+Under this condition it is possible to treat the interaction term with perturbation theory, leading to the following result:
 
 $$
 \hat{H} = \hbar \underbrace{  (\omega_{r} + \chi\hat{\sigma}_{z}) }_{ \text{resonator frequency} }\hat{a}^{\dagger}\hat{a}\ +\ \hbar\frac{\omega_{01}}{2}\hat{\sigma}_{z} \tag{9}
 $$
+
 Where $\chi = \frac{g^{2}}{\Delta}$ is called "Dispersive interaction term" and $\hat{\sigma}_{z}$ is the pauli z-matrix that acts on the qubit state.
 The important thing to notice is that now the actual resonator frequency depends on the state of the qubit, and is equal to:
 - $\omega_{r} + \chi$ if the state of the qubit is $\ket{1}$
@@ -164,12 +178,13 @@ This can be exploited for the readout of the qubit state.
 The state **readout** is performed in **dispersive regime**, using a frequency $\omega$ close to the resonance frequency of the bare resonator $\omega_{r}$.
 Under this condition the transmitted spectra depend on the state of the qubit as shown in this picture:
 ![[Pasted Graphic 4.png]]
-So, by observing what is the resonance frequency one can perform a measure on the qubit state. If the resonance frequency is shifted up (down), the qubit collapsed in the state $\ket{1}$ ($\ket{0}$). 
-Is important to stress that operating in the dispersive regime allows to perform a **non destructive measurement** on the qubit. This means that that the perturbation induced by the readout process makes the qubit collapse without affecting its state before the measurement.
+So, by observing what is the resonance frequency one can perform a measure on the qubit state. If the resonance frequency is shifted up (down), means that the qubit collapsed in the state $\ket{1}$ ($\ket{0}$). 
+
+Is important to stress that operating in the dispersive regime allows to perform a **non destructive measurement** on the qubit. This means that the perturbation induced by the readout process makes the qubit collapse without affecting its state before the measurement.
+
 This is made possible by the fact that the driving frequency is "close" to the resonant frequency, and is "far" from the resonant frequency of the qubit. 
 
-The state **control** can be performed using a frequency $\omega$ that matches the frequency between the two states of the qubit $\omega_{01}$.
-Since in this case the driving frequency $\omega$ is different from the resonance frequency, the incoming signal will be almost completely reflected. Even so, some photons with frequency $\omega_{01}$ can still enter in the cavity, and interact with the qubit through the **Jaynes-Cummings Hamiltonian**, thus affecting its state.
+Instead the state **control** can be performed using a frequency $\omega$ that matches the frequency between the two states of the qubit $\omega_{01}$. Since in this case the driving frequency $\omega$ is different from the resonance frequency, the incoming signal will be almost completely reflected. Even so, some photons with frequency $\omega_{01}$ can still enter in the cavity, and interact with the qubit affecting **Jaynes-Cummings Hamiltonian**, thus affecting its state.
 
 # Multiple qubits control and readout
 
@@ -188,7 +203,7 @@ Still, the presented derivation holds for any implementation of the trasmon qubi
 
 A particular, very convenient, implementation is the **xmon qubit**. This name comes after its cross-shaped geometry.
 
-The advantages of this qubit are many:
+This configuration brings several advantages:
 - Interconnectivity: "easy" to couple to other qubits, to measurement instruments or to control lines.
 - Tunability: can be tuned replacing the Josephson junction with a squid
 
