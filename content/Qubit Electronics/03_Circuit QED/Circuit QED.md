@@ -207,9 +207,17 @@ This configuration brings several advantages:
 - Interconnectivity: "easy" to couple to other qubits, to measurement instruments or to control lines.
 - Tunability: can be tuned replacing the Josephson junction with a squid
 
+![[xmon.png]]
+
 Here is reported an array of five connected Xmon qubits, coupled with transmission and control line:
 
 ![[Multiple Xmon qubits.png]]
+We can notice the cross-shaped transmon qubits that are coupled by simply placing them one close to the other; for every qubit, we have CONTROL LINES used for x-y control, and z-line which is used to tune the frequency of the qubit (NOT for z-rotation!).
+
+Sending specific pulses to the z line allows to tune the frequency of the qubit during the operation.  
+Moreover, instead of a cavity the resonator is done using a planar waveguide, which is much more practical. In order to read, we have an input port (**READOUT IN**) where we transmit a signal, which is in turn affected by the state of every qubit and then comes to the output (**READOUT OUT**), where the information can be read and processed, so to understand which was the state of the qubit.
+
+We now need to understand how we can control x and y, i.e. what is the signal to send to perform the rotation (combining them, we can also obtain a z rotation).
 
 Further readings:
 https://doi.org/10.1103/RevModPhys.93.025005
