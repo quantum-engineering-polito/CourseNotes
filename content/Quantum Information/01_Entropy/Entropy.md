@@ -149,3 +149,70 @@ From the plot of $H$ below we can see that when the output is know (blue dots), 
 
 ![[entropy example.svg|500]]
 
+## Properties
+
+From the example above we already noticed some interesting properties of the quantity $H$, which are also valid in general:
+
+1) $H = 0$ if and only if all the $p_{i} = 0$ except one of them, which has value $1$.
+2) For a given $n$, $H$ has a maximum equal to $\log n$ when all the $p_{i}$ are equal.
+3) Suppose there are two events, $x$ and $y$, with $m$ possibilities for the first and $n$ for the second. Let $p(i,j)$ be probability of the join occurrence of $i$ for the first and $j$ for the second. The entropy of the **join event** is: 
+
+$$
+H(x,y) = - \sum_{i,j} p(i,j) \log p(i,j) \tag{Joint Entropy}
+$$
+
+while 
+
+$$
+\displaylines{
+H(x) = - \sum_{i,j} p(i,j) \log \sum_{{\color{red} j} } p(i,j)\\
+H(y) = - \sum_{i,j} p(i,j) \log \sum_{{\color{red} i} } p(i,j)
+}
+$$
+
+It can be shown that 
+
+$$
+H(x,y) \leq H(x) + H(y)
+$$
+
+where the equality holds if the events are independent ($p(i,j) = p(i)p(j)$).
+
+4) Any change toward equalization of the probabilities $p_1, p_2, \dots, p_{n}$ increases $H$. This can be easily derived from property 2.
+5) If we have two events $x$ and $y$ like in property 3, not necessarily independent. For any particular value $i$ that $x$ can assume, there is a **conditional probability** $p_{i}(j)$ that $y$ has the value $j$: 
+
+$$
+p_{i}(j) = \frac{p(i,j)}{\sum_{j} p(i,j)} \tag{Conditional Probability}
+$$
+
+We can also define the **conditional entropy** of $y$, $H_{x}(y)$ as the average of the entropy of $y$ for each value of $x$, weighted according to the probability of getting that particular $x$: 
+
+$$
+H_{x}(y) = - \sum_{i,j} p(i,j) \log p_{i}(j) \tag{Conditional Entropy}
+$$
+
+This quantity measures how uncertain we are of $y$ on average when we know $x$. Substituting the value of $p_{i}(j)$ we obtain the following relation: 
+
+$$
+\displaylines{
+\begin{align}
+H_{x}(y) &= -\sum_{i,j} p(i,j)\log p(i,j) + \sum_{i,j} p(i,j) \log \sum_{j} p(i,j) \\
+&= H(x,y) - H(x)
+\end{align}\\\\
+\Downarrow \\\\
+H(x,y) = H(x) + H_{x}(y)\\
+\text{Joint entropy} = \text{Entropy of } x + \text{Conditional entropy of } y \text{ when } x \text{ is known}
+
+}
+$$
+
+
+### Entropy measurement units
+
+The choice of the logarithmic base corresponds to the choice of a measurement unit. The most common ones are the following:
+
+- $\log_2$: bits
+- $\log_{e}$: nats
+- $\log_{10}$: dits or hartleys
+- $\log_{256}$: bytes
+
