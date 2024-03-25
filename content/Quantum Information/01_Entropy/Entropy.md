@@ -1,5 +1,5 @@
 ---
-nextnote: 
+nextnote: "[[Discrete noiseless channel]]"
 author: Giacomo
 authorlink: https://github.com/gamberoillecito
 ---

@@ -38,3 +38,7 @@ $$
 
 >[!note] Check out [[Obsidian Examples]]
 >This file contains most of the things you need to know to use Obsidian properly.
+
+
+>[!note] For more info about $\LaTeX$ check out this [guide](https://math.meta.stackexchange.com/questions/5020/mathjax-basic-tutorial-and-quick-reference/5023#5023) 
+
