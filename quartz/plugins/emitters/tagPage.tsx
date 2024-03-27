@@ -64,6 +64,7 @@ export const TagPage: QuartzEmitterPlugin<Partial<FullPageLayout>> = (userOpts) 
       const tags: Set<string> = new Set(
         allFiles.flatMap((data) => data.frontmatter?.tags ?? []).flatMap(getAllSegmentPrefixes),
       )
+
       // add base tag
       tags.add("index")
 
@@ -72,7 +73,7 @@ export const TagPage: QuartzEmitterPlugin<Partial<FullPageLayout>> = (userOpts) 
           const title =
             tag === "index"
               ? i18n(cfg.locale).pages.tagContent.tagIndex
-              : `${i18n(cfg.locale).pages.tagContent.tag}: #${tag}`
+              : `${i18n(cfg.locale).pages.tagContent.tag}: ${tag}`
           return [
             tag,
             defaultProcessedContent({

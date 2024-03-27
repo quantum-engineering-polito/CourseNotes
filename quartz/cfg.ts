@@ -8,6 +8,7 @@ export type Analytics =
   | null
   | {
       provider: "plausible"
+      host?: string
     }
   | {
       provider: "google"
@@ -17,6 +18,12 @@ export type Analytics =
       provider: "umami"
       websiteId: string
       host?: string
+    }
+  | {
+      provider: "goatcounter"
+      websiteId: string
+      host?: string
+      scriptSrc?: string
     }
 
 export interface GlobalConfiguration {

@@ -20,7 +20,7 @@ const Darkmode: QuartzComponent = ({ displayClass, cfg }: QuartzComponentProps) 
           x="0px"
           y="0px"
           viewBox="0 0 35 35"
-          style="enable-background:new 0 0 35 35;"
+          style="enable-background:new 0 0 35 35"
           xmlSpace="preserve"
         >
           <title>{i18n(cfg.locale).components.themeToggle.darkMode}</title>
@@ -36,7 +36,7 @@ const Darkmode: QuartzComponent = ({ displayClass, cfg }: QuartzComponentProps) 
           x="0px"
           y="0px"
           viewBox="0 0 100 100"
-          style="enable-background='new 0 0 100 100'"
+          style="enable-background:new 0 0 100 100"
           xmlSpace="preserve"
         >
           <title>{i18n(cfg.locale).components.themeToggle.lightMode}</title>

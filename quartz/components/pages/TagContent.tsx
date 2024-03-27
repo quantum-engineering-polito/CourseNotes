@@ -29,7 +29,11 @@ const TagContent: QuartzComponent = (props: QuartzComponentProps) => {
   const cssClasses: string[] = fileData.frontmatter?.cssclasses ?? []
   const classes = ["popover-hint", ...cssClasses].join(" ")
   if (tag === "/") {
-    const tags = [...new Set(allFiles.flatMap((data) => data.frontmatter?.tags ?? []))]
+    const tags = [
+      ...new Set(
+        allFiles.flatMap((data) => data.frontmatter?.tags ?? []).flatMap(getAllSegmentPrefixes),
+      ),
+    ].sort((a, b) => a.localeCompare(b))
     const tagItemMap: Map<string, QuartzPluginData[]> = new Map()
     for (const tag of tags) {
       tagItemMap.set(tag, allPagesWithTag(tag))
@@ -48,13 +52,19 @@ const TagContent: QuartzComponent = (props: QuartzComponentProps) => {
               allFiles: pages,
             }
 
-            const contentPage = allFiles.filter((file) => file.slug === `tags/${tag}`)[0]
-            const content = contentPage?.description
+            const contentPage = allFiles.filter((file) => file.slug === `tags/${tag}`).at(0)
+
+            const root = contentPage?.htmlAst
+            const content =
+              !root || root?.children.length === 0
+                ? contentPage?.description
+                : htmlToJsx(contentPage.filePath!, root)
+
             return (
               <div>
                 <h2>
                   <a class="internal tag-link" href={`../tags/${tag}`}>
-                    #{tag}
+                    {tag}
                   </a>
                 </h2>
                 {content && <p>{content}</p>}
