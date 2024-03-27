@@ -1,15 +1,15 @@
-# Course Notes
+# Quartz v4
 
-📚 Welcome to the Quantum Engineering notes repository
+> “[One] who works with the door open gets all kinds of interruptions, but [they] also occasionally gets clues as to what the world is and what might be important.” — Richard Hamming
 
-This repository serves as a collaborative space where students can contribute and access comprehensive notes about Quantum Engineering. The notes are designed to enhance the learning experience by providing a collective resource for understanding, sharing insights, and collaborating on key topics.
+Quartz is a set of tools that helps you publish your [digital garden](https://jzhao.xyz/posts/networked-thought) and notes as a website for free.
+Quartz v4 features a from-the-ground rewrite focusing on end-user extensibility and ease-of-use.
 
-## Features
+🔗 Read the documentation and get started: https://quartz.jzhao.xyz/
 
-- **Structured Notes:** Organized and structured notes covering various topics in Quantum Engineering.
-- **Accessible Online:** Notes are accessible online through [Quantum Engineering Polito CourseNotes](https://quantum-engineering-polito.github.io/CourseNotes/), providing a convenient platform for studying and reviewing.
+[Join the Discord Community](https://discord.gg/cRFFHYye7t)
 
-## Environment Setup ⚙️
+## Sponsors
 
 👋 Welcome to the Course Notes repository! Listed below are points to follow in order to collaborate:
 
@@ -62,3 +62,8 @@ Once you've decided on the changes to keep, use GitHub Desktop to push the updat
 
 This project is licensed under the Attribution-NonCommercial-ShareAlike 4.0 International License - see the [LICENSE.md](LICENSE.md) file for details.
 **This license prohibits commercial use without explicit permission from the copyright holder**
+<p align="center">
+  <a href="https://github.com/sponsors/jackyzha0">
+    <img src="https://cdn.jsdelivr.net/gh/jackyzha0/jackyzha0/sponsorkit/sponsors.svg" />
+  </a>
+</p>

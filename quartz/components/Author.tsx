@@ -1,5 +1,5 @@
 import  style from "./styles/author.scss"
-import { FullSlug, _stripSlashes, joinSegments, pathToRoot } from "../util/path"
+import { FullSlug, stripSlashes, joinSegments, pathToRoot } from "../util/path"
 import { QuartzComponentConstructor, QuartzComponentProps } from "./types"
 import { URL } from "url"
 import { hostname } from "os"
