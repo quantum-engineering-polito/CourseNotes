@@ -3,7 +3,6 @@ nextnote: "[[MOSFET]]"
 author: Giacomo
 authorlink: https://github.com/gamberoillecito
 ---
-
 # Crystalline semiconductors
 
 Semiconductors are useful because we can modulate their conductivity with doping.
@@ -124,6 +123,8 @@ where $\gamma_{n}$ and $\gamma_{p}$ are constants depending only on the crystal.
 ![[NnNpE.excalidraw.svg|400]]
 
 In the plot above (where the **independent** variable $E$ is on the vertical axis), it is possible to see that, if the energy is between $E_{V}$ and $E_{C}$, there are no available states.
+
+The sign inversion for the energies present in the density of states for the holes is determined by the fact that the axis of the energies E used is referred to electrons, while the holes are charged with the opposite sign and therefore present an inverted axis of energies. In addition, the difference between the effective masses of electrons and holes is responsible for the different concavity of the two curves.
 
 $f(E)$ is the probability of occupation of states at energy $E$. For electrons, at thermal equilibrium, it follows Fermi-Dirac statistics: ^7202aa
 

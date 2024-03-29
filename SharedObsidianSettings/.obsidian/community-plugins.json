@@ -1,11 +1,9 @@
 [
   "obsidian-paste-image-rename",
   "obsidian-excalidraw-plugin",
-  "obsidian-latex-suite",
   "obsidian-icon-folder",
   "obsidian-minimal-settings",
-  "find-unlinked-files",
   "homepage",
-  "obsidian-shellcommands",
-  "cmdr"
+  "cmdr",
+  "obsidian-shellcommands"
 ]

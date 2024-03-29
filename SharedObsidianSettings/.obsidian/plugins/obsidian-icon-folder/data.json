@@ -1,16 +1,16 @@
 {
   "settings": {
-    "migrated": 3,
+    "migrated": 4,
     "iconPacksPath": ".obsidian/icons",
     "fontSize": 16,
     "emojiStyle": "none",
     "iconColor": null,
     "recentlyUsedIcons": [
-      "TiTemplate",
-      "TiHealthRecognition",
-      "BoBxChip",
-      "TiDiamond",
-      "TiAtom"
+      "TiCameraBolt",
+      "TiBatteryAutomotive",
+      "TiPizza",
+      "BoBxsPizza",
+      "BoBxCloudLightning"
     ],
     "recentlyUsedIconsSize": 5,
     "rules": [
@@ -50,13 +50,19 @@
     "iconInTabsEnabled": false,
     "iconInTitleEnabled": true,
     "iconInFrontmatterEnabled": false,
-    "iconsBackgroundCheckEnabled": false,
-    "iconsInNotesEnabled": true
+    "iconsBackgroundCheckEnabled": true,
+    "iconsInNotesEnabled": true,
+    "iconIdentifier": ":"
   },
   "Semester 1/Cyber Security": "TiSkull",
   "Cyber Security": "TiSkull",
-  "Fundamentals of TP": "TiHealthRecognition",
-  "Q&M Physics Intro": "TiAtom",
-  "QCM Physics": "TiDiamond",
-  "Quantum Devices": "BoBxChip"
+  "Quantum Devices": "BoBxChip",
+  "FTP": "TiHealthRecognition",
+  "QMPI": "TiAtom",
+  "QCMP": "TiDiamond",
+  "HPC": "TiCalculator",
+  "Quantum Information": "BoBxInfoCircle",
+  "Materials": "TiPizza",
+  "Qubit Electronics": "TiBatteryAutomotive",
+  "Quantum Photonics": "TiCameraBolt"
 }

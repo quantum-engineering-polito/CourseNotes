@@ -1,15 +1,15 @@
-# Course Notes
+# Quartz v4
 
-📚 Welcome to the Quantum Engineering notes repository
+> “[One] who works with the door open gets all kinds of interruptions, but [they] also occasionally gets clues as to what the world is and what might be important.” — Richard Hamming
 
-This repository serves as a collaborative space where students can contribute and access comprehensive notes about Quantum Engineering. The notes are designed to enhance the learning experience by providing a collective resource for understanding, sharing insights, and collaborating on key topics.
+Quartz is a set of tools that helps you publish your [digital garden](https://jzhao.xyz/posts/networked-thought) and notes as a website for free.
+Quartz v4 features a from-the-ground rewrite focusing on end-user extensibility and ease-of-use.
 
-## Features
+🔗 Read the documentation and get started: https://quartz.jzhao.xyz/
 
-- **Structured Notes:** Organized and structured notes covering various topics in Quantum Engineering.
-- **Accessible Online:** Notes are accessible online through [Quantum Engineering Polito CourseNotes](https://quantum-engineering-polito.github.io/CourseNotes/), providing a convenient platform for studying and reviewing.
+[Join the Discord Community](https://discord.gg/cRFFHYye7t)
 
-## Environment Setup ⚙️
+## Sponsors
 
 👋 Welcome to the Course Notes repository! Listed below are points to follow in order to collaborate:
 
@@ -17,17 +17,19 @@ This repository serves as a collaborative space where students can contribute an
 1. **Download [Obsidian](https://obsidian.md/).**
 2. **Download [Github Desktop](https://desktop.github.com/).** This step is for those unfamiliar with git or uncertain about collaboration. For others, choose the software that suits you best for managing the repository.
 3. **Clone this repository to your PC**
- If you have installed github desktop after an authentication step, you will have the possibility to [clone a repository](https://github.com/quantum-engineering-polito/CourseNotes), do it.
+ If you have installed github desktop after an authentication step, you will have the possibility to [clone a repository](https://github.com/quantum-engineering-polito/CourseNotes), do it. Select "For my own purposes" when asked
+
+<img width="496" alt="Screenshot 2024-01-14 at 18 59 37" src="https://github.com/quantum-engineering-polito/CourseNotes/assets/42670032/3fbdec07-aca8-4fcd-8423-15eef084fdec">
  
-4. **For first-time contributors:**
+5. **For first-time contributors:**
     - Copy the `.obsidian` folder in the `SharedObsidianSettings` into the `content` directory to ensure correct Obsidian settings. **Note that the folders starting with a "." might be hidden, press `CMD+SHIFT+.` on Mac or select `View > Show > Hidden items` in Windows.**
 
-5. **Open Obsidian, select "Open folder as vault," and choose the `content` folder inside the repository. If prompted, select "trust the author" to enable all plugins automatically.**
-<img width="496" alt="Screenshot 2024-01-14 at 18 59 37" src="https://github.com/quantum-engineering-polito/CourseNotes/assets/91274142/8bbd44e0-4044-471f-a591-8dba4016d7cc">
+6. **Open Obsidian, select "Open folder as vault," and choose the `content` folder inside the repository. If prompted, select "trust the author" to enable all plugins automatically.**
+<img width="200" alt="Screenshot 2024-01-14 at 18 59 37" src="https://github.com/quantum-engineering-polito/CourseNotes/assets/91274142/8bbd44e0-4044-471f-a591-8dba4016d7cc">
 
-6. **Start editing and creating new files in Obsidian.**
+7. **Start editing and creating new files in Obsidian.**
 
-7. **When finished, commit and push**
+8. **When finished, commit and push**
 If you are using github desktop, open it
     - Check your changes
     - <img width="282" alt="Screenshot 2024-01-12 at 23 09 53" src="https://github.com/quantum-engineering-polito/CourseNotes/assets/91274142/50f77fdc-db80-4e5f-b8a6-962cfe8505bd">
@@ -60,3 +62,8 @@ Once you've decided on the changes to keep, use GitHub Desktop to push the updat
 
 This project is licensed under the Attribution-NonCommercial-ShareAlike 4.0 International License - see the [LICENSE.md](LICENSE.md) file for details.
 **This license prohibits commercial use without explicit permission from the copyright holder**
+<p align="center">
+  <a href="https://github.com/sponsors/jackyzha0">
+    <img src="https://cdn.jsdelivr.net/gh/jackyzha0/jackyzha0/sponsorkit/sponsors.svg" />
+  </a>
+</p>

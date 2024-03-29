@@ -4,6 +4,6 @@ tags:
   - ZTA
 ---
 
-![[Introduction]]
+![[Cyber Security/01_Introduction/Introduction]]
 
 ![[Cryptography]]
