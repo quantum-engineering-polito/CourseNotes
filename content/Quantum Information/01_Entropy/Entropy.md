@@ -122,6 +122,8 @@ At this point we would like to find a way to measure "how much information is pr
 
 ![[decomposition of choices.png|400]]
 
+
+
 ## Theorem
 
 The only $H$ that satisfies the three above assumptions is of the form 
@@ -136,15 +138,17 @@ where $K$ is a positive constant.
 
 #todo
 
----
+## Example, binary entropy
 
-## Example
+>[!cite] See Nielsen Chuang, 11.2.1
+>
 
 In the simple case of two possibilities with probabilities $p$ and $q = 1 - p$, the entropy would be 
 
 $$
 H = - (p \log p + q \log q)
 $$
+
 From the plot of $H$ below we can see that when the output is know (blue dots), the entropy is zero, which is to say that we have no **surprise** in the outcome. On the other hand, when $p = 1 /2$, the entropy is equal to $1$, which means that we **don't know what to expect**.
 
 ![[entropy example.svg|500]]
@@ -215,4 +219,12 @@ The choice of the logarithmic base corresponds to the choice of a measurement un
 - $\log_{e}$: nats
 - $\log_{10}$: dits or hartleys
 - $\log_{256}$: bytes
+
+## Relative entropy
+
+Given two probability distributions $p(x)$ and $q(x)$, the relative entropy between the two is defined as 
+
+$$
+H(p(x)|| q(x)) \triangleq \sum_{x} p(x) \log \frac{p(x)}{q(x)} \equiv -H(p) - \sum_{p} p(x) \log q(x)
+$$
 
