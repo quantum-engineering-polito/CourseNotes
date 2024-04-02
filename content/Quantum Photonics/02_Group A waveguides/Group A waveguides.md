@@ -99,3 +99,32 @@ One important consequence of this result is that, since the TE modes form a comp
 
 # Two dimensional waveguides
 
+![[2D waveguides.png|500]]
+
+In 2D waveguides light is confined in two dimensions (see image at the top of the page). In this case we cannot solve the Maxwell equations analytically as we did for the slab waveguides but we have to use numerical methods such as the **Finite Elements** method or the **Effective Refractive Index** method.
+
+The image below shows an example of such analysis. We can clearly see that the waveguide successfully accomplishes the goal of confining light in a limited region but we can also see that this confinement is not sharp.
+
+![[2DWG analysis.png]]
+
+## Parameters
+
+In the following we will study some of the properties that characterize 2D waveguides.
+
+### Chromatic dispersion
+
+Chromatic dispersion is strictly related to the fact that the group velocity dispersion (defined below) depends of the wavelength of the light travelling in the medium. This effect results in the **broadening** of the initial input.
+
+The **group velocity** is defined as follows: 
+
+$$
+v_{g} = \left( \frac{ \partial \beta }{ \partial \omega }  \right)^{-1} = \left( \frac{\omega}{c} \frac{ \partial n_\text{eff} }{ \partial \omega }  + \frac{n_\text{eff}}{c} \right)^{-1}
+$$
+And can be intuitively seen as the velocity of the "peak" of the wave (for example when thinking about a gaussian).
+
+Since $n_\text{eff} = n_\text{eff}(\omega)$ the group velocity depends on frequency. This is known as **Group Velocity Dispersion** (**GVD**).
+
+#todo what is $n_\text{eff}$?
+
+![[chromatic dispersion.png|500]]
+
