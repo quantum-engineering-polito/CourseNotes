@@ -4,6 +4,8 @@ author:
 authorlink: 
 draft: true
 ---
+%% questa nota deve essere fusa con [[Group A Intro]] %%
+
 # Polarizers
 
 Polarizers are tools that allow transmission of light waves only with a specific polarization axis. They are based on **dichroic material**, where absorption depends on the electric field direction.

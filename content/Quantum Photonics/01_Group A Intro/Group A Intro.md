@@ -1,5 +1,5 @@
 ---
-nextnote: 
+nextnote: "[[Group A waveguides]]"
 author: Giacomo, BabelDev0
 authorlink: https://github.com/gamberoillecito, https://github.com/BabelDev0
 ---
