@@ -128,3 +128,4 @@ Since $n_\text{eff} = n_\text{eff}(\omega)$ the group velocity depends on freque
 
 ![[chromatic dispersion.png|500]]
 
+#todo write the last parts
