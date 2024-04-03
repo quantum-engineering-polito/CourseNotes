@@ -1,5 +1,5 @@
 ---
-nextnote: 
+nextnote: "[[Lorentz model]]"
 author: Giacomo
 authorlink: https://github.com/gamberoillecito
 ---
