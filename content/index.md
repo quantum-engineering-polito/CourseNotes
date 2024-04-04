@@ -15,7 +15,7 @@ Otherwise you can have a look [here](https://github.com/orgs/quantum-engineering
 
 - [Giacomo](https://github.com/gamberoillecito)
 - Tommaso
-- Eva
+- [Eva](https://github.com/deskclam)
 - [BabelDev](https://github.com/BabelDev0)
 - Marco
 - Pedrotto
