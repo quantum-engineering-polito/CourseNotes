@@ -1,5 +1,5 @@
 ---
-nextnote: 
+nextnote: "[[Quantum computing]]"
 author: Giacomo
 authorlink: https://github.com/gamberoillecito
 ---
@@ -9,7 +9,7 @@ $$
 $$
 %% Declaration of the trace operator %%
 
-# Definitions
+# Preliminaries 
 
 As we already know the elementary unit o quantum information is the qubit, which is a linear combination of orthonormal basis defined in an Hilbert space 
 

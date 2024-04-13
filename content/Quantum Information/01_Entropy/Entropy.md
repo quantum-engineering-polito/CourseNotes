@@ -1,5 +1,5 @@
 ---
-nextnote: "[[Discrete noiseless channel]]"
+nextnote: "[[Quantum entropy]]"
 author: Giacomo
 authorlink: https://github.com/gamberoillecito
 ---
@@ -124,12 +124,12 @@ At this point we would like to find a way to measure "how much information is pr
 
 
 
-## Theorem
+## Theorem (Definition of Shannon entropy)
 
 The only $H$ that satisfies the three above assumptions is of the form 
 
 $$
-H = -K \sum_{i=1}^{n} p_{i} \log p_{i}
+\boxed{ H = -K \sum_{i=1}^{n} p_{i} \log p_{i} }
 $$
 
 where $K$ is a positive constant.
@@ -162,7 +162,7 @@ From the example above we already noticed some interesting properties of the qua
 3) Suppose there are two events, $x$ and $y$, with $m$ possibilities for the first and $n$ for the second. Let $p(i,j)$ be probability of the join occurrence of $i$ for the first and $j$ for the second. The entropy of the **join event** is: 
 
 $$
-H(x,y) = - \sum_{i,j} p(i,j) \log p(i,j) \tag{Joint Entropy}
+\boxed{ H(x,y) = - \sum_{i,j} p(i,j) \log p(i,j) } \tag{Joint Entropy}
 $$
 
 while 
@@ -189,10 +189,12 @@ $$
 p_{i}(j) = \frac{p(i,j)}{\sum_{j} p(i,j)} \tag{Conditional Probability}
 $$
 
+### Conditional entropy
+
 We can also define the **conditional entropy** of $y$, $H_{x}(y)$ as the average of the entropy of $y$ for each value of $x$, weighted according to the probability of getting that particular $x$: 
 
 $$
-H_{x}(y) = - \sum_{i,j} p(i,j) \log p_{i}(j) \tag{Conditional Entropy}
+\boxed{ H_{x}(y) =  - \sum_{i,j} p(i,j) \log p_{i}(j) } \tag{Conditional E.}
 $$
 
 This quantity measures how uncertain we are of $y$ on average when we know $x$. Substituting the value of $p_{i}(j)$ we obtain the following relation: 
@@ -204,12 +206,11 @@ H_{x}(y) &= -\sum_{i,j} p(i,j)\log p(i,j) + \sum_{i,j} p(i,j) \log \sum_{j} p(i,
 &= H(x,y) - H(x)
 \end{align}\\\\
 \Downarrow \\\\
-H(x,y) = H(x) + H_{x}(y)\\
+H(x,y) = H(x) + H_{x}(y)\\\\
 \text{Joint entropy} = \text{Entropy of } x + \text{Conditional entropy of } y \text{ when } x \text{ is known}
 
 }
 $$
-
 
 ### Entropy measurement units
 
@@ -228,3 +229,4 @@ $$
 H(p(x)|| q(x)) \triangleq \sum_{x} p(x) \log \frac{p(x)}{q(x)} \equiv -H(p) - \sum_{p} p(x) \log q(x)
 $$
 
+even though the meaning of this quantity is not obvious, we can prove that it is a good **measure of distance between two probability distributions** because it is **non negative** and it is equal to zero if and only if the two probability distributions are identical (for a proof see *Nielsen Chuang, Theorem 11.1*)

@@ -1,5 +1,5 @@
 ---
-nextnote: "[[Quantum entropy]]"
+nextnote: 
 author: 
 authorlink: 
 draft: false
