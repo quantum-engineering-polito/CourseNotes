@@ -3,7 +3,16 @@ nextnote:
 author: Giacomo
 authorlink: https://github.com/gamberoillecito
 ---
+%% DECLARE MATH OPERATORS%%
+
+$$
+\DeclareMathOperator{\emw}{\mathcal{E}_{\text{EMW}}}
+\DeclareMathOperator{\emwz}{\mathcal{E}_{\text{EMW}0}}
+$$
+%% DECLARE MATH OPERATORS%%
+
 To study how light interacts with matter we can, as a first approximation, think about a **dampened harmonic oscillator** that evolves according to the following second order differential equation 
+
 
 $$
 \frac{d^{2}x}{dt^{2}} - \mu  \frac{dx}{dt} + x = 0
@@ -29,7 +38,7 @@ $$
 \displaylines{
 F_\text{EMW} + F_A + F_d = m \frac{d^{2}x}{dt^{2}}\\
 \Downarrow \\
--\frac{e}{m} \mathcal{E}_\text{EMW} - \frac{\tilde{k}}{m}x - \gamma \frac{ dx}{dt} = \frac{d^{2}x}{dt^{2}}
+-\frac{e}{m} \emw - \frac{\tilde{k}}{m}x - \gamma \frac{ dx}{dt} = \frac{d^{2}x}{dt^{2}}
 }
 $$
 
@@ -42,8 +51,77 @@ $$
 $$
 
 
+If we now consider the **complex field** of a **linearly polarized monochromatic plane wave** as the product of magnitude and phase $\emw(\omega) = \emwz \cdot e^{ -i\omega t }$ we get (using the equation above and the definition of $\omega_0$) 
+
+$$
+-\frac{e}{m} \emwz ~e^{ -i\omega t } = \frac{d^{2} \tilde{x}}{dt^{2}} + \omega_0^{2} \tilde{x} + \gamma \frac{d\tilde{x}}{dt}
+$$
 
 
+whose steady state solutions are given by 
+
+$$
+\begin{align}
+\tilde{x}(t)&=-\frac{e ~\emwz}{m(\omega_{0}^{2}-\omega^{2}-i\gamma\omega)}\,e^{-i\omega t} \\\\
+&=-\frac{e ~\emwz(\omega_{0}^{2}-\omega^{2}+i\gamma\omega)}{m(\omega_{0}^{2}-\omega^{2})^{2}+m(\gamma\omega)^{2}}\big(\cos(\omega t)-\mathrm{i}~\sin(\omega t)\big)
+\end{align}
+$$
+
+
+The real part of $\tilde{x}$ is the displacement of the electron with respect to its rest position. 
+
+#todo explain better the formula
+
+<iframe src="https://www.desmos.com/calculator/6sawmcw2hw?embed" width="500" height="500" style="border: 1px solid #ccc" frameborder=0></iframe>
+
+## Complex polarization
+
+Similarly to what was done for the electromagnetic field, we can write the polarization as a complex quantity 
+
+$$
+P(\omega) = P_0 e^{ -i\omega t }
+$$
+
+In the case of a medium represented by a gas of $n$ atoms per unit volume with a single electron each, we can rewrite the complex polarization in the following form 
+
+$$
+P(\omega) = P_0 e^{  -i\omega t } = - n e \,\tilde{x}(t) \equiv \varepsilon_0 \chi ~\emwz ~e^{ -i\omega t } = \varepsilon_0 \chi ~\emw(\omega)
+$$
+
+#todo why the step after $\equiv$?
+
+$\tilde{x}$ in this case is considered as an average of the electron displacement over the considered volume.
+
+The same expression can be obtained  for a generic electron displacement $r(t)$: 
+
+$$
+\begin{align}
+\vec{P}(\omega) &= \vec{P}_{0} e^{ -i\omega t }  \\
+&= -ne \vec{r}(t)  \\
+&\equiv \varepsilon_0 \chi ~ \vec{\mathcal{E}}_{\text{EMW}0} ~e^{ -i\omega t }  \\
+&= \varepsilon_0 \chi \vec{\mathcal{E}}_{\text{EMW}}(\omega)
+\end{align}
+$$
+
+We can then extract the real parts from the equation above to get 
+
+$$
+P_0 = \varepsilon_0 \chi \emwz \tag{1}
+$$
+
+### Frequency dependent optical susceptibility
+
+From $(1)$ we can derive the expression for the frequency dependent optical susceptibility: 
+
+$$
+\chi(\omega) = \chi_0 \frac{\omega_0 (\omega_0 ^{2} - \omega^{2} @ i\gamma \omega)}{(\omega_0^{2} - \omega^{2})^{2} + (\gamma\omega)^{2}}
+$$
+
+with
+
+$$
+\chi_0 = \chi(\omega_0) = \frac{ne^{2}}{\varepsilon_0 m \omega_0 ^{2}}
+$$
 
 ![[resonance.gif|200]]
 
