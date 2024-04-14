@@ -250,7 +250,7 @@ H = \frac{1}{\sqrt{ 2 }} \begin{bmatrix}
 \end{bmatrix}
 $$
 
-![[image 1.gif|200]]
+![[image 1.gif|200]] ^37b221
 
 the Hadamard transforms a deterministic computational state into a superposition.
 
