@@ -28,7 +28,7 @@ we refer to it as a **pure state**. In this case we could, in theory, exactly pr
 To be able to measure the "amount of information" in the quantum case we need to extend the concept of entropy to this case. This can be done by generalizing the Gibbs definition to obtain the **von Neumann entropy**: 
 
 $$
-S = -k_{B} \tr[\rho \ln\rho]
+S = -\tr[\rho \ln\rho]
 $$
 
 Where $\tr$ is the **trace operator** and $\rho$ is the **density matrix** defined as follows 
@@ -39,7 +39,7 @@ $$
 
 ## Outer product
 
-The quantity $\ket{\psi_{j}}\bra{\psi_{j}}$ in the definition of the density matrix is called outer product. If we two vectors $\ket{v}$ and $\ket{w}$ in the inner product spaces $V$ and $W$ respectively, the outer product $\ket{w}\bra{v}$ is the linear operator from $V$ to $W$ defined by 
+The quantity $\ket{\psi_{j}}\bra{\psi_{j}}$ in the definition of the density matrix is called outer product. If we take two vectors $\ket{v}$ and $\ket{w}$ in the inner product spaces $V$ and $W$ respectively, the outer product $\ket{w}\bra{v}$ is the linear operator from $V$ to $W$ defined by 
 
 $$
 (\ket{w} \bra{v} )(\ket{v'} ) \equiv \ket{w} \braket{ v | v' }  = \braket{ v | v' } ~\ket{w} 
