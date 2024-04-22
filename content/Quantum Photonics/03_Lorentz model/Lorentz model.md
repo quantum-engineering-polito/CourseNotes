@@ -114,7 +114,7 @@ $$
 From $(1)$ we can derive the expression for the frequency dependent optical susceptibility: 
 
 $$
-\chi(\omega) = \chi_0 \frac{\omega_0 (\omega_0 ^{2} - \omega^{2} @ i\gamma \omega)}{(\omega_0^{2} - \omega^{2})^{2} + (\gamma\omega)^{2}}
+\chi(\omega) = \chi_0 \frac{\omega_0^{2} (\omega_0 ^{2} - \omega^{2} + i\gamma \omega)}{(\omega_0^{2} - \omega^{2})^{2} + (\gamma\omega)^{2}}
 $$
 
 with
@@ -122,6 +122,23 @@ with
 $$
 \chi_0 = \chi(\omega_0) = \frac{ne^{2}}{\varepsilon_0 m \omega_0 ^{2}}
 $$
+
+Plotting the real and imaginary parts of the susceptibility in units of $\omega - \omega_0$ we can see that far from the resonant frequency of the atom the susceptibility is not dependent on the frequency (which is the scenario considered in the first part of the course).
+
+### Displacement vector
+
+Recalling the [[Group A Intro#Electric displacement field ($ vec{D}$)|definition of electric displacement]]: 
+
+$$
+ \vec{D} = \varepsilon_0 \vec{\mathcal{E}} + P
+$$
+
+if we consider the displacement vector as a complex quantity $D(\omega) = D_0 e^{ -i\omega t }$ we get 
+
+$$
+D_0 = \varepsilon_0 \emwz + P_0 = \varepsilon_0 \big(1 + \chi(\omega)\big) \emwz
+$$
+## Absorption and dispersion
 
 ![[resonance.gif|200]]
 
