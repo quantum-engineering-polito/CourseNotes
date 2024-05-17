@@ -132,7 +132,7 @@ $$
 \boxed{ H = -K \sum_{i=1}^{n} p_{i} \log p_{i} }
 $$
 
-where $K$ is a positive constant.
+where $K$ is a positive constant which is usually omitted.
 
 ### Demonstration
 

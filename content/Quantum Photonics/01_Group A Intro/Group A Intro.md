@@ -164,7 +164,7 @@ where:
 - $c$ its the speed at which the wave propagates.
 - $u(x,t)$ is the displacement of the wave at position $x$ and time $t$ 
 
-We can rewrite equations (1) and (2) using a 3D formulation of the D'alembert equation:
+We can rewrite equations (1) and (2) using a 3D formulation of the D'Alembert equation:
 
 $$ 
 \begin{array}{ll}\frac{\partial^2 \varepsilon_x}{\partial x^2}+\frac{\partial^2 \varepsilon_x}{\partial y^2}+\frac{\partial^2 \varepsilon_x}{\partial z^2}=\frac{1}{v^2} \frac{\partial^2 \varepsilon_x}{\partial t^2} & \frac{\partial^2 B_x}{\partial x^2}+\frac{\partial^2 B_x}{\partial y^2}+\frac{\partial^2 B_x}{\partial z^2}=\frac{1}{v^2} \frac{\partial^2 B_x}{\partial t^2} \\ \frac{\partial^2 \varepsilon_y}{\partial x^2}+\frac{\partial^2 \varepsilon_y}{\partial y^2}+\frac{\partial^2 \varepsilon_y}{\partial z^2}=\frac{1}{v^2} \frac{\partial^2 \varepsilon_y}{\partial t^2} & \frac{\partial^2 B_y}{\partial x^2}+\frac{\partial^2 B_y}{\partial y^2}+\frac{\partial^2 B_y}{\partial z^2}=\frac{1}{v^2} \frac{\partial^2 B_y}{\partial t^2} \\ \frac{\partial^2 \varepsilon_z}{\partial x^2}+\frac{\partial^2 \varepsilon_z}{\partial y^2}+\frac{\partial^2 \varepsilon_z}{\partial z^2}=\frac{1}{v^2} \frac{\partial^2 \varepsilon_z}{\partial t^2} & \frac{\partial^2 B_z}{\partial x^2}+\frac{\partial^2 B_z}{\partial y^2}+\frac{\partial^2 B_z}{\partial z^2}=\frac{1}{v^2} \frac{\partial^2 B_z}{\partial t^2}\end{array}
@@ -178,7 +178,7 @@ Plane waves are a particular class of waves, that is represented by those waves 
 
 ![[Plane wave 3D.svg.png|300]]
 
-From the MEs directly follows that $\vec{\mathcal{E}}$ and $\vec{B}$ oscillates perpendicularly to the direction of the wave's advance so they are transverse waves ($\vec{\mathcal{E}}_{z}=0, \vec{B}_{z}=0$).
+From the MEs directly follows that $\vec{\mathcal{E}}$ and $\vec{B}$ oscillate perpendicularly to the direction of the wave's advance so they are transverse waves ($\vec{\mathcal{E}}_{z}=0, \vec{B}_{z}=0$).
 
 Each non null component of the electric and magnetic field must solve the 1D D’Alembert equation. In the hypothesis that these components are respectively directed along the $x$−axis for the electric field and the $y$−axis for the magnetic field, we get:
 
@@ -208,7 +208,7 @@ Notice that to be a proper solution of the D'Alembert equation, a function must 
 \frac{\mathcal{E}}{B}=v
 >$$
 
-Why did we spend valuable time to delve into the concept of plane waves ? 
+Why did we spend valuable time to delve into the concept of plane waves? 
 
 Well, even if the plane wave is a mathematical abstraction, as there is no physical source infinitely extended in space that can produce it, several more complex wave propagation can be approximated by plane waves under certain conditions. For instance plane waves are often used to describe the propagation of light in homogeneous media over large distances.
 
@@ -255,7 +255,7 @@ the Poynting vector provides information about the direction of propagation of t
 
 Both the energy flux and wave propagation velocity share the same direction in the case of a harmonic plane wave, it implies that the energy carried by the wave is moving in the same direction as the wave itself.
 
-Now, the average intensity or intensity $<I>$ is defined as the average of the intensity over one period of the wave. Intensity, in the context of waves, typically refers to the power per unit area carried by the wave. It's a measure of how much energy is transmitted through a given area per unit time. We can calculate the average intensity using the wave impedance that in case of the ideal dielectric (conductivity is zero) is 
+Now, the average intensity or intensity $\langle I \rangle$ is defined as the average of the intensity over one period of the wave. Intensity, in the context of waves, typically refers to the power per unit area carried by the wave. It's a measure of how much energy is transmitted through a given area per unit time. We can calculate the average intensity using the wave impedance that in case of the ideal dielectric (conductivity is zero) is 
 
 $$ 
 Z = \sqrt{ \frac{\mu}{\epsilon} } = \sqrt{ \frac{\mu_{o}}{\epsilon_{o}\epsilon_{r}} }
@@ -264,7 +264,7 @@ $$
 so we can write:
 
 $$
-<I>\ =\frac{1} {Z} <\mathcal{E}(t)^{2}> \ = \frac{1}{2} c \epsilon_{0}n \mathcal{E_{x_0}^{2}}
+<I>\ =\frac{1} {Z} <\mathcal{E}(t)^{2}> \ = \frac{1}{2} c \epsilon_{0}n \mathcal{E}_{x_0}^{2}
 $$
 
 # Polarization of EMW

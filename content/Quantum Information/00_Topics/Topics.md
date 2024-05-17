@@ -12,7 +12,7 @@ draft: true
 	3) Gibbs
 	4) Boltzmann-Gibbs
 	5) Shannon
-		1) Derivation
+		1) Derivation (==proof==)
 		2) Properties
 		3) Conditional
 		4) Joint
@@ -25,7 +25,7 @@ draft: true
 			4) Reduced density operator
 		2) Quantum relative entropy
 			1) Properties
-			2) Klein inequality
+			2) Klein inequality (==proof==)
 		3) Properties
 		4) Measurement and entropy
 		5) Joint
@@ -89,6 +89,9 @@ $$
   
 \tr(A) \triangleq \sum_{i} \braket{ i | A | i } = \text{sum of diagonal elements}
 $$
+$$
+\tr(\ket{b_1} \bra{b_2} )= \braket{ b_2|b_1 } 
+$$
 ## Cyclic 
 
 $$
@@ -109,7 +112,16 @@ $$
 $$
 \rho \equiv \sum_{i} p_{i} \ket{\psi_{i}} \bra{\psi_{i}}
 $$
-  
+## Conditions for being a density operator 
+
+$$
+\begin{align}
+&1) \quad \tr(\rho) = 1  \\
+&2) \quad \rho \text{ must be a positive operator}
+\end{align}
+$$
+
+
 ## Pure or mixed state
   
   
@@ -119,6 +131,18 @@ $$
  & \tr(\rho^{2}) < 1 \quad \Longrightarrow \quad \text{mixed state}
 \end{align}
 $$
+
+# Reduced density operator 
+
+$$
+\rho ^{A} = \tr_{B}(\rho^{AB})
+$$
+
+## Partial trace
+$$
+\tr_{B}(\ket{a_{1}} \bra{a_{2}} \otimes  \ket{b_1} \bra{b_2} ) \triangleq \ket{a_1} \bra{a_2} \tr(\ket{b_1} \bra{b_2}  )
+$$
+
 
 # Measurements 
 
@@ -140,7 +164,7 @@ $$
 $$
 H(\rho) = - \tr[\rho \log \rho] = -\sum_{j} \lambda_{j} \log \lambda_{j}
 $$
-  
+
 where $\lambda_{j}$ are the eigenvalues.
   
 $$

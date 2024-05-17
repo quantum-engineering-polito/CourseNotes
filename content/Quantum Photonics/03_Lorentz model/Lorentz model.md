@@ -1,5 +1,5 @@
 ---
-nextnote: 
+nextnote: "[[Nonlinear optics]]"
 author: Giacomo
 authorlink: https://github.com/gamberoillecito
 ---
