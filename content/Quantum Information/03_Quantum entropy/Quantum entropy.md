@@ -1,5 +1,5 @@
 ---
-nextnote: 
+nextnote: "[[Quantum computing]]"
 author: Giacomo
 authorlink: https://github.com/gamberoillecito
 ---
@@ -9,7 +9,7 @@ $$
 $$
 %% Declaration of the trace operator %%
 
-# Definitions
+# Preliminaries 
 
 As we already know the elementary unit o quantum information is the qubit, which is a linear combination of orthonormal basis defined in an Hilbert space 
 
@@ -28,7 +28,7 @@ we refer to it as a **pure state**. In this case we could, in theory, exactly pr
 To be able to measure the "amount of information" in the quantum case we need to extend the concept of entropy to this case. This can be done by generalizing the Gibbs definition to obtain the **von Neumann entropy**: 
 
 $$
-S = -k_{B} \tr[\rho \ln\rho]
+S = -\tr[\rho \ln\rho]
 $$
 
 Where $\tr$ is the **trace operator** and $\rho$ is the **density matrix** defined as follows 
@@ -39,7 +39,7 @@ $$
 
 ## Outer product
 
-The quantity $\ket{\psi_{j}}\bra{\psi_{j}}$ in the definition of the density matrix is called outer product. If we two vectors $\ket{v}$ and $\ket{w}$ in the inner product spaces $V$ and $W$ respectively, the outer product $\ket{w}\bra{v}$ is the linear operator from $V$ to $W$ defined by 
+The quantity $\ket{\psi_{j}}\bra{\psi_{j}}$ in the definition of the density matrix is called outer product. If we take two vectors $\ket{v}$ and $\ket{w}$ in the inner product spaces $V$ and $W$ respectively, the outer product $\ket{w}\bra{v}$ is the linear operator from $V$ to $W$ defined by 
 
 $$
 (\ket{w} \bra{v} )(\ket{v'} ) \equiv \ket{w} \braket{ v | v' }  = \braket{ v | v' } ~\ket{w} 
@@ -112,4 +112,69 @@ where $\{\ket{i}\}$ is some complete and orthonormal basis for $\mathcal{H}$.
 - **Independent on the basis**
 
 ## Density operator or density matrix
+
+While we can use the state vectors notation to describe a system composed of multiple subsystems, another equivalent (but often more convenient) way of describing it is the **density matrix**. This notation is most useful in cases where the state of the system is **not completely know**.
+
+If we have a quantum state that can be in one of a number of states $\ket{\psi_{i}}$ with respective probabilities $p_{i}$, we can call $\{p_{i}, \ket{\psi_{i}}\}$ an **ensemble of pure states**. The density matrix for such a system is defined as: 
+
+$$
+\rho \triangleq \sum_{i} p_{i} \ket{\psi _{i} } \bra{\psi _{i} } 
+$$
+
+### Pure and mixed states
+
+A quantum system is said to be in a pure state $\ket{\psi}$ when its state is known **exactly**. In this case the density matrix is given by 
+
+$$
+\rho = \ket{\psi} \bra{\psi} 
+$$
+
+In all the other cases the system is said to be in a **mixed state**.
+
+The following criterion can be used to determine whether a state is pure or mixed given the density matrix 
+
+$$
+\begin{cases}
+\tr(\rho^{2}) = 1 && \text{pure state} \\ \\
+\tr(\rho^{2}) < 1 && \text{mixed state}
+\end{cases}
+$$
+
+### Unitary operators with the density matrix
+
+If we want to study how a unitary operator $U$ affects a state using the formalism of the density matrix we notice that, if we have a system in the state $\ket{\psi_{i}}$ with probability $p_{i}$, after applying $U$ the state will be in the state $U \ket{\psi _{i}}$ with the same probability $p_{i}$.
+
+From the definition of the density matrix we can obtain the following 
+
+$$
+\rho = \sum_{i} p_{i} \ket{\psi _{i} } \bra{\psi _{i} } \overset{ U }{ \longrightarrow  } \sum_{i} p_{i} U \ket{\psi_{i} } \bra{\psi_{i} } U^{\dagger} = U \rho U^{\dagger}
+$$
+
+### Measurements with the density matrix
+
+
+#### Quantum measurements recap
+
+Quantum measurements are described by a collection $\{M_{m}\}$ of **measurement operators** which act on the state space of the system being measured. The index $m$ refers to the measurement outcomes that may occur.
+If for example the system, before the measurement, is in an initial state $\ket{\psi_{i}}$, the probability of finding it in state $m$ after the measurement is given by 
+
+$$
+p(m|i) = \braket{ \psi_{i}  | M_{m} ^{\dagger} M_{m} | \psi_{i}    }  = \tr(M_{m} ^{\dagger} M_{m} \ket{\psi_{i} } \bra{\psi_{i} } )
+$$
+
+#todo explain how we got the last equality (page 10,15 of the slides)
+
+The state of the system after the measurement will be 
+
+$$
+\ket{\psi_{i} ^{m}} \frac{M_{m} \ket{\psi} }{\sqrt{ \Braket{ \psi | M_{m} ^{\dagger}M_{m} |\psi }  }} 
+$$
+
+The density operator of the system above (i.e. after obtaining the measurement $m$ starting from the state $i$) is given by 
+
+$$
+\rho_{m}=\sum_{i}p(i\mid m)\mid\psi_{i}^{m}\rangle\langle\psi_{i}^{m}|=\sum_{i}p(i\mid m)\frac{M_{m}\mid\psi_{i}\rangle\langle\psi_{i}|\,M_{m}^{\dagger}}{\Braket{   \psi_{i}| M_{m}^{\dagger}M_{m}|\psi_{i}}}
+$$
+
+
 
