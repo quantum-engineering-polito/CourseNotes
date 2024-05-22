@@ -1,5 +1,5 @@
 ---
-nextnote: "[[Laser]]"
+nextnote: "[[Lasers]]"
 author: Eva
 authorlink: https://github.com/deskclam
 ---
