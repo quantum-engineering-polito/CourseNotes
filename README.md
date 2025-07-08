@@ -1,16 +1,3 @@
-# Quartz v4
-
-> “[One] who works with the door open gets all kinds of interruptions, but [they] also occasionally gets clues as to what the world is and what might be important.” — Richard Hamming
-
-Quartz is a set of tools that helps you publish your [digital garden](https://jzhao.xyz/posts/networked-thought) and notes as a website for free.
-Quartz v4 features a from-the-ground rewrite focusing on end-user extensibility and ease-of-use.
-
-🔗 Read the documentation and get started: https://quartz.jzhao.xyz/
-
-[Join the Discord Community](https://discord.gg/cRFFHYye7t)
-
-## Sponsors
-
 👋 Welcome to the Course Notes repository! Listed below are points to follow in order to collaborate:
 
 0. **Ask to join the organization on the Telegram group so that we can invite you**, If you don't have a GitHub account, create one. If you wish to start collaborating immediately, star this project and follow the organization while waiting for the invitation.
